@@ -1,0 +1,32 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<question id="10" runID="run6">
+   <string>
+      <![CDATA[Give me all members of Prodigy, where were they born?.]]>
+   </string>
+   <query>
+      <![CDATA[
+  ?member  "member"  "Prodigy".
+  ?member  "born in"  ?city .
+]]>
+   </query>
+   <settings labelSearchTopK="5" plugLabel="false" limited="false" validateTriple="false"/>
+   <stats1 nb_results="0" timeSec="0.5150" memoryMB="69.9571" totalQuins="0" avgQuin_Cluster="0.0000" avgQuin_Bucket="NaN   " nb_plugTR="0"/>
+   <stats2>
+      <ds id="LinkedMDB">
+         <nreq>0</nreq>
+         <nreqs>0</nreqs>
+         <nrecd>0</nrecd>
+      </ds>
+      <ds id="DBpedia">
+         <nreq>40</nreq>
+         <nreqs>0</nreqs>
+         <nrecd>0</nrecd>
+      </ds>
+      <ds id="Yago">
+         <nreq>0</nreq>
+         <nreqs>0</nreqs>
+         <nrecd>0</nrecd>
+      </ds>
+   </stats2>
+   <results/>
+</question>

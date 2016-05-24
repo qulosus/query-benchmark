@@ -1,0 +1,1986 @@
+<html> 
+  <head>
+    <meta charset='UTF-8'>
+<style>TABLE.outline {
+        BORDER-RIGHT: #c0c0c0 4px double; BORDER-TOP: #c0c0c0 4px double; BORDER-LEFT: #c0c0c0 4px double;
+        FONT-FAMILY: "MS Sans Serif"; BORDER-BOTTOM: #c0c0c0 4px double; align: center
+}
+A {
+        FONT-SIZE: 14px; COLOR: #333399; FONT-FAMILY: "Consolas"; TEXT-DECORATION: none
+}
+A:hover {
+        FONT-SIZE: 14px; COLOR: #778899; FONT-STYLE: normal; FONT-FAMILY: "Consolas"; TEXT-DECORATION: underline overline
+}
+.blockTitle {
+        PADDING-RIGHT: 3px; BORDER-TOP: #6495ed 3px double; PADDING-LEFT: 3px; FONT-WEIGHT: bold;
+        FONT-SIZE: 14px; PADDING-BOTTOM: 3px; COLOR: #daa520; PADDING-TOP: 3px; BORDER-BOTTOM: #6495ed 3px double;
+        BACKGROUND-COLOR: #f0f8ff
+}
+.blockTitle1 {
+        PADDING-RIGHT: 3px; BORDER-TOP: #6495ed 3px double; PADDING-LEFT: 3px; FONT-WEIGHT: bold; FONT-SIZE: 14px;
+        PADDING-BOTTOM: 3px; COLOR: #daa520; PADDING-TOP: 3px; BORDER-BOTTOM: #6495ed 3px double;
+        BACKGROUND-COLOR: #f0f8ff
+}
+TD {
+        FONT-SIZE: 14px; COLOR: #333399; FONT-FAMILY: "Consolas"; TEXT-DECORATION: none
+}
+.tdin {
+        PADDING-RIGHT: 2px; BORDER-TOP: #6495ed 1px double; PADDING-LEFT: 8px; PADDING-BOTTOM: 2px; PADDING-TOP: 2px;
+        BORDER-BOTTOM: #6495ed 1px double;BORDER-LEFT: #6495ed 1px double;BORDER-RIGHT: #6495ed 1px double;
+        FONT-FAMILY: "Consolas";
+}
+.thin {
+        PADDING-RIGHT: 2px; BORDER-TOP: #6495ed 1px double; PADDING-LEFT: 8px; FONT-WEIGHT: bold; FONT-SIZE: 12px;
+        PADDING-BOTTOM: 2px; COLOR: #E45C3A; PADDING-TOP: 2px; BORDER-BOTTOM: #6495ed 1px double;
+        BACKGROUND-COLOR: #DEF7FE; BORDER-LEFT: #6495ed 1px double; BORDER-RIGHT: #6495ed 1px double ;
+        FONT-FAMILY: "Verdana";
+}
+.thin2 {
+        PADDING-RIGHT: 2px; BORDER-TOP: #6495ed 1px double; PADDING-LEFT: 8px; FONT-WEIGHT: bold; FONT-SIZE: 12px;
+        PADDING-BOTTOM: 2px; COLOR: #405EE4; PADDING-TOP: 2px; BORDER-BOTTOM: #6495ed 1px double;
+        BACKGROUND-COLOR: #FFDFF8; BORDER-LEFT: #6495ed 1px double; BORDER-RIGHT: #6495ed 1px double ;
+        FONT-FAMILY: "Verdana";
+}
+TH {
+        FONT-SIZE: 14px; COLOR: #333399; FONT-FAMILY: "Verdana"; TEXT-DECORATION: none;align: left
+}
+INPUT.spt {
+        BORDER-RIGHT: #6495ed 1px double; BORDER-TOP: #6495ed 1px double;
+        BORDER-BOTTOM: #6495ed 1px double;BORDER-LEFT: #6495ed 1px double;
+        PADDING-LEFT: 1px; PADDING-BOTTOM: 1px; PADDING-TOP: 1px;PADDING-RIGHT: 1px;
+        FONT-FAMILY: "Tahoma";
+        WIDTH : 200px ; HEIGHT : 20px;
+}
+INPUT.spb {
+        PADDING-RIGHT: 1px; PADDING-LEFT: 1px;
+        PADDING-BOTTOM: 1px; PADDING-TOP: 1px;
+        BORDER-RIGHT: #6495ed 1px double; BORDER-LEFT: #6495ed 1px double;
+        BORDER-BOTTOM: #6495ed 1px double; BORDER-TOP: #6495ed 1px double;
+        FONT-FAMILY: "Tahoma"; BACKGROUND-COLOR : #A8FFA8;
+        WIDTH : 60px ; HEIGHT : 20px;
+}
+textarea {
+        PADDING-RIGHT: 2px; PADDING-LEFT: 2px;
+        PADDING-BOTTOM: 2px; PADDING-TOP: 2px;
+        BORDER-RIGHT: #6495ed 1px double; BORDER-LEFT: #6495ed 1px double;
+        BORDER-BOTTOM: #6495ed 1px double; BORDER-TOP: #6495ed 1px double;
+        FONT-FAMILY: "Tahoma"; BACKGROUND-COLOR : #FFFFFF;
+        WIDTH : 600px ; HEIGHT : 400px;
+}
+</style>  </head>
+  <body>
+<h2>Query :: q16</h2> <table class='outline' border='1' width = '100%'>
+<tr>
+<td class='tdin' width='50%'> <pre>{
+	"danube"	"country"   	?country    .
+	?country	"capital"   	?capital    .
+	?capital	"population"	?population .
+}</pre> </td><td class='tdin' width='50%'>Give me the countries where the Danube flow through, with their capitals and capital population.</td></tr>
+</table>
+ <br/><hr/><br/><table border='0' width = '100%'>
+<tr>
+<td class='tdin' width='35%'><table border='0' width = '100%'><tr>
+<td class='thin' width='40%'># Results</td><td class='tdin' width='40%'><b>43</b></td><td class='tdin' width='20%'></td></tr>
+<tr>
+<td class='thin' width='40%'>Elapsed time</td><td class='tdin' width='40%'>10.509</td><td class='tdin' width='20%'>sec</td></tr>
+<tr>
+<td class='thin' width='40%'>Used memory</td><td class='tdin' width='40%'>148.21693</td><td class='tdin' width='20%'>MB </td></tr>
+<tr>
+<td class='thin' width='40%'>Total Quintuples</td><td class='tdin' width='40%'>160</td><td class='tdin' width='20%'>quins </td></tr>
+<tr>
+<td class='thin' width='40%'>AVG. # quins per cluster</td><td class='tdin' width='40%'>1.2403101</td><td class='tdin' width='20%'>quin/cluster </td></tr>
+<tr>
+<td class='thin' width='40%'>AVG. # quins per bucket</td><td class='tdin' width='40%'>3.7209303</td><td class='tdin' width='20%'>quin/bucket </td></tr>
+<tr>
+<td class='thin' width='40%'># plugged triples</td><td class='tdin' width='40%'>8</td><td class='tdin' width='20%'>triples </td></tr>
+</table>
+</td><td class='tdin' width='25%'><table border='0' width = '100%'><tr>
+<td class='thin' width='40%'>LabelSearch TopK</td><td class='tdin' width='40%'>5</td></tr>
+<tr>
+<td class='thin' width='40%'>Plugin Labels ?</td><td class='tdin' width='40%'>true</td></tr>
+<tr>
+<td class='thin' width='40%'>Limit 1st triple?</td><td class='tdin' width='40%'>false</td></tr>
+<tr>
+<td class='thin' width='40%'>Validate Triples?</td><td class='tdin' width='40%'>false</td></tr>
+</table>
+</td><td class='tdin' width='40%'><table border='0' width = '100%'>
+<tr>
+<td class='tdin' width='25%'></td><td class='thin' width='25%'> # Requests</td><td class='thin' width='25%'> # Solved Requests</td><td class='thin' width='25%'> # Returned Records</td></tr>
+<tr>
+<td class='thin2' width='25%'>LinkedMDB</td><td class='tdin' width='25%'>230</td><td class='tdin' width='25%'>1</td><td class='tdin' width='25%'>1</td></tr>
+<tr>
+<td class='thin2' width='25%'>DBpedia</td><td class='tdin' width='25%'>448</td><td class='tdin' width='25%'>20</td><td class='tdin' width='25%'>31</td></tr>
+<tr>
+<td class='thin2' width='25%'>Yago</td><td class='tdin' width='25%'>490</td><td class='tdin' width='25%'>54</td><td class='tdin' width='25%'>89</td></tr>
+<tr>
+<td class='tdin' width='25%'></td><td class='thin' width='25%'>1168</td><td class='thin' width='25%'>75</td><td class='thin' width='25%'>121</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 0</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.25449417</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 0 - 0</b><br/> Score1 = 0.30571113<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Danube' title='http://yago-knowledge.org/resource/Danube'>Danube</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isLocatedIn' title='http://yago-knowledge.org/resource/isLocatedIn'>isLocatedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Bavaria' title='http://yago-knowledge.org/resource/Bavaria'>Bavaria</a></td>
+<td class='tdin' width='7%'>0.30571113</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 0 - 1</b><br/> Score1 = 0.34260274<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Bavaria' title='http://dbpedia.org/resource/Bavaria'>Bavaria</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/capital' title='http://dbpedia.org/ontology/capital'>capital</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Munich' title='http://dbpedia.org/resource/Munich'>Munich</a></td>
+<td class='tdin' width='7%'>0.34260274</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 0 - 2</b><br/> Score1 = 0.20000000<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Munich' title='http://dbpedia.org/resource/Munich'>Munich</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/populationTotal' title='http://dbpedia.org/ontology/populationTotal'>populationTotal</a></td>
+<td class='tdin' width='28%'>1458508</td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 1</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.24723939</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 1 - 0</b><br/> Score1 = 0.30571113<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Danube' title='http://yago-knowledge.org/resource/Danube'>Danube</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isLocatedIn' title='http://yago-knowledge.org/resource/isLocatedIn'>isLocatedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Baden-Württemberg' title='http://yago-knowledge.org/resource/Baden-Württemberg'>Baden-Württemberg</a></td>
+<td class='tdin' width='7%'>0.30571113</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 1 - 1</b><br/> Score1 = 0.31842015<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Baden-W%C3%BCrttemberg' title='http://dbpedia.org/resource/Baden-W%C3%BCrttemberg'>Baden-Württemberg</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/capital' title='http://dbpedia.org/ontology/capital'>capital</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Stuttgart' title='http://dbpedia.org/resource/Stuttgart'>Stuttgart</a></td>
+<td class='tdin' width='7%'>0.31842015</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 1 - 2</b><br/> Score1 = 0.20000000<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Stuttgart' title='http://dbpedia.org/resource/Stuttgart'>Stuttgart</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/populationTotal' title='http://dbpedia.org/ontology/populationTotal'>populationTotal</a></td>
+<td class='tdin' width='28%'>600038</td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 2</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.22303063</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 2 - 0</b><br/> Score1 = 0.30571113<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Belene_Island' title='http://yago-knowledge.org/resource/Belene_Island'>Belene Island</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isLocatedIn' title='http://yago-knowledge.org/resource/isLocatedIn'>isLocatedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Danube' title='http://yago-knowledge.org/resource/Danube'>Danube</a></td>
+<td class='tdin' width='7%'>0.30571113</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 2 - 1</b><br/> Score1 = 0.23772426<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Rhode_Island' title='http://yago-knowledge.org/resource/Rhode_Island'>Rhode Island</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/hasCapital' title='http://yago-knowledge.org/resource/hasCapital'>hasCapital</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Providence,_Rhode_Island' title='http://yago-knowledge.org/resource/Providence,_Rhode_Island'>Providence, Rhode Island</a></td>
+<td class='tdin' width='7%'>0.23772426</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 2 - 2</b><br/> Score1 = 0.20000000<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Providence,_Rhode_Island' title='http://yago-knowledge.org/resource/Providence,_Rhode_Island'>Providence, Rhode Island</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/hasNumberOfPeople' title='http://yago-knowledge.org/resource/hasNumberOfPeople'>hasNumberOfPeople</a></td>
+<td class='tdin' width='28%'>"178042"</td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 3</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.22177129</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 3 - 0</b><br/> Score1 = 0.30571113<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Óbuda_Island' title='http://yago-knowledge.org/resource/Óbuda_Island'>Óbuda Island</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isLocatedIn' title='http://yago-knowledge.org/resource/isLocatedIn'>isLocatedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Danube' title='http://yago-knowledge.org/resource/Danube'>Danube</a></td>
+<td class='tdin' width='7%'>0.30571113</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 3 - 1</b><br/> Score1 = 0.23352646<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Rhode_Island' title='http://yago-knowledge.org/resource/Rhode_Island'>Rhode Island</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/hasCapital' title='http://yago-knowledge.org/resource/hasCapital'>hasCapital</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Providence,_Rhode_Island' title='http://yago-knowledge.org/resource/Providence,_Rhode_Island'>Providence, Rhode Island</a></td>
+<td class='tdin' width='7%'>0.23352646</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 3 - 2</b><br/> Score1 = 0.20000000<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Providence,_Rhode_Island' title='http://yago-knowledge.org/resource/Providence,_Rhode_Island'>Providence, Rhode Island</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/hasNumberOfPeople' title='http://yago-knowledge.org/resource/hasNumberOfPeople'>hasNumberOfPeople</a></td>
+<td class='tdin' width='28%'>"178042"</td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 4</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.22106389</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 4 - 0</b><br/> Score1 = 0.30571113<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Hajógyári_Island' title='http://yago-knowledge.org/resource/Hajógyári_Island'>Hajógyári Island</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isLocatedIn' title='http://yago-knowledge.org/resource/isLocatedIn'>isLocatedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Danube' title='http://yago-knowledge.org/resource/Danube'>Danube</a></td>
+<td class='tdin' width='7%'>0.30571113</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 4 - 1</b><br/> Score1 = 0.23116849<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Rhode_Island' title='http://yago-knowledge.org/resource/Rhode_Island'>Rhode Island</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/hasCapital' title='http://yago-knowledge.org/resource/hasCapital'>hasCapital</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Providence,_Rhode_Island' title='http://yago-knowledge.org/resource/Providence,_Rhode_Island'>Providence, Rhode Island</a></td>
+<td class='tdin' width='7%'>0.23116849</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 4 - 2</b><br/> Score1 = 0.20000000<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Providence,_Rhode_Island' title='http://yago-knowledge.org/resource/Providence,_Rhode_Island'>Providence, Rhode Island</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/hasNumberOfPeople' title='http://yago-knowledge.org/resource/hasNumberOfPeople'>hasNumberOfPeople</a></td>
+<td class='tdin' width='28%'>"178042"</td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 5</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.22028435</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 5 - 0</b><br/> Score1 = 0.30571113<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Vardim_Island' title='http://yago-knowledge.org/resource/Vardim_Island'>Vardim Island</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isLocatedIn' title='http://yago-knowledge.org/resource/isLocatedIn'>isLocatedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Danube' title='http://yago-knowledge.org/resource/Danube'>Danube</a></td>
+<td class='tdin' width='7%'>0.30571113</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 5 - 1</b><br/> Score1 = 0.22857001<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Rhode_Island' title='http://yago-knowledge.org/resource/Rhode_Island'>Rhode Island</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/hasCapital' title='http://yago-knowledge.org/resource/hasCapital'>hasCapital</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Providence,_Rhode_Island' title='http://yago-knowledge.org/resource/Providence,_Rhode_Island'>Providence, Rhode Island</a></td>
+<td class='tdin' width='7%'>0.22857001</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 5 - 2</b><br/> Score1 = 0.20000000<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Providence,_Rhode_Island' title='http://yago-knowledge.org/resource/Providence,_Rhode_Island'>Providence, Rhode Island</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/hasNumberOfPeople' title='http://yago-knowledge.org/resource/hasNumberOfPeople'>hasNumberOfPeople</a></td>
+<td class='tdin' width='28%'>"178042"</td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 6</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.21915490</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 6 - 0</b><br/> Score1 = 0.30571113<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Island_of_Šarengrad' title='http://yago-knowledge.org/resource/Island_of_Šarengrad'>Island of Šarengrad</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isLocatedIn' title='http://yago-knowledge.org/resource/isLocatedIn'>isLocatedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Danube' title='http://yago-knowledge.org/resource/Danube'>Danube</a></td>
+<td class='tdin' width='7%'>0.30571113</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 6 - 1</b><br/> Score1 = 0.22480518<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Rhode_Island' title='http://yago-knowledge.org/resource/Rhode_Island'>Rhode Island</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/hasCapital' title='http://yago-knowledge.org/resource/hasCapital'>hasCapital</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Providence,_Rhode_Island' title='http://yago-knowledge.org/resource/Providence,_Rhode_Island'>Providence, Rhode Island</a></td>
+<td class='tdin' width='7%'>0.22480518</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 6 - 2</b><br/> Score1 = 0.20000000<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Providence,_Rhode_Island' title='http://yago-knowledge.org/resource/Providence,_Rhode_Island'>Providence, Rhode Island</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/hasNumberOfPeople' title='http://yago-knowledge.org/resource/hasNumberOfPeople'>hasNumberOfPeople</a></td>
+<td class='tdin' width='28%'>"178042"</td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 7</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.21660206</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 7 - 0</b><br/> Score1 = 0.32504705<br/> Sim.  = 0.9156<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Danube' title='http://dbpedia.org/resource/Danube'>Danube</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/country' title='http://dbpedia.org/ontology/country'>country</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Austria' title='http://dbpedia.org/resource/Austria'>Austria</a></td>
+<td class='tdin' width='7%'>0.32504705</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Danube' title='http://yago-knowledge.org/resource/Danube'>Danube</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isLocatedIn' title='http://yago-knowledge.org/resource/isLocatedIn'>isLocatedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Austria' title='http://yago-knowledge.org/resource/Austria'>Austria</a></td>
+<td class='tdin' width='7%'>0.30571113</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 7 - 1</b><br/> Score1 = 0.20000000<br/> Sim.  = 0.9846<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Austria' title='http://yago-knowledge.org/resource/Austria'>Austria</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/hasCapital' title='http://yago-knowledge.org/resource/hasCapital'>hasCapital</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Vienna' title='http://yago-knowledge.org/resource/Vienna'>Vienna</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Austria' title='http://dbpedia.org/resource/Austria'>Austria</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/capital' title='http://dbpedia.org/ontology/capital'>capital</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Vienna' title='http://dbpedia.org/resource/Vienna'>Vienna</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 7 - 2</b><br/> Score1 = 0.20000000<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Vienna' title='http://dbpedia.org/resource/Vienna'>Vienna</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/populationTotal' title='http://dbpedia.org/ontology/populationTotal'>populationTotal</a></td>
+<td class='tdin' width='28%'>1765649</td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 8</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.21660206</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 8 - 0</b><br/> Score1 = 0.32504705<br/> Sim.  = 0.9156<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Danube' title='http://dbpedia.org/resource/Danube'>Danube</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/country' title='http://dbpedia.org/ontology/country'>country</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Austria' title='http://dbpedia.org/resource/Austria'>Austria</a></td>
+<td class='tdin' width='7%'>0.32504705</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Danube' title='http://yago-knowledge.org/resource/Danube'>Danube</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isLocatedIn' title='http://yago-knowledge.org/resource/isLocatedIn'>isLocatedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Austria' title='http://yago-knowledge.org/resource/Austria'>Austria</a></td>
+<td class='tdin' width='7%'>0.30571113</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 8 - 1</b><br/> Score1 = 0.20000000<br/> Sim.  = 0.9846<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Austria' title='http://yago-knowledge.org/resource/Austria'>Austria</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/hasCapital' title='http://yago-knowledge.org/resource/hasCapital'>hasCapital</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Vienna' title='http://yago-knowledge.org/resource/Vienna'>Vienna</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Austria' title='http://dbpedia.org/resource/Austria'>Austria</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/capital' title='http://dbpedia.org/ontology/capital'>capital</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Vienna' title='http://dbpedia.org/resource/Vienna'>Vienna</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 8 - 2</b><br/> Score1 = 0.20000000<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Vienna' title='http://yago-knowledge.org/resource/Vienna'>Vienna</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/hasNumberOfPeople' title='http://yago-knowledge.org/resource/hasNumberOfPeople'>hasNumberOfPeople</a></td>
+<td class='tdin' width='28%'>"1714142"</td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 9</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.21660206</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 9 - 0</b><br/> Score1 = 0.32504705<br/> Sim.  = 0.9156<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Danube' title='http://yago-knowledge.org/resource/Danube'>Danube</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isLocatedIn' title='http://yago-knowledge.org/resource/isLocatedIn'>isLocatedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Bulgaria' title='http://yago-knowledge.org/resource/Bulgaria'>Bulgaria</a></td>
+<td class='tdin' width='7%'>0.30571113</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Danube' title='http://dbpedia.org/resource/Danube'>Danube</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/country' title='http://dbpedia.org/ontology/country'>country</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Bulgaria' title='http://dbpedia.org/resource/Bulgaria'>Bulgaria</a></td>
+<td class='tdin' width='7%'>0.32504705</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 9 - 1</b><br/> Score1 = 0.20000000<br/> Sim.  = 0.9846<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Bulgaria' title='http://yago-knowledge.org/resource/Bulgaria'>Bulgaria</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/hasCapital' title='http://yago-knowledge.org/resource/hasCapital'>hasCapital</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Sofia' title='http://yago-knowledge.org/resource/Sofia'>Sofia</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Bulgaria' title='http://dbpedia.org/resource/Bulgaria'>Bulgaria</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/capital' title='http://dbpedia.org/ontology/capital'>capital</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Sofia' title='http://dbpedia.org/resource/Sofia'>Sofia</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 9 - 2</b><br/> Score1 = 0.20000000<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Sofia' title='http://dbpedia.org/resource/Sofia'>Sofia</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/populationTotal' title='http://dbpedia.org/ontology/populationTotal'>populationTotal</a></td>
+<td class='tdin' width='28%'>1241396</td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 10</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.21660206</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 10 - 0</b><br/> Score1 = 0.32504705<br/> Sim.  = 0.9156<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Danube' title='http://yago-knowledge.org/resource/Danube'>Danube</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isLocatedIn' title='http://yago-knowledge.org/resource/isLocatedIn'>isLocatedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Bulgaria' title='http://yago-knowledge.org/resource/Bulgaria'>Bulgaria</a></td>
+<td class='tdin' width='7%'>0.30571113</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Danube' title='http://dbpedia.org/resource/Danube'>Danube</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/country' title='http://dbpedia.org/ontology/country'>country</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Bulgaria' title='http://dbpedia.org/resource/Bulgaria'>Bulgaria</a></td>
+<td class='tdin' width='7%'>0.32504705</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 10 - 1</b><br/> Score1 = 0.20000000<br/> Sim.  = 0.9846<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Bulgaria' title='http://yago-knowledge.org/resource/Bulgaria'>Bulgaria</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/hasCapital' title='http://yago-knowledge.org/resource/hasCapital'>hasCapital</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Sofia' title='http://yago-knowledge.org/resource/Sofia'>Sofia</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Bulgaria' title='http://dbpedia.org/resource/Bulgaria'>Bulgaria</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/capital' title='http://dbpedia.org/ontology/capital'>capital</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Sofia' title='http://dbpedia.org/resource/Sofia'>Sofia</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 10 - 2</b><br/> Score1 = 0.20000000<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Sofia' title='http://yago-knowledge.org/resource/Sofia'>Sofia</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/hasNumberOfPeople' title='http://yago-knowledge.org/resource/hasNumberOfPeople'>hasNumberOfPeople</a></td>
+<td class='tdin' width='28%'>"1204685"</td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 11</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.21660206</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 11 - 0</b><br/> Score1 = 0.32504705<br/> Sim.  = 0.9156<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Danube' title='http://yago-knowledge.org/resource/Danube'>Danube</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isLocatedIn' title='http://yago-knowledge.org/resource/isLocatedIn'>isLocatedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Germany' title='http://yago-knowledge.org/resource/Germany'>Germany</a></td>
+<td class='tdin' width='7%'>0.30571113</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Danube' title='http://dbpedia.org/resource/Danube'>Danube</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/country' title='http://dbpedia.org/ontology/country'>country</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Germany' title='http://dbpedia.org/resource/Germany'>Germany</a></td>
+<td class='tdin' width='7%'>0.32504705</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 11 - 1</b><br/> Score1 = 0.20000000<br/> Sim.  = 0.9846<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Germany' title='http://dbpedia.org/resource/Germany'>Germany</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/capital' title='http://dbpedia.org/ontology/capital'>capital</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Berlin' title='http://dbpedia.org/resource/Berlin'>Berlin</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Germany' title='http://yago-knowledge.org/resource/Germany'>Germany</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/hasCapital' title='http://yago-knowledge.org/resource/hasCapital'>hasCapital</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Berlin' title='http://yago-knowledge.org/resource/Berlin'>Berlin</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 11 - 2</b><br/> Score1 = 0.20000000<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Berlin' title='http://dbpedia.org/resource/Berlin'>Berlin</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/populationTotal' title='http://dbpedia.org/ontology/populationTotal'>populationTotal</a></td>
+<td class='tdin' width='28%'>3415091</td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 12</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.21660206</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 12 - 0</b><br/> Score1 = 0.32504705<br/> Sim.  = 0.9156<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Danube' title='http://yago-knowledge.org/resource/Danube'>Danube</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isLocatedIn' title='http://yago-knowledge.org/resource/isLocatedIn'>isLocatedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Germany' title='http://yago-knowledge.org/resource/Germany'>Germany</a></td>
+<td class='tdin' width='7%'>0.30571113</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Danube' title='http://dbpedia.org/resource/Danube'>Danube</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/country' title='http://dbpedia.org/ontology/country'>country</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Germany' title='http://dbpedia.org/resource/Germany'>Germany</a></td>
+<td class='tdin' width='7%'>0.32504705</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 12 - 1</b><br/> Score1 = 0.20000000<br/> Sim.  = 0.9846<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Germany' title='http://dbpedia.org/resource/Germany'>Germany</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/capital' title='http://dbpedia.org/ontology/capital'>capital</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Berlin' title='http://dbpedia.org/resource/Berlin'>Berlin</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Germany' title='http://yago-knowledge.org/resource/Germany'>Germany</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/hasCapital' title='http://yago-knowledge.org/resource/hasCapital'>hasCapital</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Berlin' title='http://yago-knowledge.org/resource/Berlin'>Berlin</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 12 - 2</b><br/> Score1 = 0.20000000<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Berlin' title='http://yago-knowledge.org/resource/Berlin'>Berlin</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/hasNumberOfPeople' title='http://yago-knowledge.org/resource/hasNumberOfPeople'>hasNumberOfPeople</a></td>
+<td class='tdin' width='28%'>"3499879"</td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 13</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.21660206</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 13 - 0</b><br/> Score1 = 0.32504705<br/> Sim.  = 0.9156<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Danube' title='http://yago-knowledge.org/resource/Danube'>Danube</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isLocatedIn' title='http://yago-knowledge.org/resource/isLocatedIn'>isLocatedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Hungary' title='http://yago-knowledge.org/resource/Hungary'>Hungary</a></td>
+<td class='tdin' width='7%'>0.30571113</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Danube' title='http://dbpedia.org/resource/Danube'>Danube</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/country' title='http://dbpedia.org/ontology/country'>country</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Hungary' title='http://dbpedia.org/resource/Hungary'>Hungary</a></td>
+<td class='tdin' width='7%'>0.32504705</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 13 - 1</b><br/> Score1 = 0.20000000<br/> Sim.  = 0.9846<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Hungary' title='http://dbpedia.org/resource/Hungary'>Hungary</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/capital' title='http://dbpedia.org/ontology/capital'>capital</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Budapest' title='http://dbpedia.org/resource/Budapest'>Budapest</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Hungary' title='http://yago-knowledge.org/resource/Hungary'>Hungary</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/hasCapital' title='http://yago-knowledge.org/resource/hasCapital'>hasCapital</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Budapest' title='http://yago-knowledge.org/resource/Budapest'>Budapest</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 13 - 2</b><br/> Score1 = 0.20000000<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Budapest' title='http://dbpedia.org/resource/Budapest'>Budapest</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/populationTotal' title='http://dbpedia.org/ontology/populationTotal'>populationTotal</a></td>
+<td class='tdin' width='28%'>1740041</td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 14</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.21660206</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 14 - 0</b><br/> Score1 = 0.32504705<br/> Sim.  = 0.9156<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Danube' title='http://yago-knowledge.org/resource/Danube'>Danube</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isLocatedIn' title='http://yago-knowledge.org/resource/isLocatedIn'>isLocatedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Hungary' title='http://yago-knowledge.org/resource/Hungary'>Hungary</a></td>
+<td class='tdin' width='7%'>0.30571113</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Danube' title='http://dbpedia.org/resource/Danube'>Danube</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/country' title='http://dbpedia.org/ontology/country'>country</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Hungary' title='http://dbpedia.org/resource/Hungary'>Hungary</a></td>
+<td class='tdin' width='7%'>0.32504705</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 14 - 1</b><br/> Score1 = 0.20000000<br/> Sim.  = 0.9846<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Hungary' title='http://dbpedia.org/resource/Hungary'>Hungary</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/capital' title='http://dbpedia.org/ontology/capital'>capital</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Budapest' title='http://dbpedia.org/resource/Budapest'>Budapest</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Hungary' title='http://yago-knowledge.org/resource/Hungary'>Hungary</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/hasCapital' title='http://yago-knowledge.org/resource/hasCapital'>hasCapital</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Budapest' title='http://yago-knowledge.org/resource/Budapest'>Budapest</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 14 - 2</b><br/> Score1 = 0.20000000<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Budapest' title='http://yago-knowledge.org/resource/Budapest'>Budapest</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/hasNumberOfPeople' title='http://yago-knowledge.org/resource/hasNumberOfPeople'>hasNumberOfPeople</a></td>
+<td class='tdin' width='28%'>"1737000"</td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 15</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.21660206</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 15 - 0</b><br/> Score1 = 0.32504705<br/> Sim.  = 0.9156<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Danube' title='http://yago-knowledge.org/resource/Danube'>Danube</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isLocatedIn' title='http://yago-knowledge.org/resource/isLocatedIn'>isLocatedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Serbia' title='http://yago-knowledge.org/resource/Serbia'>Serbia</a></td>
+<td class='tdin' width='7%'>0.30571113</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Danube' title='http://dbpedia.org/resource/Danube'>Danube</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/country' title='http://dbpedia.org/ontology/country'>country</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Serbia' title='http://dbpedia.org/resource/Serbia'>Serbia</a></td>
+<td class='tdin' width='7%'>0.32504705</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 15 - 1</b><br/> Score1 = 0.20000000<br/> Sim.  = 0.9846<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Serbia' title='http://dbpedia.org/resource/Serbia'>Serbia</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/capital' title='http://dbpedia.org/ontology/capital'>capital</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Belgrade' title='http://dbpedia.org/resource/Belgrade'>Belgrade</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Serbia' title='http://yago-knowledge.org/resource/Serbia'>Serbia</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/hasCapital' title='http://yago-knowledge.org/resource/hasCapital'>hasCapital</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Belgrade' title='http://yago-knowledge.org/resource/Belgrade'>Belgrade</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 15 - 2</b><br/> Score1 = 0.20000000<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Belgrade' title='http://dbpedia.org/resource/Belgrade'>Belgrade</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/populationTotal' title='http://dbpedia.org/ontology/populationTotal'>populationTotal</a></td>
+<td class='tdin' width='28%'>1166763</td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 16</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.21660206</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 16 - 0</b><br/> Score1 = 0.32504705<br/> Sim.  = 0.9156<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Danube' title='http://yago-knowledge.org/resource/Danube'>Danube</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isLocatedIn' title='http://yago-knowledge.org/resource/isLocatedIn'>isLocatedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Serbia' title='http://yago-knowledge.org/resource/Serbia'>Serbia</a></td>
+<td class='tdin' width='7%'>0.30571113</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Danube' title='http://dbpedia.org/resource/Danube'>Danube</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/country' title='http://dbpedia.org/ontology/country'>country</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Serbia' title='http://dbpedia.org/resource/Serbia'>Serbia</a></td>
+<td class='tdin' width='7%'>0.32504705</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 16 - 1</b><br/> Score1 = 0.20000000<br/> Sim.  = 0.9846<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Serbia' title='http://dbpedia.org/resource/Serbia'>Serbia</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/capital' title='http://dbpedia.org/ontology/capital'>capital</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Belgrade' title='http://dbpedia.org/resource/Belgrade'>Belgrade</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Serbia' title='http://yago-knowledge.org/resource/Serbia'>Serbia</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/hasCapital' title='http://yago-knowledge.org/resource/hasCapital'>hasCapital</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Belgrade' title='http://yago-knowledge.org/resource/Belgrade'>Belgrade</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 16 - 2</b><br/> Score1 = 0.20000000<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Belgrade' title='http://yago-knowledge.org/resource/Belgrade'>Belgrade</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/hasNumberOfPeople' title='http://yago-knowledge.org/resource/hasNumberOfPeople'>hasNumberOfPeople</a></td>
+<td class='tdin' width='28%'>"1154589"</td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 17</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.21424308</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 17 - 0</b><br/> Score1 = 0.32504705<br/> Sim.  = 0.9156<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Danube' title='http://dbpedia.org/resource/Danube'>Danube</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/country' title='http://dbpedia.org/ontology/country'>country</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Croatia' title='http://dbpedia.org/resource/Croatia'>Croatia</a></td>
+<td class='tdin' width='7%'>0.32504705</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Danube' title='http://yago-knowledge.org/resource/Danube'>Danube</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isLocatedIn' title='http://yago-knowledge.org/resource/isLocatedIn'>isLocatedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Croatia' title='http://yago-knowledge.org/resource/Croatia'>Croatia</a></td>
+<td class='tdin' width='7%'>0.30571113</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 17 - 1</b><br/> Score1 = 0.20000000<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Croatia' title='http://yago-knowledge.org/resource/Croatia'>Croatia</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/hasCapital' title='http://yago-knowledge.org/resource/hasCapital'>hasCapital</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Zagreb' title='http://yago-knowledge.org/resource/Zagreb'>Zagreb</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 17 - 2</b><br/> Score1 = 0.20000000<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Zagreb' title='http://yago-knowledge.org/resource/Zagreb'>Zagreb</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/hasNumberOfPeople' title='http://yago-knowledge.org/resource/hasNumberOfPeople'>hasNumberOfPeople</a></td>
+<td class='tdin' width='28%'>"792875"</td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 18</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.21424308</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 18 - 0</b><br/> Score1 = 0.32504705<br/> Sim.  = 0.9156<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Danube' title='http://dbpedia.org/resource/Danube'>Danube</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/country' title='http://dbpedia.org/ontology/country'>country</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Romania' title='http://dbpedia.org/resource/Romania'>Romania</a></td>
+<td class='tdin' width='7%'>0.32504705</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Danube' title='http://yago-knowledge.org/resource/Danube'>Danube</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isLocatedIn' title='http://yago-knowledge.org/resource/isLocatedIn'>isLocatedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Romania' title='http://yago-knowledge.org/resource/Romania'>Romania</a></td>
+<td class='tdin' width='7%'>0.30571113</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 18 - 1</b><br/> Score1 = 0.20000000<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Romania' title='http://yago-knowledge.org/resource/Romania'>Romania</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/hasCapital' title='http://yago-knowledge.org/resource/hasCapital'>hasCapital</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Bucharest' title='http://yago-knowledge.org/resource/Bucharest'>Bucharest</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 18 - 2</b><br/> Score1 = 0.20000000<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Bucharest' title='http://yago-knowledge.org/resource/Bucharest'>Bucharest</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/hasNumberOfPeople' title='http://yago-knowledge.org/resource/hasNumberOfPeople'>hasNumberOfPeople</a></td>
+<td class='tdin' width='28%'>"1677985"</td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 19</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.21171335</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 19 - 0</b><br/> Score1 = 0.30571113<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Danube' title='http://yago-knowledge.org/resource/Danube'>Danube</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isLocatedIn' title='http://yago-knowledge.org/resource/isLocatedIn'>isLocatedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Ukraine' title='http://yago-knowledge.org/resource/Ukraine'>Ukraine</a></td>
+<td class='tdin' width='7%'>0.30571113</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 19 - 1</b><br/> Score1 = 0.20000000<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Ukraine' title='http://yago-knowledge.org/resource/Ukraine'>Ukraine</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/hasCapital' title='http://yago-knowledge.org/resource/hasCapital'>hasCapital</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Kiev' title='http://yago-knowledge.org/resource/Kiev'>Kiev</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 19 - 2</b><br/> Score1 = 0.20000000<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Kiev' title='http://yago-knowledge.org/resource/Kiev'>Kiev</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/hasNumberOfPeople' title='http://yago-knowledge.org/resource/hasNumberOfPeople'>hasNumberOfPeople</a></td>
+<td class='tdin' width='28%'>"2797553"</td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 20</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.21171335</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 20 - 0</b><br/> Score1 = 0.30571113<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Danube' title='http://yago-knowledge.org/resource/Danube'>Danube</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isLocatedIn' title='http://yago-knowledge.org/resource/isLocatedIn'>isLocatedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Moldova' title='http://yago-knowledge.org/resource/Moldova'>Moldova</a></td>
+<td class='tdin' width='7%'>0.30571113</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 20 - 1</b><br/> Score1 = 0.20000000<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Moldova' title='http://yago-knowledge.org/resource/Moldova'>Moldova</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/hasCapital' title='http://yago-knowledge.org/resource/hasCapital'>hasCapital</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Chişinău' title='http://yago-knowledge.org/resource/Chişinău'>Chişinău</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 20 - 2</b><br/> Score1 = 0.20000000<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Chişinău' title='http://yago-knowledge.org/resource/Chişinău'>Chişinău</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/hasNumberOfPeople' title='http://yago-knowledge.org/resource/hasNumberOfPeople'>hasNumberOfPeople</a></td>
+<td class='tdin' width='28%'>"723500"</td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 21</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.19679567</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 21 - 0</b><br/> Score1 = 0.25598553<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Danube_Delta' title='http://yago-knowledge.org/resource/Danube_Delta'>Danube Delta</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isLocatedIn' title='http://yago-knowledge.org/resource/isLocatedIn'>isLocatedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Romania' title='http://yago-knowledge.org/resource/Romania'>Romania</a></td>
+<td class='tdin' width='7%'>0.25598553</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 21 - 1</b><br/> Score1 = 0.20000000<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Romania' title='http://yago-knowledge.org/resource/Romania'>Romania</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/hasCapital' title='http://yago-knowledge.org/resource/hasCapital'>hasCapital</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Bucharest' title='http://yago-knowledge.org/resource/Bucharest'>Bucharest</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 21 - 2</b><br/> Score1 = 0.20000000<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Bucharest' title='http://yago-knowledge.org/resource/Bucharest'>Bucharest</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/hasNumberOfPeople' title='http://yago-knowledge.org/resource/hasNumberOfPeople'>hasNumberOfPeople</a></td>
+<td class='tdin' width='28%'>"1677985"</td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 22</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.19550665</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 22 - 0</b><br/> Score1 = 0.25168879<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Danube_Wings' title='http://yago-knowledge.org/resource/Danube_Wings'>Danube Wings</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isLocatedIn' title='http://yago-knowledge.org/resource/isLocatedIn'>isLocatedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Bratislava' title='http://yago-knowledge.org/resource/Bratislava'>Bratislava</a></td>
+<td class='tdin' width='7%'>0.25168879</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 22 - 1</b><br/> Score1 = 0.20000000<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Slovakia' title='http://yago-knowledge.org/resource/Slovakia'>Slovakia</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/hasCapital' title='http://yago-knowledge.org/resource/hasCapital'>hasCapital</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Bratislava' title='http://yago-knowledge.org/resource/Bratislava'>Bratislava</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 22 - 2</b><br/> Score1 = 0.20000000<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Slovakia' title='http://yago-knowledge.org/resource/Slovakia'>Slovakia</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/hasNumberOfPeople' title='http://yago-knowledge.org/resource/hasNumberOfPeople'>hasNumberOfPeople</a></td>
+<td class='tdin' width='28%'>"5445324"</td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 23</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.18060206</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 23 - 0</b><br/> Score1 = 0.32504705<br/> Sim.  = 0.9156<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Danube' title='http://dbpedia.org/resource/Danube'>Danube</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/country' title='http://dbpedia.org/ontology/country'>country</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Austria' title='http://dbpedia.org/resource/Austria'>Austria</a></td>
+<td class='tdin' width='7%'>0.32504705</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Danube' title='http://yago-knowledge.org/resource/Danube'>Danube</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isLocatedIn' title='http://yago-knowledge.org/resource/isLocatedIn'>isLocatedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Austria' title='http://yago-knowledge.org/resource/Austria'>Austria</a></td>
+<td class='tdin' width='7%'>0.30571113</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 23 - 1</b><br/> Score1 = 0.20000000<br/> Sim.  = 0.9846<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Austria' title='http://yago-knowledge.org/resource/Austria'>Austria</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/hasCapital' title='http://yago-knowledge.org/resource/hasCapital'>hasCapital</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Vienna' title='http://yago-knowledge.org/resource/Vienna'>Vienna</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Austria' title='http://dbpedia.org/resource/Austria'>Austria</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/capital' title='http://dbpedia.org/ontology/capital'>capital</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Vienna' title='http://dbpedia.org/resource/Vienna'>Vienna</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 23 - 2</b><br/> Score1 = 0.08000000<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Vienna' title='http://yago-knowledge.org/resource/Vienna'>Vienna</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/hasPopulationDensity' title='http://yago-knowledge.org/resource/hasPopulationDensity'>hasPopulationDensity</a></td>
+<td class='tdin' width='28%'>"4002.2"</td>
+<td class='tdin' width='7%'>0.08000000</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 24</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.18060206</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 24 - 0</b><br/> Score1 = 0.32504705<br/> Sim.  = 0.9156<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Danube' title='http://yago-knowledge.org/resource/Danube'>Danube</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isLocatedIn' title='http://yago-knowledge.org/resource/isLocatedIn'>isLocatedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Bulgaria' title='http://yago-knowledge.org/resource/Bulgaria'>Bulgaria</a></td>
+<td class='tdin' width='7%'>0.30571113</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Danube' title='http://dbpedia.org/resource/Danube'>Danube</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/country' title='http://dbpedia.org/ontology/country'>country</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Bulgaria' title='http://dbpedia.org/resource/Bulgaria'>Bulgaria</a></td>
+<td class='tdin' width='7%'>0.32504705</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 24 - 1</b><br/> Score1 = 0.20000000<br/> Sim.  = 0.9846<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Bulgaria' title='http://yago-knowledge.org/resource/Bulgaria'>Bulgaria</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/hasCapital' title='http://yago-knowledge.org/resource/hasCapital'>hasCapital</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Sofia' title='http://yago-knowledge.org/resource/Sofia'>Sofia</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Bulgaria' title='http://dbpedia.org/resource/Bulgaria'>Bulgaria</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/capital' title='http://dbpedia.org/ontology/capital'>capital</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Sofia' title='http://dbpedia.org/resource/Sofia'>Sofia</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 24 - 2</b><br/> Score1 = 0.08000000<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Sofia' title='http://yago-knowledge.org/resource/Sofia'>Sofia</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/hasPopulationDensity' title='http://yago-knowledge.org/resource/hasPopulationDensity'>hasPopulationDensity</a></td>
+<td class='tdin' width='28%'>"2448"</td>
+<td class='tdin' width='7%'>0.08000000</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 25</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.18060206</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 25 - 0</b><br/> Score1 = 0.32504705<br/> Sim.  = 0.9156<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Danube' title='http://yago-knowledge.org/resource/Danube'>Danube</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isLocatedIn' title='http://yago-knowledge.org/resource/isLocatedIn'>isLocatedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Serbia' title='http://yago-knowledge.org/resource/Serbia'>Serbia</a></td>
+<td class='tdin' width='7%'>0.30571113</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Danube' title='http://dbpedia.org/resource/Danube'>Danube</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/country' title='http://dbpedia.org/ontology/country'>country</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Serbia' title='http://dbpedia.org/resource/Serbia'>Serbia</a></td>
+<td class='tdin' width='7%'>0.32504705</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 25 - 1</b><br/> Score1 = 0.20000000<br/> Sim.  = 0.9846<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Serbia' title='http://dbpedia.org/resource/Serbia'>Serbia</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/capital' title='http://dbpedia.org/ontology/capital'>capital</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Belgrade' title='http://dbpedia.org/resource/Belgrade'>Belgrade</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Serbia' title='http://yago-knowledge.org/resource/Serbia'>Serbia</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/hasCapital' title='http://yago-knowledge.org/resource/hasCapital'>hasCapital</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Belgrade' title='http://yago-knowledge.org/resource/Belgrade'>Belgrade</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 25 - 2</b><br/> Score1 = 0.08000000<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Belgrade' title='http://yago-knowledge.org/resource/Belgrade'>Belgrade</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/hasPopulationDensity' title='http://yago-knowledge.org/resource/hasPopulationDensity'>hasPopulationDensity</a></td>
+<td class='tdin' width='28%'>"3207.5"</td>
+<td class='tdin' width='7%'>0.08000000</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 26</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.17824308</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 26 - 0</b><br/> Score1 = 0.32504705<br/> Sim.  = 0.9156<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Danube' title='http://dbpedia.org/resource/Danube'>Danube</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/country' title='http://dbpedia.org/ontology/country'>country</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Romania' title='http://dbpedia.org/resource/Romania'>Romania</a></td>
+<td class='tdin' width='7%'>0.32504705</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Danube' title='http://yago-knowledge.org/resource/Danube'>Danube</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isLocatedIn' title='http://yago-knowledge.org/resource/isLocatedIn'>isLocatedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Romania' title='http://yago-knowledge.org/resource/Romania'>Romania</a></td>
+<td class='tdin' width='7%'>0.30571113</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 26 - 1</b><br/> Score1 = 0.20000000<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Romania' title='http://yago-knowledge.org/resource/Romania'>Romania</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/hasCapital' title='http://yago-knowledge.org/resource/hasCapital'>hasCapital</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Bucharest' title='http://yago-knowledge.org/resource/Bucharest'>Bucharest</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 26 - 2</b><br/> Score1 = 0.08000000<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Bucharest' title='http://yago-knowledge.org/resource/Bucharest'>Bucharest</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/hasPopulationDensity' title='http://yago-knowledge.org/resource/hasPopulationDensity'>hasPopulationDensity</a></td>
+<td class='tdin' width='28%'>"8518.6"</td>
+<td class='tdin' width='7%'>0.08000000</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 27</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.17571335</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 27 - 0</b><br/> Score1 = 0.30571113<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Danube' title='http://yago-knowledge.org/resource/Danube'>Danube</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isLocatedIn' title='http://yago-knowledge.org/resource/isLocatedIn'>isLocatedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Ukraine' title='http://yago-knowledge.org/resource/Ukraine'>Ukraine</a></td>
+<td class='tdin' width='7%'>0.30571113</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 27 - 1</b><br/> Score1 = 0.20000000<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Ukraine' title='http://yago-knowledge.org/resource/Ukraine'>Ukraine</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/hasCapital' title='http://yago-knowledge.org/resource/hasCapital'>hasCapital</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Kiev' title='http://yago-knowledge.org/resource/Kiev'>Kiev</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 27 - 2</b><br/> Score1 = 0.08000000<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Kiev' title='http://yago-knowledge.org/resource/Kiev'>Kiev</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/hasPopulationDensity' title='http://yago-knowledge.org/resource/hasPopulationDensity'>hasPopulationDensity</a></td>
+<td class='tdin' width='28%'>"3299"</td>
+<td class='tdin' width='7%'>0.08000000</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 28</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.17571335</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 28 - 0</b><br/> Score1 = 0.30571113<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Danube' title='http://yago-knowledge.org/resource/Danube'>Danube</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isLocatedIn' title='http://yago-knowledge.org/resource/isLocatedIn'>isLocatedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Moldova' title='http://yago-knowledge.org/resource/Moldova'>Moldova</a></td>
+<td class='tdin' width='7%'>0.30571113</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 28 - 1</b><br/> Score1 = 0.20000000<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Moldova' title='http://yago-knowledge.org/resource/Moldova'>Moldova</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/hasCapital' title='http://yago-knowledge.org/resource/hasCapital'>hasCapital</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Chişinău' title='http://yago-knowledge.org/resource/Chişinău'>Chişinău</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 28 - 2</b><br/> Score1 = 0.08000000<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Chişinău' title='http://yago-knowledge.org/resource/Chişinău'>Chişinău</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/hasPopulationDensity' title='http://yago-knowledge.org/resource/hasPopulationDensity'>hasPopulationDensity</a></td>
+<td class='tdin' width='28%'>"1392.3"</td>
+<td class='tdin' width='7%'>0.08000000</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 29</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.16079567</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 29 - 0</b><br/> Score1 = 0.25598553<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Danube_Delta' title='http://yago-knowledge.org/resource/Danube_Delta'>Danube Delta</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isLocatedIn' title='http://yago-knowledge.org/resource/isLocatedIn'>isLocatedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Romania' title='http://yago-knowledge.org/resource/Romania'>Romania</a></td>
+<td class='tdin' width='7%'>0.25598553</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 29 - 1</b><br/> Score1 = 0.20000000<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Romania' title='http://yago-knowledge.org/resource/Romania'>Romania</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/hasCapital' title='http://yago-knowledge.org/resource/hasCapital'>hasCapital</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Bucharest' title='http://yago-knowledge.org/resource/Bucharest'>Bucharest</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 29 - 2</b><br/> Score1 = 0.08000000<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Bucharest' title='http://yago-knowledge.org/resource/Bucharest'>Bucharest</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/hasPopulationDensity' title='http://yago-knowledge.org/resource/hasPopulationDensity'>hasPopulationDensity</a></td>
+<td class='tdin' width='28%'>"8518.6"</td>
+<td class='tdin' width='7%'>0.08000000</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 30</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.15950664</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 30 - 0</b><br/> Score1 = 0.25168879<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Danube_Wings' title='http://yago-knowledge.org/resource/Danube_Wings'>Danube Wings</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isLocatedIn' title='http://yago-knowledge.org/resource/isLocatedIn'>isLocatedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Bratislava' title='http://yago-knowledge.org/resource/Bratislava'>Bratislava</a></td>
+<td class='tdin' width='7%'>0.25168879</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 30 - 1</b><br/> Score1 = 0.20000000<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Slovakia' title='http://yago-knowledge.org/resource/Slovakia'>Slovakia</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/hasCapital' title='http://yago-knowledge.org/resource/hasCapital'>hasCapital</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Bratislava' title='http://yago-knowledge.org/resource/Bratislava'>Bratislava</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 30 - 2</b><br/> Score1 = 0.08000000<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Slovakia' title='http://yago-knowledge.org/resource/Slovakia'>Slovakia</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/hasPopulationDensity' title='http://yago-knowledge.org/resource/hasPopulationDensity'>hasPopulationDensity</a></td>
+<td class='tdin' width='28%'>"111"</td>
+<td class='tdin' width='7%'>0.08000000</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 31</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.12277867</b></td><td width='10%' align='center'><b> L </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 31 - 0</b><br/> Score1 = 0.30571113<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Bird_Island,_Slovakia,_Šamorín' title='http://yago-knowledge.org/resource/Bird_Island,_Slovakia,_Šamorín'>Bird Island, Slovakia, Šamorín</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isLocatedIn' title='http://yago-knowledge.org/resource/isLocatedIn'>isLocatedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Danube' title='http://yago-knowledge.org/resource/Danube'>Danube</a></td>
+<td class='tdin' width='7%'>0.30571113</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 31 - 1</b><br/> Score1 = 0.28665180<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/country/SK' title='http://data.linkedmdb.org/resource/country/SK'>Slovakia</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/country_capital' title='http://data.linkedmdb.org/resource/movie/country_capital'>country_capital</a></td>
+<td class='tdin' width='28%'>Bratislava</td>
+<td class='tdin' width='7%'>0.28665180</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 31 - 2</b><br/> Score1 = 0.31710870<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Bratislava' title='http://dbpedia.org/resource/Bratislava'>Bratislava</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/populationTotal' title='http://dbpedia.org/ontology/populationTotal'>populationTotal</a></td>
+<td class='tdin' width='28%'>415589</td>
+<td class='tdin' width='7%'>0.31710870</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 32</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.11807671</b></td><td width='10%' align='center'><b> L </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 32 - 0</b><br/> Score1 = 0.30571113<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Bird_Island,_Slovakia,_Šamorín' title='http://yago-knowledge.org/resource/Bird_Island,_Slovakia,_Šamorín'>Bird Island, Slovakia, Šamorín</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isLocatedIn' title='http://yago-knowledge.org/resource/isLocatedIn'>isLocatedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Danube' title='http://yago-knowledge.org/resource/Danube'>Danube</a></td>
+<td class='tdin' width='7%'>0.30571113</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 32 - 1</b><br/> Score1 = 0.28665180<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/country/SK' title='http://data.linkedmdb.org/resource/country/SK'>Slovakia</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/country_capital' title='http://data.linkedmdb.org/resource/movie/country_capital'>country_capital</a></td>
+<td class='tdin' width='28%'>Bratislava</td>
+<td class='tdin' width='7%'>0.28665180</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 32 - 2</b><br/> Score1 = 0.28227933<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Bratislava_I' title='http://yago-knowledge.org/resource/Bratislava_I'>Bratislava I</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/hasNumberOfPeople' title='http://yago-knowledge.org/resource/hasNumberOfPeople'>hasNumberOfPeople</a></td>
+<td class='tdin' width='28%'>"42858"</td>
+<td class='tdin' width='7%'>0.28227933</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 33</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.11633369</b></td><td width='10%' align='center'><b> L </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 33 - 0</b><br/> Score1 = 0.30571113<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Island_of_Vukovar' title='http://yago-knowledge.org/resource/Island_of_Vukovar'>Island of Vukovar</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isLocatedIn' title='http://yago-knowledge.org/resource/isLocatedIn'>isLocatedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Danube' title='http://yago-knowledge.org/resource/Danube'>Danube</a></td>
+<td class='tdin' width='7%'>0.30571113</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 33 - 1</b><br/> Score1 = 0.27384042<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Syrmia_County' title='http://dbpedia.org/resource/Syrmia_County'>Syrmia County</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/capital' title='http://dbpedia.org/ontology/capital'>capital</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Vukovar' title='http://dbpedia.org/resource/Vukovar'>Vukovar</a></td>
+<td class='tdin' width='7%'>0.27384042</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 33 - 2</b><br/> Score1 = 0.28217944<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Vukovar-Syrmia_County' title='http://yago-knowledge.org/resource/Vukovar-Syrmia_County'>Vukovar-Syrmia County</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/hasNumberOfPeople' title='http://yago-knowledge.org/resource/hasNumberOfPeople'>hasNumberOfPeople</a></td>
+<td class='tdin' width='28%'>"180117"</td>
+<td class='tdin' width='7%'>0.28217944</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 34</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.11501738</b></td><td width='10%' align='center'><b> L </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 34 - 0</b><br/> Score1 = 0.30571113<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Island_of_Vukovar' title='http://yago-knowledge.org/resource/Island_of_Vukovar'>Island of Vukovar</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isLocatedIn' title='http://yago-knowledge.org/resource/isLocatedIn'>isLocatedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Danube' title='http://yago-knowledge.org/resource/Danube'>Danube</a></td>
+<td class='tdin' width='7%'>0.30571113</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 34 - 1</b><br/> Score1 = 0.27384042<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Syrmia_Oblast' title='http://dbpedia.org/resource/Syrmia_Oblast'>Syrmia Oblast</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/capital' title='http://dbpedia.org/ontology/capital'>capital</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Vukovar' title='http://dbpedia.org/resource/Vukovar'>Vukovar</a></td>
+<td class='tdin' width='7%'>0.27384042</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 34 - 2</b><br/> Score1 = 0.27242903<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Syrmia_District' title='http://yago-knowledge.org/resource/Syrmia_District'>Syrmia District</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/hasNumberOfPeople' title='http://yago-knowledge.org/resource/hasNumberOfPeople'>hasNumberOfPeople</a></td>
+<td class='tdin' width='28%'>"311053"</td>
+<td class='tdin' width='7%'>0.27242903</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 35</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.11454250</b></td><td width='10%' align='center'><b> L </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 35 - 0</b><br/> Score1 = 0.30571113<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Island_of_Vukovar' title='http://yago-knowledge.org/resource/Island_of_Vukovar'>Island of Vukovar</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isLocatedIn' title='http://yago-knowledge.org/resource/isLocatedIn'>isLocatedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Danube' title='http://yago-knowledge.org/resource/Danube'>Danube</a></td>
+<td class='tdin' width='7%'>0.30571113</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 35 - 1</b><br/> Score1 = 0.27384042<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Syrmia_Oblast' title='http://dbpedia.org/resource/Syrmia_Oblast'>Syrmia Oblast</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/capital' title='http://dbpedia.org/ontology/capital'>capital</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Vukovar' title='http://dbpedia.org/resource/Vukovar'>Vukovar</a></td>
+<td class='tdin' width='7%'>0.27384042</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 35 - 2</b><br/> Score1 = 0.26891138<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Vinnytsia_Oblast' title='http://yago-knowledge.org/resource/Vinnytsia_Oblast'>Vinnytsia Oblast</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/hasNumberOfPeople' title='http://yago-knowledge.org/resource/hasNumberOfPeople'>hasNumberOfPeople</a></td>
+<td class='tdin' width='28%'>"1691061"</td>
+<td class='tdin' width='7%'>0.26891138</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 36</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.11433903</b></td><td width='10%' align='center'><b> L </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 36 - 0</b><br/> Score1 = 0.30571113<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Island_of_Vukovar' title='http://yago-knowledge.org/resource/Island_of_Vukovar'>Island of Vukovar</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isLocatedIn' title='http://yago-knowledge.org/resource/isLocatedIn'>isLocatedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Danube' title='http://yago-knowledge.org/resource/Danube'>Danube</a></td>
+<td class='tdin' width='7%'>0.30571113</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 36 - 1</b><br/> Score1 = 0.27384042<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Syrmia_Oblast' title='http://dbpedia.org/resource/Syrmia_Oblast'>Syrmia Oblast</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/capital' title='http://dbpedia.org/ontology/capital'>capital</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Vukovar' title='http://dbpedia.org/resource/Vukovar'>Vukovar</a></td>
+<td class='tdin' width='7%'>0.27384042</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 36 - 2</b><br/> Score1 = 0.26740422<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Zaporizhia_Oblast' title='http://yago-knowledge.org/resource/Zaporizhia_Oblast'>Zaporizhia Oblast</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/hasNumberOfPeople' title='http://yago-knowledge.org/resource/hasNumberOfPeople'>hasNumberOfPeople</a></td>
+<td class='tdin' width='28%'>"1877200"</td>
+<td class='tdin' width='7%'>0.26740422</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 37</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.11223893</b></td><td width='10%' align='center'><b> L </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 37 - 0</b><br/> Score1 = 0.30571113<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Island_of_Vukovar' title='http://yago-knowledge.org/resource/Island_of_Vukovar'>Island of Vukovar</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isLocatedIn' title='http://yago-knowledge.org/resource/isLocatedIn'>isLocatedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Danube' title='http://yago-knowledge.org/resource/Danube'>Danube</a></td>
+<td class='tdin' width='7%'>0.30571113</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 37 - 1</b><br/> Score1 = 0.27384042<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Syrmia_County' title='http://dbpedia.org/resource/Syrmia_County'>Syrmia County</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/capital' title='http://dbpedia.org/ontology/capital'>capital</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Vukovar' title='http://dbpedia.org/resource/Vukovar'>Vukovar</a></td>
+<td class='tdin' width='7%'>0.27384042</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 37 - 2</b><br/> Score1 = 0.25184793<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Otok,_Vukovar-Syrmia_County' title='http://yago-knowledge.org/resource/Otok,_Vukovar-Syrmia_County'>Otok, Vukovar-Syrmia County</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/hasNumberOfPeople' title='http://yago-knowledge.org/resource/hasNumberOfPeople'>hasNumberOfPeople</a></td>
+<td class='tdin' width='28%'>"6366"</td>
+<td class='tdin' width='7%'>0.25184793</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 38</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.11221906</b></td><td width='10%' align='center'><b> L </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 38 - 0</b><br/> Score1 = 0.32504705<br/> Sim.  = 0.9156<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Danube' title='http://yago-knowledge.org/resource/Danube'>Danube</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isLocatedIn' title='http://yago-knowledge.org/resource/isLocatedIn'>isLocatedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Slovakia' title='http://yago-knowledge.org/resource/Slovakia'>Slovakia</a></td>
+<td class='tdin' width='7%'>0.30571113</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Danube' title='http://dbpedia.org/resource/Danube'>Danube</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/country' title='http://dbpedia.org/ontology/country'>country</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Slovakia' title='http://dbpedia.org/resource/Slovakia'>Slovakia</a></td>
+<td class='tdin' width='7%'>0.32504705</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 38 - 1</b><br/> Score1 = 0.20000000<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Slovakia' title='http://yago-knowledge.org/resource/Slovakia'>Slovakia</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/hasCapital' title='http://yago-knowledge.org/resource/hasCapital'>hasCapital</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Bratislava' title='http://yago-knowledge.org/resource/Bratislava'>Bratislava</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 38 - 2</b><br/> Score1 = 0.31710870<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Bratislava' title='http://dbpedia.org/resource/Bratislava'>Bratislava</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/populationTotal' title='http://dbpedia.org/ontology/populationTotal'>populationTotal</a></td>
+<td class='tdin' width='28%'>415589</td>
+<td class='tdin' width='7%'>0.31710870</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 39</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.11213228</b></td><td width='10%' align='center'><b> L </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 39 - 0</b><br/> Score1 = 0.30571113<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Island_of_Vukovar' title='http://yago-knowledge.org/resource/Island_of_Vukovar'>Island of Vukovar</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isLocatedIn' title='http://yago-knowledge.org/resource/isLocatedIn'>isLocatedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Danube' title='http://yago-knowledge.org/resource/Danube'>Danube</a></td>
+<td class='tdin' width='7%'>0.30571113</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 39 - 1</b><br/> Score1 = 0.27384042<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Syrmia_County' title='http://dbpedia.org/resource/Syrmia_County'>Syrmia County</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/capital' title='http://dbpedia.org/ontology/capital'>capital</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Vukovar' title='http://dbpedia.org/resource/Vukovar'>Vukovar</a></td>
+<td class='tdin' width='7%'>0.27384042</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 39 - 2</b><br/> Score1 = 0.25105793<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Podgrađe,_Vukovar-Syrmia_County' title='http://yago-knowledge.org/resource/Podgrađe,_Vukovar-Syrmia_County'>Podgrađe, Vukovar-Syrmia County</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/hasNumberOfPeople' title='http://yago-knowledge.org/resource/hasNumberOfPeople'>hasNumberOfPeople</a></td>
+<td class='tdin' width='28%'>"120"</td>
+<td class='tdin' width='7%'>0.25105793</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 40</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.11189082</b></td><td width='10%' align='center'><b> L </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 40 - 0</b><br/> Score1 = 0.30571113<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Island_of_Vukovar' title='http://yago-knowledge.org/resource/Island_of_Vukovar'>Island of Vukovar</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isLocatedIn' title='http://yago-knowledge.org/resource/isLocatedIn'>isLocatedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Danube' title='http://yago-knowledge.org/resource/Danube'>Danube</a></td>
+<td class='tdin' width='7%'>0.30571113</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 40 - 1</b><br/> Score1 = 0.27384042<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Syrmia_County' title='http://dbpedia.org/resource/Syrmia_County'>Syrmia County</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/capital' title='http://dbpedia.org/ontology/capital'>capital</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Vukovar' title='http://dbpedia.org/resource/Vukovar'>Vukovar</a></td>
+<td class='tdin' width='7%'>0.27384042</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 40 - 2</b><br/> Score1 = 0.24926931<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Vukovar-Syrmia_County' title='http://dbpedia.org/resource/Vukovar-Syrmia_County'>Vukovar-Syrmia County</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/populationTotal' title='http://dbpedia.org/ontology/populationTotal'>populationTotal</a></td>
+<td class='tdin' width='28%'>180117</td>
+<td class='tdin' width='7%'>0.24926931</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 41</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.10751710</b></td><td width='10%' align='center'><b> L </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 41 - 0</b><br/> Score1 = 0.32504705<br/> Sim.  = 0.9156<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Danube' title='http://yago-knowledge.org/resource/Danube'>Danube</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isLocatedIn' title='http://yago-knowledge.org/resource/isLocatedIn'>isLocatedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Slovakia' title='http://yago-knowledge.org/resource/Slovakia'>Slovakia</a></td>
+<td class='tdin' width='7%'>0.30571113</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Danube' title='http://dbpedia.org/resource/Danube'>Danube</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/country' title='http://dbpedia.org/ontology/country'>country</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Slovakia' title='http://dbpedia.org/resource/Slovakia'>Slovakia</a></td>
+<td class='tdin' width='7%'>0.32504705</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 41 - 1</b><br/> Score1 = 0.20000000<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Slovakia' title='http://yago-knowledge.org/resource/Slovakia'>Slovakia</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/hasCapital' title='http://yago-knowledge.org/resource/hasCapital'>hasCapital</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Bratislava' title='http://yago-knowledge.org/resource/Bratislava'>Bratislava</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 41 - 2</b><br/> Score1 = 0.28227933<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Bratislava_I' title='http://yago-knowledge.org/resource/Bratislava_I'>Bratislava I</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/hasNumberOfPeople' title='http://yago-knowledge.org/resource/hasNumberOfPeople'>hasNumberOfPeople</a></td>
+<td class='tdin' width='28%'>"42858"</td>
+<td class='tdin' width='7%'>0.28227933</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 42</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.09881738</b></td><td width='10%' align='center'><b> L </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 42 - 0</b><br/> Score1 = 0.30571113<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Island_of_Vukovar' title='http://yago-knowledge.org/resource/Island_of_Vukovar'>Island of Vukovar</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isLocatedIn' title='http://yago-knowledge.org/resource/isLocatedIn'>isLocatedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Danube' title='http://yago-knowledge.org/resource/Danube'>Danube</a></td>
+<td class='tdin' width='7%'>0.30571113</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 42 - 1</b><br/> Score1 = 0.27384042<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Syrmia_Oblast' title='http://dbpedia.org/resource/Syrmia_Oblast'>Syrmia Oblast</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/capital' title='http://dbpedia.org/ontology/capital'>capital</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Vukovar' title='http://dbpedia.org/resource/Vukovar'>Vukovar</a></td>
+<td class='tdin' width='7%'>0.27384042</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 42 - 2</b><br/> Score1 = 0.15242902<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Syrmia_District' title='http://yago-knowledge.org/resource/Syrmia_District'>Syrmia District</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/hasPopulationDensity' title='http://yago-knowledge.org/resource/hasPopulationDensity'>hasPopulationDensity</a></td>
+<td class='tdin' width='28%'>"89.2"</td>
+<td class='tdin' width='7%'>0.15242902</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+  </body>
+</html>

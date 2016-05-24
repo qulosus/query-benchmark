@@ -1,0 +1,276 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<question id="19" runID="run5">
+   <string>
+      <![CDATA[Give me the actors who acted in both Dogma and Chasing Amy movies.]]>
+   </string>
+   <query>
+      <![CDATA[
+  ?x "acted in"  "Dogma" .
+  ?x "acted in"  "Chasing Amy" .
+]]>
+   </query>
+   <settings labelSearchTopK="10" plugLabel="false" limited="false" validateTriple="false"/>
+   <stats1 nb_results="9" timeSec="0.7500" memoryMB="71.8026" totalQuins="27" avgQuin_Cluster="1.5000" avgQuin_Bucket="3.0000" nb_plugTR="0"/>
+   <stats2>
+      <ds id="LinkedMDB">
+         <nreq>190</nreq>
+         <nreqs>10</nreqs>
+         <nrecd>30</nrecd>
+      </ds>
+      <ds id="DBpedia">
+         <nreq>20</nreq>
+         <nreqs>0</nreqs>
+         <nrecd>0</nrecd>
+      </ds>
+      <ds id="Yago">
+         <nreq>100</nreq>
+         <nreqs>5</nreqs>
+         <nrecd>14</nrecd>
+      </ds>
+   </stats2>
+   <results>
+      <bucket bucket_id="0" runID="run5" score="0.33356710" plugType="E">
+         <cluster cluster_id="0-0" score="0.42477549" sim="0.9004" norm="0.9500">
+            <quintuple dataset="Yago" score="0.22678884" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Jason_Mewes</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Dogma_(film)</object>
+               <subjectLabel score="0.00000000">Jason Mewes</subjectLabel>
+               <objectLabel score="0.06697208">Dogma</objectLabel>
+            </quintuple>
+            <quintuple dataset="LinkedMDB" score="0.42477549" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/285</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/32883</object>
+               <subjectLabel score="0.56193871">Dogma</subjectLabel>
+               <objectLabel score="0.00000000">Jason Mewes</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="0-1" score="0.35517764" sim="0.9004" norm="0.9500">
+            <quintuple dataset="Yago" score="0.35517764" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Jason_Mewes</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Chasing_Amy</object>
+               <subjectLabel score="0.00000000">Jason Mewes</subjectLabel>
+               <objectLabel score="0.38794409">Chasing Amy</objectLabel>
+            </quintuple>
+            <quintuple dataset="LinkedMDB" score="0.30155730" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/38237</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/32883</object>
+               <subjectLabel score="0.25389323">Chasing Amy</subjectLabel>
+               <objectLabel score="0.00000000">Jason Mewes</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="1" runID="run5" score="0.33356710" plugType="E">
+         <cluster cluster_id="1-0" score="0.42477549" sim="0.9004" norm="0.9500">
+            <quintuple dataset="Yago" score="0.22678884" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Kevin_Smith</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Dogma_(film)</object>
+               <subjectLabel score="0.00000000">Kevin Smith</subjectLabel>
+               <objectLabel score="0.06697208">Dogma</objectLabel>
+            </quintuple>
+            <quintuple dataset="LinkedMDB" score="0.42477549" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/285</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/29909</object>
+               <subjectLabel score="0.56193871">Dogma</subjectLabel>
+               <objectLabel score="0.00000000">Kevin Smith</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="1-1" score="0.35517764" sim="0.9004" norm="0.9500">
+            <quintuple dataset="LinkedMDB" score="0.30155730" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/38237</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/29909</object>
+               <subjectLabel score="0.25389323">Chasing Amy</subjectLabel>
+               <objectLabel score="0.00000000">Kevin Smith</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.35517764" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Kevin_Smith</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Chasing_Amy</object>
+               <subjectLabel score="0.00000000">Kevin Smith</subjectLabel>
+               <objectLabel score="0.38794409">Chasing Amy</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="2" runID="run5" score="0.33356710" plugType="E">
+         <cluster cluster_id="2-0" score="0.42477549" sim="0.9004" norm="0.9500">
+            <quintuple dataset="Yago" score="0.22678884" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Jason_Lee_(actor)</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Dogma_(film)</object>
+               <subjectLabel score="0.00000000">Jason Lee</subjectLabel>
+               <objectLabel score="0.06697208">Dogma</objectLabel>
+            </quintuple>
+            <quintuple dataset="LinkedMDB" score="0.42477549" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/285</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/237</object>
+               <subjectLabel score="0.56193871">Dogma</subjectLabel>
+               <objectLabel score="0.00000000">Jason Lee</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="2-1" score="0.35517764" sim="0.9004" norm="0.9500">
+            <quintuple dataset="Yago" score="0.35517764" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Jason_Lee_(actor)</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Chasing_Amy</object>
+               <subjectLabel score="0.00000000">Jason Lee</subjectLabel>
+               <objectLabel score="0.38794409">Chasing Amy</objectLabel>
+            </quintuple>
+            <quintuple dataset="LinkedMDB" score="0.30155730" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/38237</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/237</object>
+               <subjectLabel score="0.25389323">Chasing Amy</subjectLabel>
+               <objectLabel score="0.00000000">Jason Lee</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="3" runID="run5" score="0.33356710" plugType="E">
+         <cluster cluster_id="3-0" score="0.42477549" sim="0.9004" norm="0.9500">
+            <quintuple dataset="LinkedMDB" score="0.42477549" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/285</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/30536</object>
+               <subjectLabel score="0.56193871">Dogma</subjectLabel>
+               <objectLabel score="0.00000000">Ben Affleck</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.22678884" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Ben_Affleck</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Dogma_(film)</object>
+               <subjectLabel score="0.00000000">Ben Affleck</subjectLabel>
+               <objectLabel score="0.06697208">Dogma</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="3-1" score="0.35517764" sim="0.9004" norm="0.9500">
+            <quintuple dataset="Yago" score="0.35517764" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Ben_Affleck</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Chasing_Amy</object>
+               <subjectLabel score="0.00000000">Ben Affleck</subjectLabel>
+               <objectLabel score="0.38794409">Chasing Amy</objectLabel>
+            </quintuple>
+            <quintuple dataset="LinkedMDB" score="0.30155730" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/38237</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/30536</object>
+               <subjectLabel score="0.25389323">Chasing Amy</subjectLabel>
+               <objectLabel score="0.00000000">Ben Affleck</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="4" runID="run5" score="0.32684977" plugType="E">
+         <cluster cluster_id="4-0" score="0.42477549" sim="1.0000" norm="0.9000">
+            <quintuple dataset="LinkedMDB" score="0.42477549" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/285</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/42947</object>
+               <subjectLabel score="0.56193871">Dogma</subjectLabel>
+               <objectLabel score="0.00000000">Dwight Ewell</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="4-1" score="0.30155730" sim="1.0000" norm="0.9000">
+            <quintuple dataset="LinkedMDB" score="0.30155730" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/38237</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/42947</object>
+               <subjectLabel score="0.25389323">Chasing Amy</subjectLabel>
+               <objectLabel score="0.00000000">Dwight Ewell</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="5" runID="run5" score="0.32684977" plugType="E">
+         <cluster cluster_id="5-0" score="0.42477549" sim="1.0000" norm="0.9000">
+            <quintuple dataset="LinkedMDB" score="0.42477549" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/285</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/42533</object>
+               <subjectLabel score="0.56193871">Dogma</subjectLabel>
+               <objectLabel score="0.00000000">Walt Flanagan</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="5-1" score="0.30155730" sim="1.0000" norm="0.9000">
+            <quintuple dataset="LinkedMDB" score="0.30155730" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/38237</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/42533</object>
+               <subjectLabel score="0.25389323">Chasing Amy</subjectLabel>
+               <objectLabel score="0.00000000">Walt Flanagan</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="6" runID="run5" score="0.32684977" plugType="E">
+         <cluster cluster_id="6-0" score="0.42477549" sim="1.0000" norm="0.9000">
+            <quintuple dataset="LinkedMDB" score="0.42477549" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/285</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/38146</object>
+               <subjectLabel score="0.56193871">Dogma</subjectLabel>
+               <objectLabel score="0.00000000">Ethan Suplee</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="6-1" score="0.30155730" sim="1.0000" norm="0.9000">
+            <quintuple dataset="LinkedMDB" score="0.30155730" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/38237</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/38146</object>
+               <subjectLabel score="0.25389323">Chasing Amy</subjectLabel>
+               <objectLabel score="0.00000000">Ethan Suplee</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="7" runID="run5" score="0.32684977" plugType="E">
+         <cluster cluster_id="7-0" score="0.42477549" sim="1.0000" norm="0.9000">
+            <quintuple dataset="LinkedMDB" score="0.42477549" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/285</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/547</object>
+               <subjectLabel score="0.56193871">Dogma</subjectLabel>
+               <objectLabel score="0.00000000">Brian O'Halloran</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="7-1" score="0.30155730" sim="1.0000" norm="0.9000">
+            <quintuple dataset="LinkedMDB" score="0.30155730" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/38237</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/547</object>
+               <subjectLabel score="0.25389323">Chasing Amy</subjectLabel>
+               <objectLabel score="0.00000000">Brian O'Halloran</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="8" runID="run5" score="0.31736700" plugType="E">
+         <cluster cluster_id="8-0" score="0.42477549" sim="0.9004" norm="0.9500">
+            <quintuple dataset="Yago" score="0.22678884" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Matt_Damon</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Dogma_(film)</object>
+               <subjectLabel score="0.00000000">Matt Damon</subjectLabel>
+               <objectLabel score="0.06697208">Dogma</objectLabel>
+            </quintuple>
+            <quintuple dataset="LinkedMDB" score="0.42477549" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/285</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/30638</object>
+               <subjectLabel score="0.56193871">Dogma</subjectLabel>
+               <objectLabel score="0.00000000">Matt Damon</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="8-1" score="0.30155730" sim="1.0000" norm="0.9000">
+            <quintuple dataset="LinkedMDB" score="0.30155730" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/38237</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/30638</object>
+               <subjectLabel score="0.25389323">Chasing Amy</subjectLabel>
+               <objectLabel score="0.00000000">Matt Damon</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+   </results>
+</question>

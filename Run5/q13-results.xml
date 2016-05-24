@@ -1,0 +1,88 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<question id="13" runID="run5">
+   <string>
+      <![CDATA[Give me the spouses of actors starring in Lethal Weapon?]]>
+   </string>
+   <query>
+      <![CDATA[
+  ?actor  "acted in"       "Lethal Weapon" .
+  ?actor  "is married to"  ?spouse .
+]]>
+   </query>
+   <settings labelSearchTopK="10" plugLabel="false" limited="false" validateTriple="false"/>
+   <stats1 nb_results="1" timeSec="0.5560" memoryMB="71.3610" totalQuins="7" avgQuin_Cluster="3.5000" avgQuin_Bucket="7.0000" nb_plugTR="0"/>
+   <stats2>
+      <ds id="LinkedMDB">
+         <nreq>20</nreq>
+         <nreqs>9</nreqs>
+         <nrecd>38</nrecd>
+      </ds>
+      <ds id="DBpedia">
+         <nreq>22</nreq>
+         <nreqs>3</nreqs>
+         <nrecd>8</nrecd>
+      </ds>
+      <ds id="Yago">
+         <nreq>22</nreq>
+         <nreqs>4</nreqs>
+         <nrecd>10</nrecd>
+      </ds>
+   </stats2>
+   <results>
+      <bucket bucket_id="0" runID="run5" score="0.21362967" plugType="E">
+         <cluster cluster_id="0-0" score="0.26973835" sim="0.9007" norm="1.0000">
+            <quintuple dataset="LinkedMDB" score="0.26973835" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/39022</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/595</object>
+               <subjectLabel score="0.17434587">Lethal Weapon</subjectLabel>
+               <objectLabel score="0.00000000">Tom Atkins</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.25608894" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Tom_Atkins_(actor)</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Lethal_Weapon</object>
+               <subjectLabel score="0.00000000">Tom Atkins</subjectLabel>
+               <objectLabel score="0.14022235">Lethal Weapon</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.23604877" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Lethal_Weapon</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Tom_Atkins_(actor)</object>
+               <subjectLabel score="0.09012191">Lethal Weapon</subjectLabel>
+               <objectLabel score="0.00000000">Tom Atkins</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="0-1" score="0.20000000" sim="0.9700" norm="0.9500">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Garn_Stephens</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/spouse</predicate>
+               <object>http://dbpedia.org/resource/Tom_Atkins_(actor)</object>
+               <subjectLabel score="0.00000000">Garn Stephens</subjectLabel>
+               <objectLabel score="0.00000000">Tom Atkins</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Tom_Atkins_(actor)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/spouse</predicate>
+               <object>http://dbpedia.org/resource/Garn_Stephens</object>
+               <subjectLabel score="0.00000000">Tom Atkins</subjectLabel>
+               <objectLabel score="0.00000000">Garn Stephens</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Garn_Stephens</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/Tom_Atkins_(actor)</object>
+               <subjectLabel score="0.00000000">Garn Stephens</subjectLabel>
+               <objectLabel score="0.00000000">Tom Atkins</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Tom_Atkins_(actor)</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/Garn_Stephens</object>
+               <subjectLabel score="0.00000000">Tom Atkins</subjectLabel>
+               <objectLabel score="0.00000000">Garn Stephens</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+   </results>
+</question>

@@ -1,0 +1,175 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<question id="4" runID="run8">
+   <string>
+      <![CDATA[Where was the mayor of Vienna born?]]>
+   </string>
+   <query>
+      <![CDATA[
+  "Vienna"  "mayor"    ?mayor.
+  ?mayor    "born in"  ?x.
+]]>
+   </query>
+   <settings labelSearchTopK="10" plugLabel="true" limited="false" validateTriple="false"/>
+   <stats1 nb_results="5" timeSec="0.9230" memoryMB="71.9225" totalQuins="16" avgQuin_Cluster="1.6000" avgQuin_Bucket="3.2000" nb_plugTR="2"/>
+   <stats2>
+      <ds id="LinkedMDB">
+         <nreq>0</nreq>
+         <nreqs>0</nreqs>
+         <nrecd>0</nrecd>
+      </ds>
+      <ds id="DBpedia">
+         <nreq>66</nreq>
+         <nreqs>4</nreqs>
+         <nrecd>8</nrecd>
+      </ds>
+      <ds id="Yago">
+         <nreq>22</nreq>
+         <nreqs>2</nreqs>
+         <nrecd>2</nrecd>
+      </ds>
+   </stats2>
+   <results>
+      <bucket bucket_id="0" runID="run8" score="0.20915834" plugType="E">
+         <cluster cluster_id="0-0" score="0.27841402" sim="0.9010" norm="0.9500">
+            <quintuple dataset="Yago" score="0.26992836" isFlipped="true" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Michael_Häupl</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isLeaderOf</predicate>
+               <object>http://yago-knowledge.org/resource/Vienna</object>
+               <subjectLabel score="0.00000000">Michael Häupl</subjectLabel>
+               <objectLabel score="0.17482089">Vienna</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.27841402" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Vienna</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/leaderName</predicate>
+               <object>http://dbpedia.org/resource/Michael_H%C3%A4upl</object>
+               <subjectLabel score="0.19603505">Vienna</subjectLabel>
+               <objectLabel score="0.00000000">Michael Häupl</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="0-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Michael_H%C3%A4upl</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/birthPlace</predicate>
+               <object>http://dbpedia.org/resource/Austria</object>
+               <subjectLabel score="0.00000000">Michael Häupl</subjectLabel>
+               <objectLabel score="0.00000000">Austria</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="1" runID="run8" score="0.20915834" plugType="E">
+         <cluster cluster_id="1-0" score="0.27841402" sim="0.9010" norm="0.9500">
+            <quintuple dataset="Yago" score="0.26992836" isFlipped="true" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Michael_Häupl</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isLeaderOf</predicate>
+               <object>http://yago-knowledge.org/resource/Vienna</object>
+               <subjectLabel score="0.00000000">Michael Häupl</subjectLabel>
+               <objectLabel score="0.17482089">Vienna</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.27841402" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Vienna</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/leaderName</predicate>
+               <object>http://dbpedia.org/resource/Michael_H%C3%A4upl</object>
+               <subjectLabel score="0.19603505">Vienna</subjectLabel>
+               <objectLabel score="0.00000000">Michael Häupl</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="1-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Michael_H%C3%A4upl</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/birthPlace</predicate>
+               <object>http://dbpedia.org/resource/Lower_Austria</object>
+               <subjectLabel score="0.00000000">Michael Häupl</subjectLabel>
+               <objectLabel score="0.00000000">Lower Austria</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="2" runID="run8" score="0.20682738" plugType="E">
+         <cluster cluster_id="2-0" score="0.27841402" sim="0.9010" norm="0.9500">
+            <quintuple dataset="Yago" score="0.26992836" isFlipped="true" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Michael_Häupl</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isLeaderOf</predicate>
+               <object>http://yago-knowledge.org/resource/Vienna</object>
+               <subjectLabel score="0.00000000">Michael Häupl</subjectLabel>
+               <objectLabel score="0.17482089">Vienna</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.27841402" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Vienna</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/leaderName</predicate>
+               <object>http://dbpedia.org/resource/Michael_H%C3%A4upl</object>
+               <subjectLabel score="0.19603505">Vienna</subjectLabel>
+               <objectLabel score="0.00000000">Michael Häupl</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="2-1" score="0.20000000" sim="0.9228" norm="0.9500">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Michael_H%C3%A4upl</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/birthPlace</predicate>
+               <object>http://dbpedia.org/resource/Altlengbach</object>
+               <subjectLabel score="0.00000000">Michael Häupl</subjectLabel>
+               <objectLabel score="0.00000000">Altlengbach</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Michael_Häupl</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/wasBornIn</predicate>
+               <object>http://yago-knowledge.org/resource/Altlengbach</object>
+               <subjectLabel score="0.00000000">Michael Häupl</subjectLabel>
+               <objectLabel score="0.00000000">Altlengbach</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="3" runID="run8" score="0.19115834" plugType="E">
+         <cluster cluster_id="3-0" score="0.27841402" sim="0.9010" norm="0.9500">
+            <quintuple dataset="Yago" score="0.26992836" isFlipped="true" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Michael_Häupl</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isLeaderOf</predicate>
+               <object>http://yago-knowledge.org/resource/Vienna</object>
+               <subjectLabel score="0.00000000">Michael Häupl</subjectLabel>
+               <objectLabel score="0.17482089">Vienna</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.27841402" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Vienna</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/leaderName</predicate>
+               <object>http://dbpedia.org/resource/Michael_H%C3%A4upl</object>
+               <subjectLabel score="0.19603505">Vienna</subjectLabel>
+               <objectLabel score="0.00000000">Michael Häupl</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="3-1" score="0.16000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.16000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://dbpedia.org/resource/Michael_H%C3%A4upl</subject>
+               <predicate score="0.80000000">http://dbpedia.org/ontology/birthDate</predicate>
+               <object>1949-09-14</object>
+               <subjectLabel score="0.00000000">Michael Häupl</subjectLabel>
+               <objectLabel score="0.00000000">1949-09-14</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="4" runID="run8" score="0.18215834" plugType="E">
+         <cluster cluster_id="4-0" score="0.27841402" sim="0.9010" norm="0.9500">
+            <quintuple dataset="Yago" score="0.26992836" isFlipped="true" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Michael_Häupl</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isLeaderOf</predicate>
+               <object>http://yago-knowledge.org/resource/Vienna</object>
+               <subjectLabel score="0.00000000">Michael Häupl</subjectLabel>
+               <objectLabel score="0.17482089">Vienna</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.27841402" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Vienna</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/leaderName</predicate>
+               <object>http://dbpedia.org/resource/Michael_H%C3%A4upl</object>
+               <subjectLabel score="0.19603505">Vienna</subjectLabel>
+               <objectLabel score="0.00000000">Michael Häupl</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="4-1" score="0.14000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.14000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://dbpedia.org/resource/Michael_H%C3%A4upl</subject>
+               <predicate score="0.70000000">http://dbpedia.org/ontology/birthYear</predicate>
+               <object>1949</object>
+               <subjectLabel score="0.00000000">Michael Häupl</subjectLabel>
+               <objectLabel score="0.00000000">1949</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+   </results>
+</question>

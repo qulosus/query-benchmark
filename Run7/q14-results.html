@@ -1,0 +1,518 @@
+<html> 
+  <head>
+    <meta charset='UTF-8'>
+<style>TABLE.outline {
+        BORDER-RIGHT: #c0c0c0 4px double; BORDER-TOP: #c0c0c0 4px double; BORDER-LEFT: #c0c0c0 4px double;
+        FONT-FAMILY: "MS Sans Serif"; BORDER-BOTTOM: #c0c0c0 4px double; align: center
+}
+A {
+        FONT-SIZE: 14px; COLOR: #333399; FONT-FAMILY: "Consolas"; TEXT-DECORATION: none
+}
+A:hover {
+        FONT-SIZE: 14px; COLOR: #778899; FONT-STYLE: normal; FONT-FAMILY: "Consolas"; TEXT-DECORATION: underline overline
+}
+.blockTitle {
+        PADDING-RIGHT: 3px; BORDER-TOP: #6495ed 3px double; PADDING-LEFT: 3px; FONT-WEIGHT: bold;
+        FONT-SIZE: 14px; PADDING-BOTTOM: 3px; COLOR: #daa520; PADDING-TOP: 3px; BORDER-BOTTOM: #6495ed 3px double;
+        BACKGROUND-COLOR: #f0f8ff
+}
+.blockTitle1 {
+        PADDING-RIGHT: 3px; BORDER-TOP: #6495ed 3px double; PADDING-LEFT: 3px; FONT-WEIGHT: bold; FONT-SIZE: 14px;
+        PADDING-BOTTOM: 3px; COLOR: #daa520; PADDING-TOP: 3px; BORDER-BOTTOM: #6495ed 3px double;
+        BACKGROUND-COLOR: #f0f8ff
+}
+TD {
+        FONT-SIZE: 14px; COLOR: #333399; FONT-FAMILY: "Consolas"; TEXT-DECORATION: none
+}
+.tdin {
+        PADDING-RIGHT: 2px; BORDER-TOP: #6495ed 1px double; PADDING-LEFT: 8px; PADDING-BOTTOM: 2px; PADDING-TOP: 2px;
+        BORDER-BOTTOM: #6495ed 1px double;BORDER-LEFT: #6495ed 1px double;BORDER-RIGHT: #6495ed 1px double;
+        FONT-FAMILY: "Consolas";
+}
+.thin {
+        PADDING-RIGHT: 2px; BORDER-TOP: #6495ed 1px double; PADDING-LEFT: 8px; FONT-WEIGHT: bold; FONT-SIZE: 12px;
+        PADDING-BOTTOM: 2px; COLOR: #E45C3A; PADDING-TOP: 2px; BORDER-BOTTOM: #6495ed 1px double;
+        BACKGROUND-COLOR: #DEF7FE; BORDER-LEFT: #6495ed 1px double; BORDER-RIGHT: #6495ed 1px double ;
+        FONT-FAMILY: "Verdana";
+}
+.thin2 {
+        PADDING-RIGHT: 2px; BORDER-TOP: #6495ed 1px double; PADDING-LEFT: 8px; FONT-WEIGHT: bold; FONT-SIZE: 12px;
+        PADDING-BOTTOM: 2px; COLOR: #405EE4; PADDING-TOP: 2px; BORDER-BOTTOM: #6495ed 1px double;
+        BACKGROUND-COLOR: #FFDFF8; BORDER-LEFT: #6495ed 1px double; BORDER-RIGHT: #6495ed 1px double ;
+        FONT-FAMILY: "Verdana";
+}
+TH {
+        FONT-SIZE: 14px; COLOR: #333399; FONT-FAMILY: "Verdana"; TEXT-DECORATION: none;align: left
+}
+INPUT.spt {
+        BORDER-RIGHT: #6495ed 1px double; BORDER-TOP: #6495ed 1px double;
+        BORDER-BOTTOM: #6495ed 1px double;BORDER-LEFT: #6495ed 1px double;
+        PADDING-LEFT: 1px; PADDING-BOTTOM: 1px; PADDING-TOP: 1px;PADDING-RIGHT: 1px;
+        FONT-FAMILY: "Tahoma";
+        WIDTH : 200px ; HEIGHT : 20px;
+}
+INPUT.spb {
+        PADDING-RIGHT: 1px; PADDING-LEFT: 1px;
+        PADDING-BOTTOM: 1px; PADDING-TOP: 1px;
+        BORDER-RIGHT: #6495ed 1px double; BORDER-LEFT: #6495ed 1px double;
+        BORDER-BOTTOM: #6495ed 1px double; BORDER-TOP: #6495ed 1px double;
+        FONT-FAMILY: "Tahoma"; BACKGROUND-COLOR : #A8FFA8;
+        WIDTH : 60px ; HEIGHT : 20px;
+}
+textarea {
+        PADDING-RIGHT: 2px; PADDING-LEFT: 2px;
+        PADDING-BOTTOM: 2px; PADDING-TOP: 2px;
+        BORDER-RIGHT: #6495ed 1px double; BORDER-LEFT: #6495ed 1px double;
+        BORDER-BOTTOM: #6495ed 1px double; BORDER-TOP: #6495ed 1px double;
+        FONT-FAMILY: "Tahoma"; BACKGROUND-COLOR : #FFFFFF;
+        WIDTH : 600px ; HEIGHT : 400px;
+}
+</style>  </head>
+  <body>
+<h2>Query :: q14</h2> <table class='outline' border='1' width = '100%'>
+<tr>
+<td class='tdin' width='50%'> <pre>{
+	?author	"wrote"  	"the hobbit" .
+	?author	"died in"	?x           .
+}</pre> </td><td class='tdin' width='50%'>Where did the author of The Hobbit die?</td></tr>
+</table>
+ <br/><hr/><br/><table border='0' width = '100%'>
+<tr>
+<td class='tdin' width='35%'><table border='0' width = '100%'><tr>
+<td class='thin' width='40%'># Results</td><td class='tdin' width='40%'><b>12</b></td><td class='tdin' width='20%'></td></tr>
+<tr>
+<td class='thin' width='40%'>Elapsed time</td><td class='tdin' width='40%'>5.233</td><td class='tdin' width='20%'>sec</td></tr>
+<tr>
+<td class='thin' width='40%'>Used memory</td><td class='tdin' width='40%'>105.60371</td><td class='tdin' width='20%'>MB </td></tr>
+<tr>
+<td class='thin' width='40%'>Total Quintuples</td><td class='tdin' width='40%'>32</td><td class='tdin' width='20%'>quins </td></tr>
+<tr>
+<td class='thin' width='40%'>AVG. # quins per cluster</td><td class='tdin' width='40%'>1.3333334</td><td class='tdin' width='20%'>quin/cluster </td></tr>
+<tr>
+<td class='thin' width='40%'>AVG. # quins per bucket</td><td class='tdin' width='40%'>2.6666667</td><td class='tdin' width='20%'>quin/bucket </td></tr>
+<tr>
+<td class='thin' width='40%'># plugged triples</td><td class='tdin' width='40%'>8</td><td class='tdin' width='20%'>triples </td></tr>
+</table>
+</td><td class='tdin' width='25%'><table border='0' width = '100%'><tr>
+<td class='thin' width='40%'>LabelSearch TopK</td><td class='tdin' width='40%'>15</td></tr>
+<tr>
+<td class='thin' width='40%'>Plugin Labels ?</td><td class='tdin' width='40%'>true</td></tr>
+<tr>
+<td class='thin' width='40%'>Limit 1st triple?</td><td class='tdin' width='40%'>false</td></tr>
+<tr>
+<td class='thin' width='40%'>Validate Triples?</td><td class='tdin' width='40%'>false</td></tr>
+</table>
+</td><td class='tdin' width='40%'><table border='0' width = '100%'>
+<tr>
+<td class='tdin' width='25%'></td><td class='thin' width='25%'> # Requests</td><td class='thin' width='25%'> # Solved Requests</td><td class='thin' width='25%'> # Returned Records</td></tr>
+<tr>
+<td class='thin2' width='25%'>LinkedMDB</td><td class='tdin' width='25%'>10</td><td class='tdin' width='25%'>3</td><td class='tdin' width='25%'>10</td></tr>
+<tr>
+<td class='thin2' width='25%'>DBpedia</td><td class='tdin' width='25%'>224</td><td class='tdin' width='25%'>8</td><td class='tdin' width='25%'>11</td></tr>
+<tr>
+<td class='thin2' width='25%'>Yago</td><td class='tdin' width='25%'>112</td><td class='tdin' width='25%'>4</td><td class='tdin' width='25%'>7</td></tr>
+<tr>
+<td class='tdin' width='25%'></td><td class='thin' width='25%'>346</td><td class='thin' width='25%'>15</td><td class='thin' width='25%'>28</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 0</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.21984573</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 0 - 0</b><br/> Score1 = 0.28839461<br/> Sim.  = 0.9005<br/> Norm. = 1.0000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/The_Hobbit' title='http://dbpedia.org/resource/The_Hobbit'>The Hobbit</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/author' title='http://dbpedia.org/ontology/author'>author</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/J._R._R._Tolkien' title='http://dbpedia.org/resource/J._R._R._Tolkien'>J. R. R. Tolkien</a></td>
+<td class='tdin' width='7%'>0.23155633</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/J._R._R._Tolkien' title='http://yago-knowledge.org/resource/J._R._R._Tolkien'>J. R. R. Tolkien</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/created' title='http://yago-knowledge.org/resource/created'>created</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/The_Hobbit' title='http://yago-knowledge.org/resource/The_Hobbit'>The Hobbit</a></td>
+<td class='tdin' width='7%'>0.25039741</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/1026' title='http://data.linkedmdb.org/resource/film/1026'>The Hobbit</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/writer' title='http://data.linkedmdb.org/resource/movie/writer'>writer</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/writer/13141' title='http://data.linkedmdb.org/resource/writer/13141'>J. R. R. Tolkien</a></td>
+<td class='tdin' width='7%'>0.28839461</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 0 - 1</b><br/> Score1 = 0.20000000<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/J._R._R._Tolkien' title='http://dbpedia.org/resource/J._R._R._Tolkien'>J. R. R. Tolkien</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/deathPlace' title='http://dbpedia.org/ontology/deathPlace'>deathPlace</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Bournemouth' title='http://dbpedia.org/resource/Bournemouth'>Bournemouth</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 1</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.21984573</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 1 - 0</b><br/> Score1 = 0.28839461<br/> Sim.  = 0.9005<br/> Norm. = 1.0000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/The_Hobbit' title='http://dbpedia.org/resource/The_Hobbit'>The Hobbit</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/author' title='http://dbpedia.org/ontology/author'>author</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/J._R._R._Tolkien' title='http://dbpedia.org/resource/J._R._R._Tolkien'>J. R. R. Tolkien</a></td>
+<td class='tdin' width='7%'>0.23155633</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/J._R._R._Tolkien' title='http://yago-knowledge.org/resource/J._R._R._Tolkien'>J. R. R. Tolkien</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/created' title='http://yago-knowledge.org/resource/created'>created</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/The_Hobbit' title='http://yago-knowledge.org/resource/The_Hobbit'>The Hobbit</a></td>
+<td class='tdin' width='7%'>0.25039741</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/1026' title='http://data.linkedmdb.org/resource/film/1026'>The Hobbit</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/writer' title='http://data.linkedmdb.org/resource/movie/writer'>writer</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/writer/13141' title='http://data.linkedmdb.org/resource/writer/13141'>J. R. R. Tolkien</a></td>
+<td class='tdin' width='7%'>0.28839461</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 1 - 1</b><br/> Score1 = 0.20000000<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/J._R._R._Tolkien' title='http://dbpedia.org/resource/J._R._R._Tolkien'>J. R. R. Tolkien</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/deathPlace' title='http://dbpedia.org/ontology/deathPlace'>deathPlace</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Dorset' title='http://dbpedia.org/resource/Dorset'>Dorset</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 2</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.20184573</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 2 - 0</b><br/> Score1 = 0.28839461<br/> Sim.  = 0.9005<br/> Norm. = 1.0000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/The_Hobbit' title='http://dbpedia.org/resource/The_Hobbit'>The Hobbit</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/author' title='http://dbpedia.org/ontology/author'>author</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/J._R._R._Tolkien' title='http://dbpedia.org/resource/J._R._R._Tolkien'>J. R. R. Tolkien</a></td>
+<td class='tdin' width='7%'>0.23155633</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/J._R._R._Tolkien' title='http://yago-knowledge.org/resource/J._R._R._Tolkien'>J. R. R. Tolkien</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/created' title='http://yago-knowledge.org/resource/created'>created</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/The_Hobbit' title='http://yago-knowledge.org/resource/The_Hobbit'>The Hobbit</a></td>
+<td class='tdin' width='7%'>0.25039741</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/1026' title='http://data.linkedmdb.org/resource/film/1026'>The Hobbit</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/writer' title='http://data.linkedmdb.org/resource/movie/writer'>writer</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/writer/13141' title='http://data.linkedmdb.org/resource/writer/13141'>J. R. R. Tolkien</a></td>
+<td class='tdin' width='7%'>0.28839461</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 2 - 1</b><br/> Score1 = 0.16000000<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/J._R._R._Tolkien' title='http://dbpedia.org/resource/J._R._R._Tolkien'>J. R. R. Tolkien</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/deathYear' title='http://dbpedia.org/ontology/deathYear'>deathYear</a></td>
+<td class='tdin' width='28%'>1973</td>
+<td class='tdin' width='7%'>0.16000000</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 3</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.18595296</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 3 - 0</b><br/> Score1 = 0.21322878<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Brothers_Hildebrandt' title='http://yago-knowledge.org/resource/Brothers_Hildebrandt'>Brothers Hildebrandt</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/created' title='http://yago-knowledge.org/resource/created'>created</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/The_Lord_of_the_Rings' title='http://yago-knowledge.org/resource/The_Lord_of_the_Rings'>The Lord of the Rings</a></td>
+<td class='tdin' width='7%'>0.21322878</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 3 - 1</b><br/> Score1 = 0.20000000<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Brothers_Hildebrandt' title='http://yago-knowledge.org/resource/Brothers_Hildebrandt'>Brothers Hildebrandt</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/diedIn' title='http://yago-knowledge.org/resource/diedIn'>diedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/New_Brunswick,_New_Jersey' title='http://yago-knowledge.org/resource/New_Brunswick,_New_Jersey'>New Brunswick, New Jersey</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 4</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.12768383</b></td><td width='10%' align='center'><b> L </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 4 - 0</b><br/> Score1 = 0.28839461<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/1026' title='http://data.linkedmdb.org/resource/film/1026'>The Hobbit</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/writer' title='http://data.linkedmdb.org/resource/movie/writer'>writer</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/writer/17559' title='http://data.linkedmdb.org/resource/writer/17559'>Romeo Muller</a></td>
+<td class='tdin' width='7%'>0.28839461</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 4 - 1</b><br/> Score1 = 0.34214280<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Romeo_Muller' title='http://dbpedia.org/resource/Romeo_Muller'>Romeo Muller</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/deathPlace' title='http://dbpedia.org/ontology/deathPlace'>deathPlace</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/High_Falls,_New_York' title='http://dbpedia.org/resource/High_Falls,_New_York'>High Falls, New York</a></td>
+<td class='tdin' width='7%'>0.34214280</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 5</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.12768383</b></td><td width='10%' align='center'><b> L </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 5 - 0</b><br/> Score1 = 0.28839461<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/1026' title='http://data.linkedmdb.org/resource/film/1026'>The Hobbit</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/writer' title='http://data.linkedmdb.org/resource/movie/writer'>writer</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/writer/17559' title='http://data.linkedmdb.org/resource/writer/17559'>Romeo Muller</a></td>
+<td class='tdin' width='7%'>0.28839461</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 5 - 1</b><br/> Score1 = 0.34214280<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Romeo_Muller' title='http://dbpedia.org/resource/Romeo_Muller'>Romeo Muller</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/deathPlace' title='http://dbpedia.org/ontology/deathPlace'>deathPlace</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/United_States' title='http://dbpedia.org/resource/United_States'>United States</a></td>
+<td class='tdin' width='7%'>0.34214280</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 6</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.11958383</b></td><td width='10%' align='center'><b> L </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 6 - 0</b><br/> Score1 = 0.28839461<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/1026' title='http://data.linkedmdb.org/resource/film/1026'>The Hobbit</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/writer' title='http://data.linkedmdb.org/resource/movie/writer'>writer</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/writer/17559' title='http://data.linkedmdb.org/resource/writer/17559'>Romeo Muller</a></td>
+<td class='tdin' width='7%'>0.28839461</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 6 - 1</b><br/> Score1 = 0.30214280<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Romeo_Muller' title='http://dbpedia.org/resource/Romeo_Muller'>Romeo Muller</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/deathYear' title='http://dbpedia.org/ontology/deathYear'>deathYear</a></td>
+<td class='tdin' width='28%'>1992</td>
+<td class='tdin' width='7%'>0.30214280</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 7</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.10331785</b></td><td width='10%' align='center'><b> L </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 7 - 0</b><br/> Score1 = 0.28839461<br/> Sim.  = 0.9250<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/71763' title='http://data.linkedmdb.org/resource/film/71763'>The Hobbit 2</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/writer' title='http://data.linkedmdb.org/resource/movie/writer'>writer</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/writer/14469' title='http://data.linkedmdb.org/resource/writer/14469'>Philippa Boyens</a></td>
+<td class='tdin' width='7%'>0.27302543</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/10761' title='http://data.linkedmdb.org/resource/film/10761'>The Hobbit</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/writer' title='http://data.linkedmdb.org/resource/movie/writer'>writer</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/writer/14469' title='http://data.linkedmdb.org/resource/writer/14469'>Philippa Boyens</a></td>
+<td class='tdin' width='7%'>0.28839461</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 7 - 1</b><br/> Score1 = 0.24344659<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Philippa_Foot' title='http://yago-knowledge.org/resource/Philippa_Foot'>Philippa Foot</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/diedIn' title='http://yago-knowledge.org/resource/diedIn'>diedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Oxford' title='http://yago-knowledge.org/resource/Oxford'>Oxford</a></td>
+<td class='tdin' width='7%'>0.24344659</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 8</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.10301247</b></td><td width='10%' align='center'><b> L </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 8 - 0</b><br/> Score1 = 0.21322878<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/J._R._R._Tolkien' title='http://yago-knowledge.org/resource/J._R._R._Tolkien'>J. R. R. Tolkien</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/created' title='http://yago-knowledge.org/resource/created'>created</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/The_Lord_of_the_Rings' title='http://yago-knowledge.org/resource/The_Lord_of_the_Rings'>The Lord of the Rings</a></td>
+<td class='tdin' width='7%'>0.21322878</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 8 - 1</b><br/> Score1 = 0.29547477<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/J._R._R._Tolkien' title='http://dbpedia.org/resource/J._R._R._Tolkien'>J. R. R. Tolkien</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/deathPlace' title='http://dbpedia.org/ontology/deathPlace'>deathPlace</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Bournemouth' title='http://dbpedia.org/resource/Bournemouth'>Bournemouth</a></td>
+<td class='tdin' width='7%'>0.29547477</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 9</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.10301247</b></td><td width='10%' align='center'><b> L </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 9 - 0</b><br/> Score1 = 0.21322878<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/J._R._R._Tolkien' title='http://yago-knowledge.org/resource/J._R._R._Tolkien'>J. R. R. Tolkien</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/created' title='http://yago-knowledge.org/resource/created'>created</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/The_Lord_of_the_Rings' title='http://yago-knowledge.org/resource/The_Lord_of_the_Rings'>The Lord of the Rings</a></td>
+<td class='tdin' width='7%'>0.21322878</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 9 - 1</b><br/> Score1 = 0.29547477<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/J._R._R._Tolkien' title='http://dbpedia.org/resource/J._R._R._Tolkien'>J. R. R. Tolkien</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/deathPlace' title='http://dbpedia.org/ontology/deathPlace'>deathPlace</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Dorset' title='http://dbpedia.org/resource/Dorset'>Dorset</a></td>
+<td class='tdin' width='7%'>0.29547477</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 10</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.10019734</b></td><td width='10%' align='center'><b> L </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 10 - 0</b><br/> Score1 = 0.28839461<br/> Sim.  = 0.9250<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/71763' title='http://data.linkedmdb.org/resource/film/71763'>The Hobbit 2</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/writer' title='http://data.linkedmdb.org/resource/movie/writer'>writer</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/writer/13516' title='http://data.linkedmdb.org/resource/writer/13516'>Peter Jackson</a></td>
+<td class='tdin' width='7%'>0.27302543</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/10761' title='http://data.linkedmdb.org/resource/film/10761'>The Hobbit</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/writer' title='http://data.linkedmdb.org/resource/movie/writer'>writer</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/writer/13516' title='http://data.linkedmdb.org/resource/writer/13516'>Peter Jackson</a></td>
+<td class='tdin' width='7%'>0.28839461</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 10 - 1</b><br/> Score1 = 0.22803666<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Peter_H._Jackson' title='http://dbpedia.org/resource/Peter_H._Jackson'>Peter H. Jackson</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/deathYear' title='http://dbpedia.org/ontology/deathYear'>deathYear</a></td>
+<td class='tdin' width='28%'>1983</td>
+<td class='tdin' width='7%'>0.22803666</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 11</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.09491247</b></td><td width='10%' align='center'><b> L </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 11 - 0</b><br/> Score1 = 0.21322878<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/J._R._R._Tolkien' title='http://yago-knowledge.org/resource/J._R._R._Tolkien'>J. R. R. Tolkien</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/created' title='http://yago-knowledge.org/resource/created'>created</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/The_Lord_of_the_Rings' title='http://yago-knowledge.org/resource/The_Lord_of_the_Rings'>The Lord of the Rings</a></td>
+<td class='tdin' width='7%'>0.21322878</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 11 - 1</b><br/> Score1 = 0.25547477<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/J._R._R._Tolkien' title='http://dbpedia.org/resource/J._R._R._Tolkien'>J. R. R. Tolkien</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/deathYear' title='http://dbpedia.org/ontology/deathYear'>deathYear</a></td>
+<td class='tdin' width='28%'>1973</td>
+<td class='tdin' width='7%'>0.25547477</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+  </body>
+</html>

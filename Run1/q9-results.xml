@@ -1,0 +1,120 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<question id="9" runID="run1">
+   <string>
+      <![CDATA[Who developed Skype?]]>
+   </string>
+   <query>
+      <![CDATA[
+  ?who  "developed"  "Skype" .
+]]>
+   </query>
+   <settings labelSearchTopK="30" plugLabel="false" limited="false" validateTriple="false"/>
+   <stats1 nb_results="8" timeSec="1.4870" memoryMB="70.1033" totalQuins="8" avgQuin_Cluster="1.0000" avgQuin_Bucket="1.0000" nb_plugTR="0"/>
+   <stats2>
+      <ds id="LinkedMDB">
+         <nreq>0</nreq>
+         <nreqs>0</nreqs>
+         <nrecd>0</nrecd>
+      </ds>
+      <ds id="DBpedia">
+         <nreq>120</nreq>
+         <nreqs>3</nreqs>
+         <nrecd>6</nrecd>
+      </ds>
+      <ds id="Yago">
+         <nreq>12</nreq>
+         <nreqs>3</nreqs>
+         <nrecd>4</nrecd>
+      </ds>
+   </stats2>
+   <results>
+      <bucket bucket_id="0" runID="run1" score="0.33269170" plugType="E">
+         <cluster cluster_id="0-0" score="0.36965743" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.36965743" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Microsoft_Skype_Division</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/created</predicate>
+               <object>http://yago-knowledge.org/resource/Skype</object>
+               <subjectLabel score="0.00000000">Microsoft Skype Division</subjectLabel>
+               <objectLabel score="0.42414356">Skype</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="1" runID="run1" score="0.24141599" plugType="E">
+         <cluster cluster_id="1-0" score="0.26823998" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.26823998" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Janus_Friis</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/created</predicate>
+               <object>http://yago-knowledge.org/resource/Skype_Technologies</object>
+               <subjectLabel score="0.00000000">Janus Friis</subjectLabel>
+               <objectLabel score="0.17059995">Skype Technologies</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="2" runID="run1" score="0.24141599" plugType="E">
+         <cluster cluster_id="2-0" score="0.26823998" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.26823998" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Niklas_Zennström</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/created</predicate>
+               <object>http://yago-knowledge.org/resource/Skype_Technologies</object>
+               <subjectLabel score="0.00000000">Niklas Zennström</subjectLabel>
+               <objectLabel score="0.17059995">Skype Technologies</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="3" runID="run1" score="0.20951058" plugType="E">
+         <cluster cluster_id="3-0" score="0.23278952" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.23278952" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Skype</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/developer</predicate>
+               <object>http://dbpedia.org/resource/Microsoft</object>
+               <subjectLabel score="0.08197380">Skype</subjectLabel>
+               <objectLabel score="0.00000000">Microsoft</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="4" runID="run1" score="0.20951058" plugType="E">
+         <cluster cluster_id="4-0" score="0.23278952" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.23278952" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Skype</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/developer</predicate>
+               <object>http://dbpedia.org/resource/Skype_Technologies</object>
+               <subjectLabel score="0.08197380">Skype</subjectLabel>
+               <objectLabel score="0.00000000">Skype Technologies</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="5" runID="run1" score="0.20951058" plugType="E">
+         <cluster cluster_id="5-0" score="0.23278952" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.23278952" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Skype</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/author</predicate>
+               <object>http://dbpedia.org/resource/Janus_Friis</object>
+               <subjectLabel score="0.08197380">Skype</subjectLabel>
+               <objectLabel score="0.00000000">Janus Friis</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="6" runID="run1" score="0.20951058" plugType="E">
+         <cluster cluster_id="6-0" score="0.23278952" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.23278952" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Skype</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/author</predicate>
+               <object>http://dbpedia.org/resource/Niklas_Zennstr%C3%B6m</object>
+               <subjectLabel score="0.08197380">Skype</subjectLabel>
+               <objectLabel score="0.00000000">Niklas Zennström</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="7" runID="run1" score="0.18863736" plugType="E">
+         <cluster cluster_id="7-0" score="0.20959706" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20959706" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Microsoft_Lync_Server</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/developer</predicate>
+               <object>http://dbpedia.org/resource/Skype_Technologies</object>
+               <subjectLabel score="0.00000000">Microsoft Lync Server</subjectLabel>
+               <objectLabel score="0.02399264">Skype Technologies</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+   </results>
+</question>

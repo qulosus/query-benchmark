@@ -1,0 +1,303 @@
+<html> 
+  <head>
+    <meta charset='UTF-8'>
+<style>TABLE.outline {
+        BORDER-RIGHT: #c0c0c0 4px double; BORDER-TOP: #c0c0c0 4px double; BORDER-LEFT: #c0c0c0 4px double;
+        FONT-FAMILY: "MS Sans Serif"; BORDER-BOTTOM: #c0c0c0 4px double; align: center
+}
+A {
+        FONT-SIZE: 14px; COLOR: #333399; FONT-FAMILY: "Consolas"; TEXT-DECORATION: none
+}
+A:hover {
+        FONT-SIZE: 14px; COLOR: #778899; FONT-STYLE: normal; FONT-FAMILY: "Consolas"; TEXT-DECORATION: underline overline
+}
+.blockTitle {
+        PADDING-RIGHT: 3px; BORDER-TOP: #6495ed 3px double; PADDING-LEFT: 3px; FONT-WEIGHT: bold;
+        FONT-SIZE: 14px; PADDING-BOTTOM: 3px; COLOR: #daa520; PADDING-TOP: 3px; BORDER-BOTTOM: #6495ed 3px double;
+        BACKGROUND-COLOR: #f0f8ff
+}
+.blockTitle1 {
+        PADDING-RIGHT: 3px; BORDER-TOP: #6495ed 3px double; PADDING-LEFT: 3px; FONT-WEIGHT: bold; FONT-SIZE: 14px;
+        PADDING-BOTTOM: 3px; COLOR: #daa520; PADDING-TOP: 3px; BORDER-BOTTOM: #6495ed 3px double;
+        BACKGROUND-COLOR: #f0f8ff
+}
+TD {
+        FONT-SIZE: 14px; COLOR: #333399; FONT-FAMILY: "Consolas"; TEXT-DECORATION: none
+}
+.tdin {
+        PADDING-RIGHT: 2px; BORDER-TOP: #6495ed 1px double; PADDING-LEFT: 8px; PADDING-BOTTOM: 2px; PADDING-TOP: 2px;
+        BORDER-BOTTOM: #6495ed 1px double;BORDER-LEFT: #6495ed 1px double;BORDER-RIGHT: #6495ed 1px double;
+        FONT-FAMILY: "Consolas";
+}
+.thin {
+        PADDING-RIGHT: 2px; BORDER-TOP: #6495ed 1px double; PADDING-LEFT: 8px; FONT-WEIGHT: bold; FONT-SIZE: 12px;
+        PADDING-BOTTOM: 2px; COLOR: #E45C3A; PADDING-TOP: 2px; BORDER-BOTTOM: #6495ed 1px double;
+        BACKGROUND-COLOR: #DEF7FE; BORDER-LEFT: #6495ed 1px double; BORDER-RIGHT: #6495ed 1px double ;
+        FONT-FAMILY: "Verdana";
+}
+.thin2 {
+        PADDING-RIGHT: 2px; BORDER-TOP: #6495ed 1px double; PADDING-LEFT: 8px; FONT-WEIGHT: bold; FONT-SIZE: 12px;
+        PADDING-BOTTOM: 2px; COLOR: #405EE4; PADDING-TOP: 2px; BORDER-BOTTOM: #6495ed 1px double;
+        BACKGROUND-COLOR: #FFDFF8; BORDER-LEFT: #6495ed 1px double; BORDER-RIGHT: #6495ed 1px double ;
+        FONT-FAMILY: "Verdana";
+}
+TH {
+        FONT-SIZE: 14px; COLOR: #333399; FONT-FAMILY: "Verdana"; TEXT-DECORATION: none;align: left
+}
+INPUT.spt {
+        BORDER-RIGHT: #6495ed 1px double; BORDER-TOP: #6495ed 1px double;
+        BORDER-BOTTOM: #6495ed 1px double;BORDER-LEFT: #6495ed 1px double;
+        PADDING-LEFT: 1px; PADDING-BOTTOM: 1px; PADDING-TOP: 1px;PADDING-RIGHT: 1px;
+        FONT-FAMILY: "Tahoma";
+        WIDTH : 200px ; HEIGHT : 20px;
+}
+INPUT.spb {
+        PADDING-RIGHT: 1px; PADDING-LEFT: 1px;
+        PADDING-BOTTOM: 1px; PADDING-TOP: 1px;
+        BORDER-RIGHT: #6495ed 1px double; BORDER-LEFT: #6495ed 1px double;
+        BORDER-BOTTOM: #6495ed 1px double; BORDER-TOP: #6495ed 1px double;
+        FONT-FAMILY: "Tahoma"; BACKGROUND-COLOR : #A8FFA8;
+        WIDTH : 60px ; HEIGHT : 20px;
+}
+textarea {
+        PADDING-RIGHT: 2px; PADDING-LEFT: 2px;
+        PADDING-BOTTOM: 2px; PADDING-TOP: 2px;
+        BORDER-RIGHT: #6495ed 1px double; BORDER-LEFT: #6495ed 1px double;
+        BORDER-BOTTOM: #6495ed 1px double; BORDER-TOP: #6495ed 1px double;
+        FONT-FAMILY: "Tahoma"; BACKGROUND-COLOR : #FFFFFF;
+        WIDTH : 600px ; HEIGHT : 400px;
+}
+</style>  </head>
+  <body>
+<h2>Query :: q4</h2> <table class='outline' border='1' width = '100%'>
+<tr>
+<td class='tdin' width='50%'> <pre>{
+	"vienna"	"mayor"  	?mayor .
+	?mayor  	"born in"	?x     .
+}</pre> </td><td class='tdin' width='50%'>Where was the mayor of Vienna born?</td></tr>
+</table>
+ <br/><hr/><br/><table border='0' width = '100%'>
+<tr>
+<td class='tdin' width='35%'><table border='0' width = '100%'><tr>
+<td class='thin' width='40%'># Results</td><td class='tdin' width='40%'><b>5</b></td><td class='tdin' width='20%'></td></tr>
+<tr>
+<td class='thin' width='40%'>Elapsed time</td><td class='tdin' width='40%'>1.51</td><td class='tdin' width='20%'>sec</td></tr>
+<tr>
+<td class='thin' width='40%'>Used memory</td><td class='tdin' width='40%'>72.15893</td><td class='tdin' width='20%'>MB </td></tr>
+<tr>
+<td class='thin' width='40%'>Total Quintuples</td><td class='tdin' width='40%'>16</td><td class='tdin' width='20%'>quins </td></tr>
+<tr>
+<td class='thin' width='40%'>AVG. # quins per cluster</td><td class='tdin' width='40%'>1.6</td><td class='tdin' width='20%'>quin/cluster </td></tr>
+<tr>
+<td class='thin' width='40%'>AVG. # quins per bucket</td><td class='tdin' width='40%'>3.2</td><td class='tdin' width='20%'>quin/bucket </td></tr>
+<tr>
+<td class='thin' width='40%'># plugged triples</td><td class='tdin' width='40%'>0</td><td class='tdin' width='20%'>triples </td></tr>
+</table>
+</td><td class='tdin' width='25%'><table border='0' width = '100%'><tr>
+<td class='thin' width='40%'>LabelSearch TopK</td><td class='tdin' width='40%'>20</td></tr>
+<tr>
+<td class='thin' width='40%'>Plugin Labels ?</td><td class='tdin' width='40%'>false</td></tr>
+<tr>
+<td class='thin' width='40%'>Limit 1st triple?</td><td class='tdin' width='40%'>false</td></tr>
+<tr>
+<td class='thin' width='40%'>Validate Triples?</td><td class='tdin' width='40%'>false</td></tr>
+</table>
+</td><td class='tdin' width='40%'><table border='0' width = '100%'>
+<tr>
+<td class='tdin' width='25%'></td><td class='thin' width='25%'> # Requests</td><td class='thin' width='25%'> # Solved Requests</td><td class='thin' width='25%'> # Returned Records</td></tr>
+<tr>
+<td class='thin2' width='25%'>LinkedMDB</td><td class='tdin' width='25%'>0</td><td class='tdin' width='25%'>0</td><td class='tdin' width='25%'>0</td></tr>
+<tr>
+<td class='thin2' width='25%'>DBpedia</td><td class='tdin' width='25%'>126</td><td class='tdin' width='25%'>4</td><td class='tdin' width='25%'>8</td></tr>
+<tr>
+<td class='thin2' width='25%'>Yago</td><td class='tdin' width='25%'>42</td><td class='tdin' width='25%'>2</td><td class='tdin' width='25%'>2</td></tr>
+<tr>
+<td class='tdin' width='25%'></td><td class='thin' width='25%'>168</td><td class='thin' width='25%'>6</td><td class='thin' width='25%'>10</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 0</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.19448069</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 0 - 0</b><br/> Score1 = 0.24411962<br/> Sim.  = 0.9010<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Michael_Häupl' title='http://yago-knowledge.org/resource/Michael_Häupl'>Michael Häupl</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isLeaderOf' title='http://yago-knowledge.org/resource/isLeaderOf'>isLeaderOf</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Vienna' title='http://yago-knowledge.org/resource/Vienna'>Vienna</a></td>
+<td class='tdin' width='7%'>0.24029321</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Vienna' title='http://dbpedia.org/resource/Vienna'>Vienna</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/leaderName' title='http://dbpedia.org/ontology/leaderName'>leaderName</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Michael_H%C3%A4upl' title='http://dbpedia.org/resource/Michael_H%C3%A4upl'>Michael Häupl</a></td>
+<td class='tdin' width='7%'>0.24411962</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 0 - 1</b><br/> Score1 = 0.20000000<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Michael_H%C3%A4upl' title='http://dbpedia.org/resource/Michael_H%C3%A4upl'>Michael Häupl</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/birthPlace' title='http://dbpedia.org/ontology/birthPlace'>birthPlace</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Austria' title='http://dbpedia.org/resource/Austria'>Austria</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 1</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.19448069</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 1 - 0</b><br/> Score1 = 0.24411962<br/> Sim.  = 0.9010<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Michael_Häupl' title='http://yago-knowledge.org/resource/Michael_Häupl'>Michael Häupl</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isLeaderOf' title='http://yago-knowledge.org/resource/isLeaderOf'>isLeaderOf</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Vienna' title='http://yago-knowledge.org/resource/Vienna'>Vienna</a></td>
+<td class='tdin' width='7%'>0.24029321</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Vienna' title='http://dbpedia.org/resource/Vienna'>Vienna</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/leaderName' title='http://dbpedia.org/ontology/leaderName'>leaderName</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Michael_H%C3%A4upl' title='http://dbpedia.org/resource/Michael_H%C3%A4upl'>Michael Häupl</a></td>
+<td class='tdin' width='7%'>0.24411962</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 1 - 1</b><br/> Score1 = 0.20000000<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Michael_H%C3%A4upl' title='http://dbpedia.org/resource/Michael_H%C3%A4upl'>Michael Häupl</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/birthPlace' title='http://dbpedia.org/ontology/birthPlace'>birthPlace</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Lower_Austria' title='http://dbpedia.org/resource/Lower_Austria'>Lower Austria</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 2</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.19214973</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 2 - 0</b><br/> Score1 = 0.24411962<br/> Sim.  = 0.9010<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Michael_Häupl' title='http://yago-knowledge.org/resource/Michael_Häupl'>Michael Häupl</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isLeaderOf' title='http://yago-knowledge.org/resource/isLeaderOf'>isLeaderOf</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Vienna' title='http://yago-knowledge.org/resource/Vienna'>Vienna</a></td>
+<td class='tdin' width='7%'>0.24029321</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Vienna' title='http://dbpedia.org/resource/Vienna'>Vienna</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/leaderName' title='http://dbpedia.org/ontology/leaderName'>leaderName</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Michael_H%C3%A4upl' title='http://dbpedia.org/resource/Michael_H%C3%A4upl'>Michael Häupl</a></td>
+<td class='tdin' width='7%'>0.24411962</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 2 - 1</b><br/> Score1 = 0.20000000<br/> Sim.  = 0.9228<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Michael_H%C3%A4upl' title='http://dbpedia.org/resource/Michael_H%C3%A4upl'>Michael Häupl</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/birthPlace' title='http://dbpedia.org/ontology/birthPlace'>birthPlace</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Altlengbach' title='http://dbpedia.org/resource/Altlengbach'>Altlengbach</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Michael_Häupl' title='http://yago-knowledge.org/resource/Michael_Häupl'>Michael Häupl</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/wasBornIn' title='http://yago-knowledge.org/resource/wasBornIn'>wasBornIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Altlengbach' title='http://yago-knowledge.org/resource/Altlengbach'>Altlengbach</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 3</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.17648069</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 3 - 0</b><br/> Score1 = 0.24411962<br/> Sim.  = 0.9010<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Michael_Häupl' title='http://yago-knowledge.org/resource/Michael_Häupl'>Michael Häupl</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isLeaderOf' title='http://yago-knowledge.org/resource/isLeaderOf'>isLeaderOf</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Vienna' title='http://yago-knowledge.org/resource/Vienna'>Vienna</a></td>
+<td class='tdin' width='7%'>0.24029321</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Vienna' title='http://dbpedia.org/resource/Vienna'>Vienna</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/leaderName' title='http://dbpedia.org/ontology/leaderName'>leaderName</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Michael_H%C3%A4upl' title='http://dbpedia.org/resource/Michael_H%C3%A4upl'>Michael Häupl</a></td>
+<td class='tdin' width='7%'>0.24411962</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 3 - 1</b><br/> Score1 = 0.16000000<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Michael_H%C3%A4upl' title='http://dbpedia.org/resource/Michael_H%C3%A4upl'>Michael Häupl</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/birthDate' title='http://dbpedia.org/ontology/birthDate'>birthDate</a></td>
+<td class='tdin' width='28%'>1949-09-14</td>
+<td class='tdin' width='7%'>0.16000000</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 4</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.16748069</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 4 - 0</b><br/> Score1 = 0.24411962<br/> Sim.  = 0.9010<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Michael_Häupl' title='http://yago-knowledge.org/resource/Michael_Häupl'>Michael Häupl</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isLeaderOf' title='http://yago-knowledge.org/resource/isLeaderOf'>isLeaderOf</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Vienna' title='http://yago-knowledge.org/resource/Vienna'>Vienna</a></td>
+<td class='tdin' width='7%'>0.24029321</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Vienna' title='http://dbpedia.org/resource/Vienna'>Vienna</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/leaderName' title='http://dbpedia.org/ontology/leaderName'>leaderName</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Michael_H%C3%A4upl' title='http://dbpedia.org/resource/Michael_H%C3%A4upl'>Michael Häupl</a></td>
+<td class='tdin' width='7%'>0.24411962</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 4 - 1</b><br/> Score1 = 0.14000000<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Michael_H%C3%A4upl' title='http://dbpedia.org/resource/Michael_H%C3%A4upl'>Michael Häupl</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/birthYear' title='http://dbpedia.org/ontology/birthYear'>birthYear</a></td>
+<td class='tdin' width='28%'>1949</td>
+<td class='tdin' width='7%'>0.14000000</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+  </body>
+</html>

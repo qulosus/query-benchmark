@@ -1,0 +1,1498 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<question id="16" runID="run8">
+   <string>
+      <![CDATA[Give me the countries where the Danube flow through, with their capitals and capital population.]]>
+   </string>
+   <query>
+      <![CDATA[
+  "Danube"  "country"     ?country .
+  ?country  "capital"     ?capital .
+  ?capital  "population"  ?population .
+]]>
+   </query>
+   <settings labelSearchTopK="10" plugLabel="true" limited="false" validateTriple="false"/>
+   <stats1 nb_results="43" timeSec="10.4990" memoryMB="146.9196" totalQuins="160" avgQuin_Cluster="1.2403" avgQuin_Bucket="3.7209" nb_plugTR="8"/>
+   <stats2>
+      <ds id="LinkedMDB">
+         <nreq>234</nreq>
+         <nreqs>1</nreqs>
+         <nrecd>1</nrecd>
+      </ds>
+      <ds id="DBpedia">
+         <nreq>458</nreq>
+         <nreqs>20</nreqs>
+         <nrecd>31</nrecd>
+      </ds>
+      <ds id="Yago">
+         <nreq>500</nreq>
+         <nreqs>54</nreqs>
+         <nrecd>89</nrecd>
+      </ds>
+   </stats2>
+   <results>
+      <bucket bucket_id="0" runID="run8" score="0.23818033" plugType="E">
+         <cluster cluster_id="0-0" score="0.25133165" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.25133165" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Danube</subject>
+               <predicate score="0.90000000">http://yago-knowledge.org/resource/isLocatedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Bavaria</object>
+               <subjectLabel score="0.17832911">Danube</subjectLabel>
+               <objectLabel score="0.00000000">Bavaria</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="0-1" score="0.34260274" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.34260274" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Bavaria</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/capital</predicate>
+               <object>http://dbpedia.org/resource/Munich</object>
+               <subjectLabel score="0.35650685">Bavaria</subjectLabel>
+               <objectLabel score="0.00000000">Munich</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="0-2" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://dbpedia.org/resource/Munich</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/populationTotal</predicate>
+               <object>1458508</object>
+               <subjectLabel score="0.00000000">Munich</subjectLabel>
+               <objectLabel score="0.00000000">1458508</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="1" runID="run8" score="0.23092555" plugType="E">
+         <cluster cluster_id="1-0" score="0.25133165" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.25133165" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Danube</subject>
+               <predicate score="0.90000000">http://yago-knowledge.org/resource/isLocatedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Baden-Württemberg</object>
+               <subjectLabel score="0.17832911">Danube</subjectLabel>
+               <objectLabel score="0.00000000">Baden-Württemberg</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="1-1" score="0.31842015" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.31842015" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Baden-W%C3%BCrttemberg</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/capital</predicate>
+               <object>http://dbpedia.org/resource/Stuttgart</object>
+               <subjectLabel score="0.29605037">Baden-Württemberg</subjectLabel>
+               <objectLabel score="0.00000000">Stuttgart</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="1-2" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://dbpedia.org/resource/Stuttgart</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/populationTotal</predicate>
+               <object>600038</object>
+               <subjectLabel score="0.00000000">Stuttgart</subjectLabel>
+               <objectLabel score="0.00000000">600038</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="2" runID="run8" score="0.20671678" plugType="E">
+         <cluster cluster_id="2-0" score="0.25133165" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.25133165" isFlipped="true" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Belene_Island</subject>
+               <predicate score="0.90000000">http://yago-knowledge.org/resource/isLocatedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Danube</object>
+               <subjectLabel score="0.00000000">Belene Island</subjectLabel>
+               <objectLabel score="0.17832911">Danube</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="2-1" score="0.23772426" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.23772426" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Rhode_Island</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasCapital</predicate>
+               <object>http://yago-knowledge.org/resource/Providence,_Rhode_Island</object>
+               <subjectLabel score="0.09431064">Rhode Island</subjectLabel>
+               <objectLabel score="0.00000000">Providence, Rhode Island</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="2-2" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://yago-knowledge.org/resource/Providence,_Rhode_Island</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasNumberOfPeople</predicate>
+               <object>http://yago-knowledge.org/resource/"178042"^^xsd:nonNegativeInteger</object>
+               <subjectLabel score="0.00000000">Providence, Rhode Island</subjectLabel>
+               <objectLabel score="0.00000000">"178042"</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="3" runID="run8" score="0.20545744" plugType="E">
+         <cluster cluster_id="3-0" score="0.25133165" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.25133165" isFlipped="true" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Óbuda_Island</subject>
+               <predicate score="0.90000000">http://yago-knowledge.org/resource/isLocatedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Danube</object>
+               <subjectLabel score="0.00000000">Óbuda Island</subjectLabel>
+               <objectLabel score="0.17832911">Danube</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="3-1" score="0.23352646" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.23352646" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Rhode_Island</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasCapital</predicate>
+               <object>http://yago-knowledge.org/resource/Providence,_Rhode_Island</object>
+               <subjectLabel score="0.08381613">Rhode Island</subjectLabel>
+               <objectLabel score="0.00000000">Providence, Rhode Island</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="3-2" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://yago-knowledge.org/resource/Providence,_Rhode_Island</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasNumberOfPeople</predicate>
+               <object>http://yago-knowledge.org/resource/"178042"^^xsd:nonNegativeInteger</object>
+               <subjectLabel score="0.00000000">Providence, Rhode Island</subjectLabel>
+               <objectLabel score="0.00000000">"178042"</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="4" runID="run8" score="0.20475005" plugType="E">
+         <cluster cluster_id="4-0" score="0.25133165" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.25133165" isFlipped="true" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Hajógyári_Island</subject>
+               <predicate score="0.90000000">http://yago-knowledge.org/resource/isLocatedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Danube</object>
+               <subjectLabel score="0.00000000">Hajógyári Island</subjectLabel>
+               <objectLabel score="0.17832911">Danube</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="4-1" score="0.23116849" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.23116849" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Rhode_Island</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasCapital</predicate>
+               <object>http://yago-knowledge.org/resource/Providence,_Rhode_Island</object>
+               <subjectLabel score="0.07792121">Rhode Island</subjectLabel>
+               <objectLabel score="0.00000000">Providence, Rhode Island</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="4-2" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://yago-knowledge.org/resource/Providence,_Rhode_Island</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasNumberOfPeople</predicate>
+               <object>http://yago-knowledge.org/resource/"178042"^^xsd:nonNegativeInteger</object>
+               <subjectLabel score="0.00000000">Providence, Rhode Island</subjectLabel>
+               <objectLabel score="0.00000000">"178042"</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="5" runID="run8" score="0.20397051" plugType="E">
+         <cluster cluster_id="5-0" score="0.25133165" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.25133165" isFlipped="true" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Vardim_Island</subject>
+               <predicate score="0.90000000">http://yago-knowledge.org/resource/isLocatedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Danube</object>
+               <subjectLabel score="0.00000000">Vardim Island</subjectLabel>
+               <objectLabel score="0.17832911">Danube</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="5-1" score="0.22857001" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.22857001" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Rhode_Island</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasCapital</predicate>
+               <object>http://yago-knowledge.org/resource/Providence,_Rhode_Island</object>
+               <subjectLabel score="0.07142501">Rhode Island</subjectLabel>
+               <objectLabel score="0.00000000">Providence, Rhode Island</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="5-2" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://yago-knowledge.org/resource/Providence,_Rhode_Island</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasNumberOfPeople</predicate>
+               <object>http://yago-knowledge.org/resource/"178042"^^xsd:nonNegativeInteger</object>
+               <subjectLabel score="0.00000000">Providence, Rhode Island</subjectLabel>
+               <objectLabel score="0.00000000">"178042"</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="6" runID="run8" score="0.20284106" plugType="E">
+         <cluster cluster_id="6-0" score="0.25133165" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.25133165" isFlipped="true" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Island_of_Šarengrad</subject>
+               <predicate score="0.90000000">http://yago-knowledge.org/resource/isLocatedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Danube</object>
+               <subjectLabel score="0.00000000">Island of Šarengrad</subjectLabel>
+               <objectLabel score="0.17832911">Danube</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="6-1" score="0.22480518" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.22480518" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Rhode_Island</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasCapital</predicate>
+               <object>http://yago-knowledge.org/resource/Providence,_Rhode_Island</object>
+               <subjectLabel score="0.06201294">Rhode Island</subjectLabel>
+               <objectLabel score="0.00000000">Providence, Rhode Island</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="6-2" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://yago-knowledge.org/resource/Providence,_Rhode_Island</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasNumberOfPeople</predicate>
+               <object>http://yago-knowledge.org/resource/"178042"^^xsd:nonNegativeInteger</object>
+               <subjectLabel score="0.00000000">Providence, Rhode Island</subjectLabel>
+               <objectLabel score="0.00000000">"178042"</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="7" runID="run8" score="0.20172779" plugType="E">
+         <cluster cluster_id="7-0" score="0.27374529" sim="0.9156" norm="0.9500">
+            <quintuple dataset="DBpedia" score="0.27374529" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Danube</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/country</predicate>
+               <object>http://dbpedia.org/resource/Austria</object>
+               <subjectLabel score="0.18436322">Danube</subjectLabel>
+               <objectLabel score="0.00000000">Austria</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.25133165" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Danube</subject>
+               <predicate score="0.90000000">http://yago-knowledge.org/resource/isLocatedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Austria</object>
+               <subjectLabel score="0.17832911">Danube</subjectLabel>
+               <objectLabel score="0.00000000">Austria</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="7-1" score="0.20000000" sim="0.9846" norm="0.9500">
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Austria</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasCapital</predicate>
+               <object>http://yago-knowledge.org/resource/Vienna</object>
+               <subjectLabel score="0.00000000">Austria</subjectLabel>
+               <objectLabel score="0.00000000">Vienna</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Austria</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/capital</predicate>
+               <object>http://dbpedia.org/resource/Vienna</object>
+               <subjectLabel score="0.00000000">Austria</subjectLabel>
+               <objectLabel score="0.00000000">Vienna</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="7-2" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://dbpedia.org/resource/Vienna</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/populationTotal</predicate>
+               <object>1765649</object>
+               <subjectLabel score="0.00000000">Vienna</subjectLabel>
+               <objectLabel score="0.00000000">1765649</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="8" runID="run8" score="0.20172779" plugType="E">
+         <cluster cluster_id="8-0" score="0.27374529" sim="0.9156" norm="0.9500">
+            <quintuple dataset="DBpedia" score="0.27374529" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Danube</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/country</predicate>
+               <object>http://dbpedia.org/resource/Austria</object>
+               <subjectLabel score="0.18436322">Danube</subjectLabel>
+               <objectLabel score="0.00000000">Austria</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.25133165" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Danube</subject>
+               <predicate score="0.90000000">http://yago-knowledge.org/resource/isLocatedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Austria</object>
+               <subjectLabel score="0.17832911">Danube</subjectLabel>
+               <objectLabel score="0.00000000">Austria</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="8-1" score="0.20000000" sim="0.9846" norm="0.9500">
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Austria</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasCapital</predicate>
+               <object>http://yago-knowledge.org/resource/Vienna</object>
+               <subjectLabel score="0.00000000">Austria</subjectLabel>
+               <objectLabel score="0.00000000">Vienna</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Austria</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/capital</predicate>
+               <object>http://dbpedia.org/resource/Vienna</object>
+               <subjectLabel score="0.00000000">Austria</subjectLabel>
+               <objectLabel score="0.00000000">Vienna</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="8-2" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://yago-knowledge.org/resource/Vienna</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasNumberOfPeople</predicate>
+               <object>http://yago-knowledge.org/resource/"1714142"^^xsd:nonNegativeInteger</object>
+               <subjectLabel score="0.00000000">Vienna</subjectLabel>
+               <objectLabel score="0.00000000">"1714142"</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="9" runID="run8" score="0.20172779" plugType="E">
+         <cluster cluster_id="9-0" score="0.27374529" sim="0.9156" norm="0.9500">
+            <quintuple dataset="Yago" score="0.25133165" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Danube</subject>
+               <predicate score="0.90000000">http://yago-knowledge.org/resource/isLocatedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Bulgaria</object>
+               <subjectLabel score="0.17832911">Danube</subjectLabel>
+               <objectLabel score="0.00000000">Bulgaria</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.27374529" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Danube</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/country</predicate>
+               <object>http://dbpedia.org/resource/Bulgaria</object>
+               <subjectLabel score="0.18436322">Danube</subjectLabel>
+               <objectLabel score="0.00000000">Bulgaria</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="9-1" score="0.20000000" sim="0.9846" norm="0.9500">
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Bulgaria</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasCapital</predicate>
+               <object>http://yago-knowledge.org/resource/Sofia</object>
+               <subjectLabel score="0.00000000">Bulgaria</subjectLabel>
+               <objectLabel score="0.00000000">Sofia</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Bulgaria</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/capital</predicate>
+               <object>http://dbpedia.org/resource/Sofia</object>
+               <subjectLabel score="0.00000000">Bulgaria</subjectLabel>
+               <objectLabel score="0.00000000">Sofia</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="9-2" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://dbpedia.org/resource/Sofia</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/populationTotal</predicate>
+               <object>1241396</object>
+               <subjectLabel score="0.00000000">Sofia</subjectLabel>
+               <objectLabel score="0.00000000">1241396</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="10" runID="run8" score="0.20172779" plugType="E">
+         <cluster cluster_id="10-0" score="0.27374529" sim="0.9156" norm="0.9500">
+            <quintuple dataset="Yago" score="0.25133165" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Danube</subject>
+               <predicate score="0.90000000">http://yago-knowledge.org/resource/isLocatedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Bulgaria</object>
+               <subjectLabel score="0.17832911">Danube</subjectLabel>
+               <objectLabel score="0.00000000">Bulgaria</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.27374529" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Danube</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/country</predicate>
+               <object>http://dbpedia.org/resource/Bulgaria</object>
+               <subjectLabel score="0.18436322">Danube</subjectLabel>
+               <objectLabel score="0.00000000">Bulgaria</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="10-1" score="0.20000000" sim="0.9846" norm="0.9500">
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Bulgaria</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasCapital</predicate>
+               <object>http://yago-knowledge.org/resource/Sofia</object>
+               <subjectLabel score="0.00000000">Bulgaria</subjectLabel>
+               <objectLabel score="0.00000000">Sofia</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Bulgaria</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/capital</predicate>
+               <object>http://dbpedia.org/resource/Sofia</object>
+               <subjectLabel score="0.00000000">Bulgaria</subjectLabel>
+               <objectLabel score="0.00000000">Sofia</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="10-2" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://yago-knowledge.org/resource/Sofia</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasNumberOfPeople</predicate>
+               <object>http://yago-knowledge.org/resource/"1204685"^^xsd:nonNegativeInteger</object>
+               <subjectLabel score="0.00000000">Sofia</subjectLabel>
+               <objectLabel score="0.00000000">"1204685"</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="11" runID="run8" score="0.20172779" plugType="E">
+         <cluster cluster_id="11-0" score="0.27374529" sim="0.9156" norm="0.9500">
+            <quintuple dataset="Yago" score="0.25133165" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Danube</subject>
+               <predicate score="0.90000000">http://yago-knowledge.org/resource/isLocatedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Germany</object>
+               <subjectLabel score="0.17832911">Danube</subjectLabel>
+               <objectLabel score="0.00000000">Germany</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.27374529" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Danube</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/country</predicate>
+               <object>http://dbpedia.org/resource/Germany</object>
+               <subjectLabel score="0.18436322">Danube</subjectLabel>
+               <objectLabel score="0.00000000">Germany</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="11-1" score="0.20000000" sim="0.9846" norm="0.9500">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Germany</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/capital</predicate>
+               <object>http://dbpedia.org/resource/Berlin</object>
+               <subjectLabel score="0.00000000">Germany</subjectLabel>
+               <objectLabel score="0.00000000">Berlin</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Germany</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasCapital</predicate>
+               <object>http://yago-knowledge.org/resource/Berlin</object>
+               <subjectLabel score="0.00000000">Germany</subjectLabel>
+               <objectLabel score="0.00000000">Berlin</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="11-2" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://dbpedia.org/resource/Berlin</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/populationTotal</predicate>
+               <object>3415091</object>
+               <subjectLabel score="0.00000000">Berlin</subjectLabel>
+               <objectLabel score="0.00000000">3415091</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="12" runID="run8" score="0.20172779" plugType="E">
+         <cluster cluster_id="12-0" score="0.27374529" sim="0.9156" norm="0.9500">
+            <quintuple dataset="Yago" score="0.25133165" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Danube</subject>
+               <predicate score="0.90000000">http://yago-knowledge.org/resource/isLocatedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Germany</object>
+               <subjectLabel score="0.17832911">Danube</subjectLabel>
+               <objectLabel score="0.00000000">Germany</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.27374529" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Danube</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/country</predicate>
+               <object>http://dbpedia.org/resource/Germany</object>
+               <subjectLabel score="0.18436322">Danube</subjectLabel>
+               <objectLabel score="0.00000000">Germany</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="12-1" score="0.20000000" sim="0.9846" norm="0.9500">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Germany</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/capital</predicate>
+               <object>http://dbpedia.org/resource/Berlin</object>
+               <subjectLabel score="0.00000000">Germany</subjectLabel>
+               <objectLabel score="0.00000000">Berlin</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Germany</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasCapital</predicate>
+               <object>http://yago-knowledge.org/resource/Berlin</object>
+               <subjectLabel score="0.00000000">Germany</subjectLabel>
+               <objectLabel score="0.00000000">Berlin</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="12-2" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://yago-knowledge.org/resource/Berlin</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasNumberOfPeople</predicate>
+               <object>http://yago-knowledge.org/resource/"3499879"^^xsd:nonNegativeInteger</object>
+               <subjectLabel score="0.00000000">Berlin</subjectLabel>
+               <objectLabel score="0.00000000">"3499879"</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="13" runID="run8" score="0.20172779" plugType="E">
+         <cluster cluster_id="13-0" score="0.27374529" sim="0.9156" norm="0.9500">
+            <quintuple dataset="Yago" score="0.25133165" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Danube</subject>
+               <predicate score="0.90000000">http://yago-knowledge.org/resource/isLocatedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Hungary</object>
+               <subjectLabel score="0.17832911">Danube</subjectLabel>
+               <objectLabel score="0.00000000">Hungary</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.27374529" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Danube</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/country</predicate>
+               <object>http://dbpedia.org/resource/Hungary</object>
+               <subjectLabel score="0.18436322">Danube</subjectLabel>
+               <objectLabel score="0.00000000">Hungary</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="13-1" score="0.20000000" sim="0.9846" norm="0.9500">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Hungary</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/capital</predicate>
+               <object>http://dbpedia.org/resource/Budapest</object>
+               <subjectLabel score="0.00000000">Hungary</subjectLabel>
+               <objectLabel score="0.00000000">Budapest</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Hungary</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasCapital</predicate>
+               <object>http://yago-knowledge.org/resource/Budapest</object>
+               <subjectLabel score="0.00000000">Hungary</subjectLabel>
+               <objectLabel score="0.00000000">Budapest</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="13-2" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://dbpedia.org/resource/Budapest</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/populationTotal</predicate>
+               <object>1740041</object>
+               <subjectLabel score="0.00000000">Budapest</subjectLabel>
+               <objectLabel score="0.00000000">1740041</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="14" runID="run8" score="0.20172779" plugType="E">
+         <cluster cluster_id="14-0" score="0.27374529" sim="0.9156" norm="0.9500">
+            <quintuple dataset="Yago" score="0.25133165" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Danube</subject>
+               <predicate score="0.90000000">http://yago-knowledge.org/resource/isLocatedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Hungary</object>
+               <subjectLabel score="0.17832911">Danube</subjectLabel>
+               <objectLabel score="0.00000000">Hungary</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.27374529" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Danube</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/country</predicate>
+               <object>http://dbpedia.org/resource/Hungary</object>
+               <subjectLabel score="0.18436322">Danube</subjectLabel>
+               <objectLabel score="0.00000000">Hungary</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="14-1" score="0.20000000" sim="0.9846" norm="0.9500">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Hungary</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/capital</predicate>
+               <object>http://dbpedia.org/resource/Budapest</object>
+               <subjectLabel score="0.00000000">Hungary</subjectLabel>
+               <objectLabel score="0.00000000">Budapest</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Hungary</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasCapital</predicate>
+               <object>http://yago-knowledge.org/resource/Budapest</object>
+               <subjectLabel score="0.00000000">Hungary</subjectLabel>
+               <objectLabel score="0.00000000">Budapest</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="14-2" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://yago-knowledge.org/resource/Budapest</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasNumberOfPeople</predicate>
+               <object>http://yago-knowledge.org/resource/"1737000"^^xsd:nonNegativeInteger</object>
+               <subjectLabel score="0.00000000">Budapest</subjectLabel>
+               <objectLabel score="0.00000000">"1737000"</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="15" runID="run8" score="0.20172779" plugType="E">
+         <cluster cluster_id="15-0" score="0.27374529" sim="0.9156" norm="0.9500">
+            <quintuple dataset="Yago" score="0.25133165" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Danube</subject>
+               <predicate score="0.90000000">http://yago-knowledge.org/resource/isLocatedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Serbia</object>
+               <subjectLabel score="0.17832911">Danube</subjectLabel>
+               <objectLabel score="0.00000000">Serbia</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.27374529" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Danube</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/country</predicate>
+               <object>http://dbpedia.org/resource/Serbia</object>
+               <subjectLabel score="0.18436322">Danube</subjectLabel>
+               <objectLabel score="0.00000000">Serbia</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="15-1" score="0.20000000" sim="0.9846" norm="0.9500">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Serbia</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/capital</predicate>
+               <object>http://dbpedia.org/resource/Belgrade</object>
+               <subjectLabel score="0.00000000">Serbia</subjectLabel>
+               <objectLabel score="0.00000000">Belgrade</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Serbia</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasCapital</predicate>
+               <object>http://yago-knowledge.org/resource/Belgrade</object>
+               <subjectLabel score="0.00000000">Serbia</subjectLabel>
+               <objectLabel score="0.00000000">Belgrade</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="15-2" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://dbpedia.org/resource/Belgrade</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/populationTotal</predicate>
+               <object>1166763</object>
+               <subjectLabel score="0.00000000">Belgrade</subjectLabel>
+               <objectLabel score="0.00000000">1166763</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="16" runID="run8" score="0.20172779" plugType="E">
+         <cluster cluster_id="16-0" score="0.27374529" sim="0.9156" norm="0.9500">
+            <quintuple dataset="Yago" score="0.25133165" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Danube</subject>
+               <predicate score="0.90000000">http://yago-knowledge.org/resource/isLocatedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Serbia</object>
+               <subjectLabel score="0.17832911">Danube</subjectLabel>
+               <objectLabel score="0.00000000">Serbia</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.27374529" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Danube</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/country</predicate>
+               <object>http://dbpedia.org/resource/Serbia</object>
+               <subjectLabel score="0.18436322">Danube</subjectLabel>
+               <objectLabel score="0.00000000">Serbia</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="16-1" score="0.20000000" sim="0.9846" norm="0.9500">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Serbia</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/capital</predicate>
+               <object>http://dbpedia.org/resource/Belgrade</object>
+               <subjectLabel score="0.00000000">Serbia</subjectLabel>
+               <objectLabel score="0.00000000">Belgrade</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Serbia</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasCapital</predicate>
+               <object>http://yago-knowledge.org/resource/Belgrade</object>
+               <subjectLabel score="0.00000000">Serbia</subjectLabel>
+               <objectLabel score="0.00000000">Belgrade</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="16-2" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://yago-knowledge.org/resource/Belgrade</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasNumberOfPeople</predicate>
+               <object>http://yago-knowledge.org/resource/"1154589"^^xsd:nonNegativeInteger</object>
+               <subjectLabel score="0.00000000">Belgrade</subjectLabel>
+               <objectLabel score="0.00000000">"1154589"</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="17" runID="run8" score="0.19936882" plugType="E">
+         <cluster cluster_id="17-0" score="0.27374529" sim="0.9156" norm="0.9500">
+            <quintuple dataset="DBpedia" score="0.27374529" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Danube</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/country</predicate>
+               <object>http://dbpedia.org/resource/Croatia</object>
+               <subjectLabel score="0.18436322">Danube</subjectLabel>
+               <objectLabel score="0.00000000">Croatia</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.25133165" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Danube</subject>
+               <predicate score="0.90000000">http://yago-knowledge.org/resource/isLocatedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Croatia</object>
+               <subjectLabel score="0.17832911">Danube</subjectLabel>
+               <objectLabel score="0.00000000">Croatia</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="17-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Croatia</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasCapital</predicate>
+               <object>http://yago-knowledge.org/resource/Zagreb</object>
+               <subjectLabel score="0.00000000">Croatia</subjectLabel>
+               <objectLabel score="0.00000000">Zagreb</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="17-2" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://yago-knowledge.org/resource/Zagreb</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasNumberOfPeople</predicate>
+               <object>http://yago-knowledge.org/resource/"792875"^^xsd:nonNegativeInteger</object>
+               <subjectLabel score="0.00000000">Zagreb</subjectLabel>
+               <objectLabel score="0.00000000">"792875"</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="18" runID="run8" score="0.19936882" plugType="E">
+         <cluster cluster_id="18-0" score="0.27374529" sim="0.9156" norm="0.9500">
+            <quintuple dataset="DBpedia" score="0.27374529" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Danube</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/country</predicate>
+               <object>http://dbpedia.org/resource/Romania</object>
+               <subjectLabel score="0.18436322">Danube</subjectLabel>
+               <objectLabel score="0.00000000">Romania</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.25133165" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Danube</subject>
+               <predicate score="0.90000000">http://yago-knowledge.org/resource/isLocatedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Romania</object>
+               <subjectLabel score="0.17832911">Danube</subjectLabel>
+               <objectLabel score="0.00000000">Romania</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="18-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Romania</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasCapital</predicate>
+               <object>http://yago-knowledge.org/resource/Bucharest</object>
+               <subjectLabel score="0.00000000">Romania</subjectLabel>
+               <objectLabel score="0.00000000">Bucharest</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="18-2" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://yago-knowledge.org/resource/Bucharest</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasNumberOfPeople</predicate>
+               <object>http://yago-knowledge.org/resource/"1677985"^^xsd:nonNegativeInteger</object>
+               <subjectLabel score="0.00000000">Bucharest</subjectLabel>
+               <objectLabel score="0.00000000">"1677985"</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="19" runID="run8" score="0.19539950" plugType="E">
+         <cluster cluster_id="19-0" score="0.25133165" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.25133165" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Danube</subject>
+               <predicate score="0.90000000">http://yago-knowledge.org/resource/isLocatedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Ukraine</object>
+               <subjectLabel score="0.17832911">Danube</subjectLabel>
+               <objectLabel score="0.00000000">Ukraine</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="19-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Ukraine</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasCapital</predicate>
+               <object>http://yago-knowledge.org/resource/Kiev</object>
+               <subjectLabel score="0.00000000">Ukraine</subjectLabel>
+               <objectLabel score="0.00000000">Kiev</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="19-2" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://yago-knowledge.org/resource/Kiev</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasNumberOfPeople</predicate>
+               <object>http://yago-knowledge.org/resource/"2797553"^^xsd:nonNegativeInteger</object>
+               <subjectLabel score="0.00000000">Kiev</subjectLabel>
+               <objectLabel score="0.00000000">"2797553"</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="20" runID="run8" score="0.19539950" plugType="E">
+         <cluster cluster_id="20-0" score="0.25133165" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.25133165" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Danube</subject>
+               <predicate score="0.90000000">http://yago-knowledge.org/resource/isLocatedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Moldova</object>
+               <subjectLabel score="0.17832911">Danube</subjectLabel>
+               <objectLabel score="0.00000000">Moldova</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="20-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Moldova</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasCapital</predicate>
+               <object>http://yago-knowledge.org/resource/Chişinău</object>
+               <subjectLabel score="0.00000000">Moldova</subjectLabel>
+               <objectLabel score="0.00000000">Chişinău</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="20-2" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://yago-knowledge.org/resource/Chişinău</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasNumberOfPeople</predicate>
+               <object>http://yago-knowledge.org/resource/"723500"^^xsd:nonNegativeInteger</object>
+               <subjectLabel score="0.00000000">Chişinău</subjectLabel>
+               <objectLabel score="0.00000000">"723500"</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="21" runID="run8" score="0.18693484" plugType="E">
+         <cluster cluster_id="21-0" score="0.22311610" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.22311610" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Danube_Delta</subject>
+               <predicate score="0.90000000">http://yago-knowledge.org/resource/isLocatedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Romania</object>
+               <subjectLabel score="0.10779023">Danube Delta</subjectLabel>
+               <objectLabel score="0.00000000">Romania</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="21-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Romania</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasCapital</predicate>
+               <object>http://yago-knowledge.org/resource/Bucharest</object>
+               <subjectLabel score="0.00000000">Romania</subjectLabel>
+               <objectLabel score="0.00000000">Bucharest</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="21-2" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://yago-knowledge.org/resource/Bucharest</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasNumberOfPeople</predicate>
+               <object>http://yago-knowledge.org/resource/"1677985"^^xsd:nonNegativeInteger</object>
+               <subjectLabel score="0.00000000">Bucharest</subjectLabel>
+               <objectLabel score="0.00000000">"1677985"</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="22" runID="run8" score="0.18620341" plugType="E">
+         <cluster cluster_id="22-0" score="0.22067802" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.22067802" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Danube_Wings</subject>
+               <predicate score="0.90000000">http://yago-knowledge.org/resource/isLocatedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Bratislava</object>
+               <subjectLabel score="0.10169504">Danube Wings</subjectLabel>
+               <objectLabel score="0.00000000">Bratislava</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="22-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Slovakia</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasCapital</predicate>
+               <object>http://yago-knowledge.org/resource/Bratislava</object>
+               <subjectLabel score="0.00000000">Slovakia</subjectLabel>
+               <objectLabel score="0.00000000">Bratislava</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="22-2" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://yago-knowledge.org/resource/Slovakia</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasNumberOfPeople</predicate>
+               <object>http://yago-knowledge.org/resource/"5445324"^^xsd:nonNegativeInteger</object>
+               <subjectLabel score="0.00000000">Slovakia</subjectLabel>
+               <objectLabel score="0.00000000">"5445324"</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="23" runID="run8" score="0.16572779" plugType="E">
+         <cluster cluster_id="23-0" score="0.27374529" sim="0.9156" norm="0.9500">
+            <quintuple dataset="DBpedia" score="0.27374529" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Danube</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/country</predicate>
+               <object>http://dbpedia.org/resource/Austria</object>
+               <subjectLabel score="0.18436322">Danube</subjectLabel>
+               <objectLabel score="0.00000000">Austria</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.25133165" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Danube</subject>
+               <predicate score="0.90000000">http://yago-knowledge.org/resource/isLocatedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Austria</object>
+               <subjectLabel score="0.17832911">Danube</subjectLabel>
+               <objectLabel score="0.00000000">Austria</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="23-1" score="0.20000000" sim="0.9846" norm="0.9500">
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Austria</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasCapital</predicate>
+               <object>http://yago-knowledge.org/resource/Vienna</object>
+               <subjectLabel score="0.00000000">Austria</subjectLabel>
+               <objectLabel score="0.00000000">Vienna</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Austria</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/capital</predicate>
+               <object>http://dbpedia.org/resource/Vienna</object>
+               <subjectLabel score="0.00000000">Austria</subjectLabel>
+               <objectLabel score="0.00000000">Vienna</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="23-2" score="0.08000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.08000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://yago-knowledge.org/resource/Vienna</subject>
+               <predicate score="0.40000000">http://yago-knowledge.org/resource/hasPopulationDensity</predicate>
+               <object>http://yago-knowledge.org/resource/"4002.2"^^/km^2</object>
+               <subjectLabel score="0.00000000">Vienna</subjectLabel>
+               <objectLabel score="0.00000000">"4002.2"</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="24" runID="run8" score="0.16572779" plugType="E">
+         <cluster cluster_id="24-0" score="0.27374529" sim="0.9156" norm="0.9500">
+            <quintuple dataset="Yago" score="0.25133165" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Danube</subject>
+               <predicate score="0.90000000">http://yago-knowledge.org/resource/isLocatedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Bulgaria</object>
+               <subjectLabel score="0.17832911">Danube</subjectLabel>
+               <objectLabel score="0.00000000">Bulgaria</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.27374529" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Danube</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/country</predicate>
+               <object>http://dbpedia.org/resource/Bulgaria</object>
+               <subjectLabel score="0.18436322">Danube</subjectLabel>
+               <objectLabel score="0.00000000">Bulgaria</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="24-1" score="0.20000000" sim="0.9846" norm="0.9500">
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Bulgaria</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasCapital</predicate>
+               <object>http://yago-knowledge.org/resource/Sofia</object>
+               <subjectLabel score="0.00000000">Bulgaria</subjectLabel>
+               <objectLabel score="0.00000000">Sofia</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Bulgaria</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/capital</predicate>
+               <object>http://dbpedia.org/resource/Sofia</object>
+               <subjectLabel score="0.00000000">Bulgaria</subjectLabel>
+               <objectLabel score="0.00000000">Sofia</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="24-2" score="0.08000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.08000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://yago-knowledge.org/resource/Sofia</subject>
+               <predicate score="0.40000000">http://yago-knowledge.org/resource/hasPopulationDensity</predicate>
+               <object>http://yago-knowledge.org/resource/"2448"^^/km^2</object>
+               <subjectLabel score="0.00000000">Sofia</subjectLabel>
+               <objectLabel score="0.00000000">"2448"</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="25" runID="run8" score="0.16572779" plugType="E">
+         <cluster cluster_id="25-0" score="0.27374529" sim="0.9156" norm="0.9500">
+            <quintuple dataset="Yago" score="0.25133165" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Danube</subject>
+               <predicate score="0.90000000">http://yago-knowledge.org/resource/isLocatedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Serbia</object>
+               <subjectLabel score="0.17832911">Danube</subjectLabel>
+               <objectLabel score="0.00000000">Serbia</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.27374529" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Danube</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/country</predicate>
+               <object>http://dbpedia.org/resource/Serbia</object>
+               <subjectLabel score="0.18436322">Danube</subjectLabel>
+               <objectLabel score="0.00000000">Serbia</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="25-1" score="0.20000000" sim="0.9846" norm="0.9500">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Serbia</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/capital</predicate>
+               <object>http://dbpedia.org/resource/Belgrade</object>
+               <subjectLabel score="0.00000000">Serbia</subjectLabel>
+               <objectLabel score="0.00000000">Belgrade</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Serbia</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasCapital</predicate>
+               <object>http://yago-knowledge.org/resource/Belgrade</object>
+               <subjectLabel score="0.00000000">Serbia</subjectLabel>
+               <objectLabel score="0.00000000">Belgrade</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="25-2" score="0.08000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.08000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://yago-knowledge.org/resource/Belgrade</subject>
+               <predicate score="0.40000000">http://yago-knowledge.org/resource/hasPopulationDensity</predicate>
+               <object>http://yago-knowledge.org/resource/"3207.5"^^/km^2</object>
+               <subjectLabel score="0.00000000">Belgrade</subjectLabel>
+               <objectLabel score="0.00000000">"3207.5"</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="26" runID="run8" score="0.16336882" plugType="E">
+         <cluster cluster_id="26-0" score="0.27374529" sim="0.9156" norm="0.9500">
+            <quintuple dataset="DBpedia" score="0.27374529" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Danube</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/country</predicate>
+               <object>http://dbpedia.org/resource/Romania</object>
+               <subjectLabel score="0.18436322">Danube</subjectLabel>
+               <objectLabel score="0.00000000">Romania</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.25133165" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Danube</subject>
+               <predicate score="0.90000000">http://yago-knowledge.org/resource/isLocatedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Romania</object>
+               <subjectLabel score="0.17832911">Danube</subjectLabel>
+               <objectLabel score="0.00000000">Romania</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="26-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Romania</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasCapital</predicate>
+               <object>http://yago-knowledge.org/resource/Bucharest</object>
+               <subjectLabel score="0.00000000">Romania</subjectLabel>
+               <objectLabel score="0.00000000">Bucharest</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="26-2" score="0.08000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.08000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://yago-knowledge.org/resource/Bucharest</subject>
+               <predicate score="0.40000000">http://yago-knowledge.org/resource/hasPopulationDensity</predicate>
+               <object>http://yago-knowledge.org/resource/"8518.6"^^/km^2</object>
+               <subjectLabel score="0.00000000">Bucharest</subjectLabel>
+               <objectLabel score="0.00000000">"8518.6"</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="27" runID="run8" score="0.15939950" plugType="E">
+         <cluster cluster_id="27-0" score="0.25133165" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.25133165" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Danube</subject>
+               <predicate score="0.90000000">http://yago-knowledge.org/resource/isLocatedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Ukraine</object>
+               <subjectLabel score="0.17832911">Danube</subjectLabel>
+               <objectLabel score="0.00000000">Ukraine</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="27-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Ukraine</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasCapital</predicate>
+               <object>http://yago-knowledge.org/resource/Kiev</object>
+               <subjectLabel score="0.00000000">Ukraine</subjectLabel>
+               <objectLabel score="0.00000000">Kiev</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="27-2" score="0.08000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.08000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://yago-knowledge.org/resource/Kiev</subject>
+               <predicate score="0.40000000">http://yago-knowledge.org/resource/hasPopulationDensity</predicate>
+               <object>http://yago-knowledge.org/resource/"3299"^^/km^2</object>
+               <subjectLabel score="0.00000000">Kiev</subjectLabel>
+               <objectLabel score="0.00000000">"3299"</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="28" runID="run8" score="0.15939950" plugType="E">
+         <cluster cluster_id="28-0" score="0.25133165" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.25133165" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Danube</subject>
+               <predicate score="0.90000000">http://yago-knowledge.org/resource/isLocatedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Moldova</object>
+               <subjectLabel score="0.17832911">Danube</subjectLabel>
+               <objectLabel score="0.00000000">Moldova</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="28-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Moldova</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasCapital</predicate>
+               <object>http://yago-knowledge.org/resource/Chişinău</object>
+               <subjectLabel score="0.00000000">Moldova</subjectLabel>
+               <objectLabel score="0.00000000">Chişinău</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="28-2" score="0.08000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.08000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://yago-knowledge.org/resource/Chişinău</subject>
+               <predicate score="0.40000000">http://yago-knowledge.org/resource/hasPopulationDensity</predicate>
+               <object>http://yago-knowledge.org/resource/"1392.3"^^/km^2</object>
+               <subjectLabel score="0.00000000">Chişinău</subjectLabel>
+               <objectLabel score="0.00000000">"1392.3"</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="29" runID="run8" score="0.15093484" plugType="E">
+         <cluster cluster_id="29-0" score="0.22311610" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.22311610" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Danube_Delta</subject>
+               <predicate score="0.90000000">http://yago-knowledge.org/resource/isLocatedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Romania</object>
+               <subjectLabel score="0.10779023">Danube Delta</subjectLabel>
+               <objectLabel score="0.00000000">Romania</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="29-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Romania</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasCapital</predicate>
+               <object>http://yago-knowledge.org/resource/Bucharest</object>
+               <subjectLabel score="0.00000000">Romania</subjectLabel>
+               <objectLabel score="0.00000000">Bucharest</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="29-2" score="0.08000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.08000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://yago-knowledge.org/resource/Bucharest</subject>
+               <predicate score="0.40000000">http://yago-knowledge.org/resource/hasPopulationDensity</predicate>
+               <object>http://yago-knowledge.org/resource/"8518.6"^^/km^2</object>
+               <subjectLabel score="0.00000000">Bucharest</subjectLabel>
+               <objectLabel score="0.00000000">"8518.6"</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="30" runID="run8" score="0.15020341" plugType="E">
+         <cluster cluster_id="30-0" score="0.22067802" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.22067802" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Danube_Wings</subject>
+               <predicate score="0.90000000">http://yago-knowledge.org/resource/isLocatedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Bratislava</object>
+               <subjectLabel score="0.10169504">Danube Wings</subjectLabel>
+               <objectLabel score="0.00000000">Bratislava</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="30-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Slovakia</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasCapital</predicate>
+               <object>http://yago-knowledge.org/resource/Bratislava</object>
+               <subjectLabel score="0.00000000">Slovakia</subjectLabel>
+               <objectLabel score="0.00000000">Bratislava</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="30-2" score="0.08000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.08000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://yago-knowledge.org/resource/Slovakia</subject>
+               <predicate score="0.40000000">http://yago-knowledge.org/resource/hasPopulationDensity</predicate>
+               <object>http://yago-knowledge.org/resource/"111"^^/km^2</object>
+               <subjectLabel score="0.00000000">Slovakia</subjectLabel>
+               <objectLabel score="0.00000000">"111"</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="31" runID="run8" score="0.11543744" plugType="L">
+         <cluster cluster_id="31-0" score="0.25133165" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.25133165" isFlipped="true" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Bird_Island,_Slovakia,_Šamorín</subject>
+               <predicate score="0.90000000">http://yago-knowledge.org/resource/isLocatedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Danube</object>
+               <subjectLabel score="0.00000000">Bird Island, Slovakia, Šamorín</subjectLabel>
+               <objectLabel score="0.17832911">Danube</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="31-1" score="0.28665180" sim="1.0000" norm="0.9000">
+            <quintuple dataset="LinkedMDB" score="0.28665180" isFlipped="false" isObjectLiteral="true">
+               <subject>http://data.linkedmdb.org/resource/country/SK</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/country_capital</predicate>
+               <object>Bratislava</object>
+               <subjectLabel score="0.21662949">Slovakia</subjectLabel>
+               <objectLabel score="0.00000000">Bratislava</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="31-2" score="0.31710870" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.31710870" isFlipped="false" isObjectLiteral="true">
+               <subject>http://dbpedia.org/resource/Bratislava</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/populationTotal</predicate>
+               <object>415589</object>
+               <subjectLabel score="0.29277174">Bratislava</subjectLabel>
+               <objectLabel score="0.00000000">415589</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="32" runID="run8" score="0.11073548" plugType="L">
+         <cluster cluster_id="32-0" score="0.25133165" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.25133165" isFlipped="true" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Bird_Island,_Slovakia,_Šamorín</subject>
+               <predicate score="0.90000000">http://yago-knowledge.org/resource/isLocatedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Danube</object>
+               <subjectLabel score="0.00000000">Bird Island, Slovakia, Šamorín</subjectLabel>
+               <objectLabel score="0.17832911">Danube</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="32-1" score="0.28665180" sim="1.0000" norm="0.9000">
+            <quintuple dataset="LinkedMDB" score="0.28665180" isFlipped="false" isObjectLiteral="true">
+               <subject>http://data.linkedmdb.org/resource/country/SK</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/country_capital</predicate>
+               <object>Bratislava</object>
+               <subjectLabel score="0.21662949">Slovakia</subjectLabel>
+               <objectLabel score="0.00000000">Bratislava</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="32-2" score="0.28227933" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.28227933" isFlipped="false" isObjectLiteral="true">
+               <subject>http://yago-knowledge.org/resource/Bratislava_I</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasNumberOfPeople</predicate>
+               <object>http://yago-knowledge.org/resource/"42858"^^xsd:nonNegativeInteger</object>
+               <subjectLabel score="0.20569831">Bratislava I</subjectLabel>
+               <objectLabel score="0.00000000">"42858"</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="33" runID="run8" score="0.10899246" plugType="L">
+         <cluster cluster_id="33-0" score="0.25133165" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.25133165" isFlipped="true" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Island_of_Vukovar</subject>
+               <predicate score="0.90000000">http://yago-knowledge.org/resource/isLocatedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Danube</object>
+               <subjectLabel score="0.00000000">Island of Vukovar</subjectLabel>
+               <objectLabel score="0.17832911">Danube</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="33-1" score="0.27384042" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.27384042" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Syrmia_County</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/capital</predicate>
+               <object>http://dbpedia.org/resource/Vukovar</object>
+               <subjectLabel score="0.00000000">Syrmia County</subjectLabel>
+               <objectLabel score="0.18460103">Vukovar</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="33-2" score="0.28217944" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.28217944" isFlipped="false" isObjectLiteral="true">
+               <subject>http://yago-knowledge.org/resource/Vukovar-Syrmia_County</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasNumberOfPeople</predicate>
+               <object>http://yago-knowledge.org/resource/"180117"^^xsd:nonNegativeInteger</object>
+               <subjectLabel score="0.20544859">Vukovar-Syrmia County</subjectLabel>
+               <objectLabel score="0.00000000">"180117"</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="34" runID="run8" score="0.10767615" plugType="L">
+         <cluster cluster_id="34-0" score="0.25133165" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.25133165" isFlipped="true" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Island_of_Vukovar</subject>
+               <predicate score="0.90000000">http://yago-knowledge.org/resource/isLocatedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Danube</object>
+               <subjectLabel score="0.00000000">Island of Vukovar</subjectLabel>
+               <objectLabel score="0.17832911">Danube</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="34-1" score="0.27384042" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.27384042" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Syrmia_Oblast</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/capital</predicate>
+               <object>http://dbpedia.org/resource/Vukovar</object>
+               <subjectLabel score="0.00000000">Syrmia Oblast</subjectLabel>
+               <objectLabel score="0.18460103">Vukovar</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="34-2" score="0.27242903" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.27242903" isFlipped="false" isObjectLiteral="true">
+               <subject>http://yago-knowledge.org/resource/Syrmia_District</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasNumberOfPeople</predicate>
+               <object>http://yago-knowledge.org/resource/"311053"^^xsd:nonNegativeInteger</object>
+               <subjectLabel score="0.18107255">Syrmia District</subjectLabel>
+               <objectLabel score="0.00000000">"311053"</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="35" runID="run8" score="0.10720127" plugType="L">
+         <cluster cluster_id="35-0" score="0.25133165" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.25133165" isFlipped="true" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Island_of_Vukovar</subject>
+               <predicate score="0.90000000">http://yago-knowledge.org/resource/isLocatedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Danube</object>
+               <subjectLabel score="0.00000000">Island of Vukovar</subjectLabel>
+               <objectLabel score="0.17832911">Danube</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="35-1" score="0.27384042" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.27384042" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Syrmia_Oblast</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/capital</predicate>
+               <object>http://dbpedia.org/resource/Vukovar</object>
+               <subjectLabel score="0.00000000">Syrmia Oblast</subjectLabel>
+               <objectLabel score="0.18460103">Vukovar</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="35-2" score="0.26891138" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.26891138" isFlipped="false" isObjectLiteral="true">
+               <subject>http://yago-knowledge.org/resource/Vinnytsia_Oblast</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasNumberOfPeople</predicate>
+               <object>http://yago-knowledge.org/resource/"1691061"^^xsd:nonNegativeInteger</object>
+               <subjectLabel score="0.17227845">Vinnytsia Oblast</subjectLabel>
+               <objectLabel score="0.00000000">"1691061"</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="36" runID="run8" score="0.10699780" plugType="L">
+         <cluster cluster_id="36-0" score="0.25133165" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.25133165" isFlipped="true" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Island_of_Vukovar</subject>
+               <predicate score="0.90000000">http://yago-knowledge.org/resource/isLocatedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Danube</object>
+               <subjectLabel score="0.00000000">Island of Vukovar</subjectLabel>
+               <objectLabel score="0.17832911">Danube</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="36-1" score="0.27384042" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.27384042" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Syrmia_Oblast</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/capital</predicate>
+               <object>http://dbpedia.org/resource/Vukovar</object>
+               <subjectLabel score="0.00000000">Syrmia Oblast</subjectLabel>
+               <objectLabel score="0.18460103">Vukovar</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="36-2" score="0.26740422" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.26740422" isFlipped="false" isObjectLiteral="true">
+               <subject>http://yago-knowledge.org/resource/Zaporizhia_Oblast</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasNumberOfPeople</predicate>
+               <object>http://yago-knowledge.org/resource/"1877200"^^xsd:nonNegativeInteger</object>
+               <subjectLabel score="0.16851054">Zaporizhia Oblast</subjectLabel>
+               <objectLabel score="0.00000000">"1877200"</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="37" runID="run8" score="0.10552564" plugType="L">
+         <cluster cluster_id="37-0" score="0.27374529" sim="0.9156" norm="0.9500">
+            <quintuple dataset="Yago" score="0.25133165" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Danube</subject>
+               <predicate score="0.90000000">http://yago-knowledge.org/resource/isLocatedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Slovakia</object>
+               <subjectLabel score="0.17832911">Danube</subjectLabel>
+               <objectLabel score="0.00000000">Slovakia</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.27374529" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Danube</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/country</predicate>
+               <object>http://dbpedia.org/resource/Slovakia</object>
+               <subjectLabel score="0.18436322">Danube</subjectLabel>
+               <objectLabel score="0.00000000">Slovakia</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="37-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Slovakia</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasCapital</predicate>
+               <object>http://yago-knowledge.org/resource/Bratislava</object>
+               <subjectLabel score="0.00000000">Slovakia</subjectLabel>
+               <objectLabel score="0.00000000">Bratislava</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="37-2" score="0.31710870" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.31710870" isFlipped="false" isObjectLiteral="true">
+               <subject>http://dbpedia.org/resource/Bratislava</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/populationTotal</predicate>
+               <object>415589</object>
+               <subjectLabel score="0.29277174">Bratislava</subjectLabel>
+               <objectLabel score="0.00000000">415589</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="38" runID="run8" score="0.10489770" plugType="L">
+         <cluster cluster_id="38-0" score="0.25133165" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.25133165" isFlipped="true" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Island_of_Vukovar</subject>
+               <predicate score="0.90000000">http://yago-knowledge.org/resource/isLocatedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Danube</object>
+               <subjectLabel score="0.00000000">Island of Vukovar</subjectLabel>
+               <objectLabel score="0.17832911">Danube</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="38-1" score="0.27384042" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.27384042" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Syrmia_County</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/capital</predicate>
+               <object>http://dbpedia.org/resource/Vukovar</object>
+               <subjectLabel score="0.00000000">Syrmia County</subjectLabel>
+               <objectLabel score="0.18460103">Vukovar</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="38-2" score="0.25184793" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.25184793" isFlipped="false" isObjectLiteral="true">
+               <subject>http://yago-knowledge.org/resource/Otok,_Vukovar-Syrmia_County</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasNumberOfPeople</predicate>
+               <object>http://yago-knowledge.org/resource/"6366"^^xsd:nonNegativeInteger</object>
+               <subjectLabel score="0.12961981">Otok, Vukovar-Syrmia County</subjectLabel>
+               <objectLabel score="0.00000000">"6366"</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="39" runID="run8" score="0.10479105" plugType="L">
+         <cluster cluster_id="39-0" score="0.25133165" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.25133165" isFlipped="true" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Island_of_Vukovar</subject>
+               <predicate score="0.90000000">http://yago-knowledge.org/resource/isLocatedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Danube</object>
+               <subjectLabel score="0.00000000">Island of Vukovar</subjectLabel>
+               <objectLabel score="0.17832911">Danube</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="39-1" score="0.27384042" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.27384042" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Syrmia_County</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/capital</predicate>
+               <object>http://dbpedia.org/resource/Vukovar</object>
+               <subjectLabel score="0.00000000">Syrmia County</subjectLabel>
+               <objectLabel score="0.18460103">Vukovar</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="39-2" score="0.25105793" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.25105793" isFlipped="false" isObjectLiteral="true">
+               <subject>http://yago-knowledge.org/resource/Podgrađe,_Vukovar-Syrmia_County</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasNumberOfPeople</predicate>
+               <object>http://yago-knowledge.org/resource/"120"^^xsd:nonNegativeInteger</object>
+               <subjectLabel score="0.12764482">Podgrađe, Vukovar-Syrmia County</subjectLabel>
+               <objectLabel score="0.00000000">"120"</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="40" runID="run8" score="0.10454959" plugType="L">
+         <cluster cluster_id="40-0" score="0.25133165" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.25133165" isFlipped="true" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Island_of_Vukovar</subject>
+               <predicate score="0.90000000">http://yago-knowledge.org/resource/isLocatedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Danube</object>
+               <subjectLabel score="0.00000000">Island of Vukovar</subjectLabel>
+               <objectLabel score="0.17832911">Danube</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="40-1" score="0.27384042" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.27384042" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Syrmia_County</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/capital</predicate>
+               <object>http://dbpedia.org/resource/Vukovar</object>
+               <subjectLabel score="0.00000000">Syrmia County</subjectLabel>
+               <objectLabel score="0.18460103">Vukovar</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="40-2" score="0.24926931" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.24926931" isFlipped="false" isObjectLiteral="true">
+               <subject>http://dbpedia.org/resource/Vukovar-Syrmia_County</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/populationTotal</predicate>
+               <object>180117</object>
+               <subjectLabel score="0.12317327">Vukovar-Syrmia County</subjectLabel>
+               <objectLabel score="0.00000000">180117</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="41" runID="run8" score="0.10082368" plugType="L">
+         <cluster cluster_id="41-0" score="0.27374529" sim="0.9156" norm="0.9500">
+            <quintuple dataset="Yago" score="0.25133165" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Danube</subject>
+               <predicate score="0.90000000">http://yago-knowledge.org/resource/isLocatedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Slovakia</object>
+               <subjectLabel score="0.17832911">Danube</subjectLabel>
+               <objectLabel score="0.00000000">Slovakia</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.27374529" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Danube</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/country</predicate>
+               <object>http://dbpedia.org/resource/Slovakia</object>
+               <subjectLabel score="0.18436322">Danube</subjectLabel>
+               <objectLabel score="0.00000000">Slovakia</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="41-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Slovakia</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasCapital</predicate>
+               <object>http://yago-knowledge.org/resource/Bratislava</object>
+               <subjectLabel score="0.00000000">Slovakia</subjectLabel>
+               <objectLabel score="0.00000000">Bratislava</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="41-2" score="0.28227933" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.28227933" isFlipped="false" isObjectLiteral="true">
+               <subject>http://yago-knowledge.org/resource/Bratislava_I</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasNumberOfPeople</predicate>
+               <object>http://yago-knowledge.org/resource/"42858"^^xsd:nonNegativeInteger</object>
+               <subjectLabel score="0.20569831">Bratislava I</subjectLabel>
+               <objectLabel score="0.00000000">"42858"</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="42" runID="run8" score="0.09147615" plugType="L">
+         <cluster cluster_id="42-0" score="0.25133165" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.25133165" isFlipped="true" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Island_of_Vukovar</subject>
+               <predicate score="0.90000000">http://yago-knowledge.org/resource/isLocatedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Danube</object>
+               <subjectLabel score="0.00000000">Island of Vukovar</subjectLabel>
+               <objectLabel score="0.17832911">Danube</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="42-1" score="0.27384042" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.27384042" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Syrmia_Oblast</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/capital</predicate>
+               <object>http://dbpedia.org/resource/Vukovar</object>
+               <subjectLabel score="0.00000000">Syrmia Oblast</subjectLabel>
+               <objectLabel score="0.18460103">Vukovar</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="42-2" score="0.15242902" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.15242902" isFlipped="false" isObjectLiteral="true">
+               <subject>http://yago-knowledge.org/resource/Syrmia_District</subject>
+               <predicate score="0.40000000">http://yago-knowledge.org/resource/hasPopulationDensity</predicate>
+               <object>http://yago-knowledge.org/resource/"89.2"^^/km^2</object>
+               <subjectLabel score="0.18107255">Syrmia District</subjectLabel>
+               <objectLabel score="0.00000000">"89.2"</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+   </results>
+</question>

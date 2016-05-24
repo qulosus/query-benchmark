@@ -1,0 +1,847 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<question id="6" runID="run7">
+   <string>
+      <![CDATA[Give me all Russian mathematicians, with their graduation institutions and academic advisors, who won Fields Medal.]]>
+   </string>
+   <query>
+      <![CDATA[
+  ?who  "win"             "Fields Medal Math".
+  ?who  "nationality"     "Russia".
+  ?who  "graduated from"  ?univ.
+  ?who  "advisor"         ?advisor.
+]]>
+   </query>
+   <settings labelSearchTopK="15" plugLabel="true" limited="false" validateTriple="false"/>
+   <stats1 nb_results="14" timeSec="3815.0820" memoryMB="1798.3745" totalQuins="96" avgQuin_Cluster="1.7143" avgQuin_Bucket="6.8571" nb_plugTR="0"/>
+   <stats2>
+      <ds id="LinkedMDB">
+         <nreq>0</nreq>
+         <nreqs>0</nreqs>
+         <nrecd>0</nrecd>
+      </ds>
+      <ds id="DBpedia">
+         <nreq>127754</nreq>
+         <nreqs>23</nreqs>
+         <nrecd>77</nrecd>
+      </ds>
+      <ds id="Yago">
+         <nreq>127646</nreq>
+         <nreqs>29</nreqs>
+         <nrecd>2548</nrecd>
+      </ds>
+   </stats2>
+   <results>
+      <bucket bucket_id="0" runID="run7" score="0.21481095" plugType="E">
+         <cluster cluster_id="0-0" score="0.21692367" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.21692367" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Alexander_Haure_Turvelin</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasWonPrize</predicate>
+               <object>http://yago-knowledge.org/resource/Medal_of_Honor</object>
+               <subjectLabel score="0.00000000">Alexander Haure Turvelin</subjectLabel>
+               <objectLabel score="0.04230917">Medal of Honor</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="0-1" score="0.28021458" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.28021458" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Alexander_Borodin</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isCitizenOf</predicate>
+               <object>http://yago-knowledge.org/resource/Russia</object>
+               <subjectLabel score="0.05845656">Alexander Borodin</subjectLabel>
+               <objectLabel score="0.14207988">Russia</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="0-2" score="0.25757702" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.25757702" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Alexei_Borodin</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/graduatedFrom</predicate>
+               <object>http://yago-knowledge.org/resource/University_of_Pennsylvania</object>
+               <subjectLabel score="0.14394253">Alexei Borodin</subjectLabel>
+               <objectLabel score="0.00000000">University of Pennsylvania</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="0-3" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Alexander_Borodin</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasAcademicAdvisor</predicate>
+               <object>http://yago-knowledge.org/resource/Nikolay_Zinin</object>
+               <subjectLabel score="0.00000000">Alexander Borodin</subjectLabel>
+               <objectLabel score="0.00000000">Nikolay Zinin</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="1" runID="run7" score="0.20922891" plugType="E">
+         <cluster cluster_id="1-0" score="0.28041394" sim="0.9189" norm="0.9500">
+            <quintuple dataset="Yago" score="0.28041394" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Grigori_Perelman</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasWonPrize</predicate>
+               <object>http://yago-knowledge.org/resource/Fields_Medal</object>
+               <subjectLabel score="0.00000000">Grigori Perelman</subjectLabel>
+               <objectLabel score="0.20103484">Fields Medal</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.24352466" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Grigori_Perelman</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/award</predicate>
+               <object>http://dbpedia.org/resource/Fields_Medal</object>
+               <subjectLabel score="0.00000000">Grigori Perelman</subjectLabel>
+               <objectLabel score="0.10881165">Fields Medal</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="1-1" score="0.25683196" sim="0.9217" norm="0.9500">
+            <quintuple dataset="Yago" score="0.25683196" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Grigori_Perelman</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isCitizenOf</predicate>
+               <object>http://yago-knowledge.org/resource/Russia</object>
+               <subjectLabel score="0.00000000">Grigori Perelman</subjectLabel>
+               <objectLabel score="0.14207988">Russia</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.24616330" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Grigori_Perelman</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/nationality</predicate>
+               <object>http://dbpedia.org/resource/Russia</object>
+               <subjectLabel score="0.00000000">Grigori Perelman</subjectLabel>
+               <objectLabel score="0.11540825">Russia</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="1-2" score="0.20000000" sim="0.9704" norm="0.9500">
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Grigori_Perelman</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/graduatedFrom</predicate>
+               <object>http://yago-knowledge.org/resource/Saint_Petersburg_State_University</object>
+               <subjectLabel score="0.00000000">Grigori Perelman</subjectLabel>
+               <objectLabel score="0.00000000">Saint Petersburg State University</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Grigori_Perelman</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/almaMater</predicate>
+               <object>http://dbpedia.org/resource/Saint_Petersburg_State_University</object>
+               <subjectLabel score="0.00000000">Grigori Perelman</subjectLabel>
+               <objectLabel score="0.00000000">Saint Petersburg State University</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="1-3" score="0.20000000" sim="0.9625" norm="0.9500">
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Grigori_Perelman</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasAcademicAdvisor</predicate>
+               <object>http://yago-knowledge.org/resource/Aleksandr_Danilovich_Aleksandrov</object>
+               <subjectLabel score="0.00000000">Grigori Perelman</subjectLabel>
+               <objectLabel score="0.00000000">Aleksandr Danilovich Aleksandrov</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Grigori_Perelman</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/doctoralAdvisor</predicate>
+               <object>http://dbpedia.org/resource/Aleksandr_Danilovich_Aleksandrov</object>
+               <subjectLabel score="0.00000000">Grigori Perelman</subjectLabel>
+               <objectLabel score="0.00000000">Aleksandr Danilovich Aleksandrov</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="2" runID="run7" score="0.20922891" plugType="E">
+         <cluster cluster_id="2-0" score="0.28041394" sim="0.9189" norm="0.9500">
+            <quintuple dataset="Yago" score="0.28041394" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Grigori_Perelman</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasWonPrize</predicate>
+               <object>http://yago-knowledge.org/resource/Fields_Medal</object>
+               <subjectLabel score="0.00000000">Grigori Perelman</subjectLabel>
+               <objectLabel score="0.20103484">Fields Medal</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.24352466" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Grigori_Perelman</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/award</predicate>
+               <object>http://dbpedia.org/resource/Fields_Medal</object>
+               <subjectLabel score="0.00000000">Grigori Perelman</subjectLabel>
+               <objectLabel score="0.10881165">Fields Medal</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="2-1" score="0.25683196" sim="0.9217" norm="0.9500">
+            <quintuple dataset="Yago" score="0.25683196" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Grigori_Perelman</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isCitizenOf</predicate>
+               <object>http://yago-knowledge.org/resource/Russia</object>
+               <subjectLabel score="0.00000000">Grigori Perelman</subjectLabel>
+               <objectLabel score="0.14207988">Russia</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.24616330" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Grigori_Perelman</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/nationality</predicate>
+               <object>http://dbpedia.org/resource/Russia</object>
+               <subjectLabel score="0.00000000">Grigori Perelman</subjectLabel>
+               <objectLabel score="0.11540825">Russia</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="2-2" score="0.20000000" sim="0.9704" norm="0.9500">
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Grigori_Perelman</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/graduatedFrom</predicate>
+               <object>http://yago-knowledge.org/resource/Saint_Petersburg_State_University</object>
+               <subjectLabel score="0.00000000">Grigori Perelman</subjectLabel>
+               <objectLabel score="0.00000000">Saint Petersburg State University</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Grigori_Perelman</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/almaMater</predicate>
+               <object>http://dbpedia.org/resource/Saint_Petersburg_State_University</object>
+               <subjectLabel score="0.00000000">Grigori Perelman</subjectLabel>
+               <objectLabel score="0.00000000">Saint Petersburg State University</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="2-3" score="0.20000000" sim="0.9625" norm="0.9500">
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Grigori_Perelman</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasAcademicAdvisor</predicate>
+               <object>http://yago-knowledge.org/resource/Yuri_Burago</object>
+               <subjectLabel score="0.00000000">Grigori Perelman</subjectLabel>
+               <objectLabel score="0.00000000">Yuri Burago</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Grigori_Perelman</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/doctoralAdvisor</predicate>
+               <object>http://dbpedia.org/resource/Yuri_Burago</object>
+               <subjectLabel score="0.00000000">Grigori Perelman</subjectLabel>
+               <objectLabel score="0.00000000">Yuri Burago</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="3" runID="run7" score="0.20922891" plugType="E">
+         <cluster cluster_id="3-0" score="0.28041394" sim="0.9189" norm="0.9500">
+            <quintuple dataset="Yago" score="0.28041394" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Maxim_Kontsevich</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasWonPrize</predicate>
+               <object>http://yago-knowledge.org/resource/Fields_Medal</object>
+               <subjectLabel score="0.00000000">Maxim Kontsevich</subjectLabel>
+               <objectLabel score="0.20103484">Fields Medal</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.24352466" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Maxim_Kontsevich</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/award</predicate>
+               <object>http://dbpedia.org/resource/Fields_Medal</object>
+               <subjectLabel score="0.00000000">Maxim Kontsevich</subjectLabel>
+               <objectLabel score="0.10881165">Fields Medal</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="3-1" score="0.25683196" sim="0.9217" norm="0.9500">
+            <quintuple dataset="DBpedia" score="0.24616330" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Maxim_Kontsevich</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/nationality</predicate>
+               <object>http://dbpedia.org/resource/Russia</object>
+               <subjectLabel score="0.00000000">Maxim Kontsevich</subjectLabel>
+               <objectLabel score="0.11540825">Russia</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.25683196" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Maxim_Kontsevich</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isCitizenOf</predicate>
+               <object>http://yago-knowledge.org/resource/Russia</object>
+               <subjectLabel score="0.00000000">Maxim Kontsevich</subjectLabel>
+               <objectLabel score="0.14207988">Russia</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="3-2" score="0.20000000" sim="0.9704" norm="0.9500">
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Maxim_Kontsevich</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/graduatedFrom</predicate>
+               <object>http://yago-knowledge.org/resource/Moscow_State_University</object>
+               <subjectLabel score="0.00000000">Maxim Kontsevich</subjectLabel>
+               <objectLabel score="0.00000000">Moscow State University</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Maxim_Kontsevich</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/almaMater</predicate>
+               <object>http://dbpedia.org/resource/Moscow_State_University</object>
+               <subjectLabel score="0.00000000">Maxim Kontsevich</subjectLabel>
+               <objectLabel score="0.00000000">Moscow State University</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="3-3" score="0.20000000" sim="0.9625" norm="0.9500">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Maxim_Kontsevich</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/doctoralAdvisor</predicate>
+               <object>http://dbpedia.org/resource/Don_Zagier</object>
+               <subjectLabel score="0.00000000">Maxim Kontsevich</subjectLabel>
+               <objectLabel score="0.00000000">Don Zagier</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Maxim_Kontsevich</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasAcademicAdvisor</predicate>
+               <object>http://yago-knowledge.org/resource/Don_Zagier</object>
+               <subjectLabel score="0.00000000">Maxim Kontsevich</subjectLabel>
+               <objectLabel score="0.00000000">Don Zagier</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="4" runID="run7" score="0.20922891" plugType="E">
+         <cluster cluster_id="4-0" score="0.28041394" sim="0.9189" norm="0.9500">
+            <quintuple dataset="DBpedia" score="0.24352466" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Andrei_Okounkov</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/award</predicate>
+               <object>http://dbpedia.org/resource/Fields_Medal</object>
+               <subjectLabel score="0.00000000">Andrei Okounkov</subjectLabel>
+               <objectLabel score="0.10881165">Fields Medal</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.28041394" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Andrei_Okounkov</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasWonPrize</predicate>
+               <object>http://yago-knowledge.org/resource/Fields_Medal</object>
+               <subjectLabel score="0.00000000">Andrei Okounkov</subjectLabel>
+               <objectLabel score="0.20103484">Fields Medal</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="4-1" score="0.25683196" sim="0.9217" norm="0.9500">
+            <quintuple dataset="DBpedia" score="0.24616330" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Andrei_Okounkov</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/nationality</predicate>
+               <object>http://dbpedia.org/resource/Russia</object>
+               <subjectLabel score="0.00000000">Andrei Okounkov</subjectLabel>
+               <objectLabel score="0.11540825">Russia</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.25683196" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Andrei_Okounkov</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isCitizenOf</predicate>
+               <object>http://yago-knowledge.org/resource/Russia</object>
+               <subjectLabel score="0.00000000">Andrei Okounkov</subjectLabel>
+               <objectLabel score="0.14207988">Russia</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="4-2" score="0.20000000" sim="0.9704" norm="0.9500">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Andrei_Okounkov</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/almaMater</predicate>
+               <object>http://dbpedia.org/resource/Moscow_State_University</object>
+               <subjectLabel score="0.00000000">Andrei Okounkov</subjectLabel>
+               <objectLabel score="0.00000000">Moscow State University</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Andrei_Okounkov</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/graduatedFrom</predicate>
+               <object>http://yago-knowledge.org/resource/Moscow_State_University</object>
+               <subjectLabel score="0.00000000">Andrei Okounkov</subjectLabel>
+               <objectLabel score="0.00000000">Moscow State University</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="4-3" score="0.20000000" sim="0.9625" norm="0.9500">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Andrei_Okounkov</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/doctoralAdvisor</predicate>
+               <object>http://dbpedia.org/resource/Alexandre_Kirillov</object>
+               <subjectLabel score="0.00000000">Andrei Okounkov</subjectLabel>
+               <objectLabel score="0.00000000">Alexandre Kirillov</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Andrei_Okounkov</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasAcademicAdvisor</predicate>
+               <object>http://yago-knowledge.org/resource/Alexandre_Kirillov</object>
+               <subjectLabel score="0.00000000">Andrei Okounkov</subjectLabel>
+               <objectLabel score="0.00000000">Alexandre Kirillov</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="5" runID="run7" score="0.20922891" plugType="E">
+         <cluster cluster_id="5-0" score="0.28041394" sim="0.9189" norm="0.9500">
+            <quintuple dataset="Yago" score="0.28041394" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Vladimir_Voevodsky</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasWonPrize</predicate>
+               <object>http://yago-knowledge.org/resource/Fields_Medal</object>
+               <subjectLabel score="0.00000000">Vladimir Voevodsky</subjectLabel>
+               <objectLabel score="0.20103484">Fields Medal</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.24352466" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Vladimir_Voevodsky</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/award</predicate>
+               <object>http://dbpedia.org/resource/Fields_Medal</object>
+               <subjectLabel score="0.00000000">Vladimir Voevodsky</subjectLabel>
+               <objectLabel score="0.10881165">Fields Medal</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="5-1" score="0.25683196" sim="0.9217" norm="0.9500">
+            <quintuple dataset="Yago" score="0.25683196" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Vladimir_Voevodsky</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isCitizenOf</predicate>
+               <object>http://yago-knowledge.org/resource/Russia</object>
+               <subjectLabel score="0.00000000">Vladimir Voevodsky</subjectLabel>
+               <objectLabel score="0.14207988">Russia</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.24616330" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Vladimir_Voevodsky</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/nationality</predicate>
+               <object>http://dbpedia.org/resource/Russia</object>
+               <subjectLabel score="0.00000000">Vladimir Voevodsky</subjectLabel>
+               <objectLabel score="0.11540825">Russia</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="5-2" score="0.20000000" sim="0.9704" norm="0.9500">
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Vladimir_Voevodsky</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/graduatedFrom</predicate>
+               <object>http://yago-knowledge.org/resource/Moscow_State_University</object>
+               <subjectLabel score="0.00000000">Vladimir Voevodsky</subjectLabel>
+               <objectLabel score="0.00000000">Moscow State University</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Vladimir_Voevodsky</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/almaMater</predicate>
+               <object>http://dbpedia.org/resource/Moscow_State_University</object>
+               <subjectLabel score="0.00000000">Vladimir Voevodsky</subjectLabel>
+               <objectLabel score="0.00000000">Moscow State University</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="5-3" score="0.20000000" sim="0.9625" norm="0.9500">
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Vladimir_Voevodsky</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasAcademicAdvisor</predicate>
+               <object>http://yago-knowledge.org/resource/David_Kazhdan</object>
+               <subjectLabel score="0.00000000">Vladimir Voevodsky</subjectLabel>
+               <objectLabel score="0.00000000">David Kazhdan</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Vladimir_Voevodsky</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/doctoralAdvisor</predicate>
+               <object>http://dbpedia.org/resource/David_Kazhdan</object>
+               <subjectLabel score="0.00000000">Vladimir Voevodsky</subjectLabel>
+               <objectLabel score="0.00000000">David Kazhdan</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="6" runID="run7" score="0.20851095" plugType="E">
+         <cluster cluster_id="6-0" score="0.28041394" sim="0.9189" norm="0.9500">
+            <quintuple dataset="DBpedia" score="0.24352466" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Grigory_Margulis</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/award</predicate>
+               <object>http://dbpedia.org/resource/Fields_Medal</object>
+               <subjectLabel score="0.00000000">Grigory Margulis</subjectLabel>
+               <objectLabel score="0.10881165">Fields Medal</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.28041394" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Grigory_Margulis</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasWonPrize</predicate>
+               <object>http://yago-knowledge.org/resource/Fields_Medal</object>
+               <subjectLabel score="0.00000000">Grigory Margulis</subjectLabel>
+               <objectLabel score="0.20103484">Fields Medal</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="6-1" score="0.25683196" sim="0.9217" norm="0.9500">
+            <quintuple dataset="Yago" score="0.25683196" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Grigory_Margulis</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isCitizenOf</predicate>
+               <object>http://yago-knowledge.org/resource/Russia</object>
+               <subjectLabel score="0.00000000">Grigory Margulis</subjectLabel>
+               <objectLabel score="0.14207988">Russia</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.24616330" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Grigory_Margulis</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/nationality</predicate>
+               <object>http://dbpedia.org/resource/Russia</object>
+               <subjectLabel score="0.00000000">Grigory Margulis</subjectLabel>
+               <objectLabel score="0.11540825">Russia</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="6-2" score="0.20000000" sim="0.9704" norm="0.9500">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Grigory_Margulis</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/almaMater</predicate>
+               <object>http://dbpedia.org/resource/Moscow_State_University</object>
+               <subjectLabel score="0.00000000">Grigory Margulis</subjectLabel>
+               <objectLabel score="0.00000000">Moscow State University</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Grigory_Margulis</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/graduatedFrom</predicate>
+               <object>http://yago-knowledge.org/resource/Moscow_State_University</object>
+               <subjectLabel score="0.00000000">Grigory Margulis</subjectLabel>
+               <objectLabel score="0.00000000">Moscow State University</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="6-3" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Grigory_Margulis</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/doctoralAdvisor</predicate>
+               <object>http://dbpedia.org/resource/Yakov_Sinai</object>
+               <subjectLabel score="0.00000000">Grigory Margulis</subjectLabel>
+               <objectLabel score="0.00000000">Yakov Sinai</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="7" runID="run7" score="0.20851095" plugType="E">
+         <cluster cluster_id="7-0" score="0.28041394" sim="0.9189" norm="0.9500">
+            <quintuple dataset="DBpedia" score="0.24352466" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Grigory_Margulis</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/award</predicate>
+               <object>http://dbpedia.org/resource/Fields_Medal</object>
+               <subjectLabel score="0.00000000">Grigory Margulis</subjectLabel>
+               <objectLabel score="0.10881165">Fields Medal</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.28041394" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Grigory_Margulis</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasWonPrize</predicate>
+               <object>http://yago-knowledge.org/resource/Fields_Medal</object>
+               <subjectLabel score="0.00000000">Grigory Margulis</subjectLabel>
+               <objectLabel score="0.20103484">Fields Medal</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="7-1" score="0.25683196" sim="0.9217" norm="0.9500">
+            <quintuple dataset="Yago" score="0.25683196" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Grigory_Margulis</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isCitizenOf</predicate>
+               <object>http://yago-knowledge.org/resource/Russia</object>
+               <subjectLabel score="0.00000000">Grigory Margulis</subjectLabel>
+               <objectLabel score="0.14207988">Russia</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.24616330" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Grigory_Margulis</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/nationality</predicate>
+               <object>http://dbpedia.org/resource/Russia</object>
+               <subjectLabel score="0.00000000">Grigory Margulis</subjectLabel>
+               <objectLabel score="0.11540825">Russia</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="7-2" score="0.20000000" sim="0.9704" norm="0.9500">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Grigory_Margulis</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/almaMater</predicate>
+               <object>http://dbpedia.org/resource/Moscow_State_University</object>
+               <subjectLabel score="0.00000000">Grigory Margulis</subjectLabel>
+               <objectLabel score="0.00000000">Moscow State University</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Grigory_Margulis</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/graduatedFrom</predicate>
+               <object>http://yago-knowledge.org/resource/Moscow_State_University</object>
+               <subjectLabel score="0.00000000">Grigory Margulis</subjectLabel>
+               <objectLabel score="0.00000000">Moscow State University</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="7-3" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Hee_Oh</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/doctoralAdvisor</predicate>
+               <object>http://dbpedia.org/resource/Grigory_Margulis</object>
+               <subjectLabel score="0.00000000">Hee Oh</subjectLabel>
+               <objectLabel score="0.00000000">Grigory Margulis</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="8" runID="run7" score="0.20851095" plugType="E">
+         <cluster cluster_id="8-0" score="0.28041394" sim="0.9189" norm="0.9500">
+            <quintuple dataset="DBpedia" score="0.24352466" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Grigory_Margulis</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/award</predicate>
+               <object>http://dbpedia.org/resource/Fields_Medal</object>
+               <subjectLabel score="0.00000000">Grigory Margulis</subjectLabel>
+               <objectLabel score="0.10881165">Fields Medal</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.28041394" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Grigory_Margulis</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasWonPrize</predicate>
+               <object>http://yago-knowledge.org/resource/Fields_Medal</object>
+               <subjectLabel score="0.00000000">Grigory Margulis</subjectLabel>
+               <objectLabel score="0.20103484">Fields Medal</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="8-1" score="0.25683196" sim="0.9217" norm="0.9500">
+            <quintuple dataset="Yago" score="0.25683196" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Grigory_Margulis</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isCitizenOf</predicate>
+               <object>http://yago-knowledge.org/resource/Russia</object>
+               <subjectLabel score="0.00000000">Grigory Margulis</subjectLabel>
+               <objectLabel score="0.14207988">Russia</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.24616330" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Grigory_Margulis</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/nationality</predicate>
+               <object>http://dbpedia.org/resource/Russia</object>
+               <subjectLabel score="0.00000000">Grigory Margulis</subjectLabel>
+               <objectLabel score="0.11540825">Russia</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="8-2" score="0.20000000" sim="0.9704" norm="0.9500">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Grigory_Margulis</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/almaMater</predicate>
+               <object>http://dbpedia.org/resource/Moscow_State_University</object>
+               <subjectLabel score="0.00000000">Grigory Margulis</subjectLabel>
+               <objectLabel score="0.00000000">Moscow State University</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Grigory_Margulis</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/graduatedFrom</predicate>
+               <object>http://yago-knowledge.org/resource/Moscow_State_University</object>
+               <subjectLabel score="0.00000000">Grigory Margulis</subjectLabel>
+               <objectLabel score="0.00000000">Moscow State University</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="8-3" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Emmanuel_Breuillard</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/doctoralAdvisor</predicate>
+               <object>http://dbpedia.org/resource/Grigory_Margulis</object>
+               <subjectLabel score="0.00000000">Emmanuel Breuillard</subjectLabel>
+               <objectLabel score="0.00000000">Grigory Margulis</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="9" runID="run7" score="0.20851095" plugType="E">
+         <cluster cluster_id="9-0" score="0.28041394" sim="0.9189" norm="0.9500">
+            <quintuple dataset="DBpedia" score="0.24352466" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Grigory_Margulis</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/award</predicate>
+               <object>http://dbpedia.org/resource/Fields_Medal</object>
+               <subjectLabel score="0.00000000">Grigory Margulis</subjectLabel>
+               <objectLabel score="0.10881165">Fields Medal</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.28041394" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Grigory_Margulis</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasWonPrize</predicate>
+               <object>http://yago-knowledge.org/resource/Fields_Medal</object>
+               <subjectLabel score="0.00000000">Grigory Margulis</subjectLabel>
+               <objectLabel score="0.20103484">Fields Medal</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="9-1" score="0.25683196" sim="0.9217" norm="0.9500">
+            <quintuple dataset="Yago" score="0.25683196" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Grigory_Margulis</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isCitizenOf</predicate>
+               <object>http://yago-knowledge.org/resource/Russia</object>
+               <subjectLabel score="0.00000000">Grigory Margulis</subjectLabel>
+               <objectLabel score="0.14207988">Russia</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.24616330" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Grigory_Margulis</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/nationality</predicate>
+               <object>http://dbpedia.org/resource/Russia</object>
+               <subjectLabel score="0.00000000">Grigory Margulis</subjectLabel>
+               <objectLabel score="0.11540825">Russia</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="9-2" score="0.20000000" sim="0.9704" norm="0.9500">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Grigory_Margulis</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/almaMater</predicate>
+               <object>http://dbpedia.org/resource/Moscow_State_University</object>
+               <subjectLabel score="0.00000000">Grigory Margulis</subjectLabel>
+               <objectLabel score="0.00000000">Moscow State University</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Grigory_Margulis</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/graduatedFrom</predicate>
+               <object>http://yago-knowledge.org/resource/Moscow_State_University</object>
+               <subjectLabel score="0.00000000">Grigory Margulis</subjectLabel>
+               <objectLabel score="0.00000000">Moscow State University</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="9-3" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Grigory_Margulis</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasAcademicAdvisor</predicate>
+               <object>http://yago-knowledge.org/resource/Yakov_G._Sinai</object>
+               <subjectLabel score="0.00000000">Grigory Margulis</subjectLabel>
+               <objectLabel score="0.00000000">Yakov G. Sinai</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="10" runID="run7" score="0.20851095" plugType="E">
+         <cluster cluster_id="10-0" score="0.28041394" sim="0.9189" norm="0.9500">
+            <quintuple dataset="Yago" score="0.28041394" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Stanislav_Smirnov</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasWonPrize</predicate>
+               <object>http://yago-knowledge.org/resource/Fields_Medal</object>
+               <subjectLabel score="0.00000000">Stanislav Smirnov</subjectLabel>
+               <objectLabel score="0.20103484">Fields Medal</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.24352466" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Stanislav_Smirnov</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/award</predicate>
+               <object>http://dbpedia.org/resource/Fields_Medal</object>
+               <subjectLabel score="0.00000000">Stanislav Smirnov</subjectLabel>
+               <objectLabel score="0.10881165">Fields Medal</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="10-1" score="0.25683196" sim="0.9217" norm="0.9500">
+            <quintuple dataset="Yago" score="0.25683196" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Stanislav_Smirnov</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isCitizenOf</predicate>
+               <object>http://yago-knowledge.org/resource/Russia</object>
+               <subjectLabel score="0.00000000">Stanislav Smirnov</subjectLabel>
+               <objectLabel score="0.14207988">Russia</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.24616330" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Stanislav_Smirnov</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/nationality</predicate>
+               <object>http://dbpedia.org/resource/Russia</object>
+               <subjectLabel score="0.00000000">Stanislav Smirnov</subjectLabel>
+               <objectLabel score="0.11540825">Russia</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="10-2" score="0.20000000" sim="0.9704" norm="0.9500">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Stanislav_Smirnov</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/almaMater</predicate>
+               <object>http://dbpedia.org/resource/Saint_Petersburg_State_University</object>
+               <subjectLabel score="0.00000000">Stanislav Smirnov</subjectLabel>
+               <objectLabel score="0.00000000">Saint Petersburg State University</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Stanislav_Smirnov</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/graduatedFrom</predicate>
+               <object>http://yago-knowledge.org/resource/Saint_Petersburg_State_University</object>
+               <subjectLabel score="0.00000000">Stanislav Smirnov</subjectLabel>
+               <objectLabel score="0.00000000">Saint Petersburg State University</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="10-3" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://dbpedia.org/resource/Stanislav_Smirnov</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/doctoralAdvisor</predicate>
+               <object>http://dbpedia.org/resource/Nikolai_G._Makarov</object>
+               <subjectLabel score="0.00000000">Stanislav Smirnov</subjectLabel>
+               <objectLabel score="0.00000000">http://dbpedia.org/resource/Nikolai_G._Makarov</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="11" runID="run7" score="0.20813550" plugType="E">
+         <cluster cluster_id="11-0" score="0.28041394" sim="0.9189" norm="0.9500">
+            <quintuple dataset="Yago" score="0.28041394" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Maxim_Kontsevich</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasWonPrize</predicate>
+               <object>http://yago-knowledge.org/resource/Fields_Medal</object>
+               <subjectLabel score="0.00000000">Maxim Kontsevich</subjectLabel>
+               <objectLabel score="0.20103484">Fields Medal</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.24352466" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Maxim_Kontsevich</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/award</predicate>
+               <object>http://dbpedia.org/resource/Fields_Medal</object>
+               <subjectLabel score="0.00000000">Maxim Kontsevich</subjectLabel>
+               <objectLabel score="0.10881165">Fields Medal</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="11-1" score="0.25683196" sim="0.9217" norm="0.9500">
+            <quintuple dataset="DBpedia" score="0.24616330" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Maxim_Kontsevich</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/nationality</predicate>
+               <object>http://dbpedia.org/resource/Russia</object>
+               <subjectLabel score="0.00000000">Maxim Kontsevich</subjectLabel>
+               <objectLabel score="0.11540825">Russia</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.25683196" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Maxim_Kontsevich</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isCitizenOf</predicate>
+               <object>http://yago-knowledge.org/resource/Russia</object>
+               <subjectLabel score="0.00000000">Maxim Kontsevich</subjectLabel>
+               <objectLabel score="0.14207988">Russia</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="11-2" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Maxim_Kontsevich</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/almaMater</predicate>
+               <object>http://dbpedia.org/resource/University_of_Bonn</object>
+               <subjectLabel score="0.00000000">Maxim Kontsevich</subjectLabel>
+               <objectLabel score="0.00000000">University of Bonn</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="11-3" score="0.20000000" sim="0.9625" norm="0.9500">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Maxim_Kontsevich</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/doctoralAdvisor</predicate>
+               <object>http://dbpedia.org/resource/Don_Zagier</object>
+               <subjectLabel score="0.00000000">Maxim Kontsevich</subjectLabel>
+               <objectLabel score="0.00000000">Don Zagier</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Maxim_Kontsevich</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasAcademicAdvisor</predicate>
+               <object>http://yago-knowledge.org/resource/Don_Zagier</object>
+               <subjectLabel score="0.00000000">Maxim Kontsevich</subjectLabel>
+               <objectLabel score="0.00000000">Don Zagier</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="12" runID="run7" score="0.20787177" plugType="E">
+         <cluster cluster_id="12-0" score="0.21692367" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.21692367" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Alexander_Haure_Turvelin</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasWonPrize</predicate>
+               <object>http://yago-knowledge.org/resource/Medal_of_Honor</object>
+               <subjectLabel score="0.00000000">Alexander Haure Turvelin</subjectLabel>
+               <objectLabel score="0.04230917">Medal of Honor</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="12-1" score="0.28021458" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.28021458" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Alexander_Borodin</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isCitizenOf</predicate>
+               <object>http://yago-knowledge.org/resource/Russia</object>
+               <subjectLabel score="0.05845656">Alexander Borodin</subjectLabel>
+               <objectLabel score="0.14207988">Russia</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="12-2" score="0.22673624" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.22673624" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Alexander_Haig</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/graduatedFrom</predicate>
+               <object>http://yago-knowledge.org/resource/United_States_Military_Academy</object>
+               <subjectLabel score="0.06684059">Alexander Haig</subjectLabel>
+               <objectLabel score="0.00000000">United States Military Academy</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="12-3" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Alexander_Borodin</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasAcademicAdvisor</predicate>
+               <object>http://yago-knowledge.org/resource/Nikolay_Zinin</object>
+               <subjectLabel score="0.00000000">Alexander Borodin</subjectLabel>
+               <objectLabel score="0.00000000">Nikolay Zinin</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="13" runID="run7" score="0.20741754" plugType="E">
+         <cluster cluster_id="13-0" score="0.28041394" sim="0.9189" norm="0.9500">
+            <quintuple dataset="Yago" score="0.28041394" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Stanislav_Smirnov</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasWonPrize</predicate>
+               <object>http://yago-knowledge.org/resource/Fields_Medal</object>
+               <subjectLabel score="0.00000000">Stanislav Smirnov</subjectLabel>
+               <objectLabel score="0.20103484">Fields Medal</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.24352466" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Stanislav_Smirnov</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/award</predicate>
+               <object>http://dbpedia.org/resource/Fields_Medal</object>
+               <subjectLabel score="0.00000000">Stanislav Smirnov</subjectLabel>
+               <objectLabel score="0.10881165">Fields Medal</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="13-1" score="0.25683196" sim="0.9217" norm="0.9500">
+            <quintuple dataset="Yago" score="0.25683196" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Stanislav_Smirnov</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isCitizenOf</predicate>
+               <object>http://yago-knowledge.org/resource/Russia</object>
+               <subjectLabel score="0.00000000">Stanislav Smirnov</subjectLabel>
+               <objectLabel score="0.14207988">Russia</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.24616330" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Stanislav_Smirnov</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/nationality</predicate>
+               <object>http://dbpedia.org/resource/Russia</object>
+               <subjectLabel score="0.00000000">Stanislav Smirnov</subjectLabel>
+               <objectLabel score="0.11540825">Russia</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="13-2" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Stanislav_Smirnov</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/almaMater</predicate>
+               <object>http://dbpedia.org/resource/California_Institute_of_Technology</object>
+               <subjectLabel score="0.00000000">Stanislav Smirnov</subjectLabel>
+               <objectLabel score="0.00000000">California Institute of Technology</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="13-3" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://dbpedia.org/resource/Stanislav_Smirnov</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/doctoralAdvisor</predicate>
+               <object>http://dbpedia.org/resource/Nikolai_G._Makarov</object>
+               <subjectLabel score="0.00000000">Stanislav Smirnov</subjectLabel>
+               <objectLabel score="0.00000000">http://dbpedia.org/resource/Nikolai_G._Makarov</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+   </results>
+</question>

@@ -1,0 +1,1971 @@
+<html> 
+  <head>
+    <meta charset='UTF-8'>
+<style>TABLE.outline {
+        BORDER-RIGHT: #c0c0c0 4px double; BORDER-TOP: #c0c0c0 4px double; BORDER-LEFT: #c0c0c0 4px double;
+        FONT-FAMILY: "MS Sans Serif"; BORDER-BOTTOM: #c0c0c0 4px double; align: center
+}
+A {
+        FONT-SIZE: 14px; COLOR: #333399; FONT-FAMILY: "Consolas"; TEXT-DECORATION: none
+}
+A:hover {
+        FONT-SIZE: 14px; COLOR: #778899; FONT-STYLE: normal; FONT-FAMILY: "Consolas"; TEXT-DECORATION: underline overline
+}
+.blockTitle {
+        PADDING-RIGHT: 3px; BORDER-TOP: #6495ed 3px double; PADDING-LEFT: 3px; FONT-WEIGHT: bold;
+        FONT-SIZE: 14px; PADDING-BOTTOM: 3px; COLOR: #daa520; PADDING-TOP: 3px; BORDER-BOTTOM: #6495ed 3px double;
+        BACKGROUND-COLOR: #f0f8ff
+}
+.blockTitle1 {
+        PADDING-RIGHT: 3px; BORDER-TOP: #6495ed 3px double; PADDING-LEFT: 3px; FONT-WEIGHT: bold; FONT-SIZE: 14px;
+        PADDING-BOTTOM: 3px; COLOR: #daa520; PADDING-TOP: 3px; BORDER-BOTTOM: #6495ed 3px double;
+        BACKGROUND-COLOR: #f0f8ff
+}
+TD {
+        FONT-SIZE: 14px; COLOR: #333399; FONT-FAMILY: "Consolas"; TEXT-DECORATION: none
+}
+.tdin {
+        PADDING-RIGHT: 2px; BORDER-TOP: #6495ed 1px double; PADDING-LEFT: 8px; PADDING-BOTTOM: 2px; PADDING-TOP: 2px;
+        BORDER-BOTTOM: #6495ed 1px double;BORDER-LEFT: #6495ed 1px double;BORDER-RIGHT: #6495ed 1px double;
+        FONT-FAMILY: "Consolas";
+}
+.thin {
+        PADDING-RIGHT: 2px; BORDER-TOP: #6495ed 1px double; PADDING-LEFT: 8px; FONT-WEIGHT: bold; FONT-SIZE: 12px;
+        PADDING-BOTTOM: 2px; COLOR: #E45C3A; PADDING-TOP: 2px; BORDER-BOTTOM: #6495ed 1px double;
+        BACKGROUND-COLOR: #DEF7FE; BORDER-LEFT: #6495ed 1px double; BORDER-RIGHT: #6495ed 1px double ;
+        FONT-FAMILY: "Verdana";
+}
+.thin2 {
+        PADDING-RIGHT: 2px; BORDER-TOP: #6495ed 1px double; PADDING-LEFT: 8px; FONT-WEIGHT: bold; FONT-SIZE: 12px;
+        PADDING-BOTTOM: 2px; COLOR: #405EE4; PADDING-TOP: 2px; BORDER-BOTTOM: #6495ed 1px double;
+        BACKGROUND-COLOR: #FFDFF8; BORDER-LEFT: #6495ed 1px double; BORDER-RIGHT: #6495ed 1px double ;
+        FONT-FAMILY: "Verdana";
+}
+TH {
+        FONT-SIZE: 14px; COLOR: #333399; FONT-FAMILY: "Verdana"; TEXT-DECORATION: none;align: left
+}
+INPUT.spt {
+        BORDER-RIGHT: #6495ed 1px double; BORDER-TOP: #6495ed 1px double;
+        BORDER-BOTTOM: #6495ed 1px double;BORDER-LEFT: #6495ed 1px double;
+        PADDING-LEFT: 1px; PADDING-BOTTOM: 1px; PADDING-TOP: 1px;PADDING-RIGHT: 1px;
+        FONT-FAMILY: "Tahoma";
+        WIDTH : 200px ; HEIGHT : 20px;
+}
+INPUT.spb {
+        PADDING-RIGHT: 1px; PADDING-LEFT: 1px;
+        PADDING-BOTTOM: 1px; PADDING-TOP: 1px;
+        BORDER-RIGHT: #6495ed 1px double; BORDER-LEFT: #6495ed 1px double;
+        BORDER-BOTTOM: #6495ed 1px double; BORDER-TOP: #6495ed 1px double;
+        FONT-FAMILY: "Tahoma"; BACKGROUND-COLOR : #A8FFA8;
+        WIDTH : 60px ; HEIGHT : 20px;
+}
+textarea {
+        PADDING-RIGHT: 2px; PADDING-LEFT: 2px;
+        PADDING-BOTTOM: 2px; PADDING-TOP: 2px;
+        BORDER-RIGHT: #6495ed 1px double; BORDER-LEFT: #6495ed 1px double;
+        BORDER-BOTTOM: #6495ed 1px double; BORDER-TOP: #6495ed 1px double;
+        FONT-FAMILY: "Tahoma"; BACKGROUND-COLOR : #FFFFFF;
+        WIDTH : 600px ; HEIGHT : 400px;
+}
+</style>  </head>
+  <body>
+<h2>Query :: q12</h2> <table class='outline' border='1' width = '100%'>
+<tr>
+<td class='tdin' width='50%'> <pre>{
+	"jodie foster"	"acted in"	?film .
+	?director     	"directed"	?film .
+}</pre> </td><td class='tdin' width='50%'>Give me the directors of movies acted by Jodie Foster.</td></tr>
+</table>
+ <br/><hr/><br/><table border='0' width = '100%'>
+<tr>
+<td class='tdin' width='35%'><table border='0' width = '100%'><tr>
+<td class='thin' width='40%'># Results</td><td class='tdin' width='40%'><b>41</b></td><td class='tdin' width='20%'></td></tr>
+<tr>
+<td class='thin' width='40%'>Elapsed time</td><td class='tdin' width='40%'>1.229</td><td class='tdin' width='20%'>sec</td></tr>
+<tr>
+<td class='thin' width='40%'>Used memory</td><td class='tdin' width='40%'>76.88613</td><td class='tdin' width='20%'>MB </td></tr>
+<tr>
+<td class='thin' width='40%'>Total Quintuples</td><td class='tdin' width='40%'>192</td><td class='tdin' width='20%'>quins </td></tr>
+<tr>
+<td class='thin' width='40%'>AVG. # quins per cluster</td><td class='tdin' width='40%'>2.3414633</td><td class='tdin' width='20%'>quin/cluster </td></tr>
+<tr>
+<td class='thin' width='40%'>AVG. # quins per bucket</td><td class='tdin' width='40%'>4.6829267</td><td class='tdin' width='20%'>quin/bucket </td></tr>
+<tr>
+<td class='thin' width='40%'># plugged triples</td><td class='tdin' width='40%'>0</td><td class='tdin' width='20%'>triples </td></tr>
+</table>
+</td><td class='tdin' width='25%'><table border='0' width = '100%'><tr>
+<td class='thin' width='40%'>LabelSearch TopK</td><td class='tdin' width='40%'>5</td></tr>
+<tr>
+<td class='thin' width='40%'>Plugin Labels ?</td><td class='tdin' width='40%'>false</td></tr>
+<tr>
+<td class='thin' width='40%'>Limit 1st triple?</td><td class='tdin' width='40%'>false</td></tr>
+<tr>
+<td class='thin' width='40%'>Validate Triples?</td><td class='tdin' width='40%'>false</td></tr>
+</table>
+</td><td class='tdin' width='40%'><table border='0' width = '100%'>
+<tr>
+<td class='tdin' width='25%'></td><td class='thin' width='25%'> # Requests</td><td class='thin' width='25%'> # Solved Requests</td><td class='thin' width='25%'> # Returned Records</td></tr>
+<tr>
+<td class='thin2' width='25%'>LinkedMDB</td><td class='tdin' width='25%'>70</td><td class='tdin' width='25%'>32</td><td class='tdin' width='25%'>75</td></tr>
+<tr>
+<td class='thin2' width='25%'>DBpedia</td><td class='tdin' width='25%'>76</td><td class='tdin' width='25%'>34</td><td class='tdin' width='25%'>70</td></tr>
+<tr>
+<td class='thin2' width='25%'>Yago</td><td class='tdin' width='25%'>64</td><td class='tdin' width='25%'>28</td><td class='tdin' width='25%'>55</td></tr>
+<tr>
+<td class='tdin' width='25%'></td><td class='thin' width='25%'>210</td><td class='thin' width='25%'>94</td><td class='thin' width='25%'>200</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 0</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.27489691</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 0 - 0</b><br/> Score1 = 0.41047208<br/> Sim.  = 0.9007<br/> Norm. = 1.0000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/45148' title='http://data.linkedmdb.org/resource/film/45148'>Inside Man</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/29802' title='http://data.linkedmdb.org/resource/actor/29802'>Jodie Foster</a></td>
+<td class='tdin' width='7%'>0.31021684</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Jodie_Foster' title='http://yago-knowledge.org/resource/Jodie_Foster'>Jodie Foster</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/actedIn' title='http://yago-knowledge.org/resource/actedIn'>actedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Inside_Man' title='http://yago-knowledge.org/resource/Inside_Man'>Inside Man</a></td>
+<td class='tdin' width='7%'>0.41047208</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Inside_Man' title='http://dbpedia.org/resource/Inside_Man'>Inside Man</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/starring' title='http://dbpedia.org/ontology/starring'>starring</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Jodie_Foster' title='http://dbpedia.org/resource/Jodie_Foster'>Jodie Foster</a></td>
+<td class='tdin' width='7%'>0.31856576</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 0 - 1</b><br/> Score1 = 0.20000000<br/> Sim.  = 0.9004<br/> Norm. = 1.0000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Spike_Lee' title='http://yago-knowledge.org/resource/Spike_Lee'>Spike Lee</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/directed' title='http://yago-knowledge.org/resource/directed'>directed</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Inside_Man' title='http://yago-knowledge.org/resource/Inside_Man'>Inside Man</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/45148' title='http://data.linkedmdb.org/resource/film/45148'>Inside Man</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/director' title='http://data.linkedmdb.org/resource/movie/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/director/8478' title='http://data.linkedmdb.org/resource/director/8478'>Spike Lee</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Inside_Man' title='http://dbpedia.org/resource/Inside_Man'>Inside Man</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/director' title='http://dbpedia.org/ontology/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Spike_Lee' title='http://dbpedia.org/resource/Spike_Lee'>Spike Lee</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 1</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.27489691</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 1 - 0</b><br/> Score1 = 0.41047208<br/> Sim.  = 0.9007<br/> Norm. = 1.0000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Little_Man_Tate' title='http://dbpedia.org/resource/Little_Man_Tate'>Little Man Tate</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/starring' title='http://dbpedia.org/ontology/starring'>starring</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Jodie_Foster' title='http://dbpedia.org/resource/Jodie_Foster'>Jodie Foster</a></td>
+<td class='tdin' width='7%'>0.31856576</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/39532' title='http://data.linkedmdb.org/resource/film/39532'>Little Man Tate</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/29802' title='http://data.linkedmdb.org/resource/actor/29802'>Jodie Foster</a></td>
+<td class='tdin' width='7%'>0.31021684</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Jodie_Foster' title='http://yago-knowledge.org/resource/Jodie_Foster'>Jodie Foster</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/actedIn' title='http://yago-knowledge.org/resource/actedIn'>actedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Little_Man_Tate' title='http://yago-knowledge.org/resource/Little_Man_Tate'>Little Man Tate</a></td>
+<td class='tdin' width='7%'>0.41047208</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 1 - 1</b><br/> Score1 = 0.20000000<br/> Sim.  = 0.9004<br/> Norm. = 1.0000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Jodie_Foster' title='http://yago-knowledge.org/resource/Jodie_Foster'>Jodie Foster</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/directed' title='http://yago-knowledge.org/resource/directed'>directed</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Little_Man_Tate' title='http://yago-knowledge.org/resource/Little_Man_Tate'>Little Man Tate</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/39532' title='http://data.linkedmdb.org/resource/film/39532'>Little Man Tate</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/director' title='http://data.linkedmdb.org/resource/movie/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/director/8557' title='http://data.linkedmdb.org/resource/director/8557'>Jodie Foster</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Little_Man_Tate' title='http://dbpedia.org/resource/Little_Man_Tate'>Little Man Tate</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/director' title='http://dbpedia.org/ontology/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Jodie_Foster' title='http://dbpedia.org/resource/Jodie_Foster'>Jodie Foster</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 2</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.27489691</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 2 - 0</b><br/> Score1 = 0.41047208<br/> Sim.  = 0.9007<br/> Norm. = 1.0000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/821' title='http://data.linkedmdb.org/resource/film/821'>Maverick</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/29802' title='http://data.linkedmdb.org/resource/actor/29802'>Jodie Foster</a></td>
+<td class='tdin' width='7%'>0.31021684</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Maverick_(film)' title='http://dbpedia.org/resource/Maverick_(film)'>Maverick</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/starring' title='http://dbpedia.org/ontology/starring'>starring</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Jodie_Foster' title='http://dbpedia.org/resource/Jodie_Foster'>Jodie Foster</a></td>
+<td class='tdin' width='7%'>0.31856576</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Jodie_Foster' title='http://yago-knowledge.org/resource/Jodie_Foster'>Jodie Foster</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/actedIn' title='http://yago-knowledge.org/resource/actedIn'>actedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Maverick_(film)' title='http://yago-knowledge.org/resource/Maverick_(film)'>Maverick</a></td>
+<td class='tdin' width='7%'>0.41047208</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 2 - 1</b><br/> Score1 = 0.20000000<br/> Sim.  = 0.9004<br/> Norm. = 1.0000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Richard_Donner' title='http://yago-knowledge.org/resource/Richard_Donner'>Richard Donner</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/directed' title='http://yago-knowledge.org/resource/directed'>directed</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Maverick_(film)' title='http://yago-knowledge.org/resource/Maverick_(film)'>Maverick</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/821' title='http://data.linkedmdb.org/resource/film/821'>Maverick</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/director' title='http://data.linkedmdb.org/resource/movie/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/director/9074' title='http://data.linkedmdb.org/resource/director/9074'>Richard Donner</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Maverick_(film)' title='http://dbpedia.org/resource/Maverick_(film)'>Maverick</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/director' title='http://dbpedia.org/ontology/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Richard_Donner' title='http://dbpedia.org/resource/Richard_Donner'>Richard Donner</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 3</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.27489691</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 3 - 0</b><br/> Score1 = 0.41047208<br/> Sim.  = 0.9007<br/> Norm. = 1.0000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/38912' title='http://data.linkedmdb.org/resource/film/38912'>Nell</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/29802' title='http://data.linkedmdb.org/resource/actor/29802'>Jodie Foster</a></td>
+<td class='tdin' width='7%'>0.31021684</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Jodie_Foster' title='http://yago-knowledge.org/resource/Jodie_Foster'>Jodie Foster</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/actedIn' title='http://yago-knowledge.org/resource/actedIn'>actedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Nell_(film)' title='http://yago-knowledge.org/resource/Nell_(film)'>Nell</a></td>
+<td class='tdin' width='7%'>0.41047208</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Nell_(film)' title='http://dbpedia.org/resource/Nell_(film)'>Nell</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/starring' title='http://dbpedia.org/ontology/starring'>starring</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Jodie_Foster' title='http://dbpedia.org/resource/Jodie_Foster'>Jodie Foster</a></td>
+<td class='tdin' width='7%'>0.31856576</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 3 - 1</b><br/> Score1 = 0.20000000<br/> Sim.  = 0.9004<br/> Norm. = 1.0000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Michael_Apted' title='http://yago-knowledge.org/resource/Michael_Apted'>Michael Apted</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/directed' title='http://yago-knowledge.org/resource/directed'>directed</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Nell_(film)' title='http://yago-knowledge.org/resource/Nell_(film)'>Nell</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/38912' title='http://data.linkedmdb.org/resource/film/38912'>Nell</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/director' title='http://data.linkedmdb.org/resource/movie/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/director/9248' title='http://data.linkedmdb.org/resource/director/9248'>Michael Apted</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Nell_(film)' title='http://dbpedia.org/resource/Nell_(film)'>Nell</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/director' title='http://dbpedia.org/ontology/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Michael_Apted' title='http://dbpedia.org/resource/Michael_Apted'>Michael Apted</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 4</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.27489691</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 4 - 0</b><br/> Score1 = 0.41047208<br/> Sim.  = 0.9007<br/> Norm. = 1.0000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Jodie_Foster' title='http://yago-knowledge.org/resource/Jodie_Foster'>Jodie Foster</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/actedIn' title='http://yago-knowledge.org/resource/actedIn'>actedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Nim%27s_Island' title='http://yago-knowledge.org/resource/Nim%27s_Island'>Nim's Island</a></td>
+<td class='tdin' width='7%'>0.41047208</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Nim%27s_Island' title='http://dbpedia.org/resource/Nim%27s_Island'>Nim's Island</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/starring' title='http://dbpedia.org/ontology/starring'>starring</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Jodie_Foster' title='http://dbpedia.org/resource/Jodie_Foster'>Jodie Foster</a></td>
+<td class='tdin' width='7%'>0.31856576</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/24158' title='http://data.linkedmdb.org/resource/film/24158'>Nim's Island</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/29802' title='http://data.linkedmdb.org/resource/actor/29802'>Jodie Foster</a></td>
+<td class='tdin' width='7%'>0.31021684</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 4 - 1</b><br/> Score1 = 0.20000000<br/> Sim.  = 0.9004<br/> Norm. = 1.0000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/24158' title='http://data.linkedmdb.org/resource/film/24158'>Nim's Island</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/director' title='http://data.linkedmdb.org/resource/movie/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/director/13317' title='http://data.linkedmdb.org/resource/director/13317'>Jennifer Flackett</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Nim%27s_Island' title='http://dbpedia.org/resource/Nim%27s_Island'>Nim's Island</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/director' title='http://dbpedia.org/ontology/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Jennifer_Flackett' title='http://dbpedia.org/resource/Jennifer_Flackett'>Jennifer Flackett</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Jennifer_Flackett' title='http://yago-knowledge.org/resource/Jennifer_Flackett'>Jennifer Flackett</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/directed' title='http://yago-knowledge.org/resource/directed'>directed</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Nim%27s_Island' title='http://yago-knowledge.org/resource/Nim%27s_Island'>Nim's Island</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 5</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.27489691</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 5 - 0</b><br/> Score1 = 0.41047208<br/> Sim.  = 0.9007<br/> Norm. = 1.0000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Jodie_Foster' title='http://yago-knowledge.org/resource/Jodie_Foster'>Jodie Foster</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/actedIn' title='http://yago-knowledge.org/resource/actedIn'>actedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Nim%27s_Island' title='http://yago-knowledge.org/resource/Nim%27s_Island'>Nim's Island</a></td>
+<td class='tdin' width='7%'>0.41047208</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Nim%27s_Island' title='http://dbpedia.org/resource/Nim%27s_Island'>Nim's Island</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/starring' title='http://dbpedia.org/ontology/starring'>starring</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Jodie_Foster' title='http://dbpedia.org/resource/Jodie_Foster'>Jodie Foster</a></td>
+<td class='tdin' width='7%'>0.31856576</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/24158' title='http://data.linkedmdb.org/resource/film/24158'>Nim's Island</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/29802' title='http://data.linkedmdb.org/resource/actor/29802'>Jodie Foster</a></td>
+<td class='tdin' width='7%'>0.31021684</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 5 - 1</b><br/> Score1 = 0.20000000<br/> Sim.  = 0.9004<br/> Norm. = 1.0000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Mark_Levin_(director)' title='http://yago-knowledge.org/resource/Mark_Levin_(director)'>Mark Levin</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/directed' title='http://yago-knowledge.org/resource/directed'>directed</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Nim%27s_Island' title='http://yago-knowledge.org/resource/Nim%27s_Island'>Nim's Island</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Nim%27s_Island' title='http://dbpedia.org/resource/Nim%27s_Island'>Nim's Island</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/director' title='http://dbpedia.org/ontology/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Mark_Levin_(director)' title='http://dbpedia.org/resource/Mark_Levin_(director)'>Mark Levin</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/24158' title='http://data.linkedmdb.org/resource/film/24158'>Nim's Island</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/director' title='http://data.linkedmdb.org/resource/movie/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/director/15874' title='http://data.linkedmdb.org/resource/director/15874'>Mark Levin</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 6</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.27489691</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 6 - 0</b><br/> Score1 = 0.41047208<br/> Sim.  = 0.9007<br/> Norm. = 1.0000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/921' title='http://data.linkedmdb.org/resource/film/921'>Panic Room</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/29802' title='http://data.linkedmdb.org/resource/actor/29802'>Jodie Foster</a></td>
+<td class='tdin' width='7%'>0.31021684</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Jodie_Foster' title='http://yago-knowledge.org/resource/Jodie_Foster'>Jodie Foster</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/actedIn' title='http://yago-knowledge.org/resource/actedIn'>actedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Panic_Room' title='http://yago-knowledge.org/resource/Panic_Room'>Panic Room</a></td>
+<td class='tdin' width='7%'>0.41047208</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Panic_Room' title='http://dbpedia.org/resource/Panic_Room'>Panic Room</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/starring' title='http://dbpedia.org/ontology/starring'>starring</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Jodie_Foster' title='http://dbpedia.org/resource/Jodie_Foster'>Jodie Foster</a></td>
+<td class='tdin' width='7%'>0.31856576</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 6 - 1</b><br/> Score1 = 0.20000000<br/> Sim.  = 0.9004<br/> Norm. = 1.0000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Panic_Room' title='http://dbpedia.org/resource/Panic_Room'>Panic Room</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/director' title='http://dbpedia.org/ontology/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/David_Fincher' title='http://dbpedia.org/resource/David_Fincher'>David Fincher</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/David_Fincher' title='http://yago-knowledge.org/resource/David_Fincher'>David Fincher</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/directed' title='http://yago-knowledge.org/resource/directed'>directed</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Panic_Room' title='http://yago-knowledge.org/resource/Panic_Room'>Panic Room</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/921' title='http://data.linkedmdb.org/resource/film/921'>Panic Room</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/director' title='http://data.linkedmdb.org/resource/movie/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/director/8399' title='http://data.linkedmdb.org/resource/director/8399'>David Fincher</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 7</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.27489691</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 7 - 0</b><br/> Score1 = 0.41047208<br/> Sim.  = 0.9007<br/> Norm. = 1.0000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Jodie_Foster' title='http://yago-knowledge.org/resource/Jodie_Foster'>Jodie Foster</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/actedIn' title='http://yago-knowledge.org/resource/actedIn'>actedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Siesta_(film)' title='http://yago-knowledge.org/resource/Siesta_(film)'>Siesta</a></td>
+<td class='tdin' width='7%'>0.41047208</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Siesta_(film)' title='http://dbpedia.org/resource/Siesta_(film)'>Siesta</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/starring' title='http://dbpedia.org/ontology/starring'>starring</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Jodie_Foster' title='http://dbpedia.org/resource/Jodie_Foster'>Jodie Foster</a></td>
+<td class='tdin' width='7%'>0.31856576</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/80861' title='http://data.linkedmdb.org/resource/film/80861'>Siesta</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/29802' title='http://data.linkedmdb.org/resource/actor/29802'>Jodie Foster</a></td>
+<td class='tdin' width='7%'>0.31021684</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 7 - 1</b><br/> Score1 = 0.20000000<br/> Sim.  = 0.9004<br/> Norm. = 1.0000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/80861' title='http://data.linkedmdb.org/resource/film/80861'>Siesta</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/director' title='http://data.linkedmdb.org/resource/movie/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/director/9528' title='http://data.linkedmdb.org/resource/director/9528'>Mary Lambert</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Mary_Lambert' title='http://yago-knowledge.org/resource/Mary_Lambert'>Mary Lambert</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/directed' title='http://yago-knowledge.org/resource/directed'>directed</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Siesta_(film)' title='http://yago-knowledge.org/resource/Siesta_(film)'>Siesta</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Siesta_(film)' title='http://dbpedia.org/resource/Siesta_(film)'>Siesta</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/director' title='http://dbpedia.org/ontology/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Mary_Lambert' title='http://dbpedia.org/resource/Mary_Lambert'>Mary Lambert</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 8</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.27489691</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 8 - 0</b><br/> Score1 = 0.41047208<br/> Sim.  = 0.9007<br/> Norm. = 1.0000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Jodie_Foster' title='http://yago-knowledge.org/resource/Jodie_Foster'>Jodie Foster</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/actedIn' title='http://yago-knowledge.org/resource/actedIn'>actedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Sommersby' title='http://yago-knowledge.org/resource/Sommersby'>Sommersby</a></td>
+<td class='tdin' width='7%'>0.41047208</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Sommersby' title='http://dbpedia.org/resource/Sommersby'>Sommersby</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/starring' title='http://dbpedia.org/ontology/starring'>starring</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Jodie_Foster' title='http://dbpedia.org/resource/Jodie_Foster'>Jodie Foster</a></td>
+<td class='tdin' width='7%'>0.31856576</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/40458' title='http://data.linkedmdb.org/resource/film/40458'>Sommersby</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/29802' title='http://data.linkedmdb.org/resource/actor/29802'>Jodie Foster</a></td>
+<td class='tdin' width='7%'>0.31021684</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 8 - 1</b><br/> Score1 = 0.20000000<br/> Sim.  = 0.9004<br/> Norm. = 1.0000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/40458' title='http://data.linkedmdb.org/resource/film/40458'>Sommersby</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/director' title='http://data.linkedmdb.org/resource/movie/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/director/2947' title='http://data.linkedmdb.org/resource/director/2947'>Jon Amiel</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Jon_Amiel' title='http://yago-knowledge.org/resource/Jon_Amiel'>Jon Amiel</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/directed' title='http://yago-knowledge.org/resource/directed'>directed</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Sommersby' title='http://yago-knowledge.org/resource/Sommersby'>Sommersby</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Sommersby' title='http://dbpedia.org/resource/Sommersby'>Sommersby</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/director' title='http://dbpedia.org/ontology/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Jon_Amiel' title='http://dbpedia.org/resource/Jon_Amiel'>Jon Amiel</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 9</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.27489691</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 9 - 0</b><br/> Score1 = 0.41047208<br/> Sim.  = 0.9007<br/> Norm. = 1.0000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/The_Hotel_New_Hampshire_(film)' title='http://dbpedia.org/resource/The_Hotel_New_Hampshire_(film)'>The Hotel New Hampshire</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/starring' title='http://dbpedia.org/ontology/starring'>starring</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Jodie_Foster' title='http://dbpedia.org/resource/Jodie_Foster'>Jodie Foster</a></td>
+<td class='tdin' width='7%'>0.31856576</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/7253' title='http://data.linkedmdb.org/resource/film/7253'>The Hotel New Hampshire</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/29802' title='http://data.linkedmdb.org/resource/actor/29802'>Jodie Foster</a></td>
+<td class='tdin' width='7%'>0.31021684</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Jodie_Foster' title='http://yago-knowledge.org/resource/Jodie_Foster'>Jodie Foster</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/actedIn' title='http://yago-knowledge.org/resource/actedIn'>actedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/The_Hotel_New_Hampshire_(film)' title='http://yago-knowledge.org/resource/The_Hotel_New_Hampshire_(film)'>The Hotel New Hampshire</a></td>
+<td class='tdin' width='7%'>0.41047208</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 9 - 1</b><br/> Score1 = 0.20000000<br/> Sim.  = 0.9004<br/> Norm. = 1.0000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/7253' title='http://data.linkedmdb.org/resource/film/7253'>The Hotel New Hampshire</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/director' title='http://data.linkedmdb.org/resource/movie/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/director/8540' title='http://data.linkedmdb.org/resource/director/8540'>Tony Richardson</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/The_Hotel_New_Hampshire_(film)' title='http://dbpedia.org/resource/The_Hotel_New_Hampshire_(film)'>The Hotel New Hampshire</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/director' title='http://dbpedia.org/ontology/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Tony_Richardson' title='http://dbpedia.org/resource/Tony_Richardson'>Tony Richardson</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Tony_Richardson' title='http://yago-knowledge.org/resource/Tony_Richardson'>Tony Richardson</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/directed' title='http://yago-knowledge.org/resource/directed'>directed</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/The_Hotel_New_Hampshire_(film)' title='http://yago-knowledge.org/resource/The_Hotel_New_Hampshire_(film)'>The Hotel New Hampshire</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 10</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.27489691</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 10 - 0</b><br/> Score1 = 0.41047208<br/> Sim.  = 0.9007<br/> Norm. = 1.0000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/The_Little_Girl_Who_Lives_Down_the_Lane' title='http://dbpedia.org/resource/The_Little_Girl_Who_Lives_Down_the_Lane'>The Little Girl Who Lives Down the Lane</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/starring' title='http://dbpedia.org/ontology/starring'>starring</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Jodie_Foster' title='http://dbpedia.org/resource/Jodie_Foster'>Jodie Foster</a></td>
+<td class='tdin' width='7%'>0.31856576</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/38222' title='http://data.linkedmdb.org/resource/film/38222'>The Little Girl Who Lives Down the Lane</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/29802' title='http://data.linkedmdb.org/resource/actor/29802'>Jodie Foster</a></td>
+<td class='tdin' width='7%'>0.31021684</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Jodie_Foster' title='http://yago-knowledge.org/resource/Jodie_Foster'>Jodie Foster</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/actedIn' title='http://yago-knowledge.org/resource/actedIn'>actedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/The_Little_Girl_Who_Lives_Down_the_Lane' title='http://yago-knowledge.org/resource/The_Little_Girl_Who_Lives_Down_the_Lane'>The Little Girl Who Lives Down the Lane</a></td>
+<td class='tdin' width='7%'>0.41047208</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 10 - 1</b><br/> Score1 = 0.20000000<br/> Sim.  = 0.9004<br/> Norm. = 1.0000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Nicolas_Gessner' title='http://yago-knowledge.org/resource/Nicolas_Gessner'>Nicolas Gessner</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/directed' title='http://yago-knowledge.org/resource/directed'>directed</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/The_Little_Girl_Who_Lives_Down_the_Lane' title='http://yago-knowledge.org/resource/The_Little_Girl_Who_Lives_Down_the_Lane'>The Little Girl Who Lives Down the Lane</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/The_Little_Girl_Who_Lives_Down_the_Lane' title='http://dbpedia.org/resource/The_Little_Girl_Who_Lives_Down_the_Lane'>The Little Girl Who Lives Down the Lane</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/director' title='http://dbpedia.org/ontology/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Nicolas_Gessner' title='http://dbpedia.org/resource/Nicolas_Gessner'>Nicolas Gessner</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/38222' title='http://data.linkedmdb.org/resource/film/38222'>The Little Girl Who Lives Down the Lane</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/director' title='http://data.linkedmdb.org/resource/movie/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/director/11082' title='http://data.linkedmdb.org/resource/director/11082'>Nicolas Gessner</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 11</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.27489691</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 11 - 0</b><br/> Score1 = 0.41047208<br/> Sim.  = 0.9007<br/> Norm. = 1.0000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/The_Silence_of_the_Lambs_(film)' title='http://dbpedia.org/resource/The_Silence_of_the_Lambs_(film)'>The Silence of the Lambs</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/starring' title='http://dbpedia.org/ontology/starring'>starring</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Jodie_Foster' title='http://dbpedia.org/resource/Jodie_Foster'>Jodie Foster</a></td>
+<td class='tdin' width='7%'>0.31856576</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/38145' title='http://data.linkedmdb.org/resource/film/38145'>The Silence of the Lambs</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/29802' title='http://data.linkedmdb.org/resource/actor/29802'>Jodie Foster</a></td>
+<td class='tdin' width='7%'>0.31021684</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Jodie_Foster' title='http://yago-knowledge.org/resource/Jodie_Foster'>Jodie Foster</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/actedIn' title='http://yago-knowledge.org/resource/actedIn'>actedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/The_Silence_of_the_Lambs_(film)' title='http://yago-knowledge.org/resource/The_Silence_of_the_Lambs_(film)'>The Silence of the Lambs</a></td>
+<td class='tdin' width='7%'>0.41047208</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 11 - 1</b><br/> Score1 = 0.20000000<br/> Sim.  = 0.9004<br/> Norm. = 1.0000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/38145' title='http://data.linkedmdb.org/resource/film/38145'>The Silence of the Lambs</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/director' title='http://data.linkedmdb.org/resource/movie/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/director/8429' title='http://data.linkedmdb.org/resource/director/8429'>Jonathan Demme</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Jonathan_Demme' title='http://yago-knowledge.org/resource/Jonathan_Demme'>Jonathan Demme</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/directed' title='http://yago-knowledge.org/resource/directed'>directed</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/The_Silence_of_the_Lambs_(film)' title='http://yago-knowledge.org/resource/The_Silence_of_the_Lambs_(film)'>The Silence of the Lambs</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/The_Silence_of_the_Lambs_(film)' title='http://dbpedia.org/resource/The_Silence_of_the_Lambs_(film)'>The Silence of the Lambs</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/director' title='http://dbpedia.org/ontology/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Jonathan_Demme' title='http://dbpedia.org/resource/Jonathan_Demme'>Jonathan Demme</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 12</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.27489691</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 12 - 0</b><br/> Score1 = 0.41047208<br/> Sim.  = 0.9007<br/> Norm. = 1.0000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/40867' title='http://data.linkedmdb.org/resource/film/40867'>A Very Long Engagement</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/29802' title='http://data.linkedmdb.org/resource/actor/29802'>Jodie Foster</a></td>
+<td class='tdin' width='7%'>0.31021684</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Jodie_Foster' title='http://yago-knowledge.org/resource/Jodie_Foster'>Jodie Foster</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/actedIn' title='http://yago-knowledge.org/resource/actedIn'>actedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/A_Very_Long_Engagement' title='http://yago-knowledge.org/resource/A_Very_Long_Engagement'>A Very Long Engagement</a></td>
+<td class='tdin' width='7%'>0.41047208</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/A_Very_Long_Engagement' title='http://dbpedia.org/resource/A_Very_Long_Engagement'>A Very Long Engagement</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/starring' title='http://dbpedia.org/ontology/starring'>starring</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Jodie_Foster' title='http://dbpedia.org/resource/Jodie_Foster'>Jodie Foster</a></td>
+<td class='tdin' width='7%'>0.31856576</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 12 - 1</b><br/> Score1 = 0.20000000<br/> Sim.  = 0.9004<br/> Norm. = 1.0000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/40867' title='http://data.linkedmdb.org/resource/film/40867'>A Very Long Engagement</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/director' title='http://data.linkedmdb.org/resource/movie/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/director/8620' title='http://data.linkedmdb.org/resource/director/8620'>Jean-Pierre Jeunet</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/A_Very_Long_Engagement' title='http://dbpedia.org/resource/A_Very_Long_Engagement'>A Very Long Engagement</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/director' title='http://dbpedia.org/ontology/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Jean-Pierre_Jeunet' title='http://dbpedia.org/resource/Jean-Pierre_Jeunet'>Jean-Pierre Jeunet</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Jean-Pierre_Jeunet' title='http://yago-knowledge.org/resource/Jean-Pierre_Jeunet'>Jean-Pierre Jeunet</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/directed' title='http://yago-knowledge.org/resource/directed'>directed</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/A_Very_Long_Engagement' title='http://yago-knowledge.org/resource/A_Very_Long_Engagement'>A Very Long Engagement</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 13</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.27489691</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 13 - 0</b><br/> Score1 = 0.41047208<br/> Sim.  = 0.9007<br/> Norm. = 1.0000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Bugsy_Malone' title='http://dbpedia.org/resource/Bugsy_Malone'>Bugsy Malone</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/starring' title='http://dbpedia.org/ontology/starring'>starring</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Jodie_Foster' title='http://dbpedia.org/resource/Jodie_Foster'>Jodie Foster</a></td>
+<td class='tdin' width='7%'>0.31856576</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Jodie_Foster' title='http://yago-knowledge.org/resource/Jodie_Foster'>Jodie Foster</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/actedIn' title='http://yago-knowledge.org/resource/actedIn'>actedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Bugsy_Malone' title='http://yago-knowledge.org/resource/Bugsy_Malone'>Bugsy Malone</a></td>
+<td class='tdin' width='7%'>0.41047208</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/39165' title='http://data.linkedmdb.org/resource/film/39165'>Bugsy Malone</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/29802' title='http://data.linkedmdb.org/resource/actor/29802'>Jodie Foster</a></td>
+<td class='tdin' width='7%'>0.31021684</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 13 - 1</b><br/> Score1 = 0.20000000<br/> Sim.  = 0.9004<br/> Norm. = 1.0000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/39165' title='http://data.linkedmdb.org/resource/film/39165'>Bugsy Malone</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/director' title='http://data.linkedmdb.org/resource/movie/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/director/9031' title='http://data.linkedmdb.org/resource/director/9031'>Alan Parker</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Alan_Parker' title='http://yago-knowledge.org/resource/Alan_Parker'>Alan Parker</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/directed' title='http://yago-knowledge.org/resource/directed'>directed</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Bugsy_Malone' title='http://yago-knowledge.org/resource/Bugsy_Malone'>Bugsy Malone</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Bugsy_Malone' title='http://dbpedia.org/resource/Bugsy_Malone'>Bugsy Malone</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/director' title='http://dbpedia.org/ontology/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Alan_Parker' title='http://dbpedia.org/resource/Alan_Parker'>Alan Parker</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 14</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.27489691</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 14 - 0</b><br/> Score1 = 0.41047208<br/> Sim.  = 0.9007<br/> Norm. = 1.0000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Candleshoe' title='http://dbpedia.org/resource/Candleshoe'>Candleshoe</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/starring' title='http://dbpedia.org/ontology/starring'>starring</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Jodie_Foster' title='http://dbpedia.org/resource/Jodie_Foster'>Jodie Foster</a></td>
+<td class='tdin' width='7%'>0.31856576</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Jodie_Foster' title='http://yago-knowledge.org/resource/Jodie_Foster'>Jodie Foster</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/actedIn' title='http://yago-knowledge.org/resource/actedIn'>actedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Candleshoe' title='http://yago-knowledge.org/resource/Candleshoe'>Candleshoe</a></td>
+<td class='tdin' width='7%'>0.41047208</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/42805' title='http://data.linkedmdb.org/resource/film/42805'>Candleshoe</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/29802' title='http://data.linkedmdb.org/resource/actor/29802'>Jodie Foster</a></td>
+<td class='tdin' width='7%'>0.31021684</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 14 - 1</b><br/> Score1 = 0.20000000<br/> Sim.  = 0.9004<br/> Norm. = 1.0000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Candleshoe' title='http://dbpedia.org/resource/Candleshoe'>Candleshoe</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/director' title='http://dbpedia.org/ontology/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Norman_Tokar' title='http://dbpedia.org/resource/Norman_Tokar'>Norman Tokar</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Norman_Tokar' title='http://yago-knowledge.org/resource/Norman_Tokar'>Norman Tokar</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/directed' title='http://yago-knowledge.org/resource/directed'>directed</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Candleshoe' title='http://yago-knowledge.org/resource/Candleshoe'>Candleshoe</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/42805' title='http://data.linkedmdb.org/resource/film/42805'>Candleshoe</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/director' title='http://data.linkedmdb.org/resource/movie/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/director/12029' title='http://data.linkedmdb.org/resource/director/12029'>Norman Tokar</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 15</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.27489691</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 15 - 0</b><br/> Score1 = 0.41047208<br/> Sim.  = 0.9007<br/> Norm. = 1.0000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Jodie_Foster' title='http://yago-knowledge.org/resource/Jodie_Foster'>Jodie Foster</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/actedIn' title='http://yago-knowledge.org/resource/actedIn'>actedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Contact_(film)' title='http://yago-knowledge.org/resource/Contact_(film)'>Contact</a></td>
+<td class='tdin' width='7%'>0.41047208</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/874' title='http://data.linkedmdb.org/resource/film/874'>Contact</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/29802' title='http://data.linkedmdb.org/resource/actor/29802'>Jodie Foster</a></td>
+<td class='tdin' width='7%'>0.31021684</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Contact_(1997_US_film)' title='http://dbpedia.org/resource/Contact_(1997_US_film)'>Contact</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/starring' title='http://dbpedia.org/ontology/starring'>starring</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Jodie_Foster' title='http://dbpedia.org/resource/Jodie_Foster'>Jodie Foster</a></td>
+<td class='tdin' width='7%'>0.31856576</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 15 - 1</b><br/> Score1 = 0.20000000<br/> Sim.  = 0.9004<br/> Norm. = 1.0000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Robert_Zemeckis' title='http://yago-knowledge.org/resource/Robert_Zemeckis'>Robert Zemeckis</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/directed' title='http://yago-knowledge.org/resource/directed'>directed</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Contact_(film)' title='http://yago-knowledge.org/resource/Contact_(film)'>Contact</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Contact_(1997_US_film)' title='http://dbpedia.org/resource/Contact_(1997_US_film)'>Contact</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/director' title='http://dbpedia.org/ontology/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Robert_Zemeckis' title='http://dbpedia.org/resource/Robert_Zemeckis'>Robert Zemeckis</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/874' title='http://data.linkedmdb.org/resource/film/874'>Contact</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/director' title='http://data.linkedmdb.org/resource/movie/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/director/8867' title='http://data.linkedmdb.org/resource/director/8867'>Robert Zemeckis</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 16</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.27489691</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 16 - 0</b><br/> Score1 = 0.41047208<br/> Sim.  = 0.9007<br/> Norm. = 1.0000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Five_Corners_(film)' title='http://dbpedia.org/resource/Five_Corners_(film)'>Five Corners</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/starring' title='http://dbpedia.org/ontology/starring'>starring</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Jodie_Foster' title='http://dbpedia.org/resource/Jodie_Foster'>Jodie Foster</a></td>
+<td class='tdin' width='7%'>0.31856576</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Jodie_Foster' title='http://yago-knowledge.org/resource/Jodie_Foster'>Jodie Foster</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/actedIn' title='http://yago-knowledge.org/resource/actedIn'>actedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Five_Corners_(film)' title='http://yago-knowledge.org/resource/Five_Corners_(film)'>Five Corners</a></td>
+<td class='tdin' width='7%'>0.41047208</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/2713' title='http://data.linkedmdb.org/resource/film/2713'>Five Corners</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/29802' title='http://data.linkedmdb.org/resource/actor/29802'>Jodie Foster</a></td>
+<td class='tdin' width='7%'>0.31021684</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 16 - 1</b><br/> Score1 = 0.20000000<br/> Sim.  = 0.9004<br/> Norm. = 1.0000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/2713' title='http://data.linkedmdb.org/resource/film/2713'>Five Corners</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/director' title='http://data.linkedmdb.org/resource/movie/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/director/13958' title='http://data.linkedmdb.org/resource/director/13958'>Tony Bill</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Tony_Bill' title='http://yago-knowledge.org/resource/Tony_Bill'>Tony Bill</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/directed' title='http://yago-knowledge.org/resource/directed'>directed</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Five_Corners_(film)' title='http://yago-knowledge.org/resource/Five_Corners_(film)'>Five Corners</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Five_Corners_(film)' title='http://dbpedia.org/resource/Five_Corners_(film)'>Five Corners</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/director' title='http://dbpedia.org/ontology/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Tony_Bill' title='http://dbpedia.org/resource/Tony_Bill'>Tony Bill</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 17</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.27489691</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 17 - 0</b><br/> Score1 = 0.41047208<br/> Sim.  = 0.9007<br/> Norm. = 1.0000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Jodie_Foster' title='http://yago-knowledge.org/resource/Jodie_Foster'>Jodie Foster</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/actedIn' title='http://yago-knowledge.org/resource/actedIn'>actedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Flightplan' title='http://yago-knowledge.org/resource/Flightplan'>Flightplan</a></td>
+<td class='tdin' width='7%'>0.41047208</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Flightplan' title='http://dbpedia.org/resource/Flightplan'>Flightplan</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/starring' title='http://dbpedia.org/ontology/starring'>starring</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Jodie_Foster' title='http://dbpedia.org/resource/Jodie_Foster'>Jodie Foster</a></td>
+<td class='tdin' width='7%'>0.31856576</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/42337' title='http://data.linkedmdb.org/resource/film/42337'>Flightplan</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/29802' title='http://data.linkedmdb.org/resource/actor/29802'>Jodie Foster</a></td>
+<td class='tdin' width='7%'>0.31021684</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 17 - 1</b><br/> Score1 = 0.20000000<br/> Sim.  = 0.9004<br/> Norm. = 1.0000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/42337' title='http://data.linkedmdb.org/resource/film/42337'>Flightplan</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/director' title='http://data.linkedmdb.org/resource/movie/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/director/11763' title='http://data.linkedmdb.org/resource/director/11763'>Robert Schwentke</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Flightplan' title='http://dbpedia.org/resource/Flightplan'>Flightplan</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/director' title='http://dbpedia.org/ontology/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Robert_Schwentke' title='http://dbpedia.org/resource/Robert_Schwentke'>Robert Schwentke</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Robert_Schwentke' title='http://yago-knowledge.org/resource/Robert_Schwentke'>Robert Schwentke</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/directed' title='http://yago-knowledge.org/resource/directed'>directed</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Flightplan' title='http://yago-knowledge.org/resource/Flightplan'>Flightplan</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 18</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.27489691</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 18 - 0</b><br/> Score1 = 0.41047208<br/> Sim.  = 0.9007<br/> Norm. = 1.0000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/3318' title='http://data.linkedmdb.org/resource/film/3318'>Foxes</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/29802' title='http://data.linkedmdb.org/resource/actor/29802'>Jodie Foster</a></td>
+<td class='tdin' width='7%'>0.31021684</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Jodie_Foster' title='http://yago-knowledge.org/resource/Jodie_Foster'>Jodie Foster</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/actedIn' title='http://yago-knowledge.org/resource/actedIn'>actedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Foxes_(film)' title='http://yago-knowledge.org/resource/Foxes_(film)'>Foxes</a></td>
+<td class='tdin' width='7%'>0.41047208</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Foxes_(film)' title='http://dbpedia.org/resource/Foxes_(film)'>Foxes</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/starring' title='http://dbpedia.org/ontology/starring'>starring</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Jodie_Foster' title='http://dbpedia.org/resource/Jodie_Foster'>Jodie Foster</a></td>
+<td class='tdin' width='7%'>0.31856576</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 18 - 1</b><br/> Score1 = 0.20000000<br/> Sim.  = 0.9004<br/> Norm. = 1.0000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Adrian_Lyne' title='http://yago-knowledge.org/resource/Adrian_Lyne'>Adrian Lyne</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/directed' title='http://yago-knowledge.org/resource/directed'>directed</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Foxes_(film)' title='http://yago-knowledge.org/resource/Foxes_(film)'>Foxes</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Foxes_(film)' title='http://dbpedia.org/resource/Foxes_(film)'>Foxes</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/director' title='http://dbpedia.org/ontology/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Adrian_Lyne' title='http://dbpedia.org/resource/Adrian_Lyne'>Adrian Lyne</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/3318' title='http://data.linkedmdb.org/resource/film/3318'>Foxes</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/director' title='http://data.linkedmdb.org/resource/movie/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/director/9612' title='http://data.linkedmdb.org/resource/director/9612'>Adrian Lyne</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 19</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.27471245</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 19 - 0</b><br/> Score1 = 0.41047208<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Jodie_Foster' title='http://yago-knowledge.org/resource/Jodie_Foster'>Jodie Foster</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/actedIn' title='http://yago-knowledge.org/resource/actedIn'>actedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/The_Beaver_(film)' title='http://yago-knowledge.org/resource/The_Beaver_(film)'>The Beaver</a></td>
+<td class='tdin' width='7%'>0.41047208</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 19 - 1</b><br/> Score1 = 0.20000000<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Jodie_Foster' title='http://yago-knowledge.org/resource/Jodie_Foster'>Jodie Foster</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/directed' title='http://yago-knowledge.org/resource/directed'>directed</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/The_Beaver_(film)' title='http://yago-knowledge.org/resource/The_Beaver_(film)'>The Beaver</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 20</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.27471245</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 20 - 0</b><br/> Score1 = 0.41047208<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Jodie_Foster' title='http://yago-knowledge.org/resource/Jodie_Foster'>Jodie Foster</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/actedIn' title='http://yago-knowledge.org/resource/actedIn'>actedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Elysium_(film)' title='http://yago-knowledge.org/resource/Elysium_(film)'>Elysium</a></td>
+<td class='tdin' width='7%'>0.41047208</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 20 - 1</b><br/> Score1 = 0.20000000<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Neill_Blomkamp' title='http://yago-knowledge.org/resource/Neill_Blomkamp'>Neill Blomkamp</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/directed' title='http://yago-knowledge.org/resource/directed'>directed</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Elysium_(film)' title='http://yago-knowledge.org/resource/Elysium_(film)'>Elysium</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 21</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.27148104</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 21 - 0</b><br/> Score1 = 0.41047208<br/> Sim.  = 0.9007<br/> Norm. = 1.0000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/43006' title='http://data.linkedmdb.org/resource/film/43006'>Stealing Home</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/29802' title='http://data.linkedmdb.org/resource/actor/29802'>Jodie Foster</a></td>
+<td class='tdin' width='7%'>0.31021684</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Stealing_Home' title='http://dbpedia.org/resource/Stealing_Home'>Stealing Home</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/starring' title='http://dbpedia.org/ontology/starring'>starring</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Jodie_Foster' title='http://dbpedia.org/resource/Jodie_Foster'>Jodie Foster</a></td>
+<td class='tdin' width='7%'>0.31856576</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Jodie_Foster' title='http://yago-knowledge.org/resource/Jodie_Foster'>Jodie Foster</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/actedIn' title='http://yago-knowledge.org/resource/actedIn'>actedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Stealing_Home' title='http://yago-knowledge.org/resource/Stealing_Home'>Stealing Home</a></td>
+<td class='tdin' width='7%'>0.41047208</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 21 - 1</b><br/> Score1 = 0.20000000<br/> Sim.  = 0.9118<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Steven_Kampmann' title='http://yago-knowledge.org/resource/Steven_Kampmann'>Steven Kampmann</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/directed' title='http://yago-knowledge.org/resource/directed'>directed</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Stealing_Home' title='http://yago-knowledge.org/resource/Stealing_Home'>Stealing Home</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Stealing_Home' title='http://dbpedia.org/resource/Stealing_Home'>Stealing Home</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/director' title='http://dbpedia.org/ontology/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Steven_Kampmann' title='http://dbpedia.org/resource/Steven_Kampmann'>Steven Kampmann</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 22</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.27039487</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 22 - 0</b><br/> Score1 = 0.41047208<br/> Sim.  = 0.9007<br/> Norm. = 1.0000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/45780' title='http://data.linkedmdb.org/resource/film/45780'>Catchfire</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/29802' title='http://data.linkedmdb.org/resource/actor/29802'>Jodie Foster</a></td>
+<td class='tdin' width='7%'>0.31021684</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Jodie_Foster' title='http://yago-knowledge.org/resource/Jodie_Foster'>Jodie Foster</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/actedIn' title='http://yago-knowledge.org/resource/actedIn'>actedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Catchfire' title='http://yago-knowledge.org/resource/Catchfire'>Catchfire</a></td>
+<td class='tdin' width='7%'>0.41047208</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Catchfire' title='http://dbpedia.org/resource/Catchfire'>Catchfire</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/starring' title='http://dbpedia.org/ontology/starring'>starring</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Jodie_Foster' title='http://dbpedia.org/resource/Jodie_Foster'>Jodie Foster</a></td>
+<td class='tdin' width='7%'>0.31856576</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 22 - 1</b><br/> Score1 = 0.20000000<br/> Sim.  = 0.9004<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/45780' title='http://data.linkedmdb.org/resource/film/45780'>Catchfire</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/director' title='http://data.linkedmdb.org/resource/movie/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/director/8627' title='http://data.linkedmdb.org/resource/director/8627'>Alan Smithee</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Catchfire' title='http://dbpedia.org/resource/Catchfire'>Catchfire</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/director' title='http://dbpedia.org/ontology/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Alan_Smithee' title='http://dbpedia.org/resource/Alan_Smithee'>Alan Smithee</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 23</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.27037442</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 23 - 0</b><br/> Score1 = 0.41047208<br/> Sim.  = 0.9007<br/> Norm. = 1.0000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/45780' title='http://data.linkedmdb.org/resource/film/45780'>Catchfire</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/29802' title='http://data.linkedmdb.org/resource/actor/29802'>Jodie Foster</a></td>
+<td class='tdin' width='7%'>0.31021684</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Jodie_Foster' title='http://yago-knowledge.org/resource/Jodie_Foster'>Jodie Foster</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/actedIn' title='http://yago-knowledge.org/resource/actedIn'>actedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Catchfire' title='http://yago-knowledge.org/resource/Catchfire'>Catchfire</a></td>
+<td class='tdin' width='7%'>0.41047208</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Catchfire' title='http://dbpedia.org/resource/Catchfire'>Catchfire</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/starring' title='http://dbpedia.org/ontology/starring'>starring</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Jodie_Foster' title='http://dbpedia.org/resource/Jodie_Foster'>Jodie Foster</a></td>
+<td class='tdin' width='7%'>0.31856576</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 23 - 1</b><br/> Score1 = 0.20000000<br/> Sim.  = 0.9002<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/45780' title='http://data.linkedmdb.org/resource/film/45780'>Catchfire</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/director' title='http://data.linkedmdb.org/resource/movie/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/director/8401' title='http://data.linkedmdb.org/resource/director/8401'>Dennis Hopper</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Dennis_Hopper' title='http://yago-knowledge.org/resource/Dennis_Hopper'>Dennis Hopper</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/directed' title='http://yago-knowledge.org/resource/directed'>directed</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Catchfire' title='http://yago-knowledge.org/resource/Catchfire'>Catchfire</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 24</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.26501635</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 24 - 0</b><br/> Score1 = 0.41047208<br/> Sim.  = 0.9149<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Jodie_Foster' title='http://yago-knowledge.org/resource/Jodie_Foster'>Jodie Foster</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/actedIn' title='http://yago-knowledge.org/resource/actedIn'>actedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/The_Blood_of_Others_(film)' title='http://yago-knowledge.org/resource/The_Blood_of_Others_(film)'>The Blood of Others</a></td>
+<td class='tdin' width='7%'>0.41047208</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/The_Blood_of_Others_(film)' title='http://dbpedia.org/resource/The_Blood_of_Others_(film)'>The Blood of Others</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/starring' title='http://dbpedia.org/ontology/starring'>starring</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Jodie_Foster' title='http://dbpedia.org/resource/Jodie_Foster'>Jodie Foster</a></td>
+<td class='tdin' width='7%'>0.31856576</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 24 - 1</b><br/> Score1 = 0.20000000<br/> Sim.  = 0.9118<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/The_Blood_of_Others_(film)' title='http://dbpedia.org/resource/The_Blood_of_Others_(film)'>The Blood of Others</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/director' title='http://dbpedia.org/ontology/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Claude_Chabrol' title='http://dbpedia.org/resource/Claude_Chabrol'>Claude Chabrol</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Claude_Chabrol' title='http://yago-knowledge.org/resource/Claude_Chabrol'>Claude Chabrol</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/directed' title='http://yago-knowledge.org/resource/directed'>directed</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/The_Blood_of_Others_(film)' title='http://yago-knowledge.org/resource/The_Blood_of_Others_(film)'>The Blood of Others</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 25</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.26501635</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 25 - 0</b><br/> Score1 = 0.41047208<br/> Sim.  = 0.9149<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Beach_House_(film)' title='http://dbpedia.org/resource/Beach_House_(film)'>Beach House</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/starring' title='http://dbpedia.org/ontology/starring'>starring</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Jodie_Foster' title='http://dbpedia.org/resource/Jodie_Foster'>Jodie Foster</a></td>
+<td class='tdin' width='7%'>0.31856576</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Jodie_Foster' title='http://yago-knowledge.org/resource/Jodie_Foster'>Jodie Foster</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/actedIn' title='http://yago-knowledge.org/resource/actedIn'>actedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Beach_House_(film)' title='http://yago-knowledge.org/resource/Beach_House_(film)'>Beach House</a></td>
+<td class='tdin' width='7%'>0.41047208</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 25 - 1</b><br/> Score1 = 0.20000000<br/> Sim.  = 0.9118<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Beach_House_(film)' title='http://dbpedia.org/resource/Beach_House_(film)'>Beach House</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/director' title='http://dbpedia.org/ontology/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Sergio_Citti' title='http://dbpedia.org/resource/Sergio_Citti'>Sergio Citti</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Sergio_Citti' title='http://yago-knowledge.org/resource/Sergio_Citti'>Sergio Citti</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/directed' title='http://yago-knowledge.org/resource/directed'>directed</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Beach_House_(film)' title='http://yago-knowledge.org/resource/Beach_House_(film)'>Beach House</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 26</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.26501635</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 26 - 0</b><br/> Score1 = 0.41047208<br/> Sim.  = 0.9149<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Jodie_Foster' title='http://yago-knowledge.org/resource/Jodie_Foster'>Jodie Foster</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/actedIn' title='http://yago-knowledge.org/resource/actedIn'>actedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Echoes_of_a_Summer' title='http://yago-knowledge.org/resource/Echoes_of_a_Summer'>Echoes of a Summer</a></td>
+<td class='tdin' width='7%'>0.41047208</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Echoes_of_a_Summer' title='http://dbpedia.org/resource/Echoes_of_a_Summer'>Echoes of a Summer</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/starring' title='http://dbpedia.org/ontology/starring'>starring</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Jodie_Foster' title='http://dbpedia.org/resource/Jodie_Foster'>Jodie Foster</a></td>
+<td class='tdin' width='7%'>0.31856576</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 26 - 1</b><br/> Score1 = 0.20000000<br/> Sim.  = 0.9118<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Don_Taylor_(actor/director)' title='http://yago-knowledge.org/resource/Don_Taylor_(actor/director)'>Don Taylor</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/directed' title='http://yago-knowledge.org/resource/directed'>directed</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Echoes_of_a_Summer' title='http://yago-knowledge.org/resource/Echoes_of_a_Summer'>Echoes of a Summer</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Echoes_of_a_Summer' title='http://dbpedia.org/resource/Echoes_of_a_Summer'>Echoes of a Summer</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/director' title='http://dbpedia.org/ontology/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Don_Taylor_(American_actor_and_director)' title='http://dbpedia.org/resource/Don_Taylor_(American_actor_and_director)'>Don Taylor</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 27</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.26106745</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 27 - 0</b><br/> Score1 = 0.41047208<br/> Sim.  = 0.9004<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Jodie_Foster' title='http://yago-knowledge.org/resource/Jodie_Foster'>Jodie Foster</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/actedIn' title='http://yago-knowledge.org/resource/actedIn'>actedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Alice_Doesn%27t_Live_Here_Anymore' title='http://yago-knowledge.org/resource/Alice_Doesn%27t_Live_Here_Anymore'>Alice Doesn't Live Here Anymore</a></td>
+<td class='tdin' width='7%'>0.41047208</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/574' title='http://data.linkedmdb.org/resource/film/574'>Alice Doesn't Live Here Anymore</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/29802' title='http://data.linkedmdb.org/resource/actor/29802'>Jodie Foster</a></td>
+<td class='tdin' width='7%'>0.31021684</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 27 - 1</b><br/> Score1 = 0.20000000<br/> Sim.  = 0.9002<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/574' title='http://data.linkedmdb.org/resource/film/574'>Alice Doesn't Live Here Anymore</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/director' title='http://data.linkedmdb.org/resource/movie/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/director/8454' title='http://data.linkedmdb.org/resource/director/8454'>Martin Scorsese</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Martin_Scorsese' title='http://yago-knowledge.org/resource/Martin_Scorsese'>Martin Scorsese</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/directed' title='http://yago-knowledge.org/resource/directed'>directed</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Alice_Doesn%27t_Live_Here_Anymore' title='http://yago-knowledge.org/resource/Alice_Doesn%27t_Live_Here_Anymore'>Alice Doesn't Live Here Anymore</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 28</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.26106745</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 28 - 0</b><br/> Score1 = 0.41047208<br/> Sim.  = 0.9004<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Jodie_Foster' title='http://yago-knowledge.org/resource/Jodie_Foster'>Jodie Foster</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/actedIn' title='http://yago-knowledge.org/resource/actedIn'>actedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Taxi_Driver' title='http://yago-knowledge.org/resource/Taxi_Driver'>Taxi Driver</a></td>
+<td class='tdin' width='7%'>0.41047208</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/38144' title='http://data.linkedmdb.org/resource/film/38144'>Taxi Driver</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/29802' title='http://data.linkedmdb.org/resource/actor/29802'>Jodie Foster</a></td>
+<td class='tdin' width='7%'>0.31021684</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 28 - 1</b><br/> Score1 = 0.20000000<br/> Sim.  = 0.9002<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Martin_Scorsese' title='http://yago-knowledge.org/resource/Martin_Scorsese'>Martin Scorsese</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/directed' title='http://yago-knowledge.org/resource/directed'>directed</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Taxi_Driver' title='http://yago-knowledge.org/resource/Taxi_Driver'>Taxi Driver</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/38144' title='http://data.linkedmdb.org/resource/film/38144'>Taxi Driver</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/director' title='http://data.linkedmdb.org/resource/movie/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/director/8454' title='http://data.linkedmdb.org/resource/director/8454'>Martin Scorsese</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 29</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.23335460</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 29 - 0</b><br/> Score1 = 0.31856576<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/My_Letter_to_George' title='http://dbpedia.org/resource/My_Letter_to_George'>My Letter to George</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/starring' title='http://dbpedia.org/ontology/starring'>starring</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Jodie_Foster' title='http://dbpedia.org/resource/Jodie_Foster'>Jodie Foster</a></td>
+<td class='tdin' width='7%'>0.31856576</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 29 - 1</b><br/> Score1 = 0.20000000<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/My_Letter_to_George' title='http://dbpedia.org/resource/My_Letter_to_George'>My Letter to George</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/director' title='http://dbpedia.org/ontology/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Michael_Laughlin' title='http://dbpedia.org/resource/Michael_Laughlin'>Michael Laughlin</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 30</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.23335460</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 30 - 0</b><br/> Score1 = 0.31856576<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Carnage_(2011_film)' title='http://dbpedia.org/resource/Carnage_(2011_film)'>Carnage</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/starring' title='http://dbpedia.org/ontology/starring'>starring</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Jodie_Foster' title='http://dbpedia.org/resource/Jodie_Foster'>Jodie Foster</a></td>
+<td class='tdin' width='7%'>0.31856576</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 30 - 1</b><br/> Score1 = 0.20000000<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Carnage_(2011_film)' title='http://dbpedia.org/resource/Carnage_(2011_film)'>Carnage</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/director' title='http://dbpedia.org/ontology/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Roman_Polanski' title='http://dbpedia.org/resource/Roman_Polanski'>Roman Polanski</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 31</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.22959759</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 31 - 0</b><br/> Score1 = 0.31021684<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/57418' title='http://data.linkedmdb.org/resource/film/57418'>Kansas City Bomber</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/29802' title='http://data.linkedmdb.org/resource/actor/29802'>Jodie Foster</a></td>
+<td class='tdin' width='7%'>0.31021684</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 31 - 1</b><br/> Score1 = 0.20000000<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/57418' title='http://data.linkedmdb.org/resource/film/57418'>Kansas City Bomber</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/director' title='http://data.linkedmdb.org/resource/movie/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/director/13800' title='http://data.linkedmdb.org/resource/director/13800'>Jerrold Freedman</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 32</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.22959759</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 32 - 0</b><br/> Score1 = 0.31021684<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/41539' title='http://data.linkedmdb.org/resource/film/41539'>The Dangerous Lives of Altar Boys</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/29802' title='http://data.linkedmdb.org/resource/actor/29802'>Jodie Foster</a></td>
+<td class='tdin' width='7%'>0.31021684</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 32 - 1</b><br/> Score1 = 0.20000000<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/41539' title='http://data.linkedmdb.org/resource/film/41539'>The Dangerous Lives of Altar Boys</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/director' title='http://data.linkedmdb.org/resource/movie/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/director/18248' title='http://data.linkedmdb.org/resource/director/18248'>Peter Care</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 33</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.22629269</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 33 - 0</b><br/> Score1 = 0.31856576<br/> Sim.  = 0.9007<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/100_Films_and_a_Funeral' title='http://dbpedia.org/resource/100_Films_and_a_Funeral'>100 Films and a Funeral</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/starring' title='http://dbpedia.org/ontology/starring'>starring</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Jodie_Foster' title='http://dbpedia.org/resource/Jodie_Foster'>Jodie Foster</a></td>
+<td class='tdin' width='7%'>0.31856576</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/93094' title='http://data.linkedmdb.org/resource/film/93094'>100 Films and a Funeral</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/29802' title='http://data.linkedmdb.org/resource/actor/29802'>Jodie Foster</a></td>
+<td class='tdin' width='7%'>0.31021684</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 33 - 1</b><br/> Score1 = 0.20000000<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/100_Films_and_a_Funeral' title='http://dbpedia.org/resource/100_Films_and_a_Funeral'>100 Films and a Funeral</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/director' title='http://dbpedia.org/ontology/director'>director</a></td>
+<td class='tdin' width='28%'>http://dbpedia.org/resource/Michael_McNamara</td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 34</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.22183159</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 34 - 0</b><br/> Score1 = 0.31856576<br/> Sim.  = 0.9007<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Napoleon_and_Samantha' title='http://dbpedia.org/resource/Napoleon_and_Samantha'>Napoleon and Samantha</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/starring' title='http://dbpedia.org/ontology/starring'>starring</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Jodie_Foster' title='http://dbpedia.org/resource/Jodie_Foster'>Jodie Foster</a></td>
+<td class='tdin' width='7%'>0.31856576</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/40522' title='http://data.linkedmdb.org/resource/film/40522'>Napoleon and Samantha</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/29802' title='http://data.linkedmdb.org/resource/actor/29802'>Jodie Foster</a></td>
+<td class='tdin' width='7%'>0.31021684</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 34 - 1</b><br/> Score1 = 0.20000000<br/> Sim.  = 0.9004<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/40522' title='http://data.linkedmdb.org/resource/film/40522'>Napoleon and Samantha</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/director' title='http://data.linkedmdb.org/resource/movie/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/director/10539' title='http://data.linkedmdb.org/resource/director/10539'>Bernard McEveety</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Napoleon_and_Samantha' title='http://dbpedia.org/resource/Napoleon_and_Samantha'>Napoleon and Samantha</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/director' title='http://dbpedia.org/ontology/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Bernard_McEveety' title='http://dbpedia.org/resource/Bernard_McEveety'>Bernard McEveety</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 35</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.22183159</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 35 - 0</b><br/> Score1 = 0.31856576<br/> Sim.  = 0.9007<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/41279' title='http://data.linkedmdb.org/resource/film/41279'>Shadows and Fog</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/29802' title='http://data.linkedmdb.org/resource/actor/29802'>Jodie Foster</a></td>
+<td class='tdin' width='7%'>0.31021684</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Shadows_and_Fog' title='http://dbpedia.org/resource/Shadows_and_Fog'>Shadows and Fog</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/starring' title='http://dbpedia.org/ontology/starring'>starring</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Jodie_Foster' title='http://dbpedia.org/resource/Jodie_Foster'>Jodie Foster</a></td>
+<td class='tdin' width='7%'>0.31856576</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 35 - 1</b><br/> Score1 = 0.20000000<br/> Sim.  = 0.9004<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/41279' title='http://data.linkedmdb.org/resource/film/41279'>Shadows and Fog</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/director' title='http://data.linkedmdb.org/resource/movie/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/director/8501' title='http://data.linkedmdb.org/resource/director/8501'>Woody Allen</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Shadows_and_Fog' title='http://dbpedia.org/resource/Shadows_and_Fog'>Shadows and Fog</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/director' title='http://dbpedia.org/ontology/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Woody_Allen' title='http://dbpedia.org/resource/Woody_Allen'>Woody Allen</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 36</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.22183159</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 36 - 0</b><br/> Score1 = 0.31856576<br/> Sim.  = 0.9007<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/39920' title='http://data.linkedmdb.org/resource/film/39920'>The Accused</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/29802' title='http://data.linkedmdb.org/resource/actor/29802'>Jodie Foster</a></td>
+<td class='tdin' width='7%'>0.31021684</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/The_Accused_(1988_film)' title='http://dbpedia.org/resource/The_Accused_(1988_film)'>The Accused</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/starring' title='http://dbpedia.org/ontology/starring'>starring</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Jodie_Foster' title='http://dbpedia.org/resource/Jodie_Foster'>Jodie Foster</a></td>
+<td class='tdin' width='7%'>0.31856576</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 36 - 1</b><br/> Score1 = 0.20000000<br/> Sim.  = 0.9004<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/39920' title='http://data.linkedmdb.org/resource/film/39920'>The Accused</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/director' title='http://data.linkedmdb.org/resource/movie/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/director/2901' title='http://data.linkedmdb.org/resource/director/2901'>Jonathan Kaplan</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/The_Accused_(1988_film)' title='http://dbpedia.org/resource/The_Accused_(1988_film)'>The Accused</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/director' title='http://dbpedia.org/ontology/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Jonathan_Kaplan' title='http://dbpedia.org/resource/Jonathan_Kaplan'>Jonathan Kaplan</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 37</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.22183159</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 37 - 0</b><br/> Score1 = 0.31856576<br/> Sim.  = 0.9007<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/The_Brave_One_(2007_film)' title='http://dbpedia.org/resource/The_Brave_One_(2007_film)'>The Brave One</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/starring' title='http://dbpedia.org/ontology/starring'>starring</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Jodie_Foster' title='http://dbpedia.org/resource/Jodie_Foster'>Jodie Foster</a></td>
+<td class='tdin' width='7%'>0.31856576</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/19022' title='http://data.linkedmdb.org/resource/film/19022'>The Brave One</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/29802' title='http://data.linkedmdb.org/resource/actor/29802'>Jodie Foster</a></td>
+<td class='tdin' width='7%'>0.31021684</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 37 - 1</b><br/> Score1 = 0.20000000<br/> Sim.  = 0.9004<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/19022' title='http://data.linkedmdb.org/resource/film/19022'>The Brave One</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/director' title='http://data.linkedmdb.org/resource/movie/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/director/8996' title='http://data.linkedmdb.org/resource/director/8996'>Neil Jordan</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/The_Brave_One_(2007_film)' title='http://dbpedia.org/resource/The_Brave_One_(2007_film)'>The Brave One</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/director' title='http://dbpedia.org/ontology/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Neil_Jordan' title='http://dbpedia.org/resource/Neil_Jordan'>Neil Jordan</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 38</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.22183159</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 38 - 0</b><br/> Score1 = 0.31856576<br/> Sim.  = 0.9007<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Anna_and_the_King' title='http://dbpedia.org/resource/Anna_and_the_King'>Anna and the King</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/starring' title='http://dbpedia.org/ontology/starring'>starring</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Jodie_Foster' title='http://dbpedia.org/resource/Jodie_Foster'>Jodie Foster</a></td>
+<td class='tdin' width='7%'>0.31856576</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/39497' title='http://data.linkedmdb.org/resource/film/39497'>Anna and the King</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/29802' title='http://data.linkedmdb.org/resource/actor/29802'>Jodie Foster</a></td>
+<td class='tdin' width='7%'>0.31021684</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 38 - 1</b><br/> Score1 = 0.20000000<br/> Sim.  = 0.9004<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Anna_and_the_King' title='http://dbpedia.org/resource/Anna_and_the_King'>Anna and the King</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/director' title='http://dbpedia.org/ontology/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Andy_Tennant' title='http://dbpedia.org/resource/Andy_Tennant'>Andy Tennant</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/39497' title='http://data.linkedmdb.org/resource/film/39497'>Anna and the King</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/director' title='http://data.linkedmdb.org/resource/movie/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/director/11870' title='http://data.linkedmdb.org/resource/director/11870'>Andy Tennant</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 39</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.22183159</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 39 - 0</b><br/> Score1 = 0.31856576<br/> Sim.  = 0.9007<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Freaky_Friday_(1976_film)' title='http://dbpedia.org/resource/Freaky_Friday_(1976_film)'>Freaky Friday</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/starring' title='http://dbpedia.org/ontology/starring'>starring</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Jodie_Foster' title='http://dbpedia.org/resource/Jodie_Foster'>Jodie Foster</a></td>
+<td class='tdin' width='7%'>0.31856576</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/9776' title='http://data.linkedmdb.org/resource/film/9776'>Freaky Friday</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/29802' title='http://data.linkedmdb.org/resource/actor/29802'>Jodie Foster</a></td>
+<td class='tdin' width='7%'>0.31021684</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 39 - 1</b><br/> Score1 = 0.20000000<br/> Sim.  = 0.9004<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/9776' title='http://data.linkedmdb.org/resource/film/9776'>Freaky Friday</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/director' title='http://data.linkedmdb.org/resource/movie/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/director/19038' title='http://data.linkedmdb.org/resource/director/19038'>Gary Nelson</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Freaky_Friday_(1976_film)' title='http://dbpedia.org/resource/Freaky_Friday_(1976_film)'>Freaky Friday</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/director' title='http://dbpedia.org/ontology/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Gary_Nelson_(director)' title='http://dbpedia.org/resource/Gary_Nelson_(director)'>Gary Nelson</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 40</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.22183159</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 40 - 0</b><br/> Score1 = 0.31856576<br/> Sim.  = 0.9007<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/5577' title='http://data.linkedmdb.org/resource/film/5577'>Tom Sawyer</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/29802' title='http://data.linkedmdb.org/resource/actor/29802'>Jodie Foster</a></td>
+<td class='tdin' width='7%'>0.31021684</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Tom_Sawyer_(1973_film)' title='http://dbpedia.org/resource/Tom_Sawyer_(1973_film)'>Tom Sawyer</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/starring' title='http://dbpedia.org/ontology/starring'>starring</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Jodie_Foster' title='http://dbpedia.org/resource/Jodie_Foster'>Jodie Foster</a></td>
+<td class='tdin' width='7%'>0.31856576</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 40 - 1</b><br/> Score1 = 0.20000000<br/> Sim.  = 0.9004<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/5577' title='http://data.linkedmdb.org/resource/film/5577'>Tom Sawyer</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/director' title='http://data.linkedmdb.org/resource/movie/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/director/522' title='http://data.linkedmdb.org/resource/director/522'>Don Taylor</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Tom_Sawyer_(1973_film)' title='http://dbpedia.org/resource/Tom_Sawyer_(1973_film)'>Tom Sawyer</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/director' title='http://dbpedia.org/ontology/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Don_Taylor_(American_actor_and_director)' title='http://dbpedia.org/resource/Don_Taylor_(American_actor_and_director)'>Don Taylor</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+  </body>
+</html>

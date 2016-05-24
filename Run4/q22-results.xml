@@ -1,0 +1,1107 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<question id="22" runID="run4">
+   <string>
+      <![CDATA[Give me the German scientists who won Nobel prize in Physics.]]>
+   </string>
+   <query>
+      <![CDATA[
+  ?x  "win"          "Nobel Prize in Physics" .
+  ?x  "nationality"  "Germany" .
+]]>
+   </query>
+   <settings labelSearchTopK="15" plugLabel="false" limited="false" validateTriple="false"/>
+   <stats1 nb_results="46" timeSec="20.5580" memoryMB="228.9947" totalQuins="114" avgQuin_Cluster="1.2391" avgQuin_Bucket="2.4783" nb_plugTR="0"/>
+   <stats2>
+      <ds id="LinkedMDB">
+         <nreq>0</nreq>
+         <nreqs>0</nreqs>
+         <nrecd>0</nrecd>
+      </ds>
+      <ds id="DBpedia">
+         <nreq>330</nreq>
+         <nreqs>11</nreqs>
+         <nrecd>144</nrecd>
+      </ds>
+      <ds id="Yago">
+         <nreq>1410</nreq>
+         <nreqs>57</nreqs>
+         <nrecd>1204</nrecd>
+      </ds>
+   </stats2>
+   <results>
+      <bucket bucket_id="0" runID="run4" score="0.23717791" plugType="E">
+         <cluster cluster_id="0-0" score="0.27584786" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.27584786" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Wolfgang_Paul</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasWonPrize</predicate>
+               <object>http://yago-knowledge.org/resource/Nobel_Prize_in_Physics</object>
+               <subjectLabel score="0.00000000">Wolfgang Paul</subjectLabel>
+               <objectLabel score="0.18961964">Nobel Prize in Physics</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.27584786" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Wolfgang_Pauli</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasWonPrize</predicate>
+               <object>http://yago-knowledge.org/resource/Nobel_Prize_in_Physics</object>
+               <subjectLabel score="0.00000000">Wolfgang Pauli</subjectLabel>
+               <objectLabel score="0.18961964">Nobel Prize in Physics</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="0-1" score="0.25121414" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.25121414" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Wolfgang_Paul</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isCitizenOf</predicate>
+               <object>http://yago-knowledge.org/resource/Germany</object>
+               <subjectLabel score="0.00000000">Wolfgang Paul</subjectLabel>
+               <objectLabel score="0.12803533">Germany</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="1" runID="run4" score="0.23717791" plugType="E">
+         <cluster cluster_id="1-0" score="0.27584786" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.27584786" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Max_von_Laue</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasWonPrize</predicate>
+               <object>http://yago-knowledge.org/resource/Nobel_Prize_in_Physics</object>
+               <subjectLabel score="0.00000000">Max von Laue</subjectLabel>
+               <objectLabel score="0.18961964">Nobel Prize in Physics</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="1-1" score="0.25121414" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.25121414" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Max_von_Laue</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isCitizenOf</predicate>
+               <object>http://yago-knowledge.org/resource/Germany</object>
+               <subjectLabel score="0.00000000">Max von Laue</subjectLabel>
+               <objectLabel score="0.12803533">Germany</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="2" runID="run4" score="0.23717791" plugType="E">
+         <cluster cluster_id="2-0" score="0.27584786" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.27584786" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Max_Planck</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasWonPrize</predicate>
+               <object>http://yago-knowledge.org/resource/Nobel_Prize_in_Physics</object>
+               <subjectLabel score="0.00000000">Max Planck</subjectLabel>
+               <objectLabel score="0.18961964">Nobel Prize in Physics</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="2-1" score="0.25121414" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.25121414" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Max_Planck</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isCitizenOf</predicate>
+               <object>http://yago-knowledge.org/resource/Germany</object>
+               <subjectLabel score="0.00000000">Max Planck</subjectLabel>
+               <objectLabel score="0.12803533">Germany</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="3" runID="run4" score="0.23717791" plugType="E">
+         <cluster cluster_id="3-0" score="0.27584786" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.27584786" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Max_Born</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasWonPrize</predicate>
+               <object>http://yago-knowledge.org/resource/Nobel_Prize_in_Physics</object>
+               <subjectLabel score="0.00000000">Max Born</subjectLabel>
+               <objectLabel score="0.18961964">Nobel Prize in Physics</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="3-1" score="0.25121414" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.25121414" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Max_Born</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isCitizenOf</predicate>
+               <object>http://yago-knowledge.org/resource/Germany</object>
+               <subjectLabel score="0.00000000">Max Born</subjectLabel>
+               <objectLabel score="0.12803533">Germany</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="4" runID="run4" score="0.23717791" plugType="E">
+         <cluster cluster_id="4-0" score="0.27584786" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.27584786" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/J._Hans_D._Jensen</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasWonPrize</predicate>
+               <object>http://yago-knowledge.org/resource/Nobel_Prize_in_Physics</object>
+               <subjectLabel score="0.00000000">J. Hans D. Jensen</subjectLabel>
+               <objectLabel score="0.18961964">Nobel Prize in Physics</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="4-1" score="0.25121414" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.25121414" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/J._Hans_D._Jensen</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isCitizenOf</predicate>
+               <object>http://yago-knowledge.org/resource/Germany</object>
+               <subjectLabel score="0.00000000">J. Hans D. Jensen</subjectLabel>
+               <objectLabel score="0.12803533">Germany</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="5" runID="run4" score="0.23717791" plugType="E">
+         <cluster cluster_id="5-0" score="0.27584786" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.27584786" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Johannes_Georg_Bednorz</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasWonPrize</predicate>
+               <object>http://yago-knowledge.org/resource/Nobel_Prize_in_Physics</object>
+               <subjectLabel score="0.00000000">Johannes Georg Bednorz</subjectLabel>
+               <objectLabel score="0.18961964">Nobel Prize in Physics</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="5-1" score="0.25121414" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.25121414" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Johannes_Georg_Bednorz</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isCitizenOf</predicate>
+               <object>http://yago-knowledge.org/resource/Germany</object>
+               <subjectLabel score="0.00000000">Johannes Georg Bednorz</subjectLabel>
+               <objectLabel score="0.12803533">Germany</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="6" runID="run4" score="0.23344937" plugType="E">
+         <cluster cluster_id="6-0" score="0.27584786" sim="0.9189" norm="0.9500">
+            <quintuple dataset="Yago" score="0.27584786" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Gustav_Ludwig_Hertz</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasWonPrize</predicate>
+               <object>http://yago-knowledge.org/resource/Nobel_Prize_in_Physics</object>
+               <subjectLabel score="0.00000000">Gustav Ludwig Hertz</subjectLabel>
+               <objectLabel score="0.18961964">Nobel Prize in Physics</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.22855661" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Gustav_Ludwig_Hertz</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/award</predicate>
+               <object>http://dbpedia.org/resource/Nobel_Prize_in_Physics</object>
+               <subjectLabel score="0.00000000">Gustav Ludwig Hertz</subjectLabel>
+               <objectLabel score="0.07139152">Nobel Prize in Physics</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="6-1" score="0.25121414" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.25121414" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Gustav_Ludwig_Hertz</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isCitizenOf</predicate>
+               <object>http://yago-knowledge.org/resource/Germany</object>
+               <subjectLabel score="0.00000000">Gustav Ludwig Hertz</subjectLabel>
+               <objectLabel score="0.12803533">Germany</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="7" runID="run4" score="0.23344937" plugType="E">
+         <cluster cluster_id="7-0" score="0.27584786" sim="0.9189" norm="0.9500">
+            <quintuple dataset="Yago" score="0.27584786" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Otto_Stern</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasWonPrize</predicate>
+               <object>http://yago-knowledge.org/resource/Nobel_Prize_in_Physics</object>
+               <subjectLabel score="0.00000000">Otto Stern</subjectLabel>
+               <objectLabel score="0.18961964">Nobel Prize in Physics</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.22855661" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Otto_Stern</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/award</predicate>
+               <object>http://dbpedia.org/resource/Nobel_Prize_in_Physics</object>
+               <subjectLabel score="0.00000000">Otto Stern</subjectLabel>
+               <objectLabel score="0.07139152">Nobel Prize in Physics</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="7-1" score="0.25121414" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.25121414" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Otto_Stern</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isCitizenOf</predicate>
+               <object>http://yago-knowledge.org/resource/Germany</object>
+               <subjectLabel score="0.00000000">Otto Stern</subjectLabel>
+               <objectLabel score="0.12803533">Germany</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="8" runID="run4" score="0.23038262" plugType="E">
+         <cluster cluster_id="8-0" score="0.27584786" sim="0.9189" norm="0.9500">
+            <quintuple dataset="Yago" score="0.27584786" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Hans_Georg_Dehmelt</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasWonPrize</predicate>
+               <object>http://yago-knowledge.org/resource/Nobel_Prize_in_Physics</object>
+               <subjectLabel score="0.00000000">Hans Georg Dehmelt</subjectLabel>
+               <objectLabel score="0.18961964">Nobel Prize in Physics</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.22855661" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Hans_Georg_Dehmelt</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/award</predicate>
+               <object>http://dbpedia.org/resource/Nobel_Prize_in_Physics</object>
+               <subjectLabel score="0.00000000">Hans Georg Dehmelt</subjectLabel>
+               <objectLabel score="0.07139152">Nobel Prize in Physics</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="8-1" score="0.25121414" sim="0.9217" norm="0.9500">
+            <quintuple dataset="Yago" score="0.25121414" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Hans_Georg_Dehmelt</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isCitizenOf</predicate>
+               <object>http://yago-knowledge.org/resource/Germany</object>
+               <subjectLabel score="0.00000000">Hans Georg Dehmelt</subjectLabel>
+               <objectLabel score="0.12803533">Germany</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.24994100" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Hans_Georg_Dehmelt</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/nationality</predicate>
+               <object>http://dbpedia.org/resource/Germany</object>
+               <subjectLabel score="0.00000000">Hans Georg Dehmelt</subjectLabel>
+               <objectLabel score="0.12485249">Germany</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="9" runID="run4" score="0.23038262" plugType="E">
+         <cluster cluster_id="9-0" score="0.27584786" sim="0.9189" norm="0.9500">
+            <quintuple dataset="Yago" score="0.27584786" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Herbert_Kroemer</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasWonPrize</predicate>
+               <object>http://yago-knowledge.org/resource/Nobel_Prize_in_Physics</object>
+               <subjectLabel score="0.00000000">Herbert Kroemer</subjectLabel>
+               <objectLabel score="0.18961964">Nobel Prize in Physics</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.22855661" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Herbert_Kroemer</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/award</predicate>
+               <object>http://dbpedia.org/resource/Nobel_Prize_in_Physics</object>
+               <subjectLabel score="0.00000000">Herbert Kroemer</subjectLabel>
+               <objectLabel score="0.07139152">Nobel Prize in Physics</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="9-1" score="0.25121414" sim="0.9217" norm="0.9500">
+            <quintuple dataset="Yago" score="0.25121414" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Herbert_Kroemer</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isCitizenOf</predicate>
+               <object>http://yago-knowledge.org/resource/Germany</object>
+               <subjectLabel score="0.00000000">Herbert Kroemer</subjectLabel>
+               <objectLabel score="0.12803533">Germany</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.24994100" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Herbert_Kroemer</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/nationality</predicate>
+               <object>http://dbpedia.org/resource/Germany</object>
+               <subjectLabel score="0.00000000">Herbert Kroemer</subjectLabel>
+               <objectLabel score="0.12485249">Germany</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="10" runID="run4" score="0.23038262" plugType="E">
+         <cluster cluster_id="10-0" score="0.27584786" sim="0.9189" norm="0.9500">
+            <quintuple dataset="DBpedia" score="0.22855661" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Horst_Ludwig_St%C3%B6rmer</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/award</predicate>
+               <object>http://dbpedia.org/resource/Nobel_Prize_in_Physics</object>
+               <subjectLabel score="0.00000000">Horst Ludwig Störmer</subjectLabel>
+               <objectLabel score="0.07139152">Nobel Prize in Physics</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.27584786" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Horst_Ludwig_Störmer</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasWonPrize</predicate>
+               <object>http://yago-knowledge.org/resource/Nobel_Prize_in_Physics</object>
+               <subjectLabel score="0.00000000">Horst Ludwig Störmer</subjectLabel>
+               <objectLabel score="0.18961964">Nobel Prize in Physics</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="10-1" score="0.25121414" sim="0.9217" norm="0.9500">
+            <quintuple dataset="DBpedia" score="0.24994100" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Horst_Ludwig_St%C3%B6rmer</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/nationality</predicate>
+               <object>http://dbpedia.org/resource/Germany</object>
+               <subjectLabel score="0.00000000">Horst Ludwig Störmer</subjectLabel>
+               <objectLabel score="0.12485249">Germany</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.25121414" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Horst_Ludwig_Störmer</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isCitizenOf</predicate>
+               <object>http://yago-knowledge.org/resource/Germany</object>
+               <subjectLabel score="0.00000000">Horst Ludwig Störmer</subjectLabel>
+               <objectLabel score="0.12803533">Germany</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="11" runID="run4" score="0.23038262" plugType="E">
+         <cluster cluster_id="11-0" score="0.27584786" sim="0.9189" norm="0.9500">
+            <quintuple dataset="DBpedia" score="0.22855661" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Jack_Steinberger</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/award</predicate>
+               <object>http://dbpedia.org/resource/Nobel_Prize_in_Physics</object>
+               <subjectLabel score="0.00000000">Jack Steinberger</subjectLabel>
+               <objectLabel score="0.07139152">Nobel Prize in Physics</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.27584786" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Jack_Steinberger</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasWonPrize</predicate>
+               <object>http://yago-knowledge.org/resource/Nobel_Prize_in_Physics</object>
+               <subjectLabel score="0.00000000">Jack Steinberger</subjectLabel>
+               <objectLabel score="0.18961964">Nobel Prize in Physics</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="11-1" score="0.25121414" sim="0.9217" norm="0.9500">
+            <quintuple dataset="DBpedia" score="0.24994100" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Jack_Steinberger</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/nationality</predicate>
+               <object>http://dbpedia.org/resource/Germany</object>
+               <subjectLabel score="0.00000000">Jack Steinberger</subjectLabel>
+               <objectLabel score="0.12485249">Germany</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.25121414" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Jack_Steinberger</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isCitizenOf</predicate>
+               <object>http://yago-knowledge.org/resource/Germany</object>
+               <subjectLabel score="0.00000000">Jack Steinberger</subjectLabel>
+               <objectLabel score="0.12803533">Germany</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="12" runID="run4" score="0.23038262" plugType="E">
+         <cluster cluster_id="12-0" score="0.27584786" sim="0.9189" norm="0.9500">
+            <quintuple dataset="DBpedia" score="0.22855661" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/James_Franck</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/award</predicate>
+               <object>http://dbpedia.org/resource/Nobel_Prize_in_Physics</object>
+               <subjectLabel score="0.00000000">James Franck</subjectLabel>
+               <objectLabel score="0.07139152">Nobel Prize in Physics</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.27584786" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/James_Franck</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasWonPrize</predicate>
+               <object>http://yago-knowledge.org/resource/Nobel_Prize_in_Physics</object>
+               <subjectLabel score="0.00000000">James Franck</subjectLabel>
+               <objectLabel score="0.18961964">Nobel Prize in Physics</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="12-1" score="0.25121414" sim="0.9217" norm="0.9500">
+            <quintuple dataset="DBpedia" score="0.24994100" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/James_Franck</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/nationality</predicate>
+               <object>http://dbpedia.org/resource/Germany</object>
+               <subjectLabel score="0.00000000">James Franck</subjectLabel>
+               <objectLabel score="0.12485249">Germany</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.25121414" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/James_Franck</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isCitizenOf</predicate>
+               <object>http://yago-knowledge.org/resource/Germany</object>
+               <subjectLabel score="0.00000000">James Franck</subjectLabel>
+               <objectLabel score="0.12803533">Germany</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="13" runID="run4" score="0.23038262" plugType="E">
+         <cluster cluster_id="13-0" score="0.27584786" sim="0.9189" norm="0.9500">
+            <quintuple dataset="DBpedia" score="0.22855661" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Johannes_Stark</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/award</predicate>
+               <object>http://dbpedia.org/resource/Nobel_Prize_in_Physics</object>
+               <subjectLabel score="0.00000000">Johannes Stark</subjectLabel>
+               <objectLabel score="0.07139152">Nobel Prize in Physics</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.27584786" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Johannes_Stark</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasWonPrize</predicate>
+               <object>http://yago-knowledge.org/resource/Nobel_Prize_in_Physics</object>
+               <subjectLabel score="0.00000000">Johannes Stark</subjectLabel>
+               <objectLabel score="0.18961964">Nobel Prize in Physics</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="13-1" score="0.25121414" sim="0.9217" norm="0.9500">
+            <quintuple dataset="Yago" score="0.25121414" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Johannes_Stark</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isCitizenOf</predicate>
+               <object>http://yago-knowledge.org/resource/Germany</object>
+               <subjectLabel score="0.00000000">Johannes Stark</subjectLabel>
+               <objectLabel score="0.12803533">Germany</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.24994100" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Johannes_Stark</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/nationality</predicate>
+               <object>http://dbpedia.org/resource/Germany</object>
+               <subjectLabel score="0.00000000">Johannes Stark</subjectLabel>
+               <objectLabel score="0.12485249">Germany</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="14" runID="run4" score="0.23038262" plugType="E">
+         <cluster cluster_id="14-0" score="0.27584786" sim="0.9189" norm="0.9500">
+            <quintuple dataset="Yago" score="0.27584786" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Peter_Grünberg</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasWonPrize</predicate>
+               <object>http://yago-knowledge.org/resource/Nobel_Prize_in_Physics</object>
+               <subjectLabel score="0.00000000">Peter Grünberg</subjectLabel>
+               <objectLabel score="0.18961964">Nobel Prize in Physics</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.22855661" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Peter_Gr%C3%BCnberg</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/award</predicate>
+               <object>http://dbpedia.org/resource/Nobel_Prize_in_Physics</object>
+               <subjectLabel score="0.00000000">Peter Grünberg</subjectLabel>
+               <objectLabel score="0.07139152">Nobel Prize in Physics</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.22572245" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Peter_Grünberg</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasWonPrize</predicate>
+               <object>http://yago-knowledge.org/resource/Wolf_Prize_in_Physics</object>
+               <subjectLabel score="0.00000000">Peter Grünberg</subjectLabel>
+               <objectLabel score="0.06430612">Wolf Prize in Physics</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="14-1" score="0.25121414" sim="0.9217" norm="0.9500">
+            <quintuple dataset="Yago" score="0.25121414" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Peter_Grünberg</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isCitizenOf</predicate>
+               <object>http://yago-knowledge.org/resource/Germany</object>
+               <subjectLabel score="0.00000000">Peter Grünberg</subjectLabel>
+               <objectLabel score="0.12803533">Germany</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.24994100" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Peter_Gr%C3%BCnberg</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/nationality</predicate>
+               <object>http://dbpedia.org/resource/Germany</object>
+               <subjectLabel score="0.00000000">Peter Grünberg</subjectLabel>
+               <objectLabel score="0.12485249">Germany</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="15" runID="run4" score="0.23038262" plugType="E">
+         <cluster cluster_id="15-0" score="0.27584786" sim="0.9189" norm="0.9500">
+            <quintuple dataset="DBpedia" score="0.22855661" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Theodor_W._H%C3%A4nsch</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/award</predicate>
+               <object>http://dbpedia.org/resource/Nobel_Prize_in_Physics</object>
+               <subjectLabel score="0.00000000">Theodor W. Hänsch</subjectLabel>
+               <objectLabel score="0.07139152">Nobel Prize in Physics</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.27584786" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Theodor_W._Hänsch</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasWonPrize</predicate>
+               <object>http://yago-knowledge.org/resource/Nobel_Prize_in_Physics</object>
+               <subjectLabel score="0.00000000">Theodor W. Hänsch</subjectLabel>
+               <objectLabel score="0.18961964">Nobel Prize in Physics</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="15-1" score="0.25121414" sim="0.9217" norm="0.9500">
+            <quintuple dataset="DBpedia" score="0.24994100" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Theodor_W._H%C3%A4nsch</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/nationality</predicate>
+               <object>http://dbpedia.org/resource/Germany</object>
+               <subjectLabel score="0.00000000">Theodor W. Hänsch</subjectLabel>
+               <objectLabel score="0.12485249">Germany</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.25121414" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Theodor_W._Hänsch</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isCitizenOf</predicate>
+               <object>http://yago-knowledge.org/resource/Germany</object>
+               <subjectLabel score="0.00000000">Theodor W. Hänsch</subjectLabel>
+               <objectLabel score="0.12803533">Germany</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="16" runID="run4" score="0.23038262" plugType="E">
+         <cluster cluster_id="16-0" score="0.27584786" sim="0.9189" norm="0.9500">
+            <quintuple dataset="Yago" score="0.27584786" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Ernst_Ruska</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasWonPrize</predicate>
+               <object>http://yago-knowledge.org/resource/Nobel_Prize_in_Physics</object>
+               <subjectLabel score="0.00000000">Ernst Ruska</subjectLabel>
+               <objectLabel score="0.18961964">Nobel Prize in Physics</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.22855661" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Ernst_Ruska</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/award</predicate>
+               <object>http://dbpedia.org/resource/Nobel_Prize_in_Physics</object>
+               <subjectLabel score="0.00000000">Ernst Ruska</subjectLabel>
+               <objectLabel score="0.07139152">Nobel Prize in Physics</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="16-1" score="0.25121414" sim="0.9217" norm="0.9500">
+            <quintuple dataset="Yago" score="0.25121414" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Ernst_Ruska</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isCitizenOf</predicate>
+               <object>http://yago-knowledge.org/resource/Germany</object>
+               <subjectLabel score="0.00000000">Ernst Ruska</subjectLabel>
+               <objectLabel score="0.12803533">Germany</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.24994100" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Ernst_Ruska</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/nationality</predicate>
+               <object>http://dbpedia.org/resource/Germany</object>
+               <subjectLabel score="0.00000000">Ernst Ruska</subjectLabel>
+               <objectLabel score="0.12485249">Germany</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="17" runID="run4" score="0.21593925" plugType="E">
+         <cluster cluster_id="17-0" score="0.22865085" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.22865085" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Heinrich_Böll</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasWonPrize</predicate>
+               <object>http://yago-knowledge.org/resource/Nobel_Prize_in_Literature</object>
+               <subjectLabel score="0.00000000">Heinrich Böll</subjectLabel>
+               <objectLabel score="0.07162713">Nobel Prize in Literature</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="17-1" score="0.25121414" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.25121414" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Heinrich_Böll</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isCitizenOf</predicate>
+               <object>http://yago-knowledge.org/resource/Germany</object>
+               <subjectLabel score="0.00000000">Heinrich Böll</subjectLabel>
+               <objectLabel score="0.12803533">Germany</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="18" runID="run4" score="0.21560112" plugType="E">
+         <cluster cluster_id="18-0" score="0.22789944" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.22789944" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Adolf_von_Baeyer</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasWonPrize</predicate>
+               <object>http://yago-knowledge.org/resource/Nobel_Prize_in_Chemistry</object>
+               <subjectLabel score="0.00000000">Adolf von Baeyer</subjectLabel>
+               <objectLabel score="0.06974858">Nobel Prize in Chemistry</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="18-1" score="0.25121414" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.25121414" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Adolf_von_Baeyer</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isCitizenOf</predicate>
+               <object>http://yago-knowledge.org/resource/Germany</object>
+               <subjectLabel score="0.00000000">Adolf von Baeyer</subjectLabel>
+               <objectLabel score="0.12803533">Germany</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="19" runID="run4" score="0.21560112" plugType="E">
+         <cluster cluster_id="19-0" score="0.22789944" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.22789944" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Eduard_Buchner</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasWonPrize</predicate>
+               <object>http://yago-knowledge.org/resource/Nobel_Prize_in_Chemistry</object>
+               <subjectLabel score="0.00000000">Eduard Buchner</subjectLabel>
+               <objectLabel score="0.06974858">Nobel Prize in Chemistry</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="19-1" score="0.25121414" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.25121414" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Eduard_Buchner</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isCitizenOf</predicate>
+               <object>http://yago-knowledge.org/resource/Germany</object>
+               <subjectLabel score="0.00000000">Eduard Buchner</subjectLabel>
+               <objectLabel score="0.12803533">Germany</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="20" runID="run4" score="0.21560112" plugType="E">
+         <cluster cluster_id="20-0" score="0.22789944" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.22789944" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Manfred_Eigen</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasWonPrize</predicate>
+               <object>http://yago-knowledge.org/resource/Nobel_Prize_in_Chemistry</object>
+               <subjectLabel score="0.00000000">Manfred Eigen</subjectLabel>
+               <objectLabel score="0.06974858">Nobel Prize in Chemistry</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="20-1" score="0.25121414" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.25121414" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Manfred_Eigen</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isCitizenOf</predicate>
+               <object>http://yago-knowledge.org/resource/Germany</object>
+               <subjectLabel score="0.00000000">Manfred Eigen</subjectLabel>
+               <objectLabel score="0.12803533">Germany</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="21" runID="run4" score="0.21560112" plugType="E">
+         <cluster cluster_id="21-0" score="0.22789944" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.22789944" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Gerhard_Herzberg</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasWonPrize</predicate>
+               <object>http://yago-knowledge.org/resource/Nobel_Prize_in_Chemistry</object>
+               <subjectLabel score="0.00000000">Gerhard Herzberg</subjectLabel>
+               <objectLabel score="0.06974858">Nobel Prize in Chemistry</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="21-1" score="0.25121414" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.25121414" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Gerhard_Herzberg</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isCitizenOf</predicate>
+               <object>http://yago-knowledge.org/resource/Germany</object>
+               <subjectLabel score="0.00000000">Gerhard Herzberg</subjectLabel>
+               <objectLabel score="0.12803533">Germany</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="22" runID="run4" score="0.21560112" plugType="E">
+         <cluster cluster_id="22-0" score="0.22789944" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.22789944" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Hans_Fischer</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasWonPrize</predicate>
+               <object>http://yago-knowledge.org/resource/Nobel_Prize_in_Chemistry</object>
+               <subjectLabel score="0.00000000">Hans Fischer</subjectLabel>
+               <objectLabel score="0.06974858">Nobel Prize in Chemistry</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="22-1" score="0.25121414" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.25121414" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Hans_Fischer</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isCitizenOf</predicate>
+               <object>http://yago-knowledge.org/resource/Germany</object>
+               <subjectLabel score="0.00000000">Hans Fischer</subjectLabel>
+               <objectLabel score="0.12803533">Germany</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="23" runID="run4" score="0.21560112" plugType="E">
+         <cluster cluster_id="23-0" score="0.22789944" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.22789944" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Adolf_Otto_Reinhold_Windaus</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasWonPrize</predicate>
+               <object>http://yago-knowledge.org/resource/Nobel_Prize_in_Chemistry</object>
+               <subjectLabel score="0.00000000">Adolf Otto Reinhold Windaus</subjectLabel>
+               <objectLabel score="0.06974858">Nobel Prize in Chemistry</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="23-1" score="0.25121414" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.25121414" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Adolf_Otto_Reinhold_Windaus</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isCitizenOf</predicate>
+               <object>http://yago-knowledge.org/resource/Germany</object>
+               <subjectLabel score="0.00000000">Adolf Otto Reinhold Windaus</subjectLabel>
+               <objectLabel score="0.12803533">Germany</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="24" runID="run4" score="0.21560112" plugType="E">
+         <cluster cluster_id="24-0" score="0.22789944" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.22789944" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Richard_Willstätter</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasWonPrize</predicate>
+               <object>http://yago-knowledge.org/resource/Nobel_Prize_in_Chemistry</object>
+               <subjectLabel score="0.00000000">Richard Willstätter</subjectLabel>
+               <objectLabel score="0.06974858">Nobel Prize in Chemistry</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="24-1" score="0.25121414" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.25121414" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Richard_Willstätter</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isCitizenOf</predicate>
+               <object>http://yago-knowledge.org/resource/Germany</object>
+               <subjectLabel score="0.00000000">Richard Willstätter</subjectLabel>
+               <objectLabel score="0.12803533">Germany</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="25" runID="run4" score="0.21560112" plugType="E">
+         <cluster cluster_id="25-0" score="0.22789944" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.22789944" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Carl_Bosch</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasWonPrize</predicate>
+               <object>http://yago-knowledge.org/resource/Nobel_Prize_in_Chemistry</object>
+               <subjectLabel score="0.00000000">Carl Bosch</subjectLabel>
+               <objectLabel score="0.06974858">Nobel Prize in Chemistry</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="25-1" score="0.25121414" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.25121414" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Carl_Bosch</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isCitizenOf</predicate>
+               <object>http://yago-knowledge.org/resource/Germany</object>
+               <subjectLabel score="0.00000000">Carl Bosch</subjectLabel>
+               <objectLabel score="0.12803533">Germany</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="26" runID="run4" score="0.21560112" plugType="E">
+         <cluster cluster_id="26-0" score="0.22789944" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.22789944" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Adolf_Butenandt</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasWonPrize</predicate>
+               <object>http://yago-knowledge.org/resource/Nobel_Prize_in_Chemistry</object>
+               <subjectLabel score="0.00000000">Adolf Butenandt</subjectLabel>
+               <objectLabel score="0.06974858">Nobel Prize in Chemistry</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="26-1" score="0.25121414" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.25121414" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Adolf_Butenandt</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isCitizenOf</predicate>
+               <object>http://yago-knowledge.org/resource/Germany</object>
+               <subjectLabel score="0.00000000">Adolf Butenandt</subjectLabel>
+               <objectLabel score="0.12803533">Germany</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="27" runID="run4" score="0.21560112" plugType="E">
+         <cluster cluster_id="27-0" score="0.22789944" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.22789944" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Hartmut_Michel</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasWonPrize</predicate>
+               <object>http://yago-knowledge.org/resource/Nobel_Prize_in_Chemistry</object>
+               <subjectLabel score="0.00000000">Hartmut Michel</subjectLabel>
+               <objectLabel score="0.06974858">Nobel Prize in Chemistry</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="27-1" score="0.25121414" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.25121414" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Hartmut_Michel</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isCitizenOf</predicate>
+               <object>http://yago-knowledge.org/resource/Germany</object>
+               <subjectLabel score="0.00000000">Hartmut Michel</subjectLabel>
+               <objectLabel score="0.12803533">Germany</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="28" runID="run4" score="0.21560112" plugType="E">
+         <cluster cluster_id="28-0" score="0.22789944" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.22789944" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Friedrich_Bergius</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasWonPrize</predicate>
+               <object>http://yago-knowledge.org/resource/Nobel_Prize_in_Chemistry</object>
+               <subjectLabel score="0.00000000">Friedrich Bergius</subjectLabel>
+               <objectLabel score="0.06974858">Nobel Prize in Chemistry</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="28-1" score="0.25121414" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.25121414" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Friedrich_Bergius</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isCitizenOf</predicate>
+               <object>http://yago-knowledge.org/resource/Germany</object>
+               <subjectLabel score="0.00000000">Friedrich Bergius</subjectLabel>
+               <objectLabel score="0.12803533">Germany</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="29" runID="run4" score="0.21560112" plugType="E">
+         <cluster cluster_id="29-0" score="0.22789944" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.22789944" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Gerhard_Ertl</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasWonPrize</predicate>
+               <object>http://yago-knowledge.org/resource/Nobel_Prize_in_Chemistry</object>
+               <subjectLabel score="0.00000000">Gerhard Ertl</subjectLabel>
+               <objectLabel score="0.06974858">Nobel Prize in Chemistry</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="29-1" score="0.25121414" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.25121414" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Gerhard_Ertl</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isCitizenOf</predicate>
+               <object>http://yago-knowledge.org/resource/Germany</object>
+               <subjectLabel score="0.00000000">Gerhard Ertl</subjectLabel>
+               <objectLabel score="0.12803533">Germany</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="30" runID="run4" score="0.21560112" plugType="E">
+         <cluster cluster_id="30-0" score="0.22789944" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.22789944" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Richard_Kuhn</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasWonPrize</predicate>
+               <object>http://yago-knowledge.org/resource/Nobel_Prize_in_Chemistry</object>
+               <subjectLabel score="0.00000000">Richard Kuhn</subjectLabel>
+               <objectLabel score="0.06974858">Nobel Prize in Chemistry</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="30-1" score="0.25121414" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.25121414" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Richard_Kuhn</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isCitizenOf</predicate>
+               <object>http://yago-knowledge.org/resource/Germany</object>
+               <subjectLabel score="0.00000000">Richard Kuhn</subjectLabel>
+               <objectLabel score="0.12803533">Germany</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="31" runID="run4" score="0.21560112" plugType="E">
+         <cluster cluster_id="31-0" score="0.22789944" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.22789944" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Heinrich_Otto_Wieland</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasWonPrize</predicate>
+               <object>http://yago-knowledge.org/resource/Nobel_Prize_in_Chemistry</object>
+               <subjectLabel score="0.00000000">Heinrich Otto Wieland</subjectLabel>
+               <objectLabel score="0.06974858">Nobel Prize in Chemistry</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="31-1" score="0.25121414" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.25121414" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Heinrich_Otto_Wieland</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isCitizenOf</predicate>
+               <object>http://yago-knowledge.org/resource/Germany</object>
+               <subjectLabel score="0.00000000">Heinrich Otto Wieland</subjectLabel>
+               <objectLabel score="0.12803533">Germany</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="32" runID="run4" score="0.21560112" plugType="E">
+         <cluster cluster_id="32-0" score="0.22789944" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.22789944" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Johann_Deisenhofer</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasWonPrize</predicate>
+               <object>http://yago-knowledge.org/resource/Nobel_Prize_in_Chemistry</object>
+               <subjectLabel score="0.00000000">Johann Deisenhofer</subjectLabel>
+               <objectLabel score="0.06974858">Nobel Prize in Chemistry</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="32-1" score="0.25121414" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.25121414" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Johann_Deisenhofer</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isCitizenOf</predicate>
+               <object>http://yago-knowledge.org/resource/Germany</object>
+               <subjectLabel score="0.00000000">Johann Deisenhofer</subjectLabel>
+               <objectLabel score="0.12803533">Germany</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="33" runID="run4" score="0.21560112" plugType="E">
+         <cluster cluster_id="33-0" score="0.22789944" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.22789944" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Robert_Huber</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasWonPrize</predicate>
+               <object>http://yago-knowledge.org/resource/Nobel_Prize_in_Chemistry</object>
+               <subjectLabel score="0.00000000">Robert Huber</subjectLabel>
+               <objectLabel score="0.06974858">Nobel Prize in Chemistry</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="33-1" score="0.25121414" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.25121414" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Robert_Huber</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isCitizenOf</predicate>
+               <object>http://yago-knowledge.org/resource/Germany</object>
+               <subjectLabel score="0.00000000">Robert Huber</subjectLabel>
+               <objectLabel score="0.12803533">Germany</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="34" runID="run4" score="0.21532393" plugType="E">
+         <cluster cluster_id="34-0" score="0.22855661" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.22855661" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Georg_Bednorz</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/award</predicate>
+               <object>http://dbpedia.org/resource/Nobel_Prize_in_Physics</object>
+               <subjectLabel score="0.00000000">Georg Bednorz</subjectLabel>
+               <objectLabel score="0.07139152">Nobel Prize in Physics</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="34-1" score="0.24994100" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.24994100" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Georg_Bednorz</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/nationality</predicate>
+               <object>http://dbpedia.org/resource/Germany</object>
+               <subjectLabel score="0.00000000">Georg Bednorz</subjectLabel>
+               <objectLabel score="0.12485249">Germany</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="35" runID="run4" score="0.21488611" plugType="E">
+         <cluster cluster_id="35-0" score="0.22631053" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.22631053" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Harald_zur_Hausen</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasWonPrize</predicate>
+               <object>http://yago-knowledge.org/resource/Nobel_Prize_in_Physiology_or_Medicine</object>
+               <subjectLabel score="0.00000000">Harald zur Hausen</subjectLabel>
+               <objectLabel score="0.06577631">Nobel Prize in Physiology or Medicine</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="35-1" score="0.25121414" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.25121414" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Harald_zur_Hausen</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isCitizenOf</predicate>
+               <object>http://yago-knowledge.org/resource/Germany</object>
+               <subjectLabel score="0.00000000">Harald zur Hausen</subjectLabel>
+               <objectLabel score="0.12803533">Germany</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="36" runID="run4" score="0.21488611" plugType="E">
+         <cluster cluster_id="36-0" score="0.22631053" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.22631053" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Robert_Koch</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasWonPrize</predicate>
+               <object>http://yago-knowledge.org/resource/Nobel_Prize_in_Physiology_or_Medicine</object>
+               <subjectLabel score="0.00000000">Robert Koch</subjectLabel>
+               <objectLabel score="0.06577631">Nobel Prize in Physiology or Medicine</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="36-1" score="0.25121414" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.25121414" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Robert_Koch</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isCitizenOf</predicate>
+               <object>http://yago-knowledge.org/resource/Germany</object>
+               <subjectLabel score="0.00000000">Robert Koch</subjectLabel>
+               <objectLabel score="0.12803533">Germany</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="37" runID="run4" score="0.21488611" plugType="E">
+         <cluster cluster_id="37-0" score="0.22631053" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.22631053" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Emil_Adolf_von_Behring</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasWonPrize</predicate>
+               <object>http://yago-knowledge.org/resource/Nobel_Prize_in_Physiology_or_Medicine</object>
+               <subjectLabel score="0.00000000">Emil Adolf von Behring</subjectLabel>
+               <objectLabel score="0.06577631">Nobel Prize in Physiology or Medicine</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="37-1" score="0.25121414" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.25121414" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Emil_Adolf_von_Behring</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isCitizenOf</predicate>
+               <object>http://yago-knowledge.org/resource/Germany</object>
+               <subjectLabel score="0.00000000">Emil Adolf von Behring</subjectLabel>
+               <objectLabel score="0.12803533">Germany</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="38" runID="run4" score="0.21488611" plugType="E">
+         <cluster cluster_id="38-0" score="0.22631053" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.22631053" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Hans_Spemann</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasWonPrize</predicate>
+               <object>http://yago-knowledge.org/resource/Nobel_Prize_in_Physiology_or_Medicine</object>
+               <subjectLabel score="0.00000000">Hans Spemann</subjectLabel>
+               <objectLabel score="0.06577631">Nobel Prize in Physiology or Medicine</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="38-1" score="0.25121414" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.25121414" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Hans_Spemann</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isCitizenOf</predicate>
+               <object>http://yago-knowledge.org/resource/Germany</object>
+               <subjectLabel score="0.00000000">Hans Spemann</subjectLabel>
+               <objectLabel score="0.12803533">Germany</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="39" runID="run4" score="0.21488611" plugType="E">
+         <cluster cluster_id="39-0" score="0.22631053" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.22631053" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Feodor_Felix_Konrad_Lynen</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasWonPrize</predicate>
+               <object>http://yago-knowledge.org/resource/Nobel_Prize_in_Physiology_or_Medicine</object>
+               <subjectLabel score="0.00000000">Feodor Felix Konrad Lynen</subjectLabel>
+               <objectLabel score="0.06577631">Nobel Prize in Physiology or Medicine</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="39-1" score="0.25121414" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.25121414" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Feodor_Felix_Konrad_Lynen</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isCitizenOf</predicate>
+               <object>http://yago-knowledge.org/resource/Germany</object>
+               <subjectLabel score="0.00000000">Feodor Felix Konrad Lynen</subjectLabel>
+               <objectLabel score="0.12803533">Germany</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="40" runID="run4" score="0.21488611" plugType="E">
+         <cluster cluster_id="40-0" score="0.22631053" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.22631053" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Otto_Heinrich_Warburg</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasWonPrize</predicate>
+               <object>http://yago-knowledge.org/resource/Nobel_Prize_in_Physiology_or_Medicine</object>
+               <subjectLabel score="0.00000000">Otto Heinrich Warburg</subjectLabel>
+               <objectLabel score="0.06577631">Nobel Prize in Physiology or Medicine</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="40-1" score="0.25121414" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.25121414" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Otto_Heinrich_Warburg</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isCitizenOf</predicate>
+               <object>http://yago-knowledge.org/resource/Germany</object>
+               <subjectLabel score="0.00000000">Otto Heinrich Warburg</subjectLabel>
+               <objectLabel score="0.12803533">Germany</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="41" runID="run4" score="0.21488611" plugType="E">
+         <cluster cluster_id="41-0" score="0.22631053" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.22631053" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Erwin_Neher</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasWonPrize</predicate>
+               <object>http://yago-knowledge.org/resource/Nobel_Prize_in_Physiology_or_Medicine</object>
+               <subjectLabel score="0.00000000">Erwin Neher</subjectLabel>
+               <objectLabel score="0.06577631">Nobel Prize in Physiology or Medicine</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="41-1" score="0.25121414" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.25121414" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Erwin_Neher</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isCitizenOf</predicate>
+               <object>http://yago-knowledge.org/resource/Germany</object>
+               <subjectLabel score="0.00000000">Erwin Neher</subjectLabel>
+               <objectLabel score="0.12803533">Germany</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="42" runID="run4" score="0.21488611" plugType="E">
+         <cluster cluster_id="42-0" score="0.22631053" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.22631053" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Gerhard_Domagk</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasWonPrize</predicate>
+               <object>http://yago-knowledge.org/resource/Nobel_Prize_in_Physiology_or_Medicine</object>
+               <subjectLabel score="0.00000000">Gerhard Domagk</subjectLabel>
+               <objectLabel score="0.06577631">Nobel Prize in Physiology or Medicine</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="42-1" score="0.25121414" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.25121414" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Gerhard_Domagk</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isCitizenOf</predicate>
+               <object>http://yago-knowledge.org/resource/Germany</object>
+               <subjectLabel score="0.00000000">Gerhard Domagk</subjectLabel>
+               <objectLabel score="0.12803533">Germany</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="43" runID="run4" score="0.21488611" plugType="E">
+         <cluster cluster_id="43-0" score="0.22631053" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.22631053" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Georges_J._F._Köhler</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasWonPrize</predicate>
+               <object>http://yago-knowledge.org/resource/Nobel_Prize_in_Physiology_or_Medicine</object>
+               <subjectLabel score="0.00000000">Georges J. F. Köhler</subjectLabel>
+               <objectLabel score="0.06577631">Nobel Prize in Physiology or Medicine</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="43-1" score="0.25121414" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.25121414" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Georges_J._F._Köhler</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isCitizenOf</predicate>
+               <object>http://yago-knowledge.org/resource/Germany</object>
+               <subjectLabel score="0.00000000">Georges J. F. Köhler</subjectLabel>
+               <objectLabel score="0.12803533">Germany</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="44" runID="run4" score="0.21327731" plugType="E">
+         <cluster cluster_id="44-0" score="0.22273543" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.22273543" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Reinhard_Selten</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasWonPrize</predicate>
+               <object>http://yago-knowledge.org/resource/Nobel_Memorial_Prize_in_Economic_Sciences</object>
+               <subjectLabel score="0.00000000">Reinhard Selten</subjectLabel>
+               <objectLabel score="0.05683856">Nobel Memorial Prize in Economic Sciences</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="44-1" score="0.25121414" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.25121414" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Reinhard_Selten</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isCitizenOf</predicate>
+               <object>http://yago-knowledge.org/resource/Germany</object>
+               <subjectLabel score="0.00000000">Reinhard Selten</subjectLabel>
+               <objectLabel score="0.12803533">Germany</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="45" runID="run4" score="0.21262882" plugType="E">
+         <cluster cluster_id="45-0" score="0.22129434" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.22129434" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Theodor_W._Hänsch</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasWonPrize</predicate>
+               <object>http://yago-knowledge.org/resource/Comstock_Prize_in_Physics</object>
+               <subjectLabel score="0.00000000">Theodor W. Hänsch</subjectLabel>
+               <objectLabel score="0.05323585">Comstock Prize in Physics</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="45-1" score="0.25121414" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.25121414" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Theodor_W._Hänsch</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isCitizenOf</predicate>
+               <object>http://yago-knowledge.org/resource/Germany</object>
+               <subjectLabel score="0.00000000">Theodor W. Hänsch</subjectLabel>
+               <objectLabel score="0.12803533">Germany</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+   </results>
+</question>

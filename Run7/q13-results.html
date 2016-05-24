@@ -1,0 +1,1333 @@
+<html> 
+  <head>
+    <meta charset='UTF-8'>
+<style>TABLE.outline {
+        BORDER-RIGHT: #c0c0c0 4px double; BORDER-TOP: #c0c0c0 4px double; BORDER-LEFT: #c0c0c0 4px double;
+        FONT-FAMILY: "MS Sans Serif"; BORDER-BOTTOM: #c0c0c0 4px double; align: center
+}
+A {
+        FONT-SIZE: 14px; COLOR: #333399; FONT-FAMILY: "Consolas"; TEXT-DECORATION: none
+}
+A:hover {
+        FONT-SIZE: 14px; COLOR: #778899; FONT-STYLE: normal; FONT-FAMILY: "Consolas"; TEXT-DECORATION: underline overline
+}
+.blockTitle {
+        PADDING-RIGHT: 3px; BORDER-TOP: #6495ed 3px double; PADDING-LEFT: 3px; FONT-WEIGHT: bold;
+        FONT-SIZE: 14px; PADDING-BOTTOM: 3px; COLOR: #daa520; PADDING-TOP: 3px; BORDER-BOTTOM: #6495ed 3px double;
+        BACKGROUND-COLOR: #f0f8ff
+}
+.blockTitle1 {
+        PADDING-RIGHT: 3px; BORDER-TOP: #6495ed 3px double; PADDING-LEFT: 3px; FONT-WEIGHT: bold; FONT-SIZE: 14px;
+        PADDING-BOTTOM: 3px; COLOR: #daa520; PADDING-TOP: 3px; BORDER-BOTTOM: #6495ed 3px double;
+        BACKGROUND-COLOR: #f0f8ff
+}
+TD {
+        FONT-SIZE: 14px; COLOR: #333399; FONT-FAMILY: "Consolas"; TEXT-DECORATION: none
+}
+.tdin {
+        PADDING-RIGHT: 2px; BORDER-TOP: #6495ed 1px double; PADDING-LEFT: 8px; PADDING-BOTTOM: 2px; PADDING-TOP: 2px;
+        BORDER-BOTTOM: #6495ed 1px double;BORDER-LEFT: #6495ed 1px double;BORDER-RIGHT: #6495ed 1px double;
+        FONT-FAMILY: "Consolas";
+}
+.thin {
+        PADDING-RIGHT: 2px; BORDER-TOP: #6495ed 1px double; PADDING-LEFT: 8px; FONT-WEIGHT: bold; FONT-SIZE: 12px;
+        PADDING-BOTTOM: 2px; COLOR: #E45C3A; PADDING-TOP: 2px; BORDER-BOTTOM: #6495ed 1px double;
+        BACKGROUND-COLOR: #DEF7FE; BORDER-LEFT: #6495ed 1px double; BORDER-RIGHT: #6495ed 1px double ;
+        FONT-FAMILY: "Verdana";
+}
+.thin2 {
+        PADDING-RIGHT: 2px; BORDER-TOP: #6495ed 1px double; PADDING-LEFT: 8px; FONT-WEIGHT: bold; FONT-SIZE: 12px;
+        PADDING-BOTTOM: 2px; COLOR: #405EE4; PADDING-TOP: 2px; BORDER-BOTTOM: #6495ed 1px double;
+        BACKGROUND-COLOR: #FFDFF8; BORDER-LEFT: #6495ed 1px double; BORDER-RIGHT: #6495ed 1px double ;
+        FONT-FAMILY: "Verdana";
+}
+TH {
+        FONT-SIZE: 14px; COLOR: #333399; FONT-FAMILY: "Verdana"; TEXT-DECORATION: none;align: left
+}
+INPUT.spt {
+        BORDER-RIGHT: #6495ed 1px double; BORDER-TOP: #6495ed 1px double;
+        BORDER-BOTTOM: #6495ed 1px double;BORDER-LEFT: #6495ed 1px double;
+        PADDING-LEFT: 1px; PADDING-BOTTOM: 1px; PADDING-TOP: 1px;PADDING-RIGHT: 1px;
+        FONT-FAMILY: "Tahoma";
+        WIDTH : 200px ; HEIGHT : 20px;
+}
+INPUT.spb {
+        PADDING-RIGHT: 1px; PADDING-LEFT: 1px;
+        PADDING-BOTTOM: 1px; PADDING-TOP: 1px;
+        BORDER-RIGHT: #6495ed 1px double; BORDER-LEFT: #6495ed 1px double;
+        BORDER-BOTTOM: #6495ed 1px double; BORDER-TOP: #6495ed 1px double;
+        FONT-FAMILY: "Tahoma"; BACKGROUND-COLOR : #A8FFA8;
+        WIDTH : 60px ; HEIGHT : 20px;
+}
+textarea {
+        PADDING-RIGHT: 2px; PADDING-LEFT: 2px;
+        PADDING-BOTTOM: 2px; PADDING-TOP: 2px;
+        BORDER-RIGHT: #6495ed 1px double; BORDER-LEFT: #6495ed 1px double;
+        BORDER-BOTTOM: #6495ed 1px double; BORDER-TOP: #6495ed 1px double;
+        FONT-FAMILY: "Tahoma"; BACKGROUND-COLOR : #FFFFFF;
+        WIDTH : 600px ; HEIGHT : 400px;
+}
+</style>  </head>
+  <body>
+<h2>Query :: q13</h2> <table class='outline' border='1' width = '100%'>
+<tr>
+<td class='tdin' width='50%'> <pre>{
+	?actor	"acted in"     	"lethal weapon" .
+	?actor	"is married to"	?spouse         .
+}</pre> </td><td class='tdin' width='50%'>Give me the spouses of actors starring in Lethal Weapon?</td></tr>
+</table>
+ <br/><hr/><br/><table border='0' width = '100%'>
+<tr>
+<td class='tdin' width='35%'><table border='0' width = '100%'><tr>
+<td class='thin' width='40%'># Results</td><td class='tdin' width='40%'><b>31</b></td><td class='tdin' width='20%'></td></tr>
+<tr>
+<td class='thin' width='40%'>Elapsed time</td><td class='tdin' width='40%'>23.601</td><td class='tdin' width='20%'>sec</td></tr>
+<tr>
+<td class='thin' width='40%'>Used memory</td><td class='tdin' width='40%'>220.13431</td><td class='tdin' width='20%'>MB </td></tr>
+<tr>
+<td class='thin' width='40%'>Total Quintuples</td><td class='tdin' width='40%'>114</td><td class='tdin' width='20%'>quins </td></tr>
+<tr>
+<td class='thin' width='40%'>AVG. # quins per cluster</td><td class='tdin' width='40%'>1.8387097</td><td class='tdin' width='20%'>quin/cluster </td></tr>
+<tr>
+<td class='thin' width='40%'>AVG. # quins per bucket</td><td class='tdin' width='40%'>3.6774194</td><td class='tdin' width='20%'>quin/bucket </td></tr>
+<tr>
+<td class='thin' width='40%'># plugged triples</td><td class='tdin' width='40%'>46</td><td class='tdin' width='20%'>triples </td></tr>
+</table>
+</td><td class='tdin' width='25%'><table border='0' width = '100%'><tr>
+<td class='thin' width='40%'>LabelSearch TopK</td><td class='tdin' width='40%'>15</td></tr>
+<tr>
+<td class='thin' width='40%'>Plugin Labels ?</td><td class='tdin' width='40%'>true</td></tr>
+<tr>
+<td class='thin' width='40%'>Limit 1st triple?</td><td class='tdin' width='40%'>false</td></tr>
+<tr>
+<td class='thin' width='40%'>Validate Triples?</td><td class='tdin' width='40%'>false</td></tr>
+</table>
+</td><td class='tdin' width='40%'><table border='0' width = '100%'>
+<tr>
+<td class='tdin' width='25%'></td><td class='thin' width='25%'> # Requests</td><td class='thin' width='25%'> # Solved Requests</td><td class='thin' width='25%'> # Returned Records</td></tr>
+<tr>
+<td class='thin2' width='25%'>LinkedMDB</td><td class='tdin' width='25%'>30</td><td class='tdin' width='25%'>13</td><td class='tdin' width='25%'>48</td></tr>
+<tr>
+<td class='thin2' width='25%'>DBpedia</td><td class='tdin' width='25%'>492</td><td class='tdin' width='25%'>17</td><td class='tdin' width='25%'>25</td></tr>
+<tr>
+<td class='thin2' width='25%'>Yago</td><td class='tdin' width='25%'>492</td><td class='tdin' width='25%'>49</td><td class='tdin' width='25%'>72</td></tr>
+<tr>
+<td class='tdin' width='25%'></td><td class='thin' width='25%'>1014</td><td class='thin' width='25%'>79</td><td class='thin' width='25%'>145</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 0</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.20879082</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 0 - 0</b><br/> Score1 = 0.25899370<br/> Sim.  = 0.9007<br/> Norm. = 1.0000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/39022' title='http://data.linkedmdb.org/resource/film/39022'>Lethal Weapon</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/595' title='http://data.linkedmdb.org/resource/actor/595'>Tom Atkins</a></td>
+<td class='tdin' width='7%'>0.25899370</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Tom_Atkins_(actor)' title='http://yago-knowledge.org/resource/Tom_Atkins_(actor)'>Tom Atkins</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/actedIn' title='http://yago-knowledge.org/resource/actedIn'>actedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Lethal_Weapon' title='http://yago-knowledge.org/resource/Lethal_Weapon'>Lethal Weapon</a></td>
+<td class='tdin' width='7%'>0.24427702</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Lethal_Weapon' title='http://dbpedia.org/resource/Lethal_Weapon'>Lethal Weapon</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/starring' title='http://dbpedia.org/ontology/starring'>starring</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Tom_Atkins_(actor)' title='http://dbpedia.org/resource/Tom_Atkins_(actor)'>Tom Atkins</a></td>
+<td class='tdin' width='7%'>0.22717681</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 0 - 1</b><br/> Score1 = 0.20000000<br/> Sim.  = 0.9700<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Garn_Stephens' title='http://dbpedia.org/resource/Garn_Stephens'>Garn Stephens</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/spouse' title='http://dbpedia.org/ontology/spouse'>spouse</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Tom_Atkins_(actor)' title='http://dbpedia.org/resource/Tom_Atkins_(actor)'>Tom Atkins</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Tom_Atkins_(actor)' title='http://dbpedia.org/resource/Tom_Atkins_(actor)'>Tom Atkins</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/spouse' title='http://dbpedia.org/ontology/spouse'>spouse</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Garn_Stephens' title='http://dbpedia.org/resource/Garn_Stephens'>Garn Stephens</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Garn_Stephens' title='http://yago-knowledge.org/resource/Garn_Stephens'>Garn Stephens</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isMarriedTo' title='http://yago-knowledge.org/resource/isMarriedTo'>isMarriedTo</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Tom_Atkins_(actor)' title='http://yago-knowledge.org/resource/Tom_Atkins_(actor)'>Tom Atkins</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Tom_Atkins_(actor)' title='http://yago-knowledge.org/resource/Tom_Atkins_(actor)'>Tom Atkins</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isMarriedTo' title='http://yago-knowledge.org/resource/isMarriedTo'>isMarriedTo</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Garn_Stephens' title='http://yago-knowledge.org/resource/Garn_Stephens'>Garn Stephens</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 1</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.14565433</b></td><td width='10%' align='center'><b> L </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 1 - 0</b><br/> Score1 = 0.25899370<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/39022' title='http://data.linkedmdb.org/resource/film/39022'>Lethal Weapon</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/10741' title='http://data.linkedmdb.org/resource/actor/10741'>Grand L. Bush</a></td>
+<td class='tdin' width='7%'>0.25899370</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 1 - 1</b><br/> Score1 = 0.44953259<br/> Sim.  = 0.9700<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Sharon_Dahlonega_Raiford_Bush' title='http://yago-knowledge.org/resource/Sharon_Dahlonega_Raiford_Bush'>Sharon Dahlonega Raiford Bush</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isMarriedTo' title='http://yago-knowledge.org/resource/isMarriedTo'>isMarriedTo</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Grand_L._Bush' title='http://yago-knowledge.org/resource/Grand_L._Bush'>Grand L. Bush</a></td>
+<td class='tdin' width='7%'>0.44953259</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Grand_L._Bush' title='http://yago-knowledge.org/resource/Grand_L._Bush'>Grand L. Bush</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isMarriedTo' title='http://yago-knowledge.org/resource/isMarriedTo'>isMarriedTo</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Sharon_Dahlonega_Raiford_Bush' title='http://yago-knowledge.org/resource/Sharon_Dahlonega_Raiford_Bush'>Sharon Dahlonega Raiford Bush</a></td>
+<td class='tdin' width='7%'>0.44953259</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Grand_L._Bush' title='http://dbpedia.org/resource/Grand_L._Bush'>Grand L. Bush</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/spouse' title='http://dbpedia.org/ontology/spouse'>spouse</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Sharon_Dahlonega_Raiford_Bush' title='http://dbpedia.org/resource/Sharon_Dahlonega_Raiford_Bush'>Sharon Dahlonega Raiford Bush</a></td>
+<td class='tdin' width='7%'>0.33282386</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 2</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.14549470</b></td><td width='10%' align='center'><b> L </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 2 - 0</b><br/> Score1 = 0.21352427<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/58541' title='http://data.linkedmdb.org/resource/film/58541'>Lethal Vows</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/32926' title='http://data.linkedmdb.org/resource/actor/32926'>Marg Helgenberger</a></td>
+<td class='tdin' width='7%'>0.21352427</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 2 - 1</b><br/> Score1 = 0.49316983<br/> Sim.  = 0.9700<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Alan_Rosenberg' title='http://dbpedia.org/resource/Alan_Rosenberg'>Alan Rosenberg</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/spouse' title='http://dbpedia.org/ontology/spouse'>spouse</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Marg_Helgenberger' title='http://dbpedia.org/resource/Marg_Helgenberger'>Marg Helgenberger</a></td>
+<td class='tdin' width='7%'>0.34942201</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Marg_Helgenberger' title='http://yago-knowledge.org/resource/Marg_Helgenberger'>Marg Helgenberger</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isMarriedTo' title='http://yago-knowledge.org/resource/isMarriedTo'>isMarriedTo</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Alan_Rosenberg' title='http://yago-knowledge.org/resource/Alan_Rosenberg'>Alan Rosenberg</a></td>
+<td class='tdin' width='7%'>0.49316983</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Marg_Helgenberger' title='http://dbpedia.org/resource/Marg_Helgenberger'>Marg Helgenberger</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/spouse' title='http://dbpedia.org/ontology/spouse'>spouse</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Alan_Rosenberg' title='http://dbpedia.org/resource/Alan_Rosenberg'>Alan Rosenberg</a></td>
+<td class='tdin' width='7%'>0.34942201</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Alan_Rosenberg' title='http://yago-knowledge.org/resource/Alan_Rosenberg'>Alan Rosenberg</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isMarriedTo' title='http://yago-knowledge.org/resource/isMarriedTo'>isMarriedTo</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Marg_Helgenberger' title='http://yago-knowledge.org/resource/Marg_Helgenberger'>Marg Helgenberger</a></td>
+<td class='tdin' width='7%'>0.49316983</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 3</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.14284549</b></td><td width='10%' align='center'><b> L </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 3 - 0</b><br/> Score1 = 0.24975373<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/39937' title='http://data.linkedmdb.org/resource/film/39937'>Lethal Weapon 2</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/34322' title='http://data.linkedmdb.org/resource/actor/34322'>Patsy Kensit</a></td>
+<td class='tdin' width='7%'>0.24975373</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 3 - 1</b><br/> Score1 = 0.44500997<br/> Sim.  = 0.9700<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Patsy_Kensit' title='http://yago-knowledge.org/resource/Patsy_Kensit'>Patsy Kensit</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isMarriedTo' title='http://yago-knowledge.org/resource/isMarriedTo'>isMarriedTo</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Dan_Donovan_(keyboardist)' title='http://yago-knowledge.org/resource/Dan_Donovan_(keyboardist)'>Dan Donovan</a></td>
+<td class='tdin' width='7%'>0.44500997</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Patsy_Kensit' title='http://dbpedia.org/resource/Patsy_Kensit'>Patsy Kensit</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/spouse' title='http://dbpedia.org/ontology/spouse'>spouse</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Dan_Donovan_(keyboardist)' title='http://dbpedia.org/resource/Dan_Donovan_(keyboardist)'>Dan Donovan</a></td>
+<td class='tdin' width='7%'>0.33384301</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Dan_Donovan_(keyboardist)' title='http://yago-knowledge.org/resource/Dan_Donovan_(keyboardist)'>Dan Donovan</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isMarriedTo' title='http://yago-knowledge.org/resource/isMarriedTo'>isMarriedTo</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Patsy_Kensit' title='http://yago-knowledge.org/resource/Patsy_Kensit'>Patsy Kensit</a></td>
+<td class='tdin' width='7%'>0.44500997</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 4</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.14284549</b></td><td width='10%' align='center'><b> L </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 4 - 0</b><br/> Score1 = 0.24975373<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/39937' title='http://data.linkedmdb.org/resource/film/39937'>Lethal Weapon 2</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/34322' title='http://data.linkedmdb.org/resource/actor/34322'>Patsy Kensit</a></td>
+<td class='tdin' width='7%'>0.24975373</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 4 - 1</b><br/> Score1 = 0.44500997<br/> Sim.  = 0.9700<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Jeremy_Healy' title='http://yago-knowledge.org/resource/Jeremy_Healy'>Jeremy Healy</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isMarriedTo' title='http://yago-knowledge.org/resource/isMarriedTo'>isMarriedTo</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Patsy_Kensit' title='http://yago-knowledge.org/resource/Patsy_Kensit'>Patsy Kensit</a></td>
+<td class='tdin' width='7%'>0.44500997</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Patsy_Kensit' title='http://dbpedia.org/resource/Patsy_Kensit'>Patsy Kensit</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/spouse' title='http://dbpedia.org/ontology/spouse'>spouse</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Jeremy_Healy' title='http://dbpedia.org/resource/Jeremy_Healy'>Jeremy Healy</a></td>
+<td class='tdin' width='7%'>0.33384301</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Patsy_Kensit' title='http://yago-knowledge.org/resource/Patsy_Kensit'>Patsy Kensit</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isMarriedTo' title='http://yago-knowledge.org/resource/isMarriedTo'>isMarriedTo</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Jeremy_Healy' title='http://yago-knowledge.org/resource/Jeremy_Healy'>Jeremy Healy</a></td>
+<td class='tdin' width='7%'>0.44500997</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 5</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.14284549</b></td><td width='10%' align='center'><b> L </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 5 - 0</b><br/> Score1 = 0.24975373<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/39937' title='http://data.linkedmdb.org/resource/film/39937'>Lethal Weapon 2</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/34322' title='http://data.linkedmdb.org/resource/actor/34322'>Patsy Kensit</a></td>
+<td class='tdin' width='7%'>0.24975373</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 5 - 1</b><br/> Score1 = 0.44500997<br/> Sim.  = 0.9700<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Jim_Kerr' title='http://yago-knowledge.org/resource/Jim_Kerr'>Jim Kerr</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isMarriedTo' title='http://yago-knowledge.org/resource/isMarriedTo'>isMarriedTo</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Patsy_Kensit' title='http://yago-knowledge.org/resource/Patsy_Kensit'>Patsy Kensit</a></td>
+<td class='tdin' width='7%'>0.44500997</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Patsy_Kensit' title='http://dbpedia.org/resource/Patsy_Kensit'>Patsy Kensit</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/spouse' title='http://dbpedia.org/ontology/spouse'>spouse</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Jim_Kerr' title='http://dbpedia.org/resource/Jim_Kerr'>Jim Kerr</a></td>
+<td class='tdin' width='7%'>0.33384301</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Patsy_Kensit' title='http://yago-knowledge.org/resource/Patsy_Kensit'>Patsy Kensit</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isMarriedTo' title='http://yago-knowledge.org/resource/isMarriedTo'>isMarriedTo</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Jim_Kerr' title='http://yago-knowledge.org/resource/Jim_Kerr'>Jim Kerr</a></td>
+<td class='tdin' width='7%'>0.44500997</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 6</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.14284549</b></td><td width='10%' align='center'><b> L </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 6 - 0</b><br/> Score1 = 0.24975373<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/39937' title='http://data.linkedmdb.org/resource/film/39937'>Lethal Weapon 2</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/34322' title='http://data.linkedmdb.org/resource/actor/34322'>Patsy Kensit</a></td>
+<td class='tdin' width='7%'>0.24975373</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 6 - 1</b><br/> Score1 = 0.44500997<br/> Sim.  = 0.9700<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Liam_Gallagher' title='http://yago-knowledge.org/resource/Liam_Gallagher'>Liam Gallagher</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isMarriedTo' title='http://yago-knowledge.org/resource/isMarriedTo'>isMarriedTo</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Patsy_Kensit' title='http://yago-knowledge.org/resource/Patsy_Kensit'>Patsy Kensit</a></td>
+<td class='tdin' width='7%'>0.44500997</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Patsy_Kensit' title='http://dbpedia.org/resource/Patsy_Kensit'>Patsy Kensit</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/spouse' title='http://dbpedia.org/ontology/spouse'>spouse</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Liam_Gallagher' title='http://dbpedia.org/resource/Liam_Gallagher'>Liam Gallagher</a></td>
+<td class='tdin' width='7%'>0.33384301</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Patsy_Kensit' title='http://yago-knowledge.org/resource/Patsy_Kensit'>Patsy Kensit</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isMarriedTo' title='http://yago-knowledge.org/resource/isMarriedTo'>isMarriedTo</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Liam_Gallagher' title='http://yago-knowledge.org/resource/Liam_Gallagher'>Liam Gallagher</a></td>
+<td class='tdin' width='7%'>0.44500997</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 7</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.13736127</b></td><td width='10%' align='center'><b> L </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 7 - 0</b><br/> Score1 = 0.24975373<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/39940' title='http://data.linkedmdb.org/resource/film/39940'>Lethal Weapon 4</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/29522' title='http://data.linkedmdb.org/resource/actor/29522'>Jet Li</a></td>
+<td class='tdin' width='7%'>0.24975373</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 7 - 1</b><br/> Score1 = 0.41856015<br/> Sim.  = 0.9700<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Nina_Li_(actress)' title='http://yago-knowledge.org/resource/Nina_Li_(actress)'>Nina Li</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isMarriedTo' title='http://yago-knowledge.org/resource/isMarriedTo'>isMarriedTo</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Jet_Li' title='http://yago-knowledge.org/resource/Jet_Li'>Jet Li</a></td>
+<td class='tdin' width='7%'>0.41856015</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Jet_Li' title='http://dbpedia.org/resource/Jet_Li'>Jet Li</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/spouse' title='http://dbpedia.org/ontology/spouse'>spouse</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Nina_Li_(actress)' title='http://dbpedia.org/resource/Nina_Li_(actress)'>Nina Li</a></td>
+<td class='tdin' width='7%'>0.34252037</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Jet_Li' title='http://yago-knowledge.org/resource/Jet_Li'>Jet Li</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isMarriedTo' title='http://yago-knowledge.org/resource/isMarriedTo'>isMarriedTo</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Nina_Li_(actress)' title='http://yago-knowledge.org/resource/Nina_Li_(actress)'>Nina Li</a></td>
+<td class='tdin' width='7%'>0.41856015</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Nina_Li_(actress)' title='http://dbpedia.org/resource/Nina_Li_(actress)'>Nina Li</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/spouse' title='http://dbpedia.org/ontology/spouse'>spouse</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Jet_Li' title='http://dbpedia.org/resource/Jet_Li'>Jet Li</a></td>
+<td class='tdin' width='7%'>0.34252037</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 8</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.13687546</b></td><td width='10%' align='center'><b> L </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 8 - 0</b><br/> Score1 = 0.24975373<br/> Sim.  = 0.9700<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/39939' title='http://data.linkedmdb.org/resource/film/39939'>Lethal Weapon 3</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/31142' title='http://data.linkedmdb.org/resource/actor/31142'>Rene Russo</a></td>
+<td class='tdin' width='7%'>0.24975373</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/39940' title='http://data.linkedmdb.org/resource/film/39940'>Lethal Weapon 4</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/31142' title='http://data.linkedmdb.org/resource/actor/31142'>Rene Russo</a></td>
+<td class='tdin' width='7%'>0.24975373</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 8 - 1</b><br/> Score1 = 0.42353471<br/> Sim.  = 0.9700<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Rene_Russo' title='http://yago-knowledge.org/resource/Rene_Russo'>Rene Russo</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isMarriedTo' title='http://yago-knowledge.org/resource/isMarriedTo'>isMarriedTo</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Dan_Gilroy' title='http://yago-knowledge.org/resource/Dan_Gilroy'>Dan Gilroy</a></td>
+<td class='tdin' width='7%'>0.42353471</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Dan_Gilroy' title='http://yago-knowledge.org/resource/Dan_Gilroy'>Dan Gilroy</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isMarriedTo' title='http://yago-knowledge.org/resource/isMarriedTo'>isMarriedTo</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Rene_Russo' title='http://yago-knowledge.org/resource/Rene_Russo'>Rene Russo</a></td>
+<td class='tdin' width='7%'>0.42353471</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Dan_Gilroy' title='http://dbpedia.org/resource/Dan_Gilroy'>Dan Gilroy</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/spouse' title='http://dbpedia.org/ontology/spouse'>spouse</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Rene_Russo' title='http://dbpedia.org/resource/Rene_Russo'>Rene Russo</a></td>
+<td class='tdin' width='7%'>0.32738714</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 9</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.13479095</b></td><td width='10%' align='center'><b> L </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 9 - 0</b><br/> Score1 = 0.21252247<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/57665' title='http://data.linkedmdb.org/resource/film/57665'>Lethal Angels</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/45904' title='http://data.linkedmdb.org/resource/actor/45904'>Cherrie Ying</a></td>
+<td class='tdin' width='7%'>0.21252247</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 9 - 1</b><br/> Score1 = 0.44252516<br/> Sim.  = 0.9700<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Jordan_Chan' title='http://dbpedia.org/resource/Jordan_Chan'>Jordan Chan</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/spouse' title='http://dbpedia.org/ontology/spouse'>spouse</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Cherrie_Ying' title='http://dbpedia.org/resource/Cherrie_Ying'>Cherrie Ying</a></td>
+<td class='tdin' width='7%'>0.34880540</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Cherrie_Ying' title='http://dbpedia.org/resource/Cherrie_Ying'>Cherrie Ying</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/spouse' title='http://dbpedia.org/ontology/spouse'>spouse</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Jordan_Chan' title='http://dbpedia.org/resource/Jordan_Chan'>Jordan Chan</a></td>
+<td class='tdin' width='7%'>0.34880540</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Cherrie_Ying' title='http://yago-knowledge.org/resource/Cherrie_Ying'>Cherrie Ying</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isMarriedTo' title='http://yago-knowledge.org/resource/isMarriedTo'>isMarriedTo</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Jordan_Chan' title='http://yago-knowledge.org/resource/Jordan_Chan'>Jordan Chan</a></td>
+<td class='tdin' width='7%'>0.44252516</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Jordan_Chan' title='http://yago-knowledge.org/resource/Jordan_Chan'>Jordan Chan</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isMarriedTo' title='http://yago-knowledge.org/resource/isMarriedTo'>isMarriedTo</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Cherrie_Ying' title='http://yago-knowledge.org/resource/Cherrie_Ying'>Cherrie Ying</a></td>
+<td class='tdin' width='7%'>0.44252516</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 10</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.13298689</b></td><td width='10%' align='center'><b> L </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 10 - 0</b><br/> Score1 = 0.25899370<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/39022' title='http://data.linkedmdb.org/resource/film/39022'>Lethal Weapon</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/46870' title='http://data.linkedmdb.org/resource/actor/46870'>Mary Ellen Trainor</a></td>
+<td class='tdin' width='7%'>0.25899370</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 10 - 1</b><br/> Score1 = 0.38843893<br/> Sim.  = 0.9700<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Mary_Ellen_Trainor' title='http://yago-knowledge.org/resource/Mary_Ellen_Trainor'>Mary Ellen Trainor</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isMarriedTo' title='http://yago-knowledge.org/resource/isMarriedTo'>isMarriedTo</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Robert_Zemeckis' title='http://yago-knowledge.org/resource/Robert_Zemeckis'>Robert Zemeckis</a></td>
+<td class='tdin' width='7%'>0.38843893</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Robert_Zemeckis' title='http://yago-knowledge.org/resource/Robert_Zemeckis'>Robert Zemeckis</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isMarriedTo' title='http://yago-knowledge.org/resource/isMarriedTo'>isMarriedTo</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Mary_Ellen_Trainor' title='http://yago-knowledge.org/resource/Mary_Ellen_Trainor'>Mary Ellen Trainor</a></td>
+<td class='tdin' width='7%'>0.38843893</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Mary_Ellen_Trainor' title='http://dbpedia.org/resource/Mary_Ellen_Trainor'>Mary Ellen Trainor</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/spouse' title='http://dbpedia.org/ontology/spouse'>spouse</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Robert_Zemeckis' title='http://dbpedia.org/resource/Robert_Zemeckis'>Robert Zemeckis</a></td>
+<td class='tdin' width='7%'>0.38206432</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 11</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.12677684</b></td><td width='10%' align='center'><b> L </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 11 - 0</b><br/> Score1 = 0.21243297<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/18377' title='http://data.linkedmdb.org/resource/film/18377'>Holy Weapon</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/30377' title='http://data.linkedmdb.org/resource/actor/30377'>Michelle Yeoh</a></td>
+<td class='tdin' width='7%'>0.21243297</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 11 - 1</b><br/> Score1 = 0.40396140<br/> Sim.  = 0.9700<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Michelle_Yeoh' title='http://dbpedia.org/resource/Michelle_Yeoh'>Michelle Yeoh</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/spouse' title='http://dbpedia.org/ontology/spouse'>spouse</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Dickson_Poon' title='http://dbpedia.org/resource/Dickson_Poon'>Dickson Poon</a></td>
+<td class='tdin' width='7%'>0.37616561</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Dickson_Poon' title='http://yago-knowledge.org/resource/Dickson_Poon'>Dickson Poon</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isMarriedTo' title='http://yago-knowledge.org/resource/isMarriedTo'>isMarriedTo</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Michelle_Yeoh' title='http://yago-knowledge.org/resource/Michelle_Yeoh'>Michelle Yeoh</a></td>
+<td class='tdin' width='7%'>0.40396140</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Michelle_Yeoh' title='http://yago-knowledge.org/resource/Michelle_Yeoh'>Michelle Yeoh</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isMarriedTo' title='http://yago-knowledge.org/resource/isMarriedTo'>isMarriedTo</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Dickson_Poon' title='http://yago-knowledge.org/resource/Dickson_Poon'>Dickson Poon</a></td>
+<td class='tdin' width='7%'>0.40396140</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 12</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.12481986</b></td><td width='10%' align='center'><b> L </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 12 - 0</b><br/> Score1 = 0.21243297<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/18377' title='http://data.linkedmdb.org/resource/film/18377'>Holy Weapon</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/30377' title='http://data.linkedmdb.org/resource/actor/30377'>Michelle Yeoh</a></td>
+<td class='tdin' width='7%'>0.21243297</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 12 - 1</b><br/> Score1 = 0.40396140<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Jean_Todt' title='http://yago-knowledge.org/resource/Jean_Todt'>Jean Todt</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isMarriedTo' title='http://yago-knowledge.org/resource/isMarriedTo'>isMarriedTo</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Michelle_Yeoh' title='http://yago-knowledge.org/resource/Michelle_Yeoh'>Michelle Yeoh</a></td>
+<td class='tdin' width='7%'>0.40396140</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Michelle_Yeoh' title='http://yago-knowledge.org/resource/Michelle_Yeoh'>Michelle Yeoh</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isMarriedTo' title='http://yago-knowledge.org/resource/isMarriedTo'>isMarriedTo</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Jean_Todt' title='http://yago-knowledge.org/resource/Jean_Todt'>Jean Todt</a></td>
+<td class='tdin' width='7%'>0.40396140</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 13</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.12107918</b></td><td width='10%' align='center'><b> L </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 13 - 0</b><br/> Score1 = 0.21243297<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/18377' title='http://data.linkedmdb.org/resource/film/18377'>Holy Weapon</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/30405' title='http://data.linkedmdb.org/resource/actor/30405'>Maggie Cheung</a></td>
+<td class='tdin' width='7%'>0.21243297</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 13 - 1</b><br/> Score1 = 0.37648221<br/> Sim.  = 0.9700<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Olivier_Assayas' title='http://yago-knowledge.org/resource/Olivier_Assayas'>Olivier Assayas</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isMarriedTo' title='http://yago-knowledge.org/resource/isMarriedTo'>isMarriedTo</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Maggie_Cheung' title='http://yago-knowledge.org/resource/Maggie_Cheung'>Maggie Cheung</a></td>
+<td class='tdin' width='7%'>0.37648221</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Olivier_Assayas' title='http://dbpedia.org/resource/Olivier_Assayas'>Olivier Assayas</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/spouse' title='http://dbpedia.org/ontology/spouse'>spouse</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Maggie_Cheung' title='http://dbpedia.org/resource/Maggie_Cheung'>Maggie Cheung</a></td>
+<td class='tdin' width='7%'>0.36187052</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Maggie_Cheung' title='http://yago-knowledge.org/resource/Maggie_Cheung'>Maggie Cheung</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isMarriedTo' title='http://yago-knowledge.org/resource/isMarriedTo'>isMarriedTo</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Olivier_Assayas' title='http://yago-knowledge.org/resource/Olivier_Assayas'>Olivier Assayas</a></td>
+<td class='tdin' width='7%'>0.37648221</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Maggie_Cheung' title='http://dbpedia.org/resource/Maggie_Cheung'>Maggie Cheung</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/spouse' title='http://dbpedia.org/ontology/spouse'>spouse</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Olivier_Assayas' title='http://dbpedia.org/resource/Olivier_Assayas'>Olivier Assayas</a></td>
+<td class='tdin' width='7%'>0.36187052</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 14</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.11949566</b></td><td width='10%' align='center'><b> L </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 14 - 0</b><br/> Score1 = 0.21207524<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/58489' title='http://data.linkedmdb.org/resource/film/58489'>Lethal Victims</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/31329' title='http://data.linkedmdb.org/resource/actor/31329'>Martin Landau</a></td>
+<td class='tdin' width='7%'>0.21207524</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 14 - 1</b><br/> Score1 = 0.37802674<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Barbara_Bain' title='http://yago-knowledge.org/resource/Barbara_Bain'>Barbara Bain</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isMarriedTo' title='http://yago-knowledge.org/resource/isMarriedTo'>isMarriedTo</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Martin_Landau' title='http://yago-knowledge.org/resource/Martin_Landau'>Martin Landau</a></td>
+<td class='tdin' width='7%'>0.37802674</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Martin_Landau' title='http://yago-knowledge.org/resource/Martin_Landau'>Martin Landau</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isMarriedTo' title='http://yago-knowledge.org/resource/isMarriedTo'>isMarriedTo</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Barbara_Bain' title='http://yago-knowledge.org/resource/Barbara_Bain'>Barbara Bain</a></td>
+<td class='tdin' width='7%'>0.37802674</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 15</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.11840686</b></td><td width='10%' align='center'><b> L </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 15 - 0</b><br/> Score1 = 0.21753146<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/61673' title='http://data.linkedmdb.org/resource/film/61673'>Lethal Eviction</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/40619' title='http://data.linkedmdb.org/resource/actor/40619'>Jennifer Carpenter</a></td>
+<td class='tdin' width='7%'>0.21753146</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 15 - 1</b><br/> Score1 = 0.36719374<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Michael_C._Hall' title='http://yago-knowledge.org/resource/Michael_C._Hall'>Michael C. Hall</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isMarriedTo' title='http://yago-knowledge.org/resource/isMarriedTo'>isMarriedTo</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Jennifer_Carpenter' title='http://yago-knowledge.org/resource/Jennifer_Carpenter'>Jennifer Carpenter</a></td>
+<td class='tdin' width='7%'>0.36719374</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Jennifer_Carpenter' title='http://yago-knowledge.org/resource/Jennifer_Carpenter'>Jennifer Carpenter</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isMarriedTo' title='http://yago-knowledge.org/resource/isMarriedTo'>isMarriedTo</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Michael_C._Hall' title='http://yago-knowledge.org/resource/Michael_C._Hall'>Michael C. Hall</a></td>
+<td class='tdin' width='7%'>0.36719374</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 16</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.11109507</b></td><td width='10%' align='center'><b> L </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 16 - 0</b><br/> Score1 = 0.21352427<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/58541' title='http://data.linkedmdb.org/resource/film/58541'>Lethal Vows</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/31400' title='http://data.linkedmdb.org/resource/actor/31400'>John Ritter</a></td>
+<td class='tdin' width='7%'>0.21352427</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 16 - 1</b><br/> Score1 = 0.32726412<br/> Sim.  = 0.9700<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Nancy_Morgan' title='http://yago-knowledge.org/resource/Nancy_Morgan'>Nancy Morgan</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isMarriedTo' title='http://yago-knowledge.org/resource/isMarriedTo'>isMarriedTo</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/John_Ritter' title='http://yago-knowledge.org/resource/John_Ritter'>John Ritter</a></td>
+<td class='tdin' width='7%'>0.32726412</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Nancy_Morgan' title='http://dbpedia.org/resource/Nancy_Morgan'>Nancy Morgan</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/spouse' title='http://dbpedia.org/ontology/spouse'>spouse</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/John_Ritter' title='http://dbpedia.org/resource/John_Ritter'>John Ritter</a></td>
+<td class='tdin' width='7%'>0.32181159</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/John_Ritter' title='http://yago-knowledge.org/resource/John_Ritter'>John Ritter</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isMarriedTo' title='http://yago-knowledge.org/resource/isMarriedTo'>isMarriedTo</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Nancy_Morgan' title='http://yago-knowledge.org/resource/Nancy_Morgan'>Nancy Morgan</a></td>
+<td class='tdin' width='7%'>0.32726412</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 17</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.10950965</b></td><td width='10%' align='center'><b> L </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 17 - 0</b><br/> Score1 = 0.21352427<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/58541' title='http://data.linkedmdb.org/resource/film/58541'>Lethal Vows</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/31400' title='http://data.linkedmdb.org/resource/actor/31400'>John Ritter</a></td>
+<td class='tdin' width='7%'>0.21352427</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 17 - 1</b><br/> Score1 = 0.32726412<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/John_Ritter' title='http://yago-knowledge.org/resource/John_Ritter'>John Ritter</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isMarriedTo' title='http://yago-knowledge.org/resource/isMarriedTo'>isMarriedTo</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Amy_Yasbeck' title='http://yago-knowledge.org/resource/Amy_Yasbeck'>Amy Yasbeck</a></td>
+<td class='tdin' width='7%'>0.32726412</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Amy_Yasbeck' title='http://yago-knowledge.org/resource/Amy_Yasbeck'>Amy Yasbeck</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isMarriedTo' title='http://yago-knowledge.org/resource/isMarriedTo'>isMarriedTo</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/John_Ritter' title='http://yago-knowledge.org/resource/John_Ritter'>John Ritter</a></td>
+<td class='tdin' width='7%'>0.32726412</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 18</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.10851242</b></td><td width='10%' align='center'><b> L </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 18 - 0</b><br/> Score1 = 0.21352427<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/62010' title='http://data.linkedmdb.org/resource/film/62010'>Lethal Dose</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/37681' title='http://data.linkedmdb.org/resource/actor/37681'>Tom Hardy</a></td>
+<td class='tdin' width='7%'>0.21352427</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 18 - 1</b><br/> Score1 = 0.32233954<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Tom_Hardy' title='http://yago-knowledge.org/resource/Tom_Hardy'>Tom Hardy</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isMarriedTo' title='http://yago-knowledge.org/resource/isMarriedTo'>isMarriedTo</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Charlotte_Riley' title='http://yago-knowledge.org/resource/Charlotte_Riley'>Charlotte Riley</a></td>
+<td class='tdin' width='7%'>0.32233954</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Charlotte_Riley' title='http://yago-knowledge.org/resource/Charlotte_Riley'>Charlotte Riley</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isMarriedTo' title='http://yago-knowledge.org/resource/isMarriedTo'>isMarriedTo</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Tom_Hardy' title='http://yago-knowledge.org/resource/Tom_Hardy'>Tom Hardy</a></td>
+<td class='tdin' width='7%'>0.32233954</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 19</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.10041149</b></td><td width='10%' align='center'><b> L </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 19 - 0</b><br/> Score1 = 0.25899370<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/39022' title='http://data.linkedmdb.org/resource/film/39022'>Lethal Weapon</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/10741' title='http://data.linkedmdb.org/resource/actor/10741'>Grand L. Bush</a></td>
+<td class='tdin' width='7%'>0.25899370</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 19 - 1</b><br/> Score1 = 0.23686547<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/George_W._Bush' title='http://yago-knowledge.org/resource/George_W._Bush'>George W. Bush</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isMarriedTo' title='http://yago-knowledge.org/resource/isMarriedTo'>isMarriedTo</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Laura_Bush' title='http://yago-knowledge.org/resource/Laura_Bush'>Laura Bush</a></td>
+<td class='tdin' width='7%'>0.23686547</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Laura_Bush' title='http://yago-knowledge.org/resource/Laura_Bush'>Laura Bush</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isMarriedTo' title='http://yago-knowledge.org/resource/isMarriedTo'>isMarriedTo</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/George_W._Bush' title='http://yago-knowledge.org/resource/George_W._Bush'>George W. Bush</a></td>
+<td class='tdin' width='7%'>0.23686547</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 20</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.09970727</b></td><td width='10%' align='center'><b> L </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 20 - 0</b><br/> Score1 = 0.21352427<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/62010' title='http://data.linkedmdb.org/resource/film/62010'>Lethal Dose</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/37681' title='http://data.linkedmdb.org/resource/actor/37681'>Tom Hardy</a></td>
+<td class='tdin' width='7%'>0.21352427</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 20 - 1</b><br/> Score1 = 0.27885731<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Simone_Ravelle_Hardy' title='http://yago-knowledge.org/resource/Simone_Ravelle_Hardy'>Simone Ravelle Hardy</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isMarriedTo' title='http://yago-knowledge.org/resource/isMarriedTo'>isMarriedTo</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Tom_Hardy_Sr.' title='http://yago-knowledge.org/resource/Tom_Hardy_Sr.'>Tom Hardy Sr.</a></td>
+<td class='tdin' width='7%'>0.27885731</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Tom_Hardy_Sr.' title='http://yago-knowledge.org/resource/Tom_Hardy_Sr.'>Tom Hardy Sr.</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isMarriedTo' title='http://yago-knowledge.org/resource/isMarriedTo'>isMarriedTo</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Simone_Ravelle_Hardy' title='http://yago-knowledge.org/resource/Simone_Ravelle_Hardy'>Simone Ravelle Hardy</a></td>
+<td class='tdin' width='7%'>0.27885731</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 21</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.09969635</b></td><td width='10%' align='center'><b> L </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 21 - 0</b><br/> Score1 = 0.25899370<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/39022' title='http://data.linkedmdb.org/resource/film/39022'>Lethal Weapon</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/10741' title='http://data.linkedmdb.org/resource/actor/10741'>Grand L. Bush</a></td>
+<td class='tdin' width='7%'>0.25899370</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 21 - 1</b><br/> Score1 = 0.23333394<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Laura_Bush' title='http://yago-knowledge.org/resource/Laura_Bush'>Laura Bush</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isMarriedTo' title='http://yago-knowledge.org/resource/isMarriedTo'>isMarriedTo</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Presidency_of_George_W._Bush' title='http://yago-knowledge.org/resource/Presidency_of_George_W._Bush'>Presidency of George W. Bush</a></td>
+<td class='tdin' width='7%'>0.23333394</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Presidency_of_George_W._Bush' title='http://yago-knowledge.org/resource/Presidency_of_George_W._Bush'>Presidency of George W. Bush</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isMarriedTo' title='http://yago-knowledge.org/resource/isMarriedTo'>isMarriedTo</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Laura_Bush' title='http://yago-knowledge.org/resource/Laura_Bush'>Laura Bush</a></td>
+<td class='tdin' width='7%'>0.23333394</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 22</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.09511241</b></td><td width='10%' align='center'><b> L </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 22 - 0</b><br/> Score1 = 0.21207524<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/58489' title='http://data.linkedmdb.org/resource/film/58489'>Lethal Victims</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/49466' title='http://data.linkedmdb.org/resource/actor/49466'>Frank Stallone</a></td>
+<td class='tdin' width='7%'>0.21207524</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 22 - 1</b><br/> Score1 = 0.25761567<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Sylvester_Stallone' title='http://yago-knowledge.org/resource/Sylvester_Stallone'>Sylvester Stallone</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isMarriedTo' title='http://yago-knowledge.org/resource/isMarriedTo'>isMarriedTo</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Jennifer_Flavin' title='http://yago-knowledge.org/resource/Jennifer_Flavin'>Jennifer Flavin</a></td>
+<td class='tdin' width='7%'>0.25761567</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Jennifer_Flavin' title='http://yago-knowledge.org/resource/Jennifer_Flavin'>Jennifer Flavin</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isMarriedTo' title='http://yago-knowledge.org/resource/isMarriedTo'>isMarriedTo</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Sylvester_Stallone' title='http://yago-knowledge.org/resource/Sylvester_Stallone'>Sylvester Stallone</a></td>
+<td class='tdin' width='7%'>0.25761567</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 23</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.09511241</b></td><td width='10%' align='center'><b> L </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 23 - 0</b><br/> Score1 = 0.21207524<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/58489' title='http://data.linkedmdb.org/resource/film/58489'>Lethal Victims</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/49466' title='http://data.linkedmdb.org/resource/actor/49466'>Frank Stallone</a></td>
+<td class='tdin' width='7%'>0.21207524</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 23 - 1</b><br/> Score1 = 0.25761567<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Sylvester_Stallone' title='http://yago-knowledge.org/resource/Sylvester_Stallone'>Sylvester Stallone</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isMarriedTo' title='http://yago-knowledge.org/resource/isMarriedTo'>isMarriedTo</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Brigitte_Nielsen' title='http://yago-knowledge.org/resource/Brigitte_Nielsen'>Brigitte Nielsen</a></td>
+<td class='tdin' width='7%'>0.25761567</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Brigitte_Nielsen' title='http://yago-knowledge.org/resource/Brigitte_Nielsen'>Brigitte Nielsen</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isMarriedTo' title='http://yago-knowledge.org/resource/isMarriedTo'>isMarriedTo</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Sylvester_Stallone' title='http://yago-knowledge.org/resource/Sylvester_Stallone'>Sylvester Stallone</a></td>
+<td class='tdin' width='7%'>0.25761567</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 24</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.09369536</b></td><td width='10%' align='center'><b> L </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 24 - 0</b><br/> Score1 = 0.21243297<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/18377' title='http://data.linkedmdb.org/resource/film/18377'>Holy Weapon</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/52988' title='http://data.linkedmdb.org/resource/actor/52988'>Damian Lau</a></td>
+<td class='tdin' width='7%'>0.21243297</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 24 - 1</b><br/> Score1 = 0.25026015<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Sean_Lau' title='http://yago-knowledge.org/resource/Sean_Lau'>Sean Lau</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isMarriedTo' title='http://yago-knowledge.org/resource/isMarriedTo'>isMarriedTo</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Amy_Kwok' title='http://yago-knowledge.org/resource/Amy_Kwok'>Amy Kwok</a></td>
+<td class='tdin' width='7%'>0.25026015</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Amy_Kwok' title='http://yago-knowledge.org/resource/Amy_Kwok'>Amy Kwok</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isMarriedTo' title='http://yago-knowledge.org/resource/isMarriedTo'>isMarriedTo</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Sean_Lau' title='http://yago-knowledge.org/resource/Sean_Lau'>Sean Lau</a></td>
+<td class='tdin' width='7%'>0.25026015</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 25</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.09296892</b></td><td width='10%' align='center'><b> L </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 25 - 0</b><br/> Score1 = 0.21753146<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/61673' title='http://data.linkedmdb.org/resource/film/61673'>Lethal Eviction</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/40619' title='http://data.linkedmdb.org/resource/actor/40619'>Jennifer Carpenter</a></td>
+<td class='tdin' width='7%'>0.21753146</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 25 - 1</b><br/> Score1 = 0.24157430<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Jennifer_Garner' title='http://yago-knowledge.org/resource/Jennifer_Garner'>Jennifer Garner</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isMarriedTo' title='http://yago-knowledge.org/resource/isMarriedTo'>isMarriedTo</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Scott_Foley' title='http://yago-knowledge.org/resource/Scott_Foley'>Scott Foley</a></td>
+<td class='tdin' width='7%'>0.24157430</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Scott_Foley' title='http://yago-knowledge.org/resource/Scott_Foley'>Scott Foley</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isMarriedTo' title='http://yago-knowledge.org/resource/isMarriedTo'>isMarriedTo</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Jennifer_Garner' title='http://yago-knowledge.org/resource/Jennifer_Garner'>Jennifer Garner</a></td>
+<td class='tdin' width='7%'>0.24157430</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 26</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.09296892</b></td><td width='10%' align='center'><b> L </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 26 - 0</b><br/> Score1 = 0.21753146<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/61673' title='http://data.linkedmdb.org/resource/film/61673'>Lethal Eviction</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/40619' title='http://data.linkedmdb.org/resource/actor/40619'>Jennifer Carpenter</a></td>
+<td class='tdin' width='7%'>0.21753146</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 26 - 1</b><br/> Score1 = 0.24157430<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Jennifer_Garner' title='http://yago-knowledge.org/resource/Jennifer_Garner'>Jennifer Garner</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isMarriedTo' title='http://yago-knowledge.org/resource/isMarriedTo'>isMarriedTo</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Ben_Affleck' title='http://yago-knowledge.org/resource/Ben_Affleck'>Ben Affleck</a></td>
+<td class='tdin' width='7%'>0.24157430</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Ben_Affleck' title='http://yago-knowledge.org/resource/Ben_Affleck'>Ben Affleck</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isMarriedTo' title='http://yago-knowledge.org/resource/isMarriedTo'>isMarriedTo</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Jennifer_Garner' title='http://yago-knowledge.org/resource/Jennifer_Garner'>Jennifer Garner</a></td>
+<td class='tdin' width='7%'>0.24157430</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 27</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.09294893</b></td><td width='10%' align='center'><b> L </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 27 - 0</b><br/> Score1 = 0.21300410<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/63830' title='http://data.linkedmdb.org/resource/film/63830'>Lethal Force</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/38477' title='http://data.linkedmdb.org/resource/actor/38477'>Richard Tyson</a></td>
+<td class='tdin' width='7%'>0.21300410</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 27 - 1</b><br/> Score1 = 0.24600295<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Robin_Givens' title='http://yago-knowledge.org/resource/Robin_Givens'>Robin Givens</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isMarriedTo' title='http://yago-knowledge.org/resource/isMarriedTo'>isMarriedTo</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Mike_Tyson' title='http://yago-knowledge.org/resource/Mike_Tyson'>Mike Tyson</a></td>
+<td class='tdin' width='7%'>0.24600295</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 28</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.09287305</b></td><td width='10%' align='center'><b> L </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 28 - 0</b><br/> Score1 = 0.21753146<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/61673' title='http://data.linkedmdb.org/resource/film/61673'>Lethal Eviction</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/40619' title='http://data.linkedmdb.org/resource/actor/40619'>Jennifer Carpenter</a></td>
+<td class='tdin' width='7%'>0.21753146</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 28 - 1</b><br/> Score1 = 0.24110086<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/John_Carpenter' title='http://yago-knowledge.org/resource/John_Carpenter'>John Carpenter</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isMarriedTo' title='http://yago-knowledge.org/resource/isMarriedTo'>isMarriedTo</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Adrienne_Barbeau' title='http://yago-knowledge.org/resource/Adrienne_Barbeau'>Adrienne Barbeau</a></td>
+<td class='tdin' width='7%'>0.24110086</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Adrienne_Barbeau' title='http://yago-knowledge.org/resource/Adrienne_Barbeau'>Adrienne Barbeau</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isMarriedTo' title='http://yago-knowledge.org/resource/isMarriedTo'>isMarriedTo</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/John_Carpenter' title='http://yago-knowledge.org/resource/John_Carpenter'>John Carpenter</a></td>
+<td class='tdin' width='7%'>0.24110086</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 29</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.09142208</b></td><td width='10%' align='center'><b> L </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 29 - 0</b><br/> Score1 = 0.21252247<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/57665' title='http://data.linkedmdb.org/resource/film/57665'>Lethal Angels</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/45904' title='http://data.linkedmdb.org/resource/actor/45904'>Cherrie Ying</a></td>
+<td class='tdin' width='7%'>0.21252247</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 29 - 1</b><br/> Score1 = 0.23894459<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Na_Ying' title='http://yago-knowledge.org/resource/Na_Ying'>Na Ying</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isMarriedTo' title='http://yago-knowledge.org/resource/isMarriedTo'>isMarriedTo</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Gao_Feng_(footballer)' title='http://yago-knowledge.org/resource/Gao_Feng_(footballer)'>Gao Feng</a></td>
+<td class='tdin' width='7%'>0.23894459</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Gao_Feng_(footballer)' title='http://yago-knowledge.org/resource/Gao_Feng_(footballer)'>Gao Feng</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isMarriedTo' title='http://yago-knowledge.org/resource/isMarriedTo'>isMarriedTo</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Na_Ying' title='http://yago-knowledge.org/resource/Na_Ying'>Na Ying</a></td>
+<td class='tdin' width='7%'>0.23894459</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 30</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.09112161</b></td><td width='10%' align='center'><b> L </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 30 - 0</b><br/> Score1 = 0.21252247<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/57665' title='http://data.linkedmdb.org/resource/film/57665'>Lethal Angels</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/45904' title='http://data.linkedmdb.org/resource/actor/45904'>Cherrie Ying</a></td>
+<td class='tdin' width='7%'>0.21252247</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 30 - 1</b><br/> Score1 = 0.23746079<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Duke_Xiang_of_Jin' title='http://yago-knowledge.org/resource/Duke_Xiang_of_Jin'>Duke Xiang of Jin</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isMarriedTo' title='http://yago-knowledge.org/resource/isMarriedTo'>isMarriedTo</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Mu_Ying' title='http://yago-knowledge.org/resource/Mu_Ying'>Mu Ying</a></td>
+<td class='tdin' width='7%'>0.23746079</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Mu_Ying' title='http://yago-knowledge.org/resource/Mu_Ying'>Mu Ying</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isMarriedTo' title='http://yago-knowledge.org/resource/isMarriedTo'>isMarriedTo</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Duke_Xiang_of_Jin' title='http://yago-knowledge.org/resource/Duke_Xiang_of_Jin'>Duke Xiang of Jin</a></td>
+<td class='tdin' width='7%'>0.23746079</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+  </body>
+</html>

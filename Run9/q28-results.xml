@@ -1,0 +1,233 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<question id="28" runID="run9">
+   <string>
+      <![CDATA[Give me the members of the band that sing Complete Control?]]>
+   </string>
+   <query>
+      <![CDATA[
+  ?x  "sing"    "Complete Control" .
+  ?y  "member"  ?x.
+]]>
+   </query>
+   <settings labelSearchTopK="5" plugLabel="true" limited="false" validateTriple="false"/>
+   <stats1 nb_results="10" timeSec="0.3600" memoryMB="81.7660" totalQuins="20" avgQuin_Cluster="1.0000" avgQuin_Bucket="2.0000" nb_plugTR="0"/>
+   <stats2>
+      <ds id="LinkedMDB">
+         <nreq>0</nreq>
+         <nreqs>0</nreqs>
+         <nrecd>0</nrecd>
+      </ds>
+      <ds id="DBpedia">
+         <nreq>18</nreq>
+         <nreqs>3</nreqs>
+         <nrecd>11</nrecd>
+      </ds>
+      <ds id="Yago">
+         <nreq>0</nreq>
+         <nreqs>0</nreqs>
+         <nrecd>0</nrecd>
+      </ds>
+   </stats2>
+   <results>
+      <bucket bucket_id="0" runID="run9" score="0.23804768" plugType="E">
+         <cluster cluster_id="0-0" score="0.32899482" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.32899482" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Complete_Control</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/musicalArtist</predicate>
+               <object>http://dbpedia.org/resource/The_Clash</object>
+               <subjectLabel score="0.32248704">Complete Control</subjectLabel>
+               <objectLabel score="0.00000000">The Clash</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="0-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Queenadreena</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/bandMember</predicate>
+               <object>http://dbpedia.org/resource/The_Clash</object>
+               <subjectLabel score="0.00000000">Queenadreena</subjectLabel>
+               <objectLabel score="0.00000000">The Clash</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="1" runID="run9" score="0.23804768" plugType="E">
+         <cluster cluster_id="1-0" score="0.32899482" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.32899482" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Complete_Control</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/musicalArtist</predicate>
+               <object>http://dbpedia.org/resource/The_Clash</object>
+               <subjectLabel score="0.32248704">Complete Control</subjectLabel>
+               <objectLabel score="0.00000000">The Clash</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="1-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/The_Clash</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/bandMember</predicate>
+               <object>http://dbpedia.org/resource/Joe_Strummer</object>
+               <subjectLabel score="0.00000000">The Clash</subjectLabel>
+               <objectLabel score="0.00000000">Joe Strummer</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="2" runID="run9" score="0.23804768" plugType="E">
+         <cluster cluster_id="2-0" score="0.32899482" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.32899482" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Complete_Control</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/musicalArtist</predicate>
+               <object>http://dbpedia.org/resource/The_Clash</object>
+               <subjectLabel score="0.32248704">Complete Control</subjectLabel>
+               <objectLabel score="0.00000000">The Clash</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="2-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/The_Clash</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/bandMember</predicate>
+               <object>http://dbpedia.org/resource/Keith_Levene</object>
+               <subjectLabel score="0.00000000">The Clash</subjectLabel>
+               <objectLabel score="0.00000000">Keith Levene</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="3" runID="run9" score="0.23804768" plugType="E">
+         <cluster cluster_id="3-0" score="0.32899482" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.32899482" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Complete_Control</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/musicalArtist</predicate>
+               <object>http://dbpedia.org/resource/The_Clash</object>
+               <subjectLabel score="0.32248704">Complete Control</subjectLabel>
+               <objectLabel score="0.00000000">The Clash</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="3-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/The_Clash</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/bandMember</predicate>
+               <object>http://dbpedia.org/resource/Mick_Jones_(The_Clash)</object>
+               <subjectLabel score="0.00000000">The Clash</subjectLabel>
+               <objectLabel score="0.00000000">Mick Jones</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="4" runID="run9" score="0.23804768" plugType="E">
+         <cluster cluster_id="4-0" score="0.32899482" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.32899482" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Complete_Control</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/musicalArtist</predicate>
+               <object>http://dbpedia.org/resource/The_Clash</object>
+               <subjectLabel score="0.32248704">Complete Control</subjectLabel>
+               <objectLabel score="0.00000000">The Clash</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="4-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/The_Clash</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/bandMember</predicate>
+               <object>http://dbpedia.org/resource/Nick_Sheppard</object>
+               <subjectLabel score="0.00000000">The Clash</subjectLabel>
+               <objectLabel score="0.00000000">Nick Sheppard</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="5" runID="run9" score="0.23804768" plugType="E">
+         <cluster cluster_id="5-0" score="0.32899482" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.32899482" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Complete_Control</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/musicalArtist</predicate>
+               <object>http://dbpedia.org/resource/The_Clash</object>
+               <subjectLabel score="0.32248704">Complete Control</subjectLabel>
+               <objectLabel score="0.00000000">The Clash</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="5-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/The_Clash</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/bandMember</predicate>
+               <object>http://dbpedia.org/resource/Paul_Simonon</object>
+               <subjectLabel score="0.00000000">The Clash</subjectLabel>
+               <objectLabel score="0.00000000">Paul Simonon</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="6" runID="run9" score="0.23804768" plugType="E">
+         <cluster cluster_id="6-0" score="0.32899482" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.32899482" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Complete_Control</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/musicalArtist</predicate>
+               <object>http://dbpedia.org/resource/The_Clash</object>
+               <subjectLabel score="0.32248704">Complete Control</subjectLabel>
+               <objectLabel score="0.00000000">The Clash</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="6-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/The_Clash</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/bandMember</predicate>
+               <object>http://dbpedia.org/resource/Rob_Harper</object>
+               <subjectLabel score="0.00000000">The Clash</subjectLabel>
+               <objectLabel score="0.00000000">Rob Harper</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="7" runID="run9" score="0.23804768" plugType="E">
+         <cluster cluster_id="7-0" score="0.32899482" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.32899482" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Complete_Control</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/musicalArtist</predicate>
+               <object>http://dbpedia.org/resource/The_Clash</object>
+               <subjectLabel score="0.32248704">Complete Control</subjectLabel>
+               <objectLabel score="0.00000000">The Clash</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="7-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/The_Clash</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/bandMember</predicate>
+               <object>http://dbpedia.org/resource/Terry_Chimes</object>
+               <subjectLabel score="0.00000000">The Clash</subjectLabel>
+               <objectLabel score="0.00000000">Terry Chimes</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="8" runID="run9" score="0.23804768" plugType="E">
+         <cluster cluster_id="8-0" score="0.32899482" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.32899482" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Complete_Control</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/musicalArtist</predicate>
+               <object>http://dbpedia.org/resource/The_Clash</object>
+               <subjectLabel score="0.32248704">Complete Control</subjectLabel>
+               <objectLabel score="0.00000000">The Clash</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="8-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/The_Clash</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/bandMember</predicate>
+               <object>http://dbpedia.org/resource/Topper_Headon</object>
+               <subjectLabel score="0.00000000">The Clash</subjectLabel>
+               <objectLabel score="0.00000000">Topper Headon</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="9" runID="run9" score="0.23804768" plugType="E">
+         <cluster cluster_id="9-0" score="0.32899482" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.32899482" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Complete_Control</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/musicalArtist</predicate>
+               <object>http://dbpedia.org/resource/The_Clash</object>
+               <subjectLabel score="0.32248704">Complete Control</subjectLabel>
+               <objectLabel score="0.00000000">The Clash</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="9-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/The_Clash</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/bandMember</predicate>
+               <object>http://dbpedia.org/resource/Vince_White</object>
+               <subjectLabel score="0.00000000">The Clash</subjectLabel>
+               <objectLabel score="0.00000000">Vince White</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+   </results>
+</question>

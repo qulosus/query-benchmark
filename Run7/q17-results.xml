@@ -1,0 +1,1657 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<question id="17" runID="run7">
+   <string>
+      <![CDATA[Which capitals does the Danube flow through? give me their countries and population.]]>
+   </string>
+   <query>
+      <![CDATA[
+  "Danube"  "city"        ?capital .
+  ?country  "capital"     ?capital .
+  ?capital  "population"  ?population .
+]]>
+   </query>
+   <settings labelSearchTopK="15" plugLabel="true" limited="false" validateTriple="false"/>
+   <stats1 nb_results="55" timeSec="4.0210" memoryMB="71.4309" totalQuins="169" avgQuin_Cluster="1.0242" avgQuin_Bucket="3.0727" nb_plugTR="2"/>
+   <stats2>
+      <ds id="LinkedMDB">
+         <nreq>4</nreq>
+         <nreqs>0</nreqs>
+         <nrecd>0</nrecd>
+      </ds>
+      <ds id="DBpedia">
+         <nreq>362</nreq>
+         <nreqs>64</nreqs>
+         <nrecd>127</nrecd>
+      </ds>
+      <ds id="Yago">
+         <nreq>94</nreq>
+         <nreqs>3</nreqs>
+         <nrecd>3</nrecd>
+      </ds>
+   </stats2>
+   <results>
+      <bucket bucket_id="0" runID="run7" score="0.24353420" plugType="E">
+         <cluster cluster_id="0-0" score="0.25347543" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.25347543" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Danube</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/city</predicate>
+               <object>http://dbpedia.org/resource/Ulm</object>
+               <subjectLabel score="0.13368858">Danube</subjectLabel>
+               <objectLabel score="0.00000000">Ulm</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="0-1" score="0.35830520" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.35830520" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Alb-Donau-Kreis</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasCapital</predicate>
+               <object>http://yago-knowledge.org/resource/Ulm</object>
+               <subjectLabel score="0.00000000">Alb-Donau-Kreis</subjectLabel>
+               <objectLabel score="0.39576299">Ulm</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="0-2" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://dbpedia.org/resource/Ulm</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/populationTotal</predicate>
+               <object>120925</object>
+               <subjectLabel score="0.00000000">Ulm</subjectLabel>
+               <objectLabel score="0.00000000">120925</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="1" runID="run7" score="0.19604264" plugType="E">
+         <cluster cluster_id="1-0" score="0.25347543" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.25347543" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Danube</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/city</predicate>
+               <object>http://dbpedia.org/resource/Belgrade</object>
+               <subjectLabel score="0.13368858">Danube</subjectLabel>
+               <objectLabel score="0.00000000">Belgrade</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="1-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Kingdom_of_Yugoslavia</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/capital</predicate>
+               <object>http://dbpedia.org/resource/Belgrade</object>
+               <subjectLabel score="0.00000000">Kingdom of Yugoslavia</subjectLabel>
+               <objectLabel score="0.00000000">Belgrade</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="1-2" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://dbpedia.org/resource/Belgrade</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/populationTotal</predicate>
+               <object>1166763</object>
+               <subjectLabel score="0.00000000">Belgrade</subjectLabel>
+               <objectLabel score="0.00000000">1166763</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="2" runID="run7" score="0.19604264" plugType="E">
+         <cluster cluster_id="2-0" score="0.25347543" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.25347543" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Danube</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/city</predicate>
+               <object>http://dbpedia.org/resource/Belgrade</object>
+               <subjectLabel score="0.13368858">Danube</subjectLabel>
+               <objectLabel score="0.00000000">Belgrade</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="2-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Republic_of_Serbia_(1992%E2%80%932006)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/capital</predicate>
+               <object>http://dbpedia.org/resource/Belgrade</object>
+               <subjectLabel score="0.00000000">Republic of Serbia</subjectLabel>
+               <objectLabel score="0.00000000">Belgrade</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="2-2" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://dbpedia.org/resource/Belgrade</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/populationTotal</predicate>
+               <object>1166763</object>
+               <subjectLabel score="0.00000000">Belgrade</subjectLabel>
+               <objectLabel score="0.00000000">1166763</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="3" runID="run7" score="0.19604264" plugType="E">
+         <cluster cluster_id="3-0" score="0.25347543" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.25347543" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Danube</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/city</predicate>
+               <object>http://dbpedia.org/resource/Belgrade</object>
+               <subjectLabel score="0.13368858">Danube</subjectLabel>
+               <objectLabel score="0.00000000">Belgrade</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="3-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Sanjak_of_Smederevo</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/capital</predicate>
+               <object>http://dbpedia.org/resource/Belgrade</object>
+               <subjectLabel score="0.00000000">Sanjak of Smederevo</subjectLabel>
+               <objectLabel score="0.00000000">Belgrade</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="3-2" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://dbpedia.org/resource/Belgrade</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/populationTotal</predicate>
+               <object>1166763</object>
+               <subjectLabel score="0.00000000">Belgrade</subjectLabel>
+               <objectLabel score="0.00000000">1166763</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="4" runID="run7" score="0.19604264" plugType="E">
+         <cluster cluster_id="4-0" score="0.25347543" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.25347543" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Danube</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/city</predicate>
+               <object>http://dbpedia.org/resource/Belgrade</object>
+               <subjectLabel score="0.13368858">Danube</subjectLabel>
+               <objectLabel score="0.00000000">Belgrade</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="4-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Serbia_and_Montenegro</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/capital</predicate>
+               <object>http://dbpedia.org/resource/Belgrade</object>
+               <subjectLabel score="0.00000000">Serbia and Montenegro</subjectLabel>
+               <objectLabel score="0.00000000">Belgrade</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="4-2" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://dbpedia.org/resource/Belgrade</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/populationTotal</predicate>
+               <object>1166763</object>
+               <subjectLabel score="0.00000000">Belgrade</subjectLabel>
+               <objectLabel score="0.00000000">1166763</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="5" runID="run7" score="0.19604264" plugType="E">
+         <cluster cluster_id="5-0" score="0.25347543" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.25347543" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Danube</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/city</predicate>
+               <object>http://dbpedia.org/resource/Belgrade</object>
+               <subjectLabel score="0.13368858">Danube</subjectLabel>
+               <objectLabel score="0.00000000">Belgrade</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="5-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Serbia</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/capital</predicate>
+               <object>http://dbpedia.org/resource/Belgrade</object>
+               <subjectLabel score="0.00000000">Serbia</subjectLabel>
+               <objectLabel score="0.00000000">Belgrade</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="5-2" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://dbpedia.org/resource/Belgrade</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/populationTotal</predicate>
+               <object>1166763</object>
+               <subjectLabel score="0.00000000">Belgrade</subjectLabel>
+               <objectLabel score="0.00000000">1166763</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="6" runID="run7" score="0.19604264" plugType="E">
+         <cluster cluster_id="6-0" score="0.25347543" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.25347543" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Danube</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/city</predicate>
+               <object>http://dbpedia.org/resource/Belgrade</object>
+               <subjectLabel score="0.13368858">Danube</subjectLabel>
+               <objectLabel score="0.00000000">Belgrade</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="6-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Serbian_Despotate</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/capital</predicate>
+               <object>http://dbpedia.org/resource/Belgrade</object>
+               <subjectLabel score="0.00000000">Serbian Despotate</subjectLabel>
+               <objectLabel score="0.00000000">Belgrade</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="6-2" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://dbpedia.org/resource/Belgrade</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/populationTotal</predicate>
+               <object>1166763</object>
+               <subjectLabel score="0.00000000">Belgrade</subjectLabel>
+               <objectLabel score="0.00000000">1166763</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="7" runID="run7" score="0.19604264" plugType="E">
+         <cluster cluster_id="7-0" score="0.25347543" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.25347543" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Danube</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/city</predicate>
+               <object>http://dbpedia.org/resource/Belgrade</object>
+               <subjectLabel score="0.13368858">Danube</subjectLabel>
+               <objectLabel score="0.00000000">Belgrade</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="7-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Socialist_Federal_Republic_of_Yugoslavia</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/capital</predicate>
+               <object>http://dbpedia.org/resource/Belgrade</object>
+               <subjectLabel score="0.00000000">Socialist Federal Republic of Yugoslavia</subjectLabel>
+               <objectLabel score="0.00000000">Belgrade</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="7-2" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://dbpedia.org/resource/Belgrade</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/populationTotal</predicate>
+               <object>1166763</object>
+               <subjectLabel score="0.00000000">Belgrade</subjectLabel>
+               <objectLabel score="0.00000000">1166763</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="8" runID="run7" score="0.19604264" plugType="E">
+         <cluster cluster_id="8-0" score="0.25347543" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.25347543" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Danube</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/city</predicate>
+               <object>http://dbpedia.org/resource/Belgrade</object>
+               <subjectLabel score="0.13368858">Danube</subjectLabel>
+               <objectLabel score="0.00000000">Belgrade</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="8-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Socialist_Republic_of_Serbia</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/capital</predicate>
+               <object>http://dbpedia.org/resource/Belgrade</object>
+               <subjectLabel score="0.00000000">Socialist Republic of Serbia</subjectLabel>
+               <objectLabel score="0.00000000">Belgrade</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="8-2" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://dbpedia.org/resource/Belgrade</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/populationTotal</predicate>
+               <object>1166763</object>
+               <subjectLabel score="0.00000000">Belgrade</subjectLabel>
+               <objectLabel score="0.00000000">1166763</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="9" runID="run7" score="0.19604264" plugType="E">
+         <cluster cluster_id="9-0" score="0.25347543" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.25347543" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Danube</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/city</predicate>
+               <object>http://dbpedia.org/resource/Belgrade</object>
+               <subjectLabel score="0.13368858">Danube</subjectLabel>
+               <objectLabel score="0.00000000">Belgrade</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="9-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Territory_of_the_Military_Commander_in_Serbia</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/capital</predicate>
+               <object>http://dbpedia.org/resource/Belgrade</object>
+               <subjectLabel score="0.00000000">Territory of the Military Commander in Serbia</subjectLabel>
+               <objectLabel score="0.00000000">Belgrade</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="9-2" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://dbpedia.org/resource/Belgrade</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/populationTotal</predicate>
+               <object>1166763</object>
+               <subjectLabel score="0.00000000">Belgrade</subjectLabel>
+               <objectLabel score="0.00000000">1166763</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="10" runID="run7" score="0.19604264" plugType="E">
+         <cluster cluster_id="10-0" score="0.25347543" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.25347543" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Danube</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/city</predicate>
+               <object>http://dbpedia.org/resource/Belgrade</object>
+               <subjectLabel score="0.13368858">Danube</subjectLabel>
+               <objectLabel score="0.00000000">Belgrade</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="10-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Belgrade_City_Administration</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/capital</predicate>
+               <object>http://dbpedia.org/resource/Belgrade</object>
+               <subjectLabel score="0.00000000">Belgrade City Administration</subjectLabel>
+               <objectLabel score="0.00000000">Belgrade</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="10-2" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://dbpedia.org/resource/Belgrade</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/populationTotal</predicate>
+               <object>1166763</object>
+               <subjectLabel score="0.00000000">Belgrade</subjectLabel>
+               <objectLabel score="0.00000000">1166763</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="11" runID="run7" score="0.19604264" plugType="E">
+         <cluster cluster_id="11-0" score="0.25347543" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.25347543" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Danube</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/city</predicate>
+               <object>http://dbpedia.org/resource/Belgrade</object>
+               <subjectLabel score="0.13368858">Danube</subjectLabel>
+               <objectLabel score="0.00000000">Belgrade</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="11-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Belgrade_Oblast</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/capital</predicate>
+               <object>http://dbpedia.org/resource/Belgrade</object>
+               <subjectLabel score="0.00000000">Belgrade Oblast</subjectLabel>
+               <objectLabel score="0.00000000">Belgrade</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="11-2" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://dbpedia.org/resource/Belgrade</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/populationTotal</predicate>
+               <object>1166763</object>
+               <subjectLabel score="0.00000000">Belgrade</subjectLabel>
+               <objectLabel score="0.00000000">1166763</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="12" runID="run7" score="0.19604264" plugType="E">
+         <cluster cluster_id="12-0" score="0.25347543" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.25347543" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Danube</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/city</predicate>
+               <object>http://dbpedia.org/resource/Belgrade</object>
+               <subjectLabel score="0.13368858">Danube</subjectLabel>
+               <objectLabel score="0.00000000">Belgrade</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="12-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Government_of_National_Salvation</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/capital</predicate>
+               <object>http://dbpedia.org/resource/Belgrade</object>
+               <subjectLabel score="0.00000000">Government of National Salvation</subjectLabel>
+               <objectLabel score="0.00000000">Belgrade</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="12-2" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://dbpedia.org/resource/Belgrade</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/populationTotal</predicate>
+               <object>1166763</object>
+               <subjectLabel score="0.00000000">Belgrade</subjectLabel>
+               <objectLabel score="0.00000000">1166763</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="13" runID="run7" score="0.19604264" plugType="E">
+         <cluster cluster_id="13-0" score="0.25347543" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.25347543" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Danube</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/city</predicate>
+               <object>http://dbpedia.org/resource/Bratislava</object>
+               <subjectLabel score="0.13368858">Danube</subjectLabel>
+               <objectLabel score="0.00000000">Bratislava</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="13-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Kingdom_of_Hungary</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/capital</predicate>
+               <object>http://dbpedia.org/resource/Bratislava</object>
+               <subjectLabel score="0.00000000">Kingdom of Hungary</subjectLabel>
+               <objectLabel score="0.00000000">Bratislava</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Kingdom_of_Hungary_(1526%E2%80%931867)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/capital</predicate>
+               <object>http://dbpedia.org/resource/Bratislava</object>
+               <subjectLabel score="0.00000000">Kingdom of Hungary</subjectLabel>
+               <objectLabel score="0.00000000">Bratislava</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="13-2" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://dbpedia.org/resource/Bratislava</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/populationTotal</predicate>
+               <object>415589</object>
+               <subjectLabel score="0.00000000">Bratislava</subjectLabel>
+               <objectLabel score="0.00000000">415589</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="14" runID="run7" score="0.19604264" plugType="E">
+         <cluster cluster_id="14-0" score="0.25347543" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.25347543" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Danube</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/city</predicate>
+               <object>http://dbpedia.org/resource/Bratislava</object>
+               <subjectLabel score="0.13368858">Danube</subjectLabel>
+               <objectLabel score="0.00000000">Bratislava</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="14-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Pozsony_County</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/capital</predicate>
+               <object>http://dbpedia.org/resource/Bratislava</object>
+               <subjectLabel score="0.00000000">Pozsony County</subjectLabel>
+               <objectLabel score="0.00000000">Bratislava</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="14-2" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://dbpedia.org/resource/Bratislava</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/populationTotal</predicate>
+               <object>415589</object>
+               <subjectLabel score="0.00000000">Bratislava</subjectLabel>
+               <objectLabel score="0.00000000">415589</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="15" runID="run7" score="0.19604264" plugType="E">
+         <cluster cluster_id="15-0" score="0.25347543" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.25347543" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Danube</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/city</predicate>
+               <object>http://dbpedia.org/resource/Bratislava</object>
+               <subjectLabel score="0.13368858">Danube</subjectLabel>
+               <objectLabel score="0.00000000">Bratislava</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="15-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Slovak_Republic_(1939%E2%80%9345)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/capital</predicate>
+               <object>http://dbpedia.org/resource/Bratislava</object>
+               <subjectLabel score="0.00000000">Slovak Republic</subjectLabel>
+               <objectLabel score="0.00000000">Bratislava</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="15-2" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://dbpedia.org/resource/Bratislava</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/populationTotal</predicate>
+               <object>415589</object>
+               <subjectLabel score="0.00000000">Bratislava</subjectLabel>
+               <objectLabel score="0.00000000">415589</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="16" runID="run7" score="0.19604264" plugType="E">
+         <cluster cluster_id="16-0" score="0.25347543" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.25347543" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Danube</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/city</predicate>
+               <object>http://dbpedia.org/resource/Bratislava</object>
+               <subjectLabel score="0.13368858">Danube</subjectLabel>
+               <objectLabel score="0.00000000">Bratislava</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="16-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Slovak_Socialist_Republic</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/capital</predicate>
+               <object>http://dbpedia.org/resource/Bratislava</object>
+               <subjectLabel score="0.00000000">Slovak Socialist Republic</subjectLabel>
+               <objectLabel score="0.00000000">Bratislava</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="16-2" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://dbpedia.org/resource/Bratislava</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/populationTotal</predicate>
+               <object>415589</object>
+               <subjectLabel score="0.00000000">Bratislava</subjectLabel>
+               <objectLabel score="0.00000000">415589</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="17" runID="run7" score="0.19604264" plugType="E">
+         <cluster cluster_id="17-0" score="0.25347543" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.25347543" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Danube</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/city</predicate>
+               <object>http://dbpedia.org/resource/Budapest</object>
+               <subjectLabel score="0.13368858">Danube</subjectLabel>
+               <objectLabel score="0.00000000">Budapest</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="17-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Hungarian_Democratic_Republic</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/capital</predicate>
+               <object>http://dbpedia.org/resource/Budapest</object>
+               <subjectLabel score="0.00000000">Hungarian Democratic Republic</subjectLabel>
+               <objectLabel score="0.00000000">Budapest</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="17-2" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://dbpedia.org/resource/Budapest</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/populationTotal</predicate>
+               <object>1740041</object>
+               <subjectLabel score="0.00000000">Budapest</subjectLabel>
+               <objectLabel score="0.00000000">1740041</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="18" runID="run7" score="0.19604264" plugType="E">
+         <cluster cluster_id="18-0" score="0.25347543" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.25347543" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Danube</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/city</predicate>
+               <object>http://dbpedia.org/resource/Budapest</object>
+               <subjectLabel score="0.13368858">Danube</subjectLabel>
+               <objectLabel score="0.00000000">Budapest</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="18-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Hungarian_People%27s_Republic</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/capital</predicate>
+               <object>http://dbpedia.org/resource/Budapest</object>
+               <subjectLabel score="0.00000000">Hungarian People's Republic</subjectLabel>
+               <objectLabel score="0.00000000">Budapest</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="18-2" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://dbpedia.org/resource/Budapest</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/populationTotal</predicate>
+               <object>1740041</object>
+               <subjectLabel score="0.00000000">Budapest</subjectLabel>
+               <objectLabel score="0.00000000">1740041</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="19" runID="run7" score="0.19604264" plugType="E">
+         <cluster cluster_id="19-0" score="0.25347543" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.25347543" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Danube</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/city</predicate>
+               <object>http://dbpedia.org/resource/Budapest</object>
+               <subjectLabel score="0.13368858">Danube</subjectLabel>
+               <objectLabel score="0.00000000">Budapest</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="19-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Hungarian_Republic_(1919%E2%80%9320)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/capital</predicate>
+               <object>http://dbpedia.org/resource/Budapest</object>
+               <subjectLabel score="0.00000000">Hungarian Republic</subjectLabel>
+               <objectLabel score="0.00000000">Budapest</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="19-2" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://dbpedia.org/resource/Budapest</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/populationTotal</predicate>
+               <object>1740041</object>
+               <subjectLabel score="0.00000000">Budapest</subjectLabel>
+               <objectLabel score="0.00000000">1740041</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="20" runID="run7" score="0.19604264" plugType="E">
+         <cluster cluster_id="20-0" score="0.25347543" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.25347543" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Danube</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/city</predicate>
+               <object>http://dbpedia.org/resource/Budapest</object>
+               <subjectLabel score="0.13368858">Danube</subjectLabel>
+               <objectLabel score="0.00000000">Budapest</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="20-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Hungary</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/capital</predicate>
+               <object>http://dbpedia.org/resource/Budapest</object>
+               <subjectLabel score="0.00000000">Hungary</subjectLabel>
+               <objectLabel score="0.00000000">Budapest</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="20-2" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://dbpedia.org/resource/Budapest</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/populationTotal</predicate>
+               <object>1740041</object>
+               <subjectLabel score="0.00000000">Budapest</subjectLabel>
+               <objectLabel score="0.00000000">1740041</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="21" runID="run7" score="0.19604264" plugType="E">
+         <cluster cluster_id="21-0" score="0.25347543" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.25347543" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Danube</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/city</predicate>
+               <object>http://dbpedia.org/resource/Budapest</object>
+               <subjectLabel score="0.13368858">Danube</subjectLabel>
+               <objectLabel score="0.00000000">Budapest</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="21-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Kingdom_of_Hungary</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/capital</predicate>
+               <object>http://dbpedia.org/resource/Budapest</object>
+               <subjectLabel score="0.00000000">Kingdom of Hungary</subjectLabel>
+               <objectLabel score="0.00000000">Budapest</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="21-2" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://dbpedia.org/resource/Budapest</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/populationTotal</predicate>
+               <object>1740041</object>
+               <subjectLabel score="0.00000000">Budapest</subjectLabel>
+               <objectLabel score="0.00000000">1740041</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="22" runID="run7" score="0.19604264" plugType="E">
+         <cluster cluster_id="22-0" score="0.25347543" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.25347543" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Danube</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/city</predicate>
+               <object>http://dbpedia.org/resource/Budapest</object>
+               <subjectLabel score="0.13368858">Danube</subjectLabel>
+               <objectLabel score="0.00000000">Budapest</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="22-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Lands_of_the_Crown_of_Saint_Stephen</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/capital</predicate>
+               <object>http://dbpedia.org/resource/Budapest</object>
+               <subjectLabel score="0.00000000">Lands of the Crown of Saint Stephen</subjectLabel>
+               <objectLabel score="0.00000000">Budapest</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="22-2" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://dbpedia.org/resource/Budapest</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/populationTotal</predicate>
+               <object>1740041</object>
+               <subjectLabel score="0.00000000">Budapest</subjectLabel>
+               <objectLabel score="0.00000000">1740041</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="23" runID="run7" score="0.19604264" plugType="E">
+         <cluster cluster_id="23-0" score="0.25347543" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.25347543" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Danube</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/city</predicate>
+               <object>http://dbpedia.org/resource/Budapest</object>
+               <subjectLabel score="0.13368858">Danube</subjectLabel>
+               <objectLabel score="0.00000000">Budapest</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="23-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Pest-Pilis-Solt-Kiskun_County</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/capital</predicate>
+               <object>http://dbpedia.org/resource/Budapest</object>
+               <subjectLabel score="0.00000000">Pest-Pilis-Solt-Kiskun County</subjectLabel>
+               <objectLabel score="0.00000000">Budapest</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="23-2" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://dbpedia.org/resource/Budapest</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/populationTotal</predicate>
+               <object>1740041</object>
+               <subjectLabel score="0.00000000">Budapest</subjectLabel>
+               <objectLabel score="0.00000000">1740041</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="24" runID="run7" score="0.19604264" plugType="E">
+         <cluster cluster_id="24-0" score="0.25347543" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.25347543" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Danube</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/city</predicate>
+               <object>http://dbpedia.org/resource/Budapest</object>
+               <subjectLabel score="0.13368858">Danube</subjectLabel>
+               <objectLabel score="0.00000000">Budapest</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="24-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Austria-Hungary</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/capital</predicate>
+               <object>http://dbpedia.org/resource/Budapest</object>
+               <subjectLabel score="0.00000000">Austria-Hungary</subjectLabel>
+               <objectLabel score="0.00000000">Budapest</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="24-2" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://dbpedia.org/resource/Budapest</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/populationTotal</predicate>
+               <object>1740041</object>
+               <subjectLabel score="0.00000000">Budapest</subjectLabel>
+               <objectLabel score="0.00000000">1740041</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="25" runID="run7" score="0.19604264" plugType="E">
+         <cluster cluster_id="25-0" score="0.25347543" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.25347543" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Danube</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/city</predicate>
+               <object>http://dbpedia.org/resource/Budapest</object>
+               <subjectLabel score="0.13368858">Danube</subjectLabel>
+               <objectLabel score="0.00000000">Budapest</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="25-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Government_of_National_Unity_(Hungary)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/capital</predicate>
+               <object>http://dbpedia.org/resource/Budapest</object>
+               <subjectLabel score="0.00000000">Government of National Unity</subjectLabel>
+               <objectLabel score="0.00000000">Budapest</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="25-2" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://dbpedia.org/resource/Budapest</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/populationTotal</predicate>
+               <object>1740041</object>
+               <subjectLabel score="0.00000000">Budapest</subjectLabel>
+               <objectLabel score="0.00000000">1740041</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="26" runID="run7" score="0.19604264" plugType="E">
+         <cluster cluster_id="26-0" score="0.25347543" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.25347543" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Danube</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/city</predicate>
+               <object>http://dbpedia.org/resource/Gy%C5%91r</object>
+               <subjectLabel score="0.13368858">Danube</subjectLabel>
+               <objectLabel score="0.00000000">Győr</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="26-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Gy%C5%91r_County</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/capital</predicate>
+               <object>http://dbpedia.org/resource/Gy%C5%91r</object>
+               <subjectLabel score="0.00000000">Győr County</subjectLabel>
+               <objectLabel score="0.00000000">Győr</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="26-2" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://dbpedia.org/resource/Gy%C5%91r</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/populationTotal</predicate>
+               <object>128567</object>
+               <subjectLabel score="0.00000000">Győr</subjectLabel>
+               <objectLabel score="0.00000000">128567</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="27" runID="run7" score="0.19604264" plugType="E">
+         <cluster cluster_id="27-0" score="0.25347543" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.25347543" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Danube</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/city</predicate>
+               <object>http://dbpedia.org/resource/Novi_Sad</object>
+               <subjectLabel score="0.13368858">Danube</subjectLabel>
+               <objectLabel score="0.00000000">Novi Sad</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="27-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Neusatz_District</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/capital</predicate>
+               <object>http://dbpedia.org/resource/Novi_Sad</object>
+               <subjectLabel score="0.00000000">Neusatz District</subjectLabel>
+               <objectLabel score="0.00000000">Novi Sad</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="27-2" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://dbpedia.org/resource/Novi_Sad</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/populationTotal</predicate>
+               <object>231798</object>
+               <subjectLabel score="0.00000000">Novi Sad</subjectLabel>
+               <objectLabel score="0.00000000">231798</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="28" runID="run7" score="0.19604264" plugType="E">
+         <cluster cluster_id="28-0" score="0.25347543" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.25347543" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Danube</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/city</predicate>
+               <object>http://dbpedia.org/resource/Novi_Sad</object>
+               <subjectLabel score="0.13368858">Danube</subjectLabel>
+               <objectLabel score="0.00000000">Novi Sad</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="28-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Socialist_Autonomous_Province_of_Vojvodina</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/capital</predicate>
+               <object>http://dbpedia.org/resource/Novi_Sad</object>
+               <subjectLabel score="0.00000000">Socialist Autonomous Province of Vojvodina</subjectLabel>
+               <objectLabel score="0.00000000">Novi Sad</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="28-2" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://dbpedia.org/resource/Novi_Sad</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/populationTotal</predicate>
+               <object>231798</object>
+               <subjectLabel score="0.00000000">Novi Sad</subjectLabel>
+               <objectLabel score="0.00000000">231798</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="29" runID="run7" score="0.19604264" plugType="E">
+         <cluster cluster_id="29-0" score="0.25347543" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.25347543" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Danube</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/city</predicate>
+               <object>http://dbpedia.org/resource/Novi_Sad</object>
+               <subjectLabel score="0.13368858">Danube</subjectLabel>
+               <objectLabel score="0.00000000">Novi Sad</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="29-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Ba%C4%8Dka_Oblast</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/capital</predicate>
+               <object>http://dbpedia.org/resource/Novi_Sad</object>
+               <subjectLabel score="0.00000000">Bačka Oblast</subjectLabel>
+               <objectLabel score="0.00000000">Novi Sad</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="29-2" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://dbpedia.org/resource/Novi_Sad</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/populationTotal</predicate>
+               <object>231798</object>
+               <subjectLabel score="0.00000000">Novi Sad</subjectLabel>
+               <objectLabel score="0.00000000">231798</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="30" runID="run7" score="0.19604264" plugType="E">
+         <cluster cluster_id="30-0" score="0.25347543" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.25347543" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Danube</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/city</predicate>
+               <object>http://dbpedia.org/resource/Novi_Sad</object>
+               <subjectLabel score="0.13368858">Danube</subjectLabel>
+               <objectLabel score="0.00000000">Novi Sad</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="30-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Banat,_Ba%C4%8Dka_and_Baranja</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/capital</predicate>
+               <object>http://dbpedia.org/resource/Novi_Sad</object>
+               <subjectLabel score="0.00000000">Banat, Bačka and Baranja</subjectLabel>
+               <objectLabel score="0.00000000">Novi Sad</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="30-2" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://dbpedia.org/resource/Novi_Sad</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/populationTotal</predicate>
+               <object>231798</object>
+               <subjectLabel score="0.00000000">Novi Sad</subjectLabel>
+               <objectLabel score="0.00000000">231798</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="31" runID="run7" score="0.19604264" plugType="E">
+         <cluster cluster_id="31-0" score="0.25347543" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.25347543" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Danube</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/city</predicate>
+               <object>http://dbpedia.org/resource/Novi_Sad</object>
+               <subjectLabel score="0.13368858">Danube</subjectLabel>
+               <objectLabel score="0.00000000">Novi Sad</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="31-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Danube_Banovina</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/capital</predicate>
+               <object>http://dbpedia.org/resource/Novi_Sad</object>
+               <subjectLabel score="0.00000000">Danube Banovina</subjectLabel>
+               <objectLabel score="0.00000000">Novi Sad</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="31-2" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://dbpedia.org/resource/Novi_Sad</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/populationTotal</predicate>
+               <object>231798</object>
+               <subjectLabel score="0.00000000">Novi Sad</subjectLabel>
+               <objectLabel score="0.00000000">231798</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="32" runID="run7" score="0.19604264" plugType="E">
+         <cluster cluster_id="32-0" score="0.25347543" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.25347543" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Danube</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/city</predicate>
+               <object>http://dbpedia.org/resource/Novi_Sad</object>
+               <subjectLabel score="0.13368858">Danube</subjectLabel>
+               <objectLabel score="0.00000000">Novi Sad</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="32-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Vojvodina</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/capital</predicate>
+               <object>http://dbpedia.org/resource/Novi_Sad</object>
+               <subjectLabel score="0.00000000">Vojvodina</subjectLabel>
+               <objectLabel score="0.00000000">Novi Sad</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="32-2" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://dbpedia.org/resource/Novi_Sad</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/populationTotal</predicate>
+               <object>231798</object>
+               <subjectLabel score="0.00000000">Novi Sad</subjectLabel>
+               <objectLabel score="0.00000000">231798</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="33" runID="run7" score="0.19604264" plugType="E">
+         <cluster cluster_id="33-0" score="0.25347543" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.25347543" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Danube</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/city</predicate>
+               <object>http://dbpedia.org/resource/Regensburg</object>
+               <subjectLabel score="0.13368858">Danube</subjectLabel>
+               <objectLabel score="0.00000000">Regensburg</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="33-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Holy_Roman_Empire</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/capital</predicate>
+               <object>http://dbpedia.org/resource/Regensburg</object>
+               <subjectLabel score="0.00000000">Holy Roman Empire</subjectLabel>
+               <objectLabel score="0.00000000">Regensburg</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="33-2" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://dbpedia.org/resource/Regensburg</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/populationTotal</predicate>
+               <object>130080</object>
+               <subjectLabel score="0.00000000">Regensburg</subjectLabel>
+               <objectLabel score="0.00000000">130080</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="34" runID="run7" score="0.19604264" plugType="E">
+         <cluster cluster_id="34-0" score="0.25347543" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.25347543" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Danube</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/city</predicate>
+               <object>http://dbpedia.org/resource/Regensburg</object>
+               <subjectLabel score="0.13368858">Danube</subjectLabel>
+               <objectLabel score="0.00000000">Regensburg</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="34-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Principality_of_Regensburg</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/capital</predicate>
+               <object>http://dbpedia.org/resource/Regensburg</object>
+               <subjectLabel score="0.00000000">Principality of Regensburg</subjectLabel>
+               <objectLabel score="0.00000000">Regensburg</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="34-2" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://dbpedia.org/resource/Regensburg</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/populationTotal</predicate>
+               <object>130080</object>
+               <subjectLabel score="0.00000000">Regensburg</subjectLabel>
+               <objectLabel score="0.00000000">130080</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="35" runID="run7" score="0.19604264" plugType="E">
+         <cluster cluster_id="35-0" score="0.25347543" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.25347543" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Danube</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/city</predicate>
+               <object>http://dbpedia.org/resource/Regensburg</object>
+               <subjectLabel score="0.13368858">Danube</subjectLabel>
+               <objectLabel score="0.00000000">Regensburg</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="35-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Duchy_of_Bavaria</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/capital</predicate>
+               <object>http://dbpedia.org/resource/Regensburg</object>
+               <subjectLabel score="0.00000000">Duchy of Bavaria</subjectLabel>
+               <objectLabel score="0.00000000">Regensburg</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="35-2" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://dbpedia.org/resource/Regensburg</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/populationTotal</predicate>
+               <object>130080</object>
+               <subjectLabel score="0.00000000">Regensburg</subjectLabel>
+               <objectLabel score="0.00000000">130080</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="36" runID="run7" score="0.19604264" plugType="E">
+         <cluster cluster_id="36-0" score="0.25347543" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.25347543" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Danube</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/city</predicate>
+               <object>http://dbpedia.org/resource/Regensburg</object>
+               <subjectLabel score="0.13368858">Danube</subjectLabel>
+               <objectLabel score="0.00000000">Regensburg</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="36-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Thurn_und_Taxis</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/capital</predicate>
+               <object>http://dbpedia.org/resource/Regensburg</object>
+               <subjectLabel score="0.00000000">Thurn und Taxis</subjectLabel>
+               <objectLabel score="0.00000000">Regensburg</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="36-2" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://dbpedia.org/resource/Regensburg</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/populationTotal</predicate>
+               <object>130080</object>
+               <subjectLabel score="0.00000000">Regensburg</subjectLabel>
+               <objectLabel score="0.00000000">130080</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="37" runID="run7" score="0.19604264" plugType="E">
+         <cluster cluster_id="37-0" score="0.25347543" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.25347543" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Danube</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/city</predicate>
+               <object>http://dbpedia.org/resource/Vienna</object>
+               <subjectLabel score="0.13368858">Danube</subjectLabel>
+               <objectLabel score="0.00000000">Vienna</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="37-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Habsburg_Monarchy</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/capital</predicate>
+               <object>http://dbpedia.org/resource/Vienna</object>
+               <subjectLabel score="0.00000000">Habsburg Monarchy</subjectLabel>
+               <objectLabel score="0.00000000">Vienna</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="37-2" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://dbpedia.org/resource/Vienna</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/populationTotal</predicate>
+               <object>1765649</object>
+               <subjectLabel score="0.00000000">Vienna</subjectLabel>
+               <objectLabel score="0.00000000">1765649</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="38" runID="run7" score="0.19604264" plugType="E">
+         <cluster cluster_id="38-0" score="0.25347543" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.25347543" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Danube</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/city</predicate>
+               <object>http://dbpedia.org/resource/Vienna</object>
+               <subjectLabel score="0.13368858">Danube</subjectLabel>
+               <objectLabel score="0.00000000">Vienna</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="38-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Holy_Roman_Empire</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/capital</predicate>
+               <object>http://dbpedia.org/resource/Vienna</object>
+               <subjectLabel score="0.00000000">Holy Roman Empire</subjectLabel>
+               <objectLabel score="0.00000000">Vienna</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="38-2" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://dbpedia.org/resource/Vienna</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/populationTotal</predicate>
+               <object>1765649</object>
+               <subjectLabel score="0.00000000">Vienna</subjectLabel>
+               <objectLabel score="0.00000000">1765649</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="39" runID="run7" score="0.19604264" plugType="E">
+         <cluster cluster_id="39-0" score="0.25347543" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.25347543" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Danube</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/city</predicate>
+               <object>http://dbpedia.org/resource/Vienna</object>
+               <subjectLabel score="0.13368858">Danube</subjectLabel>
+               <objectLabel score="0.00000000">Vienna</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="39-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Margraviate_of_Austria</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/capital</predicate>
+               <object>http://dbpedia.org/resource/Vienna</object>
+               <subjectLabel score="0.00000000">Margraviate of Austria</subjectLabel>
+               <objectLabel score="0.00000000">Vienna</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="39-2" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://dbpedia.org/resource/Vienna</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/populationTotal</predicate>
+               <object>1765649</object>
+               <subjectLabel score="0.00000000">Vienna</subjectLabel>
+               <objectLabel score="0.00000000">1765649</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="40" runID="run7" score="0.19604264" plugType="E">
+         <cluster cluster_id="40-0" score="0.25347543" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.25347543" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Danube</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/city</predicate>
+               <object>http://dbpedia.org/resource/Vienna</object>
+               <subjectLabel score="0.13368858">Danube</subjectLabel>
+               <objectLabel score="0.00000000">Vienna</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="40-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Ostmark_(Austria)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/capital</predicate>
+               <object>http://dbpedia.org/resource/Vienna</object>
+               <subjectLabel score="0.00000000">Ostmark</subjectLabel>
+               <objectLabel score="0.00000000">Vienna</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="40-2" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://dbpedia.org/resource/Vienna</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/populationTotal</predicate>
+               <object>1765649</object>
+               <subjectLabel score="0.00000000">Vienna</subjectLabel>
+               <objectLabel score="0.00000000">1765649</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="41" runID="run7" score="0.19604264" plugType="E">
+         <cluster cluster_id="41-0" score="0.25347543" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.25347543" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Danube</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/city</predicate>
+               <object>http://dbpedia.org/resource/Vienna</object>
+               <subjectLabel score="0.13368858">Danube</subjectLabel>
+               <objectLabel score="0.00000000">Vienna</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="41-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Reichsgau_Wien</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/capital</predicate>
+               <object>http://dbpedia.org/resource/Vienna</object>
+               <subjectLabel score="0.00000000">Reichsgau Wien</subjectLabel>
+               <objectLabel score="0.00000000">Vienna</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="41-2" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://dbpedia.org/resource/Vienna</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/populationTotal</predicate>
+               <object>1765649</object>
+               <subjectLabel score="0.00000000">Vienna</subjectLabel>
+               <objectLabel score="0.00000000">1765649</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="42" runID="run7" score="0.19604264" plugType="E">
+         <cluster cluster_id="42-0" score="0.25347543" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.25347543" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Danube</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/city</predicate>
+               <object>http://dbpedia.org/resource/Vienna</object>
+               <subjectLabel score="0.13368858">Danube</subjectLabel>
+               <objectLabel score="0.00000000">Vienna</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="42-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Allied-occupied_Austria</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/capital</predicate>
+               <object>http://dbpedia.org/resource/Vienna</object>
+               <subjectLabel score="0.00000000">Allied-occupied Austria</subjectLabel>
+               <objectLabel score="0.00000000">Vienna</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="42-2" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://dbpedia.org/resource/Vienna</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/populationTotal</predicate>
+               <object>1765649</object>
+               <subjectLabel score="0.00000000">Vienna</subjectLabel>
+               <objectLabel score="0.00000000">1765649</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="43" runID="run7" score="0.19604264" plugType="E">
+         <cluster cluster_id="43-0" score="0.25347543" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.25347543" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Danube</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/city</predicate>
+               <object>http://dbpedia.org/resource/Vienna</object>
+               <subjectLabel score="0.13368858">Danube</subjectLabel>
+               <objectLabel score="0.00000000">Vienna</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="43-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Archduchy_of_Austria</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/capital</predicate>
+               <object>http://dbpedia.org/resource/Vienna</object>
+               <subjectLabel score="0.00000000">Archduchy of Austria</subjectLabel>
+               <objectLabel score="0.00000000">Vienna</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="43-2" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://dbpedia.org/resource/Vienna</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/populationTotal</predicate>
+               <object>1765649</object>
+               <subjectLabel score="0.00000000">Vienna</subjectLabel>
+               <objectLabel score="0.00000000">1765649</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="44" runID="run7" score="0.19604264" plugType="E">
+         <cluster cluster_id="44-0" score="0.25347543" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.25347543" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Danube</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/city</predicate>
+               <object>http://dbpedia.org/resource/Vienna</object>
+               <subjectLabel score="0.13368858">Danube</subjectLabel>
+               <objectLabel score="0.00000000">Vienna</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="44-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Austria</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/capital</predicate>
+               <object>http://dbpedia.org/resource/Vienna</object>
+               <subjectLabel score="0.00000000">Austria</subjectLabel>
+               <objectLabel score="0.00000000">Vienna</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="44-2" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://dbpedia.org/resource/Vienna</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/populationTotal</predicate>
+               <object>1765649</object>
+               <subjectLabel score="0.00000000">Vienna</subjectLabel>
+               <objectLabel score="0.00000000">1765649</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="45" runID="run7" score="0.19604264" plugType="E">
+         <cluster cluster_id="45-0" score="0.25347543" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.25347543" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Danube</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/city</predicate>
+               <object>http://dbpedia.org/resource/Vienna</object>
+               <subjectLabel score="0.13368858">Danube</subjectLabel>
+               <objectLabel score="0.00000000">Vienna</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="45-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Austria-Hungary</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/capital</predicate>
+               <object>http://dbpedia.org/resource/Vienna</object>
+               <subjectLabel score="0.00000000">Austria-Hungary</subjectLabel>
+               <objectLabel score="0.00000000">Vienna</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="45-2" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://dbpedia.org/resource/Vienna</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/populationTotal</predicate>
+               <object>1765649</object>
+               <subjectLabel score="0.00000000">Vienna</subjectLabel>
+               <objectLabel score="0.00000000">1765649</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="46" runID="run7" score="0.19604264" plugType="E">
+         <cluster cluster_id="46-0" score="0.25347543" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.25347543" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Danube</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/city</predicate>
+               <object>http://dbpedia.org/resource/Vienna</object>
+               <subjectLabel score="0.13368858">Danube</subjectLabel>
+               <objectLabel score="0.00000000">Vienna</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="46-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Austrian_Empire</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/capital</predicate>
+               <object>http://dbpedia.org/resource/Vienna</object>
+               <subjectLabel score="0.00000000">Austrian Empire</subjectLabel>
+               <objectLabel score="0.00000000">Vienna</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="46-2" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://dbpedia.org/resource/Vienna</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/populationTotal</predicate>
+               <object>1765649</object>
+               <subjectLabel score="0.00000000">Vienna</subjectLabel>
+               <objectLabel score="0.00000000">1765649</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="47" runID="run7" score="0.19604264" plugType="E">
+         <cluster cluster_id="47-0" score="0.25347543" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.25347543" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Danube</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/city</predicate>
+               <object>http://dbpedia.org/resource/Vienna</object>
+               <subjectLabel score="0.13368858">Danube</subjectLabel>
+               <objectLabel score="0.00000000">Vienna</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="47-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Duchy_of_Austria</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/capital</predicate>
+               <object>http://dbpedia.org/resource/Vienna</object>
+               <subjectLabel score="0.00000000">Duchy of Austria</subjectLabel>
+               <objectLabel score="0.00000000">Vienna</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="47-2" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://dbpedia.org/resource/Vienna</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/populationTotal</predicate>
+               <object>1765649</object>
+               <subjectLabel score="0.00000000">Vienna</subjectLabel>
+               <objectLabel score="0.00000000">1765649</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="48" runID="run7" score="0.19604264" plugType="E">
+         <cluster cluster_id="48-0" score="0.25347543" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.25347543" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Danube</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/city</predicate>
+               <object>http://dbpedia.org/resource/Vienna</object>
+               <subjectLabel score="0.13368858">Danube</subjectLabel>
+               <objectLabel score="0.00000000">Vienna</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="48-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Federal_State_of_Austria</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/capital</predicate>
+               <object>http://dbpedia.org/resource/Vienna</object>
+               <subjectLabel score="0.00000000">Federal State of Austria</subjectLabel>
+               <objectLabel score="0.00000000">Vienna</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="48-2" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://dbpedia.org/resource/Vienna</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/populationTotal</predicate>
+               <object>1765649</object>
+               <subjectLabel score="0.00000000">Vienna</subjectLabel>
+               <objectLabel score="0.00000000">1765649</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="49" runID="run7" score="0.19604264" plugType="E">
+         <cluster cluster_id="49-0" score="0.25347543" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.25347543" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Danube</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/city</predicate>
+               <object>http://dbpedia.org/resource/Vukovar</object>
+               <subjectLabel score="0.13368858">Danube</subjectLabel>
+               <objectLabel score="0.00000000">Vukovar</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="49-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Syrmia_County</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/capital</predicate>
+               <object>http://dbpedia.org/resource/Vukovar</object>
+               <subjectLabel score="0.00000000">Syrmia County</subjectLabel>
+               <objectLabel score="0.00000000">Vukovar</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="49-2" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://dbpedia.org/resource/Vukovar</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/populationTotal</predicate>
+               <object>27683</object>
+               <subjectLabel score="0.00000000">Vukovar</subjectLabel>
+               <objectLabel score="0.00000000">27683</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="50" runID="run7" score="0.19604264" plugType="E">
+         <cluster cluster_id="50-0" score="0.25347543" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.25347543" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Danube</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/city</predicate>
+               <object>http://dbpedia.org/resource/Vukovar</object>
+               <subjectLabel score="0.13368858">Danube</subjectLabel>
+               <objectLabel score="0.00000000">Vukovar</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="50-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Syrmia_Oblast</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/capital</predicate>
+               <object>http://dbpedia.org/resource/Vukovar</object>
+               <subjectLabel score="0.00000000">Syrmia Oblast</subjectLabel>
+               <objectLabel score="0.00000000">Vukovar</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="50-2" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://dbpedia.org/resource/Vukovar</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/populationTotal</predicate>
+               <object>27683</object>
+               <subjectLabel score="0.00000000">Vukovar</subjectLabel>
+               <objectLabel score="0.00000000">27683</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="51" runID="run7" score="0.19379264" plugType="E">
+         <cluster cluster_id="51-0" score="0.25347543" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.25347543" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Danube</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/city</predicate>
+               <object>http://dbpedia.org/resource/Vukovar</object>
+               <subjectLabel score="0.13368858">Danube</subjectLabel>
+               <objectLabel score="0.00000000">Vukovar</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="51-1" score="0.20000000" sim="0.9625" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/SAO_Eastern_Slavonia,_Baranja_and_Western_Syrmia</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/capital</predicate>
+               <object>http://dbpedia.org/resource/Vukovar</object>
+               <subjectLabel score="0.00000000">SAO Eastern Slavonia, Baranja and Western Syrmia</subjectLabel>
+               <objectLabel score="0.00000000">Vukovar</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Eastern_Slavonia,_Baranja_and_Western_Syrmia_(1995%E2%80%9398)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/capital</predicate>
+               <object>http://dbpedia.org/resource/Vukovar</object>
+               <subjectLabel score="0.00000000">Eastern Slavonia, Baranja and Western Syrmia</subjectLabel>
+               <objectLabel score="0.00000000">Vukovar</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="51-2" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://dbpedia.org/resource/Vukovar</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/populationTotal</predicate>
+               <object>27683</object>
+               <subjectLabel score="0.00000000">Vukovar</subjectLabel>
+               <objectLabel score="0.00000000">27683</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="52" runID="run7" score="0.19286617" plugType="E">
+         <cluster cluster_id="52-0" score="0.25347543" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.25347543" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Danube</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/city</predicate>
+               <object>http://dbpedia.org/resource/Belgrade</object>
+               <subjectLabel score="0.13368858">Danube</subjectLabel>
+               <objectLabel score="0.00000000">Belgrade</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="52-1" score="0.20000000" sim="0.9471" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Kingdom_of_Syrmia</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/capital</predicate>
+               <object>http://dbpedia.org/resource/Belgrade</object>
+               <subjectLabel score="0.00000000">Kingdom of Syrmia</subjectLabel>
+               <objectLabel score="0.00000000">Belgrade</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Kingdom_of_Serbia_(1718%E2%80%9339)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/capital</predicate>
+               <object>http://dbpedia.org/resource/Belgrade</object>
+               <subjectLabel score="0.00000000">Kingdom of Serbia</subjectLabel>
+               <objectLabel score="0.00000000">Belgrade</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Kingdom_of_Serbia</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/capital</predicate>
+               <object>http://dbpedia.org/resource/Belgrade</object>
+               <subjectLabel score="0.00000000">Kingdom of Serbia</subjectLabel>
+               <objectLabel score="0.00000000">Belgrade</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="52-2" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://dbpedia.org/resource/Belgrade</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/populationTotal</predicate>
+               <object>1166763</object>
+               <subjectLabel score="0.00000000">Belgrade</subjectLabel>
+               <objectLabel score="0.00000000">1166763</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="53" runID="run7" score="0.11229641" plugType="L">
+         <cluster cluster_id="53-0" score="0.25347543" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.25347543" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Danube</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/city</predicate>
+               <object>http://dbpedia.org/resource/Sremski_Karlovci</object>
+               <subjectLabel score="0.13368858">Danube</subjectLabel>
+               <objectLabel score="0.00000000">Sremski Karlovci</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="53-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Serbian_Vojvodina</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/capital</predicate>
+               <object>http://dbpedia.org/resource/Sremski_Karlovci</object>
+               <subjectLabel score="0.00000000">Serbian Vojvodina</subjectLabel>
+               <objectLabel score="0.00000000">Sremski Karlovci</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="53-2" score="0.37834978" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.37834978" isFlipped="false" isObjectLiteral="true">
+               <subject>http://yago-knowledge.org/resource/Sremski_Karlovci</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasNumberOfPeople</predicate>
+               <object>http://yago-knowledge.org/resource/"8722"^^xsd:nonNegativeInteger</object>
+               <subjectLabel score="0.44587443">Sremski Karlovci</subjectLabel>
+               <objectLabel score="0.00000000">"8722"</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="54" runID="run7" score="0.09287180" plugType="L">
+         <cluster cluster_id="54-0" score="0.25347543" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.25347543" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Danube</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/city</predicate>
+               <object>http://dbpedia.org/resource/Sremski_Karlovci</object>
+               <subjectLabel score="0.13368858">Danube</subjectLabel>
+               <objectLabel score="0.00000000">Sremski Karlovci</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="54-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Serbian_Vojvodina</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/capital</predicate>
+               <object>http://dbpedia.org/resource/Sremski_Karlovci</object>
+               <subjectLabel score="0.00000000">Serbian Vojvodina</subjectLabel>
+               <objectLabel score="0.00000000">Sremski Karlovci</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="54-2" score="0.23446381" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.23446381" isFlipped="false" isObjectLiteral="true">
+               <subject>http://yago-knowledge.org/resource/Sremski_Mihaljevci</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasNumberOfPeople</predicate>
+               <object>http://yago-knowledge.org/resource/"837"^^xsd:nonNegativeInteger</object>
+               <subjectLabel score="0.08615951">Sremski Mihaljevci</subjectLabel>
+               <objectLabel score="0.00000000">"837"</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+   </results>
+</question>

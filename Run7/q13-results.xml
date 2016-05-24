@@ -1,0 +1,1017 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<question id="13" runID="run7">
+   <string>
+      <![CDATA[Give me the spouses of actors starring in Lethal Weapon?]]>
+   </string>
+   <query>
+      <![CDATA[
+  ?actor  "acted in"       "Lethal Weapon" .
+  ?actor  "is married to"  ?spouse .
+]]>
+   </query>
+   <settings labelSearchTopK="15" plugLabel="true" limited="false" validateTriple="false"/>
+   <stats1 nb_results="31" timeSec="23.6010" memoryMB="220.1343" totalQuins="114" avgQuin_Cluster="1.8387" avgQuin_Bucket="3.6774" nb_plugTR="46"/>
+   <stats2>
+      <ds id="LinkedMDB">
+         <nreq>30</nreq>
+         <nreqs>13</nreqs>
+         <nrecd>48</nrecd>
+      </ds>
+      <ds id="DBpedia">
+         <nreq>492</nreq>
+         <nreqs>17</nreqs>
+         <nrecd>25</nrecd>
+      </ds>
+      <ds id="Yago">
+         <nreq>492</nreq>
+         <nreqs>49</nreqs>
+         <nrecd>72</nrecd>
+      </ds>
+   </stats2>
+   <results>
+      <bucket bucket_id="0" runID="run7" score="0.20879082" plugType="E">
+         <cluster cluster_id="0-0" score="0.25899370" sim="0.9007" norm="1.0000">
+            <quintuple dataset="LinkedMDB" score="0.25899370" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/39022</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/595</object>
+               <subjectLabel score="0.14748425">Lethal Weapon</subjectLabel>
+               <objectLabel score="0.00000000">Tom Atkins</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.24427702" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Tom_Atkins_(actor)</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Lethal_Weapon</object>
+               <subjectLabel score="0.00000000">Tom Atkins</subjectLabel>
+               <objectLabel score="0.11069253">Lethal Weapon</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.22717681" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Lethal_Weapon</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Tom_Atkins_(actor)</object>
+               <subjectLabel score="0.06794201">Lethal Weapon</subjectLabel>
+               <objectLabel score="0.00000000">Tom Atkins</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="0-1" score="0.20000000" sim="0.9700" norm="0.9500">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Garn_Stephens</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/spouse</predicate>
+               <object>http://dbpedia.org/resource/Tom_Atkins_(actor)</object>
+               <subjectLabel score="0.00000000">Garn Stephens</subjectLabel>
+               <objectLabel score="0.00000000">Tom Atkins</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Tom_Atkins_(actor)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/spouse</predicate>
+               <object>http://dbpedia.org/resource/Garn_Stephens</object>
+               <subjectLabel score="0.00000000">Tom Atkins</subjectLabel>
+               <objectLabel score="0.00000000">Garn Stephens</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Garn_Stephens</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/Tom_Atkins_(actor)</object>
+               <subjectLabel score="0.00000000">Garn Stephens</subjectLabel>
+               <objectLabel score="0.00000000">Tom Atkins</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Tom_Atkins_(actor)</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/Garn_Stephens</object>
+               <subjectLabel score="0.00000000">Tom Atkins</subjectLabel>
+               <objectLabel score="0.00000000">Garn Stephens</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="1" runID="run7" score="0.14565433" plugType="L">
+         <cluster cluster_id="1-0" score="0.25899370" sim="1.0000" norm="0.9000">
+            <quintuple dataset="LinkedMDB" score="0.25899370" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/39022</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/10741</object>
+               <subjectLabel score="0.14748425">Lethal Weapon</subjectLabel>
+               <objectLabel score="0.00000000">Grand L. Bush</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="1-1" score="0.44953259" sim="0.9700" norm="0.9500">
+            <quintuple dataset="Yago" score="0.44953259" isFlipped="true" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Sharon_Dahlonega_Raiford_Bush</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/Grand_L._Bush</object>
+               <subjectLabel score="0.00000000">Sharon Dahlonega Raiford Bush</subjectLabel>
+               <objectLabel score="0.62383146">Grand L. Bush</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.44953259" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Grand_L._Bush</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/Sharon_Dahlonega_Raiford_Bush</object>
+               <subjectLabel score="0.62383146">Grand L. Bush</subjectLabel>
+               <objectLabel score="0.00000000">Sharon Dahlonega Raiford Bush</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.33282386" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Grand_L._Bush</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/spouse</predicate>
+               <object>http://dbpedia.org/resource/Sharon_Dahlonega_Raiford_Bush</object>
+               <subjectLabel score="0.33205963">Grand L. Bush</subjectLabel>
+               <objectLabel score="0.00000000">Sharon Dahlonega Raiford Bush</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="2" runID="run7" score="0.14549470" plugType="L">
+         <cluster cluster_id="2-0" score="0.21352427" sim="1.0000" norm="0.9000">
+            <quintuple dataset="LinkedMDB" score="0.21352427" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/58541</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/32926</object>
+               <subjectLabel score="0.03381066">Lethal Vows</subjectLabel>
+               <objectLabel score="0.00000000">Marg Helgenberger</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="2-1" score="0.49316983" sim="0.9700" norm="0.9500">
+            <quintuple dataset="DBpedia" score="0.34942201" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Alan_Rosenberg</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/spouse</predicate>
+               <object>http://dbpedia.org/resource/Marg_Helgenberger</object>
+               <subjectLabel score="0.00000000">Alan Rosenberg</subjectLabel>
+               <objectLabel score="0.37355501">Marg Helgenberger</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.49316983" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Marg_Helgenberger</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/Alan_Rosenberg</object>
+               <subjectLabel score="0.73292457">Marg Helgenberger</subjectLabel>
+               <objectLabel score="0.00000000">Alan Rosenberg</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.34942201" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Marg_Helgenberger</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/spouse</predicate>
+               <object>http://dbpedia.org/resource/Alan_Rosenberg</object>
+               <subjectLabel score="0.37355501">Marg Helgenberger</subjectLabel>
+               <objectLabel score="0.00000000">Alan Rosenberg</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.49316983" isFlipped="true" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Alan_Rosenberg</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/Marg_Helgenberger</object>
+               <subjectLabel score="0.00000000">Alan Rosenberg</subjectLabel>
+               <objectLabel score="0.73292457">Marg Helgenberger</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="3" runID="run7" score="0.14284549" plugType="L">
+         <cluster cluster_id="3-0" score="0.24975373" sim="1.0000" norm="0.9000">
+            <quintuple dataset="LinkedMDB" score="0.24975373" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/39937</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/34322</object>
+               <subjectLabel score="0.12438432">Lethal Weapon 2</subjectLabel>
+               <objectLabel score="0.00000000">Patsy Kensit</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="3-1" score="0.44500997" sim="0.9700" norm="0.9500">
+            <quintuple dataset="Yago" score="0.44500997" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Patsy_Kensit</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/Dan_Donovan_(keyboardist)</object>
+               <subjectLabel score="0.61252490">Patsy Kensit</subjectLabel>
+               <objectLabel score="0.00000000">Dan Donovan</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.33384301" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Patsy_Kensit</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/spouse</predicate>
+               <object>http://dbpedia.org/resource/Dan_Donovan_(keyboardist)</object>
+               <subjectLabel score="0.33460751">Patsy Kensit</subjectLabel>
+               <objectLabel score="0.00000000">Dan Donovan</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.44500997" isFlipped="true" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Dan_Donovan_(keyboardist)</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/Patsy_Kensit</object>
+               <subjectLabel score="0.00000000">Dan Donovan</subjectLabel>
+               <objectLabel score="0.61252490">Patsy Kensit</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="4" runID="run7" score="0.14284549" plugType="L">
+         <cluster cluster_id="4-0" score="0.24975373" sim="1.0000" norm="0.9000">
+            <quintuple dataset="LinkedMDB" score="0.24975373" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/39937</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/34322</object>
+               <subjectLabel score="0.12438432">Lethal Weapon 2</subjectLabel>
+               <objectLabel score="0.00000000">Patsy Kensit</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="4-1" score="0.44500997" sim="0.9700" norm="0.9500">
+            <quintuple dataset="Yago" score="0.44500997" isFlipped="true" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Jeremy_Healy</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/Patsy_Kensit</object>
+               <subjectLabel score="0.00000000">Jeremy Healy</subjectLabel>
+               <objectLabel score="0.61252490">Patsy Kensit</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.33384301" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Patsy_Kensit</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/spouse</predicate>
+               <object>http://dbpedia.org/resource/Jeremy_Healy</object>
+               <subjectLabel score="0.33460751">Patsy Kensit</subjectLabel>
+               <objectLabel score="0.00000000">Jeremy Healy</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.44500997" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Patsy_Kensit</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/Jeremy_Healy</object>
+               <subjectLabel score="0.61252490">Patsy Kensit</subjectLabel>
+               <objectLabel score="0.00000000">Jeremy Healy</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="5" runID="run7" score="0.14284549" plugType="L">
+         <cluster cluster_id="5-0" score="0.24975373" sim="1.0000" norm="0.9000">
+            <quintuple dataset="LinkedMDB" score="0.24975373" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/39937</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/34322</object>
+               <subjectLabel score="0.12438432">Lethal Weapon 2</subjectLabel>
+               <objectLabel score="0.00000000">Patsy Kensit</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="5-1" score="0.44500997" sim="0.9700" norm="0.9500">
+            <quintuple dataset="Yago" score="0.44500997" isFlipped="true" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Jim_Kerr</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/Patsy_Kensit</object>
+               <subjectLabel score="0.00000000">Jim Kerr</subjectLabel>
+               <objectLabel score="0.61252490">Patsy Kensit</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.33384301" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Patsy_Kensit</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/spouse</predicate>
+               <object>http://dbpedia.org/resource/Jim_Kerr</object>
+               <subjectLabel score="0.33460751">Patsy Kensit</subjectLabel>
+               <objectLabel score="0.00000000">Jim Kerr</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.44500997" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Patsy_Kensit</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/Jim_Kerr</object>
+               <subjectLabel score="0.61252490">Patsy Kensit</subjectLabel>
+               <objectLabel score="0.00000000">Jim Kerr</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="6" runID="run7" score="0.14284549" plugType="L">
+         <cluster cluster_id="6-0" score="0.24975373" sim="1.0000" norm="0.9000">
+            <quintuple dataset="LinkedMDB" score="0.24975373" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/39937</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/34322</object>
+               <subjectLabel score="0.12438432">Lethal Weapon 2</subjectLabel>
+               <objectLabel score="0.00000000">Patsy Kensit</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="6-1" score="0.44500997" sim="0.9700" norm="0.9500">
+            <quintuple dataset="Yago" score="0.44500997" isFlipped="true" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Liam_Gallagher</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/Patsy_Kensit</object>
+               <subjectLabel score="0.00000000">Liam Gallagher</subjectLabel>
+               <objectLabel score="0.61252490">Patsy Kensit</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.33384301" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Patsy_Kensit</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/spouse</predicate>
+               <object>http://dbpedia.org/resource/Liam_Gallagher</object>
+               <subjectLabel score="0.33460751">Patsy Kensit</subjectLabel>
+               <objectLabel score="0.00000000">Liam Gallagher</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.44500997" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Patsy_Kensit</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/Liam_Gallagher</object>
+               <subjectLabel score="0.61252490">Patsy Kensit</subjectLabel>
+               <objectLabel score="0.00000000">Liam Gallagher</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="7" runID="run7" score="0.13736127" plugType="L">
+         <cluster cluster_id="7-0" score="0.24975373" sim="1.0000" norm="0.9000">
+            <quintuple dataset="LinkedMDB" score="0.24975373" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/39940</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/29522</object>
+               <subjectLabel score="0.12438432">Lethal Weapon 4</subjectLabel>
+               <objectLabel score="0.00000000">Jet Li</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="7-1" score="0.41856015" sim="0.9700" norm="0.9500">
+            <quintuple dataset="Yago" score="0.41856015" isFlipped="true" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Nina_Li_(actress)</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/Jet_Li</object>
+               <subjectLabel score="0.00000000">Nina Li</subjectLabel>
+               <objectLabel score="0.54640036">Jet Li</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.34252037" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Jet_Li</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/spouse</predicate>
+               <object>http://dbpedia.org/resource/Nina_Li_(actress)</object>
+               <subjectLabel score="0.35630092">Jet Li</subjectLabel>
+               <objectLabel score="0.00000000">Nina Li</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.41856015" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Jet_Li</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/Nina_Li_(actress)</object>
+               <subjectLabel score="0.54640036">Jet Li</subjectLabel>
+               <objectLabel score="0.00000000">Nina Li</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.34252037" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Nina_Li_(actress)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/spouse</predicate>
+               <object>http://dbpedia.org/resource/Jet_Li</object>
+               <subjectLabel score="0.00000000">Nina Li</subjectLabel>
+               <objectLabel score="0.35630092">Jet Li</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="8" runID="run7" score="0.13687546" plugType="L">
+         <cluster cluster_id="8-0" score="0.24975373" sim="0.9700" norm="0.9000">
+            <quintuple dataset="LinkedMDB" score="0.24975373" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/39939</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/31142</object>
+               <subjectLabel score="0.12438432">Lethal Weapon 3</subjectLabel>
+               <objectLabel score="0.00000000">Rene Russo</objectLabel>
+            </quintuple>
+            <quintuple dataset="LinkedMDB" score="0.24975373" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/39940</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/31142</object>
+               <subjectLabel score="0.12438432">Lethal Weapon 4</subjectLabel>
+               <objectLabel score="0.00000000">Rene Russo</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="8-1" score="0.42353471" sim="0.9700" norm="0.9500">
+            <quintuple dataset="Yago" score="0.42353471" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Rene_Russo</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/Dan_Gilroy</object>
+               <subjectLabel score="0.55883675">Rene Russo</subjectLabel>
+               <objectLabel score="0.00000000">Dan Gilroy</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.42353471" isFlipped="true" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Dan_Gilroy</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/Rene_Russo</object>
+               <subjectLabel score="0.00000000">Dan Gilroy</subjectLabel>
+               <objectLabel score="0.55883675">Rene Russo</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.32738714" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Dan_Gilroy</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/spouse</predicate>
+               <object>http://dbpedia.org/resource/Rene_Russo</object>
+               <subjectLabel score="0.00000000">Dan Gilroy</subjectLabel>
+               <objectLabel score="0.31846784">Rene Russo</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="9" runID="run7" score="0.13479095" plugType="L">
+         <cluster cluster_id="9-0" score="0.21252247" sim="1.0000" norm="0.9000">
+            <quintuple dataset="LinkedMDB" score="0.21252247" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/57665</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/45904</object>
+               <subjectLabel score="0.03130617">Lethal Angels</subjectLabel>
+               <objectLabel score="0.00000000">Cherrie Ying</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="9-1" score="0.44252516" sim="0.9700" norm="0.9500">
+            <quintuple dataset="DBpedia" score="0.34880540" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Jordan_Chan</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/spouse</predicate>
+               <object>http://dbpedia.org/resource/Cherrie_Ying</object>
+               <subjectLabel score="0.00000000">Jordan Chan</subjectLabel>
+               <objectLabel score="0.37201348">Cherrie Ying</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.34880540" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Cherrie_Ying</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/spouse</predicate>
+               <object>http://dbpedia.org/resource/Jordan_Chan</object>
+               <subjectLabel score="0.37201348">Cherrie Ying</subjectLabel>
+               <objectLabel score="0.00000000">Jordan Chan</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.44252516" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Cherrie_Ying</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/Jordan_Chan</object>
+               <subjectLabel score="0.60631289">Cherrie Ying</subjectLabel>
+               <objectLabel score="0.00000000">Jordan Chan</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.44252516" isFlipped="true" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Jordan_Chan</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/Cherrie_Ying</object>
+               <subjectLabel score="0.00000000">Jordan Chan</subjectLabel>
+               <objectLabel score="0.60631289">Cherrie Ying</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="10" runID="run7" score="0.13298689" plugType="L">
+         <cluster cluster_id="10-0" score="0.25899370" sim="1.0000" norm="0.9000">
+            <quintuple dataset="LinkedMDB" score="0.25899370" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/39022</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/46870</object>
+               <subjectLabel score="0.14748425">Lethal Weapon</subjectLabel>
+               <objectLabel score="0.00000000">Mary Ellen Trainor</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="10-1" score="0.38843893" sim="0.9700" norm="0.9500">
+            <quintuple dataset="Yago" score="0.38843893" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Mary_Ellen_Trainor</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/Robert_Zemeckis</object>
+               <subjectLabel score="0.47109731">Mary Ellen Trainor</subjectLabel>
+               <objectLabel score="0.00000000">Robert Zemeckis</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.38843893" isFlipped="true" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Robert_Zemeckis</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/Mary_Ellen_Trainor</object>
+               <subjectLabel score="0.00000000">Robert Zemeckis</subjectLabel>
+               <objectLabel score="0.47109731">Mary Ellen Trainor</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.38206432" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Mary_Ellen_Trainor</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/spouse</predicate>
+               <object>http://dbpedia.org/resource/Robert_Zemeckis</object>
+               <subjectLabel score="0.45516079">Mary Ellen Trainor</subjectLabel>
+               <objectLabel score="0.00000000">Robert Zemeckis</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="11" runID="run7" score="0.12677684" plugType="L">
+         <cluster cluster_id="11-0" score="0.21243297" sim="1.0000" norm="0.9000">
+            <quintuple dataset="LinkedMDB" score="0.21243297" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/18377</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/30377</object>
+               <subjectLabel score="0.03108241">Holy Weapon</subjectLabel>
+               <objectLabel score="0.00000000">Michelle Yeoh</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="11-1" score="0.40396140" sim="0.9700" norm="0.9500">
+            <quintuple dataset="DBpedia" score="0.37616561" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Michelle_Yeoh</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/spouse</predicate>
+               <object>http://dbpedia.org/resource/Dickson_Poon</object>
+               <subjectLabel score="0.44041400">Michelle Yeoh</subjectLabel>
+               <objectLabel score="0.00000000">Dickson Poon</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.40396140" isFlipped="true" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Dickson_Poon</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/Michelle_Yeoh</object>
+               <subjectLabel score="0.00000000">Dickson Poon</subjectLabel>
+               <objectLabel score="0.50990348">Michelle Yeoh</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.40396140" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Michelle_Yeoh</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/Dickson_Poon</object>
+               <subjectLabel score="0.50990348">Michelle Yeoh</subjectLabel>
+               <objectLabel score="0.00000000">Dickson Poon</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="12" runID="run7" score="0.12481986" plugType="L">
+         <cluster cluster_id="12-0" score="0.21243297" sim="1.0000" norm="0.9000">
+            <quintuple dataset="LinkedMDB" score="0.21243297" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/18377</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/30377</object>
+               <subjectLabel score="0.03108241">Holy Weapon</subjectLabel>
+               <objectLabel score="0.00000000">Michelle Yeoh</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="12-1" score="0.40396140" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.40396140" isFlipped="true" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Jean_Todt</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/Michelle_Yeoh</object>
+               <subjectLabel score="0.00000000">Jean Todt</subjectLabel>
+               <objectLabel score="0.50990348">Michelle Yeoh</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.40396140" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Michelle_Yeoh</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/Jean_Todt</object>
+               <subjectLabel score="0.50990348">Michelle Yeoh</subjectLabel>
+               <objectLabel score="0.00000000">Jean Todt</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="13" runID="run7" score="0.12107918" plugType="L">
+         <cluster cluster_id="13-0" score="0.21243297" sim="1.0000" norm="0.9000">
+            <quintuple dataset="LinkedMDB" score="0.21243297" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/18377</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/30405</object>
+               <subjectLabel score="0.03108241">Holy Weapon</subjectLabel>
+               <objectLabel score="0.00000000">Maggie Cheung</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="13-1" score="0.37648221" sim="0.9700" norm="0.9500">
+            <quintuple dataset="Yago" score="0.37648221" isFlipped="true" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Olivier_Assayas</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/Maggie_Cheung</object>
+               <subjectLabel score="0.00000000">Olivier Assayas</subjectLabel>
+               <objectLabel score="0.44120551">Maggie Cheung</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.36187052" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Olivier_Assayas</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/spouse</predicate>
+               <object>http://dbpedia.org/resource/Maggie_Cheung</object>
+               <subjectLabel score="0.00000000">Olivier Assayas</subjectLabel>
+               <objectLabel score="0.40467628">Maggie Cheung</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.37648221" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Maggie_Cheung</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/Olivier_Assayas</object>
+               <subjectLabel score="0.44120551">Maggie Cheung</subjectLabel>
+               <objectLabel score="0.00000000">Olivier Assayas</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.36187052" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Maggie_Cheung</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/spouse</predicate>
+               <object>http://dbpedia.org/resource/Olivier_Assayas</object>
+               <subjectLabel score="0.40467628">Maggie Cheung</subjectLabel>
+               <objectLabel score="0.00000000">Olivier Assayas</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="14" runID="run7" score="0.11949566" plugType="L">
+         <cluster cluster_id="14-0" score="0.21207524" sim="1.0000" norm="0.9000">
+            <quintuple dataset="LinkedMDB" score="0.21207524" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/58489</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/31329</object>
+               <subjectLabel score="0.03018808">Lethal Victims</subjectLabel>
+               <objectLabel score="0.00000000">Martin Landau</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="14-1" score="0.37802674" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.37802674" isFlipped="true" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Barbara_Bain</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/Martin_Landau</object>
+               <subjectLabel score="0.00000000">Barbara Bain</subjectLabel>
+               <objectLabel score="0.44506684">Martin Landau</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.37802674" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Martin_Landau</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/Barbara_Bain</object>
+               <subjectLabel score="0.44506684">Martin Landau</subjectLabel>
+               <objectLabel score="0.00000000">Barbara Bain</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="15" runID="run7" score="0.11840686" plugType="L">
+         <cluster cluster_id="15-0" score="0.21753146" sim="1.0000" norm="0.9000">
+            <quintuple dataset="LinkedMDB" score="0.21753146" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/61673</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/40619</object>
+               <subjectLabel score="0.04382863">Lethal Eviction</subjectLabel>
+               <objectLabel score="0.00000000">Jennifer Carpenter</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="15-1" score="0.36719374" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.36719374" isFlipped="true" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Michael_C._Hall</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/Jennifer_Carpenter</object>
+               <subjectLabel score="0.00000000">Michael C. Hall</subjectLabel>
+               <objectLabel score="0.41798435">Jennifer Carpenter</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.36719374" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Jennifer_Carpenter</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/Michael_C._Hall</object>
+               <subjectLabel score="0.41798435">Jennifer Carpenter</subjectLabel>
+               <objectLabel score="0.00000000">Michael C. Hall</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="16" runID="run7" score="0.11109507" plugType="L">
+         <cluster cluster_id="16-0" score="0.21352427" sim="1.0000" norm="0.9000">
+            <quintuple dataset="LinkedMDB" score="0.21352427" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/58541</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/31400</object>
+               <subjectLabel score="0.03381066">Lethal Vows</subjectLabel>
+               <objectLabel score="0.00000000">John Ritter</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="16-1" score="0.32726412" sim="0.9700" norm="0.9500">
+            <quintuple dataset="Yago" score="0.32726412" isFlipped="true" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Nancy_Morgan</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/John_Ritter</object>
+               <subjectLabel score="0.00000000">Nancy Morgan</subjectLabel>
+               <objectLabel score="0.31816029">John Ritter</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.32181159" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Nancy_Morgan</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/spouse</predicate>
+               <object>http://dbpedia.org/resource/John_Ritter</object>
+               <subjectLabel score="0.00000000">Nancy Morgan</subjectLabel>
+               <objectLabel score="0.30452895">John Ritter</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.32726412" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/John_Ritter</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/Nancy_Morgan</object>
+               <subjectLabel score="0.31816029">John Ritter</subjectLabel>
+               <objectLabel score="0.00000000">Nancy Morgan</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="17" runID="run7" score="0.10950965" plugType="L">
+         <cluster cluster_id="17-0" score="0.21352427" sim="1.0000" norm="0.9000">
+            <quintuple dataset="LinkedMDB" score="0.21352427" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/58541</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/31400</object>
+               <subjectLabel score="0.03381066">Lethal Vows</subjectLabel>
+               <objectLabel score="0.00000000">John Ritter</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="17-1" score="0.32726412" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.32726412" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/John_Ritter</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/Amy_Yasbeck</object>
+               <subjectLabel score="0.31816029">John Ritter</subjectLabel>
+               <objectLabel score="0.00000000">Amy Yasbeck</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.32726412" isFlipped="true" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Amy_Yasbeck</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/John_Ritter</object>
+               <subjectLabel score="0.00000000">Amy Yasbeck</subjectLabel>
+               <objectLabel score="0.31816029">John Ritter</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="18" runID="run7" score="0.10851242" plugType="L">
+         <cluster cluster_id="18-0" score="0.21352427" sim="1.0000" norm="0.9000">
+            <quintuple dataset="LinkedMDB" score="0.21352427" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/62010</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/37681</object>
+               <subjectLabel score="0.03381066">Lethal Dose</subjectLabel>
+               <objectLabel score="0.00000000">Tom Hardy</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="18-1" score="0.32233954" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.32233954" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Tom_Hardy</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/Charlotte_Riley</object>
+               <subjectLabel score="0.30584884">Tom Hardy</subjectLabel>
+               <objectLabel score="0.00000000">Charlotte Riley</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.32233954" isFlipped="true" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Charlotte_Riley</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/Tom_Hardy</object>
+               <subjectLabel score="0.00000000">Charlotte Riley</subjectLabel>
+               <objectLabel score="0.30584884">Tom Hardy</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="19" runID="run7" score="0.10041149" plugType="L">
+         <cluster cluster_id="19-0" score="0.25899370" sim="1.0000" norm="0.9000">
+            <quintuple dataset="LinkedMDB" score="0.25899370" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/39022</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/10741</object>
+               <subjectLabel score="0.14748425">Lethal Weapon</subjectLabel>
+               <objectLabel score="0.00000000">Grand L. Bush</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="19-1" score="0.23686547" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.23686547" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/George_W._Bush</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/Laura_Bush</object>
+               <subjectLabel score="0.09216367">George W. Bush</subjectLabel>
+               <objectLabel score="0.00000000">Laura Bush</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.23686547" isFlipped="true" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Laura_Bush</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/George_W._Bush</object>
+               <subjectLabel score="0.00000000">Laura Bush</subjectLabel>
+               <objectLabel score="0.09216367">George W. Bush</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="20" runID="run7" score="0.09970727" plugType="L">
+         <cluster cluster_id="20-0" score="0.21352427" sim="1.0000" norm="0.9000">
+            <quintuple dataset="LinkedMDB" score="0.21352427" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/62010</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/37681</object>
+               <subjectLabel score="0.03381066">Lethal Dose</subjectLabel>
+               <objectLabel score="0.00000000">Tom Hardy</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="20-1" score="0.27885731" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.27885731" isFlipped="true" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Simone_Ravelle_Hardy</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/Tom_Hardy_Sr.</object>
+               <subjectLabel score="0.00000000">Simone Ravelle Hardy</subjectLabel>
+               <objectLabel score="0.19714327">Tom Hardy Sr.</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.27885731" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Tom_Hardy_Sr.</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/Simone_Ravelle_Hardy</object>
+               <subjectLabel score="0.19714327">Tom Hardy Sr.</subjectLabel>
+               <objectLabel score="0.00000000">Simone Ravelle Hardy</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="21" runID="run7" score="0.09969635" plugType="L">
+         <cluster cluster_id="21-0" score="0.25899370" sim="1.0000" norm="0.9000">
+            <quintuple dataset="LinkedMDB" score="0.25899370" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/39022</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/10741</object>
+               <subjectLabel score="0.14748425">Lethal Weapon</subjectLabel>
+               <objectLabel score="0.00000000">Grand L. Bush</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="21-1" score="0.23333394" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.23333394" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Laura_Bush</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/Presidency_of_George_W._Bush</object>
+               <subjectLabel score="0.08333485">Laura Bush</subjectLabel>
+               <objectLabel score="0.00000000">Presidency of George W. Bush</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.23333394" isFlipped="true" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Presidency_of_George_W._Bush</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/Laura_Bush</object>
+               <subjectLabel score="0.00000000">Presidency of George W. Bush</subjectLabel>
+               <objectLabel score="0.08333485">Laura Bush</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="22" runID="run7" score="0.09511241" plugType="L">
+         <cluster cluster_id="22-0" score="0.21207524" sim="1.0000" norm="0.9000">
+            <quintuple dataset="LinkedMDB" score="0.21207524" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/58489</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/49466</object>
+               <subjectLabel score="0.03018808">Lethal Victims</subjectLabel>
+               <objectLabel score="0.00000000">Frank Stallone</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="22-1" score="0.25761567" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.25761567" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Sylvester_Stallone</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/Jennifer_Flavin</object>
+               <subjectLabel score="0.14403917">Sylvester Stallone</subjectLabel>
+               <objectLabel score="0.00000000">Jennifer Flavin</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.25761567" isFlipped="true" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Jennifer_Flavin</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/Sylvester_Stallone</object>
+               <subjectLabel score="0.00000000">Jennifer Flavin</subjectLabel>
+               <objectLabel score="0.14403917">Sylvester Stallone</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="23" runID="run7" score="0.09511241" plugType="L">
+         <cluster cluster_id="23-0" score="0.21207524" sim="1.0000" norm="0.9000">
+            <quintuple dataset="LinkedMDB" score="0.21207524" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/58489</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/49466</object>
+               <subjectLabel score="0.03018808">Lethal Victims</subjectLabel>
+               <objectLabel score="0.00000000">Frank Stallone</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="23-1" score="0.25761567" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.25761567" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Sylvester_Stallone</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/Brigitte_Nielsen</object>
+               <subjectLabel score="0.14403917">Sylvester Stallone</subjectLabel>
+               <objectLabel score="0.00000000">Brigitte Nielsen</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.25761567" isFlipped="true" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Brigitte_Nielsen</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/Sylvester_Stallone</object>
+               <subjectLabel score="0.00000000">Brigitte Nielsen</subjectLabel>
+               <objectLabel score="0.14403917">Sylvester Stallone</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="24" runID="run7" score="0.09369536" plugType="L">
+         <cluster cluster_id="24-0" score="0.21243297" sim="1.0000" norm="0.9000">
+            <quintuple dataset="LinkedMDB" score="0.21243297" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/18377</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/52988</object>
+               <subjectLabel score="0.03108241">Holy Weapon</subjectLabel>
+               <objectLabel score="0.00000000">Damian Lau</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="24-1" score="0.25026015" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.25026015" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Sean_Lau</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/Amy_Kwok</object>
+               <subjectLabel score="0.12565036">Sean Lau</subjectLabel>
+               <objectLabel score="0.00000000">Amy Kwok</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.25026015" isFlipped="true" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Amy_Kwok</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/Sean_Lau</object>
+               <subjectLabel score="0.00000000">Amy Kwok</subjectLabel>
+               <objectLabel score="0.12565036">Sean Lau</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="25" runID="run7" score="0.09296892" plugType="L">
+         <cluster cluster_id="25-0" score="0.21753146" sim="1.0000" norm="0.9000">
+            <quintuple dataset="LinkedMDB" score="0.21753146" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/61673</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/40619</object>
+               <subjectLabel score="0.04382863">Lethal Eviction</subjectLabel>
+               <objectLabel score="0.00000000">Jennifer Carpenter</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="25-1" score="0.24157430" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.24157430" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Jennifer_Garner</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/Scott_Foley</object>
+               <subjectLabel score="0.10393574">Jennifer Garner</subjectLabel>
+               <objectLabel score="0.00000000">Scott Foley</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.24157430" isFlipped="true" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Scott_Foley</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/Jennifer_Garner</object>
+               <subjectLabel score="0.00000000">Scott Foley</subjectLabel>
+               <objectLabel score="0.10393574">Jennifer Garner</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="26" runID="run7" score="0.09296892" plugType="L">
+         <cluster cluster_id="26-0" score="0.21753146" sim="1.0000" norm="0.9000">
+            <quintuple dataset="LinkedMDB" score="0.21753146" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/61673</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/40619</object>
+               <subjectLabel score="0.04382863">Lethal Eviction</subjectLabel>
+               <objectLabel score="0.00000000">Jennifer Carpenter</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="26-1" score="0.24157430" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.24157430" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Jennifer_Garner</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/Ben_Affleck</object>
+               <subjectLabel score="0.10393574">Jennifer Garner</subjectLabel>
+               <objectLabel score="0.00000000">Ben Affleck</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.24157430" isFlipped="true" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Ben_Affleck</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/Jennifer_Garner</object>
+               <subjectLabel score="0.00000000">Ben Affleck</subjectLabel>
+               <objectLabel score="0.10393574">Jennifer Garner</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="27" runID="run7" score="0.09294893" plugType="L">
+         <cluster cluster_id="27-0" score="0.21300410" sim="1.0000" norm="0.9000">
+            <quintuple dataset="LinkedMDB" score="0.21300410" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/63830</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/38477</object>
+               <subjectLabel score="0.03251025">Lethal Force</subjectLabel>
+               <objectLabel score="0.00000000">Richard Tyson</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="27-1" score="0.24600295" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.24600295" isFlipped="true" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Robin_Givens</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/Mike_Tyson</object>
+               <subjectLabel score="0.00000000">Robin Givens</subjectLabel>
+               <objectLabel score="0.11500737">Mike Tyson</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="28" runID="run7" score="0.09287305" plugType="L">
+         <cluster cluster_id="28-0" score="0.21753146" sim="1.0000" norm="0.9000">
+            <quintuple dataset="LinkedMDB" score="0.21753146" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/61673</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/40619</object>
+               <subjectLabel score="0.04382863">Lethal Eviction</subjectLabel>
+               <objectLabel score="0.00000000">Jennifer Carpenter</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="28-1" score="0.24110086" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.24110086" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/John_Carpenter</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/Adrienne_Barbeau</object>
+               <subjectLabel score="0.10275215">John Carpenter</subjectLabel>
+               <objectLabel score="0.00000000">Adrienne Barbeau</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.24110086" isFlipped="true" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Adrienne_Barbeau</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/John_Carpenter</object>
+               <subjectLabel score="0.00000000">Adrienne Barbeau</subjectLabel>
+               <objectLabel score="0.10275215">John Carpenter</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="29" runID="run7" score="0.09142208" plugType="L">
+         <cluster cluster_id="29-0" score="0.21252247" sim="1.0000" norm="0.9000">
+            <quintuple dataset="LinkedMDB" score="0.21252247" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/57665</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/45904</object>
+               <subjectLabel score="0.03130617">Lethal Angels</subjectLabel>
+               <objectLabel score="0.00000000">Cherrie Ying</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="29-1" score="0.23894459" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.23894459" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Na_Ying</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/Gao_Feng_(footballer)</object>
+               <subjectLabel score="0.09736148">Na Ying</subjectLabel>
+               <objectLabel score="0.00000000">Gao Feng</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.23894459" isFlipped="true" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Gao_Feng_(footballer)</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/Na_Ying</object>
+               <subjectLabel score="0.00000000">Gao Feng</subjectLabel>
+               <objectLabel score="0.09736148">Na Ying</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="30" runID="run7" score="0.09112161" plugType="L">
+         <cluster cluster_id="30-0" score="0.21252247" sim="1.0000" norm="0.9000">
+            <quintuple dataset="LinkedMDB" score="0.21252247" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/57665</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/45904</object>
+               <subjectLabel score="0.03130617">Lethal Angels</subjectLabel>
+               <objectLabel score="0.00000000">Cherrie Ying</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="30-1" score="0.23746079" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.23746079" isFlipped="true" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Duke_Xiang_of_Jin</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/Mu_Ying</object>
+               <subjectLabel score="0.00000000">Duke Xiang of Jin</subjectLabel>
+               <objectLabel score="0.09365197">Mu Ying</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.23746079" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Mu_Ying</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/Duke_Xiang_of_Jin</object>
+               <subjectLabel score="0.09365197">Mu Ying</subjectLabel>
+               <objectLabel score="0.00000000">Duke Xiang of Jin</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+   </results>
+</question>

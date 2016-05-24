@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<question id="5" runID="run5">
+   <string>
+      <![CDATA[Who is the successor of John F. Kennedy?]]>
+   </string>
+   <query>
+      <![CDATA[
+  ?who  "successor"  "John F. Kennedy" .
+]]>
+   </query>
+   <settings labelSearchTopK="10" plugLabel="false" limited="false" validateTriple="false"/>
+   <stats1 nb_results="6" timeSec="1.6930" memoryMB="95.9634" totalQuins="6" avgQuin_Cluster="1.0000" avgQuin_Bucket="1.0000" nb_plugTR="0"/>
+   <stats2>
+      <ds id="LinkedMDB">
+         <nreq>0</nreq>
+         <nreqs>0</nreqs>
+         <nrecd>0</nrecd>
+      </ds>
+      <ds id="DBpedia">
+         <nreq>20</nreq>
+         <nreqs>2</nreqs>
+         <nrecd>6</nrecd>
+      </ds>
+      <ds id="Yago">
+         <nreq>0</nreq>
+         <nreqs>0</nreqs>
+         <nrecd>0</nrecd>
+      </ds>
+   </stats2>
+   <results>
+      <bucket bucket_id="0" runID="run5" score="0.21271032" plugType="E">
+         <cluster cluster_id="0-0" score="0.23634479" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.23634479" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/James_Michael_Curley</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/successor</predicate>
+               <object>http://dbpedia.org/resource/John_F._Kennedy</object>
+               <subjectLabel score="0.00000000">James Michael Curley</subjectLabel>
+               <objectLabel score="0.09086196">John F. Kennedy</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="1" runID="run5" score="0.21271032" plugType="E">
+         <cluster cluster_id="1-0" score="0.23634479" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.23634479" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Presidency_of_Dwight_D._Eisenhower</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/successor</predicate>
+               <object>http://dbpedia.org/resource/John_F._Kennedy</object>
+               <subjectLabel score="0.00000000">Presidency of Dwight D. Eisenhower</subjectLabel>
+               <objectLabel score="0.09086196">John F. Kennedy</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="2" runID="run5" score="0.21271032" plugType="E">
+         <cluster cluster_id="2-0" score="0.23634479" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.23634479" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Dwight_D._Eisenhower</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/successor</predicate>
+               <object>http://dbpedia.org/resource/John_F._Kennedy</object>
+               <subjectLabel score="0.00000000">Dwight D. Eisenhower</subjectLabel>
+               <objectLabel score="0.09086196">John F. Kennedy</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="3" runID="run5" score="0.21271032" plugType="E">
+         <cluster cluster_id="3-0" score="0.23634479" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.23634479" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/John_F._Kennedy</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/successor</predicate>
+               <object>http://dbpedia.org/resource/Benjamin_A._Smith_II</object>
+               <subjectLabel score="0.09086196">John F. Kennedy</subjectLabel>
+               <objectLabel score="0.00000000">Benjamin A. Smith II</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="4" runID="run5" score="0.21271032" plugType="E">
+         <cluster cluster_id="4-0" score="0.23634479" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.23634479" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/John_F._Kennedy</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/successor</predicate>
+               <object>http://dbpedia.org/resource/Lyndon_B._Johnson</object>
+               <subjectLabel score="0.09086196">John F. Kennedy</subjectLabel>
+               <objectLabel score="0.00000000">Lyndon B. Johnson</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="5" runID="run5" score="0.21271032" plugType="E">
+         <cluster cluster_id="5-0" score="0.23634479" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.23634479" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/John_F._Kennedy</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/successor</predicate>
+               <object>http://dbpedia.org/resource/Tip_O%27Neill</object>
+               <subjectLabel score="0.09086196">John F. Kennedy</subjectLabel>
+               <objectLabel score="0.00000000">Tip O'Neill</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+   </results>
+</question>

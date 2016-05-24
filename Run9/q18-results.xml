@@ -1,0 +1,115 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<question id="18" runID="run9">
+   <string>
+      <![CDATA[Give me the movies acted by Nicolas Cage and John Travolta.]]>
+   </string>
+   <query>
+      <![CDATA[
+  "Nicolas Cage"   "acted in"   ?movie .
+  "John Travolta"  "acted in"   ?movie .
+]]>
+   </query>
+   <settings labelSearchTopK="5" plugLabel="true" limited="false" validateTriple="false"/>
+   <stats1 nb_results="2" timeSec="39.0990" memoryMB="434.7070" totalQuins="10" avgQuin_Cluster="2.5000" avgQuin_Bucket="5.0000" nb_plugTR="171"/>
+   <stats2>
+      <ds id="LinkedMDB">
+         <nreq>7960</nreq>
+         <nreqs>5</nreqs>
+         <nrecd>67</nrecd>
+      </ds>
+      <ds id="DBpedia">
+         <nreq>8390</nreq>
+         <nreqs>2</nreqs>
+         <nrecd>66</nrecd>
+      </ds>
+      <ds id="Yago">
+         <nreq>8110</nreq>
+         <nreqs>3</nreqs>
+         <nrecd>49</nrecd>
+      </ds>
+   </stats2>
+   <results>
+      <bucket bucket_id="0" runID="run9" score="0.33713667" plugType="E">
+         <cluster cluster_id="0-0" score="0.40021526" sim="0.9007" norm="1.0000">
+            <quintuple dataset="Yago" score="0.40021526" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Nicolas_Cage</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Face/Off</object>
+               <subjectLabel score="0.50053813">Nicolas Cage</subjectLabel>
+               <objectLabel score="0.00000000">Face/Off</objectLabel>
+            </quintuple>
+            <quintuple dataset="LinkedMDB" score="0.33959827" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/1215</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/49581</object>
+               <subjectLabel score="0.00000000">Face/Off</subjectLabel>
+               <objectLabel score="0.34899566">Nicolas Cage</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.29809113" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Face/Off</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Nicolas_Cage</object>
+               <subjectLabel score="0.00000000">Face/Off</subjectLabel>
+               <objectLabel score="0.24522781">Nicolas Cage</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="0-1" score="0.34839568" sim="0.9007" norm="1.0000">
+            <quintuple dataset="LinkedMDB" score="0.32266117" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/1215</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/29872</object>
+               <subjectLabel score="0.00000000">Face/Off</subjectLabel>
+               <objectLabel score="0.30665291">John Travolta</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.34839568" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/John_Travolta</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Face/Off</object>
+               <subjectLabel score="0.37098919">John Travolta</subjectLabel>
+               <objectLabel score="0.00000000">Face/Off</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.28639214" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Face/Off</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/John_Travolta</object>
+               <subjectLabel score="0.00000000">Face/Off</subjectLabel>
+               <objectLabel score="0.21598033">John Travolta</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="1" runID="run9" score="0.32016280" plugType="E">
+         <cluster cluster_id="1-0" score="0.40021526" sim="0.9004" norm="0.9500">
+            <quintuple dataset="Yago" score="0.40021526" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Nicolas_Cage</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Welcome_to_Hollywood</object>
+               <subjectLabel score="0.50053813">Nicolas Cage</subjectLabel>
+               <objectLabel score="0.00000000">Welcome to Hollywood</objectLabel>
+            </quintuple>
+            <quintuple dataset="LinkedMDB" score="0.33959827" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/11599</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/49581</object>
+               <subjectLabel score="0.00000000">Welcome to Hollywood</subjectLabel>
+               <objectLabel score="0.34899566">Nicolas Cage</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="1-1" score="0.34839568" sim="0.9004" norm="0.9500">
+            <quintuple dataset="LinkedMDB" score="0.32266117" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/11599</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/29872</object>
+               <subjectLabel score="0.00000000">Welcome to Hollywood</subjectLabel>
+               <objectLabel score="0.30665291">John Travolta</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.34839568" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/John_Travolta</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Welcome_to_Hollywood</object>
+               <subjectLabel score="0.37098919">John Travolta</subjectLabel>
+               <objectLabel score="0.00000000">Welcome to Hollywood</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+   </results>
+</question>

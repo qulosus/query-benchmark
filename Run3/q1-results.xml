@@ -1,0 +1,131 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<question id="1" runID="run3">
+   <string>
+      <![CDATA[How many people live in Brazil?]]>
+   </string>
+   <query>
+      <![CDATA[
+  "Brazil"  "population"  ?population .
+]]>
+   </query>
+   <settings labelSearchTopK="20" plugLabel="false" limited="false" validateTriple="false"/>
+   <stats1 nb_results="9" timeSec="1.0510" memoryMB="73.4321" totalQuins="9" avgQuin_Cluster="1.0000" avgQuin_Bucket="1.0000" nb_plugTR="0"/>
+   <stats2>
+      <ds id="LinkedMDB">
+         <nreq>40</nreq>
+         <nreqs>1</nreqs>
+         <nrecd>1</nrecd>
+      </ds>
+      <ds id="DBpedia">
+         <nreq>80</nreq>
+         <nreqs>1</nreqs>
+         <nrecd>1</nrecd>
+      </ds>
+      <ds id="Yago">
+         <nreq>80</nreq>
+         <nreqs>7</nreqs>
+         <nrecd>7</nrecd>
+      </ds>
+   </stats2>
+   <results>
+      <bucket bucket_id="0" runID="run3" score="0.21536505" plugType="E">
+         <cluster cluster_id="0-0" score="0.23929449" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.23929449" isFlipped="false" isObjectLiteral="true">
+               <subject>http://dbpedia.org/resource/Brazil</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/populationTotal</predicate>
+               <object>201032714</object>
+               <subjectLabel score="0.09823621">Brazil</subjectLabel>
+               <objectLabel score="0.00000000">201032714</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="1" runID="run3" score="0.21482855" plugType="E">
+         <cluster cluster_id="1-0" score="0.23869838" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.23869838" isFlipped="false" isObjectLiteral="true">
+               <subject>http://yago-knowledge.org/resource/Brazil</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasNumberOfPeople</predicate>
+               <object>http://yago-knowledge.org/resource/"192376496"^^xsd:nonNegativeInteger</object>
+               <subjectLabel score="0.09674594">Brazil</subjectLabel>
+               <objectLabel score="0.00000000">"192376496"</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="2" runID="run3" score="0.19700351" plugType="E">
+         <cluster cluster_id="2-0" score="0.21889278" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.21889278" isFlipped="false" isObjectLiteral="true">
+               <subject>http://yago-knowledge.org/resource/Vitória,_Brazil</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasNumberOfPeople</predicate>
+               <object>http://yago-knowledge.org/resource/"313312"^^xsd:nonNegativeInteger</object>
+               <subjectLabel score="0.04723194">Vitória, Brazil</subjectLabel>
+               <objectLabel score="0.00000000">"313312"</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="3" runID="run3" score="0.19536230" plugType="E">
+         <cluster cluster_id="3-0" score="0.21706921" sim="1.0000" norm="0.9000">
+            <quintuple dataset="LinkedMDB" score="0.21706921" isFlipped="false" isObjectLiteral="true">
+               <subject>http://data.linkedmdb.org/resource/country/BR</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/country_population</predicate>
+               <object>191908000</object>
+               <subjectLabel score="0.04267301">Brazil</subjectLabel>
+               <objectLabel score="0.00000000">191908000</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="4" runID="run3" score="0.19426202" plugType="E">
+         <cluster cluster_id="4-0" score="0.21584668" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.21584668" isFlipped="false" isObjectLiteral="true">
+               <subject>http://yago-knowledge.org/resource/North_Region,_Brazil</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasNumberOfPeople</predicate>
+               <object>http://yago-knowledge.org/resource/"14726059"^^xsd:nonNegativeInteger</object>
+               <subjectLabel score="0.03961668">North Region, Brazil</subjectLabel>
+               <objectLabel score="0.00000000">"14726059"</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="5" runID="run3" score="0.19422035" plugType="E">
+         <cluster cluster_id="5-0" score="0.21580038" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.21580038" isFlipped="false" isObjectLiteral="true">
+               <subject>http://yago-knowledge.org/resource/South_Region,_Brazil</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasNumberOfPeople</predicate>
+               <object>http://yago-knowledge.org/resource/"27384815"^^xsd:nonNegativeInteger</object>
+               <subjectLabel score="0.03950094">South Region, Brazil</subjectLabel>
+               <objectLabel score="0.00000000">"27384815"</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="6" runID="run3" score="0.19243999" plugType="E">
+         <cluster cluster_id="6-0" score="0.21382220" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.21382220" isFlipped="false" isObjectLiteral="true">
+               <subject>http://yago-knowledge.org/resource/Southeast_Region,_Brazil</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasNumberOfPeople</predicate>
+               <object>http://yago-knowledge.org/resource/"78000000"^^xsd:nonNegativeInteger</object>
+               <subjectLabel score="0.03455549">Southeast Region, Brazil</subjectLabel>
+               <objectLabel score="0.00000000">"78000000"</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="7" runID="run3" score="0.10682854" plugType="E">
+         <cluster cluster_id="7-0" score="0.11869838" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.11869838" isFlipped="false" isObjectLiteral="true">
+               <subject>http://yago-knowledge.org/resource/Brazil</subject>
+               <predicate score="0.40000000">http://yago-knowledge.org/resource/hasPopulationDensity</predicate>
+               <object>http://yago-knowledge.org/resource/"22"^^/km^2</object>
+               <subjectLabel score="0.09674594">Brazil</subjectLabel>
+               <objectLabel score="0.00000000">"22"</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="8" runID="run3" score="0.08900350" plugType="E">
+         <cluster cluster_id="8-0" score="0.09889278" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.09889278" isFlipped="false" isObjectLiteral="true">
+               <subject>http://yago-knowledge.org/resource/Vitória,_Brazil</subject>
+               <predicate score="0.40000000">http://yago-knowledge.org/resource/hasPopulationDensity</predicate>
+               <object>http://yago-knowledge.org/resource/"3360"^^/km^2</object>
+               <subjectLabel score="0.04723194">Vitória, Brazil</subjectLabel>
+               <objectLabel score="0.00000000">"3360"</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+   </results>
+</question>

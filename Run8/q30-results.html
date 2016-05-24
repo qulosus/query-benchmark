@@ -1,0 +1,1394 @@
+<html> 
+  <head>
+    <meta charset='UTF-8'>
+<style>TABLE.outline {
+        BORDER-RIGHT: #c0c0c0 4px double; BORDER-TOP: #c0c0c0 4px double; BORDER-LEFT: #c0c0c0 4px double;
+        FONT-FAMILY: "MS Sans Serif"; BORDER-BOTTOM: #c0c0c0 4px double; align: center
+}
+A {
+        FONT-SIZE: 14px; COLOR: #333399; FONT-FAMILY: "Consolas"; TEXT-DECORATION: none
+}
+A:hover {
+        FONT-SIZE: 14px; COLOR: #778899; FONT-STYLE: normal; FONT-FAMILY: "Consolas"; TEXT-DECORATION: underline overline
+}
+.blockTitle {
+        PADDING-RIGHT: 3px; BORDER-TOP: #6495ed 3px double; PADDING-LEFT: 3px; FONT-WEIGHT: bold;
+        FONT-SIZE: 14px; PADDING-BOTTOM: 3px; COLOR: #daa520; PADDING-TOP: 3px; BORDER-BOTTOM: #6495ed 3px double;
+        BACKGROUND-COLOR: #f0f8ff
+}
+.blockTitle1 {
+        PADDING-RIGHT: 3px; BORDER-TOP: #6495ed 3px double; PADDING-LEFT: 3px; FONT-WEIGHT: bold; FONT-SIZE: 14px;
+        PADDING-BOTTOM: 3px; COLOR: #daa520; PADDING-TOP: 3px; BORDER-BOTTOM: #6495ed 3px double;
+        BACKGROUND-COLOR: #f0f8ff
+}
+TD {
+        FONT-SIZE: 14px; COLOR: #333399; FONT-FAMILY: "Consolas"; TEXT-DECORATION: none
+}
+.tdin {
+        PADDING-RIGHT: 2px; BORDER-TOP: #6495ed 1px double; PADDING-LEFT: 8px; PADDING-BOTTOM: 2px; PADDING-TOP: 2px;
+        BORDER-BOTTOM: #6495ed 1px double;BORDER-LEFT: #6495ed 1px double;BORDER-RIGHT: #6495ed 1px double;
+        FONT-FAMILY: "Consolas";
+}
+.thin {
+        PADDING-RIGHT: 2px; BORDER-TOP: #6495ed 1px double; PADDING-LEFT: 8px; FONT-WEIGHT: bold; FONT-SIZE: 12px;
+        PADDING-BOTTOM: 2px; COLOR: #E45C3A; PADDING-TOP: 2px; BORDER-BOTTOM: #6495ed 1px double;
+        BACKGROUND-COLOR: #DEF7FE; BORDER-LEFT: #6495ed 1px double; BORDER-RIGHT: #6495ed 1px double ;
+        FONT-FAMILY: "Verdana";
+}
+.thin2 {
+        PADDING-RIGHT: 2px; BORDER-TOP: #6495ed 1px double; PADDING-LEFT: 8px; FONT-WEIGHT: bold; FONT-SIZE: 12px;
+        PADDING-BOTTOM: 2px; COLOR: #405EE4; PADDING-TOP: 2px; BORDER-BOTTOM: #6495ed 1px double;
+        BACKGROUND-COLOR: #FFDFF8; BORDER-LEFT: #6495ed 1px double; BORDER-RIGHT: #6495ed 1px double ;
+        FONT-FAMILY: "Verdana";
+}
+TH {
+        FONT-SIZE: 14px; COLOR: #333399; FONT-FAMILY: "Verdana"; TEXT-DECORATION: none;align: left
+}
+INPUT.spt {
+        BORDER-RIGHT: #6495ed 1px double; BORDER-TOP: #6495ed 1px double;
+        BORDER-BOTTOM: #6495ed 1px double;BORDER-LEFT: #6495ed 1px double;
+        PADDING-LEFT: 1px; PADDING-BOTTOM: 1px; PADDING-TOP: 1px;PADDING-RIGHT: 1px;
+        FONT-FAMILY: "Tahoma";
+        WIDTH : 200px ; HEIGHT : 20px;
+}
+INPUT.spb {
+        PADDING-RIGHT: 1px; PADDING-LEFT: 1px;
+        PADDING-BOTTOM: 1px; PADDING-TOP: 1px;
+        BORDER-RIGHT: #6495ed 1px double; BORDER-LEFT: #6495ed 1px double;
+        BORDER-BOTTOM: #6495ed 1px double; BORDER-TOP: #6495ed 1px double;
+        FONT-FAMILY: "Tahoma"; BACKGROUND-COLOR : #A8FFA8;
+        WIDTH : 60px ; HEIGHT : 20px;
+}
+textarea {
+        PADDING-RIGHT: 2px; PADDING-LEFT: 2px;
+        PADDING-BOTTOM: 2px; PADDING-TOP: 2px;
+        BORDER-RIGHT: #6495ed 1px double; BORDER-LEFT: #6495ed 1px double;
+        BORDER-BOTTOM: #6495ed 1px double; BORDER-TOP: #6495ed 1px double;
+        FONT-FAMILY: "Tahoma"; BACKGROUND-COLOR : #FFFFFF;
+        WIDTH : 600px ; HEIGHT : 400px;
+}
+</style>  </head>
+  <body>
+<h2>Query :: q30</h2> <table class='outline' border='1' width = '100%'>
+<tr>
+<td class='tdin' width='50%'> <pre>{
+	"francis ford coppola"	"directed"	?movie .
+}</pre> </td><td class='tdin' width='50%'>Give me all movies directed by Francis Ford Coppola.</td></tr>
+</table>
+ <br/><hr/><br/><table border='0' width = '100%'>
+<tr>
+<td class='tdin' width='35%'><table border='0' width = '100%'><tr>
+<td class='thin' width='40%'># Results</td><td class='tdin' width='40%'><b>49</b></td><td class='tdin' width='20%'></td></tr>
+<tr>
+<td class='thin' width='40%'>Elapsed time</td><td class='tdin' width='40%'>0.653</td><td class='tdin' width='20%'>sec</td></tr>
+<tr>
+<td class='thin' width='40%'>Used memory</td><td class='tdin' width='40%'>77.54247</td><td class='tdin' width='20%'>MB </td></tr>
+<tr>
+<td class='thin' width='40%'>Total Quintuples</td><td class='tdin' width='40%'>106</td><td class='tdin' width='20%'>quins </td></tr>
+<tr>
+<td class='thin' width='40%'>AVG. # quins per cluster</td><td class='tdin' width='40%'>2.1632652</td><td class='tdin' width='20%'>quin/cluster </td></tr>
+<tr>
+<td class='thin' width='40%'>AVG. # quins per bucket</td><td class='tdin' width='40%'>2.1632652</td><td class='tdin' width='20%'>quin/bucket </td></tr>
+<tr>
+<td class='thin' width='40%'># plugged triples</td><td class='tdin' width='40%'>0</td><td class='tdin' width='20%'>triples </td></tr>
+</table>
+</td><td class='tdin' width='25%'><table border='0' width = '100%'><tr>
+<td class='thin' width='40%'>LabelSearch TopK</td><td class='tdin' width='40%'>10</td></tr>
+<tr>
+<td class='thin' width='40%'>Plugin Labels ?</td><td class='tdin' width='40%'>true</td></tr>
+<tr>
+<td class='thin' width='40%'>Limit 1st triple?</td><td class='tdin' width='40%'>false</td></tr>
+<tr>
+<td class='thin' width='40%'>Validate Triples?</td><td class='tdin' width='40%'>false</td></tr>
+</table>
+</td><td class='tdin' width='40%'><table border='0' width = '100%'>
+<tr>
+<td class='tdin' width='25%'></td><td class='thin' width='25%'> # Requests</td><td class='thin' width='25%'> # Solved Requests</td><td class='thin' width='25%'> # Returned Records</td></tr>
+<tr>
+<td class='thin2' width='25%'>LinkedMDB</td><td class='tdin' width='25%'>20</td><td class='tdin' width='25%'>3</td><td class='tdin' width='25%'>43</td></tr>
+<tr>
+<td class='thin2' width='25%'>DBpedia</td><td class='tdin' width='25%'>20</td><td class='tdin' width='25%'>1</td><td class='tdin' width='25%'>30</td></tr>
+<tr>
+<td class='thin2' width='25%'>Yago</td><td class='tdin' width='25%'>20</td><td class='tdin' width='25%'>2</td><td class='tdin' width='25%'>33</td></tr>
+<tr>
+<td class='tdin' width='25%'></td><td class='thin' width='25%'>60</td><td class='thin' width='25%'>6</td><td class='thin' width='25%'>106</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 0</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.28066033</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 0 - 0</b><br/> Score1 = 0.31170299<br/> Sim.  = 0.9004<br/> Norm. = 1.0000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Francis_Ford_Coppola' title='http://yago-knowledge.org/resource/Francis_Ford_Coppola'>Francis Ford Coppola</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/directed' title='http://yago-knowledge.org/resource/directed'>directed</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/New_York_Stories' title='http://yago-knowledge.org/resource/New_York_Stories'>New York Stories</a></td>
+<td class='tdin' width='7%'>0.31170299</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/New_York_Stories' title='http://dbpedia.org/resource/New_York_Stories'>New York Stories</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/director' title='http://dbpedia.org/ontology/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Francis_Ford_Coppola' title='http://dbpedia.org/resource/Francis_Ford_Coppola'>Francis Ford Coppola</a></td>
+<td class='tdin' width='7%'>0.25943574</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/40475' title='http://data.linkedmdb.org/resource/film/40475'>New York Stories</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/director' title='http://data.linkedmdb.org/resource/movie/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/director/8405' title='http://data.linkedmdb.org/resource/director/8405'>Francis Ford Coppola</a></td>
+<td class='tdin' width='7%'>0.25500587</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 1</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.28066033</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 1 - 0</b><br/> Score1 = 0.31170299<br/> Sim.  = 0.9004<br/> Norm. = 1.0000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/44573' title='http://data.linkedmdb.org/resource/film/44573'>One from the Heart</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/director' title='http://data.linkedmdb.org/resource/movie/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/director/8405' title='http://data.linkedmdb.org/resource/director/8405'>Francis Ford Coppola</a></td>
+<td class='tdin' width='7%'>0.25500587</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/One_from_the_Heart' title='http://dbpedia.org/resource/One_from_the_Heart'>One from the Heart</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/director' title='http://dbpedia.org/ontology/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Francis_Ford_Coppola' title='http://dbpedia.org/resource/Francis_Ford_Coppola'>Francis Ford Coppola</a></td>
+<td class='tdin' width='7%'>0.25943574</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Francis_Ford_Coppola' title='http://yago-knowledge.org/resource/Francis_Ford_Coppola'>Francis Ford Coppola</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/directed' title='http://yago-knowledge.org/resource/directed'>directed</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/One_from_the_Heart' title='http://yago-knowledge.org/resource/One_from_the_Heart'>One from the Heart</a></td>
+<td class='tdin' width='7%'>0.31170299</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 2</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.28066033</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 2 - 0</b><br/> Score1 = 0.31170299<br/> Sim.  = 0.9004<br/> Norm. = 1.0000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/39057' title='http://data.linkedmdb.org/resource/film/39057'>Peggy Sue Got Married</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/director' title='http://data.linkedmdb.org/resource/movie/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/director/8405' title='http://data.linkedmdb.org/resource/director/8405'>Francis Ford Coppola</a></td>
+<td class='tdin' width='7%'>0.25500587</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Peggy_Sue_Got_Married' title='http://dbpedia.org/resource/Peggy_Sue_Got_Married'>Peggy Sue Got Married</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/director' title='http://dbpedia.org/ontology/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Francis_Ford_Coppola' title='http://dbpedia.org/resource/Francis_Ford_Coppola'>Francis Ford Coppola</a></td>
+<td class='tdin' width='7%'>0.25943574</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Francis_Ford_Coppola' title='http://yago-knowledge.org/resource/Francis_Ford_Coppola'>Francis Ford Coppola</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/directed' title='http://yago-knowledge.org/resource/directed'>directed</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Peggy_Sue_Got_Married' title='http://yago-knowledge.org/resource/Peggy_Sue_Got_Married'>Peggy Sue Got Married</a></td>
+<td class='tdin' width='7%'>0.31170299</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 3</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.28066033</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 3 - 0</b><br/> Score1 = 0.31170299<br/> Sim.  = 0.9004<br/> Norm. = 1.0000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/39369' title='http://data.linkedmdb.org/resource/film/39369'>Rumble Fish</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/director' title='http://data.linkedmdb.org/resource/movie/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/director/8405' title='http://data.linkedmdb.org/resource/director/8405'>Francis Ford Coppola</a></td>
+<td class='tdin' width='7%'>0.25500587</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Rumble_Fish' title='http://dbpedia.org/resource/Rumble_Fish'>Rumble Fish</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/director' title='http://dbpedia.org/ontology/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Francis_Ford_Coppola' title='http://dbpedia.org/resource/Francis_Ford_Coppola'>Francis Ford Coppola</a></td>
+<td class='tdin' width='7%'>0.25943574</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Francis_Ford_Coppola' title='http://yago-knowledge.org/resource/Francis_Ford_Coppola'>Francis Ford Coppola</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/directed' title='http://yago-knowledge.org/resource/directed'>directed</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Rumble_Fish' title='http://yago-knowledge.org/resource/Rumble_Fish'>Rumble Fish</a></td>
+<td class='tdin' width='7%'>0.31170299</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 4</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.28066033</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 4 - 0</b><br/> Score1 = 0.31170299<br/> Sim.  = 0.9004<br/> Norm. = 1.0000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/20012' title='http://data.linkedmdb.org/resource/film/20012'>Tetro</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/director' title='http://data.linkedmdb.org/resource/movie/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/director/8405' title='http://data.linkedmdb.org/resource/director/8405'>Francis Ford Coppola</a></td>
+<td class='tdin' width='7%'>0.25500587</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Francis_Ford_Coppola' title='http://yago-knowledge.org/resource/Francis_Ford_Coppola'>Francis Ford Coppola</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/directed' title='http://yago-knowledge.org/resource/directed'>directed</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Tetro' title='http://yago-knowledge.org/resource/Tetro'>Tetro</a></td>
+<td class='tdin' width='7%'>0.31170299</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Tetro' title='http://dbpedia.org/resource/Tetro'>Tetro</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/director' title='http://dbpedia.org/ontology/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Francis_Ford_Coppola' title='http://dbpedia.org/resource/Francis_Ford_Coppola'>Francis Ford Coppola</a></td>
+<td class='tdin' width='7%'>0.25943574</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 5</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.28066033</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 5 - 0</b><br/> Score1 = 0.31170299<br/> Sim.  = 0.9004<br/> Norm. = 1.0000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/The_Conversation' title='http://dbpedia.org/resource/The_Conversation'>The Conversation</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/director' title='http://dbpedia.org/ontology/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Francis_Ford_Coppola' title='http://dbpedia.org/resource/Francis_Ford_Coppola'>Francis Ford Coppola</a></td>
+<td class='tdin' width='7%'>0.25943574</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Francis_Ford_Coppola' title='http://yago-knowledge.org/resource/Francis_Ford_Coppola'>Francis Ford Coppola</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/directed' title='http://yago-knowledge.org/resource/directed'>directed</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/The_Conversation' title='http://yago-knowledge.org/resource/The_Conversation'>The Conversation</a></td>
+<td class='tdin' width='7%'>0.31170299</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/38301' title='http://data.linkedmdb.org/resource/film/38301'>The Conversation</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/director' title='http://data.linkedmdb.org/resource/movie/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/director/8405' title='http://data.linkedmdb.org/resource/director/8405'>Francis Ford Coppola</a></td>
+<td class='tdin' width='7%'>0.25500587</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 6</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.28066033</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 6 - 0</b><br/> Score1 = 0.31170299<br/> Sim.  = 0.9004<br/> Norm. = 1.0000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Francis_Ford_Coppola' title='http://yago-knowledge.org/resource/Francis_Ford_Coppola'>Francis Ford Coppola</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/directed' title='http://yago-knowledge.org/resource/directed'>directed</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/The_Cotton_Club_(film)' title='http://yago-knowledge.org/resource/The_Cotton_Club_(film)'>The Cotton Club</a></td>
+<td class='tdin' width='7%'>0.31170299</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/The_Cotton_Club_(film)' title='http://dbpedia.org/resource/The_Cotton_Club_(film)'>The Cotton Club</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/director' title='http://dbpedia.org/ontology/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Francis_Ford_Coppola' title='http://dbpedia.org/resource/Francis_Ford_Coppola'>Francis Ford Coppola</a></td>
+<td class='tdin' width='7%'>0.25943574</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/713' title='http://data.linkedmdb.org/resource/film/713'>The Cotton Club</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/director' title='http://data.linkedmdb.org/resource/movie/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/director/8405' title='http://data.linkedmdb.org/resource/director/8405'>Francis Ford Coppola</a></td>
+<td class='tdin' width='7%'>0.25500587</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 7</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.28066033</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 7 - 0</b><br/> Score1 = 0.31170299<br/> Sim.  = 0.9004<br/> Norm. = 1.0000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/The_Godfather' title='http://dbpedia.org/resource/The_Godfather'>The Godfather</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/director' title='http://dbpedia.org/ontology/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Francis_Ford_Coppola' title='http://dbpedia.org/resource/Francis_Ford_Coppola'>Francis Ford Coppola</a></td>
+<td class='tdin' width='7%'>0.25943574</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Francis_Ford_Coppola' title='http://yago-knowledge.org/resource/Francis_Ford_Coppola'>Francis Ford Coppola</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/directed' title='http://yago-knowledge.org/resource/directed'>directed</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/The_Godfather' title='http://yago-knowledge.org/resource/The_Godfather'>The Godfather</a></td>
+<td class='tdin' width='7%'>0.31170299</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/The_Godfather_(film_series)' title='http://dbpedia.org/resource/The_Godfather_(film_series)'>The Godfather</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/director' title='http://dbpedia.org/ontology/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Francis_Ford_Coppola' title='http://dbpedia.org/resource/Francis_Ford_Coppola'>Francis Ford Coppola</a></td>
+<td class='tdin' width='7%'>0.25943574</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/43338' title='http://data.linkedmdb.org/resource/film/43338'>The Godfather</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/director' title='http://data.linkedmdb.org/resource/movie/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/director/8405' title='http://data.linkedmdb.org/resource/director/8405'>Francis Ford Coppola</a></td>
+<td class='tdin' width='7%'>0.25500587</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 8</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.28066033</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 8 - 0</b><br/> Score1 = 0.31170299<br/> Sim.  = 0.9004<br/> Norm. = 1.0000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/The_Godfather_Part_III' title='http://dbpedia.org/resource/The_Godfather_Part_III'>The Godfather Part III</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/director' title='http://dbpedia.org/ontology/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Francis_Ford_Coppola' title='http://dbpedia.org/resource/Francis_Ford_Coppola'>Francis Ford Coppola</a></td>
+<td class='tdin' width='7%'>0.25943574</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/329' title='http://data.linkedmdb.org/resource/film/329'>The Godfather Part III</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/director' title='http://data.linkedmdb.org/resource/movie/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/director/8405' title='http://data.linkedmdb.org/resource/director/8405'>Francis Ford Coppola</a></td>
+<td class='tdin' width='7%'>0.25500587</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Francis_Ford_Coppola' title='http://yago-knowledge.org/resource/Francis_Ford_Coppola'>Francis Ford Coppola</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/directed' title='http://yago-knowledge.org/resource/directed'>directed</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/The_Godfather_Part_III' title='http://yago-knowledge.org/resource/The_Godfather_Part_III'>The Godfather Part III</a></td>
+<td class='tdin' width='7%'>0.31170299</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Francis_Ford_Coppola' title='http://yago-knowledge.org/resource/Francis_Ford_Coppola'>Francis Ford Coppola</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/directed' title='http://yago-knowledge.org/resource/directed'>directed</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/The_Godfather_Part_II' title='http://yago-knowledge.org/resource/The_Godfather_Part_II'>The Godfather Part II</a></td>
+<td class='tdin' width='7%'>0.31170299</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/38370' title='http://data.linkedmdb.org/resource/film/38370'>The Godfather Part II</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/director' title='http://data.linkedmdb.org/resource/movie/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/director/8405' title='http://data.linkedmdb.org/resource/director/8405'>Francis Ford Coppola</a></td>
+<td class='tdin' width='7%'>0.25500587</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/The_Godfather_Part_II' title='http://dbpedia.org/resource/The_Godfather_Part_II'>The Godfather Part II</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/director' title='http://dbpedia.org/ontology/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Francis_Ford_Coppola' title='http://dbpedia.org/resource/Francis_Ford_Coppola'>Francis Ford Coppola</a></td>
+<td class='tdin' width='7%'>0.25943574</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 9</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.28066033</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 9 - 0</b><br/> Score1 = 0.31170299<br/> Sim.  = 0.9004<br/> Norm. = 1.0000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/42113' title='http://data.linkedmdb.org/resource/film/42113'>The Godfather Saga</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/director' title='http://data.linkedmdb.org/resource/movie/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/director/8405' title='http://data.linkedmdb.org/resource/director/8405'>Francis Ford Coppola</a></td>
+<td class='tdin' width='7%'>0.25500587</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/The_Godfather_Saga' title='http://dbpedia.org/resource/The_Godfather_Saga'>The Godfather Saga</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/director' title='http://dbpedia.org/ontology/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Francis_Ford_Coppola' title='http://dbpedia.org/resource/Francis_Ford_Coppola'>Francis Ford Coppola</a></td>
+<td class='tdin' width='7%'>0.25943574</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Francis_Ford_Coppola' title='http://yago-knowledge.org/resource/Francis_Ford_Coppola'>Francis Ford Coppola</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/directed' title='http://yago-knowledge.org/resource/directed'>directed</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/The_Godfather_Saga' title='http://yago-knowledge.org/resource/The_Godfather_Saga'>The Godfather Saga</a></td>
+<td class='tdin' width='7%'>0.31170299</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 10</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.28066033</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 10 - 0</b><br/> Score1 = 0.31170299<br/> Sim.  = 0.9004<br/> Norm. = 1.0000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/The_Outsiders_(film)' title='http://dbpedia.org/resource/The_Outsiders_(film)'>The Outsiders</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/director' title='http://dbpedia.org/ontology/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Francis_Ford_Coppola' title='http://dbpedia.org/resource/Francis_Ford_Coppola'>Francis Ford Coppola</a></td>
+<td class='tdin' width='7%'>0.25943574</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/4848' title='http://data.linkedmdb.org/resource/film/4848'>The Outsiders</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/director' title='http://data.linkedmdb.org/resource/movie/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/director/8405' title='http://data.linkedmdb.org/resource/director/8405'>Francis Ford Coppola</a></td>
+<td class='tdin' width='7%'>0.25500587</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Francis_Ford_Coppola' title='http://yago-knowledge.org/resource/Francis_Ford_Coppola'>Francis Ford Coppola</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/directed' title='http://yago-knowledge.org/resource/directed'>directed</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/The_Outsiders_(film)' title='http://yago-knowledge.org/resource/The_Outsiders_(film)'>The Outsiders</a></td>
+<td class='tdin' width='7%'>0.31170299</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 11</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.28066033</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 11 - 0</b><br/> Score1 = 0.31170299<br/> Sim.  = 0.9004<br/> Norm. = 1.0000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/The_Rain_People' title='http://dbpedia.org/resource/The_Rain_People'>The Rain People</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/director' title='http://dbpedia.org/ontology/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Francis_Ford_Coppola' title='http://dbpedia.org/resource/Francis_Ford_Coppola'>Francis Ford Coppola</a></td>
+<td class='tdin' width='7%'>0.25943574</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/47939' title='http://data.linkedmdb.org/resource/film/47939'>The Rain People</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/director' title='http://data.linkedmdb.org/resource/movie/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/director/8405' title='http://data.linkedmdb.org/resource/director/8405'>Francis Ford Coppola</a></td>
+<td class='tdin' width='7%'>0.25500587</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Francis_Ford_Coppola' title='http://yago-knowledge.org/resource/Francis_Ford_Coppola'>Francis Ford Coppola</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/directed' title='http://yago-knowledge.org/resource/directed'>directed</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/The_Rain_People' title='http://yago-knowledge.org/resource/The_Rain_People'>The Rain People</a></td>
+<td class='tdin' width='7%'>0.31170299</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 12</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.28066033</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 12 - 0</b><br/> Score1 = 0.31170299<br/> Sim.  = 0.9004<br/> Norm. = 1.0000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Francis_Ford_Coppola' title='http://yago-knowledge.org/resource/Francis_Ford_Coppola'>Francis Ford Coppola</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/directed' title='http://yago-knowledge.org/resource/directed'>directed</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Apocalypse_Now' title='http://yago-knowledge.org/resource/Apocalypse_Now'>Apocalypse Now</a></td>
+<td class='tdin' width='7%'>0.31170299</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/38065' title='http://data.linkedmdb.org/resource/film/38065'>Apocalypse Now</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/director' title='http://data.linkedmdb.org/resource/movie/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/director/8405' title='http://data.linkedmdb.org/resource/director/8405'>Francis Ford Coppola</a></td>
+<td class='tdin' width='7%'>0.25500587</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Apocalypse_Now' title='http://dbpedia.org/resource/Apocalypse_Now'>Apocalypse Now</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/director' title='http://dbpedia.org/ontology/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Francis_Ford_Coppola' title='http://dbpedia.org/resource/Francis_Ford_Coppola'>Francis Ford Coppola</a></td>
+<td class='tdin' width='7%'>0.25943574</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 13</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.28066033</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 13 - 0</b><br/> Score1 = 0.31170299<br/> Sim.  = 0.9004<br/> Norm. = 1.0000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/14180' title='http://data.linkedmdb.org/resource/film/14180'>Apocalypse Now Redux</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/director' title='http://data.linkedmdb.org/resource/movie/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/director/8405' title='http://data.linkedmdb.org/resource/director/8405'>Francis Ford Coppola</a></td>
+<td class='tdin' width='7%'>0.25500587</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Apocalypse_Now_Redux' title='http://dbpedia.org/resource/Apocalypse_Now_Redux'>Apocalypse Now Redux</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/director' title='http://dbpedia.org/ontology/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Francis_Ford_Coppola' title='http://dbpedia.org/resource/Francis_Ford_Coppola'>Francis Ford Coppola</a></td>
+<td class='tdin' width='7%'>0.25943574</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Francis_Ford_Coppola' title='http://yago-knowledge.org/resource/Francis_Ford_Coppola'>Francis Ford Coppola</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/directed' title='http://yago-knowledge.org/resource/directed'>directed</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Apocalypse_Now_Redux' title='http://yago-knowledge.org/resource/Apocalypse_Now_Redux'>Apocalypse Now Redux</a></td>
+<td class='tdin' width='7%'>0.31170299</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 14</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.28066033</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 14 - 0</b><br/> Score1 = 0.31170299<br/> Sim.  = 0.9004<br/> Norm. = 1.0000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Gardens_of_Stone' title='http://dbpedia.org/resource/Gardens_of_Stone'>Gardens of Stone</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/director' title='http://dbpedia.org/ontology/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Francis_Ford_Coppola' title='http://dbpedia.org/resource/Francis_Ford_Coppola'>Francis Ford Coppola</a></td>
+<td class='tdin' width='7%'>0.25943574</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Francis_Ford_Coppola' title='http://yago-knowledge.org/resource/Francis_Ford_Coppola'>Francis Ford Coppola</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/directed' title='http://yago-knowledge.org/resource/directed'>directed</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Gardens_of_Stone' title='http://yago-knowledge.org/resource/Gardens_of_Stone'>Gardens of Stone</a></td>
+<td class='tdin' width='7%'>0.31170299</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/47942' title='http://data.linkedmdb.org/resource/film/47942'>Gardens of Stone</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/director' title='http://data.linkedmdb.org/resource/movie/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/director/8405' title='http://data.linkedmdb.org/resource/director/8405'>Francis Ford Coppola</a></td>
+<td class='tdin' width='7%'>0.25500587</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 15</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.28066033</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 15 - 0</b><br/> Score1 = 0.31170299<br/> Sim.  = 0.9004<br/> Norm. = 1.0000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/2594' title='http://data.linkedmdb.org/resource/film/2594'>You're a Big Boy Now</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/director' title='http://data.linkedmdb.org/resource/movie/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/director/8405' title='http://data.linkedmdb.org/resource/director/8405'>Francis Ford Coppola</a></td>
+<td class='tdin' width='7%'>0.25500587</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Francis_Ford_Coppola' title='http://yago-knowledge.org/resource/Francis_Ford_Coppola'>Francis Ford Coppola</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/directed' title='http://yago-knowledge.org/resource/directed'>directed</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/You%27re_a_Big_Boy_Now' title='http://yago-knowledge.org/resource/You%27re_a_Big_Boy_Now'>You're a Big Boy Now</a></td>
+<td class='tdin' width='7%'>0.31170299</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/You%27re_a_Big_Boy_Now' title='http://dbpedia.org/resource/You%27re_a_Big_Boy_Now'>You're a Big Boy Now</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/director' title='http://dbpedia.org/ontology/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Francis_Ford_Coppola' title='http://dbpedia.org/resource/Francis_Ford_Coppola'>Francis Ford Coppola</a></td>
+<td class='tdin' width='7%'>0.25943574</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 16</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.28066033</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 16 - 0</b><br/> Score1 = 0.31170299<br/> Sim.  = 0.9004<br/> Norm. = 1.0000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/47940' title='http://data.linkedmdb.org/resource/film/47940'>Youth Without Youth</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/director' title='http://data.linkedmdb.org/resource/movie/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/director/8405' title='http://data.linkedmdb.org/resource/director/8405'>Francis Ford Coppola</a></td>
+<td class='tdin' width='7%'>0.25500587</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Francis_Ford_Coppola' title='http://yago-knowledge.org/resource/Francis_Ford_Coppola'>Francis Ford Coppola</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/directed' title='http://yago-knowledge.org/resource/directed'>directed</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Youth_Without_Youth_(film)' title='http://yago-knowledge.org/resource/Youth_Without_Youth_(film)'>Youth Without Youth</a></td>
+<td class='tdin' width='7%'>0.31170299</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Youth_Without_Youth_(film)' title='http://dbpedia.org/resource/Youth_Without_Youth_(film)'>Youth Without Youth</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/director' title='http://dbpedia.org/ontology/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Francis_Ford_Coppola' title='http://dbpedia.org/resource/Francis_Ford_Coppola'>Francis Ford Coppola</a></td>
+<td class='tdin' width='7%'>0.25943574</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 17</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.28053270</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 17 - 0</b><br/> Score1 = 0.31170299<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Francis_Ford_Coppola' title='http://yago-knowledge.org/resource/Francis_Ford_Coppola'>Francis Ford Coppola</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/directed' title='http://yago-knowledge.org/resource/directed'>directed</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Godfather_Trilogy' title='http://yago-knowledge.org/resource/Godfather_Trilogy'>Godfather Trilogy</a></td>
+<td class='tdin' width='7%'>0.31170299</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 18</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.27001296</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 18 - 0</b><br/> Score1 = 0.31170299<br/> Sim.  = 0.9118<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Francis_Ford_Coppola' title='http://yago-knowledge.org/resource/Francis_Ford_Coppola'>Francis Ford Coppola</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/directed' title='http://yago-knowledge.org/resource/directed'>directed</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Twixt_(film)' title='http://yago-knowledge.org/resource/Twixt_(film)'>Twixt</a></td>
+<td class='tdin' width='7%'>0.31170299</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Twixt_(film)' title='http://dbpedia.org/resource/Twixt_(film)'>Twixt</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/director' title='http://dbpedia.org/ontology/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Francis_Ford_Coppola' title='http://dbpedia.org/resource/Francis_Ford_Coppola'>Francis Ford Coppola</a></td>
+<td class='tdin' width='7%'>0.25943574</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 19</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.26656359</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 19 - 0</b><br/> Score1 = 0.31170299<br/> Sim.  = 0.9002<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Francis_Ford_Coppola' title='http://yago-knowledge.org/resource/Francis_Ford_Coppola'>Francis Ford Coppola</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/directed' title='http://yago-knowledge.org/resource/directed'>directed</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Finian%27s_Rainbow_(film)' title='http://yago-knowledge.org/resource/Finian%27s_Rainbow_(film)'>Finian's Rainbow</a></td>
+<td class='tdin' width='7%'>0.31170299</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/14236' title='http://data.linkedmdb.org/resource/film/14236'>Finian's Rainbow</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/director' title='http://data.linkedmdb.org/resource/movie/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/director/8405' title='http://data.linkedmdb.org/resource/director/8405'>Francis Ford Coppola</a></td>
+<td class='tdin' width='7%'>0.25500587</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 20</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.23349217</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 20 - 0</b><br/> Score1 = 0.25943574<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Hammett_(film)' title='http://dbpedia.org/resource/Hammett_(film)'>Hammett</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/director' title='http://dbpedia.org/ontology/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Francis_Ford_Coppola' title='http://dbpedia.org/resource/Francis_Ford_Coppola'>Francis Ford Coppola</a></td>
+<td class='tdin' width='7%'>0.25943574</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 21</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.23349217</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 21 - 0</b><br/> Score1 = 0.25943574<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Battle_Beyond_the_Sun' title='http://dbpedia.org/resource/Battle_Beyond_the_Sun'>Battle Beyond the Sun</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/director' title='http://dbpedia.org/ontology/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Francis_Ford_Coppola' title='http://dbpedia.org/resource/Francis_Ford_Coppola'>Francis Ford Coppola</a></td>
+<td class='tdin' width='7%'>0.25943574</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 22</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.23349217</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 22 - 0</b><br/> Score1 = 0.25943574<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Tonight_for_Sure' title='http://dbpedia.org/resource/Tonight_for_Sure'>Tonight for Sure</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/director' title='http://dbpedia.org/ontology/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Francis_Ford_Coppola' title='http://dbpedia.org/resource/Francis_Ford_Coppola'>Francis Ford Coppola</a></td>
+<td class='tdin' width='7%'>0.25943574</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 23</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.22950529</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 23 - 0</b><br/> Score1 = 0.25500587<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/4219' title='http://data.linkedmdb.org/resource/film/4219'>Supernova</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/director' title='http://data.linkedmdb.org/resource/movie/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/director/8405' title='http://data.linkedmdb.org/resource/director/8405'>Francis Ford Coppola</a></td>
+<td class='tdin' width='7%'>0.25500587</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 24</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.22950529</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 24 - 0</b><br/> Score1 = 0.25500587<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/39657' title='http://data.linkedmdb.org/resource/film/39657'>Captain EO</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/director' title='http://data.linkedmdb.org/resource/movie/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/director/8405' title='http://data.linkedmdb.org/resource/director/8405'>Francis Ford Coppola</a></td>
+<td class='tdin' width='7%'>0.25500587</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 25</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.22191849</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 25 - 0</b><br/> Score1 = 0.25943574<br/> Sim.  = 0.9004<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/1280' title='http://data.linkedmdb.org/resource/film/1280'>Jack</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/director' title='http://data.linkedmdb.org/resource/movie/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/director/8405' title='http://data.linkedmdb.org/resource/director/8405'>Francis Ford Coppola</a></td>
+<td class='tdin' width='7%'>0.25500587</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Jack_(1996_film)' title='http://dbpedia.org/resource/Jack_(1996_film)'>Jack</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/director' title='http://dbpedia.org/ontology/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Francis_Ford_Coppola' title='http://dbpedia.org/resource/Francis_Ford_Coppola'>Francis Ford Coppola</a></td>
+<td class='tdin' width='7%'>0.25943574</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 26</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.22191849</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 26 - 0</b><br/> Score1 = 0.25943574<br/> Sim.  = 0.9004<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/47936' title='http://data.linkedmdb.org/resource/film/47936'>The Bellboy and the Playgirls</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/director' title='http://data.linkedmdb.org/resource/movie/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/director/8405' title='http://data.linkedmdb.org/resource/director/8405'>Francis Ford Coppola</a></td>
+<td class='tdin' width='7%'>0.25500587</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/The_Bellboy_and_the_Playgirls' title='http://dbpedia.org/resource/The_Bellboy_and_the_Playgirls'>The Bellboy and the Playgirls</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/director' title='http://dbpedia.org/ontology/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Francis_Ford_Coppola' title='http://dbpedia.org/resource/Francis_Ford_Coppola'>Francis Ford Coppola</a></td>
+<td class='tdin' width='7%'>0.25943574</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 27</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.22191849</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 27 - 0</b><br/> Score1 = 0.25943574<br/> Sim.  = 0.9004<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/517' title='http://data.linkedmdb.org/resource/film/517'>The Rainmaker</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/director' title='http://data.linkedmdb.org/resource/movie/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/director/8405' title='http://data.linkedmdb.org/resource/director/8405'>Francis Ford Coppola</a></td>
+<td class='tdin' width='7%'>0.25500587</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/The_Rainmaker_(1997_film)' title='http://dbpedia.org/resource/The_Rainmaker_(1997_film)'>The Rainmaker</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/director' title='http://dbpedia.org/ontology/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Francis_Ford_Coppola' title='http://dbpedia.org/resource/Francis_Ford_Coppola'>Francis Ford Coppola</a></td>
+<td class='tdin' width='7%'>0.25943574</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 28</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.22191849</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 28 - 0</b><br/> Score1 = 0.25943574<br/> Sim.  = 0.9004<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/The_Terror_(1963_film)' title='http://dbpedia.org/resource/The_Terror_(1963_film)'>The Terror</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/director' title='http://dbpedia.org/ontology/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Francis_Ford_Coppola' title='http://dbpedia.org/resource/Francis_Ford_Coppola'>Francis Ford Coppola</a></td>
+<td class='tdin' width='7%'>0.25943574</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/3932' title='http://data.linkedmdb.org/resource/film/3932'>The Terror</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/director' title='http://data.linkedmdb.org/resource/movie/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/director/8405' title='http://data.linkedmdb.org/resource/director/8405'>Francis Ford Coppola</a></td>
+<td class='tdin' width='7%'>0.25500587</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 29</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.22191849</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 29 - 0</b><br/> Score1 = 0.25943574<br/> Sim.  = 0.9004<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Bram_Stoker%27s_Dracula' title='http://dbpedia.org/resource/Bram_Stoker%27s_Dracula'>Bram Stoker's Dracula</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/director' title='http://dbpedia.org/ontology/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Francis_Ford_Coppola' title='http://dbpedia.org/resource/Francis_Ford_Coppola'>Francis Ford Coppola</a></td>
+<td class='tdin' width='7%'>0.25943574</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/771' title='http://data.linkedmdb.org/resource/film/771'>Bram Stoker's Dracula</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/director' title='http://data.linkedmdb.org/resource/movie/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/director/8405' title='http://data.linkedmdb.org/resource/director/8405'>Francis Ford Coppola</a></td>
+<td class='tdin' width='7%'>0.25500587</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 30</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.22191849</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 30 - 0</b><br/> Score1 = 0.25943574<br/> Sim.  = 0.9004<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Dementia_13' title='http://dbpedia.org/resource/Dementia_13'>Dementia 13</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/director' title='http://dbpedia.org/ontology/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Francis_Ford_Coppola' title='http://dbpedia.org/resource/Francis_Ford_Coppola'>Francis Ford Coppola</a></td>
+<td class='tdin' width='7%'>0.25943574</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/45549' title='http://data.linkedmdb.org/resource/film/45549'>Dementia 13</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/director' title='http://data.linkedmdb.org/resource/movie/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/director/8405' title='http://data.linkedmdb.org/resource/director/8405'>Francis Ford Coppola</a></td>
+<td class='tdin' width='7%'>0.25500587</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 31</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.22191849</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 31 - 0</b><br/> Score1 = 0.25943574<br/> Sim.  = 0.9004<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/2307' title='http://data.linkedmdb.org/resource/film/2307'>Tucker: The Man and His Dream</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/director' title='http://data.linkedmdb.org/resource/movie/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/director/8405' title='http://data.linkedmdb.org/resource/director/8405'>Francis Ford Coppola</a></td>
+<td class='tdin' width='7%'>0.25500587</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Tucker:_The_Man_and_His_Dream' title='http://dbpedia.org/resource/Tucker:_The_Man_and_His_Dream'>Tucker: The Man and His Dream</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/director' title='http://dbpedia.org/ontology/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Francis_Ford_Coppola' title='http://dbpedia.org/resource/Francis_Ford_Coppola'>Francis Ford Coppola</a></td>
+<td class='tdin' width='7%'>0.25943574</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 32</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.20636935</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 32 - 0</b><br/> Score1 = 0.22929926<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Francis_Ford_(actor)' title='http://yago-knowledge.org/resource/Francis_Ford_(actor)'>Francis Ford</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/directed' title='http://yago-knowledge.org/resource/directed'>directed</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/The_Adventures_of_Shorty' title='http://yago-knowledge.org/resource/The_Adventures_of_Shorty'>The Adventures of Shorty</a></td>
+<td class='tdin' width='7%'>0.22929926</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 33</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.20636935</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 33 - 0</b><br/> Score1 = 0.22929926<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Francis_Ford_(actor)' title='http://yago-knowledge.org/resource/Francis_Ford_(actor)'>Francis Ford</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/directed' title='http://yago-knowledge.org/resource/directed'>directed</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Custer%27s_Last_Fight' title='http://yago-knowledge.org/resource/Custer%27s_Last_Fight'>Custer's Last Fight</a></td>
+<td class='tdin' width='7%'>0.22929926</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 34</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.20049464</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 34 - 0</b><br/> Score1 = 0.22277182<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/91244' title='http://data.linkedmdb.org/resource/film/91244'>The Invaders</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/director' title='http://data.linkedmdb.org/resource/movie/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/director/218' title='http://data.linkedmdb.org/resource/director/218'>Francis Ford</a></td>
+<td class='tdin' width='7%'>0.22277182</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 35</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.20049464</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 35 - 0</b><br/> Score1 = 0.22277182<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/52664' title='http://data.linkedmdb.org/resource/film/52664'>Officer 444</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/director' title='http://data.linkedmdb.org/resource/movie/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/director/218' title='http://data.linkedmdb.org/resource/director/218'>Francis Ford</a></td>
+<td class='tdin' width='7%'>0.22277182</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 36</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.20049464</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 36 - 0</b><br/> Score1 = 0.22277182<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/52604' title='http://data.linkedmdb.org/resource/film/52604'>The Mystery of 13</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/director' title='http://data.linkedmdb.org/resource/movie/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/director/218' title='http://data.linkedmdb.org/resource/director/218'>Francis Ford</a></td>
+<td class='tdin' width='7%'>0.22277182</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 37</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.20049464</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 37 - 0</b><br/> Score1 = 0.22277182<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/24010' title='http://data.linkedmdb.org/resource/film/24010'>The Craving</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/director' title='http://data.linkedmdb.org/resource/movie/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/director/218' title='http://data.linkedmdb.org/resource/director/218'>Francis Ford</a></td>
+<td class='tdin' width='7%'>0.22277182</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 38</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.19609319</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 38 - 0</b><br/> Score1 = 0.22929926<br/> Sim.  = 0.9002<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/52606' title='http://data.linkedmdb.org/resource/film/52606'>The Great Reward</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/director' title='http://data.linkedmdb.org/resource/movie/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/director/218' title='http://data.linkedmdb.org/resource/director/218'>Francis Ford</a></td>
+<td class='tdin' width='7%'>0.22277182</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Francis_Ford_(actor)' title='http://yago-knowledge.org/resource/Francis_Ford_(actor)'>Francis Ford</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/directed' title='http://yago-knowledge.org/resource/directed'>directed</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/The_Great_Reward' title='http://yago-knowledge.org/resource/The_Great_Reward'>The Great Reward</a></td>
+<td class='tdin' width='7%'>0.22929926</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 39</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.19609319</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 39 - 0</b><br/> Score1 = 0.22929926<br/> Sim.  = 0.9002<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/25057' title='http://data.linkedmdb.org/resource/film/25057'>The Broken Coin</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/director' title='http://data.linkedmdb.org/resource/movie/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/director/218' title='http://data.linkedmdb.org/resource/director/218'>Francis Ford</a></td>
+<td class='tdin' width='7%'>0.22277182</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Francis_Ford_(actor)' title='http://yago-knowledge.org/resource/Francis_Ford_(actor)'>Francis Ford</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/directed' title='http://yago-knowledge.org/resource/directed'>directed</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/The_Broken_Coin' title='http://yago-knowledge.org/resource/The_Broken_Coin'>The Broken Coin</a></td>
+<td class='tdin' width='7%'>0.22929926</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 40</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.19609319</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 40 - 0</b><br/> Score1 = 0.22929926<br/> Sim.  = 0.9002<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/52579' title='http://data.linkedmdb.org/resource/film/52579'>Thunderbolt Jack</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/director' title='http://data.linkedmdb.org/resource/movie/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/director/218' title='http://data.linkedmdb.org/resource/director/218'>Francis Ford</a></td>
+<td class='tdin' width='7%'>0.22277182</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Francis_Ford_(actor)' title='http://yago-knowledge.org/resource/Francis_Ford_(actor)'>Francis Ford</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/directed' title='http://yago-knowledge.org/resource/directed'>directed</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Thunderbolt_Jack' title='http://yago-knowledge.org/resource/Thunderbolt_Jack'>Thunderbolt Jack</a></td>
+<td class='tdin' width='7%'>0.22929926</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 41</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.19609319</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 41 - 0</b><br/> Score1 = 0.22929926<br/> Sim.  = 0.9002<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Francis_Ford_(actor)' title='http://yago-knowledge.org/resource/Francis_Ford_(actor)'>Francis Ford</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/directed' title='http://yago-knowledge.org/resource/directed'>directed</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/The_Silent_Mystery' title='http://yago-knowledge.org/resource/The_Silent_Mystery'>The Silent Mystery</a></td>
+<td class='tdin' width='7%'>0.22929926</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/52603' title='http://data.linkedmdb.org/resource/film/52603'>The Silent Mystery</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/director' title='http://data.linkedmdb.org/resource/movie/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/director/218' title='http://data.linkedmdb.org/resource/director/218'>Francis Ford</a></td>
+<td class='tdin' width='7%'>0.22277182</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 42</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.19609319</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 42 - 0</b><br/> Score1 = 0.22929926<br/> Sim.  = 0.9002<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/25012' title='http://data.linkedmdb.org/resource/film/25012'>Lucille Love, Girl of Mystery</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/director' title='http://data.linkedmdb.org/resource/movie/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/director/218' title='http://data.linkedmdb.org/resource/director/218'>Francis Ford</a></td>
+<td class='tdin' width='7%'>0.22277182</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Francis_Ford_(actor)' title='http://yago-knowledge.org/resource/Francis_Ford_(actor)'>Francis Ford</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/directed' title='http://yago-knowledge.org/resource/directed'>directed</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Lucille_Love,_Girl_of_Mystery' title='http://yago-knowledge.org/resource/Lucille_Love,_Girl_of_Mystery'>Lucille Love, Girl of Mystery</a></td>
+<td class='tdin' width='7%'>0.22929926</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 43</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.19609319</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 43 - 0</b><br/> Score1 = 0.22929926<br/> Sim.  = 0.9002<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Francis_Ford_(actor)' title='http://yago-knowledge.org/resource/Francis_Ford_(actor)'>Francis Ford</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/directed' title='http://yago-knowledge.org/resource/directed'>directed</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Perils_of_the_Wild' title='http://yago-knowledge.org/resource/Perils_of_the_Wild'>Perils of the Wild</a></td>
+<td class='tdin' width='7%'>0.22929926</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/52485' title='http://data.linkedmdb.org/resource/film/52485'>Perils of the Wild</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/director' title='http://data.linkedmdb.org/resource/movie/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/director/218' title='http://data.linkedmdb.org/resource/director/218'>Francis Ford</a></td>
+<td class='tdin' width='7%'>0.22277182</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 44</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.19609319</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 44 - 0</b><br/> Score1 = 0.22929926<br/> Sim.  = 0.9002<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/52254' title='http://data.linkedmdb.org/resource/film/52254'>The Winking Idol</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/director' title='http://data.linkedmdb.org/resource/movie/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/director/218' title='http://data.linkedmdb.org/resource/director/218'>Francis Ford</a></td>
+<td class='tdin' width='7%'>0.22277182</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Francis_Ford_(actor)' title='http://yago-knowledge.org/resource/Francis_Ford_(actor)'>Francis Ford</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/directed' title='http://yago-knowledge.org/resource/directed'>directed</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/The_Winking_Idol' title='http://yago-knowledge.org/resource/The_Winking_Idol'>The Winking Idol</a></td>
+<td class='tdin' width='7%'>0.22929926</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 45</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.19609319</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 45 - 0</b><br/> Score1 = 0.22929926<br/> Sim.  = 0.9002<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Francis_Ford_(actor)' title='http://yago-knowledge.org/resource/Francis_Ford_(actor)'>Francis Ford</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/directed' title='http://yago-knowledge.org/resource/directed'>directed</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/When_Lincoln_Paid' title='http://yago-knowledge.org/resource/When_Lincoln_Paid'>When Lincoln Paid</a></td>
+<td class='tdin' width='7%'>0.22929926</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/48987' title='http://data.linkedmdb.org/resource/film/48987'>When Lincoln Paid</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/director' title='http://data.linkedmdb.org/resource/movie/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/director/218' title='http://data.linkedmdb.org/resource/director/218'>Francis Ford</a></td>
+<td class='tdin' width='7%'>0.22277182</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 46</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.19609319</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 46 - 0</b><br/> Score1 = 0.22929926<br/> Sim.  = 0.9002<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Francis_Ford_(actor)' title='http://yago-knowledge.org/resource/Francis_Ford_(actor)'>Francis Ford</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/directed' title='http://yago-knowledge.org/resource/directed'>directed</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/The_Adventures_of_Peg_o%27_the_Ring' title='http://yago-knowledge.org/resource/The_Adventures_of_Peg_o%27_the_Ring'>The Adventures of Peg o' the Ring</a></td>
+<td class='tdin' width='7%'>0.22929926</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/25061' title='http://data.linkedmdb.org/resource/film/25061'>The Adventures of Peg o' the Ring</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/director' title='http://data.linkedmdb.org/resource/movie/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/director/218' title='http://data.linkedmdb.org/resource/director/218'>Francis Ford</a></td>
+<td class='tdin' width='7%'>0.22277182</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 47</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.19609319</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 47 - 0</b><br/> Score1 = 0.22929926<br/> Sim.  = 0.9002<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/52520' title='http://data.linkedmdb.org/resource/film/52520'>The Fighting Skipper</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/director' title='http://data.linkedmdb.org/resource/movie/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/director/218' title='http://data.linkedmdb.org/resource/director/218'>Francis Ford</a></td>
+<td class='tdin' width='7%'>0.22277182</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Francis_Ford_(actor)' title='http://yago-knowledge.org/resource/Francis_Ford_(actor)'>Francis Ford</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/directed' title='http://yago-knowledge.org/resource/directed'>directed</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/The_Fighting_Skipper' title='http://yago-knowledge.org/resource/The_Fighting_Skipper'>The Fighting Skipper</a></td>
+<td class='tdin' width='7%'>0.22929926</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 48</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.19129553</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 48 - 0</b><br/> Score1 = 0.21255058<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/19717' title='http://data.linkedmdb.org/resource/film/19717'>Francis</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/director' title='http://data.linkedmdb.org/resource/movie/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/director/3343' title='http://data.linkedmdb.org/resource/director/3343'>Arthur Lubin</a></td>
+<td class='tdin' width='7%'>0.21255058</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+  </body>
+</html>

@@ -1,0 +1,1024 @@
+<html> 
+  <head>
+    <meta charset='UTF-8'>
+<style>TABLE.outline {
+        BORDER-RIGHT: #c0c0c0 4px double; BORDER-TOP: #c0c0c0 4px double; BORDER-LEFT: #c0c0c0 4px double;
+        FONT-FAMILY: "MS Sans Serif"; BORDER-BOTTOM: #c0c0c0 4px double; align: center
+}
+A {
+        FONT-SIZE: 14px; COLOR: #333399; FONT-FAMILY: "Consolas"; TEXT-DECORATION: none
+}
+A:hover {
+        FONT-SIZE: 14px; COLOR: #778899; FONT-STYLE: normal; FONT-FAMILY: "Consolas"; TEXT-DECORATION: underline overline
+}
+.blockTitle {
+        PADDING-RIGHT: 3px; BORDER-TOP: #6495ed 3px double; PADDING-LEFT: 3px; FONT-WEIGHT: bold;
+        FONT-SIZE: 14px; PADDING-BOTTOM: 3px; COLOR: #daa520; PADDING-TOP: 3px; BORDER-BOTTOM: #6495ed 3px double;
+        BACKGROUND-COLOR: #f0f8ff
+}
+.blockTitle1 {
+        PADDING-RIGHT: 3px; BORDER-TOP: #6495ed 3px double; PADDING-LEFT: 3px; FONT-WEIGHT: bold; FONT-SIZE: 14px;
+        PADDING-BOTTOM: 3px; COLOR: #daa520; PADDING-TOP: 3px; BORDER-BOTTOM: #6495ed 3px double;
+        BACKGROUND-COLOR: #f0f8ff
+}
+TD {
+        FONT-SIZE: 14px; COLOR: #333399; FONT-FAMILY: "Consolas"; TEXT-DECORATION: none
+}
+.tdin {
+        PADDING-RIGHT: 2px; BORDER-TOP: #6495ed 1px double; PADDING-LEFT: 8px; PADDING-BOTTOM: 2px; PADDING-TOP: 2px;
+        BORDER-BOTTOM: #6495ed 1px double;BORDER-LEFT: #6495ed 1px double;BORDER-RIGHT: #6495ed 1px double;
+        FONT-FAMILY: "Consolas";
+}
+.thin {
+        PADDING-RIGHT: 2px; BORDER-TOP: #6495ed 1px double; PADDING-LEFT: 8px; FONT-WEIGHT: bold; FONT-SIZE: 12px;
+        PADDING-BOTTOM: 2px; COLOR: #E45C3A; PADDING-TOP: 2px; BORDER-BOTTOM: #6495ed 1px double;
+        BACKGROUND-COLOR: #DEF7FE; BORDER-LEFT: #6495ed 1px double; BORDER-RIGHT: #6495ed 1px double ;
+        FONT-FAMILY: "Verdana";
+}
+.thin2 {
+        PADDING-RIGHT: 2px; BORDER-TOP: #6495ed 1px double; PADDING-LEFT: 8px; FONT-WEIGHT: bold; FONT-SIZE: 12px;
+        PADDING-BOTTOM: 2px; COLOR: #405EE4; PADDING-TOP: 2px; BORDER-BOTTOM: #6495ed 1px double;
+        BACKGROUND-COLOR: #FFDFF8; BORDER-LEFT: #6495ed 1px double; BORDER-RIGHT: #6495ed 1px double ;
+        FONT-FAMILY: "Verdana";
+}
+TH {
+        FONT-SIZE: 14px; COLOR: #333399; FONT-FAMILY: "Verdana"; TEXT-DECORATION: none;align: left
+}
+INPUT.spt {
+        BORDER-RIGHT: #6495ed 1px double; BORDER-TOP: #6495ed 1px double;
+        BORDER-BOTTOM: #6495ed 1px double;BORDER-LEFT: #6495ed 1px double;
+        PADDING-LEFT: 1px; PADDING-BOTTOM: 1px; PADDING-TOP: 1px;PADDING-RIGHT: 1px;
+        FONT-FAMILY: "Tahoma";
+        WIDTH : 200px ; HEIGHT : 20px;
+}
+INPUT.spb {
+        PADDING-RIGHT: 1px; PADDING-LEFT: 1px;
+        PADDING-BOTTOM: 1px; PADDING-TOP: 1px;
+        BORDER-RIGHT: #6495ed 1px double; BORDER-LEFT: #6495ed 1px double;
+        BORDER-BOTTOM: #6495ed 1px double; BORDER-TOP: #6495ed 1px double;
+        FONT-FAMILY: "Tahoma"; BACKGROUND-COLOR : #A8FFA8;
+        WIDTH : 60px ; HEIGHT : 20px;
+}
+textarea {
+        PADDING-RIGHT: 2px; PADDING-LEFT: 2px;
+        PADDING-BOTTOM: 2px; PADDING-TOP: 2px;
+        BORDER-RIGHT: #6495ed 1px double; BORDER-LEFT: #6495ed 1px double;
+        BORDER-BOTTOM: #6495ed 1px double; BORDER-TOP: #6495ed 1px double;
+        FONT-FAMILY: "Tahoma"; BACKGROUND-COLOR : #FFFFFF;
+        WIDTH : 600px ; HEIGHT : 400px;
+}
+</style>  </head>
+  <body>
+<h2>Query :: q15</h2> <table class='outline' border='1' width = '100%'>
+<tr>
+<td class='tdin' width='50%'> <pre>{
+	?who	"born in"	"berlin" .
+	?who	"died in"	"paris"  .
+}</pre> </td><td class='tdin' width='50%'>Give me all people that were born in Berlin and died in Paris.</td></tr>
+</table>
+ <br/><hr/><br/><table border='0' width = '100%'>
+<tr>
+<td class='tdin' width='35%'><table border='0' width = '100%'><tr>
+<td class='thin' width='40%'># Results</td><td class='tdin' width='40%'><b>28</b></td><td class='tdin' width='20%'></td></tr>
+<tr>
+<td class='thin' width='40%'>Elapsed time</td><td class='tdin' width='40%'>839.629</td><td class='tdin' width='20%'>sec</td></tr>
+<tr>
+<td class='thin' width='40%'>Used memory</td><td class='tdin' width='40%'>1510.2567</td><td class='tdin' width='20%'>MB </td></tr>
+<tr>
+<td class='thin' width='40%'>Total Quintuples</td><td class='tdin' width='40%'>71</td><td class='tdin' width='20%'>quins </td></tr>
+<tr>
+<td class='thin' width='40%'>AVG. # quins per cluster</td><td class='tdin' width='40%'>1.2678572</td><td class='tdin' width='20%'>quin/cluster </td></tr>
+<tr>
+<td class='thin' width='40%'>AVG. # quins per bucket</td><td class='tdin' width='40%'>2.5357144</td><td class='tdin' width='20%'>quin/bucket </td></tr>
+<tr>
+<td class='thin' width='40%'># plugged triples</td><td class='tdin' width='40%'>2681</td><td class='tdin' width='20%'>triples </td></tr>
+</table>
+</td><td class='tdin' width='25%'><table border='0' width = '100%'><tr>
+<td class='thin' width='40%'>LabelSearch TopK</td><td class='tdin' width='40%'>15</td></tr>
+<tr>
+<td class='thin' width='40%'>Plugin Labels ?</td><td class='tdin' width='40%'>true</td></tr>
+<tr>
+<td class='thin' width='40%'>Limit 1st triple?</td><td class='tdin' width='40%'>false</td></tr>
+<tr>
+<td class='thin' width='40%'>Validate Triples?</td><td class='tdin' width='40%'>false</td></tr>
+</table>
+</td><td class='tdin' width='40%'><table border='0' width = '100%'>
+<tr>
+<td class='tdin' width='25%'></td><td class='thin' width='25%'> # Requests</td><td class='thin' width='25%'> # Solved Requests</td><td class='thin' width='25%'> # Returned Records</td></tr>
+<tr>
+<td class='thin2' width='25%'>LinkedMDB</td><td class='tdin' width='25%'>0</td><td class='tdin' width='25%'>0</td><td class='tdin' width='25%'>0</td></tr>
+<tr>
+<td class='thin2' width='25%'>DBpedia</td><td class='tdin' width='25%'>267710</td><td class='tdin' width='25%'>16</td><td class='tdin' width='25%'>1763</td></tr>
+<tr>
+<td class='thin2' width='25%'>Yago</td><td class='tdin' width='25%'>133240</td><td class='tdin' width='25%'>22</td><td class='tdin' width='25%'>1011</td></tr>
+<tr>
+<td class='tdin' width='25%'></td><td class='thin' width='25%'>400950</td><td class='thin' width='25%'>38</td><td class='thin' width='25%'>2774</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 0</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.22004781</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 0 - 0</b><br/> Score1 = 0.24537048<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Heinz_Berggruen' title='http://dbpedia.org/resource/Heinz_Berggruen'>Heinz Berggruen</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/birthPlace' title='http://dbpedia.org/ontology/birthPlace'>birthPlace</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Berlin' title='http://dbpedia.org/resource/Berlin'>Berlin</a></td>
+<td class='tdin' width='7%'>0.24537048</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 0 - 1</b><br/> Score1 = 0.24362465<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Heinz_Berggruen' title='http://dbpedia.org/resource/Heinz_Berggruen'>Heinz Berggruen</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/deathPlace' title='http://dbpedia.org/ontology/deathPlace'>deathPlace</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Paris' title='http://dbpedia.org/resource/Paris'>Paris</a></td>
+<td class='tdin' width='7%'>0.24362465</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 1</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.22004781</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 1 - 0</b><br/> Score1 = 0.24537048<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Hugh_Rose,_1st_Baron_Strathnairn' title='http://dbpedia.org/resource/Hugh_Rose,_1st_Baron_Strathnairn'>Hugh Rose, 1st Baron Strathnairn</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/birthPlace' title='http://dbpedia.org/ontology/birthPlace'>birthPlace</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Berlin' title='http://dbpedia.org/resource/Berlin'>Berlin</a></td>
+<td class='tdin' width='7%'>0.24537048</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 1 - 1</b><br/> Score1 = 0.24362465<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Hugh_Rose,_1st_Baron_Strathnairn' title='http://dbpedia.org/resource/Hugh_Rose,_1st_Baron_Strathnairn'>Hugh Rose, 1st Baron Strathnairn</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/deathPlace' title='http://dbpedia.org/ontology/deathPlace'>deathPlace</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Paris' title='http://dbpedia.org/resource/Paris'>Paris</a></td>
+<td class='tdin' width='7%'>0.24362465</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 2</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.22004781</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 2 - 0</b><br/> Score1 = 0.24537048<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Erika_Abels_d%27Albert' title='http://dbpedia.org/resource/Erika_Abels_d%27Albert'>Erika Abels d'Albert</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/birthPlace' title='http://dbpedia.org/ontology/birthPlace'>birthPlace</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Berlin' title='http://dbpedia.org/resource/Berlin'>Berlin</a></td>
+<td class='tdin' width='7%'>0.24537048</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 2 - 1</b><br/> Score1 = 0.24362465<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Erika_Abels_d%27Albert' title='http://dbpedia.org/resource/Erika_Abels_d%27Albert'>Erika Abels d'Albert</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/deathPlace' title='http://dbpedia.org/ontology/deathPlace'>deathPlace</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Paris' title='http://dbpedia.org/resource/Paris'>Paris</a></td>
+<td class='tdin' width='7%'>0.24362465</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 3</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.22004781</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 3 - 0</b><br/> Score1 = 0.24537048<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Giacomo_Meyerbeer' title='http://dbpedia.org/resource/Giacomo_Meyerbeer'>Giacomo Meyerbeer</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/birthPlace' title='http://dbpedia.org/ontology/birthPlace'>birthPlace</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Berlin' title='http://dbpedia.org/resource/Berlin'>Berlin</a></td>
+<td class='tdin' width='7%'>0.24537048</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 3 - 1</b><br/> Score1 = 0.24362465<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Giacomo_Meyerbeer' title='http://dbpedia.org/resource/Giacomo_Meyerbeer'>Giacomo Meyerbeer</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/deathPlace' title='http://dbpedia.org/ontology/deathPlace'>deathPlace</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Paris' title='http://dbpedia.org/resource/Paris'>Paris</a></td>
+<td class='tdin' width='7%'>0.24362465</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 4</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.22004781</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 4 - 0</b><br/> Score1 = 0.24537048<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Wladimir_de_Schoenefeld' title='http://dbpedia.org/resource/Wladimir_de_Schoenefeld'>Wladimir de Schoenefeld</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/birthPlace' title='http://dbpedia.org/ontology/birthPlace'>birthPlace</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Berlin' title='http://dbpedia.org/resource/Berlin'>Berlin</a></td>
+<td class='tdin' width='7%'>0.24537048</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 4 - 1</b><br/> Score1 = 0.24362465<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Wladimir_de_Schoenefeld' title='http://dbpedia.org/resource/Wladimir_de_Schoenefeld'>Wladimir de Schoenefeld</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/deathPlace' title='http://dbpedia.org/ontology/deathPlace'>deathPlace</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Paris' title='http://dbpedia.org/resource/Paris'>Paris</a></td>
+<td class='tdin' width='7%'>0.24362465</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 5</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.22004781</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 5 - 0</b><br/> Score1 = 0.24537048<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Wols' title='http://dbpedia.org/resource/Wols'>Wols</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/birthPlace' title='http://dbpedia.org/ontology/birthPlace'>birthPlace</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Berlin' title='http://dbpedia.org/resource/Berlin'>Berlin</a></td>
+<td class='tdin' width='7%'>0.24537048</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 5 - 1</b><br/> Score1 = 0.24362465<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Wols' title='http://dbpedia.org/resource/Wols'>Wols</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/deathPlace' title='http://dbpedia.org/ontology/deathPlace'>deathPlace</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Paris' title='http://dbpedia.org/resource/Paris'>Paris</a></td>
+<td class='tdin' width='7%'>0.24362465</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 6</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.21957289</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 6 - 0</b><br/> Score1 = 0.24537048<br/> Sim.  = 0.9228<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Otto_Wels' title='http://dbpedia.org/resource/Otto_Wels'>Otto Wels</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/birthPlace' title='http://dbpedia.org/ontology/birthPlace'>birthPlace</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Berlin' title='http://dbpedia.org/resource/Berlin'>Berlin</a></td>
+<td class='tdin' width='7%'>0.24537048</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Otto_Wels' title='http://yago-knowledge.org/resource/Otto_Wels'>Otto Wels</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/wasBornIn' title='http://yago-knowledge.org/resource/wasBornIn'>wasBornIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Berlin' title='http://yago-knowledge.org/resource/Berlin'>Berlin</a></td>
+<td class='tdin' width='7%'>0.24453924</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 6 - 1</b><br/> Score1 = 0.25095573<br/> Sim.  = 0.9397<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Otto_Wels' title='http://yago-knowledge.org/resource/Otto_Wels'>Otto Wels</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/diedIn' title='http://yago-knowledge.org/resource/diedIn'>diedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Paris' title='http://yago-knowledge.org/resource/Paris'>Paris</a></td>
+<td class='tdin' width='7%'>0.25095573</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Otto_Wels' title='http://dbpedia.org/resource/Otto_Wels'>Otto Wels</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/deathPlace' title='http://dbpedia.org/ontology/deathPlace'>deathPlace</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Paris' title='http://dbpedia.org/resource/Paris'>Paris</a></td>
+<td class='tdin' width='7%'>0.24362465</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 7</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.21957289</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 7 - 0</b><br/> Score1 = 0.24537048<br/> Sim.  = 0.9228<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/George_V_of_Hanover' title='http://yago-knowledge.org/resource/George_V_of_Hanover'>George V of Hanover</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/wasBornIn' title='http://yago-knowledge.org/resource/wasBornIn'>wasBornIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Berlin' title='http://yago-knowledge.org/resource/Berlin'>Berlin</a></td>
+<td class='tdin' width='7%'>0.24453924</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/George_V_of_Hanover' title='http://dbpedia.org/resource/George_V_of_Hanover'>George V of Hanover</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/birthPlace' title='http://dbpedia.org/ontology/birthPlace'>birthPlace</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Berlin' title='http://dbpedia.org/resource/Berlin'>Berlin</a></td>
+<td class='tdin' width='7%'>0.24537048</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 7 - 1</b><br/> Score1 = 0.25095573<br/> Sim.  = 0.9397<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/George_V_of_Hanover' title='http://yago-knowledge.org/resource/George_V_of_Hanover'>George V of Hanover</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/diedIn' title='http://yago-knowledge.org/resource/diedIn'>diedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Paris' title='http://yago-knowledge.org/resource/Paris'>Paris</a></td>
+<td class='tdin' width='7%'>0.25095573</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/George_V_of_Hanover' title='http://dbpedia.org/resource/George_V_of_Hanover'>George V of Hanover</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/deathPlace' title='http://dbpedia.org/ontology/deathPlace'>deathPlace</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Paris' title='http://dbpedia.org/resource/Paris'>Paris</a></td>
+<td class='tdin' width='7%'>0.24362465</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 8</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.21718807</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 8 - 0</b><br/> Score1 = 0.24537048<br/> Sim.  = 0.9228<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/St%C3%A9phane_Hessel' title='http://dbpedia.org/resource/St%C3%A9phane_Hessel'>Stéphane Hessel</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/birthPlace' title='http://dbpedia.org/ontology/birthPlace'>birthPlace</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Berlin' title='http://dbpedia.org/resource/Berlin'>Berlin</a></td>
+<td class='tdin' width='7%'>0.24537048</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Stéphane_Hessel' title='http://yago-knowledge.org/resource/Stéphane_Hessel'>Stéphane Hessel</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/wasBornIn' title='http://yago-knowledge.org/resource/wasBornIn'>wasBornIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Berlin' title='http://yago-knowledge.org/resource/Berlin'>Berlin</a></td>
+<td class='tdin' width='7%'>0.24453924</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 8 - 1</b><br/> Score1 = 0.24362465<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/St%C3%A9phane_Hessel' title='http://dbpedia.org/resource/St%C3%A9phane_Hessel'>Stéphane Hessel</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/deathPlace' title='http://dbpedia.org/ontology/deathPlace'>deathPlace</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Paris' title='http://dbpedia.org/resource/Paris'>Paris</a></td>
+<td class='tdin' width='7%'>0.24362465</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 9</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.12164805</b></td><td width='10%' align='center'><b> L </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 9 - 0</b><br/> Score1 = 0.24537048<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Landgravine_Louise_of_Hesse-Darmstadt_(1757%E2%80%931830)' title='http://dbpedia.org/resource/Landgravine_Louise_of_Hesse-Darmstadt_(1757%E2%80%931830)'>Landgravine Louise of Hesse-Darmstadt</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/birthPlace' title='http://dbpedia.org/ontology/birthPlace'>birthPlace</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Berlin' title='http://dbpedia.org/resource/Berlin'>Berlin</a></td>
+<td class='tdin' width='7%'>0.24537048</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 9 - 1</b><br/> Score1 = 0.35826073<br/> Sim.  = 0.9397<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Landgravine_Caroline_Louise_of_Hesse-Darmstadt' title='http://dbpedia.org/resource/Landgravine_Caroline_Louise_of_Hesse-Darmstadt'>Landgravine Caroline Louise of Hesse-Darmstadt</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/deathPlace' title='http://dbpedia.org/ontology/deathPlace'>deathPlace</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Paris' title='http://dbpedia.org/resource/Paris'>Paris</a></td>
+<td class='tdin' width='7%'>0.31639393</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Landgravine_Caroline_Louise_of_Hesse-Darmstadt' title='http://yago-knowledge.org/resource/Landgravine_Caroline_Louise_of_Hesse-Darmstadt'>Landgravine Caroline Louise of Hesse-Darmstadt</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/diedIn' title='http://yago-knowledge.org/resource/diedIn'>diedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Paris' title='http://yago-knowledge.org/resource/Paris'>Paris</a></td>
+<td class='tdin' width='7%'>0.35826073</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 10</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.11137545</b></td><td width='10%' align='center'><b> L </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 10 - 0</b><br/> Score1 = 0.24537048<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Max_Liebermann' title='http://dbpedia.org/resource/Max_Liebermann'>Max Liebermann</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/birthPlace' title='http://dbpedia.org/ontology/birthPlace'>birthPlace</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Berlin' title='http://dbpedia.org/resource/Berlin'>Berlin</a></td>
+<td class='tdin' width='7%'>0.24537048</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 10 - 1</b><br/> Score1 = 0.30463174<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Rolf_Liebermann' title='http://yago-knowledge.org/resource/Rolf_Liebermann'>Rolf Liebermann</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/diedIn' title='http://yago-knowledge.org/resource/diedIn'>diedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Paris' title='http://yago-knowledge.org/resource/Paris'>Paris</a></td>
+<td class='tdin' width='7%'>0.30463174</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 11</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.11130290</b></td><td width='10%' align='center'><b> L </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 11 - 0</b><br/> Score1 = 0.24537048<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Paul_Kalisch' title='http://dbpedia.org/resource/Paul_Kalisch'>Paul Kalisch</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/birthPlace' title='http://dbpedia.org/ontology/birthPlace'>birthPlace</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Berlin' title='http://dbpedia.org/resource/Berlin'>Berlin</a></td>
+<td class='tdin' width='7%'>0.24537048</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 11 - 1</b><br/> Score1 = 0.30427347<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Ludwig_Kalisch' title='http://yago-knowledge.org/resource/Ludwig_Kalisch'>Ludwig Kalisch</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/diedIn' title='http://yago-knowledge.org/resource/diedIn'>diedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Paris' title='http://yago-knowledge.org/resource/Paris'>Paris</a></td>
+<td class='tdin' width='7%'>0.30427347</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 12</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.11073360</b></td><td width='10%' align='center'><b> L </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 12 - 0</b><br/> Score1 = 0.24537048<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Peter_Gr%C3%B6ning' title='http://dbpedia.org/resource/Peter_Gr%C3%B6ning'>Peter Gröning</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/birthPlace' title='http://dbpedia.org/ontology/birthPlace'>birthPlace</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Berlin' title='http://dbpedia.org/resource/Berlin'>Berlin</a></td>
+<td class='tdin' width='7%'>0.24537048</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 12 - 1</b><br/> Score1 = 0.30392236<br/> Sim.  = 0.9397<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Bruno_Gröning' title='http://yago-knowledge.org/resource/Bruno_Gröning'>Bruno Gröning</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/diedIn' title='http://yago-knowledge.org/resource/diedIn'>diedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Paris' title='http://yago-knowledge.org/resource/Paris'>Paris</a></td>
+<td class='tdin' width='7%'>0.30392236</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Bruno_Gr%C3%B6ning' title='http://dbpedia.org/resource/Bruno_Gr%C3%B6ning'>Bruno Gröning</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/deathPlace' title='http://dbpedia.org/ontology/deathPlace'>deathPlace</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Paris' title='http://dbpedia.org/resource/Paris'>Paris</a></td>
+<td class='tdin' width='7%'>0.28818462</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 13</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.10996459</b></td><td width='10%' align='center'><b> L </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 13 - 0</b><br/> Score1 = 0.24537048<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Henri_Berger' title='http://dbpedia.org/resource/Henri_Berger'>Henri Berger</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/birthPlace' title='http://dbpedia.org/ontology/birthPlace'>birthPlace</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Berlin' title='http://dbpedia.org/resource/Berlin'>Berlin</a></td>
+<td class='tdin' width='7%'>0.24537048</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 13 - 1</b><br/> Score1 = 0.29766454<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Henri_Diamant-Berger' title='http://dbpedia.org/resource/Henri_Diamant-Berger'>Henri Diamant-Berger</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/deathPlace' title='http://dbpedia.org/ontology/deathPlace'>deathPlace</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Paris' title='http://dbpedia.org/resource/Paris'>Paris</a></td>
+<td class='tdin' width='7%'>0.29766454</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 14</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.10990791</b></td><td width='10%' align='center'><b> L </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 14 - 0</b><br/> Score1 = 0.24537048<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Reiner_Lemoine' title='http://dbpedia.org/resource/Reiner_Lemoine'>Reiner Lemoine</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/birthPlace' title='http://dbpedia.org/ontology/birthPlace'>birthPlace</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Berlin' title='http://dbpedia.org/resource/Berlin'>Berlin</a></td>
+<td class='tdin' width='7%'>0.24537048</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 14 - 1</b><br/> Score1 = 0.29738462<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Émile_Lemoine' title='http://yago-knowledge.org/resource/Émile_Lemoine'>Émile Lemoine</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/diedIn' title='http://yago-knowledge.org/resource/diedIn'>diedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Paris' title='http://yago-knowledge.org/resource/Paris'>Paris</a></td>
+<td class='tdin' width='7%'>0.29738462</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 15</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.10889165</b></td><td width='10%' align='center'><b> L </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 15 - 0</b><br/> Score1 = 0.24537048<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Gustave_Kahnt' title='http://dbpedia.org/resource/Gustave_Kahnt'>Gustave Kahnt</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/birthPlace' title='http://dbpedia.org/ontology/birthPlace'>birthPlace</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Berlin' title='http://dbpedia.org/resource/Berlin'>Berlin</a></td>
+<td class='tdin' width='7%'>0.24537048</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 15 - 1</b><br/> Score1 = 0.29236606<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Gustave_Doré' title='http://yago-knowledge.org/resource/Gustave_Doré'>Gustave Doré</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/diedIn' title='http://yago-knowledge.org/resource/diedIn'>diedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Paris' title='http://yago-knowledge.org/resource/Paris'>Paris</a></td>
+<td class='tdin' width='7%'>0.29236606</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 16</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.10791968</b></td><td width='10%' align='center'><b> L </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 16 - 0</b><br/> Score1 = 0.24537048<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Gustave_Kahnt' title='http://dbpedia.org/resource/Gustave_Kahnt'>Gustave Kahnt</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/birthPlace' title='http://dbpedia.org/ontology/birthPlace'>birthPlace</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Berlin' title='http://dbpedia.org/resource/Berlin'>Berlin</a></td>
+<td class='tdin' width='7%'>0.24537048</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 16 - 1</b><br/> Score1 = 0.28756621<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Gustave_Eiffel' title='http://yago-knowledge.org/resource/Gustave_Eiffel'>Gustave Eiffel</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/diedIn' title='http://yago-knowledge.org/resource/diedIn'>diedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Paris' title='http://yago-knowledge.org/resource/Paris'>Paris</a></td>
+<td class='tdin' width='7%'>0.28756621</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 17</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.10672879</b></td><td width='10%' align='center'><b> L </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 17 - 0</b><br/> Score1 = 0.24537048<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Ludwig_Godenschweg' title='http://dbpedia.org/resource/Ludwig_Godenschweg'>Ludwig Godenschweg</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/birthPlace' title='http://dbpedia.org/ontology/birthPlace'>birthPlace</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Berlin' title='http://dbpedia.org/resource/Berlin'>Berlin</a></td>
+<td class='tdin' width='7%'>0.24537048</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 17 - 1</b><br/> Score1 = 0.28168526<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Ludwig_Börne' title='http://yago-knowledge.org/resource/Ludwig_Börne'>Ludwig Börne</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/diedIn' title='http://yago-knowledge.org/resource/diedIn'>diedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Paris' title='http://yago-knowledge.org/resource/Paris'>Paris</a></td>
+<td class='tdin' width='7%'>0.28168526</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 18</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.10659206</b></td><td width='10%' align='center'><b> L </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 18 - 0</b><br/> Score1 = 0.24537048<br/> Sim.  = 0.9228<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Marthe_Vogt' title='http://dbpedia.org/resource/Marthe_Vogt'>Marthe Vogt</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/birthPlace' title='http://dbpedia.org/ontology/birthPlace'>birthPlace</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Berlin' title='http://dbpedia.org/resource/Berlin'>Berlin</a></td>
+<td class='tdin' width='7%'>0.24537048</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Marthe_Vogt' title='http://yago-knowledge.org/resource/Marthe_Vogt'>Marthe Vogt</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/wasBornIn' title='http://yago-knowledge.org/resource/wasBornIn'>wasBornIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Berlin' title='http://yago-knowledge.org/resource/Berlin'>Berlin</a></td>
+<td class='tdin' width='7%'>0.24453924</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 18 - 1</b><br/> Score1 = 0.28736505<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Marthe_Vinot' title='http://dbpedia.org/resource/Marthe_Vinot'>Marthe Vinot</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/deathPlace' title='http://dbpedia.org/ontology/deathPlace'>deathPlace</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Paris' title='http://dbpedia.org/resource/Paris'>Paris</a></td>
+<td class='tdin' width='7%'>0.28736505</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 19</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.10659206</b></td><td width='10%' align='center'><b> L </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 19 - 0</b><br/> Score1 = 0.24537048<br/> Sim.  = 0.9228<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Marthe_Vogt' title='http://dbpedia.org/resource/Marthe_Vogt'>Marthe Vogt</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/birthPlace' title='http://dbpedia.org/ontology/birthPlace'>birthPlace</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Berlin' title='http://dbpedia.org/resource/Berlin'>Berlin</a></td>
+<td class='tdin' width='7%'>0.24537048</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Marthe_Vogt' title='http://yago-knowledge.org/resource/Marthe_Vogt'>Marthe Vogt</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/wasBornIn' title='http://yago-knowledge.org/resource/wasBornIn'>wasBornIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Berlin' title='http://yago-knowledge.org/resource/Berlin'>Berlin</a></td>
+<td class='tdin' width='7%'>0.24453924</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 19 - 1</b><br/> Score1 = 0.28736505<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Marthe_Vinot' title='http://dbpedia.org/resource/Marthe_Vinot'>Marthe Vinot</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/deathPlace' title='http://dbpedia.org/ontology/deathPlace'>deathPlace</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Paris' title='http://dbpedia.org/resource/Paris'>Paris</a></td>
+<td class='tdin' width='7%'>0.28736505</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 20</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.10621388</b></td><td width='10%' align='center'><b> L </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 20 - 0</b><br/> Score1 = 0.24537048<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Joseph_Gl%C3%A6ser' title='http://dbpedia.org/resource/Joseph_Gl%C3%A6ser'>Joseph Glæser</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/birthPlace' title='http://dbpedia.org/ontology/birthPlace'>birthPlace</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Berlin' title='http://dbpedia.org/resource/Berlin'>Berlin</a></td>
+<td class='tdin' width='7%'>0.24537048</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 20 - 1</b><br/> Score1 = 0.27914250<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Joseph_Fourier' title='http://yago-knowledge.org/resource/Joseph_Fourier'>Joseph Fourier</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/diedIn' title='http://yago-knowledge.org/resource/diedIn'>diedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Paris' title='http://yago-knowledge.org/resource/Paris'>Paris</a></td>
+<td class='tdin' width='7%'>0.27914250</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 21</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.10566293</b></td><td width='10%' align='center'><b> L </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 21 - 0</b><br/> Score1 = 0.24537048<br/> Sim.  = 0.9228<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Ra%27ad_bin_Zeid' title='http://dbpedia.org/resource/Ra%27ad_bin_Zeid'>Ra'ad bin Zeid</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/birthPlace' title='http://dbpedia.org/ontology/birthPlace'>birthPlace</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Berlin' title='http://dbpedia.org/resource/Berlin'>Berlin</a></td>
+<td class='tdin' width='7%'>0.24537048</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Ra%27ad_bin_Zeid' title='http://yago-knowledge.org/resource/Ra%27ad_bin_Zeid'>Ra'ad bin Zeid</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/wasBornIn' title='http://yago-knowledge.org/resource/wasBornIn'>wasBornIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Berlin' title='http://yago-knowledge.org/resource/Berlin'>Berlin</a></td>
+<td class='tdin' width='7%'>0.24453924</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 21 - 1</b><br/> Score1 = 0.28277672<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Prince_Zeid_bin_Hussein' title='http://yago-knowledge.org/resource/Prince_Zeid_bin_Hussein'>Prince Zeid bin Hussein</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/diedIn' title='http://yago-knowledge.org/resource/diedIn'>diedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Paris' title='http://yago-knowledge.org/resource/Paris'>Paris</a></td>
+<td class='tdin' width='7%'>0.28277672</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 22</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.10566293</b></td><td width='10%' align='center'><b> L </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 22 - 0</b><br/> Score1 = 0.24537048<br/> Sim.  = 0.9228<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Ra%27ad_bin_Zeid' title='http://dbpedia.org/resource/Ra%27ad_bin_Zeid'>Ra'ad bin Zeid</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/birthPlace' title='http://dbpedia.org/ontology/birthPlace'>birthPlace</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Berlin' title='http://dbpedia.org/resource/Berlin'>Berlin</a></td>
+<td class='tdin' width='7%'>0.24537048</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Ra%27ad_bin_Zeid' title='http://yago-knowledge.org/resource/Ra%27ad_bin_Zeid'>Ra'ad bin Zeid</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/wasBornIn' title='http://yago-knowledge.org/resource/wasBornIn'>wasBornIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Berlin' title='http://yago-knowledge.org/resource/Berlin'>Berlin</a></td>
+<td class='tdin' width='7%'>0.24453924</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 22 - 1</b><br/> Score1 = 0.28277672<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Prince_Zeid_bin_Hussein' title='http://yago-knowledge.org/resource/Prince_Zeid_bin_Hussein'>Prince Zeid bin Hussein</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/diedIn' title='http://yago-knowledge.org/resource/diedIn'>diedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Paris' title='http://yago-knowledge.org/resource/Paris'>Paris</a></td>
+<td class='tdin' width='7%'>0.28277672</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 23</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.10538378</b></td><td width='10%' align='center'><b> L </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 23 - 0</b><br/> Score1 = 0.24537048<br/> Sim.  = 0.9228<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Simon_Geschke' title='http://yago-knowledge.org/resource/Simon_Geschke'>Simon Geschke</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/wasBornIn' title='http://yago-knowledge.org/resource/wasBornIn'>wasBornIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Berlin' title='http://yago-knowledge.org/resource/Berlin'>Berlin</a></td>
+<td class='tdin' width='7%'>0.24453924</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Simon_Geschke' title='http://dbpedia.org/resource/Simon_Geschke'>Simon Geschke</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/birthPlace' title='http://dbpedia.org/ontology/birthPlace'>birthPlace</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Berlin' title='http://dbpedia.org/resource/Berlin'>Berlin</a></td>
+<td class='tdin' width='7%'>0.24537048</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 23 - 1</b><br/> Score1 = 0.28139822<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Simone_Simon' title='http://yago-knowledge.org/resource/Simone_Simon'>Simone Simon</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/diedIn' title='http://yago-knowledge.org/resource/diedIn'>diedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Paris' title='http://yago-knowledge.org/resource/Paris'>Paris</a></td>
+<td class='tdin' width='7%'>0.28139822</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 24</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.10538378</b></td><td width='10%' align='center'><b> L </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 24 - 0</b><br/> Score1 = 0.24537048<br/> Sim.  = 0.9228<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Simon_Geschke' title='http://yago-knowledge.org/resource/Simon_Geschke'>Simon Geschke</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/wasBornIn' title='http://yago-knowledge.org/resource/wasBornIn'>wasBornIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Berlin' title='http://yago-knowledge.org/resource/Berlin'>Berlin</a></td>
+<td class='tdin' width='7%'>0.24453924</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Simon_Geschke' title='http://dbpedia.org/resource/Simon_Geschke'>Simon Geschke</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/birthPlace' title='http://dbpedia.org/ontology/birthPlace'>birthPlace</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Berlin' title='http://dbpedia.org/resource/Berlin'>Berlin</a></td>
+<td class='tdin' width='7%'>0.24537048</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 24 - 1</b><br/> Score1 = 0.28139822<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Simone_Simon' title='http://yago-knowledge.org/resource/Simone_Simon'>Simone Simon</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/diedIn' title='http://yago-knowledge.org/resource/diedIn'>diedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Paris' title='http://yago-knowledge.org/resource/Paris'>Paris</a></td>
+<td class='tdin' width='7%'>0.28139822</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 25</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.10521084</b></td><td width='10%' align='center'><b> L </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 25 - 0</b><br/> Score1 = 0.24537048<br/> Sim.  = 0.9228<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Felix_Zymalkowski' title='http://dbpedia.org/resource/Felix_Zymalkowski'>Felix Zymalkowski</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/birthPlace' title='http://dbpedia.org/ontology/birthPlace'>birthPlace</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Berlin' title='http://dbpedia.org/resource/Berlin'>Berlin</a></td>
+<td class='tdin' width='7%'>0.24537048</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Felix_Zymalkowski' title='http://yago-knowledge.org/resource/Felix_Zymalkowski'>Felix Zymalkowski</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/wasBornIn' title='http://yago-knowledge.org/resource/wasBornIn'>wasBornIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Berlin' title='http://yago-knowledge.org/resource/Berlin'>Berlin</a></td>
+<td class='tdin' width='7%'>0.24453924</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 25 - 1</b><br/> Score1 = 0.28054419<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Felix_Yusupov' title='http://yago-knowledge.org/resource/Felix_Yusupov'>Felix Yusupov</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/diedIn' title='http://yago-knowledge.org/resource/diedIn'>diedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Paris' title='http://yago-knowledge.org/resource/Paris'>Paris</a></td>
+<td class='tdin' width='7%'>0.28054419</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 26</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.10521084</b></td><td width='10%' align='center'><b> L </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 26 - 0</b><br/> Score1 = 0.24537048<br/> Sim.  = 0.9228<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Felix_Zymalkowski' title='http://dbpedia.org/resource/Felix_Zymalkowski'>Felix Zymalkowski</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/birthPlace' title='http://dbpedia.org/ontology/birthPlace'>birthPlace</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Berlin' title='http://dbpedia.org/resource/Berlin'>Berlin</a></td>
+<td class='tdin' width='7%'>0.24537048</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Felix_Zymalkowski' title='http://yago-knowledge.org/resource/Felix_Zymalkowski'>Felix Zymalkowski</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/wasBornIn' title='http://yago-knowledge.org/resource/wasBornIn'>wasBornIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Berlin' title='http://yago-knowledge.org/resource/Berlin'>Berlin</a></td>
+<td class='tdin' width='7%'>0.24453924</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 26 - 1</b><br/> Score1 = 0.28054419<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Felix_Yusupov' title='http://yago-knowledge.org/resource/Felix_Yusupov'>Felix Yusupov</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/diedIn' title='http://yago-knowledge.org/resource/diedIn'>diedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Paris' title='http://yago-knowledge.org/resource/Paris'>Paris</a></td>
+<td class='tdin' width='7%'>0.28054419</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 27</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.10416162</b></td><td width='10%' align='center'><b> L </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 27 - 0</b><br/> Score1 = 0.22832542<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Shergo_Biran' title='http://yago-knowledge.org/resource/Shergo_Biran'>Shergo Biran</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/wasBornIn' title='http://yago-knowledge.org/resource/wasBornIn'>wasBornIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/West_Berlin' title='http://yago-knowledge.org/resource/West_Berlin'>West Berlin</a></td>
+<td class='tdin' width='7%'>0.22832542</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 27 - 1</b><br/> Score1 = 0.28605293<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Maine_de_Biran' title='http://yago-knowledge.org/resource/Maine_de_Biran'>Maine de Biran</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/diedIn' title='http://yago-knowledge.org/resource/diedIn'>diedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Paris' title='http://yago-knowledge.org/resource/Paris'>Paris</a></td>
+<td class='tdin' width='7%'>0.28605293</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<question id="11" runID="run9">
+   <string>
+      <![CDATA[How many students does Amsterdam University have?]]>
+   </string>
+   <query>
+      <![CDATA[
+  "Amsterdam University"  "number of students"  ?nbStud .
+]]>
+   </query>
+   <settings labelSearchTopK="5" plugLabel="true" limited="false" validateTriple="false"/>
+   <stats1 nb_results="1" timeSec="1.0570" memoryMB="85.1865" totalQuins="1" avgQuin_Cluster="1.0000" avgQuin_Bucket="1.0000" nb_plugTR="0"/>
+   <stats2>
+      <ds id="LinkedMDB">
+         <nreq>0</nreq>
+         <nreqs>0</nreqs>
+         <nrecd>0</nrecd>
+      </ds>
+      <ds id="DBpedia">
+         <nreq>30</nreq>
+         <nreqs>1</nreqs>
+         <nrecd>1</nrecd>
+      </ds>
+      <ds id="Yago">
+         <nreq>0</nreq>
+         <nreqs>0</nreqs>
+         <nrecd>0</nrecd>
+      </ds>
+   </stats2>
+   <results>
+      <bucket bucket_id="0" runID="run9" score="0.25550478" plugType="E">
+         <cluster cluster_id="0-0" score="0.28389419" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.28389419" isFlipped="false" isObjectLiteral="true">
+               <subject>http://dbpedia.org/resource/University_of_Amsterdam</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/numberOfStudents</predicate>
+               <object>29783</object>
+               <subjectLabel score="0.20973546">University of Amsterdam</subjectLabel>
+               <objectLabel score="0.00000000">29783</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+   </results>
+</question>

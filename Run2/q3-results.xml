@@ -1,0 +1,87 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<question id="3" runID="run2">
+   <string>
+      <![CDATA[How many people live in the capital of China?]]>
+   </string>
+   <query>
+      <![CDATA[
+  "China"   "has capital"  ?capital.
+  ?capital  "population"   ?population. 
+]]>
+   </query>
+   <settings labelSearchTopK="25" plugLabel="false" limited="false" validateTriple="false"/>
+   <stats1 nb_results="2" timeSec="0.8770" memoryMB="76.4075" totalQuins="6" avgQuin_Cluster="1.5000" avgQuin_Bucket="3.0000" nb_plugTR="0"/>
+   <stats2>
+      <ds id="LinkedMDB">
+         <nreq>50</nreq>
+         <nreqs>0</nreqs>
+         <nrecd>0</nrecd>
+      </ds>
+      <ds id="DBpedia">
+         <nreq>54</nreq>
+         <nreqs>2</nreqs>
+         <nrecd>2</nrecd>
+      </ds>
+      <ds id="Yago">
+         <nreq>54</nreq>
+         <nreqs>2</nreqs>
+         <nrecd>2</nrecd>
+      </ds>
+   </stats2>
+   <results>
+      <bucket bucket_id="0" runID="run2" score="0.20136627" plugType="E">
+         <cluster cluster_id="0-0" score="0.23811866" sim="0.9846" norm="0.9500">
+            <quintuple dataset="DBpedia" score="0.23036674" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/China</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/capital</predicate>
+               <object>http://dbpedia.org/resource/Beijing</object>
+               <subjectLabel score="0.07591684">China</subjectLabel>
+               <objectLabel score="0.00000000">Beijing</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.23811866" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/China</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasCapital</predicate>
+               <object>http://yago-knowledge.org/resource/Beijing</object>
+               <subjectLabel score="0.09529663">China</subjectLabel>
+               <objectLabel score="0.00000000">Beijing</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="0-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://dbpedia.org/resource/Beijing</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/populationTotal</predicate>
+               <object>21150000</object>
+               <subjectLabel score="0.00000000">Beijing</subjectLabel>
+               <objectLabel score="0.00000000">21150000</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="1" runID="run2" score="0.20136627" plugType="E">
+         <cluster cluster_id="1-0" score="0.23811866" sim="0.9846" norm="0.9500">
+            <quintuple dataset="DBpedia" score="0.23036674" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/China</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/capital</predicate>
+               <object>http://dbpedia.org/resource/Beijing</object>
+               <subjectLabel score="0.07591684">China</subjectLabel>
+               <objectLabel score="0.00000000">Beijing</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.23811866" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/China</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasCapital</predicate>
+               <object>http://yago-knowledge.org/resource/Beijing</object>
+               <subjectLabel score="0.09529663">China</subjectLabel>
+               <objectLabel score="0.00000000">Beijing</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="1-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://yago-knowledge.org/resource/Beijing</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasNumberOfPeople</predicate>
+               <object>http://yago-knowledge.org/resource/"19612368"^^xsd:nonNegativeInteger</object>
+               <subjectLabel score="0.00000000">Beijing</subjectLabel>
+               <objectLabel score="0.00000000">"19612368"</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+   </results>
+</question>

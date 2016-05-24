@@ -1,0 +1,1371 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<question id="23" runID="run3">
+   <string>
+      <![CDATA[Give me all actors starring in movies directed by and starring William Shatner.]]>
+   </string>
+   <query>
+      <![CDATA[
+  "William Shatner"  "directed"  ?movie .
+  "William Shatner"  "acted in"  ?movie .
+  ?actor             "acted in"  ?movie .
+]]>
+   </query>
+   <settings labelSearchTopK="20" plugLabel="false" limited="false" validateTriple="false"/>
+   <stats1 nb_results="28" timeSec="1.8100" memoryMB="100.6822" totalQuins="159" avgQuin_Cluster="1.8929" avgQuin_Bucket="5.6786" nb_plugTR="0"/>
+   <stats2>
+      <ds id="LinkedMDB">
+         <nreq>166</nreq>
+         <nreqs>8</nreqs>
+         <nrecd>28</nrecd>
+      </ds>
+      <ds id="DBpedia">
+         <nreq>84</nreq>
+         <nreqs>4</nreqs>
+         <nrecd>23</nrecd>
+      </ds>
+      <ds id="Yago">
+         <nreq>82</nreq>
+         <nreqs>4</nreqs>
+         <nrecd>14</nrecd>
+      </ds>
+   </stats2>
+   <results>
+      <bucket bucket_id="0" runID="run3" score="0.21854394" plugType="E">
+         <cluster cluster_id="0-0" score="0.26399958" sim="0.9004" norm="1.0000">
+            <quintuple dataset="LinkedMDB" score="0.25848160" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/3533</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/director</predicate>
+               <object>http://data.linkedmdb.org/resource/director/8506</object>
+               <subjectLabel score="0.00000000">Groom Lake</subjectLabel>
+               <objectLabel score="0.14620400">William Shatner</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.23746854" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Groom_Lake_(film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/director</predicate>
+               <object>http://dbpedia.org/resource/William_Shatner</object>
+               <subjectLabel score="0.00000000">Groom Lake</subjectLabel>
+               <objectLabel score="0.09367134">William Shatner</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.26399958" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/William_Shatner</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/directed</predicate>
+               <object>http://yago-knowledge.org/resource/Groom_Lake_(film)</object>
+               <subjectLabel score="0.15999893">William Shatner</subjectLabel>
+               <objectLabel score="0.00000000">Groom Lake</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="0-1" score="0.26399958" sim="0.9007" norm="1.0000">
+            <quintuple dataset="Yago" score="0.26399958" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/William_Shatner</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Groom_Lake_(film)</object>
+               <subjectLabel score="0.15999893">William Shatner</subjectLabel>
+               <objectLabel score="0.00000000">Groom Lake</objectLabel>
+            </quintuple>
+            <quintuple dataset="LinkedMDB" score="0.26379812" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/3533</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/29685</object>
+               <subjectLabel score="0.00000000">Groom Lake</subjectLabel>
+               <objectLabel score="0.15949529">William Shatner</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.23746854" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Groom_Lake_(film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/William_Shatner</object>
+               <subjectLabel score="0.00000000">Groom Lake</subjectLabel>
+               <objectLabel score="0.09367134">William Shatner</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="0-2" score="0.20000000" sim="0.9007" norm="1.0000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Groom_Lake_(film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Amy_Acker</object>
+               <subjectLabel score="0.00000000">Groom Lake</subjectLabel>
+               <objectLabel score="0.00000000">Amy Acker</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Amy_Acker</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Groom_Lake_(film)</object>
+               <subjectLabel score="0.00000000">Amy Acker</subjectLabel>
+               <objectLabel score="0.00000000">Groom Lake</objectLabel>
+            </quintuple>
+            <quintuple dataset="LinkedMDB" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/3533</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/33526</object>
+               <subjectLabel score="0.00000000">Groom Lake</subjectLabel>
+               <objectLabel score="0.00000000">Amy Acker</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="1" runID="run3" score="0.21854394" plugType="E">
+         <cluster cluster_id="1-0" score="0.26399958" sim="0.9004" norm="1.0000">
+            <quintuple dataset="LinkedMDB" score="0.25848160" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/3533</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/director</predicate>
+               <object>http://data.linkedmdb.org/resource/director/8506</object>
+               <subjectLabel score="0.00000000">Groom Lake</subjectLabel>
+               <objectLabel score="0.14620400">William Shatner</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.23746854" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Groom_Lake_(film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/director</predicate>
+               <object>http://dbpedia.org/resource/William_Shatner</object>
+               <subjectLabel score="0.00000000">Groom Lake</subjectLabel>
+               <objectLabel score="0.09367134">William Shatner</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.26399958" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/William_Shatner</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/directed</predicate>
+               <object>http://yago-knowledge.org/resource/Groom_Lake_(film)</object>
+               <subjectLabel score="0.15999893">William Shatner</subjectLabel>
+               <objectLabel score="0.00000000">Groom Lake</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="1-1" score="0.26399958" sim="0.9007" norm="1.0000">
+            <quintuple dataset="Yago" score="0.26399958" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/William_Shatner</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Groom_Lake_(film)</object>
+               <subjectLabel score="0.15999893">William Shatner</subjectLabel>
+               <objectLabel score="0.00000000">Groom Lake</objectLabel>
+            </quintuple>
+            <quintuple dataset="LinkedMDB" score="0.26379812" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/3533</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/29685</object>
+               <subjectLabel score="0.00000000">Groom Lake</subjectLabel>
+               <objectLabel score="0.15949529">William Shatner</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.23746854" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Groom_Lake_(film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/William_Shatner</object>
+               <subjectLabel score="0.00000000">Groom Lake</subjectLabel>
+               <objectLabel score="0.09367134">William Shatner</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="1-2" score="0.20000000" sim="0.9007" norm="1.0000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Groom_Lake_(film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Dan_Gauthier</object>
+               <subjectLabel score="0.00000000">Groom Lake</subjectLabel>
+               <objectLabel score="0.00000000">Dan Gauthier</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Dan_Gauthier</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Groom_Lake_(film)</object>
+               <subjectLabel score="0.00000000">Dan Gauthier</subjectLabel>
+               <objectLabel score="0.00000000">Groom Lake</objectLabel>
+            </quintuple>
+            <quintuple dataset="LinkedMDB" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/3533</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/34409</object>
+               <subjectLabel score="0.00000000">Groom Lake</subjectLabel>
+               <objectLabel score="0.00000000">Dan Gauthier</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="2" runID="run3" score="0.21854394" plugType="E">
+         <cluster cluster_id="2-0" score="0.26399958" sim="0.9004" norm="1.0000">
+            <quintuple dataset="LinkedMDB" score="0.25848160" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/3533</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/director</predicate>
+               <object>http://data.linkedmdb.org/resource/director/8506</object>
+               <subjectLabel score="0.00000000">Groom Lake</subjectLabel>
+               <objectLabel score="0.14620400">William Shatner</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.23746854" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Groom_Lake_(film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/director</predicate>
+               <object>http://dbpedia.org/resource/William_Shatner</object>
+               <subjectLabel score="0.00000000">Groom Lake</subjectLabel>
+               <objectLabel score="0.09367134">William Shatner</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.26399958" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/William_Shatner</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/directed</predicate>
+               <object>http://yago-knowledge.org/resource/Groom_Lake_(film)</object>
+               <subjectLabel score="0.15999893">William Shatner</subjectLabel>
+               <objectLabel score="0.00000000">Groom Lake</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="2-1" score="0.26399958" sim="0.9007" norm="1.0000">
+            <quintuple dataset="Yago" score="0.26399958" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/William_Shatner</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Groom_Lake_(film)</object>
+               <subjectLabel score="0.15999893">William Shatner</subjectLabel>
+               <objectLabel score="0.00000000">Groom Lake</objectLabel>
+            </quintuple>
+            <quintuple dataset="LinkedMDB" score="0.26379812" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/3533</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/29685</object>
+               <subjectLabel score="0.00000000">Groom Lake</subjectLabel>
+               <objectLabel score="0.15949529">William Shatner</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.23746854" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Groom_Lake_(film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/William_Shatner</object>
+               <subjectLabel score="0.00000000">Groom Lake</subjectLabel>
+               <objectLabel score="0.09367134">William Shatner</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="2-2" score="0.20000000" sim="0.9007" norm="1.0000">
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Dick_Van_Patten</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Groom_Lake_(film)</object>
+               <subjectLabel score="0.00000000">Dick Van Patten</subjectLabel>
+               <objectLabel score="0.00000000">Groom Lake</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Groom_Lake_(film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Dick_Van_Patten</object>
+               <subjectLabel score="0.00000000">Groom Lake</subjectLabel>
+               <objectLabel score="0.00000000">Dick Van Patten</objectLabel>
+            </quintuple>
+            <quintuple dataset="LinkedMDB" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/3533</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/35755</object>
+               <subjectLabel score="0.00000000">Groom Lake</subjectLabel>
+               <objectLabel score="0.00000000">Dick Van Patten</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="3" runID="run3" score="0.21854394" plugType="E">
+         <cluster cluster_id="3-0" score="0.26399958" sim="0.9004" norm="1.0000">
+            <quintuple dataset="LinkedMDB" score="0.25848160" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/3533</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/director</predicate>
+               <object>http://data.linkedmdb.org/resource/director/8506</object>
+               <subjectLabel score="0.00000000">Groom Lake</subjectLabel>
+               <objectLabel score="0.14620400">William Shatner</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.23746854" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Groom_Lake_(film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/director</predicate>
+               <object>http://dbpedia.org/resource/William_Shatner</object>
+               <subjectLabel score="0.00000000">Groom Lake</subjectLabel>
+               <objectLabel score="0.09367134">William Shatner</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.26399958" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/William_Shatner</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/directed</predicate>
+               <object>http://yago-knowledge.org/resource/Groom_Lake_(film)</object>
+               <subjectLabel score="0.15999893">William Shatner</subjectLabel>
+               <objectLabel score="0.00000000">Groom Lake</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="3-1" score="0.26399958" sim="0.9007" norm="1.0000">
+            <quintuple dataset="Yago" score="0.26399958" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/William_Shatner</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Groom_Lake_(film)</object>
+               <subjectLabel score="0.15999893">William Shatner</subjectLabel>
+               <objectLabel score="0.00000000">Groom Lake</objectLabel>
+            </quintuple>
+            <quintuple dataset="LinkedMDB" score="0.26379812" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/3533</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/29685</object>
+               <subjectLabel score="0.00000000">Groom Lake</subjectLabel>
+               <objectLabel score="0.15949529">William Shatner</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.23746854" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Groom_Lake_(film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/William_Shatner</object>
+               <subjectLabel score="0.00000000">Groom Lake</subjectLabel>
+               <objectLabel score="0.09367134">William Shatner</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="3-2" score="0.20000000" sim="0.9007" norm="1.0000">
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Tom_Towles</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Groom_Lake_(film)</object>
+               <subjectLabel score="0.00000000">Tom Towles</subjectLabel>
+               <objectLabel score="0.00000000">Groom Lake</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Groom_Lake_(film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Tom_Towles</object>
+               <subjectLabel score="0.00000000">Groom Lake</subjectLabel>
+               <objectLabel score="0.00000000">Tom Towles</objectLabel>
+            </quintuple>
+            <quintuple dataset="LinkedMDB" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/3533</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/45878</object>
+               <subjectLabel score="0.00000000">Groom Lake</subjectLabel>
+               <objectLabel score="0.00000000">Tom Towles</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="4" runID="run3" score="0.21854394" plugType="E">
+         <cluster cluster_id="4-0" score="0.26399958" sim="0.9004" norm="1.0000">
+            <quintuple dataset="LinkedMDB" score="0.25848160" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/3533</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/director</predicate>
+               <object>http://data.linkedmdb.org/resource/director/8506</object>
+               <subjectLabel score="0.00000000">Groom Lake</subjectLabel>
+               <objectLabel score="0.14620400">William Shatner</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.23746854" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Groom_Lake_(film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/director</predicate>
+               <object>http://dbpedia.org/resource/William_Shatner</object>
+               <subjectLabel score="0.00000000">Groom Lake</subjectLabel>
+               <objectLabel score="0.09367134">William Shatner</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.26399958" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/William_Shatner</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/directed</predicate>
+               <object>http://yago-knowledge.org/resource/Groom_Lake_(film)</object>
+               <subjectLabel score="0.15999893">William Shatner</subjectLabel>
+               <objectLabel score="0.00000000">Groom Lake</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="4-1" score="0.26399958" sim="0.9007" norm="1.0000">
+            <quintuple dataset="Yago" score="0.26399958" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/William_Shatner</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Groom_Lake_(film)</object>
+               <subjectLabel score="0.15999893">William Shatner</subjectLabel>
+               <objectLabel score="0.00000000">Groom Lake</objectLabel>
+            </quintuple>
+            <quintuple dataset="LinkedMDB" score="0.26379812" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/3533</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/29685</object>
+               <subjectLabel score="0.00000000">Groom Lake</subjectLabel>
+               <objectLabel score="0.15949529">William Shatner</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.23746854" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Groom_Lake_(film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/William_Shatner</object>
+               <subjectLabel score="0.00000000">Groom Lake</subjectLabel>
+               <objectLabel score="0.09367134">William Shatner</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="4-2" score="0.20000000" sim="0.9007" norm="1.0000">
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/William_Shatner</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Groom_Lake_(film)</object>
+               <subjectLabel score="0.00000000">William Shatner</subjectLabel>
+               <objectLabel score="0.00000000">Groom Lake</objectLabel>
+            </quintuple>
+            <quintuple dataset="LinkedMDB" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/3533</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/29685</object>
+               <subjectLabel score="0.00000000">Groom Lake</subjectLabel>
+               <objectLabel score="0.00000000">William Shatner</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Groom_Lake_(film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/William_Shatner</object>
+               <subjectLabel score="0.00000000">Groom Lake</subjectLabel>
+               <objectLabel score="0.00000000">William Shatner</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="5" runID="run3" score="0.21849732" plugType="E">
+         <cluster cluster_id="5-0" score="0.26399958" sim="0.9004" norm="1.0000">
+            <quintuple dataset="LinkedMDB" score="0.25848160" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/3533</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/director</predicate>
+               <object>http://data.linkedmdb.org/resource/director/8506</object>
+               <subjectLabel score="0.00000000">Groom Lake</subjectLabel>
+               <objectLabel score="0.14620400">William Shatner</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.23746854" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Groom_Lake_(film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/director</predicate>
+               <object>http://dbpedia.org/resource/William_Shatner</object>
+               <subjectLabel score="0.00000000">Groom Lake</subjectLabel>
+               <objectLabel score="0.09367134">William Shatner</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.26399958" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/William_Shatner</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/directed</predicate>
+               <object>http://yago-knowledge.org/resource/Groom_Lake_(film)</object>
+               <subjectLabel score="0.15999893">William Shatner</subjectLabel>
+               <objectLabel score="0.00000000">Groom Lake</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="5-1" score="0.26399958" sim="0.9007" norm="1.0000">
+            <quintuple dataset="Yago" score="0.26399958" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/William_Shatner</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Groom_Lake_(film)</object>
+               <subjectLabel score="0.15999893">William Shatner</subjectLabel>
+               <objectLabel score="0.00000000">Groom Lake</objectLabel>
+            </quintuple>
+            <quintuple dataset="LinkedMDB" score="0.26379812" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/3533</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/29685</object>
+               <subjectLabel score="0.00000000">Groom Lake</subjectLabel>
+               <objectLabel score="0.15949529">William Shatner</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.23746854" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Groom_Lake_(film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/William_Shatner</object>
+               <subjectLabel score="0.00000000">Groom Lake</subjectLabel>
+               <objectLabel score="0.09367134">William Shatner</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="5-2" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="true" isObjectLiteral="true">
+               <subject>http://dbpedia.org/resource/Groom_Lake_(film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Chuck_Williams_(actor)</object>
+               <subjectLabel score="0.00000000">Groom Lake</subjectLabel>
+               <objectLabel score="0.00000000">http://dbpedia.org/resource/Chuck_Williams</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="6" runID="run3" score="0.21849732" plugType="E">
+         <cluster cluster_id="6-0" score="0.26399958" sim="0.9004" norm="1.0000">
+            <quintuple dataset="LinkedMDB" score="0.25848160" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/3533</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/director</predicate>
+               <object>http://data.linkedmdb.org/resource/director/8506</object>
+               <subjectLabel score="0.00000000">Groom Lake</subjectLabel>
+               <objectLabel score="0.14620400">William Shatner</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.23746854" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Groom_Lake_(film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/director</predicate>
+               <object>http://dbpedia.org/resource/William_Shatner</object>
+               <subjectLabel score="0.00000000">Groom Lake</subjectLabel>
+               <objectLabel score="0.09367134">William Shatner</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.26399958" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/William_Shatner</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/directed</predicate>
+               <object>http://yago-knowledge.org/resource/Groom_Lake_(film)</object>
+               <subjectLabel score="0.15999893">William Shatner</subjectLabel>
+               <objectLabel score="0.00000000">Groom Lake</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="6-1" score="0.26399958" sim="0.9007" norm="1.0000">
+            <quintuple dataset="Yago" score="0.26399958" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/William_Shatner</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Groom_Lake_(film)</object>
+               <subjectLabel score="0.15999893">William Shatner</subjectLabel>
+               <objectLabel score="0.00000000">Groom Lake</objectLabel>
+            </quintuple>
+            <quintuple dataset="LinkedMDB" score="0.26379812" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/3533</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/29685</object>
+               <subjectLabel score="0.00000000">Groom Lake</subjectLabel>
+               <objectLabel score="0.15949529">William Shatner</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.23746854" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Groom_Lake_(film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/William_Shatner</object>
+               <subjectLabel score="0.00000000">Groom Lake</subjectLabel>
+               <objectLabel score="0.09367134">William Shatner</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="6-2" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Groom_Lake_(film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Rickey_Medlocke</object>
+               <subjectLabel score="0.00000000">Groom Lake</subjectLabel>
+               <objectLabel score="0.00000000">Rickey Medlocke</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="7" runID="run3" score="0.21668393" plugType="E">
+         <cluster cluster_id="7-0" score="0.25848160" sim="1.0000" norm="0.9000">
+            <quintuple dataset="LinkedMDB" score="0.25848160" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/54121</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/director</predicate>
+               <object>http://data.linkedmdb.org/resource/director/8506</object>
+               <subjectLabel score="0.00000000">The Tenth Level</subjectLabel>
+               <objectLabel score="0.14620400">William Shatner</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="7-1" score="0.26379812" sim="1.0000" norm="0.9000">
+            <quintuple dataset="LinkedMDB" score="0.26379812" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/54121</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/29685</object>
+               <subjectLabel score="0.00000000">The Tenth Level</subjectLabel>
+               <objectLabel score="0.15949529">William Shatner</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="7-2" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="LinkedMDB" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/54121</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/39600</object>
+               <subjectLabel score="0.00000000">The Tenth Level</subjectLabel>
+               <objectLabel score="0.00000000">Lynn Carlin</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="8" runID="run3" score="0.21668393" plugType="E">
+         <cluster cluster_id="8-0" score="0.25848160" sim="1.0000" norm="0.9000">
+            <quintuple dataset="LinkedMDB" score="0.25848160" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/54121</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/director</predicate>
+               <object>http://data.linkedmdb.org/resource/director/8506</object>
+               <subjectLabel score="0.00000000">The Tenth Level</subjectLabel>
+               <objectLabel score="0.14620400">William Shatner</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="8-1" score="0.26379812" sim="1.0000" norm="0.9000">
+            <quintuple dataset="LinkedMDB" score="0.26379812" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/54121</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/29685</object>
+               <subjectLabel score="0.00000000">The Tenth Level</subjectLabel>
+               <objectLabel score="0.15949529">William Shatner</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="8-2" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="LinkedMDB" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/54121</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/33897</object>
+               <subjectLabel score="0.00000000">The Tenth Level</subjectLabel>
+               <objectLabel score="0.00000000">Estelle Parsons</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="9" runID="run3" score="0.21668393" plugType="E">
+         <cluster cluster_id="9-0" score="0.25848160" sim="1.0000" norm="0.9000">
+            <quintuple dataset="LinkedMDB" score="0.25848160" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/54121</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/director</predicate>
+               <object>http://data.linkedmdb.org/resource/director/8506</object>
+               <subjectLabel score="0.00000000">The Tenth Level</subjectLabel>
+               <objectLabel score="0.14620400">William Shatner</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="9-1" score="0.26379812" sim="1.0000" norm="0.9000">
+            <quintuple dataset="LinkedMDB" score="0.26379812" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/54121</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/29685</object>
+               <subjectLabel score="0.00000000">The Tenth Level</subjectLabel>
+               <objectLabel score="0.15949529">William Shatner</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="9-2" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="LinkedMDB" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/54121</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/33776</object>
+               <subjectLabel score="0.00000000">The Tenth Level</subjectLabel>
+               <objectLabel score="0.00000000">Ossie Davis</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="10" runID="run3" score="0.21668393" plugType="E">
+         <cluster cluster_id="10-0" score="0.25848160" sim="1.0000" norm="0.9000">
+            <quintuple dataset="LinkedMDB" score="0.25848160" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/54121</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/director</predicate>
+               <object>http://data.linkedmdb.org/resource/director/8506</object>
+               <subjectLabel score="0.00000000">The Tenth Level</subjectLabel>
+               <objectLabel score="0.14620400">William Shatner</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="10-1" score="0.26379812" sim="1.0000" norm="0.9000">
+            <quintuple dataset="LinkedMDB" score="0.26379812" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/54121</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/29685</object>
+               <subjectLabel score="0.00000000">The Tenth Level</subjectLabel>
+               <objectLabel score="0.15949529">William Shatner</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="10-2" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="LinkedMDB" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/54121</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/29872</object>
+               <subjectLabel score="0.00000000">The Tenth Level</subjectLabel>
+               <objectLabel score="0.00000000">John Travolta</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="11" runID="run3" score="0.21668393" plugType="E">
+         <cluster cluster_id="11-0" score="0.25848160" sim="1.0000" norm="0.9000">
+            <quintuple dataset="LinkedMDB" score="0.25848160" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/54121</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/director</predicate>
+               <object>http://data.linkedmdb.org/resource/director/8506</object>
+               <subjectLabel score="0.00000000">The Tenth Level</subjectLabel>
+               <objectLabel score="0.14620400">William Shatner</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="11-1" score="0.26379812" sim="1.0000" norm="0.9000">
+            <quintuple dataset="LinkedMDB" score="0.26379812" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/54121</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/29685</object>
+               <subjectLabel score="0.00000000">The Tenth Level</subjectLabel>
+               <objectLabel score="0.15949529">William Shatner</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="11-2" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="LinkedMDB" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/54121</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/29685</object>
+               <subjectLabel score="0.00000000">The Tenth Level</subjectLabel>
+               <objectLabel score="0.00000000">William Shatner</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="12" runID="run3" score="0.21644402" plugType="E">
+         <cluster cluster_id="12-0" score="0.26399958" sim="0.9004" norm="1.0000">
+            <quintuple dataset="LinkedMDB" score="0.25848160" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/3533</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/director</predicate>
+               <object>http://data.linkedmdb.org/resource/director/8506</object>
+               <subjectLabel score="0.00000000">Groom Lake</subjectLabel>
+               <objectLabel score="0.14620400">William Shatner</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.23746854" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Groom_Lake_(film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/director</predicate>
+               <object>http://dbpedia.org/resource/William_Shatner</object>
+               <subjectLabel score="0.00000000">Groom Lake</subjectLabel>
+               <objectLabel score="0.09367134">William Shatner</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.26399958" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/William_Shatner</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/directed</predicate>
+               <object>http://yago-knowledge.org/resource/Groom_Lake_(film)</object>
+               <subjectLabel score="0.15999893">William Shatner</subjectLabel>
+               <objectLabel score="0.00000000">Groom Lake</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="12-1" score="0.26399958" sim="0.9007" norm="1.0000">
+            <quintuple dataset="Yago" score="0.26399958" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/William_Shatner</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Groom_Lake_(film)</object>
+               <subjectLabel score="0.15999893">William Shatner</subjectLabel>
+               <objectLabel score="0.00000000">Groom Lake</objectLabel>
+            </quintuple>
+            <quintuple dataset="LinkedMDB" score="0.26379812" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/3533</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/29685</object>
+               <subjectLabel score="0.00000000">Groom Lake</subjectLabel>
+               <objectLabel score="0.15949529">William Shatner</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.23746854" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Groom_Lake_(film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/William_Shatner</object>
+               <subjectLabel score="0.00000000">Groom Lake</subjectLabel>
+               <objectLabel score="0.09367134">William Shatner</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="12-2" score="0.20000000" sim="0.9149" norm="0.9500">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Groom_Lake_(film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Brenda_Bakke</object>
+               <subjectLabel score="0.00000000">Groom Lake</subjectLabel>
+               <objectLabel score="0.00000000">Brenda Bakke</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Brenda_Bakke</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Groom_Lake_(film)</object>
+               <subjectLabel score="0.00000000">Brenda Bakke</subjectLabel>
+               <objectLabel score="0.00000000">Groom Lake</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="13" runID="run3" score="0.21644402" plugType="E">
+         <cluster cluster_id="13-0" score="0.26399958" sim="0.9004" norm="1.0000">
+            <quintuple dataset="LinkedMDB" score="0.25848160" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/3533</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/director</predicate>
+               <object>http://data.linkedmdb.org/resource/director/8506</object>
+               <subjectLabel score="0.00000000">Groom Lake</subjectLabel>
+               <objectLabel score="0.14620400">William Shatner</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.23746854" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Groom_Lake_(film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/director</predicate>
+               <object>http://dbpedia.org/resource/William_Shatner</object>
+               <subjectLabel score="0.00000000">Groom Lake</subjectLabel>
+               <objectLabel score="0.09367134">William Shatner</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.26399958" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/William_Shatner</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/directed</predicate>
+               <object>http://yago-knowledge.org/resource/Groom_Lake_(film)</object>
+               <subjectLabel score="0.15999893">William Shatner</subjectLabel>
+               <objectLabel score="0.00000000">Groom Lake</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="13-1" score="0.26399958" sim="0.9007" norm="1.0000">
+            <quintuple dataset="Yago" score="0.26399958" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/William_Shatner</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Groom_Lake_(film)</object>
+               <subjectLabel score="0.15999893">William Shatner</subjectLabel>
+               <objectLabel score="0.00000000">Groom Lake</objectLabel>
+            </quintuple>
+            <quintuple dataset="LinkedMDB" score="0.26379812" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/3533</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/29685</object>
+               <subjectLabel score="0.00000000">Groom Lake</subjectLabel>
+               <objectLabel score="0.15949529">William Shatner</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.23746854" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Groom_Lake_(film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/William_Shatner</object>
+               <subjectLabel score="0.00000000">Groom Lake</subjectLabel>
+               <objectLabel score="0.09367134">William Shatner</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="13-2" score="0.20000000" sim="0.9149" norm="0.9500">
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Dan_Martin_(actor)</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Groom_Lake_(film)</object>
+               <subjectLabel score="0.00000000">Dan Martin</subjectLabel>
+               <objectLabel score="0.00000000">Groom Lake</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Groom_Lake_(film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Dan_Martin_(actor)</object>
+               <subjectLabel score="0.00000000">Groom Lake</subjectLabel>
+               <objectLabel score="0.00000000">Dan Martin</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="14" runID="run3" score="0.21644402" plugType="E">
+         <cluster cluster_id="14-0" score="0.26399958" sim="0.9004" norm="1.0000">
+            <quintuple dataset="LinkedMDB" score="0.25848160" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/3533</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/director</predicate>
+               <object>http://data.linkedmdb.org/resource/director/8506</object>
+               <subjectLabel score="0.00000000">Groom Lake</subjectLabel>
+               <objectLabel score="0.14620400">William Shatner</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.23746854" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Groom_Lake_(film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/director</predicate>
+               <object>http://dbpedia.org/resource/William_Shatner</object>
+               <subjectLabel score="0.00000000">Groom Lake</subjectLabel>
+               <objectLabel score="0.09367134">William Shatner</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.26399958" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/William_Shatner</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/directed</predicate>
+               <object>http://yago-knowledge.org/resource/Groom_Lake_(film)</object>
+               <subjectLabel score="0.15999893">William Shatner</subjectLabel>
+               <objectLabel score="0.00000000">Groom Lake</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="14-1" score="0.26399958" sim="0.9007" norm="1.0000">
+            <quintuple dataset="Yago" score="0.26399958" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/William_Shatner</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Groom_Lake_(film)</object>
+               <subjectLabel score="0.15999893">William Shatner</subjectLabel>
+               <objectLabel score="0.00000000">Groom Lake</objectLabel>
+            </quintuple>
+            <quintuple dataset="LinkedMDB" score="0.26379812" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/3533</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/29685</object>
+               <subjectLabel score="0.00000000">Groom Lake</subjectLabel>
+               <objectLabel score="0.15949529">William Shatner</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.23746854" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Groom_Lake_(film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/William_Shatner</object>
+               <subjectLabel score="0.00000000">Groom Lake</subjectLabel>
+               <objectLabel score="0.09367134">William Shatner</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="14-2" score="0.20000000" sim="0.9149" norm="0.9500">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Groom_Lake_(film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Duane_Whitaker</object>
+               <subjectLabel score="0.00000000">Groom Lake</subjectLabel>
+               <objectLabel score="0.00000000">Duane Whitaker</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Duane_Whitaker</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Groom_Lake_(film)</object>
+               <subjectLabel score="0.00000000">Duane Whitaker</subjectLabel>
+               <objectLabel score="0.00000000">Groom Lake</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="15" runID="run3" score="0.21295886" plugType="E">
+         <cluster cluster_id="15-0" score="0.26399958" sim="0.9004" norm="1.0000">
+            <quintuple dataset="LinkedMDB" score="0.25848160" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/3533</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/director</predicate>
+               <object>http://data.linkedmdb.org/resource/director/8506</object>
+               <subjectLabel score="0.00000000">Groom Lake</subjectLabel>
+               <objectLabel score="0.14620400">William Shatner</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.23746854" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Groom_Lake_(film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/director</predicate>
+               <object>http://dbpedia.org/resource/William_Shatner</object>
+               <subjectLabel score="0.00000000">Groom Lake</subjectLabel>
+               <objectLabel score="0.09367134">William Shatner</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.26399958" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/William_Shatner</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/directed</predicate>
+               <object>http://yago-knowledge.org/resource/Groom_Lake_(film)</object>
+               <subjectLabel score="0.15999893">William Shatner</subjectLabel>
+               <objectLabel score="0.00000000">Groom Lake</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="15-1" score="0.26399958" sim="0.9007" norm="1.0000">
+            <quintuple dataset="Yago" score="0.26399958" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/William_Shatner</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Groom_Lake_(film)</object>
+               <subjectLabel score="0.15999893">William Shatner</subjectLabel>
+               <objectLabel score="0.00000000">Groom Lake</objectLabel>
+            </quintuple>
+            <quintuple dataset="LinkedMDB" score="0.26379812" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/3533</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/29685</object>
+               <subjectLabel score="0.00000000">Groom Lake</subjectLabel>
+               <objectLabel score="0.15949529">William Shatner</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.23746854" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Groom_Lake_(film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/William_Shatner</object>
+               <subjectLabel score="0.00000000">Groom Lake</subjectLabel>
+               <objectLabel score="0.09367134">William Shatner</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="15-2" score="0.20000000" sim="0.9077" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="true" isObjectLiteral="true">
+               <subject>http://dbpedia.org/resource/Groom_Lake_(film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/J.T._Colosa</object>
+               <subjectLabel score="0.00000000">Groom Lake</subjectLabel>
+               <objectLabel score="0.00000000">http://dbpedia.org/resource/J.T._Colosa</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="true" isObjectLiteral="true">
+               <subject>http://dbpedia.org/resource/Groom_Lake_(film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/John_Prosky</object>
+               <subjectLabel score="0.00000000">Groom Lake</subjectLabel>
+               <objectLabel score="0.00000000">http://dbpedia.org/resource/John_Prosky</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="16" runID="run3" score="0.21284022" plugType="E">
+         <cluster cluster_id="16-0" score="0.25848160" sim="0.9004" norm="0.9500">
+            <quintuple dataset="LinkedMDB" score="0.25848160" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/357</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/director</predicate>
+               <object>http://data.linkedmdb.org/resource/director/8506</object>
+               <subjectLabel score="0.00000000">Star Trek V: The Final Frontier</subjectLabel>
+               <objectLabel score="0.14620400">William Shatner</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.23746854" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Star_Trek_V:_The_Final_Frontier</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/director</predicate>
+               <object>http://dbpedia.org/resource/William_Shatner</object>
+               <subjectLabel score="0.00000000">Star Trek V: The Final Frontier</subjectLabel>
+               <objectLabel score="0.09367134">William Shatner</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="16-1" score="0.26379812" sim="1.0000" norm="0.9000">
+            <quintuple dataset="LinkedMDB" score="0.26379812" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/357</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/29685</object>
+               <subjectLabel score="0.00000000">Star Trek V: The Final Frontier</subjectLabel>
+               <objectLabel score="0.15949529">William Shatner</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="16-2" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Star_Trek_V:_The_Final_Frontier</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Walter_Koenig</object>
+               <subjectLabel score="0.00000000">Star Trek V: The Final Frontier</subjectLabel>
+               <objectLabel score="0.00000000">Walter Koenig</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="17" runID="run3" score="0.21284022" plugType="E">
+         <cluster cluster_id="17-0" score="0.25848160" sim="0.9004" norm="0.9500">
+            <quintuple dataset="LinkedMDB" score="0.25848160" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/357</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/director</predicate>
+               <object>http://data.linkedmdb.org/resource/director/8506</object>
+               <subjectLabel score="0.00000000">Star Trek V: The Final Frontier</subjectLabel>
+               <objectLabel score="0.14620400">William Shatner</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.23746854" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Star_Trek_V:_The_Final_Frontier</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/director</predicate>
+               <object>http://dbpedia.org/resource/William_Shatner</object>
+               <subjectLabel score="0.00000000">Star Trek V: The Final Frontier</subjectLabel>
+               <objectLabel score="0.09367134">William Shatner</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="17-1" score="0.26379812" sim="1.0000" norm="0.9000">
+            <quintuple dataset="LinkedMDB" score="0.26379812" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/357</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/29685</object>
+               <subjectLabel score="0.00000000">Star Trek V: The Final Frontier</subjectLabel>
+               <objectLabel score="0.15949529">William Shatner</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="17-2" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="LinkedMDB" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/357</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/47624</object>
+               <subjectLabel score="0.00000000">Star Trek V: The Final Frontier</subjectLabel>
+               <objectLabel score="0.00000000">Todd Bryant</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="18" runID="run3" score="0.21284022" plugType="E">
+         <cluster cluster_id="18-0" score="0.25848160" sim="0.9004" norm="0.9500">
+            <quintuple dataset="LinkedMDB" score="0.25848160" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/357</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/director</predicate>
+               <object>http://data.linkedmdb.org/resource/director/8506</object>
+               <subjectLabel score="0.00000000">Star Trek V: The Final Frontier</subjectLabel>
+               <objectLabel score="0.14620400">William Shatner</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.23746854" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Star_Trek_V:_The_Final_Frontier</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/director</predicate>
+               <object>http://dbpedia.org/resource/William_Shatner</object>
+               <subjectLabel score="0.00000000">Star Trek V: The Final Frontier</subjectLabel>
+               <objectLabel score="0.09367134">William Shatner</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="18-1" score="0.26379812" sim="1.0000" norm="0.9000">
+            <quintuple dataset="LinkedMDB" score="0.26379812" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/357</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/29685</object>
+               <subjectLabel score="0.00000000">Star Trek V: The Final Frontier</subjectLabel>
+               <objectLabel score="0.15949529">William Shatner</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="18-2" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="LinkedMDB" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/357</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/45596</object>
+               <subjectLabel score="0.00000000">Star Trek V: The Final Frontier</subjectLabel>
+               <objectLabel score="0.00000000">Cynthia Gouw</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="19" runID="run3" score="0.21284022" plugType="E">
+         <cluster cluster_id="19-0" score="0.25848160" sim="0.9004" norm="0.9500">
+            <quintuple dataset="LinkedMDB" score="0.25848160" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/357</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/director</predicate>
+               <object>http://data.linkedmdb.org/resource/director/8506</object>
+               <subjectLabel score="0.00000000">Star Trek V: The Final Frontier</subjectLabel>
+               <objectLabel score="0.14620400">William Shatner</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.23746854" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Star_Trek_V:_The_Final_Frontier</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/director</predicate>
+               <object>http://dbpedia.org/resource/William_Shatner</object>
+               <subjectLabel score="0.00000000">Star Trek V: The Final Frontier</subjectLabel>
+               <objectLabel score="0.09367134">William Shatner</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="19-1" score="0.26379812" sim="1.0000" norm="0.9000">
+            <quintuple dataset="LinkedMDB" score="0.26379812" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/357</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/29685</object>
+               <subjectLabel score="0.00000000">Star Trek V: The Final Frontier</subjectLabel>
+               <objectLabel score="0.15949529">William Shatner</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="19-2" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="LinkedMDB" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/357</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/1003</object>
+               <subjectLabel score="0.00000000">Star Trek V: The Final Frontier</subjectLabel>
+               <objectLabel score="0.00000000">Charles Cooper</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="20" runID="run3" score="0.21284022" plugType="E">
+         <cluster cluster_id="20-0" score="0.25848160" sim="0.9004" norm="0.9500">
+            <quintuple dataset="LinkedMDB" score="0.25848160" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/357</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/director</predicate>
+               <object>http://data.linkedmdb.org/resource/director/8506</object>
+               <subjectLabel score="0.00000000">Star Trek V: The Final Frontier</subjectLabel>
+               <objectLabel score="0.14620400">William Shatner</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.23746854" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Star_Trek_V:_The_Final_Frontier</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/director</predicate>
+               <object>http://dbpedia.org/resource/William_Shatner</object>
+               <subjectLabel score="0.00000000">Star Trek V: The Final Frontier</subjectLabel>
+               <objectLabel score="0.09367134">William Shatner</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="20-1" score="0.26379812" sim="1.0000" norm="0.9000">
+            <quintuple dataset="LinkedMDB" score="0.26379812" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/357</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/29685</object>
+               <subjectLabel score="0.00000000">Star Trek V: The Final Frontier</subjectLabel>
+               <objectLabel score="0.15949529">William Shatner</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="20-2" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="LinkedMDB" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/357</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/33493</object>
+               <subjectLabel score="0.00000000">Star Trek V: The Final Frontier</subjectLabel>
+               <objectLabel score="0.00000000">Laurence Luckinbill</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="21" runID="run3" score="0.21284022" plugType="E">
+         <cluster cluster_id="21-0" score="0.25848160" sim="0.9004" norm="0.9500">
+            <quintuple dataset="LinkedMDB" score="0.25848160" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/357</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/director</predicate>
+               <object>http://data.linkedmdb.org/resource/director/8506</object>
+               <subjectLabel score="0.00000000">Star Trek V: The Final Frontier</subjectLabel>
+               <objectLabel score="0.14620400">William Shatner</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.23746854" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Star_Trek_V:_The_Final_Frontier</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/director</predicate>
+               <object>http://dbpedia.org/resource/William_Shatner</object>
+               <subjectLabel score="0.00000000">Star Trek V: The Final Frontier</subjectLabel>
+               <objectLabel score="0.09367134">William Shatner</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="21-1" score="0.26379812" sim="1.0000" norm="0.9000">
+            <quintuple dataset="LinkedMDB" score="0.26379812" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/357</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/29685</object>
+               <subjectLabel score="0.00000000">Star Trek V: The Final Frontier</subjectLabel>
+               <objectLabel score="0.15949529">William Shatner</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="21-2" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="LinkedMDB" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/357</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/51</object>
+               <subjectLabel score="0.00000000">Star Trek V: The Final Frontier</subjectLabel>
+               <objectLabel score="0.00000000">David Warner</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="22" runID="run3" score="0.21284022" plugType="E">
+         <cluster cluster_id="22-0" score="0.25848160" sim="0.9004" norm="0.9500">
+            <quintuple dataset="LinkedMDB" score="0.25848160" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/357</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/director</predicate>
+               <object>http://data.linkedmdb.org/resource/director/8506</object>
+               <subjectLabel score="0.00000000">Star Trek V: The Final Frontier</subjectLabel>
+               <objectLabel score="0.14620400">William Shatner</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.23746854" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Star_Trek_V:_The_Final_Frontier</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/director</predicate>
+               <object>http://dbpedia.org/resource/William_Shatner</object>
+               <subjectLabel score="0.00000000">Star Trek V: The Final Frontier</subjectLabel>
+               <objectLabel score="0.09367134">William Shatner</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="22-1" score="0.26379812" sim="1.0000" norm="0.9000">
+            <quintuple dataset="LinkedMDB" score="0.26379812" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/357</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/29685</object>
+               <subjectLabel score="0.00000000">Star Trek V: The Final Frontier</subjectLabel>
+               <objectLabel score="0.15949529">William Shatner</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="22-2" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="LinkedMDB" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/357</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/29685</object>
+               <subjectLabel score="0.00000000">Star Trek V: The Final Frontier</subjectLabel>
+               <objectLabel score="0.00000000">William Shatner</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="23" runID="run3" score="0.20988451" plugType="E">
+         <cluster cluster_id="23-0" score="0.25848160" sim="0.9004" norm="0.9500">
+            <quintuple dataset="LinkedMDB" score="0.25848160" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/357</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/director</predicate>
+               <object>http://data.linkedmdb.org/resource/director/8506</object>
+               <subjectLabel score="0.00000000">Star Trek V: The Final Frontier</subjectLabel>
+               <objectLabel score="0.14620400">William Shatner</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.23746854" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Star_Trek_V:_The_Final_Frontier</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/director</predicate>
+               <object>http://dbpedia.org/resource/William_Shatner</object>
+               <subjectLabel score="0.00000000">Star Trek V: The Final Frontier</subjectLabel>
+               <objectLabel score="0.09367134">William Shatner</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="23-1" score="0.26379812" sim="1.0000" norm="0.9000">
+            <quintuple dataset="LinkedMDB" score="0.26379812" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/357</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/29685</object>
+               <subjectLabel score="0.00000000">Star Trek V: The Final Frontier</subjectLabel>
+               <objectLabel score="0.15949529">William Shatner</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="23-2" score="0.20000000" sim="0.9007" norm="0.9500">
+            <quintuple dataset="LinkedMDB" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/357</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/30048</object>
+               <subjectLabel score="0.00000000">Star Trek V: The Final Frontier</subjectLabel>
+               <objectLabel score="0.00000000">DeForest Kelley</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Star_Trek_V:_The_Final_Frontier</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/DeForest_Kelley</object>
+               <subjectLabel score="0.00000000">Star Trek V: The Final Frontier</subjectLabel>
+               <objectLabel score="0.00000000">DeForest Kelley</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="24" runID="run3" score="0.20988451" plugType="E">
+         <cluster cluster_id="24-0" score="0.25848160" sim="0.9004" norm="0.9500">
+            <quintuple dataset="LinkedMDB" score="0.25848160" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/357</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/director</predicate>
+               <object>http://data.linkedmdb.org/resource/director/8506</object>
+               <subjectLabel score="0.00000000">Star Trek V: The Final Frontier</subjectLabel>
+               <objectLabel score="0.14620400">William Shatner</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.23746854" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Star_Trek_V:_The_Final_Frontier</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/director</predicate>
+               <object>http://dbpedia.org/resource/William_Shatner</object>
+               <subjectLabel score="0.00000000">Star Trek V: The Final Frontier</subjectLabel>
+               <objectLabel score="0.09367134">William Shatner</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="24-1" score="0.26379812" sim="1.0000" norm="0.9000">
+            <quintuple dataset="LinkedMDB" score="0.26379812" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/357</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/29685</object>
+               <subjectLabel score="0.00000000">Star Trek V: The Final Frontier</subjectLabel>
+               <objectLabel score="0.15949529">William Shatner</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="24-2" score="0.20000000" sim="0.9007" norm="0.9500">
+            <quintuple dataset="LinkedMDB" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/357</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/31910</object>
+               <subjectLabel score="0.00000000">Star Trek V: The Final Frontier</subjectLabel>
+               <objectLabel score="0.00000000">George Takei</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Star_Trek_V:_The_Final_Frontier</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/George_Takei</object>
+               <subjectLabel score="0.00000000">Star Trek V: The Final Frontier</subjectLabel>
+               <objectLabel score="0.00000000">George Takei</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="25" runID="run3" score="0.20988451" plugType="E">
+         <cluster cluster_id="25-0" score="0.25848160" sim="0.9004" norm="0.9500">
+            <quintuple dataset="LinkedMDB" score="0.25848160" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/357</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/director</predicate>
+               <object>http://data.linkedmdb.org/resource/director/8506</object>
+               <subjectLabel score="0.00000000">Star Trek V: The Final Frontier</subjectLabel>
+               <objectLabel score="0.14620400">William Shatner</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.23746854" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Star_Trek_V:_The_Final_Frontier</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/director</predicate>
+               <object>http://dbpedia.org/resource/William_Shatner</object>
+               <subjectLabel score="0.00000000">Star Trek V: The Final Frontier</subjectLabel>
+               <objectLabel score="0.09367134">William Shatner</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="25-1" score="0.26379812" sim="1.0000" norm="0.9000">
+            <quintuple dataset="LinkedMDB" score="0.26379812" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/357</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/29685</object>
+               <subjectLabel score="0.00000000">Star Trek V: The Final Frontier</subjectLabel>
+               <objectLabel score="0.15949529">William Shatner</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="25-2" score="0.20000000" sim="0.9007" norm="0.9500">
+            <quintuple dataset="LinkedMDB" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/357</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/30057</object>
+               <subjectLabel score="0.00000000">Star Trek V: The Final Frontier</subjectLabel>
+               <objectLabel score="0.00000000">James Doohan</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Star_Trek_V:_The_Final_Frontier</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/James_Doohan</object>
+               <subjectLabel score="0.00000000">Star Trek V: The Final Frontier</subjectLabel>
+               <objectLabel score="0.00000000">James Doohan</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="26" runID="run3" score="0.20988451" plugType="E">
+         <cluster cluster_id="26-0" score="0.25848160" sim="0.9004" norm="0.9500">
+            <quintuple dataset="LinkedMDB" score="0.25848160" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/357</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/director</predicate>
+               <object>http://data.linkedmdb.org/resource/director/8506</object>
+               <subjectLabel score="0.00000000">Star Trek V: The Final Frontier</subjectLabel>
+               <objectLabel score="0.14620400">William Shatner</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.23746854" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Star_Trek_V:_The_Final_Frontier</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/director</predicate>
+               <object>http://dbpedia.org/resource/William_Shatner</object>
+               <subjectLabel score="0.00000000">Star Trek V: The Final Frontier</subjectLabel>
+               <objectLabel score="0.09367134">William Shatner</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="26-1" score="0.26379812" sim="1.0000" norm="0.9000">
+            <quintuple dataset="LinkedMDB" score="0.26379812" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/357</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/29685</object>
+               <subjectLabel score="0.00000000">Star Trek V: The Final Frontier</subjectLabel>
+               <objectLabel score="0.15949529">William Shatner</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="26-2" score="0.20000000" sim="0.9007" norm="0.9500">
+            <quintuple dataset="LinkedMDB" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/357</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/29864</object>
+               <subjectLabel score="0.00000000">Star Trek V: The Final Frontier</subjectLabel>
+               <objectLabel score="0.00000000">Leonard Nimoy</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Star_Trek_V:_The_Final_Frontier</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Leonard_Nimoy</object>
+               <subjectLabel score="0.00000000">Star Trek V: The Final Frontier</subjectLabel>
+               <objectLabel score="0.00000000">Leonard Nimoy</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="27" runID="run3" score="0.20988451" plugType="E">
+         <cluster cluster_id="27-0" score="0.25848160" sim="0.9004" norm="0.9500">
+            <quintuple dataset="LinkedMDB" score="0.25848160" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/357</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/director</predicate>
+               <object>http://data.linkedmdb.org/resource/director/8506</object>
+               <subjectLabel score="0.00000000">Star Trek V: The Final Frontier</subjectLabel>
+               <objectLabel score="0.14620400">William Shatner</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.23746854" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Star_Trek_V:_The_Final_Frontier</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/director</predicate>
+               <object>http://dbpedia.org/resource/William_Shatner</object>
+               <subjectLabel score="0.00000000">Star Trek V: The Final Frontier</subjectLabel>
+               <objectLabel score="0.09367134">William Shatner</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="27-1" score="0.26379812" sim="1.0000" norm="0.9000">
+            <quintuple dataset="LinkedMDB" score="0.26379812" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/357</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/29685</object>
+               <subjectLabel score="0.00000000">Star Trek V: The Final Frontier</subjectLabel>
+               <objectLabel score="0.15949529">William Shatner</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="27-2" score="0.20000000" sim="0.9007" norm="0.9500">
+            <quintuple dataset="LinkedMDB" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/357</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/30341</object>
+               <subjectLabel score="0.00000000">Star Trek V: The Final Frontier</subjectLabel>
+               <objectLabel score="0.00000000">Nichelle Nichols</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Star_Trek_V:_The_Final_Frontier</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Nichelle_Nichols</object>
+               <subjectLabel score="0.00000000">Star Trek V: The Final Frontier</subjectLabel>
+               <objectLabel score="0.00000000">Nichelle Nichols</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+   </results>
+</question>

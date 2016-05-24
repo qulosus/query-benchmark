@@ -1,0 +1,952 @@
+<html> 
+  <head>
+    <meta charset='UTF-8'>
+<style>TABLE.outline {
+        BORDER-RIGHT: #c0c0c0 4px double; BORDER-TOP: #c0c0c0 4px double; BORDER-LEFT: #c0c0c0 4px double;
+        FONT-FAMILY: "MS Sans Serif"; BORDER-BOTTOM: #c0c0c0 4px double; align: center
+}
+A {
+        FONT-SIZE: 14px; COLOR: #333399; FONT-FAMILY: "Consolas"; TEXT-DECORATION: none
+}
+A:hover {
+        FONT-SIZE: 14px; COLOR: #778899; FONT-STYLE: normal; FONT-FAMILY: "Consolas"; TEXT-DECORATION: underline overline
+}
+.blockTitle {
+        PADDING-RIGHT: 3px; BORDER-TOP: #6495ed 3px double; PADDING-LEFT: 3px; FONT-WEIGHT: bold;
+        FONT-SIZE: 14px; PADDING-BOTTOM: 3px; COLOR: #daa520; PADDING-TOP: 3px; BORDER-BOTTOM: #6495ed 3px double;
+        BACKGROUND-COLOR: #f0f8ff
+}
+.blockTitle1 {
+        PADDING-RIGHT: 3px; BORDER-TOP: #6495ed 3px double; PADDING-LEFT: 3px; FONT-WEIGHT: bold; FONT-SIZE: 14px;
+        PADDING-BOTTOM: 3px; COLOR: #daa520; PADDING-TOP: 3px; BORDER-BOTTOM: #6495ed 3px double;
+        BACKGROUND-COLOR: #f0f8ff
+}
+TD {
+        FONT-SIZE: 14px; COLOR: #333399; FONT-FAMILY: "Consolas"; TEXT-DECORATION: none
+}
+.tdin {
+        PADDING-RIGHT: 2px; BORDER-TOP: #6495ed 1px double; PADDING-LEFT: 8px; PADDING-BOTTOM: 2px; PADDING-TOP: 2px;
+        BORDER-BOTTOM: #6495ed 1px double;BORDER-LEFT: #6495ed 1px double;BORDER-RIGHT: #6495ed 1px double;
+        FONT-FAMILY: "Consolas";
+}
+.thin {
+        PADDING-RIGHT: 2px; BORDER-TOP: #6495ed 1px double; PADDING-LEFT: 8px; FONT-WEIGHT: bold; FONT-SIZE: 12px;
+        PADDING-BOTTOM: 2px; COLOR: #E45C3A; PADDING-TOP: 2px; BORDER-BOTTOM: #6495ed 1px double;
+        BACKGROUND-COLOR: #DEF7FE; BORDER-LEFT: #6495ed 1px double; BORDER-RIGHT: #6495ed 1px double ;
+        FONT-FAMILY: "Verdana";
+}
+.thin2 {
+        PADDING-RIGHT: 2px; BORDER-TOP: #6495ed 1px double; PADDING-LEFT: 8px; FONT-WEIGHT: bold; FONT-SIZE: 12px;
+        PADDING-BOTTOM: 2px; COLOR: #405EE4; PADDING-TOP: 2px; BORDER-BOTTOM: #6495ed 1px double;
+        BACKGROUND-COLOR: #FFDFF8; BORDER-LEFT: #6495ed 1px double; BORDER-RIGHT: #6495ed 1px double ;
+        FONT-FAMILY: "Verdana";
+}
+TH {
+        FONT-SIZE: 14px; COLOR: #333399; FONT-FAMILY: "Verdana"; TEXT-DECORATION: none;align: left
+}
+INPUT.spt {
+        BORDER-RIGHT: #6495ed 1px double; BORDER-TOP: #6495ed 1px double;
+        BORDER-BOTTOM: #6495ed 1px double;BORDER-LEFT: #6495ed 1px double;
+        PADDING-LEFT: 1px; PADDING-BOTTOM: 1px; PADDING-TOP: 1px;PADDING-RIGHT: 1px;
+        FONT-FAMILY: "Tahoma";
+        WIDTH : 200px ; HEIGHT : 20px;
+}
+INPUT.spb {
+        PADDING-RIGHT: 1px; PADDING-LEFT: 1px;
+        PADDING-BOTTOM: 1px; PADDING-TOP: 1px;
+        BORDER-RIGHT: #6495ed 1px double; BORDER-LEFT: #6495ed 1px double;
+        BORDER-BOTTOM: #6495ed 1px double; BORDER-TOP: #6495ed 1px double;
+        FONT-FAMILY: "Tahoma"; BACKGROUND-COLOR : #A8FFA8;
+        WIDTH : 60px ; HEIGHT : 20px;
+}
+textarea {
+        PADDING-RIGHT: 2px; PADDING-LEFT: 2px;
+        PADDING-BOTTOM: 2px; PADDING-TOP: 2px;
+        BORDER-RIGHT: #6495ed 1px double; BORDER-LEFT: #6495ed 1px double;
+        BORDER-BOTTOM: #6495ed 1px double; BORDER-TOP: #6495ed 1px double;
+        FONT-FAMILY: "Tahoma"; BACKGROUND-COLOR : #FFFFFF;
+        WIDTH : 600px ; HEIGHT : 400px;
+}
+</style>  </head>
+  <body>
+<h2>Query :: q6</h2> <table class='outline' border='1' width = '100%'>
+<tr>
+<td class='tdin' width='50%'> <pre>{
+	?who	"win"           	"fields medal math" .
+	?who	"nationality"   	"russia"            .
+	?who	"graduated from"	?univ               .
+	?who	"advisor"       	?advisor            .
+}</pre> </td><td class='tdin' width='50%'>Give me all Russian mathematicians, with their graduation institutions and academic advisors, who won Fields Medal.</td></tr>
+</table>
+ <br/><hr/><br/><table border='0' width = '100%'>
+<tr>
+<td class='tdin' width='35%'><table border='0' width = '100%'><tr>
+<td class='thin' width='40%'># Results</td><td class='tdin' width='40%'><b>12</b></td><td class='tdin' width='20%'></td></tr>
+<tr>
+<td class='thin' width='40%'>Elapsed time</td><td class='tdin' width='40%'>78.595</td><td class='tdin' width='20%'>sec</td></tr>
+<tr>
+<td class='thin' width='40%'>Used memory</td><td class='tdin' width='40%'>729.5165</td><td class='tdin' width='20%'>MB </td></tr>
+<tr>
+<td class='thin' width='40%'>Total Quintuples</td><td class='tdin' width='40%'>88</td><td class='tdin' width='20%'>quins </td></tr>
+<tr>
+<td class='thin' width='40%'>AVG. # quins per cluster</td><td class='tdin' width='40%'>1.8333334</td><td class='tdin' width='20%'>quin/cluster </td></tr>
+<tr>
+<td class='thin' width='40%'>AVG. # quins per bucket</td><td class='tdin' width='40%'>7.3333335</td><td class='tdin' width='20%'>quin/bucket </td></tr>
+<tr>
+<td class='thin' width='40%'># plugged triples</td><td class='tdin' width='40%'>0</td><td class='tdin' width='20%'>triples </td></tr>
+</table>
+</td><td class='tdin' width='25%'><table border='0' width = '100%'><tr>
+<td class='thin' width='40%'>LabelSearch TopK</td><td class='tdin' width='40%'>20</td></tr>
+<tr>
+<td class='thin' width='40%'>Plugin Labels ?</td><td class='tdin' width='40%'>false</td></tr>
+<tr>
+<td class='thin' width='40%'>Limit 1st triple?</td><td class='tdin' width='40%'>false</td></tr>
+<tr>
+<td class='thin' width='40%'>Validate Triples?</td><td class='tdin' width='40%'>false</td></tr>
+</table>
+</td><td class='tdin' width='40%'><table border='0' width = '100%'>
+<tr>
+<td class='tdin' width='25%'></td><td class='thin' width='25%'> # Requests</td><td class='thin' width='25%'> # Solved Requests</td><td class='thin' width='25%'> # Returned Records</td></tr>
+<tr>
+<td class='thin2' width='25%'>LinkedMDB</td><td class='tdin' width='25%'>0</td><td class='tdin' width='25%'>0</td><td class='tdin' width='25%'>0</td></tr>
+<tr>
+<td class='thin2' width='25%'>DBpedia</td><td class='tdin' width='25%'>364</td><td class='tdin' width='25%'>24</td><td class='tdin' width='25%'>79</td></tr>
+<tr>
+<td class='thin2' width='25%'>Yago</td><td class='tdin' width='25%'>344</td><td class='tdin' width='25%'>24</td><td class='tdin' width='25%'>2543</td></tr>
+<tr>
+<td class='tdin' width='25%'></td><td class='thin' width='25%'>708</td><td class='thin' width='25%'>48</td><td class='thin' width='25%'>2622</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 0</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.20414467</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 0 - 0</b><br/> Score1 = 0.26856639<br/> Sim.  = 0.9189<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Grigori_Perelman' title='http://yago-knowledge.org/resource/Grigori_Perelman'>Grigori Perelman</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/hasWonPrize' title='http://yago-knowledge.org/resource/hasWonPrize'>hasWonPrize</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Fields_Medal' title='http://yago-knowledge.org/resource/Fields_Medal'>Fields Medal</a></td>
+<td class='tdin' width='7%'>0.26856639</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Grigori_Perelman' title='http://dbpedia.org/resource/Grigori_Perelman'>Grigori Perelman</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/award' title='http://dbpedia.org/ontology/award'>award</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Fields_Medal' title='http://dbpedia.org/resource/Fields_Medal'>Fields Medal</a></td>
+<td class='tdin' width='7%'>0.23619417</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 0 - 1</b><br/> Score1 = 0.24541736<br/> Sim.  = 0.9217<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Grigori_Perelman' title='http://yago-knowledge.org/resource/Grigori_Perelman'>Grigori Perelman</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isCitizenOf' title='http://yago-knowledge.org/resource/isCitizenOf'>isCitizenOf</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Russia' title='http://yago-knowledge.org/resource/Russia'>Russia</a></td>
+<td class='tdin' width='7%'>0.24541736</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Grigori_Perelman' title='http://dbpedia.org/resource/Grigori_Perelman'>Grigori Perelman</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/nationality' title='http://dbpedia.org/ontology/nationality'>nationality</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Russia' title='http://dbpedia.org/resource/Russia'>Russia</a></td>
+<td class='tdin' width='7%'>0.23787246</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 0 - 2</b><br/> Score1 = 0.20000000<br/> Sim.  = 0.9704<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Grigori_Perelman' title='http://yago-knowledge.org/resource/Grigori_Perelman'>Grigori Perelman</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/graduatedFrom' title='http://yago-knowledge.org/resource/graduatedFrom'>graduatedFrom</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Saint_Petersburg_State_University' title='http://yago-knowledge.org/resource/Saint_Petersburg_State_University'>Saint Petersburg State University</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Grigori_Perelman' title='http://dbpedia.org/resource/Grigori_Perelman'>Grigori Perelman</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/almaMater' title='http://dbpedia.org/ontology/almaMater'>almaMater</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Saint_Petersburg_State_University' title='http://dbpedia.org/resource/Saint_Petersburg_State_University'>Saint Petersburg State University</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 0 - 3</b><br/> Score1 = 0.20000000<br/> Sim.  = 0.9625<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Grigori_Perelman' title='http://yago-knowledge.org/resource/Grigori_Perelman'>Grigori Perelman</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/hasAcademicAdvisor' title='http://yago-knowledge.org/resource/hasAcademicAdvisor'>hasAcademicAdvisor</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Aleksandr_Danilovich_Aleksandrov' title='http://yago-knowledge.org/resource/Aleksandr_Danilovich_Aleksandrov'>Aleksandr Danilovich Aleksandrov</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Grigori_Perelman' title='http://dbpedia.org/resource/Grigori_Perelman'>Grigori Perelman</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/doctoralAdvisor' title='http://dbpedia.org/ontology/doctoralAdvisor'>doctoralAdvisor</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Aleksandr_Danilovich_Aleksandrov' title='http://dbpedia.org/resource/Aleksandr_Danilovich_Aleksandrov'>Aleksandr Danilovich Aleksandrov</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 1</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.20414467</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 1 - 0</b><br/> Score1 = 0.26856639<br/> Sim.  = 0.9189<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Grigori_Perelman' title='http://yago-knowledge.org/resource/Grigori_Perelman'>Grigori Perelman</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/hasWonPrize' title='http://yago-knowledge.org/resource/hasWonPrize'>hasWonPrize</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Fields_Medal' title='http://yago-knowledge.org/resource/Fields_Medal'>Fields Medal</a></td>
+<td class='tdin' width='7%'>0.26856639</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Grigori_Perelman' title='http://dbpedia.org/resource/Grigori_Perelman'>Grigori Perelman</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/award' title='http://dbpedia.org/ontology/award'>award</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Fields_Medal' title='http://dbpedia.org/resource/Fields_Medal'>Fields Medal</a></td>
+<td class='tdin' width='7%'>0.23619417</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 1 - 1</b><br/> Score1 = 0.24541736<br/> Sim.  = 0.9217<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Grigori_Perelman' title='http://yago-knowledge.org/resource/Grigori_Perelman'>Grigori Perelman</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isCitizenOf' title='http://yago-knowledge.org/resource/isCitizenOf'>isCitizenOf</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Russia' title='http://yago-knowledge.org/resource/Russia'>Russia</a></td>
+<td class='tdin' width='7%'>0.24541736</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Grigori_Perelman' title='http://dbpedia.org/resource/Grigori_Perelman'>Grigori Perelman</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/nationality' title='http://dbpedia.org/ontology/nationality'>nationality</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Russia' title='http://dbpedia.org/resource/Russia'>Russia</a></td>
+<td class='tdin' width='7%'>0.23787246</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 1 - 2</b><br/> Score1 = 0.20000000<br/> Sim.  = 0.9704<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Grigori_Perelman' title='http://yago-knowledge.org/resource/Grigori_Perelman'>Grigori Perelman</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/graduatedFrom' title='http://yago-knowledge.org/resource/graduatedFrom'>graduatedFrom</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Saint_Petersburg_State_University' title='http://yago-knowledge.org/resource/Saint_Petersburg_State_University'>Saint Petersburg State University</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Grigori_Perelman' title='http://dbpedia.org/resource/Grigori_Perelman'>Grigori Perelman</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/almaMater' title='http://dbpedia.org/ontology/almaMater'>almaMater</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Saint_Petersburg_State_University' title='http://dbpedia.org/resource/Saint_Petersburg_State_University'>Saint Petersburg State University</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 1 - 3</b><br/> Score1 = 0.20000000<br/> Sim.  = 0.9625<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Grigori_Perelman' title='http://yago-knowledge.org/resource/Grigori_Perelman'>Grigori Perelman</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/hasAcademicAdvisor' title='http://yago-knowledge.org/resource/hasAcademicAdvisor'>hasAcademicAdvisor</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Yuri_Burago' title='http://yago-knowledge.org/resource/Yuri_Burago'>Yuri Burago</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Grigori_Perelman' title='http://dbpedia.org/resource/Grigori_Perelman'>Grigori Perelman</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/doctoralAdvisor' title='http://dbpedia.org/ontology/doctoralAdvisor'>doctoralAdvisor</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Yuri_Burago' title='http://dbpedia.org/resource/Yuri_Burago'>Yuri Burago</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 2</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.20414467</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 2 - 0</b><br/> Score1 = 0.26856639<br/> Sim.  = 0.9189<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Maxim_Kontsevich' title='http://yago-knowledge.org/resource/Maxim_Kontsevich'>Maxim Kontsevich</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/hasWonPrize' title='http://yago-knowledge.org/resource/hasWonPrize'>hasWonPrize</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Fields_Medal' title='http://yago-knowledge.org/resource/Fields_Medal'>Fields Medal</a></td>
+<td class='tdin' width='7%'>0.26856639</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Maxim_Kontsevich' title='http://dbpedia.org/resource/Maxim_Kontsevich'>Maxim Kontsevich</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/award' title='http://dbpedia.org/ontology/award'>award</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Fields_Medal' title='http://dbpedia.org/resource/Fields_Medal'>Fields Medal</a></td>
+<td class='tdin' width='7%'>0.23619417</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 2 - 1</b><br/> Score1 = 0.24541736<br/> Sim.  = 0.9217<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Maxim_Kontsevich' title='http://dbpedia.org/resource/Maxim_Kontsevich'>Maxim Kontsevich</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/nationality' title='http://dbpedia.org/ontology/nationality'>nationality</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Russia' title='http://dbpedia.org/resource/Russia'>Russia</a></td>
+<td class='tdin' width='7%'>0.23787246</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Maxim_Kontsevich' title='http://yago-knowledge.org/resource/Maxim_Kontsevich'>Maxim Kontsevich</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isCitizenOf' title='http://yago-knowledge.org/resource/isCitizenOf'>isCitizenOf</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Russia' title='http://yago-knowledge.org/resource/Russia'>Russia</a></td>
+<td class='tdin' width='7%'>0.24541736</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 2 - 2</b><br/> Score1 = 0.20000000<br/> Sim.  = 0.9704<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Maxim_Kontsevich' title='http://yago-knowledge.org/resource/Maxim_Kontsevich'>Maxim Kontsevich</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/graduatedFrom' title='http://yago-knowledge.org/resource/graduatedFrom'>graduatedFrom</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Moscow_State_University' title='http://yago-knowledge.org/resource/Moscow_State_University'>Moscow State University</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Maxim_Kontsevich' title='http://dbpedia.org/resource/Maxim_Kontsevich'>Maxim Kontsevich</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/almaMater' title='http://dbpedia.org/ontology/almaMater'>almaMater</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Moscow_State_University' title='http://dbpedia.org/resource/Moscow_State_University'>Moscow State University</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 2 - 3</b><br/> Score1 = 0.20000000<br/> Sim.  = 0.9625<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Maxim_Kontsevich' title='http://dbpedia.org/resource/Maxim_Kontsevich'>Maxim Kontsevich</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/doctoralAdvisor' title='http://dbpedia.org/ontology/doctoralAdvisor'>doctoralAdvisor</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Don_Zagier' title='http://dbpedia.org/resource/Don_Zagier'>Don Zagier</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Maxim_Kontsevich' title='http://yago-knowledge.org/resource/Maxim_Kontsevich'>Maxim Kontsevich</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/hasAcademicAdvisor' title='http://yago-knowledge.org/resource/hasAcademicAdvisor'>hasAcademicAdvisor</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Don_Zagier' title='http://yago-knowledge.org/resource/Don_Zagier'>Don Zagier</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 3</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.20414467</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 3 - 0</b><br/> Score1 = 0.26856639<br/> Sim.  = 0.9189<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Andrei_Okounkov' title='http://dbpedia.org/resource/Andrei_Okounkov'>Andrei Okounkov</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/award' title='http://dbpedia.org/ontology/award'>award</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Fields_Medal' title='http://dbpedia.org/resource/Fields_Medal'>Fields Medal</a></td>
+<td class='tdin' width='7%'>0.23619417</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Andrei_Okounkov' title='http://yago-knowledge.org/resource/Andrei_Okounkov'>Andrei Okounkov</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/hasWonPrize' title='http://yago-knowledge.org/resource/hasWonPrize'>hasWonPrize</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Fields_Medal' title='http://yago-knowledge.org/resource/Fields_Medal'>Fields Medal</a></td>
+<td class='tdin' width='7%'>0.26856639</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 3 - 1</b><br/> Score1 = 0.24541736<br/> Sim.  = 0.9217<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Andrei_Okounkov' title='http://dbpedia.org/resource/Andrei_Okounkov'>Andrei Okounkov</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/nationality' title='http://dbpedia.org/ontology/nationality'>nationality</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Russia' title='http://dbpedia.org/resource/Russia'>Russia</a></td>
+<td class='tdin' width='7%'>0.23787246</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Andrei_Okounkov' title='http://yago-knowledge.org/resource/Andrei_Okounkov'>Andrei Okounkov</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isCitizenOf' title='http://yago-knowledge.org/resource/isCitizenOf'>isCitizenOf</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Russia' title='http://yago-knowledge.org/resource/Russia'>Russia</a></td>
+<td class='tdin' width='7%'>0.24541736</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 3 - 2</b><br/> Score1 = 0.20000000<br/> Sim.  = 0.9704<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Andrei_Okounkov' title='http://dbpedia.org/resource/Andrei_Okounkov'>Andrei Okounkov</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/almaMater' title='http://dbpedia.org/ontology/almaMater'>almaMater</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Moscow_State_University' title='http://dbpedia.org/resource/Moscow_State_University'>Moscow State University</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Andrei_Okounkov' title='http://yago-knowledge.org/resource/Andrei_Okounkov'>Andrei Okounkov</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/graduatedFrom' title='http://yago-knowledge.org/resource/graduatedFrom'>graduatedFrom</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Moscow_State_University' title='http://yago-knowledge.org/resource/Moscow_State_University'>Moscow State University</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 3 - 3</b><br/> Score1 = 0.20000000<br/> Sim.  = 0.9625<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Andrei_Okounkov' title='http://dbpedia.org/resource/Andrei_Okounkov'>Andrei Okounkov</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/doctoralAdvisor' title='http://dbpedia.org/ontology/doctoralAdvisor'>doctoralAdvisor</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Alexandre_Kirillov' title='http://dbpedia.org/resource/Alexandre_Kirillov'>Alexandre Kirillov</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Andrei_Okounkov' title='http://yago-knowledge.org/resource/Andrei_Okounkov'>Andrei Okounkov</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/hasAcademicAdvisor' title='http://yago-knowledge.org/resource/hasAcademicAdvisor'>hasAcademicAdvisor</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Alexandre_Kirillov' title='http://yago-knowledge.org/resource/Alexandre_Kirillov'>Alexandre Kirillov</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 4</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.20414467</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 4 - 0</b><br/> Score1 = 0.26856639<br/> Sim.  = 0.9189<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Vladimir_Voevodsky' title='http://yago-knowledge.org/resource/Vladimir_Voevodsky'>Vladimir Voevodsky</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/hasWonPrize' title='http://yago-knowledge.org/resource/hasWonPrize'>hasWonPrize</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Fields_Medal' title='http://yago-knowledge.org/resource/Fields_Medal'>Fields Medal</a></td>
+<td class='tdin' width='7%'>0.26856639</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Vladimir_Voevodsky' title='http://dbpedia.org/resource/Vladimir_Voevodsky'>Vladimir Voevodsky</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/award' title='http://dbpedia.org/ontology/award'>award</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Fields_Medal' title='http://dbpedia.org/resource/Fields_Medal'>Fields Medal</a></td>
+<td class='tdin' width='7%'>0.23619417</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 4 - 1</b><br/> Score1 = 0.24541736<br/> Sim.  = 0.9217<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Vladimir_Voevodsky' title='http://yago-knowledge.org/resource/Vladimir_Voevodsky'>Vladimir Voevodsky</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isCitizenOf' title='http://yago-knowledge.org/resource/isCitizenOf'>isCitizenOf</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Russia' title='http://yago-knowledge.org/resource/Russia'>Russia</a></td>
+<td class='tdin' width='7%'>0.24541736</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Vladimir_Voevodsky' title='http://dbpedia.org/resource/Vladimir_Voevodsky'>Vladimir Voevodsky</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/nationality' title='http://dbpedia.org/ontology/nationality'>nationality</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Russia' title='http://dbpedia.org/resource/Russia'>Russia</a></td>
+<td class='tdin' width='7%'>0.23787246</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 4 - 2</b><br/> Score1 = 0.20000000<br/> Sim.  = 0.9704<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Vladimir_Voevodsky' title='http://yago-knowledge.org/resource/Vladimir_Voevodsky'>Vladimir Voevodsky</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/graduatedFrom' title='http://yago-knowledge.org/resource/graduatedFrom'>graduatedFrom</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Moscow_State_University' title='http://yago-knowledge.org/resource/Moscow_State_University'>Moscow State University</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Vladimir_Voevodsky' title='http://dbpedia.org/resource/Vladimir_Voevodsky'>Vladimir Voevodsky</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/almaMater' title='http://dbpedia.org/ontology/almaMater'>almaMater</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Moscow_State_University' title='http://dbpedia.org/resource/Moscow_State_University'>Moscow State University</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 4 - 3</b><br/> Score1 = 0.20000000<br/> Sim.  = 0.9625<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Vladimir_Voevodsky' title='http://yago-knowledge.org/resource/Vladimir_Voevodsky'>Vladimir Voevodsky</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/hasAcademicAdvisor' title='http://yago-knowledge.org/resource/hasAcademicAdvisor'>hasAcademicAdvisor</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/David_Kazhdan' title='http://yago-knowledge.org/resource/David_Kazhdan'>David Kazhdan</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Vladimir_Voevodsky' title='http://dbpedia.org/resource/Vladimir_Voevodsky'>Vladimir Voevodsky</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/doctoralAdvisor' title='http://dbpedia.org/ontology/doctoralAdvisor'>doctoralAdvisor</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/David_Kazhdan' title='http://dbpedia.org/resource/David_Kazhdan'>David Kazhdan</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 5</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.20342671</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 5 - 0</b><br/> Score1 = 0.26856639<br/> Sim.  = 0.9189<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Grigory_Margulis' title='http://dbpedia.org/resource/Grigory_Margulis'>Grigory Margulis</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/award' title='http://dbpedia.org/ontology/award'>award</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Fields_Medal' title='http://dbpedia.org/resource/Fields_Medal'>Fields Medal</a></td>
+<td class='tdin' width='7%'>0.23619417</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Grigory_Margulis' title='http://yago-knowledge.org/resource/Grigory_Margulis'>Grigory Margulis</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/hasWonPrize' title='http://yago-knowledge.org/resource/hasWonPrize'>hasWonPrize</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Fields_Medal' title='http://yago-knowledge.org/resource/Fields_Medal'>Fields Medal</a></td>
+<td class='tdin' width='7%'>0.26856639</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 5 - 1</b><br/> Score1 = 0.24541736<br/> Sim.  = 0.9217<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Grigory_Margulis' title='http://yago-knowledge.org/resource/Grigory_Margulis'>Grigory Margulis</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isCitizenOf' title='http://yago-knowledge.org/resource/isCitizenOf'>isCitizenOf</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Russia' title='http://yago-knowledge.org/resource/Russia'>Russia</a></td>
+<td class='tdin' width='7%'>0.24541736</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Grigory_Margulis' title='http://dbpedia.org/resource/Grigory_Margulis'>Grigory Margulis</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/nationality' title='http://dbpedia.org/ontology/nationality'>nationality</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Russia' title='http://dbpedia.org/resource/Russia'>Russia</a></td>
+<td class='tdin' width='7%'>0.23787246</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 5 - 2</b><br/> Score1 = 0.20000000<br/> Sim.  = 0.9704<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Grigory_Margulis' title='http://dbpedia.org/resource/Grigory_Margulis'>Grigory Margulis</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/almaMater' title='http://dbpedia.org/ontology/almaMater'>almaMater</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Moscow_State_University' title='http://dbpedia.org/resource/Moscow_State_University'>Moscow State University</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Grigory_Margulis' title='http://yago-knowledge.org/resource/Grigory_Margulis'>Grigory Margulis</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/graduatedFrom' title='http://yago-knowledge.org/resource/graduatedFrom'>graduatedFrom</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Moscow_State_University' title='http://yago-knowledge.org/resource/Moscow_State_University'>Moscow State University</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 5 - 3</b><br/> Score1 = 0.20000000<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Grigory_Margulis' title='http://dbpedia.org/resource/Grigory_Margulis'>Grigory Margulis</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/doctoralAdvisor' title='http://dbpedia.org/ontology/doctoralAdvisor'>doctoralAdvisor</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Yakov_Sinai' title='http://dbpedia.org/resource/Yakov_Sinai'>Yakov Sinai</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 6</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.20342671</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 6 - 0</b><br/> Score1 = 0.26856639<br/> Sim.  = 0.9189<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Grigory_Margulis' title='http://dbpedia.org/resource/Grigory_Margulis'>Grigory Margulis</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/award' title='http://dbpedia.org/ontology/award'>award</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Fields_Medal' title='http://dbpedia.org/resource/Fields_Medal'>Fields Medal</a></td>
+<td class='tdin' width='7%'>0.23619417</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Grigory_Margulis' title='http://yago-knowledge.org/resource/Grigory_Margulis'>Grigory Margulis</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/hasWonPrize' title='http://yago-knowledge.org/resource/hasWonPrize'>hasWonPrize</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Fields_Medal' title='http://yago-knowledge.org/resource/Fields_Medal'>Fields Medal</a></td>
+<td class='tdin' width='7%'>0.26856639</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 6 - 1</b><br/> Score1 = 0.24541736<br/> Sim.  = 0.9217<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Grigory_Margulis' title='http://yago-knowledge.org/resource/Grigory_Margulis'>Grigory Margulis</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isCitizenOf' title='http://yago-knowledge.org/resource/isCitizenOf'>isCitizenOf</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Russia' title='http://yago-knowledge.org/resource/Russia'>Russia</a></td>
+<td class='tdin' width='7%'>0.24541736</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Grigory_Margulis' title='http://dbpedia.org/resource/Grigory_Margulis'>Grigory Margulis</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/nationality' title='http://dbpedia.org/ontology/nationality'>nationality</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Russia' title='http://dbpedia.org/resource/Russia'>Russia</a></td>
+<td class='tdin' width='7%'>0.23787246</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 6 - 2</b><br/> Score1 = 0.20000000<br/> Sim.  = 0.9704<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Grigory_Margulis' title='http://dbpedia.org/resource/Grigory_Margulis'>Grigory Margulis</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/almaMater' title='http://dbpedia.org/ontology/almaMater'>almaMater</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Moscow_State_University' title='http://dbpedia.org/resource/Moscow_State_University'>Moscow State University</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Grigory_Margulis' title='http://yago-knowledge.org/resource/Grigory_Margulis'>Grigory Margulis</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/graduatedFrom' title='http://yago-knowledge.org/resource/graduatedFrom'>graduatedFrom</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Moscow_State_University' title='http://yago-knowledge.org/resource/Moscow_State_University'>Moscow State University</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 6 - 3</b><br/> Score1 = 0.20000000<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Hee_Oh' title='http://dbpedia.org/resource/Hee_Oh'>Hee Oh</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/doctoralAdvisor' title='http://dbpedia.org/ontology/doctoralAdvisor'>doctoralAdvisor</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Grigory_Margulis' title='http://dbpedia.org/resource/Grigory_Margulis'>Grigory Margulis</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 7</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.20342671</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 7 - 0</b><br/> Score1 = 0.26856639<br/> Sim.  = 0.9189<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Grigory_Margulis' title='http://dbpedia.org/resource/Grigory_Margulis'>Grigory Margulis</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/award' title='http://dbpedia.org/ontology/award'>award</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Fields_Medal' title='http://dbpedia.org/resource/Fields_Medal'>Fields Medal</a></td>
+<td class='tdin' width='7%'>0.23619417</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Grigory_Margulis' title='http://yago-knowledge.org/resource/Grigory_Margulis'>Grigory Margulis</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/hasWonPrize' title='http://yago-knowledge.org/resource/hasWonPrize'>hasWonPrize</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Fields_Medal' title='http://yago-knowledge.org/resource/Fields_Medal'>Fields Medal</a></td>
+<td class='tdin' width='7%'>0.26856639</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 7 - 1</b><br/> Score1 = 0.24541736<br/> Sim.  = 0.9217<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Grigory_Margulis' title='http://yago-knowledge.org/resource/Grigory_Margulis'>Grigory Margulis</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isCitizenOf' title='http://yago-knowledge.org/resource/isCitizenOf'>isCitizenOf</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Russia' title='http://yago-knowledge.org/resource/Russia'>Russia</a></td>
+<td class='tdin' width='7%'>0.24541736</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Grigory_Margulis' title='http://dbpedia.org/resource/Grigory_Margulis'>Grigory Margulis</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/nationality' title='http://dbpedia.org/ontology/nationality'>nationality</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Russia' title='http://dbpedia.org/resource/Russia'>Russia</a></td>
+<td class='tdin' width='7%'>0.23787246</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 7 - 2</b><br/> Score1 = 0.20000000<br/> Sim.  = 0.9704<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Grigory_Margulis' title='http://dbpedia.org/resource/Grigory_Margulis'>Grigory Margulis</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/almaMater' title='http://dbpedia.org/ontology/almaMater'>almaMater</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Moscow_State_University' title='http://dbpedia.org/resource/Moscow_State_University'>Moscow State University</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Grigory_Margulis' title='http://yago-knowledge.org/resource/Grigory_Margulis'>Grigory Margulis</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/graduatedFrom' title='http://yago-knowledge.org/resource/graduatedFrom'>graduatedFrom</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Moscow_State_University' title='http://yago-knowledge.org/resource/Moscow_State_University'>Moscow State University</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 7 - 3</b><br/> Score1 = 0.20000000<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Emmanuel_Breuillard' title='http://dbpedia.org/resource/Emmanuel_Breuillard'>Emmanuel Breuillard</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/doctoralAdvisor' title='http://dbpedia.org/ontology/doctoralAdvisor'>doctoralAdvisor</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Grigory_Margulis' title='http://dbpedia.org/resource/Grigory_Margulis'>Grigory Margulis</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 8</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.20342671</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 8 - 0</b><br/> Score1 = 0.26856639<br/> Sim.  = 0.9189<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Grigory_Margulis' title='http://dbpedia.org/resource/Grigory_Margulis'>Grigory Margulis</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/award' title='http://dbpedia.org/ontology/award'>award</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Fields_Medal' title='http://dbpedia.org/resource/Fields_Medal'>Fields Medal</a></td>
+<td class='tdin' width='7%'>0.23619417</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Grigory_Margulis' title='http://yago-knowledge.org/resource/Grigory_Margulis'>Grigory Margulis</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/hasWonPrize' title='http://yago-knowledge.org/resource/hasWonPrize'>hasWonPrize</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Fields_Medal' title='http://yago-knowledge.org/resource/Fields_Medal'>Fields Medal</a></td>
+<td class='tdin' width='7%'>0.26856639</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 8 - 1</b><br/> Score1 = 0.24541736<br/> Sim.  = 0.9217<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Grigory_Margulis' title='http://yago-knowledge.org/resource/Grigory_Margulis'>Grigory Margulis</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isCitizenOf' title='http://yago-knowledge.org/resource/isCitizenOf'>isCitizenOf</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Russia' title='http://yago-knowledge.org/resource/Russia'>Russia</a></td>
+<td class='tdin' width='7%'>0.24541736</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Grigory_Margulis' title='http://dbpedia.org/resource/Grigory_Margulis'>Grigory Margulis</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/nationality' title='http://dbpedia.org/ontology/nationality'>nationality</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Russia' title='http://dbpedia.org/resource/Russia'>Russia</a></td>
+<td class='tdin' width='7%'>0.23787246</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 8 - 2</b><br/> Score1 = 0.20000000<br/> Sim.  = 0.9704<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Grigory_Margulis' title='http://dbpedia.org/resource/Grigory_Margulis'>Grigory Margulis</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/almaMater' title='http://dbpedia.org/ontology/almaMater'>almaMater</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Moscow_State_University' title='http://dbpedia.org/resource/Moscow_State_University'>Moscow State University</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Grigory_Margulis' title='http://yago-knowledge.org/resource/Grigory_Margulis'>Grigory Margulis</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/graduatedFrom' title='http://yago-knowledge.org/resource/graduatedFrom'>graduatedFrom</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Moscow_State_University' title='http://yago-knowledge.org/resource/Moscow_State_University'>Moscow State University</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 8 - 3</b><br/> Score1 = 0.20000000<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Grigory_Margulis' title='http://yago-knowledge.org/resource/Grigory_Margulis'>Grigory Margulis</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/hasAcademicAdvisor' title='http://yago-knowledge.org/resource/hasAcademicAdvisor'>hasAcademicAdvisor</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Yakov_G._Sinai' title='http://yago-knowledge.org/resource/Yakov_G._Sinai'>Yakov G. Sinai</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 9</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.20342671</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 9 - 0</b><br/> Score1 = 0.26856639<br/> Sim.  = 0.9189<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Stanislav_Smirnov' title='http://yago-knowledge.org/resource/Stanislav_Smirnov'>Stanislav Smirnov</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/hasWonPrize' title='http://yago-knowledge.org/resource/hasWonPrize'>hasWonPrize</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Fields_Medal' title='http://yago-knowledge.org/resource/Fields_Medal'>Fields Medal</a></td>
+<td class='tdin' width='7%'>0.26856639</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Stanislav_Smirnov' title='http://dbpedia.org/resource/Stanislav_Smirnov'>Stanislav Smirnov</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/award' title='http://dbpedia.org/ontology/award'>award</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Fields_Medal' title='http://dbpedia.org/resource/Fields_Medal'>Fields Medal</a></td>
+<td class='tdin' width='7%'>0.23619417</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 9 - 1</b><br/> Score1 = 0.24541736<br/> Sim.  = 0.9217<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Stanislav_Smirnov' title='http://yago-knowledge.org/resource/Stanislav_Smirnov'>Stanislav Smirnov</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isCitizenOf' title='http://yago-knowledge.org/resource/isCitizenOf'>isCitizenOf</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Russia' title='http://yago-knowledge.org/resource/Russia'>Russia</a></td>
+<td class='tdin' width='7%'>0.24541736</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Stanislav_Smirnov' title='http://dbpedia.org/resource/Stanislav_Smirnov'>Stanislav Smirnov</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/nationality' title='http://dbpedia.org/ontology/nationality'>nationality</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Russia' title='http://dbpedia.org/resource/Russia'>Russia</a></td>
+<td class='tdin' width='7%'>0.23787246</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 9 - 2</b><br/> Score1 = 0.20000000<br/> Sim.  = 0.9704<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Stanislav_Smirnov' title='http://dbpedia.org/resource/Stanislav_Smirnov'>Stanislav Smirnov</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/almaMater' title='http://dbpedia.org/ontology/almaMater'>almaMater</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Saint_Petersburg_State_University' title='http://dbpedia.org/resource/Saint_Petersburg_State_University'>Saint Petersburg State University</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Stanislav_Smirnov' title='http://yago-knowledge.org/resource/Stanislav_Smirnov'>Stanislav Smirnov</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/graduatedFrom' title='http://yago-knowledge.org/resource/graduatedFrom'>graduatedFrom</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Saint_Petersburg_State_University' title='http://yago-knowledge.org/resource/Saint_Petersburg_State_University'>Saint Petersburg State University</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 9 - 3</b><br/> Score1 = 0.20000000<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Stanislav_Smirnov' title='http://dbpedia.org/resource/Stanislav_Smirnov'>Stanislav Smirnov</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/doctoralAdvisor' title='http://dbpedia.org/ontology/doctoralAdvisor'>doctoralAdvisor</a></td>
+<td class='tdin' width='28%'>http://dbpedia.org/resource/Nikolai_G._Makarov</td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 10</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.20305126</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 10 - 0</b><br/> Score1 = 0.26856639<br/> Sim.  = 0.9189<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Maxim_Kontsevich' title='http://yago-knowledge.org/resource/Maxim_Kontsevich'>Maxim Kontsevich</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/hasWonPrize' title='http://yago-knowledge.org/resource/hasWonPrize'>hasWonPrize</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Fields_Medal' title='http://yago-knowledge.org/resource/Fields_Medal'>Fields Medal</a></td>
+<td class='tdin' width='7%'>0.26856639</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Maxim_Kontsevich' title='http://dbpedia.org/resource/Maxim_Kontsevich'>Maxim Kontsevich</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/award' title='http://dbpedia.org/ontology/award'>award</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Fields_Medal' title='http://dbpedia.org/resource/Fields_Medal'>Fields Medal</a></td>
+<td class='tdin' width='7%'>0.23619417</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 10 - 1</b><br/> Score1 = 0.24541736<br/> Sim.  = 0.9217<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Maxim_Kontsevich' title='http://dbpedia.org/resource/Maxim_Kontsevich'>Maxim Kontsevich</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/nationality' title='http://dbpedia.org/ontology/nationality'>nationality</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Russia' title='http://dbpedia.org/resource/Russia'>Russia</a></td>
+<td class='tdin' width='7%'>0.23787246</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Maxim_Kontsevich' title='http://yago-knowledge.org/resource/Maxim_Kontsevich'>Maxim Kontsevich</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isCitizenOf' title='http://yago-knowledge.org/resource/isCitizenOf'>isCitizenOf</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Russia' title='http://yago-knowledge.org/resource/Russia'>Russia</a></td>
+<td class='tdin' width='7%'>0.24541736</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 10 - 2</b><br/> Score1 = 0.20000000<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Maxim_Kontsevich' title='http://dbpedia.org/resource/Maxim_Kontsevich'>Maxim Kontsevich</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/almaMater' title='http://dbpedia.org/ontology/almaMater'>almaMater</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/University_of_Bonn' title='http://dbpedia.org/resource/University_of_Bonn'>University of Bonn</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 10 - 3</b><br/> Score1 = 0.20000000<br/> Sim.  = 0.9625<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Maxim_Kontsevich' title='http://dbpedia.org/resource/Maxim_Kontsevich'>Maxim Kontsevich</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/doctoralAdvisor' title='http://dbpedia.org/ontology/doctoralAdvisor'>doctoralAdvisor</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Don_Zagier' title='http://dbpedia.org/resource/Don_Zagier'>Don Zagier</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Maxim_Kontsevich' title='http://yago-knowledge.org/resource/Maxim_Kontsevich'>Maxim Kontsevich</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/hasAcademicAdvisor' title='http://yago-knowledge.org/resource/hasAcademicAdvisor'>hasAcademicAdvisor</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Don_Zagier' title='http://yago-knowledge.org/resource/Don_Zagier'>Don Zagier</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 11</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.20233330</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 11 - 0</b><br/> Score1 = 0.26856639<br/> Sim.  = 0.9189<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Stanislav_Smirnov' title='http://yago-knowledge.org/resource/Stanislav_Smirnov'>Stanislav Smirnov</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/hasWonPrize' title='http://yago-knowledge.org/resource/hasWonPrize'>hasWonPrize</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Fields_Medal' title='http://yago-knowledge.org/resource/Fields_Medal'>Fields Medal</a></td>
+<td class='tdin' width='7%'>0.26856639</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Stanislav_Smirnov' title='http://dbpedia.org/resource/Stanislav_Smirnov'>Stanislav Smirnov</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/award' title='http://dbpedia.org/ontology/award'>award</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Fields_Medal' title='http://dbpedia.org/resource/Fields_Medal'>Fields Medal</a></td>
+<td class='tdin' width='7%'>0.23619417</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 11 - 1</b><br/> Score1 = 0.24541736<br/> Sim.  = 0.9217<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Stanislav_Smirnov' title='http://yago-knowledge.org/resource/Stanislav_Smirnov'>Stanislav Smirnov</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/isCitizenOf' title='http://yago-knowledge.org/resource/isCitizenOf'>isCitizenOf</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Russia' title='http://yago-knowledge.org/resource/Russia'>Russia</a></td>
+<td class='tdin' width='7%'>0.24541736</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Stanislav_Smirnov' title='http://dbpedia.org/resource/Stanislav_Smirnov'>Stanislav Smirnov</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/nationality' title='http://dbpedia.org/ontology/nationality'>nationality</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Russia' title='http://dbpedia.org/resource/Russia'>Russia</a></td>
+<td class='tdin' width='7%'>0.23787246</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 11 - 2</b><br/> Score1 = 0.20000000<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Stanislav_Smirnov' title='http://dbpedia.org/resource/Stanislav_Smirnov'>Stanislav Smirnov</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/almaMater' title='http://dbpedia.org/ontology/almaMater'>almaMater</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/California_Institute_of_Technology' title='http://dbpedia.org/resource/California_Institute_of_Technology'>California Institute of Technology</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 11 - 3</b><br/> Score1 = 0.20000000<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Stanislav_Smirnov' title='http://dbpedia.org/resource/Stanislav_Smirnov'>Stanislav Smirnov</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/doctoralAdvisor' title='http://dbpedia.org/ontology/doctoralAdvisor'>doctoralAdvisor</a></td>
+<td class='tdin' width='28%'>http://dbpedia.org/resource/Nikolai_G._Makarov</td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+  </body>
+</html>

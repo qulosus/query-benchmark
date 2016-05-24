@@ -1,0 +1,2332 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<question id="24" runID="run2">
+   <string>
+      <![CDATA[Give me all movies directed by Italians.]]>
+   </string>
+   <query>
+      <![CDATA[
+  ?actor "acted in" "Troy film".
+  ?actor "born in"  ?city.
+]]>
+   </query>
+   <settings labelSearchTopK="25" plugLabel="false" limited="false" validateTriple="false"/>
+   <stats1 nb_results="67" timeSec="3.5090" memoryMB="111.2903" totalQuins="271" avgQuin_Cluster="2.0224" avgQuin_Bucket="4.0448" nb_plugTR="0"/>
+   <stats2>
+      <ds id="LinkedMDB">
+         <nreq>50</nreq>
+         <nreqs>14</nreqs>
+         <nrecd>76</nrecd>
+      </ds>
+      <ds id="DBpedia">
+         <nreq>140</nreq>
+         <nreqs>48</nreqs>
+         <nrecd>84</nrecd>
+      </ds>
+      <ds id="Yago">
+         <nreq>64</nreq>
+         <nreqs>9</nreqs>
+         <nrecd>22</nrecd>
+      </ds>
+   </stats2>
+   <results>
+      <bucket bucket_id="0" runID="run2" score="0.20137817" plugType="E">
+         <cluster cluster_id="0-0" score="0.24731487" sim="0.9007" norm="1.0000">
+            <quintuple dataset="LinkedMDB" score="0.22641689" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/756</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/29783</object>
+               <subjectLabel score="0.06604221">Troy</subjectLabel>
+               <objectLabel score="0.00000000">Brad Pitt</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.24731487" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Brad_Pitt</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Troy_(film)</object>
+               <subjectLabel score="0.00000000">Brad Pitt</subjectLabel>
+               <objectLabel score="0.11828715">Troy</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.22981315" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Troy_(film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Brad_Pitt</object>
+               <subjectLabel score="0.07453287">Troy</subjectLabel>
+               <objectLabel score="0.00000000">Brad Pitt</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="0-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Brad_Pitt</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/birthPlace</predicate>
+               <object>http://dbpedia.org/resource/Oklahoma</object>
+               <subjectLabel score="0.00000000">Brad Pitt</subjectLabel>
+               <objectLabel score="0.00000000">Oklahoma</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="1" runID="run2" score="0.20137817" plugType="E">
+         <cluster cluster_id="1-0" score="0.24731487" sim="0.9007" norm="1.0000">
+            <quintuple dataset="LinkedMDB" score="0.22641689" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/756</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/33182</object>
+               <subjectLabel score="0.06604221">Troy</subjectLabel>
+               <objectLabel score="0.00000000">Brian Cox</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.22981315" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Troy_(film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Brian_Cox_(actor)</object>
+               <subjectLabel score="0.07453287">Troy</subjectLabel>
+               <objectLabel score="0.00000000">Brian Cox</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.24731487" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Brian_Cox_(actor)</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Troy_(film)</object>
+               <subjectLabel score="0.00000000">Brian Cox</subjectLabel>
+               <objectLabel score="0.11828715">Troy</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="1-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Brian_Cox_(actor)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/birthPlace</predicate>
+               <object>http://dbpedia.org/resource/Angus</object>
+               <subjectLabel score="0.00000000">Brian Cox</subjectLabel>
+               <objectLabel score="0.00000000">Angus</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="2" runID="run2" score="0.20137817" plugType="E">
+         <cluster cluster_id="2-0" score="0.24731487" sim="0.9007" norm="1.0000">
+            <quintuple dataset="LinkedMDB" score="0.22641689" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/756</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/33182</object>
+               <subjectLabel score="0.06604221">Troy</subjectLabel>
+               <objectLabel score="0.00000000">Brian Cox</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.22981315" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Troy_(film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Brian_Cox_(actor)</object>
+               <subjectLabel score="0.07453287">Troy</subjectLabel>
+               <objectLabel score="0.00000000">Brian Cox</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.24731487" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Brian_Cox_(actor)</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Troy_(film)</object>
+               <subjectLabel score="0.00000000">Brian Cox</subjectLabel>
+               <objectLabel score="0.11828715">Troy</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="2-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Brian_Cox_(actor)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/birthPlace</predicate>
+               <object>http://dbpedia.org/resource/Scotland</object>
+               <subjectLabel score="0.00000000">Brian Cox</subjectLabel>
+               <objectLabel score="0.00000000">Scotland</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="3" runID="run2" score="0.20137817" plugType="E">
+         <cluster cluster_id="3-0" score="0.24731487" sim="0.9007" norm="1.0000">
+            <quintuple dataset="LinkedMDB" score="0.22641689" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/756</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/33182</object>
+               <subjectLabel score="0.06604221">Troy</subjectLabel>
+               <objectLabel score="0.00000000">Brian Cox</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.22981315" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Troy_(film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Brian_Cox_(actor)</object>
+               <subjectLabel score="0.07453287">Troy</subjectLabel>
+               <objectLabel score="0.00000000">Brian Cox</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.24731487" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Brian_Cox_(actor)</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Troy_(film)</object>
+               <subjectLabel score="0.00000000">Brian Cox</subjectLabel>
+               <objectLabel score="0.11828715">Troy</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="3-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Brian_Cox_(actor)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/birthPlace</predicate>
+               <object>http://dbpedia.org/resource/United_Kingdom</object>
+               <subjectLabel score="0.00000000">Brian Cox</subjectLabel>
+               <objectLabel score="0.00000000">United Kingdom</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="4" runID="run2" score="0.20137817" plugType="E">
+         <cluster cluster_id="4-0" score="0.24731487" sim="0.9007" norm="1.0000">
+            <quintuple dataset="DBpedia" score="0.22981315" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Troy_(film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Diane_Kruger</object>
+               <subjectLabel score="0.07453287">Troy</subjectLabel>
+               <objectLabel score="0.00000000">Diane Kruger</objectLabel>
+            </quintuple>
+            <quintuple dataset="LinkedMDB" score="0.22641689" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/756</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/33540</object>
+               <subjectLabel score="0.06604221">Troy</subjectLabel>
+               <objectLabel score="0.00000000">Diane Kruger</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.24731487" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Diane_Kruger</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Troy_(film)</object>
+               <subjectLabel score="0.00000000">Diane Kruger</subjectLabel>
+               <objectLabel score="0.11828715">Troy</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="4-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Diane_Kruger</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/birthPlace</predicate>
+               <object>http://dbpedia.org/resource/Algermissen</object>
+               <subjectLabel score="0.00000000">Diane Kruger</subjectLabel>
+               <objectLabel score="0.00000000">Algermissen</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="5" runID="run2" score="0.20137817" plugType="E">
+         <cluster cluster_id="5-0" score="0.24731487" sim="0.9007" norm="1.0000">
+            <quintuple dataset="DBpedia" score="0.22981315" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Troy_(film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Diane_Kruger</object>
+               <subjectLabel score="0.07453287">Troy</subjectLabel>
+               <objectLabel score="0.00000000">Diane Kruger</objectLabel>
+            </quintuple>
+            <quintuple dataset="LinkedMDB" score="0.22641689" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/756</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/33540</object>
+               <subjectLabel score="0.06604221">Troy</subjectLabel>
+               <objectLabel score="0.00000000">Diane Kruger</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.24731487" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Diane_Kruger</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Troy_(film)</object>
+               <subjectLabel score="0.00000000">Diane Kruger</subjectLabel>
+               <objectLabel score="0.11828715">Troy</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="5-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Diane_Kruger</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/birthPlace</predicate>
+               <object>http://dbpedia.org/resource/West_Germany</object>
+               <subjectLabel score="0.00000000">Diane Kruger</subjectLabel>
+               <objectLabel score="0.00000000">West Germany</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="6" runID="run2" score="0.20137817" plugType="E">
+         <cluster cluster_id="6-0" score="0.24731487" sim="0.9007" norm="1.0000">
+            <quintuple dataset="LinkedMDB" score="0.22641689" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/756</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/30769</object>
+               <subjectLabel score="0.06604221">Troy</subjectLabel>
+               <objectLabel score="0.00000000">Eric Bana</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.22981315" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Troy_(film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Eric_Bana</object>
+               <subjectLabel score="0.07453287">Troy</subjectLabel>
+               <objectLabel score="0.00000000">Eric Bana</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.24731487" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Eric_Bana</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Troy_(film)</object>
+               <subjectLabel score="0.00000000">Eric Bana</subjectLabel>
+               <objectLabel score="0.11828715">Troy</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="6-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Eric_Bana</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/birthPlace</predicate>
+               <object>http://dbpedia.org/resource/Australia</object>
+               <subjectLabel score="0.00000000">Eric Bana</subjectLabel>
+               <objectLabel score="0.00000000">Australia</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="7" runID="run2" score="0.20137817" plugType="E">
+         <cluster cluster_id="7-0" score="0.24731487" sim="0.9007" norm="1.0000">
+            <quintuple dataset="LinkedMDB" score="0.22641689" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/756</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/30769</object>
+               <subjectLabel score="0.06604221">Troy</subjectLabel>
+               <objectLabel score="0.00000000">Eric Bana</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.22981315" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Troy_(film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Eric_Bana</object>
+               <subjectLabel score="0.07453287">Troy</subjectLabel>
+               <objectLabel score="0.00000000">Eric Bana</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.24731487" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Eric_Bana</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Troy_(film)</object>
+               <subjectLabel score="0.00000000">Eric Bana</subjectLabel>
+               <objectLabel score="0.11828715">Troy</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="7-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Eric_Bana</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/birthPlace</predicate>
+               <object>http://dbpedia.org/resource/Melbourne</object>
+               <subjectLabel score="0.00000000">Eric Bana</subjectLabel>
+               <objectLabel score="0.00000000">Melbourne</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="8" runID="run2" score="0.20137817" plugType="E">
+         <cluster cluster_id="8-0" score="0.24731487" sim="0.9007" norm="1.0000">
+            <quintuple dataset="LinkedMDB" score="0.22641689" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/756</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/30769</object>
+               <subjectLabel score="0.06604221">Troy</subjectLabel>
+               <objectLabel score="0.00000000">Eric Bana</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.22981315" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Troy_(film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Eric_Bana</object>
+               <subjectLabel score="0.07453287">Troy</subjectLabel>
+               <objectLabel score="0.00000000">Eric Bana</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.24731487" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Eric_Bana</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Troy_(film)</object>
+               <subjectLabel score="0.00000000">Eric Bana</subjectLabel>
+               <objectLabel score="0.11828715">Troy</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="8-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Eric_Bana</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/birthPlace</predicate>
+               <object>http://dbpedia.org/resource/Victoria_(Australia)</object>
+               <subjectLabel score="0.00000000">Eric Bana</subjectLabel>
+               <objectLabel score="0.00000000">Victoria</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="9" runID="run2" score="0.20137817" plugType="E">
+         <cluster cluster_id="9-0" score="0.24731487" sim="0.9007" norm="1.0000">
+            <quintuple dataset="Yago" score="0.24731487" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Julie_Christie</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Troy_(film)</object>
+               <subjectLabel score="0.00000000">Julie Christie</subjectLabel>
+               <objectLabel score="0.11828715">Troy</objectLabel>
+            </quintuple>
+            <quintuple dataset="LinkedMDB" score="0.22641689" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/756</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/30597</object>
+               <subjectLabel score="0.06604221">Troy</subjectLabel>
+               <objectLabel score="0.00000000">Julie Christie</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.22981315" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Troy_(film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Julie_Christie</object>
+               <subjectLabel score="0.07453287">Troy</subjectLabel>
+               <objectLabel score="0.00000000">Julie Christie</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="9-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Julie_Christie</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/birthPlace</predicate>
+               <object>http://dbpedia.org/resource/British_Raj</object>
+               <subjectLabel score="0.00000000">Julie Christie</subjectLabel>
+               <objectLabel score="0.00000000">British Raj</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="10" runID="run2" score="0.20137817" plugType="E">
+         <cluster cluster_id="10-0" score="0.24731487" sim="0.9007" norm="1.0000">
+            <quintuple dataset="Yago" score="0.24731487" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Orlando_Bloom</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Troy_(film)</object>
+               <subjectLabel score="0.00000000">Orlando Bloom</subjectLabel>
+               <objectLabel score="0.11828715">Troy</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.22981315" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Troy_(film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Orlando_Bloom</object>
+               <subjectLabel score="0.07453287">Troy</subjectLabel>
+               <objectLabel score="0.00000000">Orlando Bloom</objectLabel>
+            </quintuple>
+            <quintuple dataset="LinkedMDB" score="0.22641689" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/756</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/29718</object>
+               <subjectLabel score="0.06604221">Troy</subjectLabel>
+               <objectLabel score="0.00000000">Orlando Bloom</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="10-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Orlando_Bloom</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/birthPlace</predicate>
+               <object>http://dbpedia.org/resource/Kent</object>
+               <subjectLabel score="0.00000000">Orlando Bloom</subjectLabel>
+               <objectLabel score="0.00000000">Kent</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="11" runID="run2" score="0.20137817" plugType="E">
+         <cluster cluster_id="11-0" score="0.24731487" sim="0.9007" norm="1.0000">
+            <quintuple dataset="LinkedMDB" score="0.22641689" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/756</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/10</object>
+               <subjectLabel score="0.06604221">Troy</subjectLabel>
+               <objectLabel score="0.00000000">Peter O'Toole</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.24731487" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Peter_O%27Toole</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Troy_(film)</object>
+               <subjectLabel score="0.00000000">Peter O'Toole</subjectLabel>
+               <objectLabel score="0.11828715">Troy</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.22981315" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Troy_(film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Peter_O%27Toole</object>
+               <subjectLabel score="0.07453287">Troy</subjectLabel>
+               <objectLabel score="0.00000000">Peter O'Toole</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="11-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Peter_O%27Toole</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/birthPlace</predicate>
+               <object>http://dbpedia.org/resource/Connemara</object>
+               <subjectLabel score="0.00000000">Peter O'Toole</subjectLabel>
+               <objectLabel score="0.00000000">Connemara</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="12" runID="run2" score="0.20137817" plugType="E">
+         <cluster cluster_id="12-0" score="0.24731487" sim="0.9007" norm="1.0000">
+            <quintuple dataset="LinkedMDB" score="0.22641689" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/756</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/10</object>
+               <subjectLabel score="0.06604221">Troy</subjectLabel>
+               <objectLabel score="0.00000000">Peter O'Toole</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.24731487" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Peter_O%27Toole</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Troy_(film)</object>
+               <subjectLabel score="0.00000000">Peter O'Toole</subjectLabel>
+               <objectLabel score="0.11828715">Troy</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.22981315" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Troy_(film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Peter_O%27Toole</object>
+               <subjectLabel score="0.07453287">Troy</subjectLabel>
+               <objectLabel score="0.00000000">Peter O'Toole</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="12-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Peter_O%27Toole</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/birthPlace</predicate>
+               <object>http://dbpedia.org/resource/County_Galway</object>
+               <subjectLabel score="0.00000000">Peter O'Toole</subjectLabel>
+               <objectLabel score="0.00000000">County Galway</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="13" runID="run2" score="0.20137817" plugType="E">
+         <cluster cluster_id="13-0" score="0.24731487" sim="0.9007" norm="1.0000">
+            <quintuple dataset="LinkedMDB" score="0.22641689" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/756</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/10</object>
+               <subjectLabel score="0.06604221">Troy</subjectLabel>
+               <objectLabel score="0.00000000">Peter O'Toole</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.24731487" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Peter_O%27Toole</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Troy_(film)</object>
+               <subjectLabel score="0.00000000">Peter O'Toole</subjectLabel>
+               <objectLabel score="0.11828715">Troy</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.22981315" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Troy_(film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Peter_O%27Toole</object>
+               <subjectLabel score="0.07453287">Troy</subjectLabel>
+               <objectLabel score="0.00000000">Peter O'Toole</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="13-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Peter_O%27Toole</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/birthPlace</predicate>
+               <object>http://dbpedia.org/resource/Leeds</object>
+               <subjectLabel score="0.00000000">Peter O'Toole</subjectLabel>
+               <objectLabel score="0.00000000">Leeds</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="14" runID="run2" score="0.20137817" plugType="E">
+         <cluster cluster_id="14-0" score="0.24731487" sim="0.9007" norm="1.0000">
+            <quintuple dataset="LinkedMDB" score="0.22641689" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/756</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/10</object>
+               <subjectLabel score="0.06604221">Troy</subjectLabel>
+               <objectLabel score="0.00000000">Peter O'Toole</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.24731487" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Peter_O%27Toole</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Troy_(film)</object>
+               <subjectLabel score="0.00000000">Peter O'Toole</subjectLabel>
+               <objectLabel score="0.11828715">Troy</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.22981315" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Troy_(film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Peter_O%27Toole</object>
+               <subjectLabel score="0.07453287">Troy</subjectLabel>
+               <objectLabel score="0.00000000">Peter O'Toole</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="14-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Peter_O%27Toole</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/birthPlace</predicate>
+               <object>http://dbpedia.org/resource/Yorkshire</object>
+               <subjectLabel score="0.00000000">Peter O'Toole</subjectLabel>
+               <objectLabel score="0.00000000">Yorkshire</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="15" runID="run2" score="0.20137817" plugType="E">
+         <cluster cluster_id="15-0" score="0.24731487" sim="0.9007" norm="1.0000">
+            <quintuple dataset="Yago" score="0.24731487" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Rose_Byrne</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Troy_(film)</object>
+               <subjectLabel score="0.00000000">Rose Byrne</subjectLabel>
+               <objectLabel score="0.11828715">Troy</objectLabel>
+            </quintuple>
+            <quintuple dataset="LinkedMDB" score="0.22641689" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/756</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/34181</object>
+               <subjectLabel score="0.06604221">Troy</subjectLabel>
+               <objectLabel score="0.00000000">Rose Byrne</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.22981315" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Troy_(film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Rose_Byrne</object>
+               <subjectLabel score="0.07453287">Troy</subjectLabel>
+               <objectLabel score="0.00000000">Rose Byrne</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="15-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Rose_Byrne</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/birthPlace</predicate>
+               <object>http://dbpedia.org/resource/Balmain,_New_South_Wales</object>
+               <subjectLabel score="0.00000000">Rose Byrne</subjectLabel>
+               <objectLabel score="0.00000000">Balmain, New South Wales</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="16" runID="run2" score="0.20137817" plugType="E">
+         <cluster cluster_id="16-0" score="0.24731487" sim="0.9007" norm="1.0000">
+            <quintuple dataset="Yago" score="0.24731487" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Sean_Bean</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Troy_(film)</object>
+               <subjectLabel score="0.00000000">Sean Bean</subjectLabel>
+               <objectLabel score="0.11828715">Troy</objectLabel>
+            </quintuple>
+            <quintuple dataset="LinkedMDB" score="0.22641689" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/756</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/32553</object>
+               <subjectLabel score="0.06604221">Troy</subjectLabel>
+               <objectLabel score="0.00000000">Sean Bean</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.22981315" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Troy_(film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Sean_Bean</object>
+               <subjectLabel score="0.07453287">Troy</subjectLabel>
+               <objectLabel score="0.00000000">Sean Bean</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="16-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Sean_Bean</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/birthPlace</predicate>
+               <object>http://dbpedia.org/resource/Handsworth,_South_Yorkshire</object>
+               <subjectLabel score="0.00000000">Sean Bean</subjectLabel>
+               <objectLabel score="0.00000000">Handsworth, South Yorkshire</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="17" runID="run2" score="0.20137817" plugType="E">
+         <cluster cluster_id="17-0" score="0.24731487" sim="0.9007" norm="1.0000">
+            <quintuple dataset="Yago" score="0.24731487" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Sean_Bean</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Troy_(film)</object>
+               <subjectLabel score="0.00000000">Sean Bean</subjectLabel>
+               <objectLabel score="0.11828715">Troy</objectLabel>
+            </quintuple>
+            <quintuple dataset="LinkedMDB" score="0.22641689" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/756</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/32553</object>
+               <subjectLabel score="0.06604221">Troy</subjectLabel>
+               <objectLabel score="0.00000000">Sean Bean</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.22981315" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Troy_(film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Sean_Bean</object>
+               <subjectLabel score="0.07453287">Troy</subjectLabel>
+               <objectLabel score="0.00000000">Sean Bean</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="17-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Sean_Bean</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/birthPlace</predicate>
+               <object>http://dbpedia.org/resource/Sheffield</object>
+               <subjectLabel score="0.00000000">Sean Bean</subjectLabel>
+               <objectLabel score="0.00000000">Sheffield</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="18" runID="run2" score="0.20137817" plugType="E">
+         <cluster cluster_id="18-0" score="0.24731487" sim="0.9007" norm="1.0000">
+            <quintuple dataset="Yago" score="0.24731487" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Sean_Bean</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Troy_(film)</object>
+               <subjectLabel score="0.00000000">Sean Bean</subjectLabel>
+               <objectLabel score="0.11828715">Troy</objectLabel>
+            </quintuple>
+            <quintuple dataset="LinkedMDB" score="0.22641689" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/756</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/32553</object>
+               <subjectLabel score="0.06604221">Troy</subjectLabel>
+               <objectLabel score="0.00000000">Sean Bean</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.22981315" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Troy_(film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Sean_Bean</object>
+               <subjectLabel score="0.07453287">Troy</subjectLabel>
+               <objectLabel score="0.00000000">Sean Bean</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="18-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Sean_Bean</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/birthPlace</predicate>
+               <object>http://dbpedia.org/resource/West_Riding_of_Yorkshire</object>
+               <subjectLabel score="0.00000000">Sean Bean</subjectLabel>
+               <objectLabel score="0.00000000">West Riding of Yorkshire</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="19" runID="run2" score="0.19904721" plugType="E">
+         <cluster cluster_id="19-0" score="0.24731487" sim="0.9007" norm="1.0000">
+            <quintuple dataset="LinkedMDB" score="0.22641689" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/756</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/29783</object>
+               <subjectLabel score="0.06604221">Troy</subjectLabel>
+               <objectLabel score="0.00000000">Brad Pitt</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.24731487" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Brad_Pitt</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Troy_(film)</object>
+               <subjectLabel score="0.00000000">Brad Pitt</subjectLabel>
+               <objectLabel score="0.11828715">Troy</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.22981315" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Troy_(film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Brad_Pitt</object>
+               <subjectLabel score="0.07453287">Troy</subjectLabel>
+               <objectLabel score="0.00000000">Brad Pitt</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="19-1" score="0.20000000" sim="0.9228" norm="0.9500">
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Brad_Pitt</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/wasBornIn</predicate>
+               <object>http://yago-knowledge.org/resource/Shawnee,_Oklahoma</object>
+               <subjectLabel score="0.00000000">Brad Pitt</subjectLabel>
+               <objectLabel score="0.00000000">Shawnee, Oklahoma</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Brad_Pitt</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/birthPlace</predicate>
+               <object>http://dbpedia.org/resource/Shawnee,_Oklahoma</object>
+               <subjectLabel score="0.00000000">Brad Pitt</subjectLabel>
+               <objectLabel score="0.00000000">Shawnee, Oklahoma</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="20" runID="run2" score="0.19904721" plugType="E">
+         <cluster cluster_id="20-0" score="0.24731487" sim="0.9007" norm="1.0000">
+            <quintuple dataset="LinkedMDB" score="0.22641689" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/756</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/33182</object>
+               <subjectLabel score="0.06604221">Troy</subjectLabel>
+               <objectLabel score="0.00000000">Brian Cox</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.22981315" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Troy_(film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Brian_Cox_(actor)</object>
+               <subjectLabel score="0.07453287">Troy</subjectLabel>
+               <objectLabel score="0.00000000">Brian Cox</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.24731487" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Brian_Cox_(actor)</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Troy_(film)</object>
+               <subjectLabel score="0.00000000">Brian Cox</subjectLabel>
+               <objectLabel score="0.11828715">Troy</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="20-1" score="0.20000000" sim="0.9228" norm="0.9500">
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Brian_Cox_(actor)</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/wasBornIn</predicate>
+               <object>http://yago-knowledge.org/resource/Dundee</object>
+               <subjectLabel score="0.00000000">Brian Cox</subjectLabel>
+               <objectLabel score="0.00000000">Dundee</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Brian_Cox_(actor)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/birthPlace</predicate>
+               <object>http://dbpedia.org/resource/Dundee</object>
+               <subjectLabel score="0.00000000">Brian Cox</subjectLabel>
+               <objectLabel score="0.00000000">Dundee</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="21" runID="run2" score="0.19904721" plugType="E">
+         <cluster cluster_id="21-0" score="0.24731487" sim="0.9007" norm="1.0000">
+            <quintuple dataset="Yago" score="0.24731487" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Julie_Christie</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Troy_(film)</object>
+               <subjectLabel score="0.00000000">Julie Christie</subjectLabel>
+               <objectLabel score="0.11828715">Troy</objectLabel>
+            </quintuple>
+            <quintuple dataset="LinkedMDB" score="0.22641689" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/756</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/30597</object>
+               <subjectLabel score="0.06604221">Troy</subjectLabel>
+               <objectLabel score="0.00000000">Julie Christie</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.22981315" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Troy_(film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Julie_Christie</object>
+               <subjectLabel score="0.07453287">Troy</subjectLabel>
+               <objectLabel score="0.00000000">Julie Christie</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="21-1" score="0.20000000" sim="0.9228" norm="0.9500">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Julie_Christie</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/birthPlace</predicate>
+               <object>http://dbpedia.org/resource/Chabua</object>
+               <subjectLabel score="0.00000000">Julie Christie</subjectLabel>
+               <objectLabel score="0.00000000">Chabua</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Julie_Christie</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/wasBornIn</predicate>
+               <object>http://yago-knowledge.org/resource/Chabua</object>
+               <subjectLabel score="0.00000000">Julie Christie</subjectLabel>
+               <objectLabel score="0.00000000">Chabua</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="22" runID="run2" score="0.19904721" plugType="E">
+         <cluster cluster_id="22-0" score="0.24731487" sim="0.9007" norm="1.0000">
+            <quintuple dataset="Yago" score="0.24731487" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Orlando_Bloom</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Troy_(film)</object>
+               <subjectLabel score="0.00000000">Orlando Bloom</subjectLabel>
+               <objectLabel score="0.11828715">Troy</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.22981315" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Troy_(film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Orlando_Bloom</object>
+               <subjectLabel score="0.07453287">Troy</subjectLabel>
+               <objectLabel score="0.00000000">Orlando Bloom</objectLabel>
+            </quintuple>
+            <quintuple dataset="LinkedMDB" score="0.22641689" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/756</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/29718</object>
+               <subjectLabel score="0.06604221">Troy</subjectLabel>
+               <objectLabel score="0.00000000">Orlando Bloom</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="22-1" score="0.20000000" sim="0.9228" norm="0.9500">
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Orlando_Bloom</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/wasBornIn</predicate>
+               <object>http://yago-knowledge.org/resource/Canterbury</object>
+               <subjectLabel score="0.00000000">Orlando Bloom</subjectLabel>
+               <objectLabel score="0.00000000">Canterbury</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Orlando_Bloom</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/birthPlace</predicate>
+               <object>http://dbpedia.org/resource/Canterbury</object>
+               <subjectLabel score="0.00000000">Orlando Bloom</subjectLabel>
+               <objectLabel score="0.00000000">Canterbury</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="23" runID="run2" score="0.19904721" plugType="E">
+         <cluster cluster_id="23-0" score="0.24731487" sim="0.9007" norm="1.0000">
+            <quintuple dataset="Yago" score="0.24731487" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Saffron_Burrows</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Troy_(film)</object>
+               <subjectLabel score="0.00000000">Saffron Burrows</subjectLabel>
+               <objectLabel score="0.11828715">Troy</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.22981315" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Troy_(film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Saffron_Burrows</object>
+               <subjectLabel score="0.07453287">Troy</subjectLabel>
+               <objectLabel score="0.00000000">Saffron Burrows</objectLabel>
+            </quintuple>
+            <quintuple dataset="LinkedMDB" score="0.22641689" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/756</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/38387</object>
+               <subjectLabel score="0.06604221">Troy</subjectLabel>
+               <objectLabel score="0.00000000">Saffron Burrows</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="23-1" score="0.20000000" sim="0.9228" norm="0.9500">
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Saffron_Burrows</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/wasBornIn</predicate>
+               <object>http://yago-knowledge.org/resource/London</object>
+               <subjectLabel score="0.00000000">Saffron Burrows</subjectLabel>
+               <objectLabel score="0.00000000">London</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Saffron_Burrows</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/birthPlace</predicate>
+               <object>http://dbpedia.org/resource/London</object>
+               <subjectLabel score="0.00000000">Saffron Burrows</subjectLabel>
+               <objectLabel score="0.00000000">London</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="24" runID="run2" score="0.19339501" plugType="E">
+         <cluster cluster_id="24-0" score="0.22958829" sim="0.9007" norm="1.0000">
+            <quintuple dataset="DBpedia" score="0.21507830" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Helen_of_Troy_(film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Cedric_Hardwicke</object>
+               <subjectLabel score="0.03769575">Helen of Troy</subjectLabel>
+               <objectLabel score="0.00000000">Cedric Hardwicke</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.22958829" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Cedric_Hardwicke</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Helen_of_Troy_(film)</object>
+               <subjectLabel score="0.00000000">Cedric Hardwicke</subjectLabel>
+               <objectLabel score="0.07397072">Helen of Troy</objectLabel>
+            </quintuple>
+            <quintuple dataset="LinkedMDB" score="0.21457865" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/3534</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/30748</object>
+               <subjectLabel score="0.03644661">Helen of Troy</subjectLabel>
+               <objectLabel score="0.00000000">Cedric Hardwicke</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="24-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Cedric_Hardwicke</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/birthPlace</predicate>
+               <object>http://dbpedia.org/resource/Dudley</object>
+               <subjectLabel score="0.00000000">Cedric Hardwicke</subjectLabel>
+               <objectLabel score="0.00000000">Dudley</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="25" runID="run2" score="0.19339501" plugType="E">
+         <cluster cluster_id="25-0" score="0.22958829" sim="0.9007" norm="1.0000">
+            <quintuple dataset="DBpedia" score="0.21507830" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Helen_of_Troy_(film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Cedric_Hardwicke</object>
+               <subjectLabel score="0.03769575">Helen of Troy</subjectLabel>
+               <objectLabel score="0.00000000">Cedric Hardwicke</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.22958829" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Cedric_Hardwicke</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Helen_of_Troy_(film)</object>
+               <subjectLabel score="0.00000000">Cedric Hardwicke</subjectLabel>
+               <objectLabel score="0.07397072">Helen of Troy</objectLabel>
+            </quintuple>
+            <quintuple dataset="LinkedMDB" score="0.21457865" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/3534</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/30748</object>
+               <subjectLabel score="0.03644661">Helen of Troy</subjectLabel>
+               <objectLabel score="0.00000000">Cedric Hardwicke</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="25-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Cedric_Hardwicke</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/birthPlace</predicate>
+               <object>http://dbpedia.org/resource/England</object>
+               <subjectLabel score="0.00000000">Cedric Hardwicke</subjectLabel>
+               <objectLabel score="0.00000000">England</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="26" runID="run2" score="0.19339501" plugType="E">
+         <cluster cluster_id="26-0" score="0.22958829" sim="0.9007" norm="1.0000">
+            <quintuple dataset="DBpedia" score="0.21507830" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Helen_of_Troy_(film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Cedric_Hardwicke</object>
+               <subjectLabel score="0.03769575">Helen of Troy</subjectLabel>
+               <objectLabel score="0.00000000">Cedric Hardwicke</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.22958829" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Cedric_Hardwicke</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Helen_of_Troy_(film)</object>
+               <subjectLabel score="0.00000000">Cedric Hardwicke</subjectLabel>
+               <objectLabel score="0.07397072">Helen of Troy</objectLabel>
+            </quintuple>
+            <quintuple dataset="LinkedMDB" score="0.21457865" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/3534</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/30748</object>
+               <subjectLabel score="0.03644661">Helen of Troy</subjectLabel>
+               <objectLabel score="0.00000000">Cedric Hardwicke</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="26-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Cedric_Hardwicke</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/birthPlace</predicate>
+               <object>http://dbpedia.org/resource/Lye,_West_Midlands</object>
+               <subjectLabel score="0.00000000">Cedric Hardwicke</subjectLabel>
+               <objectLabel score="0.00000000">Lye, West Midlands</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="27" runID="run2" score="0.19339501" plugType="E">
+         <cluster cluster_id="27-0" score="0.22958829" sim="0.9007" norm="1.0000">
+            <quintuple dataset="DBpedia" score="0.21507830" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Helen_of_Troy_(film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Cedric_Hardwicke</object>
+               <subjectLabel score="0.03769575">Helen of Troy</subjectLabel>
+               <objectLabel score="0.00000000">Cedric Hardwicke</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.22958829" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Cedric_Hardwicke</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Helen_of_Troy_(film)</object>
+               <subjectLabel score="0.00000000">Cedric Hardwicke</subjectLabel>
+               <objectLabel score="0.07397072">Helen of Troy</objectLabel>
+            </quintuple>
+            <quintuple dataset="LinkedMDB" score="0.21457865" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/3534</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/30748</object>
+               <subjectLabel score="0.03644661">Helen of Troy</subjectLabel>
+               <objectLabel score="0.00000000">Cedric Hardwicke</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="27-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Cedric_Hardwicke</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/birthPlace</predicate>
+               <object>http://dbpedia.org/resource/Stourbridge</object>
+               <subjectLabel score="0.00000000">Cedric Hardwicke</subjectLabel>
+               <objectLabel score="0.00000000">Stourbridge</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="28" runID="run2" score="0.19339501" plugType="E">
+         <cluster cluster_id="28-0" score="0.22958829" sim="0.9007" norm="1.0000">
+            <quintuple dataset="DBpedia" score="0.21507830" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Helen_of_Troy_(film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Cedric_Hardwicke</object>
+               <subjectLabel score="0.03769575">Helen of Troy</subjectLabel>
+               <objectLabel score="0.00000000">Cedric Hardwicke</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.22958829" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Cedric_Hardwicke</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Helen_of_Troy_(film)</object>
+               <subjectLabel score="0.00000000">Cedric Hardwicke</subjectLabel>
+               <objectLabel score="0.07397072">Helen of Troy</objectLabel>
+            </quintuple>
+            <quintuple dataset="LinkedMDB" score="0.21457865" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/3534</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/30748</object>
+               <subjectLabel score="0.03644661">Helen of Troy</subjectLabel>
+               <objectLabel score="0.00000000">Cedric Hardwicke</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="28-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Cedric_Hardwicke</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/birthPlace</predicate>
+               <object>http://dbpedia.org/resource/Worcestershire</object>
+               <subjectLabel score="0.00000000">Cedric Hardwicke</subjectLabel>
+               <objectLabel score="0.00000000">Worcestershire</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="29" runID="run2" score="0.19339501" plugType="E">
+         <cluster cluster_id="29-0" score="0.22958829" sim="0.9007" norm="1.0000">
+            <quintuple dataset="LinkedMDB" score="0.21457865" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/3534</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/49103</object>
+               <subjectLabel score="0.03644661">Helen of Troy</subjectLabel>
+               <objectLabel score="0.00000000">Jacques Sernas</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.22958829" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Jacques_Sernas</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Helen_of_Troy_(film)</object>
+               <subjectLabel score="0.00000000">Jacques Sernas</subjectLabel>
+               <objectLabel score="0.07397072">Helen of Troy</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.21507830" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Helen_of_Troy_(film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Jacques_Sernas</object>
+               <subjectLabel score="0.03769575">Helen of Troy</subjectLabel>
+               <objectLabel score="0.00000000">Jacques Sernas</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="29-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Jacques_Sernas</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/birthPlace</predicate>
+               <object>http://dbpedia.org/resource/Lithuania</object>
+               <subjectLabel score="0.00000000">Jacques Sernas</subjectLabel>
+               <objectLabel score="0.00000000">Lithuania</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="30" runID="run2" score="0.19339501" plugType="E">
+         <cluster cluster_id="30-0" score="0.22958829" sim="0.9007" norm="1.0000">
+            <quintuple dataset="Yago" score="0.22958829" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Niall_MacGinnis</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Helen_of_Troy_(film)</object>
+               <subjectLabel score="0.00000000">Niall MacGinnis</subjectLabel>
+               <objectLabel score="0.07397072">Helen of Troy</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.21507830" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Helen_of_Troy_(film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Niall_MacGinnis</object>
+               <subjectLabel score="0.03769575">Helen of Troy</subjectLabel>
+               <objectLabel score="0.00000000">Niall MacGinnis</objectLabel>
+            </quintuple>
+            <quintuple dataset="LinkedMDB" score="0.21457865" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/3534</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/46832</object>
+               <subjectLabel score="0.03644661">Helen of Troy</subjectLabel>
+               <objectLabel score="0.00000000">Niall MacGinnis</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="30-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Niall_MacGinnis</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/birthPlace</predicate>
+               <object>http://dbpedia.org/resource/Ireland</object>
+               <subjectLabel score="0.00000000">Niall MacGinnis</subjectLabel>
+               <objectLabel score="0.00000000">Ireland</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="31" runID="run2" score="0.19339501" plugType="E">
+         <cluster cluster_id="31-0" score="0.22958829" sim="0.9007" norm="1.0000">
+            <quintuple dataset="DBpedia" score="0.21507830" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Helen_of_Troy_(film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Stanley_Baker</object>
+               <subjectLabel score="0.03769575">Helen of Troy</subjectLabel>
+               <objectLabel score="0.00000000">Stanley Baker</objectLabel>
+            </quintuple>
+            <quintuple dataset="LinkedMDB" score="0.21457865" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/3534</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/35269</object>
+               <subjectLabel score="0.03644661">Helen of Troy</subjectLabel>
+               <objectLabel score="0.00000000">Stanley Baker</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.22958829" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Stanley_Baker</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Helen_of_Troy_(film)</object>
+               <subjectLabel score="0.00000000">Stanley Baker</subjectLabel>
+               <objectLabel score="0.07397072">Helen of Troy</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="31-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Stanley_Baker</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/birthPlace</predicate>
+               <object>http://dbpedia.org/resource/Ferndale,_Rhondda_Cynon_Taf</object>
+               <subjectLabel score="0.00000000">Stanley Baker</subjectLabel>
+               <objectLabel score="0.00000000">Ferndale, Rhondda Cynon Taf</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="32" runID="run2" score="0.19339501" plugType="E">
+         <cluster cluster_id="32-0" score="0.22958829" sim="0.9007" norm="1.0000">
+            <quintuple dataset="DBpedia" score="0.21507830" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Helen_of_Troy_(film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Stanley_Baker</object>
+               <subjectLabel score="0.03769575">Helen of Troy</subjectLabel>
+               <objectLabel score="0.00000000">Stanley Baker</objectLabel>
+            </quintuple>
+            <quintuple dataset="LinkedMDB" score="0.21457865" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/3534</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/35269</object>
+               <subjectLabel score="0.03644661">Helen of Troy</subjectLabel>
+               <objectLabel score="0.00000000">Stanley Baker</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.22958829" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Stanley_Baker</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Helen_of_Troy_(film)</object>
+               <subjectLabel score="0.00000000">Stanley Baker</subjectLabel>
+               <objectLabel score="0.07397072">Helen of Troy</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="32-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Stanley_Baker</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/birthPlace</predicate>
+               <object>http://dbpedia.org/resource/Rhondda</object>
+               <subjectLabel score="0.00000000">Stanley Baker</subjectLabel>
+               <objectLabel score="0.00000000">Rhondda</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="33" runID="run2" score="0.19106405" plugType="E">
+         <cluster cluster_id="33-0" score="0.22958829" sim="0.9007" norm="1.0000">
+            <quintuple dataset="LinkedMDB" score="0.21457865" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/3534</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/49103</object>
+               <subjectLabel score="0.03644661">Helen of Troy</subjectLabel>
+               <objectLabel score="0.00000000">Jacques Sernas</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.22958829" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Jacques_Sernas</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Helen_of_Troy_(film)</object>
+               <subjectLabel score="0.00000000">Jacques Sernas</subjectLabel>
+               <objectLabel score="0.07397072">Helen of Troy</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.21507830" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Helen_of_Troy_(film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Jacques_Sernas</object>
+               <subjectLabel score="0.03769575">Helen of Troy</subjectLabel>
+               <objectLabel score="0.00000000">Jacques Sernas</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="33-1" score="0.20000000" sim="0.9228" norm="0.9500">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Jacques_Sernas</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/birthPlace</predicate>
+               <object>http://dbpedia.org/resource/Kaunas</object>
+               <subjectLabel score="0.00000000">Jacques Sernas</subjectLabel>
+               <objectLabel score="0.00000000">Kaunas</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Jacques_Sernas</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/wasBornIn</predicate>
+               <object>http://yago-knowledge.org/resource/Kaunas</object>
+               <subjectLabel score="0.00000000">Jacques Sernas</subjectLabel>
+               <objectLabel score="0.00000000">Kaunas</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="34" runID="run2" score="0.19106405" plugType="E">
+         <cluster cluster_id="34-0" score="0.22958829" sim="0.9007" norm="1.0000">
+            <quintuple dataset="Yago" score="0.22958829" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Niall_MacGinnis</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Helen_of_Troy_(film)</object>
+               <subjectLabel score="0.00000000">Niall MacGinnis</subjectLabel>
+               <objectLabel score="0.07397072">Helen of Troy</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.21507830" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Helen_of_Troy_(film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Niall_MacGinnis</object>
+               <subjectLabel score="0.03769575">Helen of Troy</subjectLabel>
+               <objectLabel score="0.00000000">Niall MacGinnis</objectLabel>
+            </quintuple>
+            <quintuple dataset="LinkedMDB" score="0.21457865" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/3534</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/46832</object>
+               <subjectLabel score="0.03644661">Helen of Troy</subjectLabel>
+               <objectLabel score="0.00000000">Niall MacGinnis</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="34-1" score="0.20000000" sim="0.9228" norm="0.9500">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Niall_MacGinnis</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/birthPlace</predicate>
+               <object>http://dbpedia.org/resource/Dublin</object>
+               <subjectLabel score="0.00000000">Niall MacGinnis</subjectLabel>
+               <objectLabel score="0.00000000">Dublin</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Niall_MacGinnis</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/wasBornIn</predicate>
+               <object>http://yago-knowledge.org/resource/Dublin</object>
+               <subjectLabel score="0.00000000">Niall MacGinnis</subjectLabel>
+               <objectLabel score="0.00000000">Dublin</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="35" runID="run2" score="0.18977914" plugType="E">
+         <cluster cluster_id="35-0" score="0.22958829" sim="0.9149" norm="0.9500">
+            <quintuple dataset="DBpedia" score="0.21507830" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Helen_of_Troy_(film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Rossana_Podest%C3%A0</object>
+               <subjectLabel score="0.03769575">Helen of Troy</subjectLabel>
+               <objectLabel score="0.00000000">Rossana Podestà</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.22958829" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Rossana_Podestà</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Helen_of_Troy_(film)</object>
+               <subjectLabel score="0.00000000">Rossana Podestà</subjectLabel>
+               <objectLabel score="0.07397072">Helen of Troy</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="35-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Rossana_Podest%C3%A0</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/birthPlace</predicate>
+               <object>http://dbpedia.org/resource/Italian_Libya</object>
+               <subjectLabel score="0.00000000">Rossana Podestà</subjectLabel>
+               <objectLabel score="0.00000000">Italian Libya</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="36" runID="run2" score="0.18977914" plugType="E">
+         <cluster cluster_id="36-0" score="0.22958829" sim="0.9149" norm="0.9500">
+            <quintuple dataset="DBpedia" score="0.21507830" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Helen_of_Troy_(film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Rossana_Podest%C3%A0</object>
+               <subjectLabel score="0.03769575">Helen of Troy</subjectLabel>
+               <objectLabel score="0.00000000">Rossana Podestà</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.22958829" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Rossana_Podestà</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Helen_of_Troy_(film)</object>
+               <subjectLabel score="0.00000000">Rossana Podestà</subjectLabel>
+               <objectLabel score="0.07397072">Helen of Troy</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="36-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Rossana_Podest%C3%A0</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/birthPlace</predicate>
+               <object>http://dbpedia.org/resource/Tripoli</object>
+               <subjectLabel score="0.00000000">Rossana Podestà</subjectLabel>
+               <objectLabel score="0.00000000">Tripoli</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="37" runID="run2" score="0.18337817" plugType="E">
+         <cluster cluster_id="37-0" score="0.24731487" sim="0.9007" norm="1.0000">
+            <quintuple dataset="LinkedMDB" score="0.22641689" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/756</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/29783</object>
+               <subjectLabel score="0.06604221">Troy</subjectLabel>
+               <objectLabel score="0.00000000">Brad Pitt</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.24731487" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Brad_Pitt</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Troy_(film)</object>
+               <subjectLabel score="0.00000000">Brad Pitt</subjectLabel>
+               <objectLabel score="0.11828715">Troy</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.22981315" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Troy_(film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Brad_Pitt</object>
+               <subjectLabel score="0.07453287">Troy</subjectLabel>
+               <objectLabel score="0.00000000">Brad Pitt</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="37-1" score="0.16000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.16000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://dbpedia.org/resource/Brad_Pitt</subject>
+               <predicate score="0.80000000">http://dbpedia.org/ontology/birthDate</predicate>
+               <object>1963-12-18</object>
+               <subjectLabel score="0.00000000">Brad Pitt</subjectLabel>
+               <objectLabel score="0.00000000">1963-12-18</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="38" runID="run2" score="0.18337817" plugType="E">
+         <cluster cluster_id="38-0" score="0.24731487" sim="0.9007" norm="1.0000">
+            <quintuple dataset="LinkedMDB" score="0.22641689" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/756</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/33182</object>
+               <subjectLabel score="0.06604221">Troy</subjectLabel>
+               <objectLabel score="0.00000000">Brian Cox</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.22981315" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Troy_(film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Brian_Cox_(actor)</object>
+               <subjectLabel score="0.07453287">Troy</subjectLabel>
+               <objectLabel score="0.00000000">Brian Cox</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.24731487" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Brian_Cox_(actor)</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Troy_(film)</object>
+               <subjectLabel score="0.00000000">Brian Cox</subjectLabel>
+               <objectLabel score="0.11828715">Troy</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="38-1" score="0.16000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.16000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://dbpedia.org/resource/Brian_Cox_(actor)</subject>
+               <predicate score="0.80000000">http://dbpedia.org/ontology/birthDate</predicate>
+               <object>1946-06-01</object>
+               <subjectLabel score="0.00000000">Brian Cox</subjectLabel>
+               <objectLabel score="0.00000000">1946-06-01</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="39" runID="run2" score="0.18337817" plugType="E">
+         <cluster cluster_id="39-0" score="0.24731487" sim="0.9007" norm="1.0000">
+            <quintuple dataset="DBpedia" score="0.22981315" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Troy_(film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Diane_Kruger</object>
+               <subjectLabel score="0.07453287">Troy</subjectLabel>
+               <objectLabel score="0.00000000">Diane Kruger</objectLabel>
+            </quintuple>
+            <quintuple dataset="LinkedMDB" score="0.22641689" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/756</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/33540</object>
+               <subjectLabel score="0.06604221">Troy</subjectLabel>
+               <objectLabel score="0.00000000">Diane Kruger</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.24731487" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Diane_Kruger</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Troy_(film)</object>
+               <subjectLabel score="0.00000000">Diane Kruger</subjectLabel>
+               <objectLabel score="0.11828715">Troy</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="39-1" score="0.16000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.16000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://dbpedia.org/resource/Diane_Kruger</subject>
+               <predicate score="0.80000000">http://dbpedia.org/ontology/birthDate</predicate>
+               <object>1976-07-15</object>
+               <subjectLabel score="0.00000000">Diane Kruger</subjectLabel>
+               <objectLabel score="0.00000000">1976-07-15</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="40" runID="run2" score="0.18337817" plugType="E">
+         <cluster cluster_id="40-0" score="0.24731487" sim="0.9007" norm="1.0000">
+            <quintuple dataset="LinkedMDB" score="0.22641689" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/756</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/30769</object>
+               <subjectLabel score="0.06604221">Troy</subjectLabel>
+               <objectLabel score="0.00000000">Eric Bana</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.22981315" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Troy_(film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Eric_Bana</object>
+               <subjectLabel score="0.07453287">Troy</subjectLabel>
+               <objectLabel score="0.00000000">Eric Bana</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.24731487" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Eric_Bana</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Troy_(film)</object>
+               <subjectLabel score="0.00000000">Eric Bana</subjectLabel>
+               <objectLabel score="0.11828715">Troy</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="40-1" score="0.16000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.16000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://dbpedia.org/resource/Eric_Bana</subject>
+               <predicate score="0.80000000">http://dbpedia.org/ontology/birthDate</predicate>
+               <object>1968-08-09</object>
+               <subjectLabel score="0.00000000">Eric Bana</subjectLabel>
+               <objectLabel score="0.00000000">1968-08-09</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="41" runID="run2" score="0.18337817" plugType="E">
+         <cluster cluster_id="41-0" score="0.24731487" sim="0.9007" norm="1.0000">
+            <quintuple dataset="Yago" score="0.24731487" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Julie_Christie</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Troy_(film)</object>
+               <subjectLabel score="0.00000000">Julie Christie</subjectLabel>
+               <objectLabel score="0.11828715">Troy</objectLabel>
+            </quintuple>
+            <quintuple dataset="LinkedMDB" score="0.22641689" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/756</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/30597</object>
+               <subjectLabel score="0.06604221">Troy</subjectLabel>
+               <objectLabel score="0.00000000">Julie Christie</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.22981315" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Troy_(film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Julie_Christie</object>
+               <subjectLabel score="0.07453287">Troy</subjectLabel>
+               <objectLabel score="0.00000000">Julie Christie</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="41-1" score="0.16000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.16000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://dbpedia.org/resource/Julie_Christie</subject>
+               <predicate score="0.80000000">http://dbpedia.org/ontology/birthDate</predicate>
+               <object>1940-04-14</object>
+               <subjectLabel score="0.00000000">Julie Christie</subjectLabel>
+               <objectLabel score="0.00000000">1940-04-14</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="42" runID="run2" score="0.18337817" plugType="E">
+         <cluster cluster_id="42-0" score="0.24731487" sim="0.9007" norm="1.0000">
+            <quintuple dataset="Yago" score="0.24731487" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Orlando_Bloom</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Troy_(film)</object>
+               <subjectLabel score="0.00000000">Orlando Bloom</subjectLabel>
+               <objectLabel score="0.11828715">Troy</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.22981315" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Troy_(film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Orlando_Bloom</object>
+               <subjectLabel score="0.07453287">Troy</subjectLabel>
+               <objectLabel score="0.00000000">Orlando Bloom</objectLabel>
+            </quintuple>
+            <quintuple dataset="LinkedMDB" score="0.22641689" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/756</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/29718</object>
+               <subjectLabel score="0.06604221">Troy</subjectLabel>
+               <objectLabel score="0.00000000">Orlando Bloom</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="42-1" score="0.16000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.16000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://dbpedia.org/resource/Orlando_Bloom</subject>
+               <predicate score="0.80000000">http://dbpedia.org/ontology/birthDate</predicate>
+               <object>1977-01-13</object>
+               <subjectLabel score="0.00000000">Orlando Bloom</subjectLabel>
+               <objectLabel score="0.00000000">1977-01-13</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="43" runID="run2" score="0.18337817" plugType="E">
+         <cluster cluster_id="43-0" score="0.24731487" sim="0.9007" norm="1.0000">
+            <quintuple dataset="LinkedMDB" score="0.22641689" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/756</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/10</object>
+               <subjectLabel score="0.06604221">Troy</subjectLabel>
+               <objectLabel score="0.00000000">Peter O'Toole</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.24731487" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Peter_O%27Toole</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Troy_(film)</object>
+               <subjectLabel score="0.00000000">Peter O'Toole</subjectLabel>
+               <objectLabel score="0.11828715">Troy</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.22981315" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Troy_(film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Peter_O%27Toole</object>
+               <subjectLabel score="0.07453287">Troy</subjectLabel>
+               <objectLabel score="0.00000000">Peter O'Toole</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="43-1" score="0.16000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.16000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://dbpedia.org/resource/Peter_O%27Toole</subject>
+               <predicate score="0.80000000">http://dbpedia.org/ontology/birthDate</predicate>
+               <object>1932-08-02</object>
+               <subjectLabel score="0.00000000">Peter O'Toole</subjectLabel>
+               <objectLabel score="0.00000000">1932-08-02</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="44" runID="run2" score="0.18337817" plugType="E">
+         <cluster cluster_id="44-0" score="0.24731487" sim="0.9007" norm="1.0000">
+            <quintuple dataset="Yago" score="0.24731487" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Rose_Byrne</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Troy_(film)</object>
+               <subjectLabel score="0.00000000">Rose Byrne</subjectLabel>
+               <objectLabel score="0.11828715">Troy</objectLabel>
+            </quintuple>
+            <quintuple dataset="LinkedMDB" score="0.22641689" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/756</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/34181</object>
+               <subjectLabel score="0.06604221">Troy</subjectLabel>
+               <objectLabel score="0.00000000">Rose Byrne</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.22981315" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Troy_(film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Rose_Byrne</object>
+               <subjectLabel score="0.07453287">Troy</subjectLabel>
+               <objectLabel score="0.00000000">Rose Byrne</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="44-1" score="0.16000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.16000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://dbpedia.org/resource/Rose_Byrne</subject>
+               <predicate score="0.80000000">http://dbpedia.org/ontology/birthDate</predicate>
+               <object>1979-07-24</object>
+               <subjectLabel score="0.00000000">Rose Byrne</subjectLabel>
+               <objectLabel score="0.00000000">1979-07-24</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="45" runID="run2" score="0.18337817" plugType="E">
+         <cluster cluster_id="45-0" score="0.24731487" sim="0.9007" norm="1.0000">
+            <quintuple dataset="Yago" score="0.24731487" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Saffron_Burrows</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Troy_(film)</object>
+               <subjectLabel score="0.00000000">Saffron Burrows</subjectLabel>
+               <objectLabel score="0.11828715">Troy</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.22981315" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Troy_(film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Saffron_Burrows</object>
+               <subjectLabel score="0.07453287">Troy</subjectLabel>
+               <objectLabel score="0.00000000">Saffron Burrows</objectLabel>
+            </quintuple>
+            <quintuple dataset="LinkedMDB" score="0.22641689" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/756</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/38387</object>
+               <subjectLabel score="0.06604221">Troy</subjectLabel>
+               <objectLabel score="0.00000000">Saffron Burrows</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="45-1" score="0.16000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.16000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://dbpedia.org/resource/Saffron_Burrows</subject>
+               <predicate score="0.80000000">http://dbpedia.org/ontology/birthDate</predicate>
+               <object>1972-10-22</object>
+               <subjectLabel score="0.00000000">Saffron Burrows</subjectLabel>
+               <objectLabel score="0.00000000">1972-10-22</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="46" runID="run2" score="0.18337817" plugType="E">
+         <cluster cluster_id="46-0" score="0.24731487" sim="0.9007" norm="1.0000">
+            <quintuple dataset="Yago" score="0.24731487" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Sean_Bean</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Troy_(film)</object>
+               <subjectLabel score="0.00000000">Sean Bean</subjectLabel>
+               <objectLabel score="0.11828715">Troy</objectLabel>
+            </quintuple>
+            <quintuple dataset="LinkedMDB" score="0.22641689" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/756</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/32553</object>
+               <subjectLabel score="0.06604221">Troy</subjectLabel>
+               <objectLabel score="0.00000000">Sean Bean</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.22981315" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Troy_(film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Sean_Bean</object>
+               <subjectLabel score="0.07453287">Troy</subjectLabel>
+               <objectLabel score="0.00000000">Sean Bean</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="46-1" score="0.16000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.16000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://dbpedia.org/resource/Sean_Bean</subject>
+               <predicate score="0.80000000">http://dbpedia.org/ontology/birthDate</predicate>
+               <object>1959-04-17</object>
+               <subjectLabel score="0.00000000">Sean Bean</subjectLabel>
+               <objectLabel score="0.00000000">1959-04-17</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="47" runID="run2" score="0.17539501" plugType="E">
+         <cluster cluster_id="47-0" score="0.22958829" sim="0.9007" norm="1.0000">
+            <quintuple dataset="DBpedia" score="0.21507830" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Helen_of_Troy_(film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Cedric_Hardwicke</object>
+               <subjectLabel score="0.03769575">Helen of Troy</subjectLabel>
+               <objectLabel score="0.00000000">Cedric Hardwicke</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.22958829" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Cedric_Hardwicke</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Helen_of_Troy_(film)</object>
+               <subjectLabel score="0.00000000">Cedric Hardwicke</subjectLabel>
+               <objectLabel score="0.07397072">Helen of Troy</objectLabel>
+            </quintuple>
+            <quintuple dataset="LinkedMDB" score="0.21457865" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/3534</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/30748</object>
+               <subjectLabel score="0.03644661">Helen of Troy</subjectLabel>
+               <objectLabel score="0.00000000">Cedric Hardwicke</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="47-1" score="0.16000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.16000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://dbpedia.org/resource/Cedric_Hardwicke</subject>
+               <predicate score="0.80000000">http://dbpedia.org/ontology/birthDate</predicate>
+               <object>1893-02-19</object>
+               <subjectLabel score="0.00000000">Cedric Hardwicke</subjectLabel>
+               <objectLabel score="0.00000000">1893-02-19</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="48" runID="run2" score="0.17539501" plugType="E">
+         <cluster cluster_id="48-0" score="0.22958829" sim="0.9007" norm="1.0000">
+            <quintuple dataset="LinkedMDB" score="0.21457865" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/3534</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/49103</object>
+               <subjectLabel score="0.03644661">Helen of Troy</subjectLabel>
+               <objectLabel score="0.00000000">Jacques Sernas</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.22958829" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Jacques_Sernas</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Helen_of_Troy_(film)</object>
+               <subjectLabel score="0.00000000">Jacques Sernas</subjectLabel>
+               <objectLabel score="0.07397072">Helen of Troy</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.21507830" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Helen_of_Troy_(film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Jacques_Sernas</object>
+               <subjectLabel score="0.03769575">Helen of Troy</subjectLabel>
+               <objectLabel score="0.00000000">Jacques Sernas</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="48-1" score="0.16000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.16000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://dbpedia.org/resource/Jacques_Sernas</subject>
+               <predicate score="0.80000000">http://dbpedia.org/ontology/birthDate</predicate>
+               <object>1925-07-30</object>
+               <subjectLabel score="0.00000000">Jacques Sernas</subjectLabel>
+               <objectLabel score="0.00000000">1925-07-30</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="49" runID="run2" score="0.17539501" plugType="E">
+         <cluster cluster_id="49-0" score="0.22958829" sim="0.9007" norm="1.0000">
+            <quintuple dataset="Yago" score="0.22958829" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Niall_MacGinnis</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Helen_of_Troy_(film)</object>
+               <subjectLabel score="0.00000000">Niall MacGinnis</subjectLabel>
+               <objectLabel score="0.07397072">Helen of Troy</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.21507830" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Helen_of_Troy_(film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Niall_MacGinnis</object>
+               <subjectLabel score="0.03769575">Helen of Troy</subjectLabel>
+               <objectLabel score="0.00000000">Niall MacGinnis</objectLabel>
+            </quintuple>
+            <quintuple dataset="LinkedMDB" score="0.21457865" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/3534</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/46832</object>
+               <subjectLabel score="0.03644661">Helen of Troy</subjectLabel>
+               <objectLabel score="0.00000000">Niall MacGinnis</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="49-1" score="0.16000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.16000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://dbpedia.org/resource/Niall_MacGinnis</subject>
+               <predicate score="0.80000000">http://dbpedia.org/ontology/birthDate</predicate>
+               <object>1913-03-29</object>
+               <subjectLabel score="0.00000000">Niall MacGinnis</subjectLabel>
+               <objectLabel score="0.00000000">1913-03-29</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="50" runID="run2" score="0.17539501" plugType="E">
+         <cluster cluster_id="50-0" score="0.22958829" sim="0.9007" norm="1.0000">
+            <quintuple dataset="DBpedia" score="0.21507830" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Helen_of_Troy_(film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Stanley_Baker</object>
+               <subjectLabel score="0.03769575">Helen of Troy</subjectLabel>
+               <objectLabel score="0.00000000">Stanley Baker</objectLabel>
+            </quintuple>
+            <quintuple dataset="LinkedMDB" score="0.21457865" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/3534</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/35269</object>
+               <subjectLabel score="0.03644661">Helen of Troy</subjectLabel>
+               <objectLabel score="0.00000000">Stanley Baker</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.22958829" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Stanley_Baker</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Helen_of_Troy_(film)</object>
+               <subjectLabel score="0.00000000">Stanley Baker</subjectLabel>
+               <objectLabel score="0.07397072">Helen of Troy</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="50-1" score="0.16000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.16000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://dbpedia.org/resource/Stanley_Baker</subject>
+               <predicate score="0.80000000">http://dbpedia.org/ontology/birthDate</predicate>
+               <object>1928-02-28</object>
+               <subjectLabel score="0.00000000">Stanley Baker</subjectLabel>
+               <objectLabel score="0.00000000">1928-02-28</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="51" runID="run2" score="0.17437817" plugType="E">
+         <cluster cluster_id="51-0" score="0.24731487" sim="0.9007" norm="1.0000">
+            <quintuple dataset="LinkedMDB" score="0.22641689" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/756</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/29783</object>
+               <subjectLabel score="0.06604221">Troy</subjectLabel>
+               <objectLabel score="0.00000000">Brad Pitt</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.24731487" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Brad_Pitt</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Troy_(film)</object>
+               <subjectLabel score="0.00000000">Brad Pitt</subjectLabel>
+               <objectLabel score="0.11828715">Troy</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.22981315" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Troy_(film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Brad_Pitt</object>
+               <subjectLabel score="0.07453287">Troy</subjectLabel>
+               <objectLabel score="0.00000000">Brad Pitt</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="51-1" score="0.14000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.14000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://dbpedia.org/resource/Brad_Pitt</subject>
+               <predicate score="0.70000000">http://dbpedia.org/ontology/birthYear</predicate>
+               <object>1963</object>
+               <subjectLabel score="0.00000000">Brad Pitt</subjectLabel>
+               <objectLabel score="0.00000000">1963</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="52" runID="run2" score="0.17437817" plugType="E">
+         <cluster cluster_id="52-0" score="0.24731487" sim="0.9007" norm="1.0000">
+            <quintuple dataset="LinkedMDB" score="0.22641689" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/756</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/33182</object>
+               <subjectLabel score="0.06604221">Troy</subjectLabel>
+               <objectLabel score="0.00000000">Brian Cox</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.22981315" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Troy_(film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Brian_Cox_(actor)</object>
+               <subjectLabel score="0.07453287">Troy</subjectLabel>
+               <objectLabel score="0.00000000">Brian Cox</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.24731487" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Brian_Cox_(actor)</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Troy_(film)</object>
+               <subjectLabel score="0.00000000">Brian Cox</subjectLabel>
+               <objectLabel score="0.11828715">Troy</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="52-1" score="0.14000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.14000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://dbpedia.org/resource/Brian_Cox_(actor)</subject>
+               <predicate score="0.70000000">http://dbpedia.org/ontology/birthYear</predicate>
+               <object>1946</object>
+               <subjectLabel score="0.00000000">Brian Cox</subjectLabel>
+               <objectLabel score="0.00000000">1946</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="53" runID="run2" score="0.17437817" plugType="E">
+         <cluster cluster_id="53-0" score="0.24731487" sim="0.9007" norm="1.0000">
+            <quintuple dataset="DBpedia" score="0.22981315" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Troy_(film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Diane_Kruger</object>
+               <subjectLabel score="0.07453287">Troy</subjectLabel>
+               <objectLabel score="0.00000000">Diane Kruger</objectLabel>
+            </quintuple>
+            <quintuple dataset="LinkedMDB" score="0.22641689" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/756</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/33540</object>
+               <subjectLabel score="0.06604221">Troy</subjectLabel>
+               <objectLabel score="0.00000000">Diane Kruger</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.24731487" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Diane_Kruger</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Troy_(film)</object>
+               <subjectLabel score="0.00000000">Diane Kruger</subjectLabel>
+               <objectLabel score="0.11828715">Troy</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="53-1" score="0.14000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.14000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://dbpedia.org/resource/Diane_Kruger</subject>
+               <predicate score="0.70000000">http://dbpedia.org/ontology/birthYear</predicate>
+               <object>1976</object>
+               <subjectLabel score="0.00000000">Diane Kruger</subjectLabel>
+               <objectLabel score="0.00000000">1976</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="54" runID="run2" score="0.17437817" plugType="E">
+         <cluster cluster_id="54-0" score="0.24731487" sim="0.9007" norm="1.0000">
+            <quintuple dataset="LinkedMDB" score="0.22641689" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/756</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/30769</object>
+               <subjectLabel score="0.06604221">Troy</subjectLabel>
+               <objectLabel score="0.00000000">Eric Bana</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.22981315" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Troy_(film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Eric_Bana</object>
+               <subjectLabel score="0.07453287">Troy</subjectLabel>
+               <objectLabel score="0.00000000">Eric Bana</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.24731487" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Eric_Bana</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Troy_(film)</object>
+               <subjectLabel score="0.00000000">Eric Bana</subjectLabel>
+               <objectLabel score="0.11828715">Troy</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="54-1" score="0.14000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.14000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://dbpedia.org/resource/Eric_Bana</subject>
+               <predicate score="0.70000000">http://dbpedia.org/ontology/birthYear</predicate>
+               <object>1968</object>
+               <subjectLabel score="0.00000000">Eric Bana</subjectLabel>
+               <objectLabel score="0.00000000">1968</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="55" runID="run2" score="0.17437817" plugType="E">
+         <cluster cluster_id="55-0" score="0.24731487" sim="0.9007" norm="1.0000">
+            <quintuple dataset="Yago" score="0.24731487" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Julie_Christie</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Troy_(film)</object>
+               <subjectLabel score="0.00000000">Julie Christie</subjectLabel>
+               <objectLabel score="0.11828715">Troy</objectLabel>
+            </quintuple>
+            <quintuple dataset="LinkedMDB" score="0.22641689" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/756</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/30597</object>
+               <subjectLabel score="0.06604221">Troy</subjectLabel>
+               <objectLabel score="0.00000000">Julie Christie</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.22981315" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Troy_(film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Julie_Christie</object>
+               <subjectLabel score="0.07453287">Troy</subjectLabel>
+               <objectLabel score="0.00000000">Julie Christie</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="55-1" score="0.14000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.14000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://dbpedia.org/resource/Julie_Christie</subject>
+               <predicate score="0.70000000">http://dbpedia.org/ontology/birthYear</predicate>
+               <object>1940</object>
+               <subjectLabel score="0.00000000">Julie Christie</subjectLabel>
+               <objectLabel score="0.00000000">1940</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="56" runID="run2" score="0.17437817" plugType="E">
+         <cluster cluster_id="56-0" score="0.24731487" sim="0.9007" norm="1.0000">
+            <quintuple dataset="Yago" score="0.24731487" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Orlando_Bloom</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Troy_(film)</object>
+               <subjectLabel score="0.00000000">Orlando Bloom</subjectLabel>
+               <objectLabel score="0.11828715">Troy</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.22981315" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Troy_(film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Orlando_Bloom</object>
+               <subjectLabel score="0.07453287">Troy</subjectLabel>
+               <objectLabel score="0.00000000">Orlando Bloom</objectLabel>
+            </quintuple>
+            <quintuple dataset="LinkedMDB" score="0.22641689" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/756</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/29718</object>
+               <subjectLabel score="0.06604221">Troy</subjectLabel>
+               <objectLabel score="0.00000000">Orlando Bloom</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="56-1" score="0.14000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.14000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://dbpedia.org/resource/Orlando_Bloom</subject>
+               <predicate score="0.70000000">http://dbpedia.org/ontology/birthYear</predicate>
+               <object>1977</object>
+               <subjectLabel score="0.00000000">Orlando Bloom</subjectLabel>
+               <objectLabel score="0.00000000">1977</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="57" runID="run2" score="0.17437817" plugType="E">
+         <cluster cluster_id="57-0" score="0.24731487" sim="0.9007" norm="1.0000">
+            <quintuple dataset="LinkedMDB" score="0.22641689" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/756</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/10</object>
+               <subjectLabel score="0.06604221">Troy</subjectLabel>
+               <objectLabel score="0.00000000">Peter O'Toole</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.24731487" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Peter_O%27Toole</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Troy_(film)</object>
+               <subjectLabel score="0.00000000">Peter O'Toole</subjectLabel>
+               <objectLabel score="0.11828715">Troy</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.22981315" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Troy_(film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Peter_O%27Toole</object>
+               <subjectLabel score="0.07453287">Troy</subjectLabel>
+               <objectLabel score="0.00000000">Peter O'Toole</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="57-1" score="0.14000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.14000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://dbpedia.org/resource/Peter_O%27Toole</subject>
+               <predicate score="0.70000000">http://dbpedia.org/ontology/birthYear</predicate>
+               <object>1932</object>
+               <subjectLabel score="0.00000000">Peter O'Toole</subjectLabel>
+               <objectLabel score="0.00000000">1932</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="58" runID="run2" score="0.17437817" plugType="E">
+         <cluster cluster_id="58-0" score="0.24731487" sim="0.9007" norm="1.0000">
+            <quintuple dataset="Yago" score="0.24731487" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Rose_Byrne</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Troy_(film)</object>
+               <subjectLabel score="0.00000000">Rose Byrne</subjectLabel>
+               <objectLabel score="0.11828715">Troy</objectLabel>
+            </quintuple>
+            <quintuple dataset="LinkedMDB" score="0.22641689" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/756</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/34181</object>
+               <subjectLabel score="0.06604221">Troy</subjectLabel>
+               <objectLabel score="0.00000000">Rose Byrne</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.22981315" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Troy_(film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Rose_Byrne</object>
+               <subjectLabel score="0.07453287">Troy</subjectLabel>
+               <objectLabel score="0.00000000">Rose Byrne</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="58-1" score="0.14000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.14000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://dbpedia.org/resource/Rose_Byrne</subject>
+               <predicate score="0.70000000">http://dbpedia.org/ontology/birthYear</predicate>
+               <object>1979</object>
+               <subjectLabel score="0.00000000">Rose Byrne</subjectLabel>
+               <objectLabel score="0.00000000">1979</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="59" runID="run2" score="0.17437817" plugType="E">
+         <cluster cluster_id="59-0" score="0.24731487" sim="0.9007" norm="1.0000">
+            <quintuple dataset="Yago" score="0.24731487" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Saffron_Burrows</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Troy_(film)</object>
+               <subjectLabel score="0.00000000">Saffron Burrows</subjectLabel>
+               <objectLabel score="0.11828715">Troy</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.22981315" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Troy_(film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Saffron_Burrows</object>
+               <subjectLabel score="0.07453287">Troy</subjectLabel>
+               <objectLabel score="0.00000000">Saffron Burrows</objectLabel>
+            </quintuple>
+            <quintuple dataset="LinkedMDB" score="0.22641689" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/756</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/38387</object>
+               <subjectLabel score="0.06604221">Troy</subjectLabel>
+               <objectLabel score="0.00000000">Saffron Burrows</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="59-1" score="0.14000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.14000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://dbpedia.org/resource/Saffron_Burrows</subject>
+               <predicate score="0.70000000">http://dbpedia.org/ontology/birthYear</predicate>
+               <object>1972</object>
+               <subjectLabel score="0.00000000">Saffron Burrows</subjectLabel>
+               <objectLabel score="0.00000000">1972</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="60" runID="run2" score="0.17437817" plugType="E">
+         <cluster cluster_id="60-0" score="0.24731487" sim="0.9007" norm="1.0000">
+            <quintuple dataset="Yago" score="0.24731487" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Sean_Bean</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Troy_(film)</object>
+               <subjectLabel score="0.00000000">Sean Bean</subjectLabel>
+               <objectLabel score="0.11828715">Troy</objectLabel>
+            </quintuple>
+            <quintuple dataset="LinkedMDB" score="0.22641689" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/756</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/32553</object>
+               <subjectLabel score="0.06604221">Troy</subjectLabel>
+               <objectLabel score="0.00000000">Sean Bean</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.22981315" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Troy_(film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Sean_Bean</object>
+               <subjectLabel score="0.07453287">Troy</subjectLabel>
+               <objectLabel score="0.00000000">Sean Bean</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="60-1" score="0.14000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.14000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://dbpedia.org/resource/Sean_Bean</subject>
+               <predicate score="0.70000000">http://dbpedia.org/ontology/birthYear</predicate>
+               <object>1959</object>
+               <subjectLabel score="0.00000000">Sean Bean</subjectLabel>
+               <objectLabel score="0.00000000">1959</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="61" runID="run2" score="0.17177914" plugType="E">
+         <cluster cluster_id="61-0" score="0.22958829" sim="0.9149" norm="0.9500">
+            <quintuple dataset="DBpedia" score="0.21507830" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Helen_of_Troy_(film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Rossana_Podest%C3%A0</object>
+               <subjectLabel score="0.03769575">Helen of Troy</subjectLabel>
+               <objectLabel score="0.00000000">Rossana Podestà</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.22958829" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Rossana_Podestà</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Helen_of_Troy_(film)</object>
+               <subjectLabel score="0.00000000">Rossana Podestà</subjectLabel>
+               <objectLabel score="0.07397072">Helen of Troy</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="61-1" score="0.16000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.16000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://dbpedia.org/resource/Rossana_Podest%C3%A0</subject>
+               <predicate score="0.80000000">http://dbpedia.org/ontology/birthDate</predicate>
+               <object>1934-06-20</object>
+               <subjectLabel score="0.00000000">Rossana Podestà</subjectLabel>
+               <objectLabel score="0.00000000">1934-06-20</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="62" runID="run2" score="0.16639501" plugType="E">
+         <cluster cluster_id="62-0" score="0.22958829" sim="0.9007" norm="1.0000">
+            <quintuple dataset="DBpedia" score="0.21507830" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Helen_of_Troy_(film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Cedric_Hardwicke</object>
+               <subjectLabel score="0.03769575">Helen of Troy</subjectLabel>
+               <objectLabel score="0.00000000">Cedric Hardwicke</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.22958829" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Cedric_Hardwicke</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Helen_of_Troy_(film)</object>
+               <subjectLabel score="0.00000000">Cedric Hardwicke</subjectLabel>
+               <objectLabel score="0.07397072">Helen of Troy</objectLabel>
+            </quintuple>
+            <quintuple dataset="LinkedMDB" score="0.21457865" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/3534</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/30748</object>
+               <subjectLabel score="0.03644661">Helen of Troy</subjectLabel>
+               <objectLabel score="0.00000000">Cedric Hardwicke</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="62-1" score="0.14000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.14000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://dbpedia.org/resource/Cedric_Hardwicke</subject>
+               <predicate score="0.70000000">http://dbpedia.org/ontology/birthYear</predicate>
+               <object>1893</object>
+               <subjectLabel score="0.00000000">Cedric Hardwicke</subjectLabel>
+               <objectLabel score="0.00000000">1893</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="63" runID="run2" score="0.16639501" plugType="E">
+         <cluster cluster_id="63-0" score="0.22958829" sim="0.9007" norm="1.0000">
+            <quintuple dataset="LinkedMDB" score="0.21457865" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/3534</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/49103</object>
+               <subjectLabel score="0.03644661">Helen of Troy</subjectLabel>
+               <objectLabel score="0.00000000">Jacques Sernas</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.22958829" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Jacques_Sernas</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Helen_of_Troy_(film)</object>
+               <subjectLabel score="0.00000000">Jacques Sernas</subjectLabel>
+               <objectLabel score="0.07397072">Helen of Troy</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.21507830" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Helen_of_Troy_(film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Jacques_Sernas</object>
+               <subjectLabel score="0.03769575">Helen of Troy</subjectLabel>
+               <objectLabel score="0.00000000">Jacques Sernas</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="63-1" score="0.14000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.14000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://dbpedia.org/resource/Jacques_Sernas</subject>
+               <predicate score="0.70000000">http://dbpedia.org/ontology/birthYear</predicate>
+               <object>1925</object>
+               <subjectLabel score="0.00000000">Jacques Sernas</subjectLabel>
+               <objectLabel score="0.00000000">1925</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="64" runID="run2" score="0.16639501" plugType="E">
+         <cluster cluster_id="64-0" score="0.22958829" sim="0.9007" norm="1.0000">
+            <quintuple dataset="Yago" score="0.22958829" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Niall_MacGinnis</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Helen_of_Troy_(film)</object>
+               <subjectLabel score="0.00000000">Niall MacGinnis</subjectLabel>
+               <objectLabel score="0.07397072">Helen of Troy</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.21507830" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Helen_of_Troy_(film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Niall_MacGinnis</object>
+               <subjectLabel score="0.03769575">Helen of Troy</subjectLabel>
+               <objectLabel score="0.00000000">Niall MacGinnis</objectLabel>
+            </quintuple>
+            <quintuple dataset="LinkedMDB" score="0.21457865" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/3534</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/46832</object>
+               <subjectLabel score="0.03644661">Helen of Troy</subjectLabel>
+               <objectLabel score="0.00000000">Niall MacGinnis</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="64-1" score="0.14000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.14000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://dbpedia.org/resource/Niall_MacGinnis</subject>
+               <predicate score="0.70000000">http://dbpedia.org/ontology/birthYear</predicate>
+               <object>1913</object>
+               <subjectLabel score="0.00000000">Niall MacGinnis</subjectLabel>
+               <objectLabel score="0.00000000">1913</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="65" runID="run2" score="0.16639501" plugType="E">
+         <cluster cluster_id="65-0" score="0.22958829" sim="0.9007" norm="1.0000">
+            <quintuple dataset="DBpedia" score="0.21507830" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Helen_of_Troy_(film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Stanley_Baker</object>
+               <subjectLabel score="0.03769575">Helen of Troy</subjectLabel>
+               <objectLabel score="0.00000000">Stanley Baker</objectLabel>
+            </quintuple>
+            <quintuple dataset="LinkedMDB" score="0.21457865" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/3534</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/35269</object>
+               <subjectLabel score="0.03644661">Helen of Troy</subjectLabel>
+               <objectLabel score="0.00000000">Stanley Baker</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.22958829" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Stanley_Baker</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Helen_of_Troy_(film)</object>
+               <subjectLabel score="0.00000000">Stanley Baker</subjectLabel>
+               <objectLabel score="0.07397072">Helen of Troy</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="65-1" score="0.14000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.14000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://dbpedia.org/resource/Stanley_Baker</subject>
+               <predicate score="0.70000000">http://dbpedia.org/ontology/birthYear</predicate>
+               <object>1928</object>
+               <subjectLabel score="0.00000000">Stanley Baker</subjectLabel>
+               <objectLabel score="0.00000000">1928</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="66" runID="run2" score="0.16277913" plugType="E">
+         <cluster cluster_id="66-0" score="0.22958829" sim="0.9149" norm="0.9500">
+            <quintuple dataset="DBpedia" score="0.21507830" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Helen_of_Troy_(film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Rossana_Podest%C3%A0</object>
+               <subjectLabel score="0.03769575">Helen of Troy</subjectLabel>
+               <objectLabel score="0.00000000">Rossana Podestà</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.22958829" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Rossana_Podestà</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Helen_of_Troy_(film)</object>
+               <subjectLabel score="0.00000000">Rossana Podestà</subjectLabel>
+               <objectLabel score="0.07397072">Helen of Troy</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="66-1" score="0.14000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.14000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://dbpedia.org/resource/Rossana_Podest%C3%A0</subject>
+               <predicate score="0.70000000">http://dbpedia.org/ontology/birthYear</predicate>
+               <object>1934</object>
+               <subjectLabel score="0.00000000">Rossana Podestà</subjectLabel>
+               <objectLabel score="0.00000000">1934</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+   </results>
+</question>

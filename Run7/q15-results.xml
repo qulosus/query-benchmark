@@ -1,0 +1,698 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<question id="15" runID="run7">
+   <string>
+      <![CDATA[Give me all people that were born in Berlin and died in Paris.]]>
+   </string>
+   <query>
+      <![CDATA[
+  ?who  "born in"  "Berlin".
+  ?who  "died in"  "Paris".
+]]>
+   </query>
+   <settings labelSearchTopK="15" plugLabel="true" limited="false" validateTriple="false"/>
+   <stats1 nb_results="28" timeSec="839.6290" memoryMB="1510.2567" totalQuins="71" avgQuin_Cluster="1.2679" avgQuin_Bucket="2.5357" nb_plugTR="2681"/>
+   <stats2>
+      <ds id="LinkedMDB">
+         <nreq>0</nreq>
+         <nreqs>0</nreqs>
+         <nrecd>0</nrecd>
+      </ds>
+      <ds id="DBpedia">
+         <nreq>267710</nreq>
+         <nreqs>16</nreqs>
+         <nrecd>1763</nrecd>
+      </ds>
+      <ds id="Yago">
+         <nreq>133240</nreq>
+         <nreqs>22</nreqs>
+         <nrecd>1011</nrecd>
+      </ds>
+   </stats2>
+   <results>
+      <bucket bucket_id="0" runID="run7" score="0.22004781" plugType="E">
+         <cluster cluster_id="0-0" score="0.24537048" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.24537048" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Heinz_Berggruen</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/birthPlace</predicate>
+               <object>http://dbpedia.org/resource/Berlin</object>
+               <subjectLabel score="0.00000000">Heinz Berggruen</subjectLabel>
+               <objectLabel score="0.11342618">Berlin</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="0-1" score="0.24362465" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.24362465" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Heinz_Berggruen</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/deathPlace</predicate>
+               <object>http://dbpedia.org/resource/Paris</object>
+               <subjectLabel score="0.00000000">Heinz Berggruen</subjectLabel>
+               <objectLabel score="0.10906161">Paris</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="1" runID="run7" score="0.22004781" plugType="E">
+         <cluster cluster_id="1-0" score="0.24537048" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.24537048" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Hugh_Rose,_1st_Baron_Strathnairn</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/birthPlace</predicate>
+               <object>http://dbpedia.org/resource/Berlin</object>
+               <subjectLabel score="0.00000000">Hugh Rose, 1st Baron Strathnairn</subjectLabel>
+               <objectLabel score="0.11342618">Berlin</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="1-1" score="0.24362465" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.24362465" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Hugh_Rose,_1st_Baron_Strathnairn</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/deathPlace</predicate>
+               <object>http://dbpedia.org/resource/Paris</object>
+               <subjectLabel score="0.00000000">Hugh Rose, 1st Baron Strathnairn</subjectLabel>
+               <objectLabel score="0.10906161">Paris</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="2" runID="run7" score="0.22004781" plugType="E">
+         <cluster cluster_id="2-0" score="0.24537048" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.24537048" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Erika_Abels_d%27Albert</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/birthPlace</predicate>
+               <object>http://dbpedia.org/resource/Berlin</object>
+               <subjectLabel score="0.00000000">Erika Abels d'Albert</subjectLabel>
+               <objectLabel score="0.11342618">Berlin</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="2-1" score="0.24362465" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.24362465" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Erika_Abels_d%27Albert</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/deathPlace</predicate>
+               <object>http://dbpedia.org/resource/Paris</object>
+               <subjectLabel score="0.00000000">Erika Abels d'Albert</subjectLabel>
+               <objectLabel score="0.10906161">Paris</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="3" runID="run7" score="0.22004781" plugType="E">
+         <cluster cluster_id="3-0" score="0.24537048" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.24537048" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Giacomo_Meyerbeer</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/birthPlace</predicate>
+               <object>http://dbpedia.org/resource/Berlin</object>
+               <subjectLabel score="0.00000000">Giacomo Meyerbeer</subjectLabel>
+               <objectLabel score="0.11342618">Berlin</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="3-1" score="0.24362465" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.24362465" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Giacomo_Meyerbeer</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/deathPlace</predicate>
+               <object>http://dbpedia.org/resource/Paris</object>
+               <subjectLabel score="0.00000000">Giacomo Meyerbeer</subjectLabel>
+               <objectLabel score="0.10906161">Paris</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="4" runID="run7" score="0.22004781" plugType="E">
+         <cluster cluster_id="4-0" score="0.24537048" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.24537048" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Wladimir_de_Schoenefeld</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/birthPlace</predicate>
+               <object>http://dbpedia.org/resource/Berlin</object>
+               <subjectLabel score="0.00000000">Wladimir de Schoenefeld</subjectLabel>
+               <objectLabel score="0.11342618">Berlin</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="4-1" score="0.24362465" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.24362465" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Wladimir_de_Schoenefeld</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/deathPlace</predicate>
+               <object>http://dbpedia.org/resource/Paris</object>
+               <subjectLabel score="0.00000000">Wladimir de Schoenefeld</subjectLabel>
+               <objectLabel score="0.10906161">Paris</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="5" runID="run7" score="0.22004781" plugType="E">
+         <cluster cluster_id="5-0" score="0.24537048" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.24537048" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Wols</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/birthPlace</predicate>
+               <object>http://dbpedia.org/resource/Berlin</object>
+               <subjectLabel score="0.00000000">Wols</subjectLabel>
+               <objectLabel score="0.11342618">Berlin</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="5-1" score="0.24362465" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.24362465" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Wols</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/deathPlace</predicate>
+               <object>http://dbpedia.org/resource/Paris</object>
+               <subjectLabel score="0.00000000">Wols</subjectLabel>
+               <objectLabel score="0.10906161">Paris</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="6" runID="run7" score="0.21957289" plugType="E">
+         <cluster cluster_id="6-0" score="0.24537048" sim="0.9228" norm="0.9500">
+            <quintuple dataset="DBpedia" score="0.24537048" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Otto_Wels</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/birthPlace</predicate>
+               <object>http://dbpedia.org/resource/Berlin</object>
+               <subjectLabel score="0.00000000">Otto Wels</subjectLabel>
+               <objectLabel score="0.11342618">Berlin</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.24453924" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Otto_Wels</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/wasBornIn</predicate>
+               <object>http://yago-knowledge.org/resource/Berlin</object>
+               <subjectLabel score="0.00000000">Otto Wels</subjectLabel>
+               <objectLabel score="0.11134810">Berlin</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="6-1" score="0.25095573" sim="0.9397" norm="0.9500">
+            <quintuple dataset="Yago" score="0.25095573" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Otto_Wels</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/diedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Paris</object>
+               <subjectLabel score="0.00000000">Otto Wels</subjectLabel>
+               <objectLabel score="0.12738933">Paris</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.24362465" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Otto_Wels</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/deathPlace</predicate>
+               <object>http://dbpedia.org/resource/Paris</object>
+               <subjectLabel score="0.00000000">Otto Wels</subjectLabel>
+               <objectLabel score="0.10906161">Paris</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="7" runID="run7" score="0.21957289" plugType="E">
+         <cluster cluster_id="7-0" score="0.24537048" sim="0.9228" norm="0.9500">
+            <quintuple dataset="Yago" score="0.24453924" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/George_V_of_Hanover</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/wasBornIn</predicate>
+               <object>http://yago-knowledge.org/resource/Berlin</object>
+               <subjectLabel score="0.00000000">George V of Hanover</subjectLabel>
+               <objectLabel score="0.11134810">Berlin</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.24537048" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/George_V_of_Hanover</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/birthPlace</predicate>
+               <object>http://dbpedia.org/resource/Berlin</object>
+               <subjectLabel score="0.00000000">George V of Hanover</subjectLabel>
+               <objectLabel score="0.11342618">Berlin</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="7-1" score="0.25095573" sim="0.9397" norm="0.9500">
+            <quintuple dataset="Yago" score="0.25095573" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/George_V_of_Hanover</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/diedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Paris</object>
+               <subjectLabel score="0.00000000">George V of Hanover</subjectLabel>
+               <objectLabel score="0.12738933">Paris</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.24362465" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/George_V_of_Hanover</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/deathPlace</predicate>
+               <object>http://dbpedia.org/resource/Paris</object>
+               <subjectLabel score="0.00000000">George V of Hanover</subjectLabel>
+               <objectLabel score="0.10906161">Paris</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="8" runID="run7" score="0.21718807" plugType="E">
+         <cluster cluster_id="8-0" score="0.24537048" sim="0.9228" norm="0.9500">
+            <quintuple dataset="DBpedia" score="0.24537048" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/St%C3%A9phane_Hessel</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/birthPlace</predicate>
+               <object>http://dbpedia.org/resource/Berlin</object>
+               <subjectLabel score="0.00000000">Stéphane Hessel</subjectLabel>
+               <objectLabel score="0.11342618">Berlin</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.24453924" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Stéphane_Hessel</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/wasBornIn</predicate>
+               <object>http://yago-knowledge.org/resource/Berlin</object>
+               <subjectLabel score="0.00000000">Stéphane Hessel</subjectLabel>
+               <objectLabel score="0.11134810">Berlin</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="8-1" score="0.24362465" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.24362465" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/St%C3%A9phane_Hessel</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/deathPlace</predicate>
+               <object>http://dbpedia.org/resource/Paris</object>
+               <subjectLabel score="0.00000000">Stéphane Hessel</subjectLabel>
+               <objectLabel score="0.10906161">Paris</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="9" runID="run7" score="0.12164805" plugType="L">
+         <cluster cluster_id="9-0" score="0.24537048" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.24537048" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Landgravine_Louise_of_Hesse-Darmstadt_(1757%E2%80%931830)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/birthPlace</predicate>
+               <object>http://dbpedia.org/resource/Berlin</object>
+               <subjectLabel score="0.00000000">Landgravine Louise of Hesse-Darmstadt</subjectLabel>
+               <objectLabel score="0.11342618">Berlin</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="9-1" score="0.35826073" sim="0.9397" norm="0.9500">
+            <quintuple dataset="DBpedia" score="0.31639393" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Landgravine_Caroline_Louise_of_Hesse-Darmstadt</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/deathPlace</predicate>
+               <object>http://dbpedia.org/resource/Paris</object>
+               <subjectLabel score="0.18192321">Landgravine Caroline Louise of Hesse-Darmstadt</subjectLabel>
+               <objectLabel score="0.10906161">Paris</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.35826073" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Landgravine_Caroline_Louise_of_Hesse-Darmstadt</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/diedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Paris</object>
+               <subjectLabel score="0.26826250">Landgravine Caroline Louise of Hesse-Darmstadt</subjectLabel>
+               <objectLabel score="0.12738933">Paris</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="10" runID="run7" score="0.11137545" plugType="L">
+         <cluster cluster_id="10-0" score="0.24537048" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.24537048" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Max_Liebermann</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/birthPlace</predicate>
+               <object>http://dbpedia.org/resource/Berlin</object>
+               <subjectLabel score="0.00000000">Max Liebermann</subjectLabel>
+               <objectLabel score="0.11342618">Berlin</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="10-1" score="0.30463174" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.30463174" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Rolf_Liebermann</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/diedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Paris</object>
+               <subjectLabel score="0.13419000">Rolf Liebermann</subjectLabel>
+               <objectLabel score="0.12738933">Paris</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="11" runID="run7" score="0.11130290" plugType="L">
+         <cluster cluster_id="11-0" score="0.24537048" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.24537048" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Paul_Kalisch</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/birthPlace</predicate>
+               <object>http://dbpedia.org/resource/Berlin</object>
+               <subjectLabel score="0.00000000">Paul Kalisch</subjectLabel>
+               <objectLabel score="0.11342618">Berlin</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="11-1" score="0.30427347" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.30427347" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Ludwig_Kalisch</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/diedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Paris</object>
+               <subjectLabel score="0.13329433">Ludwig Kalisch</subjectLabel>
+               <objectLabel score="0.12738933">Paris</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="12" runID="run7" score="0.11073360" plugType="L">
+         <cluster cluster_id="12-0" score="0.24537048" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.24537048" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Peter_Gr%C3%B6ning</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/birthPlace</predicate>
+               <object>http://dbpedia.org/resource/Berlin</object>
+               <subjectLabel score="0.00000000">Peter Gröning</subjectLabel>
+               <objectLabel score="0.11342618">Berlin</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="12-1" score="0.30392236" sim="0.9397" norm="0.9500">
+            <quintuple dataset="Yago" score="0.30392236" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Bruno_Gröning</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/diedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Paris</object>
+               <subjectLabel score="0.13241657">Bruno Gröning</subjectLabel>
+               <objectLabel score="0.12738933">Paris</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.28818462" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Bruno_Gr%C3%B6ning</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/deathPlace</predicate>
+               <object>http://dbpedia.org/resource/Paris</object>
+               <subjectLabel score="0.11139993">Bruno Gröning</subjectLabel>
+               <objectLabel score="0.10906161">Paris</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="13" runID="run7" score="0.10996459" plugType="L">
+         <cluster cluster_id="13-0" score="0.24537048" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.24537048" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Henri_Berger</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/birthPlace</predicate>
+               <object>http://dbpedia.org/resource/Berlin</object>
+               <subjectLabel score="0.00000000">Henri Berger</subjectLabel>
+               <objectLabel score="0.11342618">Berlin</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="13-1" score="0.29766454" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.29766454" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Henri_Diamant-Berger</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/deathPlace</predicate>
+               <object>http://dbpedia.org/resource/Paris</object>
+               <subjectLabel score="0.13509972">Henri Diamant-Berger</subjectLabel>
+               <objectLabel score="0.10906161">Paris</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="14" runID="run7" score="0.10990791" plugType="L">
+         <cluster cluster_id="14-0" score="0.24537048" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.24537048" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Reiner_Lemoine</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/birthPlace</predicate>
+               <object>http://dbpedia.org/resource/Berlin</object>
+               <subjectLabel score="0.00000000">Reiner Lemoine</subjectLabel>
+               <objectLabel score="0.11342618">Berlin</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="14-1" score="0.29738462" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.29738462" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Émile_Lemoine</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/diedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Paris</object>
+               <subjectLabel score="0.11607221">Émile Lemoine</subjectLabel>
+               <objectLabel score="0.12738933">Paris</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="15" runID="run7" score="0.10889165" plugType="L">
+         <cluster cluster_id="15-0" score="0.24537048" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.24537048" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Gustave_Kahnt</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/birthPlace</predicate>
+               <object>http://dbpedia.org/resource/Berlin</object>
+               <subjectLabel score="0.00000000">Gustave Kahnt</subjectLabel>
+               <objectLabel score="0.11342618">Berlin</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="15-1" score="0.29236606" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.29236606" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Gustave_Doré</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/diedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Paris</object>
+               <subjectLabel score="0.10352581">Gustave Doré</subjectLabel>
+               <objectLabel score="0.12738933">Paris</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="16" runID="run7" score="0.10791968" plugType="L">
+         <cluster cluster_id="16-0" score="0.24537048" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.24537048" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Gustave_Kahnt</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/birthPlace</predicate>
+               <object>http://dbpedia.org/resource/Berlin</object>
+               <subjectLabel score="0.00000000">Gustave Kahnt</subjectLabel>
+               <objectLabel score="0.11342618">Berlin</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="16-1" score="0.28756621" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.28756621" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Gustave_Eiffel</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/diedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Paris</object>
+               <subjectLabel score="0.09152618">Gustave Eiffel</subjectLabel>
+               <objectLabel score="0.12738933">Paris</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="17" runID="run7" score="0.10672879" plugType="L">
+         <cluster cluster_id="17-0" score="0.24537048" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.24537048" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Ludwig_Godenschweg</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/birthPlace</predicate>
+               <object>http://dbpedia.org/resource/Berlin</object>
+               <subjectLabel score="0.00000000">Ludwig Godenschweg</subjectLabel>
+               <objectLabel score="0.11342618">Berlin</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="17-1" score="0.28168526" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.28168526" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Ludwig_Börne</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/diedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Paris</object>
+               <subjectLabel score="0.07682382">Ludwig Börne</subjectLabel>
+               <objectLabel score="0.12738933">Paris</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="18" runID="run7" score="0.10659206" plugType="L">
+         <cluster cluster_id="18-0" score="0.24537048" sim="0.9228" norm="0.9500">
+            <quintuple dataset="DBpedia" score="0.24537048" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Marthe_Vogt</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/birthPlace</predicate>
+               <object>http://dbpedia.org/resource/Berlin</object>
+               <subjectLabel score="0.00000000">Marthe Vogt</subjectLabel>
+               <objectLabel score="0.11342618">Berlin</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.24453924" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Marthe_Vogt</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/wasBornIn</predicate>
+               <object>http://yago-knowledge.org/resource/Berlin</object>
+               <subjectLabel score="0.00000000">Marthe Vogt</subjectLabel>
+               <objectLabel score="0.11134810">Berlin</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="18-1" score="0.28736505" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.28736505" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Marthe_Vinot</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/deathPlace</predicate>
+               <object>http://dbpedia.org/resource/Paris</object>
+               <subjectLabel score="0.10935102">Marthe Vinot</subjectLabel>
+               <objectLabel score="0.10906161">Paris</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="19" runID="run7" score="0.10659206" plugType="L">
+         <cluster cluster_id="19-0" score="0.24537048" sim="0.9228" norm="0.9500">
+            <quintuple dataset="DBpedia" score="0.24537048" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Marthe_Vogt</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/birthPlace</predicate>
+               <object>http://dbpedia.org/resource/Berlin</object>
+               <subjectLabel score="0.00000000">Marthe Vogt</subjectLabel>
+               <objectLabel score="0.11342618">Berlin</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.24453924" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Marthe_Vogt</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/wasBornIn</predicate>
+               <object>http://yago-knowledge.org/resource/Berlin</object>
+               <subjectLabel score="0.00000000">Marthe Vogt</subjectLabel>
+               <objectLabel score="0.11134810">Berlin</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="19-1" score="0.28736505" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.28736505" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Marthe_Vinot</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/deathPlace</predicate>
+               <object>http://dbpedia.org/resource/Paris</object>
+               <subjectLabel score="0.10935102">Marthe Vinot</subjectLabel>
+               <objectLabel score="0.10906161">Paris</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="20" runID="run7" score="0.10621388" plugType="L">
+         <cluster cluster_id="20-0" score="0.24537048" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.24537048" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Joseph_Gl%C3%A6ser</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/birthPlace</predicate>
+               <object>http://dbpedia.org/resource/Berlin</object>
+               <subjectLabel score="0.00000000">Joseph Glæser</subjectLabel>
+               <objectLabel score="0.11342618">Berlin</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="20-1" score="0.27914250" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.27914250" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Joseph_Fourier</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/diedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Paris</object>
+               <subjectLabel score="0.07046690">Joseph Fourier</subjectLabel>
+               <objectLabel score="0.12738933">Paris</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="21" runID="run7" score="0.10566293" plugType="L">
+         <cluster cluster_id="21-0" score="0.24537048" sim="0.9228" norm="0.9500">
+            <quintuple dataset="DBpedia" score="0.24537048" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Ra%27ad_bin_Zeid</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/birthPlace</predicate>
+               <object>http://dbpedia.org/resource/Berlin</object>
+               <subjectLabel score="0.00000000">Ra'ad bin Zeid</subjectLabel>
+               <objectLabel score="0.11342618">Berlin</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.24453924" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Ra%27ad_bin_Zeid</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/wasBornIn</predicate>
+               <object>http://yago-knowledge.org/resource/Berlin</object>
+               <subjectLabel score="0.00000000">Ra'ad bin Zeid</subjectLabel>
+               <objectLabel score="0.11134810">Berlin</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="21-1" score="0.28277672" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.28277672" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Prince_Zeid_bin_Hussein</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/diedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Paris</object>
+               <subjectLabel score="0.07955247">Prince Zeid bin Hussein</subjectLabel>
+               <objectLabel score="0.12738933">Paris</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="22" runID="run7" score="0.10566293" plugType="L">
+         <cluster cluster_id="22-0" score="0.24537048" sim="0.9228" norm="0.9500">
+            <quintuple dataset="DBpedia" score="0.24537048" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Ra%27ad_bin_Zeid</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/birthPlace</predicate>
+               <object>http://dbpedia.org/resource/Berlin</object>
+               <subjectLabel score="0.00000000">Ra'ad bin Zeid</subjectLabel>
+               <objectLabel score="0.11342618">Berlin</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.24453924" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Ra%27ad_bin_Zeid</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/wasBornIn</predicate>
+               <object>http://yago-knowledge.org/resource/Berlin</object>
+               <subjectLabel score="0.00000000">Ra'ad bin Zeid</subjectLabel>
+               <objectLabel score="0.11134810">Berlin</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="22-1" score="0.28277672" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.28277672" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Prince_Zeid_bin_Hussein</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/diedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Paris</object>
+               <subjectLabel score="0.07955247">Prince Zeid bin Hussein</subjectLabel>
+               <objectLabel score="0.12738933">Paris</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="23" runID="run7" score="0.10538378" plugType="L">
+         <cluster cluster_id="23-0" score="0.24537048" sim="0.9228" norm="0.9500">
+            <quintuple dataset="Yago" score="0.24453924" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Simon_Geschke</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/wasBornIn</predicate>
+               <object>http://yago-knowledge.org/resource/Berlin</object>
+               <subjectLabel score="0.00000000">Simon Geschke</subjectLabel>
+               <objectLabel score="0.11134810">Berlin</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.24537048" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Simon_Geschke</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/birthPlace</predicate>
+               <object>http://dbpedia.org/resource/Berlin</object>
+               <subjectLabel score="0.00000000">Simon Geschke</subjectLabel>
+               <objectLabel score="0.11342618">Berlin</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="23-1" score="0.28139822" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.28139822" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Simone_Simon</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/diedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Paris</object>
+               <subjectLabel score="0.07610622">Simone Simon</subjectLabel>
+               <objectLabel score="0.12738933">Paris</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="24" runID="run7" score="0.10538378" plugType="L">
+         <cluster cluster_id="24-0" score="0.24537048" sim="0.9228" norm="0.9500">
+            <quintuple dataset="Yago" score="0.24453924" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Simon_Geschke</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/wasBornIn</predicate>
+               <object>http://yago-knowledge.org/resource/Berlin</object>
+               <subjectLabel score="0.00000000">Simon Geschke</subjectLabel>
+               <objectLabel score="0.11134810">Berlin</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.24537048" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Simon_Geschke</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/birthPlace</predicate>
+               <object>http://dbpedia.org/resource/Berlin</object>
+               <subjectLabel score="0.00000000">Simon Geschke</subjectLabel>
+               <objectLabel score="0.11342618">Berlin</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="24-1" score="0.28139822" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.28139822" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Simone_Simon</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/diedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Paris</object>
+               <subjectLabel score="0.07610622">Simone Simon</subjectLabel>
+               <objectLabel score="0.12738933">Paris</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="25" runID="run7" score="0.10521084" plugType="L">
+         <cluster cluster_id="25-0" score="0.24537048" sim="0.9228" norm="0.9500">
+            <quintuple dataset="DBpedia" score="0.24537048" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Felix_Zymalkowski</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/birthPlace</predicate>
+               <object>http://dbpedia.org/resource/Berlin</object>
+               <subjectLabel score="0.00000000">Felix Zymalkowski</subjectLabel>
+               <objectLabel score="0.11342618">Berlin</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.24453924" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Felix_Zymalkowski</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/wasBornIn</predicate>
+               <object>http://yago-knowledge.org/resource/Berlin</object>
+               <subjectLabel score="0.00000000">Felix Zymalkowski</subjectLabel>
+               <objectLabel score="0.11134810">Berlin</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="25-1" score="0.28054419" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.28054419" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Felix_Yusupov</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/diedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Paris</object>
+               <subjectLabel score="0.07397113">Felix Yusupov</subjectLabel>
+               <objectLabel score="0.12738933">Paris</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="26" runID="run7" score="0.10521084" plugType="L">
+         <cluster cluster_id="26-0" score="0.24537048" sim="0.9228" norm="0.9500">
+            <quintuple dataset="DBpedia" score="0.24537048" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Felix_Zymalkowski</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/birthPlace</predicate>
+               <object>http://dbpedia.org/resource/Berlin</object>
+               <subjectLabel score="0.00000000">Felix Zymalkowski</subjectLabel>
+               <objectLabel score="0.11342618">Berlin</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.24453924" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Felix_Zymalkowski</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/wasBornIn</predicate>
+               <object>http://yago-knowledge.org/resource/Berlin</object>
+               <subjectLabel score="0.00000000">Felix Zymalkowski</subjectLabel>
+               <objectLabel score="0.11134810">Berlin</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="26-1" score="0.28054419" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.28054419" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Felix_Yusupov</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/diedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Paris</object>
+               <subjectLabel score="0.07397113">Felix Yusupov</subjectLabel>
+               <objectLabel score="0.12738933">Paris</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="27" runID="run7" score="0.10416162" plugType="L">
+         <cluster cluster_id="27-0" score="0.22832542" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.22832542" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Shergo_Biran</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/wasBornIn</predicate>
+               <object>http://yago-knowledge.org/resource/West_Berlin</object>
+               <subjectLabel score="0.00000000">Shergo Biran</subjectLabel>
+               <objectLabel score="0.07081354">West Berlin</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="27-1" score="0.28605293" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.28605293" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Maine_de_Biran</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/diedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Paris</object>
+               <subjectLabel score="0.08774299">Maine de Biran</subjectLabel>
+               <objectLabel score="0.12738933">Paris</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+   </results>
+</question>

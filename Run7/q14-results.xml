@@ -1,0 +1,329 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<question id="14" runID="run7">
+   <string>
+      <![CDATA[Where did the author of The Hobbit die?]]>
+   </string>
+   <query>
+      <![CDATA[
+  ?author  "wrote"    "the hobbit".
+  ?author  "died in"  ?x.
+]]>
+   </query>
+   <settings labelSearchTopK="15" plugLabel="true" limited="false" validateTriple="false"/>
+   <stats1 nb_results="12" timeSec="5.2330" memoryMB="105.6037" totalQuins="32" avgQuin_Cluster="1.3333" avgQuin_Bucket="2.6667" nb_plugTR="8"/>
+   <stats2>
+      <ds id="LinkedMDB">
+         <nreq>10</nreq>
+         <nreqs>3</nreqs>
+         <nrecd>10</nrecd>
+      </ds>
+      <ds id="DBpedia">
+         <nreq>224</nreq>
+         <nreqs>8</nreqs>
+         <nrecd>11</nrecd>
+      </ds>
+      <ds id="Yago">
+         <nreq>112</nreq>
+         <nreqs>4</nreqs>
+         <nrecd>7</nrecd>
+      </ds>
+   </stats2>
+   <results>
+      <bucket bucket_id="0" runID="run7" score="0.21984573" plugType="E">
+         <cluster cluster_id="0-0" score="0.28839461" sim="0.9005" norm="1.0000">
+            <quintuple dataset="DBpedia" score="0.23155633" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/The_Hobbit</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/author</predicate>
+               <object>http://dbpedia.org/resource/J._R._R._Tolkien</object>
+               <subjectLabel score="0.07889082">The Hobbit</subjectLabel>
+               <objectLabel score="0.00000000">J. R. R. Tolkien</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.25039741" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/J._R._R._Tolkien</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/created</predicate>
+               <object>http://yago-knowledge.org/resource/The_Hobbit</object>
+               <subjectLabel score="0.00000000">J. R. R. Tolkien</subjectLabel>
+               <objectLabel score="0.12599351">The Hobbit</objectLabel>
+            </quintuple>
+            <quintuple dataset="LinkedMDB" score="0.28839461" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/1026</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/writer</predicate>
+               <object>http://data.linkedmdb.org/resource/writer/13141</object>
+               <subjectLabel score="0.22098652">The Hobbit</subjectLabel>
+               <objectLabel score="0.00000000">J. R. R. Tolkien</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="0-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/J._R._R._Tolkien</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/deathPlace</predicate>
+               <object>http://dbpedia.org/resource/Bournemouth</object>
+               <subjectLabel score="0.00000000">J. R. R. Tolkien</subjectLabel>
+               <objectLabel score="0.00000000">Bournemouth</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="1" runID="run7" score="0.21984573" plugType="E">
+         <cluster cluster_id="1-0" score="0.28839461" sim="0.9005" norm="1.0000">
+            <quintuple dataset="DBpedia" score="0.23155633" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/The_Hobbit</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/author</predicate>
+               <object>http://dbpedia.org/resource/J._R._R._Tolkien</object>
+               <subjectLabel score="0.07889082">The Hobbit</subjectLabel>
+               <objectLabel score="0.00000000">J. R. R. Tolkien</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.25039741" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/J._R._R._Tolkien</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/created</predicate>
+               <object>http://yago-knowledge.org/resource/The_Hobbit</object>
+               <subjectLabel score="0.00000000">J. R. R. Tolkien</subjectLabel>
+               <objectLabel score="0.12599351">The Hobbit</objectLabel>
+            </quintuple>
+            <quintuple dataset="LinkedMDB" score="0.28839461" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/1026</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/writer</predicate>
+               <object>http://data.linkedmdb.org/resource/writer/13141</object>
+               <subjectLabel score="0.22098652">The Hobbit</subjectLabel>
+               <objectLabel score="0.00000000">J. R. R. Tolkien</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="1-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/J._R._R._Tolkien</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/deathPlace</predicate>
+               <object>http://dbpedia.org/resource/Dorset</object>
+               <subjectLabel score="0.00000000">J. R. R. Tolkien</subjectLabel>
+               <objectLabel score="0.00000000">Dorset</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="2" runID="run7" score="0.20184573" plugType="E">
+         <cluster cluster_id="2-0" score="0.28839461" sim="0.9005" norm="1.0000">
+            <quintuple dataset="DBpedia" score="0.23155633" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/The_Hobbit</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/author</predicate>
+               <object>http://dbpedia.org/resource/J._R._R._Tolkien</object>
+               <subjectLabel score="0.07889082">The Hobbit</subjectLabel>
+               <objectLabel score="0.00000000">J. R. R. Tolkien</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.25039741" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/J._R._R._Tolkien</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/created</predicate>
+               <object>http://yago-knowledge.org/resource/The_Hobbit</object>
+               <subjectLabel score="0.00000000">J. R. R. Tolkien</subjectLabel>
+               <objectLabel score="0.12599351">The Hobbit</objectLabel>
+            </quintuple>
+            <quintuple dataset="LinkedMDB" score="0.28839461" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/1026</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/writer</predicate>
+               <object>http://data.linkedmdb.org/resource/writer/13141</object>
+               <subjectLabel score="0.22098652">The Hobbit</subjectLabel>
+               <objectLabel score="0.00000000">J. R. R. Tolkien</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="2-1" score="0.16000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.16000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://dbpedia.org/resource/J._R._R._Tolkien</subject>
+               <predicate score="0.80000000">http://dbpedia.org/ontology/deathYear</predicate>
+               <object>1973</object>
+               <subjectLabel score="0.00000000">J. R. R. Tolkien</subjectLabel>
+               <objectLabel score="0.00000000">1973</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="3" runID="run7" score="0.18595296" plugType="E">
+         <cluster cluster_id="3-0" score="0.21322878" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.21322878" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Brothers_Hildebrandt</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/created</predicate>
+               <object>http://yago-knowledge.org/resource/The_Lord_of_the_Rings</object>
+               <subjectLabel score="0.00000000">Brothers Hildebrandt</subjectLabel>
+               <objectLabel score="0.03307194">The Lord of the Rings</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="3-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Brothers_Hildebrandt</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/diedIn</predicate>
+               <object>http://yago-knowledge.org/resource/New_Brunswick,_New_Jersey</object>
+               <subjectLabel score="0.00000000">Brothers Hildebrandt</subjectLabel>
+               <objectLabel score="0.00000000">New Brunswick, New Jersey</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="4" runID="run7" score="0.12768383" plugType="L">
+         <cluster cluster_id="4-0" score="0.28839461" sim="1.0000" norm="0.9000">
+            <quintuple dataset="LinkedMDB" score="0.28839461" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/1026</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/writer</predicate>
+               <object>http://data.linkedmdb.org/resource/writer/17559</object>
+               <subjectLabel score="0.22098652">The Hobbit</subjectLabel>
+               <objectLabel score="0.00000000">Romeo Muller</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="4-1" score="0.34214280" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.34214280" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Romeo_Muller</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/deathPlace</predicate>
+               <object>http://dbpedia.org/resource/High_Falls,_New_York</object>
+               <subjectLabel score="0.35535698">Romeo Muller</subjectLabel>
+               <objectLabel score="0.00000000">High Falls, New York</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="5" runID="run7" score="0.12768383" plugType="L">
+         <cluster cluster_id="5-0" score="0.28839461" sim="1.0000" norm="0.9000">
+            <quintuple dataset="LinkedMDB" score="0.28839461" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/1026</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/writer</predicate>
+               <object>http://data.linkedmdb.org/resource/writer/17559</object>
+               <subjectLabel score="0.22098652">The Hobbit</subjectLabel>
+               <objectLabel score="0.00000000">Romeo Muller</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="5-1" score="0.34214280" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.34214280" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Romeo_Muller</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/deathPlace</predicate>
+               <object>http://dbpedia.org/resource/United_States</object>
+               <subjectLabel score="0.35535698">Romeo Muller</subjectLabel>
+               <objectLabel score="0.00000000">United States</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="6" runID="run7" score="0.11958383" plugType="L">
+         <cluster cluster_id="6-0" score="0.28839461" sim="1.0000" norm="0.9000">
+            <quintuple dataset="LinkedMDB" score="0.28839461" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/1026</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/writer</predicate>
+               <object>http://data.linkedmdb.org/resource/writer/17559</object>
+               <subjectLabel score="0.22098652">The Hobbit</subjectLabel>
+               <objectLabel score="0.00000000">Romeo Muller</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="6-1" score="0.30214280" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.30214280" isFlipped="false" isObjectLiteral="true">
+               <subject>http://dbpedia.org/resource/Romeo_Muller</subject>
+               <predicate score="0.80000000">http://dbpedia.org/ontology/deathYear</predicate>
+               <object>1992</object>
+               <subjectLabel score="0.35535698">Romeo Muller</subjectLabel>
+               <objectLabel score="0.00000000">1992</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="7" runID="run7" score="0.10331785" plugType="L">
+         <cluster cluster_id="7-0" score="0.28839461" sim="0.9250" norm="0.9000">
+            <quintuple dataset="LinkedMDB" score="0.27302543" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/71763</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/writer</predicate>
+               <object>http://data.linkedmdb.org/resource/writer/14469</object>
+               <subjectLabel score="0.18256357">The Hobbit 2</subjectLabel>
+               <objectLabel score="0.00000000">Philippa Boyens</objectLabel>
+            </quintuple>
+            <quintuple dataset="LinkedMDB" score="0.28839461" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/10761</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/writer</predicate>
+               <object>http://data.linkedmdb.org/resource/writer/14469</object>
+               <subjectLabel score="0.22098652">The Hobbit</subjectLabel>
+               <objectLabel score="0.00000000">Philippa Boyens</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="7-1" score="0.24344659" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.24344659" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Philippa_Foot</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/diedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Oxford</object>
+               <subjectLabel score="0.10861647">Philippa Foot</subjectLabel>
+               <objectLabel score="0.00000000">Oxford</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="8" runID="run7" score="0.10301247" plugType="L">
+         <cluster cluster_id="8-0" score="0.21322878" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.21322878" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/J._R._R._Tolkien</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/created</predicate>
+               <object>http://yago-knowledge.org/resource/The_Lord_of_the_Rings</object>
+               <subjectLabel score="0.00000000">J. R. R. Tolkien</subjectLabel>
+               <objectLabel score="0.03307194">The Lord of the Rings</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="8-1" score="0.29547477" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.29547477" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/J._R._R._Tolkien</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/deathPlace</predicate>
+               <object>http://dbpedia.org/resource/Bournemouth</object>
+               <subjectLabel score="0.23868691">J. R. R. Tolkien</subjectLabel>
+               <objectLabel score="0.00000000">Bournemouth</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="9" runID="run7" score="0.10301247" plugType="L">
+         <cluster cluster_id="9-0" score="0.21322878" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.21322878" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/J._R._R._Tolkien</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/created</predicate>
+               <object>http://yago-knowledge.org/resource/The_Lord_of_the_Rings</object>
+               <subjectLabel score="0.00000000">J. R. R. Tolkien</subjectLabel>
+               <objectLabel score="0.03307194">The Lord of the Rings</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="9-1" score="0.29547477" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.29547477" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/J._R._R._Tolkien</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/deathPlace</predicate>
+               <object>http://dbpedia.org/resource/Dorset</object>
+               <subjectLabel score="0.23868691">J. R. R. Tolkien</subjectLabel>
+               <objectLabel score="0.00000000">Dorset</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="10" runID="run7" score="0.10019734" plugType="L">
+         <cluster cluster_id="10-0" score="0.28839461" sim="0.9250" norm="0.9000">
+            <quintuple dataset="LinkedMDB" score="0.27302543" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/71763</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/writer</predicate>
+               <object>http://data.linkedmdb.org/resource/writer/13516</object>
+               <subjectLabel score="0.18256357">The Hobbit 2</subjectLabel>
+               <objectLabel score="0.00000000">Peter Jackson</objectLabel>
+            </quintuple>
+            <quintuple dataset="LinkedMDB" score="0.28839461" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/10761</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/writer</predicate>
+               <object>http://data.linkedmdb.org/resource/writer/13516</object>
+               <subjectLabel score="0.22098652">The Hobbit</subjectLabel>
+               <objectLabel score="0.00000000">Peter Jackson</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="10-1" score="0.22803666" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.22803666" isFlipped="false" isObjectLiteral="true">
+               <subject>http://dbpedia.org/resource/Peter_H._Jackson</subject>
+               <predicate score="0.80000000">http://dbpedia.org/ontology/deathYear</predicate>
+               <object>1983</object>
+               <subjectLabel score="0.17009165">Peter H. Jackson</subjectLabel>
+               <objectLabel score="0.00000000">1983</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="11" runID="run7" score="0.09491247" plugType="L">
+         <cluster cluster_id="11-0" score="0.21322878" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.21322878" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/J._R._R._Tolkien</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/created</predicate>
+               <object>http://yago-knowledge.org/resource/The_Lord_of_the_Rings</object>
+               <subjectLabel score="0.00000000">J. R. R. Tolkien</subjectLabel>
+               <objectLabel score="0.03307194">The Lord of the Rings</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="11-1" score="0.25547477" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.25547477" isFlipped="false" isObjectLiteral="true">
+               <subject>http://dbpedia.org/resource/J._R._R._Tolkien</subject>
+               <predicate score="0.80000000">http://dbpedia.org/ontology/deathYear</predicate>
+               <object>1973</object>
+               <subjectLabel score="0.23868691">J. R. R. Tolkien</subjectLabel>
+               <objectLabel score="0.00000000">1973</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+   </results>
+</question>

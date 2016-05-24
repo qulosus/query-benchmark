@@ -1,0 +1,271 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<question id="13" runID="run3">
+   <string>
+      <![CDATA[Give me the spouses of actors starring in Lethal Weapon?]]>
+   </string>
+   <query>
+      <![CDATA[
+  ?actor  "acted in"       "Lethal Weapon" .
+  ?actor  "is married to"  ?spouse .
+]]>
+   </query>
+   <settings labelSearchTopK="20" plugLabel="false" limited="false" validateTriple="false"/>
+   <stats1 nb_results="7" timeSec="0.9660" memoryMB="71.9601" totalQuins="28" avgQuin_Cluster="2.0000" avgQuin_Bucket="4.0000" nb_plugTR="0"/>
+   <stats2>
+      <ds id="LinkedMDB">
+         <nreq>40</nreq>
+         <nreqs>17</nreqs>
+         <nrecd>61</nrecd>
+      </ds>
+      <ds id="DBpedia">
+         <nreq>48</nreq>
+         <nreqs>10</nreqs>
+         <nrecd>32</nrecd>
+      </ds>
+      <ds id="Yago">
+         <nreq>42</nreq>
+         <nreqs>4</nreqs>
+         <nrecd>10</nrecd>
+      </ds>
+   </stats2>
+   <results>
+      <bucket bucket_id="0" runID="run3" score="0.20542894" plugType="E">
+         <cluster cluster_id="0-0" score="0.25152866" sim="0.9007" norm="1.0000">
+            <quintuple dataset="LinkedMDB" score="0.25152866" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/39022</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/595</object>
+               <subjectLabel score="0.12882164">Lethal Weapon</subjectLabel>
+               <objectLabel score="0.00000000">Tom Atkins</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.23807415" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Tom_Atkins_(actor)</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Lethal_Weapon</object>
+               <subjectLabel score="0.00000000">Tom Atkins</subjectLabel>
+               <objectLabel score="0.09518538">Lethal Weapon</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.22208794" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Lethal_Weapon</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Tom_Atkins_(actor)</object>
+               <subjectLabel score="0.05521984">Lethal Weapon</subjectLabel>
+               <objectLabel score="0.00000000">Tom Atkins</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="0-1" score="0.20000000" sim="0.9700" norm="0.9500">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Garn_Stephens</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/spouse</predicate>
+               <object>http://dbpedia.org/resource/Tom_Atkins_(actor)</object>
+               <subjectLabel score="0.00000000">Garn Stephens</subjectLabel>
+               <objectLabel score="0.00000000">Tom Atkins</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Tom_Atkins_(actor)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/spouse</predicate>
+               <object>http://dbpedia.org/resource/Garn_Stephens</object>
+               <subjectLabel score="0.00000000">Tom Atkins</subjectLabel>
+               <objectLabel score="0.00000000">Garn Stephens</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Garn_Stephens</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/Tom_Atkins_(actor)</object>
+               <subjectLabel score="0.00000000">Garn Stephens</subjectLabel>
+               <objectLabel score="0.00000000">Tom Atkins</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Tom_Atkins_(actor)</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/Garn_Stephens</object>
+               <subjectLabel score="0.00000000">Tom Atkins</subjectLabel>
+               <objectLabel score="0.00000000">Garn Stephens</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="1" runID="run3" score="0.19415914" plugType="E">
+         <cluster cluster_id="1-0" score="0.24345791" sim="0.9007" norm="0.9500">
+            <quintuple dataset="LinkedMDB" score="0.24345791" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/39937</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/34322</object>
+               <subjectLabel score="0.10864477">Lethal Weapon 2</subjectLabel>
+               <objectLabel score="0.00000000">Patsy Kensit</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.21498004" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Lethal_Weapon_2</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Patsy_Kensit</object>
+               <subjectLabel score="0.03745010">Lethal Weapon 2</subjectLabel>
+               <objectLabel score="0.00000000">Patsy Kensit</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="1-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Patsy_Kensit</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/spouse</predicate>
+               <object>http://dbpedia.org/resource/Dan_Donovan_(keyboardist)</object>
+               <subjectLabel score="0.00000000">Patsy Kensit</subjectLabel>
+               <objectLabel score="0.00000000">Dan Donovan</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="2" runID="run3" score="0.19415914" plugType="E">
+         <cluster cluster_id="2-0" score="0.24345791" sim="0.9007" norm="0.9500">
+            <quintuple dataset="LinkedMDB" score="0.24345791" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/39937</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/34322</object>
+               <subjectLabel score="0.10864477">Lethal Weapon 2</subjectLabel>
+               <objectLabel score="0.00000000">Patsy Kensit</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.21498004" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Lethal_Weapon_2</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Patsy_Kensit</object>
+               <subjectLabel score="0.03745010">Lethal Weapon 2</subjectLabel>
+               <objectLabel score="0.00000000">Patsy Kensit</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="2-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Patsy_Kensit</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/spouse</predicate>
+               <object>http://dbpedia.org/resource/Jeremy_Healy</object>
+               <subjectLabel score="0.00000000">Patsy Kensit</subjectLabel>
+               <objectLabel score="0.00000000">Jeremy Healy</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="3" runID="run3" score="0.19415914" plugType="E">
+         <cluster cluster_id="3-0" score="0.24345791" sim="0.9007" norm="0.9500">
+            <quintuple dataset="LinkedMDB" score="0.24345791" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/39937</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/34322</object>
+               <subjectLabel score="0.10864477">Lethal Weapon 2</subjectLabel>
+               <objectLabel score="0.00000000">Patsy Kensit</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.21498004" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Lethal_Weapon_2</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Patsy_Kensit</object>
+               <subjectLabel score="0.03745010">Lethal Weapon 2</subjectLabel>
+               <objectLabel score="0.00000000">Patsy Kensit</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="3-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Patsy_Kensit</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/spouse</predicate>
+               <object>http://dbpedia.org/resource/Jim_Kerr</object>
+               <subjectLabel score="0.00000000">Patsy Kensit</subjectLabel>
+               <objectLabel score="0.00000000">Jim Kerr</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="4" runID="run3" score="0.19415914" plugType="E">
+         <cluster cluster_id="4-0" score="0.24345791" sim="0.9007" norm="0.9500">
+            <quintuple dataset="LinkedMDB" score="0.24345791" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/39937</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/34322</object>
+               <subjectLabel score="0.10864477">Lethal Weapon 2</subjectLabel>
+               <objectLabel score="0.00000000">Patsy Kensit</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.21498004" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Lethal_Weapon_2</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Patsy_Kensit</object>
+               <subjectLabel score="0.03745010">Lethal Weapon 2</subjectLabel>
+               <objectLabel score="0.00000000">Patsy Kensit</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="4-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Patsy_Kensit</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/spouse</predicate>
+               <object>http://dbpedia.org/resource/Liam_Gallagher</object>
+               <subjectLabel score="0.00000000">Patsy Kensit</subjectLabel>
+               <objectLabel score="0.00000000">Liam Gallagher</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="5" runID="run3" score="0.19415914" plugType="E">
+         <cluster cluster_id="5-0" score="0.24345791" sim="0.9007" norm="0.9500">
+            <quintuple dataset="DBpedia" score="0.21498004" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Lethal_Weapon_4</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Jet_Li</object>
+               <subjectLabel score="0.03745010">Lethal Weapon 4</subjectLabel>
+               <objectLabel score="0.00000000">Jet Li</objectLabel>
+            </quintuple>
+            <quintuple dataset="LinkedMDB" score="0.24345791" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/39940</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/29522</object>
+               <subjectLabel score="0.10864477">Lethal Weapon 4</subjectLabel>
+               <objectLabel score="0.00000000">Jet Li</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="5-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Jet_Li</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/spouse</predicate>
+               <object>http://dbpedia.org/resource/Nina_Li_(actress)</object>
+               <subjectLabel score="0.00000000">Jet Li</subjectLabel>
+               <objectLabel score="0.00000000">Nina Li</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Nina_Li_(actress)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/spouse</predicate>
+               <object>http://dbpedia.org/resource/Jet_Li</object>
+               <subjectLabel score="0.00000000">Nina Li</subjectLabel>
+               <objectLabel score="0.00000000">Jet Li</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="6" runID="run3" score="0.19415914" plugType="E">
+         <cluster cluster_id="6-0" score="0.24345791" sim="0.9007" norm="0.9500">
+            <quintuple dataset="LinkedMDB" score="0.24345791" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/39939</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/31142</object>
+               <subjectLabel score="0.10864477">Lethal Weapon 3</subjectLabel>
+               <objectLabel score="0.00000000">Rene Russo</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.21498004" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Lethal_Weapon_4</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Rene_Russo</object>
+               <subjectLabel score="0.03745010">Lethal Weapon 4</subjectLabel>
+               <objectLabel score="0.00000000">Rene Russo</objectLabel>
+            </quintuple>
+            <quintuple dataset="LinkedMDB" score="0.24345791" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/39940</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/31142</object>
+               <subjectLabel score="0.10864477">Lethal Weapon 4</subjectLabel>
+               <objectLabel score="0.00000000">Rene Russo</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.21498004" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Lethal_Weapon_3</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Rene_Russo</object>
+               <subjectLabel score="0.03745010">Lethal Weapon 3</subjectLabel>
+               <objectLabel score="0.00000000">Rene Russo</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="6-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Dan_Gilroy</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/spouse</predicate>
+               <object>http://dbpedia.org/resource/Rene_Russo</object>
+               <subjectLabel score="0.00000000">Dan Gilroy</subjectLabel>
+               <objectLabel score="0.00000000">Rene Russo</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+   </results>
+</question>

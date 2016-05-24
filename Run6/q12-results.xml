@@ -1,0 +1,1623 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<question id="12" runID="run6">
+   <string>
+      <![CDATA[Give me the directors of movies acted by Jodie Foster.]]>
+   </string>
+   <query>
+      <![CDATA[
+  "Jodie Foster"  "acted in"  ?film .
+  ?director       "directed"  ?film .
+]]>
+   </query>
+   <settings labelSearchTopK="5" plugLabel="false" limited="false" validateTriple="false"/>
+   <stats1 nb_results="41" timeSec="1.2290" memoryMB="76.8861" totalQuins="192" avgQuin_Cluster="2.3415" avgQuin_Bucket="4.6829" nb_plugTR="0"/>
+   <stats2>
+      <ds id="LinkedMDB">
+         <nreq>70</nreq>
+         <nreqs>32</nreqs>
+         <nrecd>75</nrecd>
+      </ds>
+      <ds id="DBpedia">
+         <nreq>76</nreq>
+         <nreqs>34</nreqs>
+         <nrecd>70</nrecd>
+      </ds>
+      <ds id="Yago">
+         <nreq>64</nreq>
+         <nreqs>28</nreqs>
+         <nrecd>55</nrecd>
+      </ds>
+   </stats2>
+   <results>
+      <bucket bucket_id="0" runID="run6" score="0.27489691" plugType="E">
+         <cluster cluster_id="0-0" score="0.41047208" sim="0.9007" norm="1.0000">
+            <quintuple dataset="LinkedMDB" score="0.31021684" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/45148</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/29802</object>
+               <subjectLabel score="0.00000000">Inside Man</subjectLabel>
+               <objectLabel score="0.27554210">Jodie Foster</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.41047208" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Jodie_Foster</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Inside_Man</object>
+               <subjectLabel score="0.52618019">Jodie Foster</subjectLabel>
+               <objectLabel score="0.00000000">Inside Man</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.31856576" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Inside_Man</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Jodie_Foster</object>
+               <subjectLabel score="0.00000000">Inside Man</subjectLabel>
+               <objectLabel score="0.29641438">Jodie Foster</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="0-1" score="0.20000000" sim="0.9004" norm="1.0000">
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Spike_Lee</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/directed</predicate>
+               <object>http://yago-knowledge.org/resource/Inside_Man</object>
+               <subjectLabel score="0.00000000">Spike Lee</subjectLabel>
+               <objectLabel score="0.00000000">Inside Man</objectLabel>
+            </quintuple>
+            <quintuple dataset="LinkedMDB" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/45148</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/director</predicate>
+               <object>http://data.linkedmdb.org/resource/director/8478</object>
+               <subjectLabel score="0.00000000">Inside Man</subjectLabel>
+               <objectLabel score="0.00000000">Spike Lee</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Inside_Man</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/director</predicate>
+               <object>http://dbpedia.org/resource/Spike_Lee</object>
+               <subjectLabel score="0.00000000">Inside Man</subjectLabel>
+               <objectLabel score="0.00000000">Spike Lee</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="1" runID="run6" score="0.27489691" plugType="E">
+         <cluster cluster_id="1-0" score="0.41047208" sim="0.9007" norm="1.0000">
+            <quintuple dataset="DBpedia" score="0.31856576" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Little_Man_Tate</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Jodie_Foster</object>
+               <subjectLabel score="0.00000000">Little Man Tate</subjectLabel>
+               <objectLabel score="0.29641438">Jodie Foster</objectLabel>
+            </quintuple>
+            <quintuple dataset="LinkedMDB" score="0.31021684" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/39532</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/29802</object>
+               <subjectLabel score="0.00000000">Little Man Tate</subjectLabel>
+               <objectLabel score="0.27554210">Jodie Foster</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.41047208" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Jodie_Foster</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Little_Man_Tate</object>
+               <subjectLabel score="0.52618019">Jodie Foster</subjectLabel>
+               <objectLabel score="0.00000000">Little Man Tate</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="1-1" score="0.20000000" sim="0.9004" norm="1.0000">
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Jodie_Foster</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/directed</predicate>
+               <object>http://yago-knowledge.org/resource/Little_Man_Tate</object>
+               <subjectLabel score="0.00000000">Jodie Foster</subjectLabel>
+               <objectLabel score="0.00000000">Little Man Tate</objectLabel>
+            </quintuple>
+            <quintuple dataset="LinkedMDB" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/39532</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/director</predicate>
+               <object>http://data.linkedmdb.org/resource/director/8557</object>
+               <subjectLabel score="0.00000000">Little Man Tate</subjectLabel>
+               <objectLabel score="0.00000000">Jodie Foster</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Little_Man_Tate</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/director</predicate>
+               <object>http://dbpedia.org/resource/Jodie_Foster</object>
+               <subjectLabel score="0.00000000">Little Man Tate</subjectLabel>
+               <objectLabel score="0.00000000">Jodie Foster</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="2" runID="run6" score="0.27489691" plugType="E">
+         <cluster cluster_id="2-0" score="0.41047208" sim="0.9007" norm="1.0000">
+            <quintuple dataset="LinkedMDB" score="0.31021684" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/821</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/29802</object>
+               <subjectLabel score="0.00000000">Maverick</subjectLabel>
+               <objectLabel score="0.27554210">Jodie Foster</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.31856576" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Maverick_(film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Jodie_Foster</object>
+               <subjectLabel score="0.00000000">Maverick</subjectLabel>
+               <objectLabel score="0.29641438">Jodie Foster</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.41047208" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Jodie_Foster</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Maverick_(film)</object>
+               <subjectLabel score="0.52618019">Jodie Foster</subjectLabel>
+               <objectLabel score="0.00000000">Maverick</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="2-1" score="0.20000000" sim="0.9004" norm="1.0000">
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Richard_Donner</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/directed</predicate>
+               <object>http://yago-knowledge.org/resource/Maverick_(film)</object>
+               <subjectLabel score="0.00000000">Richard Donner</subjectLabel>
+               <objectLabel score="0.00000000">Maverick</objectLabel>
+            </quintuple>
+            <quintuple dataset="LinkedMDB" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/821</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/director</predicate>
+               <object>http://data.linkedmdb.org/resource/director/9074</object>
+               <subjectLabel score="0.00000000">Maverick</subjectLabel>
+               <objectLabel score="0.00000000">Richard Donner</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Maverick_(film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/director</predicate>
+               <object>http://dbpedia.org/resource/Richard_Donner</object>
+               <subjectLabel score="0.00000000">Maverick</subjectLabel>
+               <objectLabel score="0.00000000">Richard Donner</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="3" runID="run6" score="0.27489691" plugType="E">
+         <cluster cluster_id="3-0" score="0.41047208" sim="0.9007" norm="1.0000">
+            <quintuple dataset="LinkedMDB" score="0.31021684" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/38912</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/29802</object>
+               <subjectLabel score="0.00000000">Nell</subjectLabel>
+               <objectLabel score="0.27554210">Jodie Foster</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.41047208" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Jodie_Foster</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Nell_(film)</object>
+               <subjectLabel score="0.52618019">Jodie Foster</subjectLabel>
+               <objectLabel score="0.00000000">Nell</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.31856576" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Nell_(film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Jodie_Foster</object>
+               <subjectLabel score="0.00000000">Nell</subjectLabel>
+               <objectLabel score="0.29641438">Jodie Foster</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="3-1" score="0.20000000" sim="0.9004" norm="1.0000">
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Michael_Apted</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/directed</predicate>
+               <object>http://yago-knowledge.org/resource/Nell_(film)</object>
+               <subjectLabel score="0.00000000">Michael Apted</subjectLabel>
+               <objectLabel score="0.00000000">Nell</objectLabel>
+            </quintuple>
+            <quintuple dataset="LinkedMDB" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/38912</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/director</predicate>
+               <object>http://data.linkedmdb.org/resource/director/9248</object>
+               <subjectLabel score="0.00000000">Nell</subjectLabel>
+               <objectLabel score="0.00000000">Michael Apted</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Nell_(film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/director</predicate>
+               <object>http://dbpedia.org/resource/Michael_Apted</object>
+               <subjectLabel score="0.00000000">Nell</subjectLabel>
+               <objectLabel score="0.00000000">Michael Apted</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="4" runID="run6" score="0.27489691" plugType="E">
+         <cluster cluster_id="4-0" score="0.41047208" sim="0.9007" norm="1.0000">
+            <quintuple dataset="Yago" score="0.41047208" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Jodie_Foster</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Nim%27s_Island</object>
+               <subjectLabel score="0.52618019">Jodie Foster</subjectLabel>
+               <objectLabel score="0.00000000">Nim's Island</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.31856576" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Nim%27s_Island</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Jodie_Foster</object>
+               <subjectLabel score="0.00000000">Nim's Island</subjectLabel>
+               <objectLabel score="0.29641438">Jodie Foster</objectLabel>
+            </quintuple>
+            <quintuple dataset="LinkedMDB" score="0.31021684" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/24158</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/29802</object>
+               <subjectLabel score="0.00000000">Nim's Island</subjectLabel>
+               <objectLabel score="0.27554210">Jodie Foster</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="4-1" score="0.20000000" sim="0.9004" norm="1.0000">
+            <quintuple dataset="LinkedMDB" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/24158</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/director</predicate>
+               <object>http://data.linkedmdb.org/resource/director/13317</object>
+               <subjectLabel score="0.00000000">Nim's Island</subjectLabel>
+               <objectLabel score="0.00000000">Jennifer Flackett</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Nim%27s_Island</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/director</predicate>
+               <object>http://dbpedia.org/resource/Jennifer_Flackett</object>
+               <subjectLabel score="0.00000000">Nim's Island</subjectLabel>
+               <objectLabel score="0.00000000">Jennifer Flackett</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Jennifer_Flackett</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/directed</predicate>
+               <object>http://yago-knowledge.org/resource/Nim%27s_Island</object>
+               <subjectLabel score="0.00000000">Jennifer Flackett</subjectLabel>
+               <objectLabel score="0.00000000">Nim's Island</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="5" runID="run6" score="0.27489691" plugType="E">
+         <cluster cluster_id="5-0" score="0.41047208" sim="0.9007" norm="1.0000">
+            <quintuple dataset="Yago" score="0.41047208" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Jodie_Foster</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Nim%27s_Island</object>
+               <subjectLabel score="0.52618019">Jodie Foster</subjectLabel>
+               <objectLabel score="0.00000000">Nim's Island</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.31856576" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Nim%27s_Island</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Jodie_Foster</object>
+               <subjectLabel score="0.00000000">Nim's Island</subjectLabel>
+               <objectLabel score="0.29641438">Jodie Foster</objectLabel>
+            </quintuple>
+            <quintuple dataset="LinkedMDB" score="0.31021684" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/24158</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/29802</object>
+               <subjectLabel score="0.00000000">Nim's Island</subjectLabel>
+               <objectLabel score="0.27554210">Jodie Foster</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="5-1" score="0.20000000" sim="0.9004" norm="1.0000">
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Mark_Levin_(director)</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/directed</predicate>
+               <object>http://yago-knowledge.org/resource/Nim%27s_Island</object>
+               <subjectLabel score="0.00000000">Mark Levin</subjectLabel>
+               <objectLabel score="0.00000000">Nim's Island</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Nim%27s_Island</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/director</predicate>
+               <object>http://dbpedia.org/resource/Mark_Levin_(director)</object>
+               <subjectLabel score="0.00000000">Nim's Island</subjectLabel>
+               <objectLabel score="0.00000000">Mark Levin</objectLabel>
+            </quintuple>
+            <quintuple dataset="LinkedMDB" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/24158</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/director</predicate>
+               <object>http://data.linkedmdb.org/resource/director/15874</object>
+               <subjectLabel score="0.00000000">Nim's Island</subjectLabel>
+               <objectLabel score="0.00000000">Mark Levin</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="6" runID="run6" score="0.27489691" plugType="E">
+         <cluster cluster_id="6-0" score="0.41047208" sim="0.9007" norm="1.0000">
+            <quintuple dataset="LinkedMDB" score="0.31021684" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/921</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/29802</object>
+               <subjectLabel score="0.00000000">Panic Room</subjectLabel>
+               <objectLabel score="0.27554210">Jodie Foster</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.41047208" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Jodie_Foster</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Panic_Room</object>
+               <subjectLabel score="0.52618019">Jodie Foster</subjectLabel>
+               <objectLabel score="0.00000000">Panic Room</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.31856576" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Panic_Room</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Jodie_Foster</object>
+               <subjectLabel score="0.00000000">Panic Room</subjectLabel>
+               <objectLabel score="0.29641438">Jodie Foster</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="6-1" score="0.20000000" sim="0.9004" norm="1.0000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Panic_Room</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/director</predicate>
+               <object>http://dbpedia.org/resource/David_Fincher</object>
+               <subjectLabel score="0.00000000">Panic Room</subjectLabel>
+               <objectLabel score="0.00000000">David Fincher</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/David_Fincher</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/directed</predicate>
+               <object>http://yago-knowledge.org/resource/Panic_Room</object>
+               <subjectLabel score="0.00000000">David Fincher</subjectLabel>
+               <objectLabel score="0.00000000">Panic Room</objectLabel>
+            </quintuple>
+            <quintuple dataset="LinkedMDB" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/921</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/director</predicate>
+               <object>http://data.linkedmdb.org/resource/director/8399</object>
+               <subjectLabel score="0.00000000">Panic Room</subjectLabel>
+               <objectLabel score="0.00000000">David Fincher</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="7" runID="run6" score="0.27489691" plugType="E">
+         <cluster cluster_id="7-0" score="0.41047208" sim="0.9007" norm="1.0000">
+            <quintuple dataset="Yago" score="0.41047208" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Jodie_Foster</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Siesta_(film)</object>
+               <subjectLabel score="0.52618019">Jodie Foster</subjectLabel>
+               <objectLabel score="0.00000000">Siesta</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.31856576" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Siesta_(film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Jodie_Foster</object>
+               <subjectLabel score="0.00000000">Siesta</subjectLabel>
+               <objectLabel score="0.29641438">Jodie Foster</objectLabel>
+            </quintuple>
+            <quintuple dataset="LinkedMDB" score="0.31021684" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/80861</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/29802</object>
+               <subjectLabel score="0.00000000">Siesta</subjectLabel>
+               <objectLabel score="0.27554210">Jodie Foster</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="7-1" score="0.20000000" sim="0.9004" norm="1.0000">
+            <quintuple dataset="LinkedMDB" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/80861</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/director</predicate>
+               <object>http://data.linkedmdb.org/resource/director/9528</object>
+               <subjectLabel score="0.00000000">Siesta</subjectLabel>
+               <objectLabel score="0.00000000">Mary Lambert</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Mary_Lambert</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/directed</predicate>
+               <object>http://yago-knowledge.org/resource/Siesta_(film)</object>
+               <subjectLabel score="0.00000000">Mary Lambert</subjectLabel>
+               <objectLabel score="0.00000000">Siesta</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Siesta_(film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/director</predicate>
+               <object>http://dbpedia.org/resource/Mary_Lambert</object>
+               <subjectLabel score="0.00000000">Siesta</subjectLabel>
+               <objectLabel score="0.00000000">Mary Lambert</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="8" runID="run6" score="0.27489691" plugType="E">
+         <cluster cluster_id="8-0" score="0.41047208" sim="0.9007" norm="1.0000">
+            <quintuple dataset="Yago" score="0.41047208" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Jodie_Foster</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Sommersby</object>
+               <subjectLabel score="0.52618019">Jodie Foster</subjectLabel>
+               <objectLabel score="0.00000000">Sommersby</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.31856576" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Sommersby</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Jodie_Foster</object>
+               <subjectLabel score="0.00000000">Sommersby</subjectLabel>
+               <objectLabel score="0.29641438">Jodie Foster</objectLabel>
+            </quintuple>
+            <quintuple dataset="LinkedMDB" score="0.31021684" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/40458</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/29802</object>
+               <subjectLabel score="0.00000000">Sommersby</subjectLabel>
+               <objectLabel score="0.27554210">Jodie Foster</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="8-1" score="0.20000000" sim="0.9004" norm="1.0000">
+            <quintuple dataset="LinkedMDB" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/40458</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/director</predicate>
+               <object>http://data.linkedmdb.org/resource/director/2947</object>
+               <subjectLabel score="0.00000000">Sommersby</subjectLabel>
+               <objectLabel score="0.00000000">Jon Amiel</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Jon_Amiel</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/directed</predicate>
+               <object>http://yago-knowledge.org/resource/Sommersby</object>
+               <subjectLabel score="0.00000000">Jon Amiel</subjectLabel>
+               <objectLabel score="0.00000000">Sommersby</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Sommersby</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/director</predicate>
+               <object>http://dbpedia.org/resource/Jon_Amiel</object>
+               <subjectLabel score="0.00000000">Sommersby</subjectLabel>
+               <objectLabel score="0.00000000">Jon Amiel</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="9" runID="run6" score="0.27489691" plugType="E">
+         <cluster cluster_id="9-0" score="0.41047208" sim="0.9007" norm="1.0000">
+            <quintuple dataset="DBpedia" score="0.31856576" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/The_Hotel_New_Hampshire_(film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Jodie_Foster</object>
+               <subjectLabel score="0.00000000">The Hotel New Hampshire</subjectLabel>
+               <objectLabel score="0.29641438">Jodie Foster</objectLabel>
+            </quintuple>
+            <quintuple dataset="LinkedMDB" score="0.31021684" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/7253</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/29802</object>
+               <subjectLabel score="0.00000000">The Hotel New Hampshire</subjectLabel>
+               <objectLabel score="0.27554210">Jodie Foster</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.41047208" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Jodie_Foster</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/The_Hotel_New_Hampshire_(film)</object>
+               <subjectLabel score="0.52618019">Jodie Foster</subjectLabel>
+               <objectLabel score="0.00000000">The Hotel New Hampshire</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="9-1" score="0.20000000" sim="0.9004" norm="1.0000">
+            <quintuple dataset="LinkedMDB" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/7253</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/director</predicate>
+               <object>http://data.linkedmdb.org/resource/director/8540</object>
+               <subjectLabel score="0.00000000">The Hotel New Hampshire</subjectLabel>
+               <objectLabel score="0.00000000">Tony Richardson</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/The_Hotel_New_Hampshire_(film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/director</predicate>
+               <object>http://dbpedia.org/resource/Tony_Richardson</object>
+               <subjectLabel score="0.00000000">The Hotel New Hampshire</subjectLabel>
+               <objectLabel score="0.00000000">Tony Richardson</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Tony_Richardson</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/directed</predicate>
+               <object>http://yago-knowledge.org/resource/The_Hotel_New_Hampshire_(film)</object>
+               <subjectLabel score="0.00000000">Tony Richardson</subjectLabel>
+               <objectLabel score="0.00000000">The Hotel New Hampshire</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="10" runID="run6" score="0.27489691" plugType="E">
+         <cluster cluster_id="10-0" score="0.41047208" sim="0.9007" norm="1.0000">
+            <quintuple dataset="DBpedia" score="0.31856576" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/The_Little_Girl_Who_Lives_Down_the_Lane</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Jodie_Foster</object>
+               <subjectLabel score="0.00000000">The Little Girl Who Lives Down the Lane</subjectLabel>
+               <objectLabel score="0.29641438">Jodie Foster</objectLabel>
+            </quintuple>
+            <quintuple dataset="LinkedMDB" score="0.31021684" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/38222</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/29802</object>
+               <subjectLabel score="0.00000000">The Little Girl Who Lives Down the Lane</subjectLabel>
+               <objectLabel score="0.27554210">Jodie Foster</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.41047208" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Jodie_Foster</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/The_Little_Girl_Who_Lives_Down_the_Lane</object>
+               <subjectLabel score="0.52618019">Jodie Foster</subjectLabel>
+               <objectLabel score="0.00000000">The Little Girl Who Lives Down the Lane</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="10-1" score="0.20000000" sim="0.9004" norm="1.0000">
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Nicolas_Gessner</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/directed</predicate>
+               <object>http://yago-knowledge.org/resource/The_Little_Girl_Who_Lives_Down_the_Lane</object>
+               <subjectLabel score="0.00000000">Nicolas Gessner</subjectLabel>
+               <objectLabel score="0.00000000">The Little Girl Who Lives Down the Lane</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/The_Little_Girl_Who_Lives_Down_the_Lane</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/director</predicate>
+               <object>http://dbpedia.org/resource/Nicolas_Gessner</object>
+               <subjectLabel score="0.00000000">The Little Girl Who Lives Down the Lane</subjectLabel>
+               <objectLabel score="0.00000000">Nicolas Gessner</objectLabel>
+            </quintuple>
+            <quintuple dataset="LinkedMDB" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/38222</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/director</predicate>
+               <object>http://data.linkedmdb.org/resource/director/11082</object>
+               <subjectLabel score="0.00000000">The Little Girl Who Lives Down the Lane</subjectLabel>
+               <objectLabel score="0.00000000">Nicolas Gessner</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="11" runID="run6" score="0.27489691" plugType="E">
+         <cluster cluster_id="11-0" score="0.41047208" sim="0.9007" norm="1.0000">
+            <quintuple dataset="DBpedia" score="0.31856576" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/The_Silence_of_the_Lambs_(film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Jodie_Foster</object>
+               <subjectLabel score="0.00000000">The Silence of the Lambs</subjectLabel>
+               <objectLabel score="0.29641438">Jodie Foster</objectLabel>
+            </quintuple>
+            <quintuple dataset="LinkedMDB" score="0.31021684" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/38145</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/29802</object>
+               <subjectLabel score="0.00000000">The Silence of the Lambs</subjectLabel>
+               <objectLabel score="0.27554210">Jodie Foster</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.41047208" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Jodie_Foster</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/The_Silence_of_the_Lambs_(film)</object>
+               <subjectLabel score="0.52618019">Jodie Foster</subjectLabel>
+               <objectLabel score="0.00000000">The Silence of the Lambs</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="11-1" score="0.20000000" sim="0.9004" norm="1.0000">
+            <quintuple dataset="LinkedMDB" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/38145</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/director</predicate>
+               <object>http://data.linkedmdb.org/resource/director/8429</object>
+               <subjectLabel score="0.00000000">The Silence of the Lambs</subjectLabel>
+               <objectLabel score="0.00000000">Jonathan Demme</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Jonathan_Demme</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/directed</predicate>
+               <object>http://yago-knowledge.org/resource/The_Silence_of_the_Lambs_(film)</object>
+               <subjectLabel score="0.00000000">Jonathan Demme</subjectLabel>
+               <objectLabel score="0.00000000">The Silence of the Lambs</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/The_Silence_of_the_Lambs_(film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/director</predicate>
+               <object>http://dbpedia.org/resource/Jonathan_Demme</object>
+               <subjectLabel score="0.00000000">The Silence of the Lambs</subjectLabel>
+               <objectLabel score="0.00000000">Jonathan Demme</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="12" runID="run6" score="0.27489691" plugType="E">
+         <cluster cluster_id="12-0" score="0.41047208" sim="0.9007" norm="1.0000">
+            <quintuple dataset="LinkedMDB" score="0.31021684" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/40867</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/29802</object>
+               <subjectLabel score="0.00000000">A Very Long Engagement</subjectLabel>
+               <objectLabel score="0.27554210">Jodie Foster</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.41047208" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Jodie_Foster</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/A_Very_Long_Engagement</object>
+               <subjectLabel score="0.52618019">Jodie Foster</subjectLabel>
+               <objectLabel score="0.00000000">A Very Long Engagement</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.31856576" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/A_Very_Long_Engagement</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Jodie_Foster</object>
+               <subjectLabel score="0.00000000">A Very Long Engagement</subjectLabel>
+               <objectLabel score="0.29641438">Jodie Foster</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="12-1" score="0.20000000" sim="0.9004" norm="1.0000">
+            <quintuple dataset="LinkedMDB" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/40867</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/director</predicate>
+               <object>http://data.linkedmdb.org/resource/director/8620</object>
+               <subjectLabel score="0.00000000">A Very Long Engagement</subjectLabel>
+               <objectLabel score="0.00000000">Jean-Pierre Jeunet</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/A_Very_Long_Engagement</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/director</predicate>
+               <object>http://dbpedia.org/resource/Jean-Pierre_Jeunet</object>
+               <subjectLabel score="0.00000000">A Very Long Engagement</subjectLabel>
+               <objectLabel score="0.00000000">Jean-Pierre Jeunet</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Jean-Pierre_Jeunet</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/directed</predicate>
+               <object>http://yago-knowledge.org/resource/A_Very_Long_Engagement</object>
+               <subjectLabel score="0.00000000">Jean-Pierre Jeunet</subjectLabel>
+               <objectLabel score="0.00000000">A Very Long Engagement</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="13" runID="run6" score="0.27489691" plugType="E">
+         <cluster cluster_id="13-0" score="0.41047208" sim="0.9007" norm="1.0000">
+            <quintuple dataset="DBpedia" score="0.31856576" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Bugsy_Malone</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Jodie_Foster</object>
+               <subjectLabel score="0.00000000">Bugsy Malone</subjectLabel>
+               <objectLabel score="0.29641438">Jodie Foster</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.41047208" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Jodie_Foster</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Bugsy_Malone</object>
+               <subjectLabel score="0.52618019">Jodie Foster</subjectLabel>
+               <objectLabel score="0.00000000">Bugsy Malone</objectLabel>
+            </quintuple>
+            <quintuple dataset="LinkedMDB" score="0.31021684" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/39165</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/29802</object>
+               <subjectLabel score="0.00000000">Bugsy Malone</subjectLabel>
+               <objectLabel score="0.27554210">Jodie Foster</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="13-1" score="0.20000000" sim="0.9004" norm="1.0000">
+            <quintuple dataset="LinkedMDB" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/39165</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/director</predicate>
+               <object>http://data.linkedmdb.org/resource/director/9031</object>
+               <subjectLabel score="0.00000000">Bugsy Malone</subjectLabel>
+               <objectLabel score="0.00000000">Alan Parker</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Alan_Parker</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/directed</predicate>
+               <object>http://yago-knowledge.org/resource/Bugsy_Malone</object>
+               <subjectLabel score="0.00000000">Alan Parker</subjectLabel>
+               <objectLabel score="0.00000000">Bugsy Malone</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Bugsy_Malone</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/director</predicate>
+               <object>http://dbpedia.org/resource/Alan_Parker</object>
+               <subjectLabel score="0.00000000">Bugsy Malone</subjectLabel>
+               <objectLabel score="0.00000000">Alan Parker</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="14" runID="run6" score="0.27489691" plugType="E">
+         <cluster cluster_id="14-0" score="0.41047208" sim="0.9007" norm="1.0000">
+            <quintuple dataset="DBpedia" score="0.31856576" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Candleshoe</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Jodie_Foster</object>
+               <subjectLabel score="0.00000000">Candleshoe</subjectLabel>
+               <objectLabel score="0.29641438">Jodie Foster</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.41047208" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Jodie_Foster</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Candleshoe</object>
+               <subjectLabel score="0.52618019">Jodie Foster</subjectLabel>
+               <objectLabel score="0.00000000">Candleshoe</objectLabel>
+            </quintuple>
+            <quintuple dataset="LinkedMDB" score="0.31021684" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/42805</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/29802</object>
+               <subjectLabel score="0.00000000">Candleshoe</subjectLabel>
+               <objectLabel score="0.27554210">Jodie Foster</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="14-1" score="0.20000000" sim="0.9004" norm="1.0000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Candleshoe</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/director</predicate>
+               <object>http://dbpedia.org/resource/Norman_Tokar</object>
+               <subjectLabel score="0.00000000">Candleshoe</subjectLabel>
+               <objectLabel score="0.00000000">Norman Tokar</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Norman_Tokar</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/directed</predicate>
+               <object>http://yago-knowledge.org/resource/Candleshoe</object>
+               <subjectLabel score="0.00000000">Norman Tokar</subjectLabel>
+               <objectLabel score="0.00000000">Candleshoe</objectLabel>
+            </quintuple>
+            <quintuple dataset="LinkedMDB" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/42805</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/director</predicate>
+               <object>http://data.linkedmdb.org/resource/director/12029</object>
+               <subjectLabel score="0.00000000">Candleshoe</subjectLabel>
+               <objectLabel score="0.00000000">Norman Tokar</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="15" runID="run6" score="0.27489691" plugType="E">
+         <cluster cluster_id="15-0" score="0.41047208" sim="0.9007" norm="1.0000">
+            <quintuple dataset="Yago" score="0.41047208" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Jodie_Foster</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Contact_(film)</object>
+               <subjectLabel score="0.52618019">Jodie Foster</subjectLabel>
+               <objectLabel score="0.00000000">Contact</objectLabel>
+            </quintuple>
+            <quintuple dataset="LinkedMDB" score="0.31021684" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/874</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/29802</object>
+               <subjectLabel score="0.00000000">Contact</subjectLabel>
+               <objectLabel score="0.27554210">Jodie Foster</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.31856576" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Contact_(1997_US_film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Jodie_Foster</object>
+               <subjectLabel score="0.00000000">Contact</subjectLabel>
+               <objectLabel score="0.29641438">Jodie Foster</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="15-1" score="0.20000000" sim="0.9004" norm="1.0000">
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Robert_Zemeckis</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/directed</predicate>
+               <object>http://yago-knowledge.org/resource/Contact_(film)</object>
+               <subjectLabel score="0.00000000">Robert Zemeckis</subjectLabel>
+               <objectLabel score="0.00000000">Contact</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Contact_(1997_US_film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/director</predicate>
+               <object>http://dbpedia.org/resource/Robert_Zemeckis</object>
+               <subjectLabel score="0.00000000">Contact</subjectLabel>
+               <objectLabel score="0.00000000">Robert Zemeckis</objectLabel>
+            </quintuple>
+            <quintuple dataset="LinkedMDB" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/874</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/director</predicate>
+               <object>http://data.linkedmdb.org/resource/director/8867</object>
+               <subjectLabel score="0.00000000">Contact</subjectLabel>
+               <objectLabel score="0.00000000">Robert Zemeckis</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="16" runID="run6" score="0.27489691" plugType="E">
+         <cluster cluster_id="16-0" score="0.41047208" sim="0.9007" norm="1.0000">
+            <quintuple dataset="DBpedia" score="0.31856576" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Five_Corners_(film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Jodie_Foster</object>
+               <subjectLabel score="0.00000000">Five Corners</subjectLabel>
+               <objectLabel score="0.29641438">Jodie Foster</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.41047208" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Jodie_Foster</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Five_Corners_(film)</object>
+               <subjectLabel score="0.52618019">Jodie Foster</subjectLabel>
+               <objectLabel score="0.00000000">Five Corners</objectLabel>
+            </quintuple>
+            <quintuple dataset="LinkedMDB" score="0.31021684" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/2713</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/29802</object>
+               <subjectLabel score="0.00000000">Five Corners</subjectLabel>
+               <objectLabel score="0.27554210">Jodie Foster</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="16-1" score="0.20000000" sim="0.9004" norm="1.0000">
+            <quintuple dataset="LinkedMDB" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/2713</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/director</predicate>
+               <object>http://data.linkedmdb.org/resource/director/13958</object>
+               <subjectLabel score="0.00000000">Five Corners</subjectLabel>
+               <objectLabel score="0.00000000">Tony Bill</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Tony_Bill</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/directed</predicate>
+               <object>http://yago-knowledge.org/resource/Five_Corners_(film)</object>
+               <subjectLabel score="0.00000000">Tony Bill</subjectLabel>
+               <objectLabel score="0.00000000">Five Corners</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Five_Corners_(film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/director</predicate>
+               <object>http://dbpedia.org/resource/Tony_Bill</object>
+               <subjectLabel score="0.00000000">Five Corners</subjectLabel>
+               <objectLabel score="0.00000000">Tony Bill</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="17" runID="run6" score="0.27489691" plugType="E">
+         <cluster cluster_id="17-0" score="0.41047208" sim="0.9007" norm="1.0000">
+            <quintuple dataset="Yago" score="0.41047208" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Jodie_Foster</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Flightplan</object>
+               <subjectLabel score="0.52618019">Jodie Foster</subjectLabel>
+               <objectLabel score="0.00000000">Flightplan</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.31856576" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Flightplan</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Jodie_Foster</object>
+               <subjectLabel score="0.00000000">Flightplan</subjectLabel>
+               <objectLabel score="0.29641438">Jodie Foster</objectLabel>
+            </quintuple>
+            <quintuple dataset="LinkedMDB" score="0.31021684" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/42337</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/29802</object>
+               <subjectLabel score="0.00000000">Flightplan</subjectLabel>
+               <objectLabel score="0.27554210">Jodie Foster</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="17-1" score="0.20000000" sim="0.9004" norm="1.0000">
+            <quintuple dataset="LinkedMDB" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/42337</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/director</predicate>
+               <object>http://data.linkedmdb.org/resource/director/11763</object>
+               <subjectLabel score="0.00000000">Flightplan</subjectLabel>
+               <objectLabel score="0.00000000">Robert Schwentke</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Flightplan</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/director</predicate>
+               <object>http://dbpedia.org/resource/Robert_Schwentke</object>
+               <subjectLabel score="0.00000000">Flightplan</subjectLabel>
+               <objectLabel score="0.00000000">Robert Schwentke</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Robert_Schwentke</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/directed</predicate>
+               <object>http://yago-knowledge.org/resource/Flightplan</object>
+               <subjectLabel score="0.00000000">Robert Schwentke</subjectLabel>
+               <objectLabel score="0.00000000">Flightplan</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="18" runID="run6" score="0.27489691" plugType="E">
+         <cluster cluster_id="18-0" score="0.41047208" sim="0.9007" norm="1.0000">
+            <quintuple dataset="LinkedMDB" score="0.31021684" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/3318</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/29802</object>
+               <subjectLabel score="0.00000000">Foxes</subjectLabel>
+               <objectLabel score="0.27554210">Jodie Foster</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.41047208" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Jodie_Foster</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Foxes_(film)</object>
+               <subjectLabel score="0.52618019">Jodie Foster</subjectLabel>
+               <objectLabel score="0.00000000">Foxes</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.31856576" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Foxes_(film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Jodie_Foster</object>
+               <subjectLabel score="0.00000000">Foxes</subjectLabel>
+               <objectLabel score="0.29641438">Jodie Foster</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="18-1" score="0.20000000" sim="0.9004" norm="1.0000">
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Adrian_Lyne</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/directed</predicate>
+               <object>http://yago-knowledge.org/resource/Foxes_(film)</object>
+               <subjectLabel score="0.00000000">Adrian Lyne</subjectLabel>
+               <objectLabel score="0.00000000">Foxes</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Foxes_(film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/director</predicate>
+               <object>http://dbpedia.org/resource/Adrian_Lyne</object>
+               <subjectLabel score="0.00000000">Foxes</subjectLabel>
+               <objectLabel score="0.00000000">Adrian Lyne</objectLabel>
+            </quintuple>
+            <quintuple dataset="LinkedMDB" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/3318</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/director</predicate>
+               <object>http://data.linkedmdb.org/resource/director/9612</object>
+               <subjectLabel score="0.00000000">Foxes</subjectLabel>
+               <objectLabel score="0.00000000">Adrian Lyne</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="19" runID="run6" score="0.27471245" plugType="E">
+         <cluster cluster_id="19-0" score="0.41047208" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.41047208" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Jodie_Foster</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/The_Beaver_(film)</object>
+               <subjectLabel score="0.52618019">Jodie Foster</subjectLabel>
+               <objectLabel score="0.00000000">The Beaver</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="19-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Jodie_Foster</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/directed</predicate>
+               <object>http://yago-knowledge.org/resource/The_Beaver_(film)</object>
+               <subjectLabel score="0.00000000">Jodie Foster</subjectLabel>
+               <objectLabel score="0.00000000">The Beaver</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="20" runID="run6" score="0.27471245" plugType="E">
+         <cluster cluster_id="20-0" score="0.41047208" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.41047208" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Jodie_Foster</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Elysium_(film)</object>
+               <subjectLabel score="0.52618019">Jodie Foster</subjectLabel>
+               <objectLabel score="0.00000000">Elysium</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="20-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Neill_Blomkamp</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/directed</predicate>
+               <object>http://yago-knowledge.org/resource/Elysium_(film)</object>
+               <subjectLabel score="0.00000000">Neill Blomkamp</subjectLabel>
+               <objectLabel score="0.00000000">Elysium</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="21" runID="run6" score="0.27148104" plugType="E">
+         <cluster cluster_id="21-0" score="0.41047208" sim="0.9007" norm="1.0000">
+            <quintuple dataset="LinkedMDB" score="0.31021684" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/43006</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/29802</object>
+               <subjectLabel score="0.00000000">Stealing Home</subjectLabel>
+               <objectLabel score="0.27554210">Jodie Foster</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.31856576" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Stealing_Home</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Jodie_Foster</object>
+               <subjectLabel score="0.00000000">Stealing Home</subjectLabel>
+               <objectLabel score="0.29641438">Jodie Foster</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.41047208" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Jodie_Foster</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Stealing_Home</object>
+               <subjectLabel score="0.52618019">Jodie Foster</subjectLabel>
+               <objectLabel score="0.00000000">Stealing Home</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="21-1" score="0.20000000" sim="0.9118" norm="0.9500">
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Steven_Kampmann</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/directed</predicate>
+               <object>http://yago-knowledge.org/resource/Stealing_Home</object>
+               <subjectLabel score="0.00000000">Steven Kampmann</subjectLabel>
+               <objectLabel score="0.00000000">Stealing Home</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Stealing_Home</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/director</predicate>
+               <object>http://dbpedia.org/resource/Steven_Kampmann</object>
+               <subjectLabel score="0.00000000">Stealing Home</subjectLabel>
+               <objectLabel score="0.00000000">Steven Kampmann</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="22" runID="run6" score="0.27039487" plugType="E">
+         <cluster cluster_id="22-0" score="0.41047208" sim="0.9007" norm="1.0000">
+            <quintuple dataset="LinkedMDB" score="0.31021684" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/45780</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/29802</object>
+               <subjectLabel score="0.00000000">Catchfire</subjectLabel>
+               <objectLabel score="0.27554210">Jodie Foster</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.41047208" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Jodie_Foster</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Catchfire</object>
+               <subjectLabel score="0.52618019">Jodie Foster</subjectLabel>
+               <objectLabel score="0.00000000">Catchfire</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.31856576" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Catchfire</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Jodie_Foster</object>
+               <subjectLabel score="0.00000000">Catchfire</subjectLabel>
+               <objectLabel score="0.29641438">Jodie Foster</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="22-1" score="0.20000000" sim="0.9004" norm="0.9500">
+            <quintuple dataset="LinkedMDB" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/45780</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/director</predicate>
+               <object>http://data.linkedmdb.org/resource/director/8627</object>
+               <subjectLabel score="0.00000000">Catchfire</subjectLabel>
+               <objectLabel score="0.00000000">Alan Smithee</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Catchfire</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/director</predicate>
+               <object>http://dbpedia.org/resource/Alan_Smithee</object>
+               <subjectLabel score="0.00000000">Catchfire</subjectLabel>
+               <objectLabel score="0.00000000">Alan Smithee</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="23" runID="run6" score="0.27037442" plugType="E">
+         <cluster cluster_id="23-0" score="0.41047208" sim="0.9007" norm="1.0000">
+            <quintuple dataset="LinkedMDB" score="0.31021684" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/45780</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/29802</object>
+               <subjectLabel score="0.00000000">Catchfire</subjectLabel>
+               <objectLabel score="0.27554210">Jodie Foster</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.41047208" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Jodie_Foster</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Catchfire</object>
+               <subjectLabel score="0.52618019">Jodie Foster</subjectLabel>
+               <objectLabel score="0.00000000">Catchfire</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.31856576" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Catchfire</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Jodie_Foster</object>
+               <subjectLabel score="0.00000000">Catchfire</subjectLabel>
+               <objectLabel score="0.29641438">Jodie Foster</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="23-1" score="0.20000000" sim="0.9002" norm="0.9500">
+            <quintuple dataset="LinkedMDB" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/45780</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/director</predicate>
+               <object>http://data.linkedmdb.org/resource/director/8401</object>
+               <subjectLabel score="0.00000000">Catchfire</subjectLabel>
+               <objectLabel score="0.00000000">Dennis Hopper</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Dennis_Hopper</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/directed</predicate>
+               <object>http://yago-knowledge.org/resource/Catchfire</object>
+               <subjectLabel score="0.00000000">Dennis Hopper</subjectLabel>
+               <objectLabel score="0.00000000">Catchfire</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="24" runID="run6" score="0.26501635" plugType="E">
+         <cluster cluster_id="24-0" score="0.41047208" sim="0.9149" norm="0.9500">
+            <quintuple dataset="Yago" score="0.41047208" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Jodie_Foster</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/The_Blood_of_Others_(film)</object>
+               <subjectLabel score="0.52618019">Jodie Foster</subjectLabel>
+               <objectLabel score="0.00000000">The Blood of Others</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.31856576" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/The_Blood_of_Others_(film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Jodie_Foster</object>
+               <subjectLabel score="0.00000000">The Blood of Others</subjectLabel>
+               <objectLabel score="0.29641438">Jodie Foster</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="24-1" score="0.20000000" sim="0.9118" norm="0.9500">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/The_Blood_of_Others_(film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/director</predicate>
+               <object>http://dbpedia.org/resource/Claude_Chabrol</object>
+               <subjectLabel score="0.00000000">The Blood of Others</subjectLabel>
+               <objectLabel score="0.00000000">Claude Chabrol</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Claude_Chabrol</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/directed</predicate>
+               <object>http://yago-knowledge.org/resource/The_Blood_of_Others_(film)</object>
+               <subjectLabel score="0.00000000">Claude Chabrol</subjectLabel>
+               <objectLabel score="0.00000000">The Blood of Others</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="25" runID="run6" score="0.26501635" plugType="E">
+         <cluster cluster_id="25-0" score="0.41047208" sim="0.9149" norm="0.9500">
+            <quintuple dataset="DBpedia" score="0.31856576" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Beach_House_(film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Jodie_Foster</object>
+               <subjectLabel score="0.00000000">Beach House</subjectLabel>
+               <objectLabel score="0.29641438">Jodie Foster</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.41047208" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Jodie_Foster</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Beach_House_(film)</object>
+               <subjectLabel score="0.52618019">Jodie Foster</subjectLabel>
+               <objectLabel score="0.00000000">Beach House</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="25-1" score="0.20000000" sim="0.9118" norm="0.9500">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Beach_House_(film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/director</predicate>
+               <object>http://dbpedia.org/resource/Sergio_Citti</object>
+               <subjectLabel score="0.00000000">Beach House</subjectLabel>
+               <objectLabel score="0.00000000">Sergio Citti</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Sergio_Citti</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/directed</predicate>
+               <object>http://yago-knowledge.org/resource/Beach_House_(film)</object>
+               <subjectLabel score="0.00000000">Sergio Citti</subjectLabel>
+               <objectLabel score="0.00000000">Beach House</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="26" runID="run6" score="0.26501635" plugType="E">
+         <cluster cluster_id="26-0" score="0.41047208" sim="0.9149" norm="0.9500">
+            <quintuple dataset="Yago" score="0.41047208" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Jodie_Foster</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Echoes_of_a_Summer</object>
+               <subjectLabel score="0.52618019">Jodie Foster</subjectLabel>
+               <objectLabel score="0.00000000">Echoes of a Summer</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.31856576" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Echoes_of_a_Summer</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Jodie_Foster</object>
+               <subjectLabel score="0.00000000">Echoes of a Summer</subjectLabel>
+               <objectLabel score="0.29641438">Jodie Foster</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="26-1" score="0.20000000" sim="0.9118" norm="0.9500">
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Don_Taylor_(actor/director)</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/directed</predicate>
+               <object>http://yago-knowledge.org/resource/Echoes_of_a_Summer</object>
+               <subjectLabel score="0.00000000">Don Taylor</subjectLabel>
+               <objectLabel score="0.00000000">Echoes of a Summer</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Echoes_of_a_Summer</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/director</predicate>
+               <object>http://dbpedia.org/resource/Don_Taylor_(American_actor_and_director)</object>
+               <subjectLabel score="0.00000000">Echoes of a Summer</subjectLabel>
+               <objectLabel score="0.00000000">Don Taylor</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="27" runID="run6" score="0.26106745" plugType="E">
+         <cluster cluster_id="27-0" score="0.41047208" sim="0.9004" norm="0.9500">
+            <quintuple dataset="Yago" score="0.41047208" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Jodie_Foster</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Alice_Doesn%27t_Live_Here_Anymore</object>
+               <subjectLabel score="0.52618019">Jodie Foster</subjectLabel>
+               <objectLabel score="0.00000000">Alice Doesn't Live Here Anymore</objectLabel>
+            </quintuple>
+            <quintuple dataset="LinkedMDB" score="0.31021684" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/574</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/29802</object>
+               <subjectLabel score="0.00000000">Alice Doesn't Live Here Anymore</subjectLabel>
+               <objectLabel score="0.27554210">Jodie Foster</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="27-1" score="0.20000000" sim="0.9002" norm="0.9500">
+            <quintuple dataset="LinkedMDB" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/574</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/director</predicate>
+               <object>http://data.linkedmdb.org/resource/director/8454</object>
+               <subjectLabel score="0.00000000">Alice Doesn't Live Here Anymore</subjectLabel>
+               <objectLabel score="0.00000000">Martin Scorsese</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Martin_Scorsese</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/directed</predicate>
+               <object>http://yago-knowledge.org/resource/Alice_Doesn%27t_Live_Here_Anymore</object>
+               <subjectLabel score="0.00000000">Martin Scorsese</subjectLabel>
+               <objectLabel score="0.00000000">Alice Doesn't Live Here Anymore</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="28" runID="run6" score="0.26106745" plugType="E">
+         <cluster cluster_id="28-0" score="0.41047208" sim="0.9004" norm="0.9500">
+            <quintuple dataset="Yago" score="0.41047208" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Jodie_Foster</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/actedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Taxi_Driver</object>
+               <subjectLabel score="0.52618019">Jodie Foster</subjectLabel>
+               <objectLabel score="0.00000000">Taxi Driver</objectLabel>
+            </quintuple>
+            <quintuple dataset="LinkedMDB" score="0.31021684" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/38144</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/29802</object>
+               <subjectLabel score="0.00000000">Taxi Driver</subjectLabel>
+               <objectLabel score="0.27554210">Jodie Foster</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="28-1" score="0.20000000" sim="0.9002" norm="0.9500">
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Martin_Scorsese</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/directed</predicate>
+               <object>http://yago-knowledge.org/resource/Taxi_Driver</object>
+               <subjectLabel score="0.00000000">Martin Scorsese</subjectLabel>
+               <objectLabel score="0.00000000">Taxi Driver</objectLabel>
+            </quintuple>
+            <quintuple dataset="LinkedMDB" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/38144</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/director</predicate>
+               <object>http://data.linkedmdb.org/resource/director/8454</object>
+               <subjectLabel score="0.00000000">Taxi Driver</subjectLabel>
+               <objectLabel score="0.00000000">Martin Scorsese</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="29" runID="run6" score="0.23335460" plugType="E">
+         <cluster cluster_id="29-0" score="0.31856576" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.31856576" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/My_Letter_to_George</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Jodie_Foster</object>
+               <subjectLabel score="0.00000000">My Letter to George</subjectLabel>
+               <objectLabel score="0.29641438">Jodie Foster</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="29-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/My_Letter_to_George</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/director</predicate>
+               <object>http://dbpedia.org/resource/Michael_Laughlin</object>
+               <subjectLabel score="0.00000000">My Letter to George</subjectLabel>
+               <objectLabel score="0.00000000">Michael Laughlin</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="30" runID="run6" score="0.23335460" plugType="E">
+         <cluster cluster_id="30-0" score="0.31856576" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.31856576" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Carnage_(2011_film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Jodie_Foster</object>
+               <subjectLabel score="0.00000000">Carnage</subjectLabel>
+               <objectLabel score="0.29641438">Jodie Foster</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="30-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Carnage_(2011_film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/director</predicate>
+               <object>http://dbpedia.org/resource/Roman_Polanski</object>
+               <subjectLabel score="0.00000000">Carnage</subjectLabel>
+               <objectLabel score="0.00000000">Roman Polanski</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="31" runID="run6" score="0.22959759" plugType="E">
+         <cluster cluster_id="31-0" score="0.31021684" sim="1.0000" norm="0.9000">
+            <quintuple dataset="LinkedMDB" score="0.31021684" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/57418</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/29802</object>
+               <subjectLabel score="0.00000000">Kansas City Bomber</subjectLabel>
+               <objectLabel score="0.27554210">Jodie Foster</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="31-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="LinkedMDB" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/57418</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/director</predicate>
+               <object>http://data.linkedmdb.org/resource/director/13800</object>
+               <subjectLabel score="0.00000000">Kansas City Bomber</subjectLabel>
+               <objectLabel score="0.00000000">Jerrold Freedman</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="32" runID="run6" score="0.22959759" plugType="E">
+         <cluster cluster_id="32-0" score="0.31021684" sim="1.0000" norm="0.9000">
+            <quintuple dataset="LinkedMDB" score="0.31021684" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/41539</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/29802</object>
+               <subjectLabel score="0.00000000">The Dangerous Lives of Altar Boys</subjectLabel>
+               <objectLabel score="0.27554210">Jodie Foster</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="32-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="LinkedMDB" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/41539</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/director</predicate>
+               <object>http://data.linkedmdb.org/resource/director/18248</object>
+               <subjectLabel score="0.00000000">The Dangerous Lives of Altar Boys</subjectLabel>
+               <objectLabel score="0.00000000">Peter Care</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="33" runID="run6" score="0.22629269" plugType="E">
+         <cluster cluster_id="33-0" score="0.31856576" sim="0.9007" norm="0.9500">
+            <quintuple dataset="DBpedia" score="0.31856576" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/100_Films_and_a_Funeral</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Jodie_Foster</object>
+               <subjectLabel score="0.00000000">100 Films and a Funeral</subjectLabel>
+               <objectLabel score="0.29641438">Jodie Foster</objectLabel>
+            </quintuple>
+            <quintuple dataset="LinkedMDB" score="0.31021684" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/93094</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/29802</object>
+               <subjectLabel score="0.00000000">100 Films and a Funeral</subjectLabel>
+               <objectLabel score="0.27554210">Jodie Foster</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="33-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="true" isObjectLiteral="true">
+               <subject>http://dbpedia.org/resource/100_Films_and_a_Funeral</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/director</predicate>
+               <object>http://dbpedia.org/resource/Michael_McNamara_(director)</object>
+               <subjectLabel score="0.00000000">100 Films and a Funeral</subjectLabel>
+               <objectLabel score="0.00000000">http://dbpedia.org/resource/Michael_McNamara</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="34" runID="run6" score="0.22183159" plugType="E">
+         <cluster cluster_id="34-0" score="0.31856576" sim="0.9007" norm="0.9500">
+            <quintuple dataset="DBpedia" score="0.31856576" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Napoleon_and_Samantha</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Jodie_Foster</object>
+               <subjectLabel score="0.00000000">Napoleon and Samantha</subjectLabel>
+               <objectLabel score="0.29641438">Jodie Foster</objectLabel>
+            </quintuple>
+            <quintuple dataset="LinkedMDB" score="0.31021684" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/40522</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/29802</object>
+               <subjectLabel score="0.00000000">Napoleon and Samantha</subjectLabel>
+               <objectLabel score="0.27554210">Jodie Foster</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="34-1" score="0.20000000" sim="0.9004" norm="0.9500">
+            <quintuple dataset="LinkedMDB" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/40522</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/director</predicate>
+               <object>http://data.linkedmdb.org/resource/director/10539</object>
+               <subjectLabel score="0.00000000">Napoleon and Samantha</subjectLabel>
+               <objectLabel score="0.00000000">Bernard McEveety</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Napoleon_and_Samantha</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/director</predicate>
+               <object>http://dbpedia.org/resource/Bernard_McEveety</object>
+               <subjectLabel score="0.00000000">Napoleon and Samantha</subjectLabel>
+               <objectLabel score="0.00000000">Bernard McEveety</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="35" runID="run6" score="0.22183159" plugType="E">
+         <cluster cluster_id="35-0" score="0.31856576" sim="0.9007" norm="0.9500">
+            <quintuple dataset="LinkedMDB" score="0.31021684" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/41279</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/29802</object>
+               <subjectLabel score="0.00000000">Shadows and Fog</subjectLabel>
+               <objectLabel score="0.27554210">Jodie Foster</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.31856576" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Shadows_and_Fog</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Jodie_Foster</object>
+               <subjectLabel score="0.00000000">Shadows and Fog</subjectLabel>
+               <objectLabel score="0.29641438">Jodie Foster</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="35-1" score="0.20000000" sim="0.9004" norm="0.9500">
+            <quintuple dataset="LinkedMDB" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/41279</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/director</predicate>
+               <object>http://data.linkedmdb.org/resource/director/8501</object>
+               <subjectLabel score="0.00000000">Shadows and Fog</subjectLabel>
+               <objectLabel score="0.00000000">Woody Allen</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Shadows_and_Fog</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/director</predicate>
+               <object>http://dbpedia.org/resource/Woody_Allen</object>
+               <subjectLabel score="0.00000000">Shadows and Fog</subjectLabel>
+               <objectLabel score="0.00000000">Woody Allen</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="36" runID="run6" score="0.22183159" plugType="E">
+         <cluster cluster_id="36-0" score="0.31856576" sim="0.9007" norm="0.9500">
+            <quintuple dataset="LinkedMDB" score="0.31021684" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/39920</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/29802</object>
+               <subjectLabel score="0.00000000">The Accused</subjectLabel>
+               <objectLabel score="0.27554210">Jodie Foster</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.31856576" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/The_Accused_(1988_film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Jodie_Foster</object>
+               <subjectLabel score="0.00000000">The Accused</subjectLabel>
+               <objectLabel score="0.29641438">Jodie Foster</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="36-1" score="0.20000000" sim="0.9004" norm="0.9500">
+            <quintuple dataset="LinkedMDB" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/39920</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/director</predicate>
+               <object>http://data.linkedmdb.org/resource/director/2901</object>
+               <subjectLabel score="0.00000000">The Accused</subjectLabel>
+               <objectLabel score="0.00000000">Jonathan Kaplan</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/The_Accused_(1988_film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/director</predicate>
+               <object>http://dbpedia.org/resource/Jonathan_Kaplan</object>
+               <subjectLabel score="0.00000000">The Accused</subjectLabel>
+               <objectLabel score="0.00000000">Jonathan Kaplan</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="37" runID="run6" score="0.22183159" plugType="E">
+         <cluster cluster_id="37-0" score="0.31856576" sim="0.9007" norm="0.9500">
+            <quintuple dataset="DBpedia" score="0.31856576" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/The_Brave_One_(2007_film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Jodie_Foster</object>
+               <subjectLabel score="0.00000000">The Brave One</subjectLabel>
+               <objectLabel score="0.29641438">Jodie Foster</objectLabel>
+            </quintuple>
+            <quintuple dataset="LinkedMDB" score="0.31021684" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/19022</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/29802</object>
+               <subjectLabel score="0.00000000">The Brave One</subjectLabel>
+               <objectLabel score="0.27554210">Jodie Foster</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="37-1" score="0.20000000" sim="0.9004" norm="0.9500">
+            <quintuple dataset="LinkedMDB" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/19022</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/director</predicate>
+               <object>http://data.linkedmdb.org/resource/director/8996</object>
+               <subjectLabel score="0.00000000">The Brave One</subjectLabel>
+               <objectLabel score="0.00000000">Neil Jordan</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/The_Brave_One_(2007_film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/director</predicate>
+               <object>http://dbpedia.org/resource/Neil_Jordan</object>
+               <subjectLabel score="0.00000000">The Brave One</subjectLabel>
+               <objectLabel score="0.00000000">Neil Jordan</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="38" runID="run6" score="0.22183159" plugType="E">
+         <cluster cluster_id="38-0" score="0.31856576" sim="0.9007" norm="0.9500">
+            <quintuple dataset="DBpedia" score="0.31856576" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Anna_and_the_King</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Jodie_Foster</object>
+               <subjectLabel score="0.00000000">Anna and the King</subjectLabel>
+               <objectLabel score="0.29641438">Jodie Foster</objectLabel>
+            </quintuple>
+            <quintuple dataset="LinkedMDB" score="0.31021684" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/39497</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/29802</object>
+               <subjectLabel score="0.00000000">Anna and the King</subjectLabel>
+               <objectLabel score="0.27554210">Jodie Foster</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="38-1" score="0.20000000" sim="0.9004" norm="0.9500">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Anna_and_the_King</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/director</predicate>
+               <object>http://dbpedia.org/resource/Andy_Tennant</object>
+               <subjectLabel score="0.00000000">Anna and the King</subjectLabel>
+               <objectLabel score="0.00000000">Andy Tennant</objectLabel>
+            </quintuple>
+            <quintuple dataset="LinkedMDB" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/39497</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/director</predicate>
+               <object>http://data.linkedmdb.org/resource/director/11870</object>
+               <subjectLabel score="0.00000000">Anna and the King</subjectLabel>
+               <objectLabel score="0.00000000">Andy Tennant</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="39" runID="run6" score="0.22183159" plugType="E">
+         <cluster cluster_id="39-0" score="0.31856576" sim="0.9007" norm="0.9500">
+            <quintuple dataset="DBpedia" score="0.31856576" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Freaky_Friday_(1976_film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Jodie_Foster</object>
+               <subjectLabel score="0.00000000">Freaky Friday</subjectLabel>
+               <objectLabel score="0.29641438">Jodie Foster</objectLabel>
+            </quintuple>
+            <quintuple dataset="LinkedMDB" score="0.31021684" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/9776</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/29802</object>
+               <subjectLabel score="0.00000000">Freaky Friday</subjectLabel>
+               <objectLabel score="0.27554210">Jodie Foster</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="39-1" score="0.20000000" sim="0.9004" norm="0.9500">
+            <quintuple dataset="LinkedMDB" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/9776</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/director</predicate>
+               <object>http://data.linkedmdb.org/resource/director/19038</object>
+               <subjectLabel score="0.00000000">Freaky Friday</subjectLabel>
+               <objectLabel score="0.00000000">Gary Nelson</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Freaky_Friday_(1976_film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/director</predicate>
+               <object>http://dbpedia.org/resource/Gary_Nelson_(director)</object>
+               <subjectLabel score="0.00000000">Freaky Friday</subjectLabel>
+               <objectLabel score="0.00000000">Gary Nelson</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="40" runID="run6" score="0.22183159" plugType="E">
+         <cluster cluster_id="40-0" score="0.31856576" sim="0.9007" norm="0.9500">
+            <quintuple dataset="LinkedMDB" score="0.31021684" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/5577</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/actor</predicate>
+               <object>http://data.linkedmdb.org/resource/actor/29802</object>
+               <subjectLabel score="0.00000000">Tom Sawyer</subjectLabel>
+               <objectLabel score="0.27554210">Jodie Foster</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.31856576" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Tom_Sawyer_(1973_film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/starring</predicate>
+               <object>http://dbpedia.org/resource/Jodie_Foster</object>
+               <subjectLabel score="0.00000000">Tom Sawyer</subjectLabel>
+               <objectLabel score="0.29641438">Jodie Foster</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="40-1" score="0.20000000" sim="0.9004" norm="0.9500">
+            <quintuple dataset="LinkedMDB" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/5577</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/director</predicate>
+               <object>http://data.linkedmdb.org/resource/director/522</object>
+               <subjectLabel score="0.00000000">Tom Sawyer</subjectLabel>
+               <objectLabel score="0.00000000">Don Taylor</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Tom_Sawyer_(1973_film)</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/director</predicate>
+               <object>http://dbpedia.org/resource/Don_Taylor_(American_actor_and_director)</object>
+               <subjectLabel score="0.00000000">Tom Sawyer</subjectLabel>
+               <objectLabel score="0.00000000">Don Taylor</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+   </results>
+</question>

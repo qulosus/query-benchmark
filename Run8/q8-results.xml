@@ -1,0 +1,123 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<question id="8" runID="run8">
+   <string>
+      <![CDATA[To which countries does the Himalayan mountain system extend?]]>
+   </string>
+   <query>
+      <![CDATA[
+  "Himalaya"  "country"  ?country.
+]]>
+   </query>
+   <settings labelSearchTopK="10" plugLabel="true" limited="false" validateTriple="false"/>
+   <stats1 nb_results="7" timeSec="0.3810" memoryMB="70.1999" totalQuins="9" avgQuin_Cluster="1.2857" avgQuin_Bucket="1.2857" nb_plugTR="0"/>
+   <stats2>
+      <ds id="LinkedMDB">
+         <nreq>16</nreq>
+         <nreqs>1</nreqs>
+         <nrecd>1</nrecd>
+      </ds>
+      <ds id="DBpedia">
+         <nreq>20</nreq>
+         <nreqs>2</nreqs>
+         <nrecd>2</nrecd>
+      </ds>
+      <ds id="Yago">
+         <nreq>20</nreq>
+         <nreqs>2</nreqs>
+         <nrecd>6</nrecd>
+      </ds>
+   </stats2>
+   <results>
+      <bucket bucket_id="0" runID="run8" score="0.29265770" plugType="E">
+         <cluster cluster_id="0-0" score="0.32517521" sim="1.0000" norm="0.9000">
+            <quintuple dataset="LinkedMDB" score="0.32517521" isFlipped="false" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/10853</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/country</predicate>
+               <object>http://data.linkedmdb.org/resource/country/HK</object>
+               <subjectLabel score="0.31293800">Himalaya Singh</subjectLabel>
+               <objectLabel score="0.00000000">Hong Kong</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="1" runID="run8" score="0.21428489" plugType="E">
+         <cluster cluster_id="1-0" score="0.23809431" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.23809431" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Himalayas</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/country</predicate>
+               <object>http://dbpedia.org/resource/Bhutan</object>
+               <subjectLabel score="0.09523578">Himalayas</subjectLabel>
+               <objectLabel score="0.00000000">Bhutan</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="2" runID="run8" score="0.20463090" plugType="E">
+         <cluster cluster_id="2-0" score="0.23525927" sim="0.9156" norm="0.9500">
+            <quintuple dataset="Yago" score="0.22558934" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Himalaya_TV</subject>
+               <predicate score="0.90000000">http://yago-knowledge.org/resource/isLocatedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Nepal</object>
+               <subjectLabel score="0.11397335">Himalaya TV</subjectLabel>
+               <objectLabel score="0.00000000">Nepal</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.23525927" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Himalaya_TV</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/country</predicate>
+               <object>http://dbpedia.org/resource/Nepal</object>
+               <subjectLabel score="0.08814817">Himalaya TV</subjectLabel>
+               <objectLabel score="0.00000000">Nepal</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="3" runID="run8" score="0.19941872" plugType="E">
+         <cluster cluster_id="3-0" score="0.22157635" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.22157635" isFlipped="true" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Karakoram-West_Tibetan_Plateau_alpine_steppe</subject>
+               <predicate score="0.90000000">http://yago-knowledge.org/resource/isLocatedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Himalayas</object>
+               <subjectLabel score="0.00000000">Karakoram-West Tibetan Plateau alpine steppe</subjectLabel>
+               <objectLabel score="0.10394087">Himalayas</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="4" runID="run8" score="0.19941872" plugType="E">
+         <cluster cluster_id="4-0" score="0.22157635" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.22157635" isFlipped="true" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Kafni_Glacier</subject>
+               <predicate score="0.90000000">http://yago-knowledge.org/resource/isLocatedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Himalayas</object>
+               <subjectLabel score="0.00000000">Kafni Glacier</subjectLabel>
+               <objectLabel score="0.10394087">Himalayas</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="5" runID="run8" score="0.19941872" plugType="E">
+         <cluster cluster_id="5-0" score="0.22157635" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.22157635" isFlipped="true" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Chandra_Taal</subject>
+               <predicate score="0.90000000">http://yago-knowledge.org/resource/isLocatedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Himalayas</object>
+               <subjectLabel score="0.00000000">Chandra Taal</subjectLabel>
+               <objectLabel score="0.10394087">Himalayas</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="6" runID="run8" score="0.18018906" plugType="E">
+         <cluster cluster_id="6-0" score="0.22157635" sim="0.9036" norm="0.9000">
+            <quintuple dataset="Yago" score="0.22157635" isFlipped="true" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Machoi_Glacier</subject>
+               <predicate score="0.90000000">http://yago-knowledge.org/resource/isLocatedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Himalayas</object>
+               <subjectLabel score="0.00000000">Machoi Glacier</subjectLabel>
+               <objectLabel score="0.10394087">Himalayas</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.22157635" isFlipped="true" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Kolhoi_Glacier</subject>
+               <predicate score="0.90000000">http://yago-knowledge.org/resource/isLocatedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Himalayas</object>
+               <subjectLabel score="0.00000000">Kolhoi Glacier</subjectLabel>
+               <objectLabel score="0.10394087">Himalayas</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+   </results>
+</question>

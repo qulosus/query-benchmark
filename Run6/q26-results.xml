@@ -1,0 +1,134 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<question id="26" runID="run6">
+   <string>
+      <![CDATA[Which works by Jack Kerouac were published by Viking Press?]]>
+   </string>
+   <query>
+      <![CDATA[
+  "Jack Kerouac"  "wrote"     ?x .
+  "Viking Press"  "published" ?x .
+]]>
+   </query>
+   <settings labelSearchTopK="5" plugLabel="false" limited="false" validateTriple="false"/>
+   <stats1 nb_results="4" timeSec="0.8750" memoryMB="78.5202" totalQuins="11" avgQuin_Cluster="1.3750" avgQuin_Bucket="2.7500" nb_plugTR="0"/>
+   <stats2>
+      <ds id="LinkedMDB">
+         <nreq>10</nreq>
+         <nreqs>3</nreqs>
+         <nrecd>8</nrecd>
+      </ds>
+      <ds id="DBpedia">
+         <nreq>60</nreq>
+         <nreqs>6</nreqs>
+         <nrecd>34</nrecd>
+      </ds>
+      <ds id="Yago">
+         <nreq>10</nreq>
+         <nreqs>2</nreqs>
+         <nrecd>29</nrecd>
+      </ds>
+   </stats2>
+   <results>
+      <bucket bucket_id="0" runID="run6" score="0.33111831" plugType="E">
+         <cluster cluster_id="0-0" score="0.43490815" sim="0.9005" norm="0.9500">
+            <quintuple dataset="LinkedMDB" score="0.43490815" isFlipped="true" isObjectLiteral="false">
+               <subject>http://data.linkedmdb.org/resource/film/3185</subject>
+               <predicate score="1.00000000">http://data.linkedmdb.org/resource/movie/writer</predicate>
+               <object>http://data.linkedmdb.org/resource/writer/13142</object>
+               <subjectLabel score="0.00000000">On the Road</subjectLabel>
+               <objectLabel score="0.58727037">Jack Kerouac</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.28395999" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/On_the_Road</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/author</predicate>
+               <object>http://dbpedia.org/resource/Jack_Kerouac</object>
+               <subjectLabel score="0.00000000">On the Road</subjectLabel>
+               <objectLabel score="0.20989996">Jack Kerouac</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="0-1" score="0.32243874" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.32243874" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/On_the_Road</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/publisher</predicate>
+               <object>http://dbpedia.org/resource/Viking_Press</object>
+               <subjectLabel score="0.00000000">On the Road</subjectLabel>
+               <objectLabel score="0.30609685">Viking Press</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="1" runID="run6" score="0.29121358" plugType="E">
+         <cluster cluster_id="1-0" score="0.33922269" sim="0.9068" norm="0.9500">
+            <quintuple dataset="Yago" score="0.33922269" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Jack_Kerouac</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/created</predicate>
+               <object>http://yago-knowledge.org/resource/References_in_On_the_Road</object>
+               <subjectLabel score="0.34805672">Jack Kerouac</subjectLabel>
+               <objectLabel score="0.00000000">References in On the Road</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.28395999" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/References_in_On_the_Road</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/author</predicate>
+               <object>http://dbpedia.org/resource/Jack_Kerouac</object>
+               <subjectLabel score="0.00000000">References in On the Road</subjectLabel>
+               <objectLabel score="0.20989996">Jack Kerouac</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="1-1" score="0.32243874" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.32243874" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/References_in_On_the_Road</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/publisher</predicate>
+               <object>http://dbpedia.org/resource/Viking_Press</object>
+               <subjectLabel score="0.00000000">References in On the Road</subjectLabel>
+               <objectLabel score="0.30609685">Viking Press</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="2" runID="run6" score="0.29121358" plugType="E">
+         <cluster cluster_id="2-0" score="0.33922269" sim="0.9068" norm="0.9500">
+            <quintuple dataset="Yago" score="0.33922269" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Jack_Kerouac</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/created</predicate>
+               <object>http://yago-knowledge.org/resource/Door_Wide_Open</object>
+               <subjectLabel score="0.34805672">Jack Kerouac</subjectLabel>
+               <objectLabel score="0.00000000">Door Wide Open</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.28395999" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Door_Wide_Open</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/author</predicate>
+               <object>http://dbpedia.org/resource/Jack_Kerouac</object>
+               <subjectLabel score="0.00000000">Door Wide Open</subjectLabel>
+               <objectLabel score="0.20989996">Jack Kerouac</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="2-1" score="0.32243874" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.32243874" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Door_Wide_Open</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/publisher</predicate>
+               <object>http://dbpedia.org/resource/Viking_Press</object>
+               <subjectLabel score="0.00000000">Door Wide Open</subjectLabel>
+               <objectLabel score="0.30609685">Viking Press</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="3" runID="run6" score="0.27287944" plugType="E">
+         <cluster cluster_id="3-0" score="0.28395999" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.28395999" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Atop_an_Underwood:_Early_Stories_and_Other_Writings</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/author</predicate>
+               <object>http://dbpedia.org/resource/Jack_Kerouac</object>
+               <subjectLabel score="0.00000000">Atop an Underwood: Early Stories and Other Writings</subjectLabel>
+               <objectLabel score="0.20989996">Jack Kerouac</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="3-1" score="0.32243874" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.32243874" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Atop_an_Underwood:_Early_Stories_and_Other_Writings</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/publisher</predicate>
+               <object>http://dbpedia.org/resource/Viking_Press</object>
+               <subjectLabel score="0.00000000">Atop an Underwood: Early Stories and Other Writings</subjectLabel>
+               <objectLabel score="0.30609685">Viking Press</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+   </results>
+</question>

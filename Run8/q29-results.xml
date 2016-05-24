@@ -1,0 +1,422 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<question id="29" runID="run8">
+   <string>
+      <![CDATA[Where did Napoleon's wife die?]]>
+   </string>
+   <query>
+      <![CDATA[
+  "Napoleon"  "wife"     ?w.
+  ?w          "died in"  ?s.
+]]>
+   </query>
+   <settings labelSearchTopK="10" plugLabel="true" limited="false" validateTriple="false"/>
+   <stats1 nb_results="10" timeSec="2.6840" memoryMB="116.4445" totalQuins="47" avgQuin_Cluster="2.3500" avgQuin_Bucket="4.7000" nb_plugTR="1"/>
+   <stats2>
+      <ds id="LinkedMDB">
+         <nreq>0</nreq>
+         <nreqs>0</nreqs>
+         <nrecd>0</nrecd>
+      </ds>
+      <ds id="DBpedia">
+         <nreq>48</nreq>
+         <nreqs>7</nreqs>
+         <nrecd>14</nrecd>
+      </ds>
+      <ds id="Yago">
+         <nreq>32</nreq>
+         <nreqs>5</nreqs>
+         <nrecd>9</nrecd>
+      </ds>
+   </stats2>
+   <results>
+      <bucket bucket_id="0" runID="run8" score="0.21192702" plugType="E">
+         <cluster cluster_id="0-0" score="0.26461837" sim="0.9700" norm="0.9500">
+            <quintuple dataset="Yago" score="0.26461837" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Napoleon</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/Joséphine_de_Beauharnais</object>
+               <subjectLabel score="0.16154591">Napoleon</subjectLabel>
+               <objectLabel score="0.00000000">Joséphine de Beauharnais</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.26461837" isFlipped="true" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Joséphine_de_Beauharnais</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/Napoleon</object>
+               <subjectLabel score="0.00000000">Joséphine de Beauharnais</subjectLabel>
+               <objectLabel score="0.16154591">Napoleon</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.25911510" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Jos%C3%A9phine_de_Beauharnais</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/spouse</predicate>
+               <object>http://dbpedia.org/resource/Napoleon</object>
+               <subjectLabel score="0.00000000">Joséphine de Beauharnais</subjectLabel>
+               <objectLabel score="0.14778775">Napoleon</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.25911510" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Napoleon</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/spouse</predicate>
+               <object>http://dbpedia.org/resource/Jos%C3%A9phine_de_Beauharnais</object>
+               <subjectLabel score="0.14778775">Napoleon</subjectLabel>
+               <objectLabel score="0.00000000">Joséphine de Beauharnais</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="0-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Jos%C3%A9phine_de_Beauharnais</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/deathPlace</predicate>
+               <object>http://dbpedia.org/resource/Bourbon_Restoration</object>
+               <subjectLabel score="0.00000000">Joséphine de Beauharnais</subjectLabel>
+               <objectLabel score="0.00000000">Bourbon Restoration</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="1" runID="run8" score="0.21192702" plugType="E">
+         <cluster cluster_id="1-0" score="0.26461837" sim="0.9700" norm="0.9500">
+            <quintuple dataset="Yago" score="0.26461837" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Napoleon</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/Joséphine_de_Beauharnais</object>
+               <subjectLabel score="0.16154591">Napoleon</subjectLabel>
+               <objectLabel score="0.00000000">Joséphine de Beauharnais</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.26461837" isFlipped="true" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Joséphine_de_Beauharnais</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/Napoleon</object>
+               <subjectLabel score="0.00000000">Joséphine de Beauharnais</subjectLabel>
+               <objectLabel score="0.16154591">Napoleon</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.25911510" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Jos%C3%A9phine_de_Beauharnais</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/spouse</predicate>
+               <object>http://dbpedia.org/resource/Napoleon</object>
+               <subjectLabel score="0.00000000">Joséphine de Beauharnais</subjectLabel>
+               <objectLabel score="0.14778775">Napoleon</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.25911510" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Napoleon</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/spouse</predicate>
+               <object>http://dbpedia.org/resource/Jos%C3%A9phine_de_Beauharnais</object>
+               <subjectLabel score="0.14778775">Napoleon</subjectLabel>
+               <objectLabel score="0.00000000">Joséphine de Beauharnais</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="1-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Jos%C3%A9phine_de_Beauharnais</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/deathPlace</predicate>
+               <object>http://dbpedia.org/resource/%C3%8Ele-de-France</object>
+               <subjectLabel score="0.00000000">Joséphine de Beauharnais</subjectLabel>
+               <objectLabel score="0.00000000">Île-de-France</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="2" runID="run8" score="0.21192702" plugType="E">
+         <cluster cluster_id="2-0" score="0.26461837" sim="0.9700" norm="0.9500">
+            <quintuple dataset="Yago" score="0.26461837" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Napoleon</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/Joséphine_de_Beauharnais</object>
+               <subjectLabel score="0.16154591">Napoleon</subjectLabel>
+               <objectLabel score="0.00000000">Joséphine de Beauharnais</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.26461837" isFlipped="true" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Joséphine_de_Beauharnais</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/Napoleon</object>
+               <subjectLabel score="0.00000000">Joséphine de Beauharnais</subjectLabel>
+               <objectLabel score="0.16154591">Napoleon</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.25911510" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Jos%C3%A9phine_de_Beauharnais</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/spouse</predicate>
+               <object>http://dbpedia.org/resource/Napoleon</object>
+               <subjectLabel score="0.00000000">Joséphine de Beauharnais</subjectLabel>
+               <objectLabel score="0.14778775">Napoleon</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.25911510" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Napoleon</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/spouse</predicate>
+               <object>http://dbpedia.org/resource/Jos%C3%A9phine_de_Beauharnais</object>
+               <subjectLabel score="0.14778775">Napoleon</subjectLabel>
+               <objectLabel score="0.00000000">Joséphine de Beauharnais</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="2-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Jos%C3%A9phine_de_Beauharnais</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/deathPlace</predicate>
+               <object>http://dbpedia.org/resource/France</object>
+               <subjectLabel score="0.00000000">Joséphine de Beauharnais</subjectLabel>
+               <objectLabel score="0.00000000">France</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="3" runID="run8" score="0.21192702" plugType="E">
+         <cluster cluster_id="3-0" score="0.26461837" sim="0.9700" norm="0.9500">
+            <quintuple dataset="Yago" score="0.26461837" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Napoleon</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/Joséphine_de_Beauharnais</object>
+               <subjectLabel score="0.16154591">Napoleon</subjectLabel>
+               <objectLabel score="0.00000000">Joséphine de Beauharnais</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.26461837" isFlipped="true" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Joséphine_de_Beauharnais</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/Napoleon</object>
+               <subjectLabel score="0.00000000">Joséphine de Beauharnais</subjectLabel>
+               <objectLabel score="0.16154591">Napoleon</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.25911510" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Jos%C3%A9phine_de_Beauharnais</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/spouse</predicate>
+               <object>http://dbpedia.org/resource/Napoleon</object>
+               <subjectLabel score="0.00000000">Joséphine de Beauharnais</subjectLabel>
+               <objectLabel score="0.14778775">Napoleon</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.25911510" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Napoleon</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/spouse</predicate>
+               <object>http://dbpedia.org/resource/Jos%C3%A9phine_de_Beauharnais</object>
+               <subjectLabel score="0.14778775">Napoleon</subjectLabel>
+               <objectLabel score="0.00000000">Joséphine de Beauharnais</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="3-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Jos%C3%A9phine_de_Beauharnais</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/deathPlace</predicate>
+               <object>http://dbpedia.org/resource/Rueil-Malmaison</object>
+               <subjectLabel score="0.00000000">Joséphine de Beauharnais</subjectLabel>
+               <objectLabel score="0.00000000">Rueil-Malmaison</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="4" runID="run8" score="0.21192702" plugType="E">
+         <cluster cluster_id="4-0" score="0.26461837" sim="0.9700" norm="0.9500">
+            <quintuple dataset="DBpedia" score="0.25911510" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Marie_Louise,_Duchess_of_Parma</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/spouse</predicate>
+               <object>http://dbpedia.org/resource/Napoleon</object>
+               <subjectLabel score="0.00000000">Marie Louise, Duchess of Parma</subjectLabel>
+               <objectLabel score="0.14778775">Napoleon</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.26461837" isFlipped="true" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Marie_Louise,_Duchess_of_Parma</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/Napoleon</object>
+               <subjectLabel score="0.00000000">Marie Louise, Duchess of Parma</subjectLabel>
+               <objectLabel score="0.16154591">Napoleon</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.26461837" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Napoleon</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/Marie_Louise,_Duchess_of_Parma</object>
+               <subjectLabel score="0.16154591">Napoleon</subjectLabel>
+               <objectLabel score="0.00000000">Marie Louise, Duchess of Parma</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.25911510" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Napoleon</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/spouse</predicate>
+               <object>http://dbpedia.org/resource/Marie_Louise,_Duchess_of_Parma</object>
+               <subjectLabel score="0.14778775">Napoleon</subjectLabel>
+               <objectLabel score="0.00000000">Marie Louise, Duchess of Parma</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="4-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Marie_Louise,_Duchess_of_Parma</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/deathPlace</predicate>
+               <object>http://dbpedia.org/resource/Italy</object>
+               <subjectLabel score="0.00000000">Marie Louise, Duchess of Parma</subjectLabel>
+               <objectLabel score="0.00000000">Italy</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="5" runID="run8" score="0.21119847" plugType="E">
+         <cluster cluster_id="5-0" score="0.26461837" sim="0.9700" norm="0.9500">
+            <quintuple dataset="DBpedia" score="0.25911510" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Marie_Louise,_Duchess_of_Parma</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/spouse</predicate>
+               <object>http://dbpedia.org/resource/Napoleon</object>
+               <subjectLabel score="0.00000000">Marie Louise, Duchess of Parma</subjectLabel>
+               <objectLabel score="0.14778775">Napoleon</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.26461837" isFlipped="true" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Marie_Louise,_Duchess_of_Parma</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/Napoleon</object>
+               <subjectLabel score="0.00000000">Marie Louise, Duchess of Parma</subjectLabel>
+               <objectLabel score="0.16154591">Napoleon</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.26461837" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Napoleon</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/Marie_Louise,_Duchess_of_Parma</object>
+               <subjectLabel score="0.16154591">Napoleon</subjectLabel>
+               <objectLabel score="0.00000000">Marie Louise, Duchess of Parma</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.25911510" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Napoleon</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/spouse</predicate>
+               <object>http://dbpedia.org/resource/Marie_Louise,_Duchess_of_Parma</object>
+               <subjectLabel score="0.14778775">Napoleon</subjectLabel>
+               <objectLabel score="0.00000000">Marie Louise, Duchess of Parma</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="5-1" score="0.20000000" sim="0.9397" norm="0.9500">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Marie_Louise,_Duchess_of_Parma</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/deathPlace</predicate>
+               <object>http://dbpedia.org/resource/Parma</object>
+               <subjectLabel score="0.00000000">Marie Louise, Duchess of Parma</subjectLabel>
+               <objectLabel score="0.00000000">Parma</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Marie_Louise,_Duchess_of_Parma</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/diedIn</predicate>
+               <object>http://yago-knowledge.org/resource/Parma</object>
+               <subjectLabel score="0.00000000">Marie Louise, Duchess of Parma</subjectLabel>
+               <objectLabel score="0.00000000">Parma</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="6" runID="run8" score="0.19392702" plugType="E">
+         <cluster cluster_id="6-0" score="0.26461837" sim="0.9700" norm="0.9500">
+            <quintuple dataset="Yago" score="0.26461837" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Napoleon</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/Joséphine_de_Beauharnais</object>
+               <subjectLabel score="0.16154591">Napoleon</subjectLabel>
+               <objectLabel score="0.00000000">Joséphine de Beauharnais</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.26461837" isFlipped="true" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Joséphine_de_Beauharnais</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/Napoleon</object>
+               <subjectLabel score="0.00000000">Joséphine de Beauharnais</subjectLabel>
+               <objectLabel score="0.16154591">Napoleon</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.25911510" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Jos%C3%A9phine_de_Beauharnais</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/spouse</predicate>
+               <object>http://dbpedia.org/resource/Napoleon</object>
+               <subjectLabel score="0.00000000">Joséphine de Beauharnais</subjectLabel>
+               <objectLabel score="0.14778775">Napoleon</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.25911510" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Napoleon</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/spouse</predicate>
+               <object>http://dbpedia.org/resource/Jos%C3%A9phine_de_Beauharnais</object>
+               <subjectLabel score="0.14778775">Napoleon</subjectLabel>
+               <objectLabel score="0.00000000">Joséphine de Beauharnais</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="6-1" score="0.16000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.16000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://dbpedia.org/resource/Jos%C3%A9phine_de_Beauharnais</subject>
+               <predicate score="0.80000000">http://dbpedia.org/ontology/deathYear</predicate>
+               <object>1814</object>
+               <subjectLabel score="0.00000000">Joséphine de Beauharnais</subjectLabel>
+               <objectLabel score="0.00000000">1814</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="7" runID="run8" score="0.19392702" plugType="E">
+         <cluster cluster_id="7-0" score="0.26461837" sim="0.9700" norm="0.9500">
+            <quintuple dataset="DBpedia" score="0.25911510" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Marie_Louise,_Duchess_of_Parma</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/spouse</predicate>
+               <object>http://dbpedia.org/resource/Napoleon</object>
+               <subjectLabel score="0.00000000">Marie Louise, Duchess of Parma</subjectLabel>
+               <objectLabel score="0.14778775">Napoleon</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.26461837" isFlipped="true" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Marie_Louise,_Duchess_of_Parma</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/Napoleon</object>
+               <subjectLabel score="0.00000000">Marie Louise, Duchess of Parma</subjectLabel>
+               <objectLabel score="0.16154591">Napoleon</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.26461837" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Napoleon</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/Marie_Louise,_Duchess_of_Parma</object>
+               <subjectLabel score="0.16154591">Napoleon</subjectLabel>
+               <objectLabel score="0.00000000">Marie Louise, Duchess of Parma</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.25911510" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Napoleon</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/spouse</predicate>
+               <object>http://dbpedia.org/resource/Marie_Louise,_Duchess_of_Parma</object>
+               <subjectLabel score="0.14778775">Napoleon</subjectLabel>
+               <objectLabel score="0.00000000">Marie Louise, Duchess of Parma</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="7-1" score="0.16000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.16000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://dbpedia.org/resource/Marie_Louise,_Duchess_of_Parma</subject>
+               <predicate score="0.80000000">http://dbpedia.org/ontology/deathYear</predicate>
+               <object>1847</object>
+               <subjectLabel score="0.00000000">Marie Louise, Duchess of Parma</subjectLabel>
+               <objectLabel score="0.00000000">1847</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="8" runID="run8" score="0.12060048" plugType="L">
+         <cluster cluster_id="8-0" score="0.24524251" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.24524251" isFlipped="true" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Eugénie_de_Montijo</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/Napoleon_III</object>
+               <subjectLabel score="0.00000000">Eugénie de Montijo</subjectLabel>
+               <objectLabel score="0.11310626">Napoleon III</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.24524251" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Napoleon_III</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/Eugénie_de_Montijo</object>
+               <subjectLabel score="0.11310626">Napoleon III</subjectLabel>
+               <objectLabel score="0.00000000">Eugénie de Montijo</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="8-1" score="0.35031539" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.35031539" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Eug%C3%A9nie_de_Montijo</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/deathPlace</predicate>
+               <object>http://dbpedia.org/resource/Madrid</object>
+               <subjectLabel score="0.37578845">Eugénie de Montijo</subjectLabel>
+               <objectLabel score="0.00000000">Madrid</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="9" runID="run8" score="0.12060048" plugType="L">
+         <cluster cluster_id="9-0" score="0.24524251" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.24524251" isFlipped="true" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Eugénie_de_Montijo</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/Napoleon_III</object>
+               <subjectLabel score="0.00000000">Eugénie de Montijo</subjectLabel>
+               <objectLabel score="0.11310626">Napoleon III</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.24524251" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Napoleon_III</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/Eugénie_de_Montijo</object>
+               <subjectLabel score="0.11310626">Napoleon III</subjectLabel>
+               <objectLabel score="0.00000000">Eugénie de Montijo</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="9-1" score="0.35031539" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.35031539" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Eug%C3%A9nie_de_Montijo</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/deathPlace</predicate>
+               <object>http://dbpedia.org/resource/Spain</object>
+               <subjectLabel score="0.37578845">Eugénie de Montijo</subjectLabel>
+               <objectLabel score="0.00000000">Spain</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+   </results>
+</question>

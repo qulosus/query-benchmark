@@ -1,0 +1,509 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<question id="25" runID="run6">
+   <string>
+      <![CDATA[Who are the parents of the wife of Juan Carlos I of Spain?]]>
+   </string>
+   <query>
+      <![CDATA[
+  "Juan Carlos I of spain" "is married to"  ?x .
+  ?x                       "parent"         ?y .
+]]>
+   </query>
+   <settings labelSearchTopK="5" plugLabel="false" limited="false" validateTriple="false"/>
+   <stats1 nb_results="14" timeSec="0.5550" memoryMB="80.2654" totalQuins="56" avgQuin_Cluster="2.0000" avgQuin_Bucket="4.0000" nb_plugTR="0"/>
+   <stats2>
+      <ds id="LinkedMDB">
+         <nreq>0</nreq>
+         <nreqs>0</nreqs>
+         <nrecd>0</nrecd>
+      </ds>
+      <ds id="DBpedia">
+         <nreq>12</nreq>
+         <nreqs>4</nreqs>
+         <nrecd>7</nrecd>
+      </ds>
+      <ds id="Yago">
+         <nreq>14</nreq>
+         <nreqs>8</nreqs>
+         <nrecd>17</nrecd>
+      </ds>
+   </stats2>
+   <results>
+      <bucket bucket_id="0" runID="run6" score="0.25262668" plugType="E">
+         <cluster cluster_id="0-0" score="0.35294889" sim="0.9700" norm="0.9500">
+            <quintuple dataset="DBpedia" score="0.28868064" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Juan_Carlos_I_of_Spain</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/spouse</predicate>
+               <object>http://dbpedia.org/resource/Queen_Sof%C3%ADa_of_Spain</object>
+               <subjectLabel score="0.22170158">Juan Carlos I of Spain</subjectLabel>
+               <objectLabel score="0.00000000">Queen Sofía of Spain</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.28868064" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Queen_Sof%C3%ADa_of_Spain</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/spouse</predicate>
+               <object>http://dbpedia.org/resource/Juan_Carlos_I_of_Spain</object>
+               <subjectLabel score="0.00000000">Queen Sofía of Spain</subjectLabel>
+               <objectLabel score="0.22170158">Juan Carlos I of Spain</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.35294889" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Juan_Carlos_I_of_Spain</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/Queen_Sofía_of_Spain</object>
+               <subjectLabel score="0.38237221">Juan Carlos I of Spain</subjectLabel>
+               <objectLabel score="0.00000000">Queen Sofía of Spain</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.35294889" isFlipped="true" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Queen_Sofía_of_Spain</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/Juan_Carlos_I_of_Spain</object>
+               <subjectLabel score="0.00000000">Queen Sofía of Spain</subjectLabel>
+               <objectLabel score="0.38237221">Juan Carlos I of Spain</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="0-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Felipe,_Prince_of_Asturias</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/parent</predicate>
+               <object>http://dbpedia.org/resource/Queen_Sof%C3%ADa_of_Spain</object>
+               <subjectLabel score="0.00000000">Felipe, Prince of Asturias</subjectLabel>
+               <objectLabel score="0.00000000">Queen Sofía of Spain</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="1" runID="run6" score="0.24970766" plugType="E">
+         <cluster cluster_id="1-0" score="0.35294889" sim="0.9700" norm="0.9500">
+            <quintuple dataset="DBpedia" score="0.28868064" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Juan_Carlos_I_of_Spain</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/spouse</predicate>
+               <object>http://dbpedia.org/resource/Queen_Sof%C3%ADa_of_Spain</object>
+               <subjectLabel score="0.22170158">Juan Carlos I of Spain</subjectLabel>
+               <objectLabel score="0.00000000">Queen Sofía of Spain</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.28868064" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Queen_Sof%C3%ADa_of_Spain</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/spouse</predicate>
+               <object>http://dbpedia.org/resource/Juan_Carlos_I_of_Spain</object>
+               <subjectLabel score="0.00000000">Queen Sofía of Spain</subjectLabel>
+               <objectLabel score="0.22170158">Juan Carlos I of Spain</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.35294889" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Juan_Carlos_I_of_Spain</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/Queen_Sofía_of_Spain</object>
+               <subjectLabel score="0.38237221">Juan Carlos I of Spain</subjectLabel>
+               <objectLabel score="0.00000000">Queen Sofía of Spain</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.35294889" isFlipped="true" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Queen_Sofía_of_Spain</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/Juan_Carlos_I_of_Spain</object>
+               <subjectLabel score="0.00000000">Queen Sofía of Spain</subjectLabel>
+               <objectLabel score="0.38237221">Juan Carlos I of Spain</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="1-1" score="0.20000000" sim="0.9166" norm="0.9500">
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Frederica_of_Hanover</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasChild</predicate>
+               <object>http://yago-knowledge.org/resource/Queen_Sofía_of_Spain</object>
+               <subjectLabel score="0.00000000">Frederica of Hanover</subjectLabel>
+               <objectLabel score="0.00000000">Queen Sofía of Spain</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Queen_Sof%C3%ADa_of_Spain</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/parent</predicate>
+               <object>http://dbpedia.org/resource/Frederica_of_Hanover</object>
+               <subjectLabel score="0.00000000">Queen Sofía of Spain</subjectLabel>
+               <objectLabel score="0.00000000">Frederica of Hanover</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="2" runID="run6" score="0.24970766" plugType="E">
+         <cluster cluster_id="2-0" score="0.35294889" sim="0.9700" norm="0.9500">
+            <quintuple dataset="DBpedia" score="0.28868064" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Juan_Carlos_I_of_Spain</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/spouse</predicate>
+               <object>http://dbpedia.org/resource/Queen_Sof%C3%ADa_of_Spain</object>
+               <subjectLabel score="0.22170158">Juan Carlos I of Spain</subjectLabel>
+               <objectLabel score="0.00000000">Queen Sofía of Spain</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.28868064" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Queen_Sof%C3%ADa_of_Spain</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/spouse</predicate>
+               <object>http://dbpedia.org/resource/Juan_Carlos_I_of_Spain</object>
+               <subjectLabel score="0.00000000">Queen Sofía of Spain</subjectLabel>
+               <objectLabel score="0.22170158">Juan Carlos I of Spain</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.35294889" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Juan_Carlos_I_of_Spain</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/Queen_Sofía_of_Spain</object>
+               <subjectLabel score="0.38237221">Juan Carlos I of Spain</subjectLabel>
+               <objectLabel score="0.00000000">Queen Sofía of Spain</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.35294889" isFlipped="true" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Queen_Sofía_of_Spain</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/Juan_Carlos_I_of_Spain</object>
+               <subjectLabel score="0.00000000">Queen Sofía of Spain</subjectLabel>
+               <objectLabel score="0.38237221">Juan Carlos I of Spain</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="2-1" score="0.20000000" sim="0.9166" norm="0.9500">
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Paul_of_Greece</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasChild</predicate>
+               <object>http://yago-knowledge.org/resource/Queen_Sofía_of_Spain</object>
+               <subjectLabel score="0.00000000">Paul of Greece</subjectLabel>
+               <objectLabel score="0.00000000">Queen Sofía of Spain</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Queen_Sof%C3%ADa_of_Spain</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/parent</predicate>
+               <object>http://dbpedia.org/resource/Paul_of_Greece</object>
+               <subjectLabel score="0.00000000">Queen Sofía of Spain</subjectLabel>
+               <objectLabel score="0.00000000">Paul of Greece</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="3" runID="run6" score="0.24970766" plugType="E">
+         <cluster cluster_id="3-0" score="0.35294889" sim="0.9700" norm="0.9500">
+            <quintuple dataset="DBpedia" score="0.28868064" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Juan_Carlos_I_of_Spain</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/spouse</predicate>
+               <object>http://dbpedia.org/resource/Queen_Sof%C3%ADa_of_Spain</object>
+               <subjectLabel score="0.22170158">Juan Carlos I of Spain</subjectLabel>
+               <objectLabel score="0.00000000">Queen Sofía of Spain</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.28868064" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Queen_Sof%C3%ADa_of_Spain</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/spouse</predicate>
+               <object>http://dbpedia.org/resource/Juan_Carlos_I_of_Spain</object>
+               <subjectLabel score="0.00000000">Queen Sofía of Spain</subjectLabel>
+               <objectLabel score="0.22170158">Juan Carlos I of Spain</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.35294889" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Juan_Carlos_I_of_Spain</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/Queen_Sofía_of_Spain</object>
+               <subjectLabel score="0.38237221">Juan Carlos I of Spain</subjectLabel>
+               <objectLabel score="0.00000000">Queen Sofía of Spain</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.35294889" isFlipped="true" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Queen_Sofía_of_Spain</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/Juan_Carlos_I_of_Spain</object>
+               <subjectLabel score="0.00000000">Queen Sofía of Spain</subjectLabel>
+               <objectLabel score="0.38237221">Juan Carlos I of Spain</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="3-1" score="0.20000000" sim="0.9166" norm="0.9500">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Infanta_Cristina,_Duchess_of_Palma_de_Mallorca</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/parent</predicate>
+               <object>http://dbpedia.org/resource/Queen_Sof%C3%ADa_of_Spain</object>
+               <subjectLabel score="0.00000000">Infanta Cristina, Duchess of Palma de Mallorca</subjectLabel>
+               <objectLabel score="0.00000000">Queen Sofía of Spain</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Queen_Sofía_of_Spain</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasChild</predicate>
+               <object>http://yago-knowledge.org/resource/Infanta_Cristina,_Duchess_of_Palma_de_Mallorca</object>
+               <subjectLabel score="0.00000000">Queen Sofía of Spain</subjectLabel>
+               <objectLabel score="0.00000000">Infanta Cristina, Duchess of Palma de Mallorca</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="4" runID="run6" score="0.24970766" plugType="E">
+         <cluster cluster_id="4-0" score="0.35294889" sim="0.9700" norm="0.9500">
+            <quintuple dataset="DBpedia" score="0.28868064" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Juan_Carlos_I_of_Spain</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/spouse</predicate>
+               <object>http://dbpedia.org/resource/Queen_Sof%C3%ADa_of_Spain</object>
+               <subjectLabel score="0.22170158">Juan Carlos I of Spain</subjectLabel>
+               <objectLabel score="0.00000000">Queen Sofía of Spain</objectLabel>
+            </quintuple>
+            <quintuple dataset="DBpedia" score="0.28868064" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Queen_Sof%C3%ADa_of_Spain</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/spouse</predicate>
+               <object>http://dbpedia.org/resource/Juan_Carlos_I_of_Spain</object>
+               <subjectLabel score="0.00000000">Queen Sofía of Spain</subjectLabel>
+               <objectLabel score="0.22170158">Juan Carlos I of Spain</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.35294889" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Juan_Carlos_I_of_Spain</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/Queen_Sofía_of_Spain</object>
+               <subjectLabel score="0.38237221">Juan Carlos I of Spain</subjectLabel>
+               <objectLabel score="0.00000000">Queen Sofía of Spain</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.35294889" isFlipped="true" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Queen_Sofía_of_Spain</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/Juan_Carlos_I_of_Spain</object>
+               <subjectLabel score="0.00000000">Queen Sofía of Spain</subjectLabel>
+               <objectLabel score="0.38237221">Juan Carlos I of Spain</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="4-1" score="0.20000000" sim="0.9166" norm="0.9500">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Infanta_Elena,_Duchess_of_Lugo</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/parent</predicate>
+               <object>http://dbpedia.org/resource/Queen_Sof%C3%ADa_of_Spain</object>
+               <subjectLabel score="0.00000000">Infanta Elena, Duchess of Lugo</subjectLabel>
+               <objectLabel score="0.00000000">Queen Sofía of Spain</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Queen_Sofía_of_Spain</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasChild</predicate>
+               <object>http://yago-knowledge.org/resource/Infanta_Elena,_Duchess_of_Lugo</object>
+               <subjectLabel score="0.00000000">Queen Sofía of Spain</subjectLabel>
+               <objectLabel score="0.00000000">Infanta Elena, Duchess of Lugo</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="5" runID="run6" score="0.20708745" plugType="E">
+         <cluster cluster_id="5-0" score="0.26019431" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.26019431" isFlipped="true" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Maria_Luisa_of_Parma</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/Charles_IV_of_Spain</object>
+               <subjectLabel score="0.00000000">Maria Luisa of Parma</subjectLabel>
+               <objectLabel score="0.15048577">Charles IV of Spain</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.26019431" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Charles_IV_of_Spain</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/Maria_Luisa_of_Parma</object>
+               <subjectLabel score="0.15048577">Charles IV of Spain</subjectLabel>
+               <objectLabel score="0.00000000">Maria Luisa of Parma</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="5-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Maria_Luisa_of_Parma</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasChild</predicate>
+               <object>http://yago-knowledge.org/resource/Ferdinand_VII_of_Spain</object>
+               <subjectLabel score="0.00000000">Maria Luisa of Parma</subjectLabel>
+               <objectLabel score="0.00000000">Ferdinand VII of Spain</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="6" runID="run6" score="0.20708745" plugType="E">
+         <cluster cluster_id="6-0" score="0.26019431" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.26019431" isFlipped="true" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Maria_Luisa_of_Parma</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/Charles_IV_of_Spain</object>
+               <subjectLabel score="0.00000000">Maria Luisa of Parma</subjectLabel>
+               <objectLabel score="0.15048577">Charles IV of Spain</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.26019431" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Charles_IV_of_Spain</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/Maria_Luisa_of_Parma</object>
+               <subjectLabel score="0.15048577">Charles IV of Spain</subjectLabel>
+               <objectLabel score="0.00000000">Maria Luisa of Parma</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="6-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Maria_Luisa_of_Parma</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasChild</predicate>
+               <object>http://yago-knowledge.org/resource/Infante_Francisco_de_Paula_of_Spain</object>
+               <subjectLabel score="0.00000000">Maria Luisa of Parma</subjectLabel>
+               <objectLabel score="0.00000000">Infante Francisco de Paula of Spain</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="7" runID="run6" score="0.20708745" plugType="E">
+         <cluster cluster_id="7-0" score="0.26019431" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.26019431" isFlipped="true" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Maria_Luisa_of_Parma</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/Charles_IV_of_Spain</object>
+               <subjectLabel score="0.00000000">Maria Luisa of Parma</subjectLabel>
+               <objectLabel score="0.15048577">Charles IV of Spain</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.26019431" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Charles_IV_of_Spain</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/Maria_Luisa_of_Parma</object>
+               <subjectLabel score="0.15048577">Charles IV of Spain</subjectLabel>
+               <objectLabel score="0.00000000">Maria Luisa of Parma</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="7-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Maria_Luisa_of_Parma</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasChild</predicate>
+               <object>http://yago-knowledge.org/resource/Maria_Luisa_of_Spain,_Duchess_of_Lucca</object>
+               <subjectLabel score="0.00000000">Maria Luisa of Parma</subjectLabel>
+               <objectLabel score="0.00000000">Maria Luisa of Spain, Duchess of Lucca</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="8" runID="run6" score="0.20708745" plugType="E">
+         <cluster cluster_id="8-0" score="0.26019431" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.26019431" isFlipped="true" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Maria_Luisa_of_Parma</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/Charles_IV_of_Spain</object>
+               <subjectLabel score="0.00000000">Maria Luisa of Parma</subjectLabel>
+               <objectLabel score="0.15048577">Charles IV of Spain</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.26019431" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Charles_IV_of_Spain</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/Maria_Luisa_of_Parma</object>
+               <subjectLabel score="0.15048577">Charles IV of Spain</subjectLabel>
+               <objectLabel score="0.00000000">Maria Luisa of Parma</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="8-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Maria_Luisa_of_Parma</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasChild</predicate>
+               <object>http://yago-knowledge.org/resource/Carlota_Joaquina_of_Spain</object>
+               <subjectLabel score="0.00000000">Maria Luisa of Parma</subjectLabel>
+               <objectLabel score="0.00000000">Carlota Joaquina of Spain</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="9" runID="run6" score="0.20708745" plugType="E">
+         <cluster cluster_id="9-0" score="0.26019431" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.26019431" isFlipped="true" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Maria_Luisa_of_Parma</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/Charles_IV_of_Spain</object>
+               <subjectLabel score="0.00000000">Maria Luisa of Parma</subjectLabel>
+               <objectLabel score="0.15048577">Charles IV of Spain</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.26019431" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Charles_IV_of_Spain</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/Maria_Luisa_of_Parma</object>
+               <subjectLabel score="0.15048577">Charles IV of Spain</subjectLabel>
+               <objectLabel score="0.00000000">Maria Luisa of Parma</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="9-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Maria_Luisa_of_Parma</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasChild</predicate>
+               <object>http://yago-knowledge.org/resource/Infante_Carlos,_Count_of_Molina</object>
+               <subjectLabel score="0.00000000">Maria Luisa of Parma</subjectLabel>
+               <objectLabel score="0.00000000">Infante Carlos, Count of Molina</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="10" runID="run6" score="0.20708745" plugType="E">
+         <cluster cluster_id="10-0" score="0.26019431" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.26019431" isFlipped="true" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Maria_Luisa_of_Parma</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/Charles_IV_of_Spain</object>
+               <subjectLabel score="0.00000000">Maria Luisa of Parma</subjectLabel>
+               <objectLabel score="0.15048577">Charles IV of Spain</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.26019431" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Charles_IV_of_Spain</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/Maria_Luisa_of_Parma</object>
+               <subjectLabel score="0.15048577">Charles IV of Spain</subjectLabel>
+               <objectLabel score="0.00000000">Maria Luisa of Parma</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="10-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Maria_Luisa_of_Parma</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasChild</predicate>
+               <object>http://yago-knowledge.org/resource/María_Isabella_of_Spain</object>
+               <subjectLabel score="0.00000000">Maria Luisa of Parma</subjectLabel>
+               <objectLabel score="0.00000000">María Isabella of Spain</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="11" runID="run6" score="0.20708745" plugType="E">
+         <cluster cluster_id="11-0" score="0.26019431" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.26019431" isFlipped="true" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Maria_Luisa_of_Parma</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/Charles_IV_of_Spain</object>
+               <subjectLabel score="0.00000000">Maria Luisa of Parma</subjectLabel>
+               <objectLabel score="0.15048577">Charles IV of Spain</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.26019431" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Charles_IV_of_Spain</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/Maria_Luisa_of_Parma</object>
+               <subjectLabel score="0.15048577">Charles IV of Spain</subjectLabel>
+               <objectLabel score="0.00000000">Maria Luisa of Parma</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="11-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Philip,_Duke_of_Parma</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasChild</predicate>
+               <object>http://yago-knowledge.org/resource/Maria_Luisa_of_Parma</object>
+               <subjectLabel score="0.00000000">Philip, Duke of Parma</subjectLabel>
+               <objectLabel score="0.00000000">Maria Luisa of Parma</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="12" runID="run6" score="0.20708745" plugType="E">
+         <cluster cluster_id="12-0" score="0.26019431" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.26019431" isFlipped="true" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Maria_Luisa_of_Parma</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/Charles_IV_of_Spain</object>
+               <subjectLabel score="0.00000000">Maria Luisa of Parma</subjectLabel>
+               <objectLabel score="0.15048577">Charles IV of Spain</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.26019431" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Charles_IV_of_Spain</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/Maria_Luisa_of_Parma</object>
+               <subjectLabel score="0.15048577">Charles IV of Spain</subjectLabel>
+               <objectLabel score="0.00000000">Maria Luisa of Parma</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="12-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Luis_Fortuño</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasChild</predicate>
+               <object>http://yago-knowledge.org/resource/Maria_Luisa_of_Parma</object>
+               <subjectLabel score="0.00000000">Luis Fortuño</subjectLabel>
+               <objectLabel score="0.00000000">Maria Luisa of Parma</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="13" runID="run6" score="0.20708745" plugType="E">
+         <cluster cluster_id="13-0" score="0.26019431" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.26019431" isFlipped="true" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Maria_Luisa_of_Parma</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/Charles_IV_of_Spain</object>
+               <subjectLabel score="0.00000000">Maria Luisa of Parma</subjectLabel>
+               <objectLabel score="0.15048577">Charles IV of Spain</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.26019431" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Charles_IV_of_Spain</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/Maria_Luisa_of_Parma</object>
+               <subjectLabel score="0.15048577">Charles IV of Spain</subjectLabel>
+               <objectLabel score="0.00000000">Maria Luisa of Parma</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="13-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="true" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Louise_Élisabeth_of_France</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/hasChild</predicate>
+               <object>http://yago-knowledge.org/resource/Maria_Luisa_of_Parma</object>
+               <subjectLabel score="0.00000000">Louise Élisabeth of France</subjectLabel>
+               <objectLabel score="0.00000000">Maria Luisa of Parma</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+   </results>
+</question>

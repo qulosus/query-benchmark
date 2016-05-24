@@ -1,0 +1,181 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<question id="7" runID="run1">
+   <string>
+      <![CDATA[From which institution did the spouse of Barack Obama graduate?]]>
+   </string>
+   <query>
+      <![CDATA[
+  "Barack Obama"  "is married to"   ?spouse .
+  ?spouse         "graduated from"  ?univ . 
+]]>
+   </query>
+   <settings labelSearchTopK="30" plugLabel="false" limited="false" validateTriple="false"/>
+   <stats1 nb_results="6" timeSec="1.3660" memoryMB="71.3268" totalQuins="16" avgQuin_Cluster="1.3333" avgQuin_Bucket="2.6667" nb_plugTR="0"/>
+   <stats2>
+      <ds id="LinkedMDB">
+         <nreq>0</nreq>
+         <nreqs>0</nreqs>
+         <nrecd>0</nrecd>
+      </ds>
+      <ds id="DBpedia">
+         <nreq>62</nreq>
+         <nreqs>2</nreqs>
+         <nrecd>4</nrecd>
+      </ds>
+      <ds id="Yago">
+         <nreq>68</nreq>
+         <nreqs>12</nreqs>
+         <nrecd>12</nrecd>
+      </ds>
+   </stats2>
+   <results>
+      <bucket bucket_id="0" runID="run1" score="0.19517919" plugType="E">
+         <cluster cluster_id="0-0" score="0.23373152" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.23373152" isFlipped="true" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Michelle_Obama</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/Barack_Obama</object>
+               <subjectLabel score="0.00000000">Michelle Obama</subjectLabel>
+               <objectLabel score="0.08432878">Barack Obama</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.23373152" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Barack_Obama</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/Michelle_Obama</object>
+               <subjectLabel score="0.08432878">Barack Obama</subjectLabel>
+               <objectLabel score="0.00000000">Michelle Obama</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="0-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Michelle_Obama</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/graduatedFrom</predicate>
+               <object>http://yago-knowledge.org/resource/Princeton_University</object>
+               <subjectLabel score="0.00000000">Michelle Obama</subjectLabel>
+               <objectLabel score="0.00000000">Princeton University</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="1" runID="run1" score="0.18902650" plugType="E">
+         <cluster cluster_id="1-0" score="0.22005886" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.22005886" isFlipped="true" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Michelle_Obama</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/Presidency_of_Barack_Obama</object>
+               <subjectLabel score="0.00000000">Michelle Obama</subjectLabel>
+               <objectLabel score="0.05014714">Presidency of Barack Obama</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.22005886" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Presidency_of_Barack_Obama</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/Michelle_Obama</object>
+               <subjectLabel score="0.05014714">Presidency of Barack Obama</subjectLabel>
+               <objectLabel score="0.00000000">Michelle Obama</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="1-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Michelle_Obama</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/graduatedFrom</predicate>
+               <object>http://yago-knowledge.org/resource/Princeton_University</object>
+               <subjectLabel score="0.00000000">Michelle Obama</subjectLabel>
+               <objectLabel score="0.00000000">Princeton University</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="2" runID="run1" score="0.18807347" plugType="E">
+         <cluster cluster_id="2-0" score="0.21794103" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.21794103" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Barack_Obama,_Sr.</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/Ann_Dunham</object>
+               <subjectLabel score="0.04485257">Barack Obama, Sr.</subjectLabel>
+               <objectLabel score="0.00000000">Ann Dunham</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.21794103" isFlipped="true" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Ann_Dunham</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/Barack_Obama,_Sr.</object>
+               <subjectLabel score="0.00000000">Ann Dunham</subjectLabel>
+               <objectLabel score="0.04485257">Barack Obama, Sr.</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="2-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Ann_Dunham</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/graduatedFrom</predicate>
+               <object>http://yago-knowledge.org/resource/University_of_Hawaii</object>
+               <subjectLabel score="0.00000000">Ann Dunham</subjectLabel>
+               <objectLabel score="0.00000000">University of Hawaii</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="3" runID="run1" score="0.18456101" plugType="E">
+         <cluster cluster_id="3-0" score="0.21013556" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.21013556" isFlipped="true" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Michelle_Obama</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/Illinois_Senate_career_of_Barack_Obama</object>
+               <subjectLabel score="0.00000000">Michelle Obama</subjectLabel>
+               <objectLabel score="0.02533890">Illinois Senate career of Barack Obama</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.21013556" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Illinois_Senate_career_of_Barack_Obama</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isMarriedTo</predicate>
+               <object>http://yago-knowledge.org/resource/Michelle_Obama</object>
+               <subjectLabel score="0.02533890">Illinois Senate career of Barack Obama</subjectLabel>
+               <objectLabel score="0.00000000">Michelle Obama</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="3-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Michelle_Obama</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/graduatedFrom</predicate>
+               <object>http://yago-knowledge.org/resource/Princeton_University</object>
+               <subjectLabel score="0.00000000">Michelle Obama</subjectLabel>
+               <objectLabel score="0.00000000">Princeton University</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="4" runID="run1" score="0.18444680" plugType="E">
+         <cluster cluster_id="4-0" score="0.20988175" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20988175" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Barack_Obama,_Sr.</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/spouse</predicate>
+               <object>http://dbpedia.org/resource/Family_of_Barack_Obama</object>
+               <subjectLabel score="0.00000000">Barack Obama, Sr.</subjectLabel>
+               <objectLabel score="0.02470437">Family of Barack Obama</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="4-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Barack_Obama,_Sr.</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/almaMater</predicate>
+               <object>http://dbpedia.org/resource/Harvard_University</object>
+               <subjectLabel score="0.00000000">Barack Obama, Sr.</subjectLabel>
+               <objectLabel score="0.00000000">Harvard University</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="5" runID="run1" score="0.18444680" plugType="E">
+         <cluster cluster_id="5-0" score="0.20988175" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20988175" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Barack_Obama,_Sr.</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/spouse</predicate>
+               <object>http://dbpedia.org/resource/Family_of_Barack_Obama</object>
+               <subjectLabel score="0.00000000">Barack Obama, Sr.</subjectLabel>
+               <objectLabel score="0.02470437">Family of Barack Obama</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="5-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Barack_Obama,_Sr.</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/almaMater</predicate>
+               <object>http://dbpedia.org/resource/University_of_Hawaii</object>
+               <subjectLabel score="0.00000000">Barack Obama, Sr.</subjectLabel>
+               <objectLabel score="0.00000000">University of Hawaii</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+   </results>
+</question>

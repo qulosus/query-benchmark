@@ -1,0 +1,226 @@
+<html> 
+  <head>
+    <meta charset='UTF-8'>
+<style>TABLE.outline {
+        BORDER-RIGHT: #c0c0c0 4px double; BORDER-TOP: #c0c0c0 4px double; BORDER-LEFT: #c0c0c0 4px double;
+        FONT-FAMILY: "MS Sans Serif"; BORDER-BOTTOM: #c0c0c0 4px double; align: center
+}
+A {
+        FONT-SIZE: 14px; COLOR: #333399; FONT-FAMILY: "Consolas"; TEXT-DECORATION: none
+}
+A:hover {
+        FONT-SIZE: 14px; COLOR: #778899; FONT-STYLE: normal; FONT-FAMILY: "Consolas"; TEXT-DECORATION: underline overline
+}
+.blockTitle {
+        PADDING-RIGHT: 3px; BORDER-TOP: #6495ed 3px double; PADDING-LEFT: 3px; FONT-WEIGHT: bold;
+        FONT-SIZE: 14px; PADDING-BOTTOM: 3px; COLOR: #daa520; PADDING-TOP: 3px; BORDER-BOTTOM: #6495ed 3px double;
+        BACKGROUND-COLOR: #f0f8ff
+}
+.blockTitle1 {
+        PADDING-RIGHT: 3px; BORDER-TOP: #6495ed 3px double; PADDING-LEFT: 3px; FONT-WEIGHT: bold; FONT-SIZE: 14px;
+        PADDING-BOTTOM: 3px; COLOR: #daa520; PADDING-TOP: 3px; BORDER-BOTTOM: #6495ed 3px double;
+        BACKGROUND-COLOR: #f0f8ff
+}
+TD {
+        FONT-SIZE: 14px; COLOR: #333399; FONT-FAMILY: "Consolas"; TEXT-DECORATION: none
+}
+.tdin {
+        PADDING-RIGHT: 2px; BORDER-TOP: #6495ed 1px double; PADDING-LEFT: 8px; PADDING-BOTTOM: 2px; PADDING-TOP: 2px;
+        BORDER-BOTTOM: #6495ed 1px double;BORDER-LEFT: #6495ed 1px double;BORDER-RIGHT: #6495ed 1px double;
+        FONT-FAMILY: "Consolas";
+}
+.thin {
+        PADDING-RIGHT: 2px; BORDER-TOP: #6495ed 1px double; PADDING-LEFT: 8px; FONT-WEIGHT: bold; FONT-SIZE: 12px;
+        PADDING-BOTTOM: 2px; COLOR: #E45C3A; PADDING-TOP: 2px; BORDER-BOTTOM: #6495ed 1px double;
+        BACKGROUND-COLOR: #DEF7FE; BORDER-LEFT: #6495ed 1px double; BORDER-RIGHT: #6495ed 1px double ;
+        FONT-FAMILY: "Verdana";
+}
+.thin2 {
+        PADDING-RIGHT: 2px; BORDER-TOP: #6495ed 1px double; PADDING-LEFT: 8px; FONT-WEIGHT: bold; FONT-SIZE: 12px;
+        PADDING-BOTTOM: 2px; COLOR: #405EE4; PADDING-TOP: 2px; BORDER-BOTTOM: #6495ed 1px double;
+        BACKGROUND-COLOR: #FFDFF8; BORDER-LEFT: #6495ed 1px double; BORDER-RIGHT: #6495ed 1px double ;
+        FONT-FAMILY: "Verdana";
+}
+TH {
+        FONT-SIZE: 14px; COLOR: #333399; FONT-FAMILY: "Verdana"; TEXT-DECORATION: none;align: left
+}
+INPUT.spt {
+        BORDER-RIGHT: #6495ed 1px double; BORDER-TOP: #6495ed 1px double;
+        BORDER-BOTTOM: #6495ed 1px double;BORDER-LEFT: #6495ed 1px double;
+        PADDING-LEFT: 1px; PADDING-BOTTOM: 1px; PADDING-TOP: 1px;PADDING-RIGHT: 1px;
+        FONT-FAMILY: "Tahoma";
+        WIDTH : 200px ; HEIGHT : 20px;
+}
+INPUT.spb {
+        PADDING-RIGHT: 1px; PADDING-LEFT: 1px;
+        PADDING-BOTTOM: 1px; PADDING-TOP: 1px;
+        BORDER-RIGHT: #6495ed 1px double; BORDER-LEFT: #6495ed 1px double;
+        BORDER-BOTTOM: #6495ed 1px double; BORDER-TOP: #6495ed 1px double;
+        FONT-FAMILY: "Tahoma"; BACKGROUND-COLOR : #A8FFA8;
+        WIDTH : 60px ; HEIGHT : 20px;
+}
+textarea {
+        PADDING-RIGHT: 2px; PADDING-LEFT: 2px;
+        PADDING-BOTTOM: 2px; PADDING-TOP: 2px;
+        BORDER-RIGHT: #6495ed 1px double; BORDER-LEFT: #6495ed 1px double;
+        BORDER-BOTTOM: #6495ed 1px double; BORDER-TOP: #6495ed 1px double;
+        FONT-FAMILY: "Tahoma"; BACKGROUND-COLOR : #FFFFFF;
+        WIDTH : 600px ; HEIGHT : 400px;
+}
+</style>  </head>
+  <body>
+<h3>QULOSUS Query Benchmark </h3> <table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='5%'>ID</td><td class='thin' width='45%'>psuedo-SPARQL Query</td><td class='thin' width='45%'>Natural Language Question</td><td class='thin' width='5%'>Results</td></tr>
+<tr>
+<td class='tdin'>q1</td><td class='tdin'><pre>
+  "Brazil"  "population"  ?population .
+</pre></td><td class='tdin'>How many people live in Brazil?</td><td class='tdin'><a href='q1-results.html'>results</a></td></tr>
+<tr>
+<td class='tdin'>q2</td><td class='tdin'><pre>
+  "London"  "mayor"  ?mayor. 
+</pre></td><td class='tdin'>Who is the mayor of London?</td><td class='tdin'><a href='q2-results.html'>results</a></td></tr>
+<tr>
+<td class='tdin'>q3</td><td class='tdin'><pre>
+  "China"   "has capital"  ?capital.
+  ?capital  "population"   ?population. 
+</pre></td><td class='tdin'>How many people live in the capital of China?</td><td class='tdin'><a href='q3-results.html'>results</a></td></tr>
+<tr>
+<td class='tdin'>q4</td><td class='tdin'><pre>
+  "Vienna"  "mayor"    ?mayor.
+  ?mayor    "born in"  ?x.
+</pre></td><td class='tdin'>Where was the mayor of Vienna born?</td><td class='tdin'><a href='q4-results.html'>results</a></td></tr>
+<tr>
+<td class='tdin'>q5</td><td class='tdin'><pre>
+  ?who  "successor"  "John F. Kennedy" .
+</pre></td><td class='tdin'>Who is the successor of John F. Kennedy?</td><td class='tdin'><a href='q5-results.html'>results</a></td></tr>
+<tr>
+<td class='tdin'>q6</td><td class='tdin'><pre>
+  ?who  "win"             "Fields Medal Math".
+  ?who  "nationality"     "Russia".
+  ?who  "graduated from"  ?univ.
+  ?who  "advisor"         ?advisor.
+</pre></td><td class='tdin'>Give me all Russian mathematicians, with their graduation institutions and academic advisors, who won Fields Medal.</td><td class='tdin'><a href='q6-results.html'>results</a></td></tr>
+<tr>
+<td class='tdin'>q7</td><td class='tdin'><pre>
+  "Barack Obama"  "is married to"   ?spouse .
+  ?spouse         "graduated from"  ?univ . 
+</pre></td><td class='tdin'>From which institution did the spouse of Barack Obama graduate?</td><td class='tdin'><a href='q7-results.html'>results</a></td></tr>
+<tr>
+<td class='tdin'>q8</td><td class='tdin'><pre>
+  "Himalaya"  "country"  ?country.
+</pre></td><td class='tdin'>To which countries does the Himalayan mountain system extend?</td><td class='tdin'><a href='q8-results.html'>results</a></td></tr>
+<tr>
+<td class='tdin'>q9</td><td class='tdin'><pre>
+  ?who  "developed"  "Skype" .
+</pre></td><td class='tdin'>Who developed Skype?</td><td class='tdin'><a href='q9-results.html'>results</a></td></tr>
+<tr>
+<td class='tdin'>q10</td><td class='tdin'><pre>
+  ?member  "member"  "Prodigy".
+  ?member  "born in"  ?city .
+</pre></td><td class='tdin'>Give me all members of Prodigy, where were they born?.</td><td class='tdin'><a href='q10-results.html'>results</a></td></tr>
+<tr>
+<td class='tdin'>q11</td><td class='tdin'><pre>
+  "Amsterdam University"  "number of students"  ?nbStud .
+</pre></td><td class='tdin'>How many students does Amsterdam University have?</td><td class='tdin'><a href='q11-results.html'>results</a></td></tr>
+<tr>
+<td class='tdin'>q12</td><td class='tdin'><pre>
+  "Jodie Foster"  "acted in"  ?film .
+  ?director       "directed"  ?film .
+</pre></td><td class='tdin'>Give me the directors of movies acted by Jodie Foster.</td><td class='tdin'><a href='q12-results.html'>results</a></td></tr>
+<tr>
+<td class='tdin'>q13</td><td class='tdin'><pre>
+  ?actor  "acted in"       "Lethal Weapon" .
+  ?actor  "is married to"  ?spouse .
+</pre></td><td class='tdin'>Give me the spouses of actors starring in Lethal Weapon?</td><td class='tdin'><a href='q13-results.html'>results</a></td></tr>
+<tr>
+<td class='tdin'>q14</td><td class='tdin'><pre>
+  ?author  "wrote"    "the hobbit".
+  ?author  "died in"  ?x.
+</pre></td><td class='tdin'>Where did the author of The Hobbit die?</td><td class='tdin'><a href='q14-results.html'>results</a></td></tr>
+<tr>
+<td class='tdin'>q15</td><td class='tdin'><pre>
+  ?who  "born in"  "Berlin".
+  ?who  "died in"  "Paris".
+</pre></td><td class='tdin'>Give me all people that were born in Berlin and died in Paris.</td><td class='tdin'><a href='q15-results.html'>results</a></td></tr>
+<tr>
+<td class='tdin'>q16</td><td class='tdin'><pre>
+  "Danube"  "country"     ?country .
+  ?country  "capital"     ?capital .
+  ?capital  "population"  ?population .
+</pre></td><td class='tdin'>Give me the countries where the Danube flow through, with their capitals and capital population.</td><td class='tdin'><a href='q16-results.html'>results</a></td></tr>
+<tr>
+<td class='tdin'>q17</td><td class='tdin'><pre>
+  "Danube"  "city"        ?capital .
+  ?country  "capital"     ?capital .
+  ?capital  "population"  ?population .
+</pre></td><td class='tdin'>Which capitals does the Danube flow through? give me their countries and population.</td><td class='tdin'><a href='q17-results.html'>results</a></td></tr>
+<tr>
+<td class='tdin'>q18</td><td class='tdin'><pre>
+  "Nicolas Cage"   "acted in"   ?movie .
+  "John Travolta"  "acted in"   ?movie .
+</pre></td><td class='tdin'>Give me the movies acted by Nicolas Cage and John Travolta.</td><td class='tdin'><a href='q18-results.html'>results</a></td></tr>
+<tr>
+<td class='tdin'>q19</td><td class='tdin'><pre>
+  ?x "acted in"  "Dogma" .
+  ?x "acted in"  "Chasing Amy" .
+</pre></td><td class='tdin'>Give me the actors who acted in both Dogma and Chasing Amy movies.</td><td class='tdin'><a href='q19-results.html'>results</a></td></tr>
+<tr>
+<td class='tdin'>q20</td><td class='tdin'><pre>
+  "Woody Allen" "directed"  ?movie .
+  ?actor        "acted in"  ?movie .
+</pre></td><td class='tdin'>Give me the actors who acted in movies directed by Woody Allen.</td><td class='tdin'><a href='q20-results.html'>results</a></td></tr>
+<tr>
+<td class='tdin'>q21</td><td class='tdin'><pre>
+  ?actor  "acted in"  "Stargate film".
+  ?actor  "acted in"  ?movie .
+</pre></td><td class='tdin'>Give me the movies that acted by the actors of Stargate.</td><td class='tdin'><a href='q21-results.html'>results</a></td></tr>
+<tr>
+<td class='tdin'>q22</td><td class='tdin'><pre>
+  ?x  "win"          "Nobel Prize in Physics" .
+  ?x  "nationality"  "Germany" .
+</pre></td><td class='tdin'>Give me the German scientists who won Nobel prize in Physics.</td><td class='tdin'><a href='q22-results.html'>results</a></td></tr>
+<tr>
+<td class='tdin'>q23</td><td class='tdin'><pre>
+  "William Shatner"  "directed"  ?movie .
+  "William Shatner"  "acted in"  ?movie .
+  ?actor             "acted in"  ?movie .
+</pre></td><td class='tdin'>Give me all actors starring in movies directed by and starring William Shatner.</td><td class='tdin'><a href='q23-results.html'>results</a></td></tr>
+<tr>
+<td class='tdin'>q24</td><td class='tdin'><pre>
+  ?actor "acted in" "Troy film".
+  ?actor "born in"  ?city.
+</pre></td><td class='tdin'>Give me the birth place of actors starring Troy film.</td><td class='tdin'><a href='q24-results.html'>results</a></td></tr>
+<tr>
+<td class='tdin'>q25</td><td class='tdin'><pre>
+  "Juan Carlos I of spain" "is married to"  ?x .
+  ?x                       "parent"         ?y .
+</pre></td><td class='tdin'>Who are the parents of the wife of Juan Carlos I of Spain?</td><td class='tdin'><a href='q25-results.html'>results</a></td></tr>
+<tr>
+<td class='tdin'>q26</td><td class='tdin'><pre>
+  "Jack Kerouac"  "wrote"     ?x .
+  "Viking Press"  "published" ?x .
+</pre></td><td class='tdin'>Which works by Jack Kerouac were published by Viking Press?</td><td class='tdin'><a href='q26-results.html'>results</a></td></tr>
+<tr>
+<td class='tdin'>q27</td><td class='tdin'><pre>
+  "Mel Gibson" "acted in"  ?film .
+  ?director    "directed"  ?film .
+  ?producer    "produced"  ?film .
+</pre></td><td class='tdin'>Give me the directors and producers of movies acted by Mel Gibson.</td><td class='tdin'><a href='q27-results.html'>results</a></td></tr>
+<tr>
+<td class='tdin'>q28</td><td class='tdin'><pre>
+  ?x  "sing"    "Complete Control" .
+  ?y  "member"  ?x.
+</pre></td><td class='tdin'>Give me the members of the band that sing Complete Control?</td><td class='tdin'><a href='q28-results.html'>results</a></td></tr>
+<tr>
+<td class='tdin'>q29</td><td class='tdin'><pre>
+  "Napoleon"  "wife"     ?w.
+  ?w          "died in"  ?s.
+</pre></td><td class='tdin'>Where did Napoleon's wife die?</td><td class='tdin'><a href='q29-results.html'>results</a></td></tr>
+<tr>
+<td class='tdin'>q30</td><td class='tdin'><pre>
+  "Francis Ford Coppola"  "directed"  ?movie.
+</pre></td><td class='tdin'>Give me all movies directed by Francis Ford Coppola.</td><td class='tdin'><a href='q30-results.html'>results</a></td></tr>
+</table>
+ <br/><hr/><br/>  </body>
+</html>

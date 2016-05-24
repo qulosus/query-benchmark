@@ -1,0 +1,253 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<question id="10" runID="run2">
+   <string>
+      <![CDATA[Give me all members of Prodigy, where were they born?.]]>
+   </string>
+   <query>
+      <![CDATA[
+  ?member  "member"  "Prodigy".
+  ?member  "born in"  ?city .
+]]>
+   </query>
+   <settings labelSearchTopK="25" plugLabel="false" limited="false" validateTriple="false"/>
+   <stats1 nb_results="11" timeSec="2.2930" memoryMB="70.2863" totalQuins="22" avgQuin_Cluster="1.0000" avgQuin_Bucket="2.0000" nb_plugTR="0"/>
+   <stats2>
+      <ds id="LinkedMDB">
+         <nreq>0</nreq>
+         <nreqs>0</nreqs>
+         <nrecd>0</nrecd>
+      </ds>
+      <ds id="DBpedia">
+         <nreq>224</nreq>
+         <nreqs>13</nreqs>
+         <nrecd>15</nrecd>
+      </ds>
+      <ds id="Yago">
+         <nreq>0</nreq>
+         <nreqs>0</nreqs>
+         <nrecd>0</nrecd>
+      </ds>
+   </stats2>
+   <results>
+      <bucket bucket_id="0" runID="run2" score="0.18914238" plugType="E">
+         <cluster cluster_id="0-0" score="0.22031639" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.22031639" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/The_Prodigy</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/bandMember</predicate>
+               <object>http://dbpedia.org/resource/Keith_Flint</object>
+               <subjectLabel score="0.05079097">The Prodigy</subjectLabel>
+               <objectLabel score="0.00000000">Keith Flint</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="0-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Keith_Flint</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/birthPlace</predicate>
+               <object>http://dbpedia.org/resource/Redbridge,_London</object>
+               <subjectLabel score="0.00000000">Keith Flint</subjectLabel>
+               <objectLabel score="0.00000000">Redbridge, London</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="1" runID="run2" score="0.18914238" plugType="E">
+         <cluster cluster_id="1-0" score="0.22031639" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.22031639" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/The_Prodigy</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/bandMember</predicate>
+               <object>http://dbpedia.org/resource/Liam_Howlett</object>
+               <subjectLabel score="0.05079097">The Prodigy</subjectLabel>
+               <objectLabel score="0.00000000">Liam Howlett</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="1-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Liam_Howlett</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/birthPlace</predicate>
+               <object>http://dbpedia.org/resource/Braintree,_Essex</object>
+               <subjectLabel score="0.00000000">Liam Howlett</subjectLabel>
+               <objectLabel score="0.00000000">Braintree, Essex</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="2" runID="run2" score="0.18914238" plugType="E">
+         <cluster cluster_id="2-0" score="0.22031639" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.22031639" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/The_Prodigy</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/bandMember</predicate>
+               <object>http://dbpedia.org/resource/Maxim_Reality</object>
+               <subjectLabel score="0.05079097">The Prodigy</subjectLabel>
+               <objectLabel score="0.00000000">Maxim Reality</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="2-1" score="0.20000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.20000000" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/Maxim_Reality</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/birthPlace</predicate>
+               <object>http://dbpedia.org/resource/Peterborough</object>
+               <subjectLabel score="0.00000000">Maxim Reality</subjectLabel>
+               <objectLabel score="0.00000000">Peterborough</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="3" runID="run2" score="0.17114238" plugType="E">
+         <cluster cluster_id="3-0" score="0.22031639" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.22031639" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/The_Prodigy</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/bandMember</predicate>
+               <object>http://dbpedia.org/resource/Keith_Flint</object>
+               <subjectLabel score="0.05079097">The Prodigy</subjectLabel>
+               <objectLabel score="0.00000000">Keith Flint</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="3-1" score="0.16000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.16000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://dbpedia.org/resource/Keith_Flint</subject>
+               <predicate score="0.80000000">http://dbpedia.org/ontology/birthDate</predicate>
+               <object>1969-09-17</object>
+               <subjectLabel score="0.00000000">Keith Flint</subjectLabel>
+               <objectLabel score="0.00000000">1969-09-17</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="4" runID="run2" score="0.17114238" plugType="E">
+         <cluster cluster_id="4-0" score="0.22031639" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.22031639" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/The_Prodigy</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/bandMember</predicate>
+               <object>http://dbpedia.org/resource/Liam_Howlett</object>
+               <subjectLabel score="0.05079097">The Prodigy</subjectLabel>
+               <objectLabel score="0.00000000">Liam Howlett</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="4-1" score="0.16000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.16000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://dbpedia.org/resource/Liam_Howlett</subject>
+               <predicate score="0.80000000">http://dbpedia.org/ontology/birthDate</predicate>
+               <object>1971-08-21</object>
+               <subjectLabel score="0.00000000">Liam Howlett</subjectLabel>
+               <objectLabel score="0.00000000">1971-08-21</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="5" runID="run2" score="0.17114238" plugType="E">
+         <cluster cluster_id="5-0" score="0.22031639" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.22031639" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/The_Prodigy</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/bandMember</predicate>
+               <object>http://dbpedia.org/resource/Maxim_Reality</object>
+               <subjectLabel score="0.05079097">The Prodigy</subjectLabel>
+               <objectLabel score="0.00000000">Maxim Reality</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="5-1" score="0.16000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.16000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://dbpedia.org/resource/Maxim_Reality</subject>
+               <predicate score="0.80000000">http://dbpedia.org/ontology/birthDate</predicate>
+               <object>1967-03-21</object>
+               <subjectLabel score="0.00000000">Maxim Reality</subjectLabel>
+               <objectLabel score="0.00000000">1967-03-21</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="6" runID="run2" score="0.17114238" plugType="E">
+         <cluster cluster_id="6-0" score="0.22031639" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.22031639" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/The_Prodigy</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/formerBandMember</predicate>
+               <object>http://dbpedia.org/resource/Leeroy_Thornhill</object>
+               <subjectLabel score="0.05079097">The Prodigy</subjectLabel>
+               <objectLabel score="0.00000000">Leeroy Thornhill</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="6-1" score="0.16000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.16000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://dbpedia.org/resource/Leeroy_Thornhill</subject>
+               <predicate score="0.80000000">http://dbpedia.org/ontology/birthDate</predicate>
+               <object>1968-10-08</object>
+               <subjectLabel score="0.00000000">Leeroy Thornhill</subjectLabel>
+               <objectLabel score="0.00000000">1968-10-08</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="7" runID="run2" score="0.16214238" plugType="E">
+         <cluster cluster_id="7-0" score="0.22031639" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.22031639" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/The_Prodigy</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/bandMember</predicate>
+               <object>http://dbpedia.org/resource/Keith_Flint</object>
+               <subjectLabel score="0.05079097">The Prodigy</subjectLabel>
+               <objectLabel score="0.00000000">Keith Flint</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="7-1" score="0.14000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.14000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://dbpedia.org/resource/Keith_Flint</subject>
+               <predicate score="0.70000000">http://dbpedia.org/ontology/birthYear</predicate>
+               <object>1969</object>
+               <subjectLabel score="0.00000000">Keith Flint</subjectLabel>
+               <objectLabel score="0.00000000">1969</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="8" runID="run2" score="0.16214238" plugType="E">
+         <cluster cluster_id="8-0" score="0.22031639" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.22031639" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/The_Prodigy</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/bandMember</predicate>
+               <object>http://dbpedia.org/resource/Liam_Howlett</object>
+               <subjectLabel score="0.05079097">The Prodigy</subjectLabel>
+               <objectLabel score="0.00000000">Liam Howlett</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="8-1" score="0.14000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.14000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://dbpedia.org/resource/Liam_Howlett</subject>
+               <predicate score="0.70000000">http://dbpedia.org/ontology/birthYear</predicate>
+               <object>1971</object>
+               <subjectLabel score="0.00000000">Liam Howlett</subjectLabel>
+               <objectLabel score="0.00000000">1971</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="9" runID="run2" score="0.16214238" plugType="E">
+         <cluster cluster_id="9-0" score="0.22031639" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.22031639" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/The_Prodigy</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/bandMember</predicate>
+               <object>http://dbpedia.org/resource/Maxim_Reality</object>
+               <subjectLabel score="0.05079097">The Prodigy</subjectLabel>
+               <objectLabel score="0.00000000">Maxim Reality</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="9-1" score="0.14000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.14000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://dbpedia.org/resource/Maxim_Reality</subject>
+               <predicate score="0.70000000">http://dbpedia.org/ontology/birthYear</predicate>
+               <object>1967</object>
+               <subjectLabel score="0.00000000">Maxim Reality</subjectLabel>
+               <objectLabel score="0.00000000">1967</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="10" runID="run2" score="0.16214238" plugType="E">
+         <cluster cluster_id="10-0" score="0.22031639" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.22031639" isFlipped="true" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/The_Prodigy</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/formerBandMember</predicate>
+               <object>http://dbpedia.org/resource/Leeroy_Thornhill</object>
+               <subjectLabel score="0.05079097">The Prodigy</subjectLabel>
+               <objectLabel score="0.00000000">Leeroy Thornhill</objectLabel>
+            </quintuple>
+         </cluster>
+         <cluster cluster_id="10-1" score="0.14000000" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.14000000" isFlipped="false" isObjectLiteral="true">
+               <subject>http://dbpedia.org/resource/Leeroy_Thornhill</subject>
+               <predicate score="0.70000000">http://dbpedia.org/ontology/birthYear</predicate>
+               <object>1968</object>
+               <subjectLabel score="0.00000000">Leeroy Thornhill</subjectLabel>
+               <objectLabel score="0.00000000">1968</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+   </results>
+</question>

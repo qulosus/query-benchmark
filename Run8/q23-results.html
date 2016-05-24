@@ -1,0 +1,2094 @@
+<html> 
+  <head>
+    <meta charset='UTF-8'>
+<style>TABLE.outline {
+        BORDER-RIGHT: #c0c0c0 4px double; BORDER-TOP: #c0c0c0 4px double; BORDER-LEFT: #c0c0c0 4px double;
+        FONT-FAMILY: "MS Sans Serif"; BORDER-BOTTOM: #c0c0c0 4px double; align: center
+}
+A {
+        FONT-SIZE: 14px; COLOR: #333399; FONT-FAMILY: "Consolas"; TEXT-DECORATION: none
+}
+A:hover {
+        FONT-SIZE: 14px; COLOR: #778899; FONT-STYLE: normal; FONT-FAMILY: "Consolas"; TEXT-DECORATION: underline overline
+}
+.blockTitle {
+        PADDING-RIGHT: 3px; BORDER-TOP: #6495ed 3px double; PADDING-LEFT: 3px; FONT-WEIGHT: bold;
+        FONT-SIZE: 14px; PADDING-BOTTOM: 3px; COLOR: #daa520; PADDING-TOP: 3px; BORDER-BOTTOM: #6495ed 3px double;
+        BACKGROUND-COLOR: #f0f8ff
+}
+.blockTitle1 {
+        PADDING-RIGHT: 3px; BORDER-TOP: #6495ed 3px double; PADDING-LEFT: 3px; FONT-WEIGHT: bold; FONT-SIZE: 14px;
+        PADDING-BOTTOM: 3px; COLOR: #daa520; PADDING-TOP: 3px; BORDER-BOTTOM: #6495ed 3px double;
+        BACKGROUND-COLOR: #f0f8ff
+}
+TD {
+        FONT-SIZE: 14px; COLOR: #333399; FONT-FAMILY: "Consolas"; TEXT-DECORATION: none
+}
+.tdin {
+        PADDING-RIGHT: 2px; BORDER-TOP: #6495ed 1px double; PADDING-LEFT: 8px; PADDING-BOTTOM: 2px; PADDING-TOP: 2px;
+        BORDER-BOTTOM: #6495ed 1px double;BORDER-LEFT: #6495ed 1px double;BORDER-RIGHT: #6495ed 1px double;
+        FONT-FAMILY: "Consolas";
+}
+.thin {
+        PADDING-RIGHT: 2px; BORDER-TOP: #6495ed 1px double; PADDING-LEFT: 8px; FONT-WEIGHT: bold; FONT-SIZE: 12px;
+        PADDING-BOTTOM: 2px; COLOR: #E45C3A; PADDING-TOP: 2px; BORDER-BOTTOM: #6495ed 1px double;
+        BACKGROUND-COLOR: #DEF7FE; BORDER-LEFT: #6495ed 1px double; BORDER-RIGHT: #6495ed 1px double ;
+        FONT-FAMILY: "Verdana";
+}
+.thin2 {
+        PADDING-RIGHT: 2px; BORDER-TOP: #6495ed 1px double; PADDING-LEFT: 8px; FONT-WEIGHT: bold; FONT-SIZE: 12px;
+        PADDING-BOTTOM: 2px; COLOR: #405EE4; PADDING-TOP: 2px; BORDER-BOTTOM: #6495ed 1px double;
+        BACKGROUND-COLOR: #FFDFF8; BORDER-LEFT: #6495ed 1px double; BORDER-RIGHT: #6495ed 1px double ;
+        FONT-FAMILY: "Verdana";
+}
+TH {
+        FONT-SIZE: 14px; COLOR: #333399; FONT-FAMILY: "Verdana"; TEXT-DECORATION: none;align: left
+}
+INPUT.spt {
+        BORDER-RIGHT: #6495ed 1px double; BORDER-TOP: #6495ed 1px double;
+        BORDER-BOTTOM: #6495ed 1px double;BORDER-LEFT: #6495ed 1px double;
+        PADDING-LEFT: 1px; PADDING-BOTTOM: 1px; PADDING-TOP: 1px;PADDING-RIGHT: 1px;
+        FONT-FAMILY: "Tahoma";
+        WIDTH : 200px ; HEIGHT : 20px;
+}
+INPUT.spb {
+        PADDING-RIGHT: 1px; PADDING-LEFT: 1px;
+        PADDING-BOTTOM: 1px; PADDING-TOP: 1px;
+        BORDER-RIGHT: #6495ed 1px double; BORDER-LEFT: #6495ed 1px double;
+        BORDER-BOTTOM: #6495ed 1px double; BORDER-TOP: #6495ed 1px double;
+        FONT-FAMILY: "Tahoma"; BACKGROUND-COLOR : #A8FFA8;
+        WIDTH : 60px ; HEIGHT : 20px;
+}
+textarea {
+        PADDING-RIGHT: 2px; PADDING-LEFT: 2px;
+        PADDING-BOTTOM: 2px; PADDING-TOP: 2px;
+        BORDER-RIGHT: #6495ed 1px double; BORDER-LEFT: #6495ed 1px double;
+        BORDER-BOTTOM: #6495ed 1px double; BORDER-TOP: #6495ed 1px double;
+        FONT-FAMILY: "Tahoma"; BACKGROUND-COLOR : #FFFFFF;
+        WIDTH : 600px ; HEIGHT : 400px;
+}
+</style>  </head>
+  <body>
+<h2>Query :: q23</h2> <table class='outline' border='1' width = '100%'>
+<tr>
+<td class='tdin' width='50%'> <pre>{
+	"william shatner"	"directed"	?movie .
+	"william shatner"	"acted in"	?movie .
+	?actor           	"acted in"	?movie .
+}</pre> </td><td class='tdin' width='50%'>Give me all actors starring in movies directed by and starring William Shatner.</td></tr>
+</table>
+ <br/><hr/><br/><table border='0' width = '100%'>
+<tr>
+<td class='tdin' width='35%'><table border='0' width = '100%'><tr>
+<td class='thin' width='40%'># Results</td><td class='tdin' width='40%'><b>39</b></td><td class='tdin' width='20%'></td></tr>
+<tr>
+<td class='thin' width='40%'>Elapsed time</td><td class='tdin' width='40%'>2.971</td><td class='tdin' width='20%'>sec</td></tr>
+<tr>
+<td class='thin' width='40%'>Used memory</td><td class='tdin' width='40%'>105.91578</td><td class='tdin' width='20%'>MB </td></tr>
+<tr>
+<td class='thin' width='40%'>Total Quintuples</td><td class='tdin' width='40%'>192</td><td class='tdin' width='20%'>quins </td></tr>
+<tr>
+<td class='thin' width='40%'>AVG. # quins per cluster</td><td class='tdin' width='40%'>1.6410257</td><td class='tdin' width='20%'>quin/cluster </td></tr>
+<tr>
+<td class='thin' width='40%'>AVG. # quins per bucket</td><td class='tdin' width='40%'>4.923077</td><td class='tdin' width='20%'>quin/bucket </td></tr>
+<tr>
+<td class='thin' width='40%'># plugged triples</td><td class='tdin' width='40%'>0</td><td class='tdin' width='20%'>triples </td></tr>
+</table>
+</td><td class='tdin' width='25%'><table border='0' width = '100%'><tr>
+<td class='thin' width='40%'>LabelSearch TopK</td><td class='tdin' width='40%'>10</td></tr>
+<tr>
+<td class='thin' width='40%'>Plugin Labels ?</td><td class='tdin' width='40%'>true</td></tr>
+<tr>
+<td class='thin' width='40%'>Limit 1st triple?</td><td class='tdin' width='40%'>false</td></tr>
+<tr>
+<td class='thin' width='40%'>Validate Triples?</td><td class='tdin' width='40%'>false</td></tr>
+</table>
+</td><td class='tdin' width='40%'><table border='0' width = '100%'>
+<tr>
+<td class='tdin' width='25%'></td><td class='thin' width='25%'> # Requests</td><td class='thin' width='25%'> # Solved Requests</td><td class='thin' width='25%'> # Returned Records</td></tr>
+<tr>
+<td class='thin2' width='25%'>LinkedMDB</td><td class='tdin' width='25%'>438</td><td class='tdin' width='25%'>10</td><td class='tdin' width='25%'>40</td></tr>
+<tr>
+<td class='thin2' width='25%'>DBpedia</td><td class='tdin' width='25%'>394</td><td class='tdin' width='25%'>4</td><td class='tdin' width='25%'>23</td></tr>
+<tr>
+<td class='thin2' width='25%'>Yago</td><td class='tdin' width='25%'>392</td><td class='tdin' width='25%'>4</td><td class='tdin' width='25%'>14</td></tr>
+<tr>
+<td class='tdin' width='25%'></td><td class='thin' width='25%'>1224</td><td class='thin' width='25%'>18</td><td class='thin' width='25%'>77</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 0</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.23916551</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 0 - 0</b><br/> Score1 = 0.26225145<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Star_Trek_(film_franchise)' title='http://dbpedia.org/resource/Star_Trek_(film_franchise)'>Star Trek</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/director' title='http://dbpedia.org/ontology/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/William_Shatner' title='http://dbpedia.org/resource/William_Shatner'>William Shatner</a></td>
+<td class='tdin' width='7%'>0.26225145</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 0 - 1</b><br/> Score1 = 0.33496687<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/27' title='http://data.linkedmdb.org/resource/film/27'>Star Trek: Generations</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/29685' title='http://data.linkedmdb.org/resource/actor/29685'>William Shatner</a></td>
+<td class='tdin' width='7%'>0.33496687</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 0 - 2</b><br/> Score1 = 0.20000000<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/27' title='http://data.linkedmdb.org/resource/film/27'>Star Trek: Generations</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/48537' title='http://data.linkedmdb.org/resource/actor/48537'>Barbara March</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 1</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.23916551</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 1 - 0</b><br/> Score1 = 0.26225145<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Star_Trek_(film_franchise)' title='http://dbpedia.org/resource/Star_Trek_(film_franchise)'>Star Trek</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/director' title='http://dbpedia.org/ontology/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/William_Shatner' title='http://dbpedia.org/resource/William_Shatner'>William Shatner</a></td>
+<td class='tdin' width='7%'>0.26225145</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 1 - 1</b><br/> Score1 = 0.33496687<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/27' title='http://data.linkedmdb.org/resource/film/27'>Star Trek: Generations</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/29685' title='http://data.linkedmdb.org/resource/actor/29685'>William Shatner</a></td>
+<td class='tdin' width='7%'>0.33496687</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 1 - 2</b><br/> Score1 = 0.20000000<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/27' title='http://data.linkedmdb.org/resource/film/27'>Star Trek: Generations</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/40503' title='http://data.linkedmdb.org/resource/actor/40503'>Gwynyth Walsh</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 2</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.23916551</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 2 - 0</b><br/> Score1 = 0.26225145<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Star_Trek_(film_franchise)' title='http://dbpedia.org/resource/Star_Trek_(film_franchise)'>Star Trek</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/director' title='http://dbpedia.org/ontology/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/William_Shatner' title='http://dbpedia.org/resource/William_Shatner'>William Shatner</a></td>
+<td class='tdin' width='7%'>0.26225145</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 2 - 1</b><br/> Score1 = 0.33496687<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/27' title='http://data.linkedmdb.org/resource/film/27'>Star Trek: Generations</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/29685' title='http://data.linkedmdb.org/resource/actor/29685'>William Shatner</a></td>
+<td class='tdin' width='7%'>0.33496687</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 2 - 2</b><br/> Score1 = 0.20000000<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/27' title='http://data.linkedmdb.org/resource/film/27'>Star Trek: Generations</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/35263' title='http://data.linkedmdb.org/resource/actor/35263'>Patti Yasutake</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 3</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.23916551</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 3 - 0</b><br/> Score1 = 0.26225145<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Star_Trek_(film_franchise)' title='http://dbpedia.org/resource/Star_Trek_(film_franchise)'>Star Trek</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/director' title='http://dbpedia.org/ontology/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/William_Shatner' title='http://dbpedia.org/resource/William_Shatner'>William Shatner</a></td>
+<td class='tdin' width='7%'>0.26225145</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 3 - 1</b><br/> Score1 = 0.33496687<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/27' title='http://data.linkedmdb.org/resource/film/27'>Star Trek: Generations</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/29685' title='http://data.linkedmdb.org/resource/actor/29685'>William Shatner</a></td>
+<td class='tdin' width='7%'>0.33496687</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 3 - 2</b><br/> Score1 = 0.20000000<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/27' title='http://data.linkedmdb.org/resource/film/27'>Star Trek: Generations</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/33195' title='http://data.linkedmdb.org/resource/actor/33195'>Alan Ruck</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 4</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.23916551</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 4 - 0</b><br/> Score1 = 0.26225145<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Star_Trek_(film_franchise)' title='http://dbpedia.org/resource/Star_Trek_(film_franchise)'>Star Trek</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/director' title='http://dbpedia.org/ontology/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/William_Shatner' title='http://dbpedia.org/resource/William_Shatner'>William Shatner</a></td>
+<td class='tdin' width='7%'>0.26225145</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 4 - 1</b><br/> Score1 = 0.33496687<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/27' title='http://data.linkedmdb.org/resource/film/27'>Star Trek: Generations</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/29685' title='http://data.linkedmdb.org/resource/actor/29685'>William Shatner</a></td>
+<td class='tdin' width='7%'>0.33496687</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 4 - 2</b><br/> Score1 = 0.20000000<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/27' title='http://data.linkedmdb.org/resource/film/27'>Star Trek: Generations</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/31575' title='http://data.linkedmdb.org/resource/actor/31575'>Michael Dorn</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 5</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.23916551</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 5 - 0</b><br/> Score1 = 0.26225145<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Star_Trek_(film_franchise)' title='http://dbpedia.org/resource/Star_Trek_(film_franchise)'>Star Trek</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/director' title='http://dbpedia.org/ontology/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/William_Shatner' title='http://dbpedia.org/resource/William_Shatner'>William Shatner</a></td>
+<td class='tdin' width='7%'>0.26225145</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 5 - 1</b><br/> Score1 = 0.33496687<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/27' title='http://data.linkedmdb.org/resource/film/27'>Star Trek: Generations</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/29685' title='http://data.linkedmdb.org/resource/actor/29685'>William Shatner</a></td>
+<td class='tdin' width='7%'>0.33496687</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 5 - 2</b><br/> Score1 = 0.20000000<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/27' title='http://data.linkedmdb.org/resource/film/27'>Star Trek: Generations</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/30170' title='http://data.linkedmdb.org/resource/actor/30170'>Brent Spiner</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 6</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.23916551</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 6 - 0</b><br/> Score1 = 0.26225145<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Star_Trek_(film_franchise)' title='http://dbpedia.org/resource/Star_Trek_(film_franchise)'>Star Trek</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/director' title='http://dbpedia.org/ontology/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/William_Shatner' title='http://dbpedia.org/resource/William_Shatner'>William Shatner</a></td>
+<td class='tdin' width='7%'>0.26225145</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 6 - 1</b><br/> Score1 = 0.33496687<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/27' title='http://data.linkedmdb.org/resource/film/27'>Star Trek: Generations</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/29685' title='http://data.linkedmdb.org/resource/actor/29685'>William Shatner</a></td>
+<td class='tdin' width='7%'>0.33496687</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 6 - 2</b><br/> Score1 = 0.20000000<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/27' title='http://data.linkedmdb.org/resource/film/27'>Star Trek: Generations</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/30169' title='http://data.linkedmdb.org/resource/actor/30169'>Gates McFadden</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 7</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.23916551</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 7 - 0</b><br/> Score1 = 0.26225145<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Star_Trek_(film_franchise)' title='http://dbpedia.org/resource/Star_Trek_(film_franchise)'>Star Trek</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/director' title='http://dbpedia.org/ontology/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/William_Shatner' title='http://dbpedia.org/resource/William_Shatner'>William Shatner</a></td>
+<td class='tdin' width='7%'>0.26225145</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 7 - 1</b><br/> Score1 = 0.33496687<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/27' title='http://data.linkedmdb.org/resource/film/27'>Star Trek: Generations</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/29685' title='http://data.linkedmdb.org/resource/actor/29685'>William Shatner</a></td>
+<td class='tdin' width='7%'>0.33496687</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 7 - 2</b><br/> Score1 = 0.20000000<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/27' title='http://data.linkedmdb.org/resource/film/27'>Star Trek: Generations</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/30120' title='http://data.linkedmdb.org/resource/actor/30120'>Jonathan Frakes</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 8</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.23916551</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 8 - 0</b><br/> Score1 = 0.26225145<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Star_Trek_(film_franchise)' title='http://dbpedia.org/resource/Star_Trek_(film_franchise)'>Star Trek</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/director' title='http://dbpedia.org/ontology/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/William_Shatner' title='http://dbpedia.org/resource/William_Shatner'>William Shatner</a></td>
+<td class='tdin' width='7%'>0.26225145</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 8 - 1</b><br/> Score1 = 0.33496687<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/27' title='http://data.linkedmdb.org/resource/film/27'>Star Trek: Generations</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/29685' title='http://data.linkedmdb.org/resource/actor/29685'>William Shatner</a></td>
+<td class='tdin' width='7%'>0.33496687</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 8 - 2</b><br/> Score1 = 0.20000000<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/27' title='http://data.linkedmdb.org/resource/film/27'>Star Trek: Generations</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/30107' title='http://data.linkedmdb.org/resource/actor/30107'>LeVar Burton</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 9</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.23916551</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 9 - 0</b><br/> Score1 = 0.26225145<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Star_Trek_(film_franchise)' title='http://dbpedia.org/resource/Star_Trek_(film_franchise)'>Star Trek</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/director' title='http://dbpedia.org/ontology/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/William_Shatner' title='http://dbpedia.org/resource/William_Shatner'>William Shatner</a></td>
+<td class='tdin' width='7%'>0.26225145</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 9 - 1</b><br/> Score1 = 0.33496687<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/27' title='http://data.linkedmdb.org/resource/film/27'>Star Trek: Generations</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/29685' title='http://data.linkedmdb.org/resource/actor/29685'>William Shatner</a></td>
+<td class='tdin' width='7%'>0.33496687</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 9 - 2</b><br/> Score1 = 0.20000000<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/27' title='http://data.linkedmdb.org/resource/film/27'>Star Trek: Generations</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/30024' title='http://data.linkedmdb.org/resource/actor/30024'>Patrick Stewart</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 10</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.23916551</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 10 - 0</b><br/> Score1 = 0.26225145<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Star_Trek_(film_franchise)' title='http://dbpedia.org/resource/Star_Trek_(film_franchise)'>Star Trek</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/director' title='http://dbpedia.org/ontology/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/William_Shatner' title='http://dbpedia.org/resource/William_Shatner'>William Shatner</a></td>
+<td class='tdin' width='7%'>0.26225145</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 10 - 1</b><br/> Score1 = 0.33496687<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/27' title='http://data.linkedmdb.org/resource/film/27'>Star Trek: Generations</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/29685' title='http://data.linkedmdb.org/resource/actor/29685'>William Shatner</a></td>
+<td class='tdin' width='7%'>0.33496687</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 10 - 2</b><br/> Score1 = 0.20000000<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/27' title='http://data.linkedmdb.org/resource/film/27'>Star Trek: Generations</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/29685' title='http://data.linkedmdb.org/resource/actor/29685'>William Shatner</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 11</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.22940768</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 11 - 0</b><br/> Score1 = 0.28054579<br/> Sim.  = 0.9004<br/> Norm. = 1.0000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/3533' title='http://data.linkedmdb.org/resource/film/3533'>Groom Lake</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/director' title='http://data.linkedmdb.org/resource/movie/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/director/8506' title='http://data.linkedmdb.org/resource/director/8506'>William Shatner</a></td>
+<td class='tdin' width='7%'>0.27667277</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Groom_Lake_(film)' title='http://dbpedia.org/resource/Groom_Lake_(film)'>Groom Lake</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/director' title='http://dbpedia.org/ontology/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/William_Shatner' title='http://dbpedia.org/resource/William_Shatner'>William Shatner</a></td>
+<td class='tdin' width='7%'>0.26225145</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/William_Shatner' title='http://yago-knowledge.org/resource/William_Shatner'>William Shatner</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/directed' title='http://yago-knowledge.org/resource/directed'>directed</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Groom_Lake_(film)' title='http://yago-knowledge.org/resource/Groom_Lake_(film)'>Groom Lake</a></td>
+<td class='tdin' width='7%'>0.28054579</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 11 - 1</b><br/> Score1 = 0.28364303<br/> Sim.  = 0.9007<br/> Norm. = 1.0000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/William_Shatner' title='http://yago-knowledge.org/resource/William_Shatner'>William Shatner</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/actedIn' title='http://yago-knowledge.org/resource/actedIn'>actedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Groom_Lake_(film)' title='http://yago-knowledge.org/resource/Groom_Lake_(film)'>Groom Lake</a></td>
+<td class='tdin' width='7%'>0.28054579</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/3533' title='http://data.linkedmdb.org/resource/film/3533'>Groom Lake</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/29685' title='http://data.linkedmdb.org/resource/actor/29685'>William Shatner</a></td>
+<td class='tdin' width='7%'>0.28364303</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Groom_Lake_(film)' title='http://dbpedia.org/resource/Groom_Lake_(film)'>Groom Lake</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/starring' title='http://dbpedia.org/ontology/starring'>starring</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/William_Shatner' title='http://dbpedia.org/resource/William_Shatner'>William Shatner</a></td>
+<td class='tdin' width='7%'>0.26225145</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 11 - 2</b><br/> Score1 = 0.20000000<br/> Sim.  = 0.9007<br/> Norm. = 1.0000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Groom_Lake_(film)' title='http://dbpedia.org/resource/Groom_Lake_(film)'>Groom Lake</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/starring' title='http://dbpedia.org/ontology/starring'>starring</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Amy_Acker' title='http://dbpedia.org/resource/Amy_Acker'>Amy Acker</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Amy_Acker' title='http://yago-knowledge.org/resource/Amy_Acker'>Amy Acker</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/actedIn' title='http://yago-knowledge.org/resource/actedIn'>actedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Groom_Lake_(film)' title='http://yago-knowledge.org/resource/Groom_Lake_(film)'>Groom Lake</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/3533' title='http://data.linkedmdb.org/resource/film/3533'>Groom Lake</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/33526' title='http://data.linkedmdb.org/resource/actor/33526'>Amy Acker</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 12</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.22940768</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 12 - 0</b><br/> Score1 = 0.28054579<br/> Sim.  = 0.9004<br/> Norm. = 1.0000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/3533' title='http://data.linkedmdb.org/resource/film/3533'>Groom Lake</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/director' title='http://data.linkedmdb.org/resource/movie/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/director/8506' title='http://data.linkedmdb.org/resource/director/8506'>William Shatner</a></td>
+<td class='tdin' width='7%'>0.27667277</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Groom_Lake_(film)' title='http://dbpedia.org/resource/Groom_Lake_(film)'>Groom Lake</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/director' title='http://dbpedia.org/ontology/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/William_Shatner' title='http://dbpedia.org/resource/William_Shatner'>William Shatner</a></td>
+<td class='tdin' width='7%'>0.26225145</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/William_Shatner' title='http://yago-knowledge.org/resource/William_Shatner'>William Shatner</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/directed' title='http://yago-knowledge.org/resource/directed'>directed</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Groom_Lake_(film)' title='http://yago-knowledge.org/resource/Groom_Lake_(film)'>Groom Lake</a></td>
+<td class='tdin' width='7%'>0.28054579</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 12 - 1</b><br/> Score1 = 0.28364303<br/> Sim.  = 0.9007<br/> Norm. = 1.0000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/William_Shatner' title='http://yago-knowledge.org/resource/William_Shatner'>William Shatner</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/actedIn' title='http://yago-knowledge.org/resource/actedIn'>actedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Groom_Lake_(film)' title='http://yago-knowledge.org/resource/Groom_Lake_(film)'>Groom Lake</a></td>
+<td class='tdin' width='7%'>0.28054579</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/3533' title='http://data.linkedmdb.org/resource/film/3533'>Groom Lake</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/29685' title='http://data.linkedmdb.org/resource/actor/29685'>William Shatner</a></td>
+<td class='tdin' width='7%'>0.28364303</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Groom_Lake_(film)' title='http://dbpedia.org/resource/Groom_Lake_(film)'>Groom Lake</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/starring' title='http://dbpedia.org/ontology/starring'>starring</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/William_Shatner' title='http://dbpedia.org/resource/William_Shatner'>William Shatner</a></td>
+<td class='tdin' width='7%'>0.26225145</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 12 - 2</b><br/> Score1 = 0.20000000<br/> Sim.  = 0.9007<br/> Norm. = 1.0000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Groom_Lake_(film)' title='http://dbpedia.org/resource/Groom_Lake_(film)'>Groom Lake</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/starring' title='http://dbpedia.org/ontology/starring'>starring</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Dan_Gauthier' title='http://dbpedia.org/resource/Dan_Gauthier'>Dan Gauthier</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Dan_Gauthier' title='http://yago-knowledge.org/resource/Dan_Gauthier'>Dan Gauthier</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/actedIn' title='http://yago-knowledge.org/resource/actedIn'>actedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Groom_Lake_(film)' title='http://yago-knowledge.org/resource/Groom_Lake_(film)'>Groom Lake</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/3533' title='http://data.linkedmdb.org/resource/film/3533'>Groom Lake</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/34409' title='http://data.linkedmdb.org/resource/actor/34409'>Dan Gauthier</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 13</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.22940768</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 13 - 0</b><br/> Score1 = 0.28054579<br/> Sim.  = 0.9004<br/> Norm. = 1.0000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/3533' title='http://data.linkedmdb.org/resource/film/3533'>Groom Lake</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/director' title='http://data.linkedmdb.org/resource/movie/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/director/8506' title='http://data.linkedmdb.org/resource/director/8506'>William Shatner</a></td>
+<td class='tdin' width='7%'>0.27667277</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Groom_Lake_(film)' title='http://dbpedia.org/resource/Groom_Lake_(film)'>Groom Lake</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/director' title='http://dbpedia.org/ontology/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/William_Shatner' title='http://dbpedia.org/resource/William_Shatner'>William Shatner</a></td>
+<td class='tdin' width='7%'>0.26225145</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/William_Shatner' title='http://yago-knowledge.org/resource/William_Shatner'>William Shatner</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/directed' title='http://yago-knowledge.org/resource/directed'>directed</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Groom_Lake_(film)' title='http://yago-knowledge.org/resource/Groom_Lake_(film)'>Groom Lake</a></td>
+<td class='tdin' width='7%'>0.28054579</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 13 - 1</b><br/> Score1 = 0.28364303<br/> Sim.  = 0.9007<br/> Norm. = 1.0000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/William_Shatner' title='http://yago-knowledge.org/resource/William_Shatner'>William Shatner</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/actedIn' title='http://yago-knowledge.org/resource/actedIn'>actedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Groom_Lake_(film)' title='http://yago-knowledge.org/resource/Groom_Lake_(film)'>Groom Lake</a></td>
+<td class='tdin' width='7%'>0.28054579</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/3533' title='http://data.linkedmdb.org/resource/film/3533'>Groom Lake</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/29685' title='http://data.linkedmdb.org/resource/actor/29685'>William Shatner</a></td>
+<td class='tdin' width='7%'>0.28364303</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Groom_Lake_(film)' title='http://dbpedia.org/resource/Groom_Lake_(film)'>Groom Lake</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/starring' title='http://dbpedia.org/ontology/starring'>starring</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/William_Shatner' title='http://dbpedia.org/resource/William_Shatner'>William Shatner</a></td>
+<td class='tdin' width='7%'>0.26225145</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 13 - 2</b><br/> Score1 = 0.20000000<br/> Sim.  = 0.9007<br/> Norm. = 1.0000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Dick_Van_Patten' title='http://yago-knowledge.org/resource/Dick_Van_Patten'>Dick Van Patten</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/actedIn' title='http://yago-knowledge.org/resource/actedIn'>actedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Groom_Lake_(film)' title='http://yago-knowledge.org/resource/Groom_Lake_(film)'>Groom Lake</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Groom_Lake_(film)' title='http://dbpedia.org/resource/Groom_Lake_(film)'>Groom Lake</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/starring' title='http://dbpedia.org/ontology/starring'>starring</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Dick_Van_Patten' title='http://dbpedia.org/resource/Dick_Van_Patten'>Dick Van Patten</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/3533' title='http://data.linkedmdb.org/resource/film/3533'>Groom Lake</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/35755' title='http://data.linkedmdb.org/resource/actor/35755'>Dick Van Patten</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 14</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.22940768</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 14 - 0</b><br/> Score1 = 0.28054579<br/> Sim.  = 0.9004<br/> Norm. = 1.0000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/3533' title='http://data.linkedmdb.org/resource/film/3533'>Groom Lake</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/director' title='http://data.linkedmdb.org/resource/movie/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/director/8506' title='http://data.linkedmdb.org/resource/director/8506'>William Shatner</a></td>
+<td class='tdin' width='7%'>0.27667277</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Groom_Lake_(film)' title='http://dbpedia.org/resource/Groom_Lake_(film)'>Groom Lake</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/director' title='http://dbpedia.org/ontology/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/William_Shatner' title='http://dbpedia.org/resource/William_Shatner'>William Shatner</a></td>
+<td class='tdin' width='7%'>0.26225145</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/William_Shatner' title='http://yago-knowledge.org/resource/William_Shatner'>William Shatner</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/directed' title='http://yago-knowledge.org/resource/directed'>directed</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Groom_Lake_(film)' title='http://yago-knowledge.org/resource/Groom_Lake_(film)'>Groom Lake</a></td>
+<td class='tdin' width='7%'>0.28054579</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 14 - 1</b><br/> Score1 = 0.28364303<br/> Sim.  = 0.9007<br/> Norm. = 1.0000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/William_Shatner' title='http://yago-knowledge.org/resource/William_Shatner'>William Shatner</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/actedIn' title='http://yago-knowledge.org/resource/actedIn'>actedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Groom_Lake_(film)' title='http://yago-knowledge.org/resource/Groom_Lake_(film)'>Groom Lake</a></td>
+<td class='tdin' width='7%'>0.28054579</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/3533' title='http://data.linkedmdb.org/resource/film/3533'>Groom Lake</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/29685' title='http://data.linkedmdb.org/resource/actor/29685'>William Shatner</a></td>
+<td class='tdin' width='7%'>0.28364303</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Groom_Lake_(film)' title='http://dbpedia.org/resource/Groom_Lake_(film)'>Groom Lake</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/starring' title='http://dbpedia.org/ontology/starring'>starring</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/William_Shatner' title='http://dbpedia.org/resource/William_Shatner'>William Shatner</a></td>
+<td class='tdin' width='7%'>0.26225145</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 14 - 2</b><br/> Score1 = 0.20000000<br/> Sim.  = 0.9007<br/> Norm. = 1.0000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Tom_Towles' title='http://yago-knowledge.org/resource/Tom_Towles'>Tom Towles</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/actedIn' title='http://yago-knowledge.org/resource/actedIn'>actedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Groom_Lake_(film)' title='http://yago-knowledge.org/resource/Groom_Lake_(film)'>Groom Lake</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Groom_Lake_(film)' title='http://dbpedia.org/resource/Groom_Lake_(film)'>Groom Lake</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/starring' title='http://dbpedia.org/ontology/starring'>starring</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Tom_Towles' title='http://dbpedia.org/resource/Tom_Towles'>Tom Towles</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/3533' title='http://data.linkedmdb.org/resource/film/3533'>Groom Lake</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/45878' title='http://data.linkedmdb.org/resource/actor/45878'>Tom Towles</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 15</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.22940768</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 15 - 0</b><br/> Score1 = 0.28054579<br/> Sim.  = 0.9004<br/> Norm. = 1.0000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/3533' title='http://data.linkedmdb.org/resource/film/3533'>Groom Lake</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/director' title='http://data.linkedmdb.org/resource/movie/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/director/8506' title='http://data.linkedmdb.org/resource/director/8506'>William Shatner</a></td>
+<td class='tdin' width='7%'>0.27667277</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Groom_Lake_(film)' title='http://dbpedia.org/resource/Groom_Lake_(film)'>Groom Lake</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/director' title='http://dbpedia.org/ontology/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/William_Shatner' title='http://dbpedia.org/resource/William_Shatner'>William Shatner</a></td>
+<td class='tdin' width='7%'>0.26225145</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/William_Shatner' title='http://yago-knowledge.org/resource/William_Shatner'>William Shatner</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/directed' title='http://yago-knowledge.org/resource/directed'>directed</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Groom_Lake_(film)' title='http://yago-knowledge.org/resource/Groom_Lake_(film)'>Groom Lake</a></td>
+<td class='tdin' width='7%'>0.28054579</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 15 - 1</b><br/> Score1 = 0.28364303<br/> Sim.  = 0.9007<br/> Norm. = 1.0000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/William_Shatner' title='http://yago-knowledge.org/resource/William_Shatner'>William Shatner</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/actedIn' title='http://yago-knowledge.org/resource/actedIn'>actedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Groom_Lake_(film)' title='http://yago-knowledge.org/resource/Groom_Lake_(film)'>Groom Lake</a></td>
+<td class='tdin' width='7%'>0.28054579</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/3533' title='http://data.linkedmdb.org/resource/film/3533'>Groom Lake</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/29685' title='http://data.linkedmdb.org/resource/actor/29685'>William Shatner</a></td>
+<td class='tdin' width='7%'>0.28364303</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Groom_Lake_(film)' title='http://dbpedia.org/resource/Groom_Lake_(film)'>Groom Lake</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/starring' title='http://dbpedia.org/ontology/starring'>starring</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/William_Shatner' title='http://dbpedia.org/resource/William_Shatner'>William Shatner</a></td>
+<td class='tdin' width='7%'>0.26225145</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 15 - 2</b><br/> Score1 = 0.20000000<br/> Sim.  = 0.9007<br/> Norm. = 1.0000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/William_Shatner' title='http://yago-knowledge.org/resource/William_Shatner'>William Shatner</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/actedIn' title='http://yago-knowledge.org/resource/actedIn'>actedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Groom_Lake_(film)' title='http://yago-knowledge.org/resource/Groom_Lake_(film)'>Groom Lake</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/3533' title='http://data.linkedmdb.org/resource/film/3533'>Groom Lake</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/29685' title='http://data.linkedmdb.org/resource/actor/29685'>William Shatner</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Groom_Lake_(film)' title='http://dbpedia.org/resource/Groom_Lake_(film)'>Groom Lake</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/starring' title='http://dbpedia.org/ontology/starring'>starring</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/William_Shatner' title='http://dbpedia.org/resource/William_Shatner'>William Shatner</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 16</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.22936106</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 16 - 0</b><br/> Score1 = 0.28054579<br/> Sim.  = 0.9004<br/> Norm. = 1.0000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/3533' title='http://data.linkedmdb.org/resource/film/3533'>Groom Lake</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/director' title='http://data.linkedmdb.org/resource/movie/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/director/8506' title='http://data.linkedmdb.org/resource/director/8506'>William Shatner</a></td>
+<td class='tdin' width='7%'>0.27667277</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Groom_Lake_(film)' title='http://dbpedia.org/resource/Groom_Lake_(film)'>Groom Lake</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/director' title='http://dbpedia.org/ontology/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/William_Shatner' title='http://dbpedia.org/resource/William_Shatner'>William Shatner</a></td>
+<td class='tdin' width='7%'>0.26225145</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/William_Shatner' title='http://yago-knowledge.org/resource/William_Shatner'>William Shatner</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/directed' title='http://yago-knowledge.org/resource/directed'>directed</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Groom_Lake_(film)' title='http://yago-knowledge.org/resource/Groom_Lake_(film)'>Groom Lake</a></td>
+<td class='tdin' width='7%'>0.28054579</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 16 - 1</b><br/> Score1 = 0.28364303<br/> Sim.  = 0.9007<br/> Norm. = 1.0000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/William_Shatner' title='http://yago-knowledge.org/resource/William_Shatner'>William Shatner</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/actedIn' title='http://yago-knowledge.org/resource/actedIn'>actedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Groom_Lake_(film)' title='http://yago-knowledge.org/resource/Groom_Lake_(film)'>Groom Lake</a></td>
+<td class='tdin' width='7%'>0.28054579</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/3533' title='http://data.linkedmdb.org/resource/film/3533'>Groom Lake</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/29685' title='http://data.linkedmdb.org/resource/actor/29685'>William Shatner</a></td>
+<td class='tdin' width='7%'>0.28364303</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Groom_Lake_(film)' title='http://dbpedia.org/resource/Groom_Lake_(film)'>Groom Lake</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/starring' title='http://dbpedia.org/ontology/starring'>starring</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/William_Shatner' title='http://dbpedia.org/resource/William_Shatner'>William Shatner</a></td>
+<td class='tdin' width='7%'>0.26225145</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 16 - 2</b><br/> Score1 = 0.20000000<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Groom_Lake_(film)' title='http://dbpedia.org/resource/Groom_Lake_(film)'>Groom Lake</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/starring' title='http://dbpedia.org/ontology/starring'>starring</a></td>
+<td class='tdin' width='28%'>http://dbpedia.org/resource/Chuck_Williams</td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 17</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.22936106</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 17 - 0</b><br/> Score1 = 0.28054579<br/> Sim.  = 0.9004<br/> Norm. = 1.0000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/3533' title='http://data.linkedmdb.org/resource/film/3533'>Groom Lake</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/director' title='http://data.linkedmdb.org/resource/movie/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/director/8506' title='http://data.linkedmdb.org/resource/director/8506'>William Shatner</a></td>
+<td class='tdin' width='7%'>0.27667277</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Groom_Lake_(film)' title='http://dbpedia.org/resource/Groom_Lake_(film)'>Groom Lake</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/director' title='http://dbpedia.org/ontology/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/William_Shatner' title='http://dbpedia.org/resource/William_Shatner'>William Shatner</a></td>
+<td class='tdin' width='7%'>0.26225145</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/William_Shatner' title='http://yago-knowledge.org/resource/William_Shatner'>William Shatner</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/directed' title='http://yago-knowledge.org/resource/directed'>directed</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Groom_Lake_(film)' title='http://yago-knowledge.org/resource/Groom_Lake_(film)'>Groom Lake</a></td>
+<td class='tdin' width='7%'>0.28054579</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 17 - 1</b><br/> Score1 = 0.28364303<br/> Sim.  = 0.9007<br/> Norm. = 1.0000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/William_Shatner' title='http://yago-knowledge.org/resource/William_Shatner'>William Shatner</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/actedIn' title='http://yago-knowledge.org/resource/actedIn'>actedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Groom_Lake_(film)' title='http://yago-knowledge.org/resource/Groom_Lake_(film)'>Groom Lake</a></td>
+<td class='tdin' width='7%'>0.28054579</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/3533' title='http://data.linkedmdb.org/resource/film/3533'>Groom Lake</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/29685' title='http://data.linkedmdb.org/resource/actor/29685'>William Shatner</a></td>
+<td class='tdin' width='7%'>0.28364303</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Groom_Lake_(film)' title='http://dbpedia.org/resource/Groom_Lake_(film)'>Groom Lake</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/starring' title='http://dbpedia.org/ontology/starring'>starring</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/William_Shatner' title='http://dbpedia.org/resource/William_Shatner'>William Shatner</a></td>
+<td class='tdin' width='7%'>0.26225145</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 17 - 2</b><br/> Score1 = 0.20000000<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Groom_Lake_(film)' title='http://dbpedia.org/resource/Groom_Lake_(film)'>Groom Lake</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/starring' title='http://dbpedia.org/ontology/starring'>starring</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Rickey_Medlocke' title='http://dbpedia.org/resource/Rickey_Medlocke'>Rickey Medlocke</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 18</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.22809475</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 18 - 0</b><br/> Score1 = 0.27667277<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/54121' title='http://data.linkedmdb.org/resource/film/54121'>The Tenth Level</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/director' title='http://data.linkedmdb.org/resource/movie/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/director/8506' title='http://data.linkedmdb.org/resource/director/8506'>William Shatner</a></td>
+<td class='tdin' width='7%'>0.27667277</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 18 - 1</b><br/> Score1 = 0.28364303<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/54121' title='http://data.linkedmdb.org/resource/film/54121'>The Tenth Level</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/29685' title='http://data.linkedmdb.org/resource/actor/29685'>William Shatner</a></td>
+<td class='tdin' width='7%'>0.28364303</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 18 - 2</b><br/> Score1 = 0.20000000<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/54121' title='http://data.linkedmdb.org/resource/film/54121'>The Tenth Level</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/39600' title='http://data.linkedmdb.org/resource/actor/39600'>Lynn Carlin</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 19</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.22809475</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 19 - 0</b><br/> Score1 = 0.27667277<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/54121' title='http://data.linkedmdb.org/resource/film/54121'>The Tenth Level</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/director' title='http://data.linkedmdb.org/resource/movie/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/director/8506' title='http://data.linkedmdb.org/resource/director/8506'>William Shatner</a></td>
+<td class='tdin' width='7%'>0.27667277</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 19 - 1</b><br/> Score1 = 0.28364303<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/54121' title='http://data.linkedmdb.org/resource/film/54121'>The Tenth Level</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/29685' title='http://data.linkedmdb.org/resource/actor/29685'>William Shatner</a></td>
+<td class='tdin' width='7%'>0.28364303</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 19 - 2</b><br/> Score1 = 0.20000000<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/54121' title='http://data.linkedmdb.org/resource/film/54121'>The Tenth Level</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/33897' title='http://data.linkedmdb.org/resource/actor/33897'>Estelle Parsons</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 20</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.22809475</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 20 - 0</b><br/> Score1 = 0.27667277<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/54121' title='http://data.linkedmdb.org/resource/film/54121'>The Tenth Level</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/director' title='http://data.linkedmdb.org/resource/movie/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/director/8506' title='http://data.linkedmdb.org/resource/director/8506'>William Shatner</a></td>
+<td class='tdin' width='7%'>0.27667277</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 20 - 1</b><br/> Score1 = 0.28364303<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/54121' title='http://data.linkedmdb.org/resource/film/54121'>The Tenth Level</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/29685' title='http://data.linkedmdb.org/resource/actor/29685'>William Shatner</a></td>
+<td class='tdin' width='7%'>0.28364303</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 20 - 2</b><br/> Score1 = 0.20000000<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/54121' title='http://data.linkedmdb.org/resource/film/54121'>The Tenth Level</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/33776' title='http://data.linkedmdb.org/resource/actor/33776'>Ossie Davis</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 21</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.22809475</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 21 - 0</b><br/> Score1 = 0.27667277<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/54121' title='http://data.linkedmdb.org/resource/film/54121'>The Tenth Level</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/director' title='http://data.linkedmdb.org/resource/movie/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/director/8506' title='http://data.linkedmdb.org/resource/director/8506'>William Shatner</a></td>
+<td class='tdin' width='7%'>0.27667277</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 21 - 1</b><br/> Score1 = 0.28364303<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/54121' title='http://data.linkedmdb.org/resource/film/54121'>The Tenth Level</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/29685' title='http://data.linkedmdb.org/resource/actor/29685'>William Shatner</a></td>
+<td class='tdin' width='7%'>0.28364303</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 21 - 2</b><br/> Score1 = 0.20000000<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/54121' title='http://data.linkedmdb.org/resource/film/54121'>The Tenth Level</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/29872' title='http://data.linkedmdb.org/resource/actor/29872'>John Travolta</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 22</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.22809475</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 22 - 0</b><br/> Score1 = 0.27667277<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/54121' title='http://data.linkedmdb.org/resource/film/54121'>The Tenth Level</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/director' title='http://data.linkedmdb.org/resource/movie/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/director/8506' title='http://data.linkedmdb.org/resource/director/8506'>William Shatner</a></td>
+<td class='tdin' width='7%'>0.27667277</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 22 - 1</b><br/> Score1 = 0.28364303<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/54121' title='http://data.linkedmdb.org/resource/film/54121'>The Tenth Level</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/29685' title='http://data.linkedmdb.org/resource/actor/29685'>William Shatner</a></td>
+<td class='tdin' width='7%'>0.28364303</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 22 - 2</b><br/> Score1 = 0.20000000<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/54121' title='http://data.linkedmdb.org/resource/film/54121'>The Tenth Level</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/29685' title='http://data.linkedmdb.org/resource/actor/29685'>William Shatner</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 23</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.22730776</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 23 - 0</b><br/> Score1 = 0.28054579<br/> Sim.  = 0.9004<br/> Norm. = 1.0000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/3533' title='http://data.linkedmdb.org/resource/film/3533'>Groom Lake</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/director' title='http://data.linkedmdb.org/resource/movie/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/director/8506' title='http://data.linkedmdb.org/resource/director/8506'>William Shatner</a></td>
+<td class='tdin' width='7%'>0.27667277</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Groom_Lake_(film)' title='http://dbpedia.org/resource/Groom_Lake_(film)'>Groom Lake</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/director' title='http://dbpedia.org/ontology/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/William_Shatner' title='http://dbpedia.org/resource/William_Shatner'>William Shatner</a></td>
+<td class='tdin' width='7%'>0.26225145</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/William_Shatner' title='http://yago-knowledge.org/resource/William_Shatner'>William Shatner</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/directed' title='http://yago-knowledge.org/resource/directed'>directed</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Groom_Lake_(film)' title='http://yago-knowledge.org/resource/Groom_Lake_(film)'>Groom Lake</a></td>
+<td class='tdin' width='7%'>0.28054579</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 23 - 1</b><br/> Score1 = 0.28364303<br/> Sim.  = 0.9007<br/> Norm. = 1.0000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/William_Shatner' title='http://yago-knowledge.org/resource/William_Shatner'>William Shatner</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/actedIn' title='http://yago-knowledge.org/resource/actedIn'>actedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Groom_Lake_(film)' title='http://yago-knowledge.org/resource/Groom_Lake_(film)'>Groom Lake</a></td>
+<td class='tdin' width='7%'>0.28054579</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/3533' title='http://data.linkedmdb.org/resource/film/3533'>Groom Lake</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/29685' title='http://data.linkedmdb.org/resource/actor/29685'>William Shatner</a></td>
+<td class='tdin' width='7%'>0.28364303</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Groom_Lake_(film)' title='http://dbpedia.org/resource/Groom_Lake_(film)'>Groom Lake</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/starring' title='http://dbpedia.org/ontology/starring'>starring</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/William_Shatner' title='http://dbpedia.org/resource/William_Shatner'>William Shatner</a></td>
+<td class='tdin' width='7%'>0.26225145</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 23 - 2</b><br/> Score1 = 0.20000000<br/> Sim.  = 0.9149<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Groom_Lake_(film)' title='http://dbpedia.org/resource/Groom_Lake_(film)'>Groom Lake</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/starring' title='http://dbpedia.org/ontology/starring'>starring</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Brenda_Bakke' title='http://dbpedia.org/resource/Brenda_Bakke'>Brenda Bakke</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Brenda_Bakke' title='http://yago-knowledge.org/resource/Brenda_Bakke'>Brenda Bakke</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/actedIn' title='http://yago-knowledge.org/resource/actedIn'>actedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Groom_Lake_(film)' title='http://yago-knowledge.org/resource/Groom_Lake_(film)'>Groom Lake</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 24</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.22730776</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 24 - 0</b><br/> Score1 = 0.28054579<br/> Sim.  = 0.9004<br/> Norm. = 1.0000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/3533' title='http://data.linkedmdb.org/resource/film/3533'>Groom Lake</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/director' title='http://data.linkedmdb.org/resource/movie/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/director/8506' title='http://data.linkedmdb.org/resource/director/8506'>William Shatner</a></td>
+<td class='tdin' width='7%'>0.27667277</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Groom_Lake_(film)' title='http://dbpedia.org/resource/Groom_Lake_(film)'>Groom Lake</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/director' title='http://dbpedia.org/ontology/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/William_Shatner' title='http://dbpedia.org/resource/William_Shatner'>William Shatner</a></td>
+<td class='tdin' width='7%'>0.26225145</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/William_Shatner' title='http://yago-knowledge.org/resource/William_Shatner'>William Shatner</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/directed' title='http://yago-knowledge.org/resource/directed'>directed</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Groom_Lake_(film)' title='http://yago-knowledge.org/resource/Groom_Lake_(film)'>Groom Lake</a></td>
+<td class='tdin' width='7%'>0.28054579</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 24 - 1</b><br/> Score1 = 0.28364303<br/> Sim.  = 0.9007<br/> Norm. = 1.0000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/William_Shatner' title='http://yago-knowledge.org/resource/William_Shatner'>William Shatner</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/actedIn' title='http://yago-knowledge.org/resource/actedIn'>actedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Groom_Lake_(film)' title='http://yago-knowledge.org/resource/Groom_Lake_(film)'>Groom Lake</a></td>
+<td class='tdin' width='7%'>0.28054579</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/3533' title='http://data.linkedmdb.org/resource/film/3533'>Groom Lake</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/29685' title='http://data.linkedmdb.org/resource/actor/29685'>William Shatner</a></td>
+<td class='tdin' width='7%'>0.28364303</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Groom_Lake_(film)' title='http://dbpedia.org/resource/Groom_Lake_(film)'>Groom Lake</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/starring' title='http://dbpedia.org/ontology/starring'>starring</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/William_Shatner' title='http://dbpedia.org/resource/William_Shatner'>William Shatner</a></td>
+<td class='tdin' width='7%'>0.26225145</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 24 - 2</b><br/> Score1 = 0.20000000<br/> Sim.  = 0.9149<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Dan_Martin_(actor)' title='http://yago-knowledge.org/resource/Dan_Martin_(actor)'>Dan Martin</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/actedIn' title='http://yago-knowledge.org/resource/actedIn'>actedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Groom_Lake_(film)' title='http://yago-knowledge.org/resource/Groom_Lake_(film)'>Groom Lake</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Groom_Lake_(film)' title='http://dbpedia.org/resource/Groom_Lake_(film)'>Groom Lake</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/starring' title='http://dbpedia.org/ontology/starring'>starring</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Dan_Martin_(actor)' title='http://dbpedia.org/resource/Dan_Martin_(actor)'>Dan Martin</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 25</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.22730776</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 25 - 0</b><br/> Score1 = 0.28054579<br/> Sim.  = 0.9004<br/> Norm. = 1.0000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/3533' title='http://data.linkedmdb.org/resource/film/3533'>Groom Lake</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/director' title='http://data.linkedmdb.org/resource/movie/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/director/8506' title='http://data.linkedmdb.org/resource/director/8506'>William Shatner</a></td>
+<td class='tdin' width='7%'>0.27667277</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Groom_Lake_(film)' title='http://dbpedia.org/resource/Groom_Lake_(film)'>Groom Lake</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/director' title='http://dbpedia.org/ontology/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/William_Shatner' title='http://dbpedia.org/resource/William_Shatner'>William Shatner</a></td>
+<td class='tdin' width='7%'>0.26225145</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/William_Shatner' title='http://yago-knowledge.org/resource/William_Shatner'>William Shatner</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/directed' title='http://yago-knowledge.org/resource/directed'>directed</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Groom_Lake_(film)' title='http://yago-knowledge.org/resource/Groom_Lake_(film)'>Groom Lake</a></td>
+<td class='tdin' width='7%'>0.28054579</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 25 - 1</b><br/> Score1 = 0.28364303<br/> Sim.  = 0.9007<br/> Norm. = 1.0000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/William_Shatner' title='http://yago-knowledge.org/resource/William_Shatner'>William Shatner</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/actedIn' title='http://yago-knowledge.org/resource/actedIn'>actedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Groom_Lake_(film)' title='http://yago-knowledge.org/resource/Groom_Lake_(film)'>Groom Lake</a></td>
+<td class='tdin' width='7%'>0.28054579</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/3533' title='http://data.linkedmdb.org/resource/film/3533'>Groom Lake</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/29685' title='http://data.linkedmdb.org/resource/actor/29685'>William Shatner</a></td>
+<td class='tdin' width='7%'>0.28364303</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Groom_Lake_(film)' title='http://dbpedia.org/resource/Groom_Lake_(film)'>Groom Lake</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/starring' title='http://dbpedia.org/ontology/starring'>starring</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/William_Shatner' title='http://dbpedia.org/resource/William_Shatner'>William Shatner</a></td>
+<td class='tdin' width='7%'>0.26225145</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 25 - 2</b><br/> Score1 = 0.20000000<br/> Sim.  = 0.9149<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Groom_Lake_(film)' title='http://dbpedia.org/resource/Groom_Lake_(film)'>Groom Lake</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/starring' title='http://dbpedia.org/ontology/starring'>starring</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Duane_Whitaker' title='http://dbpedia.org/resource/Duane_Whitaker'>Duane Whitaker</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Duane_Whitaker' title='http://yago-knowledge.org/resource/Duane_Whitaker'>Duane Whitaker</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/actedIn' title='http://yago-knowledge.org/resource/actedIn'>actedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Groom_Lake_(film)' title='http://yago-knowledge.org/resource/Groom_Lake_(film)'>Groom Lake</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 26</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.22398054</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 26 - 0</b><br/> Score1 = 0.27667277<br/> Sim.  = 0.9004<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/357' title='http://data.linkedmdb.org/resource/film/357'>Star Trek V: The Final Frontier</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/director' title='http://data.linkedmdb.org/resource/movie/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/director/8506' title='http://data.linkedmdb.org/resource/director/8506'>William Shatner</a></td>
+<td class='tdin' width='7%'>0.27667277</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Star_Trek_V:_The_Final_Frontier' title='http://dbpedia.org/resource/Star_Trek_V:_The_Final_Frontier'>Star Trek V: The Final Frontier</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/director' title='http://dbpedia.org/ontology/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/William_Shatner' title='http://dbpedia.org/resource/William_Shatner'>William Shatner</a></td>
+<td class='tdin' width='7%'>0.26225145</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 26 - 1</b><br/> Score1 = 0.28364303<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/357' title='http://data.linkedmdb.org/resource/film/357'>Star Trek V: The Final Frontier</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/29685' title='http://data.linkedmdb.org/resource/actor/29685'>William Shatner</a></td>
+<td class='tdin' width='7%'>0.28364303</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 26 - 2</b><br/> Score1 = 0.20000000<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Star_Trek_V:_The_Final_Frontier' title='http://dbpedia.org/resource/Star_Trek_V:_The_Final_Frontier'>Star Trek V: The Final Frontier</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/starring' title='http://dbpedia.org/ontology/starring'>starring</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Walter_Koenig' title='http://dbpedia.org/resource/Walter_Koenig'>Walter Koenig</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 27</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.22398054</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 27 - 0</b><br/> Score1 = 0.27667277<br/> Sim.  = 0.9004<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/357' title='http://data.linkedmdb.org/resource/film/357'>Star Trek V: The Final Frontier</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/director' title='http://data.linkedmdb.org/resource/movie/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/director/8506' title='http://data.linkedmdb.org/resource/director/8506'>William Shatner</a></td>
+<td class='tdin' width='7%'>0.27667277</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Star_Trek_V:_The_Final_Frontier' title='http://dbpedia.org/resource/Star_Trek_V:_The_Final_Frontier'>Star Trek V: The Final Frontier</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/director' title='http://dbpedia.org/ontology/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/William_Shatner' title='http://dbpedia.org/resource/William_Shatner'>William Shatner</a></td>
+<td class='tdin' width='7%'>0.26225145</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 27 - 1</b><br/> Score1 = 0.28364303<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/357' title='http://data.linkedmdb.org/resource/film/357'>Star Trek V: The Final Frontier</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/29685' title='http://data.linkedmdb.org/resource/actor/29685'>William Shatner</a></td>
+<td class='tdin' width='7%'>0.28364303</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 27 - 2</b><br/> Score1 = 0.20000000<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/357' title='http://data.linkedmdb.org/resource/film/357'>Star Trek V: The Final Frontier</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/47624' title='http://data.linkedmdb.org/resource/actor/47624'>Todd Bryant</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 28</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.22398054</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 28 - 0</b><br/> Score1 = 0.27667277<br/> Sim.  = 0.9004<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/357' title='http://data.linkedmdb.org/resource/film/357'>Star Trek V: The Final Frontier</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/director' title='http://data.linkedmdb.org/resource/movie/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/director/8506' title='http://data.linkedmdb.org/resource/director/8506'>William Shatner</a></td>
+<td class='tdin' width='7%'>0.27667277</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Star_Trek_V:_The_Final_Frontier' title='http://dbpedia.org/resource/Star_Trek_V:_The_Final_Frontier'>Star Trek V: The Final Frontier</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/director' title='http://dbpedia.org/ontology/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/William_Shatner' title='http://dbpedia.org/resource/William_Shatner'>William Shatner</a></td>
+<td class='tdin' width='7%'>0.26225145</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 28 - 1</b><br/> Score1 = 0.28364303<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/357' title='http://data.linkedmdb.org/resource/film/357'>Star Trek V: The Final Frontier</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/29685' title='http://data.linkedmdb.org/resource/actor/29685'>William Shatner</a></td>
+<td class='tdin' width='7%'>0.28364303</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 28 - 2</b><br/> Score1 = 0.20000000<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/357' title='http://data.linkedmdb.org/resource/film/357'>Star Trek V: The Final Frontier</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/45596' title='http://data.linkedmdb.org/resource/actor/45596'>Cynthia Gouw</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 29</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.22398054</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 29 - 0</b><br/> Score1 = 0.27667277<br/> Sim.  = 0.9004<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/357' title='http://data.linkedmdb.org/resource/film/357'>Star Trek V: The Final Frontier</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/director' title='http://data.linkedmdb.org/resource/movie/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/director/8506' title='http://data.linkedmdb.org/resource/director/8506'>William Shatner</a></td>
+<td class='tdin' width='7%'>0.27667277</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Star_Trek_V:_The_Final_Frontier' title='http://dbpedia.org/resource/Star_Trek_V:_The_Final_Frontier'>Star Trek V: The Final Frontier</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/director' title='http://dbpedia.org/ontology/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/William_Shatner' title='http://dbpedia.org/resource/William_Shatner'>William Shatner</a></td>
+<td class='tdin' width='7%'>0.26225145</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 29 - 1</b><br/> Score1 = 0.28364303<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/357' title='http://data.linkedmdb.org/resource/film/357'>Star Trek V: The Final Frontier</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/29685' title='http://data.linkedmdb.org/resource/actor/29685'>William Shatner</a></td>
+<td class='tdin' width='7%'>0.28364303</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 29 - 2</b><br/> Score1 = 0.20000000<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/357' title='http://data.linkedmdb.org/resource/film/357'>Star Trek V: The Final Frontier</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/1003' title='http://data.linkedmdb.org/resource/actor/1003'>Charles Cooper</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 30</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.22398054</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 30 - 0</b><br/> Score1 = 0.27667277<br/> Sim.  = 0.9004<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/357' title='http://data.linkedmdb.org/resource/film/357'>Star Trek V: The Final Frontier</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/director' title='http://data.linkedmdb.org/resource/movie/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/director/8506' title='http://data.linkedmdb.org/resource/director/8506'>William Shatner</a></td>
+<td class='tdin' width='7%'>0.27667277</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Star_Trek_V:_The_Final_Frontier' title='http://dbpedia.org/resource/Star_Trek_V:_The_Final_Frontier'>Star Trek V: The Final Frontier</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/director' title='http://dbpedia.org/ontology/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/William_Shatner' title='http://dbpedia.org/resource/William_Shatner'>William Shatner</a></td>
+<td class='tdin' width='7%'>0.26225145</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 30 - 1</b><br/> Score1 = 0.28364303<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/357' title='http://data.linkedmdb.org/resource/film/357'>Star Trek V: The Final Frontier</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/29685' title='http://data.linkedmdb.org/resource/actor/29685'>William Shatner</a></td>
+<td class='tdin' width='7%'>0.28364303</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 30 - 2</b><br/> Score1 = 0.20000000<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/357' title='http://data.linkedmdb.org/resource/film/357'>Star Trek V: The Final Frontier</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/33493' title='http://data.linkedmdb.org/resource/actor/33493'>Laurence Luckinbill</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 31</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.22398054</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 31 - 0</b><br/> Score1 = 0.27667277<br/> Sim.  = 0.9004<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/357' title='http://data.linkedmdb.org/resource/film/357'>Star Trek V: The Final Frontier</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/director' title='http://data.linkedmdb.org/resource/movie/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/director/8506' title='http://data.linkedmdb.org/resource/director/8506'>William Shatner</a></td>
+<td class='tdin' width='7%'>0.27667277</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Star_Trek_V:_The_Final_Frontier' title='http://dbpedia.org/resource/Star_Trek_V:_The_Final_Frontier'>Star Trek V: The Final Frontier</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/director' title='http://dbpedia.org/ontology/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/William_Shatner' title='http://dbpedia.org/resource/William_Shatner'>William Shatner</a></td>
+<td class='tdin' width='7%'>0.26225145</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 31 - 1</b><br/> Score1 = 0.28364303<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/357' title='http://data.linkedmdb.org/resource/film/357'>Star Trek V: The Final Frontier</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/29685' title='http://data.linkedmdb.org/resource/actor/29685'>William Shatner</a></td>
+<td class='tdin' width='7%'>0.28364303</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 31 - 2</b><br/> Score1 = 0.20000000<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/357' title='http://data.linkedmdb.org/resource/film/357'>Star Trek V: The Final Frontier</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/51' title='http://data.linkedmdb.org/resource/actor/51'>David Warner</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 32</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.22398054</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 32 - 0</b><br/> Score1 = 0.27667277<br/> Sim.  = 0.9004<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/357' title='http://data.linkedmdb.org/resource/film/357'>Star Trek V: The Final Frontier</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/director' title='http://data.linkedmdb.org/resource/movie/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/director/8506' title='http://data.linkedmdb.org/resource/director/8506'>William Shatner</a></td>
+<td class='tdin' width='7%'>0.27667277</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Star_Trek_V:_The_Final_Frontier' title='http://dbpedia.org/resource/Star_Trek_V:_The_Final_Frontier'>Star Trek V: The Final Frontier</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/director' title='http://dbpedia.org/ontology/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/William_Shatner' title='http://dbpedia.org/resource/William_Shatner'>William Shatner</a></td>
+<td class='tdin' width='7%'>0.26225145</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 32 - 1</b><br/> Score1 = 0.28364303<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/357' title='http://data.linkedmdb.org/resource/film/357'>Star Trek V: The Final Frontier</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/29685' title='http://data.linkedmdb.org/resource/actor/29685'>William Shatner</a></td>
+<td class='tdin' width='7%'>0.28364303</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 32 - 2</b><br/> Score1 = 0.20000000<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/357' title='http://data.linkedmdb.org/resource/film/357'>Star Trek V: The Final Frontier</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/29685' title='http://data.linkedmdb.org/resource/actor/29685'>William Shatner</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 33</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.22382260</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 33 - 0</b><br/> Score1 = 0.28054579<br/> Sim.  = 0.9004<br/> Norm. = 1.0000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/3533' title='http://data.linkedmdb.org/resource/film/3533'>Groom Lake</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/director' title='http://data.linkedmdb.org/resource/movie/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/director/8506' title='http://data.linkedmdb.org/resource/director/8506'>William Shatner</a></td>
+<td class='tdin' width='7%'>0.27667277</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Groom_Lake_(film)' title='http://dbpedia.org/resource/Groom_Lake_(film)'>Groom Lake</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/director' title='http://dbpedia.org/ontology/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/William_Shatner' title='http://dbpedia.org/resource/William_Shatner'>William Shatner</a></td>
+<td class='tdin' width='7%'>0.26225145</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/William_Shatner' title='http://yago-knowledge.org/resource/William_Shatner'>William Shatner</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/directed' title='http://yago-knowledge.org/resource/directed'>directed</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Groom_Lake_(film)' title='http://yago-knowledge.org/resource/Groom_Lake_(film)'>Groom Lake</a></td>
+<td class='tdin' width='7%'>0.28054579</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 33 - 1</b><br/> Score1 = 0.28364303<br/> Sim.  = 0.9007<br/> Norm. = 1.0000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/William_Shatner' title='http://yago-knowledge.org/resource/William_Shatner'>William Shatner</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/actedIn' title='http://yago-knowledge.org/resource/actedIn'>actedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Groom_Lake_(film)' title='http://yago-knowledge.org/resource/Groom_Lake_(film)'>Groom Lake</a></td>
+<td class='tdin' width='7%'>0.28054579</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/3533' title='http://data.linkedmdb.org/resource/film/3533'>Groom Lake</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/29685' title='http://data.linkedmdb.org/resource/actor/29685'>William Shatner</a></td>
+<td class='tdin' width='7%'>0.28364303</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Groom_Lake_(film)' title='http://dbpedia.org/resource/Groom_Lake_(film)'>Groom Lake</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/starring' title='http://dbpedia.org/ontology/starring'>starring</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/William_Shatner' title='http://dbpedia.org/resource/William_Shatner'>William Shatner</a></td>
+<td class='tdin' width='7%'>0.26225145</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 33 - 2</b><br/> Score1 = 0.20000000<br/> Sim.  = 0.9077<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Groom_Lake_(film)' title='http://dbpedia.org/resource/Groom_Lake_(film)'>Groom Lake</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/starring' title='http://dbpedia.org/ontology/starring'>starring</a></td>
+<td class='tdin' width='28%'>http://dbpedia.org/resource/J.T._Colosa</td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Groom_Lake_(film)' title='http://dbpedia.org/resource/Groom_Lake_(film)'>Groom Lake</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/starring' title='http://dbpedia.org/ontology/starring'>starring</a></td>
+<td class='tdin' width='28%'>http://dbpedia.org/resource/John_Prosky</td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 34</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.22102483</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 34 - 0</b><br/> Score1 = 0.27667277<br/> Sim.  = 0.9004<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/357' title='http://data.linkedmdb.org/resource/film/357'>Star Trek V: The Final Frontier</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/director' title='http://data.linkedmdb.org/resource/movie/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/director/8506' title='http://data.linkedmdb.org/resource/director/8506'>William Shatner</a></td>
+<td class='tdin' width='7%'>0.27667277</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Star_Trek_V:_The_Final_Frontier' title='http://dbpedia.org/resource/Star_Trek_V:_The_Final_Frontier'>Star Trek V: The Final Frontier</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/director' title='http://dbpedia.org/ontology/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/William_Shatner' title='http://dbpedia.org/resource/William_Shatner'>William Shatner</a></td>
+<td class='tdin' width='7%'>0.26225145</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 34 - 1</b><br/> Score1 = 0.28364303<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/357' title='http://data.linkedmdb.org/resource/film/357'>Star Trek V: The Final Frontier</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/29685' title='http://data.linkedmdb.org/resource/actor/29685'>William Shatner</a></td>
+<td class='tdin' width='7%'>0.28364303</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 34 - 2</b><br/> Score1 = 0.20000000<br/> Sim.  = 0.9007<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/357' title='http://data.linkedmdb.org/resource/film/357'>Star Trek V: The Final Frontier</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/30048' title='http://data.linkedmdb.org/resource/actor/30048'>DeForest Kelley</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Star_Trek_V:_The_Final_Frontier' title='http://dbpedia.org/resource/Star_Trek_V:_The_Final_Frontier'>Star Trek V: The Final Frontier</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/starring' title='http://dbpedia.org/ontology/starring'>starring</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/DeForest_Kelley' title='http://dbpedia.org/resource/DeForest_Kelley'>DeForest Kelley</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 35</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.22102483</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 35 - 0</b><br/> Score1 = 0.27667277<br/> Sim.  = 0.9004<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/357' title='http://data.linkedmdb.org/resource/film/357'>Star Trek V: The Final Frontier</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/director' title='http://data.linkedmdb.org/resource/movie/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/director/8506' title='http://data.linkedmdb.org/resource/director/8506'>William Shatner</a></td>
+<td class='tdin' width='7%'>0.27667277</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Star_Trek_V:_The_Final_Frontier' title='http://dbpedia.org/resource/Star_Trek_V:_The_Final_Frontier'>Star Trek V: The Final Frontier</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/director' title='http://dbpedia.org/ontology/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/William_Shatner' title='http://dbpedia.org/resource/William_Shatner'>William Shatner</a></td>
+<td class='tdin' width='7%'>0.26225145</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 35 - 1</b><br/> Score1 = 0.28364303<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/357' title='http://data.linkedmdb.org/resource/film/357'>Star Trek V: The Final Frontier</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/29685' title='http://data.linkedmdb.org/resource/actor/29685'>William Shatner</a></td>
+<td class='tdin' width='7%'>0.28364303</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 35 - 2</b><br/> Score1 = 0.20000000<br/> Sim.  = 0.9007<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/357' title='http://data.linkedmdb.org/resource/film/357'>Star Trek V: The Final Frontier</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/31910' title='http://data.linkedmdb.org/resource/actor/31910'>George Takei</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Star_Trek_V:_The_Final_Frontier' title='http://dbpedia.org/resource/Star_Trek_V:_The_Final_Frontier'>Star Trek V: The Final Frontier</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/starring' title='http://dbpedia.org/ontology/starring'>starring</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/George_Takei' title='http://dbpedia.org/resource/George_Takei'>George Takei</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 36</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.22102483</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 36 - 0</b><br/> Score1 = 0.27667277<br/> Sim.  = 0.9004<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/357' title='http://data.linkedmdb.org/resource/film/357'>Star Trek V: The Final Frontier</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/director' title='http://data.linkedmdb.org/resource/movie/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/director/8506' title='http://data.linkedmdb.org/resource/director/8506'>William Shatner</a></td>
+<td class='tdin' width='7%'>0.27667277</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Star_Trek_V:_The_Final_Frontier' title='http://dbpedia.org/resource/Star_Trek_V:_The_Final_Frontier'>Star Trek V: The Final Frontier</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/director' title='http://dbpedia.org/ontology/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/William_Shatner' title='http://dbpedia.org/resource/William_Shatner'>William Shatner</a></td>
+<td class='tdin' width='7%'>0.26225145</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 36 - 1</b><br/> Score1 = 0.28364303<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/357' title='http://data.linkedmdb.org/resource/film/357'>Star Trek V: The Final Frontier</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/29685' title='http://data.linkedmdb.org/resource/actor/29685'>William Shatner</a></td>
+<td class='tdin' width='7%'>0.28364303</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 36 - 2</b><br/> Score1 = 0.20000000<br/> Sim.  = 0.9007<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/357' title='http://data.linkedmdb.org/resource/film/357'>Star Trek V: The Final Frontier</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/30057' title='http://data.linkedmdb.org/resource/actor/30057'>James Doohan</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Star_Trek_V:_The_Final_Frontier' title='http://dbpedia.org/resource/Star_Trek_V:_The_Final_Frontier'>Star Trek V: The Final Frontier</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/starring' title='http://dbpedia.org/ontology/starring'>starring</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/James_Doohan' title='http://dbpedia.org/resource/James_Doohan'>James Doohan</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 37</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.22102483</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 37 - 0</b><br/> Score1 = 0.27667277<br/> Sim.  = 0.9004<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/357' title='http://data.linkedmdb.org/resource/film/357'>Star Trek V: The Final Frontier</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/director' title='http://data.linkedmdb.org/resource/movie/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/director/8506' title='http://data.linkedmdb.org/resource/director/8506'>William Shatner</a></td>
+<td class='tdin' width='7%'>0.27667277</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Star_Trek_V:_The_Final_Frontier' title='http://dbpedia.org/resource/Star_Trek_V:_The_Final_Frontier'>Star Trek V: The Final Frontier</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/director' title='http://dbpedia.org/ontology/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/William_Shatner' title='http://dbpedia.org/resource/William_Shatner'>William Shatner</a></td>
+<td class='tdin' width='7%'>0.26225145</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 37 - 1</b><br/> Score1 = 0.28364303<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/357' title='http://data.linkedmdb.org/resource/film/357'>Star Trek V: The Final Frontier</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/29685' title='http://data.linkedmdb.org/resource/actor/29685'>William Shatner</a></td>
+<td class='tdin' width='7%'>0.28364303</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 37 - 2</b><br/> Score1 = 0.20000000<br/> Sim.  = 0.9007<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/357' title='http://data.linkedmdb.org/resource/film/357'>Star Trek V: The Final Frontier</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/29864' title='http://data.linkedmdb.org/resource/actor/29864'>Leonard Nimoy</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Star_Trek_V:_The_Final_Frontier' title='http://dbpedia.org/resource/Star_Trek_V:_The_Final_Frontier'>Star Trek V: The Final Frontier</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/starring' title='http://dbpedia.org/ontology/starring'>starring</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Leonard_Nimoy' title='http://dbpedia.org/resource/Leonard_Nimoy'>Leonard Nimoy</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 38</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.22102483</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 38 - 0</b><br/> Score1 = 0.27667277<br/> Sim.  = 0.9004<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/357' title='http://data.linkedmdb.org/resource/film/357'>Star Trek V: The Final Frontier</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/director' title='http://data.linkedmdb.org/resource/movie/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/director/8506' title='http://data.linkedmdb.org/resource/director/8506'>William Shatner</a></td>
+<td class='tdin' width='7%'>0.27667277</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Star_Trek_V:_The_Final_Frontier' title='http://dbpedia.org/resource/Star_Trek_V:_The_Final_Frontier'>Star Trek V: The Final Frontier</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/director' title='http://dbpedia.org/ontology/director'>director</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/William_Shatner' title='http://dbpedia.org/resource/William_Shatner'>William Shatner</a></td>
+<td class='tdin' width='7%'>0.26225145</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 38 - 1</b><br/> Score1 = 0.28364303<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/357' title='http://data.linkedmdb.org/resource/film/357'>Star Trek V: The Final Frontier</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/29685' title='http://data.linkedmdb.org/resource/actor/29685'>William Shatner</a></td>
+<td class='tdin' width='7%'>0.28364303</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 38 - 2</b><br/> Score1 = 0.20000000<br/> Sim.  = 0.9007<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/357' title='http://data.linkedmdb.org/resource/film/357'>Star Trek V: The Final Frontier</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/30341' title='http://data.linkedmdb.org/resource/actor/30341'>Nichelle Nichols</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Star_Trek_V:_The_Final_Frontier' title='http://dbpedia.org/resource/Star_Trek_V:_The_Final_Frontier'>Star Trek V: The Final Frontier</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/starring' title='http://dbpedia.org/ontology/starring'>starring</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Nichelle_Nichols' title='http://dbpedia.org/resource/Nichelle_Nichols'>Nichelle Nichols</a></td>
+<td class='tdin' width='7%'>0.20000000</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+  </body>
+</html>

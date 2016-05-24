@@ -1,0 +1,485 @@
+<html> 
+  <head>
+    <meta charset='UTF-8'>
+<style>TABLE.outline {
+        BORDER-RIGHT: #c0c0c0 4px double; BORDER-TOP: #c0c0c0 4px double; BORDER-LEFT: #c0c0c0 4px double;
+        FONT-FAMILY: "MS Sans Serif"; BORDER-BOTTOM: #c0c0c0 4px double; align: center
+}
+A {
+        FONT-SIZE: 14px; COLOR: #333399; FONT-FAMILY: "Consolas"; TEXT-DECORATION: none
+}
+A:hover {
+        FONT-SIZE: 14px; COLOR: #778899; FONT-STYLE: normal; FONT-FAMILY: "Consolas"; TEXT-DECORATION: underline overline
+}
+.blockTitle {
+        PADDING-RIGHT: 3px; BORDER-TOP: #6495ed 3px double; PADDING-LEFT: 3px; FONT-WEIGHT: bold;
+        FONT-SIZE: 14px; PADDING-BOTTOM: 3px; COLOR: #daa520; PADDING-TOP: 3px; BORDER-BOTTOM: #6495ed 3px double;
+        BACKGROUND-COLOR: #f0f8ff
+}
+.blockTitle1 {
+        PADDING-RIGHT: 3px; BORDER-TOP: #6495ed 3px double; PADDING-LEFT: 3px; FONT-WEIGHT: bold; FONT-SIZE: 14px;
+        PADDING-BOTTOM: 3px; COLOR: #daa520; PADDING-TOP: 3px; BORDER-BOTTOM: #6495ed 3px double;
+        BACKGROUND-COLOR: #f0f8ff
+}
+TD {
+        FONT-SIZE: 14px; COLOR: #333399; FONT-FAMILY: "Consolas"; TEXT-DECORATION: none
+}
+.tdin {
+        PADDING-RIGHT: 2px; BORDER-TOP: #6495ed 1px double; PADDING-LEFT: 8px; PADDING-BOTTOM: 2px; PADDING-TOP: 2px;
+        BORDER-BOTTOM: #6495ed 1px double;BORDER-LEFT: #6495ed 1px double;BORDER-RIGHT: #6495ed 1px double;
+        FONT-FAMILY: "Consolas";
+}
+.thin {
+        PADDING-RIGHT: 2px; BORDER-TOP: #6495ed 1px double; PADDING-LEFT: 8px; FONT-WEIGHT: bold; FONT-SIZE: 12px;
+        PADDING-BOTTOM: 2px; COLOR: #E45C3A; PADDING-TOP: 2px; BORDER-BOTTOM: #6495ed 1px double;
+        BACKGROUND-COLOR: #DEF7FE; BORDER-LEFT: #6495ed 1px double; BORDER-RIGHT: #6495ed 1px double ;
+        FONT-FAMILY: "Verdana";
+}
+.thin2 {
+        PADDING-RIGHT: 2px; BORDER-TOP: #6495ed 1px double; PADDING-LEFT: 8px; FONT-WEIGHT: bold; FONT-SIZE: 12px;
+        PADDING-BOTTOM: 2px; COLOR: #405EE4; PADDING-TOP: 2px; BORDER-BOTTOM: #6495ed 1px double;
+        BACKGROUND-COLOR: #FFDFF8; BORDER-LEFT: #6495ed 1px double; BORDER-RIGHT: #6495ed 1px double ;
+        FONT-FAMILY: "Verdana";
+}
+TH {
+        FONT-SIZE: 14px; COLOR: #333399; FONT-FAMILY: "Verdana"; TEXT-DECORATION: none;align: left
+}
+INPUT.spt {
+        BORDER-RIGHT: #6495ed 1px double; BORDER-TOP: #6495ed 1px double;
+        BORDER-BOTTOM: #6495ed 1px double;BORDER-LEFT: #6495ed 1px double;
+        PADDING-LEFT: 1px; PADDING-BOTTOM: 1px; PADDING-TOP: 1px;PADDING-RIGHT: 1px;
+        FONT-FAMILY: "Tahoma";
+        WIDTH : 200px ; HEIGHT : 20px;
+}
+INPUT.spb {
+        PADDING-RIGHT: 1px; PADDING-LEFT: 1px;
+        PADDING-BOTTOM: 1px; PADDING-TOP: 1px;
+        BORDER-RIGHT: #6495ed 1px double; BORDER-LEFT: #6495ed 1px double;
+        BORDER-BOTTOM: #6495ed 1px double; BORDER-TOP: #6495ed 1px double;
+        FONT-FAMILY: "Tahoma"; BACKGROUND-COLOR : #A8FFA8;
+        WIDTH : 60px ; HEIGHT : 20px;
+}
+textarea {
+        PADDING-RIGHT: 2px; PADDING-LEFT: 2px;
+        PADDING-BOTTOM: 2px; PADDING-TOP: 2px;
+        BORDER-RIGHT: #6495ed 1px double; BORDER-LEFT: #6495ed 1px double;
+        BORDER-BOTTOM: #6495ed 1px double; BORDER-TOP: #6495ed 1px double;
+        FONT-FAMILY: "Tahoma"; BACKGROUND-COLOR : #FFFFFF;
+        WIDTH : 600px ; HEIGHT : 400px;
+}
+</style>  </head>
+  <body>
+<h2>Query :: q19</h2> <table class='outline' border='1' width = '100%'>
+<tr>
+<td class='tdin' width='50%'> <pre>{
+	?x	"acted in"	"dogma"       .
+	?x	"acted in"	"chasing amy" .
+}</pre> </td><td class='tdin' width='50%'>Give me the actors who acted in both Dogma and Chasing Amy movies.</td></tr>
+</table>
+ <br/><hr/><br/><table border='0' width = '100%'>
+<tr>
+<td class='tdin' width='35%'><table border='0' width = '100%'><tr>
+<td class='thin' width='40%'># Results</td><td class='tdin' width='40%'><b>9</b></td><td class='tdin' width='20%'></td></tr>
+<tr>
+<td class='thin' width='40%'>Elapsed time</td><td class='tdin' width='40%'>1.794</td><td class='tdin' width='20%'>sec</td></tr>
+<tr>
+<td class='thin' width='40%'>Used memory</td><td class='tdin' width='40%'>75.77639</td><td class='tdin' width='20%'>MB </td></tr>
+<tr>
+<td class='thin' width='40%'>Total Quintuples</td><td class='tdin' width='40%'>35</td><td class='tdin' width='20%'>quins </td></tr>
+<tr>
+<td class='thin' width='40%'>AVG. # quins per cluster</td><td class='tdin' width='40%'>1.9444444</td><td class='tdin' width='20%'>quin/cluster </td></tr>
+<tr>
+<td class='thin' width='40%'>AVG. # quins per bucket</td><td class='tdin' width='40%'>3.8888888</td><td class='tdin' width='20%'>quin/bucket </td></tr>
+<tr>
+<td class='thin' width='40%'># plugged triples</td><td class='tdin' width='40%'>0</td><td class='tdin' width='20%'>triples </td></tr>
+</table>
+</td><td class='tdin' width='25%'><table border='0' width = '100%'><tr>
+<td class='thin' width='40%'>LabelSearch TopK</td><td class='tdin' width='40%'>25</td></tr>
+<tr>
+<td class='thin' width='40%'>Plugin Labels ?</td><td class='tdin' width='40%'>false</td></tr>
+<tr>
+<td class='thin' width='40%'>Limit 1st triple?</td><td class='tdin' width='40%'>false</td></tr>
+<tr>
+<td class='thin' width='40%'>Validate Triples?</td><td class='tdin' width='40%'>false</td></tr>
+</table>
+</td><td class='tdin' width='40%'><table border='0' width = '100%'>
+<tr>
+<td class='tdin' width='25%'></td><td class='thin' width='25%'> # Requests</td><td class='thin' width='25%'> # Solved Requests</td><td class='thin' width='25%'> # Returned Records</td></tr>
+<tr>
+<td class='thin2' width='25%'>LinkedMDB</td><td class='tdin' width='25%'>460</td><td class='tdin' width='25%'>10</td><td class='tdin' width='25%'>30</td></tr>
+<tr>
+<td class='thin2' width='25%'>DBpedia</td><td class='tdin' width='25%'>200</td><td class='tdin' width='25%'>4</td><td class='tdin' width='25%'>13</td></tr>
+<tr>
+<td class='thin2' width='25%'>Yago</td><td class='tdin' width='25%'>246</td><td class='tdin' width='25%'>6</td><td class='tdin' width='25%'>16</td></tr>
+<tr>
+<td class='tdin' width='25%'></td><td class='thin' width='25%'>906</td><td class='thin' width='25%'>20</td><td class='thin' width='25%'>59</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 0</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.32453643</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 0 - 0</b><br/> Score1 = 0.42477549<br/> Sim.  = 0.9007<br/> Norm. = 1.0000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/285' title='http://data.linkedmdb.org/resource/film/285'>Dogma</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/30536' title='http://data.linkedmdb.org/resource/actor/30536'>Ben Affleck</a></td>
+<td class='tdin' width='7%'>0.42477549</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Dogma_(film)' title='http://dbpedia.org/resource/Dogma_(film)'>Dogma</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/starring' title='http://dbpedia.org/ontology/starring'>starring</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Ben_Affleck' title='http://dbpedia.org/resource/Ben_Affleck'>Ben Affleck</a></td>
+<td class='tdin' width='7%'>0.21050543</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Ben_Affleck' title='http://yago-knowledge.org/resource/Ben_Affleck'>Ben Affleck</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/actedIn' title='http://yago-knowledge.org/resource/actedIn'>actedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Dogma_(film)' title='http://yago-knowledge.org/resource/Dogma_(film)'>Dogma</a></td>
+<td class='tdin' width='7%'>0.22380353</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 0 - 1</b><br/> Score1 = 0.29585665<br/> Sim.  = 0.9007<br/> Norm. = 1.0000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Chasing_Amy' title='http://dbpedia.org/resource/Chasing_Amy'>Chasing Amy</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/starring' title='http://dbpedia.org/ontology/starring'>starring</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Ben_Affleck' title='http://dbpedia.org/resource/Ben_Affleck'>Ben Affleck</a></td>
+<td class='tdin' width='7%'>0.26286792</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Ben_Affleck' title='http://yago-knowledge.org/resource/Ben_Affleck'>Ben Affleck</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/actedIn' title='http://yago-knowledge.org/resource/actedIn'>actedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Chasing_Amy' title='http://yago-knowledge.org/resource/Chasing_Amy'>Chasing Amy</a></td>
+<td class='tdin' width='7%'>0.29585665</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/38237' title='http://data.linkedmdb.org/resource/film/38237'>Chasing Amy</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/30536' title='http://data.linkedmdb.org/resource/actor/30536'>Ben Affleck</a></td>
+<td class='tdin' width='7%'>0.25779724</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 1</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.32453643</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 1 - 0</b><br/> Score1 = 0.42477549<br/> Sim.  = 0.9007<br/> Norm. = 1.0000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Jason_Lee_(actor)' title='http://yago-knowledge.org/resource/Jason_Lee_(actor)'>Jason Lee</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/actedIn' title='http://yago-knowledge.org/resource/actedIn'>actedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Dogma_(film)' title='http://yago-knowledge.org/resource/Dogma_(film)'>Dogma</a></td>
+<td class='tdin' width='7%'>0.22380353</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Dogma_(film)' title='http://dbpedia.org/resource/Dogma_(film)'>Dogma</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/starring' title='http://dbpedia.org/ontology/starring'>starring</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Jason_Lee_(actor)' title='http://dbpedia.org/resource/Jason_Lee_(actor)'>Jason Lee</a></td>
+<td class='tdin' width='7%'>0.21050543</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/285' title='http://data.linkedmdb.org/resource/film/285'>Dogma</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/237' title='http://data.linkedmdb.org/resource/actor/237'>Jason Lee</a></td>
+<td class='tdin' width='7%'>0.42477549</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 1 - 1</b><br/> Score1 = 0.29585665<br/> Sim.  = 0.9007<br/> Norm. = 1.0000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Jason_Lee_(actor)' title='http://yago-knowledge.org/resource/Jason_Lee_(actor)'>Jason Lee</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/actedIn' title='http://yago-knowledge.org/resource/actedIn'>actedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Chasing_Amy' title='http://yago-knowledge.org/resource/Chasing_Amy'>Chasing Amy</a></td>
+<td class='tdin' width='7%'>0.29585665</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Chasing_Amy' title='http://dbpedia.org/resource/Chasing_Amy'>Chasing Amy</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/starring' title='http://dbpedia.org/ontology/starring'>starring</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Jason_Lee_(actor)' title='http://dbpedia.org/resource/Jason_Lee_(actor)'>Jason Lee</a></td>
+<td class='tdin' width='7%'>0.26286792</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/38237' title='http://data.linkedmdb.org/resource/film/38237'>Chasing Amy</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/237' title='http://data.linkedmdb.org/resource/actor/237'>Jason Lee</a></td>
+<td class='tdin' width='7%'>0.25779724</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 2</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.32453643</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 2 - 0</b><br/> Score1 = 0.42477549<br/> Sim.  = 0.9007<br/> Norm. = 1.0000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Jason_Mewes' title='http://yago-knowledge.org/resource/Jason_Mewes'>Jason Mewes</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/actedIn' title='http://yago-knowledge.org/resource/actedIn'>actedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Dogma_(film)' title='http://yago-knowledge.org/resource/Dogma_(film)'>Dogma</a></td>
+<td class='tdin' width='7%'>0.22380353</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Dogma_(film)' title='http://dbpedia.org/resource/Dogma_(film)'>Dogma</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/starring' title='http://dbpedia.org/ontology/starring'>starring</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Jason_Mewes' title='http://dbpedia.org/resource/Jason_Mewes'>Jason Mewes</a></td>
+<td class='tdin' width='7%'>0.21050543</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/285' title='http://data.linkedmdb.org/resource/film/285'>Dogma</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/32883' title='http://data.linkedmdb.org/resource/actor/32883'>Jason Mewes</a></td>
+<td class='tdin' width='7%'>0.42477549</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 2 - 1</b><br/> Score1 = 0.29585665<br/> Sim.  = 0.9007<br/> Norm. = 1.0000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Jason_Mewes' title='http://yago-knowledge.org/resource/Jason_Mewes'>Jason Mewes</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/actedIn' title='http://yago-knowledge.org/resource/actedIn'>actedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Chasing_Amy' title='http://yago-knowledge.org/resource/Chasing_Amy'>Chasing Amy</a></td>
+<td class='tdin' width='7%'>0.29585665</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/38237' title='http://data.linkedmdb.org/resource/film/38237'>Chasing Amy</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/32883' title='http://data.linkedmdb.org/resource/actor/32883'>Jason Mewes</a></td>
+<td class='tdin' width='7%'>0.25779724</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Chasing_Amy' title='http://dbpedia.org/resource/Chasing_Amy'>Chasing Amy</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/starring' title='http://dbpedia.org/ontology/starring'>starring</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Jason_Mewes' title='http://dbpedia.org/resource/Jason_Mewes'>Jason Mewes</a></td>
+<td class='tdin' width='7%'>0.26286792</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 3</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.31782823</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 3 - 0</b><br/> Score1 = 0.42477549<br/> Sim.  = 0.9007<br/> Norm. = 1.0000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Dogma_(film)' title='http://dbpedia.org/resource/Dogma_(film)'>Dogma</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/starring' title='http://dbpedia.org/ontology/starring'>starring</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Kevin_Smith' title='http://dbpedia.org/resource/Kevin_Smith'>Kevin Smith</a></td>
+<td class='tdin' width='7%'>0.21050543</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Kevin_Smith' title='http://yago-knowledge.org/resource/Kevin_Smith'>Kevin Smith</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/actedIn' title='http://yago-knowledge.org/resource/actedIn'>actedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Dogma_(film)' title='http://yago-knowledge.org/resource/Dogma_(film)'>Dogma</a></td>
+<td class='tdin' width='7%'>0.22380353</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/285' title='http://data.linkedmdb.org/resource/film/285'>Dogma</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/29909' title='http://data.linkedmdb.org/resource/actor/29909'>Kevin Smith</a></td>
+<td class='tdin' width='7%'>0.42477549</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 3 - 1</b><br/> Score1 = 0.29585665<br/> Sim.  = 0.9004<br/> Norm. = 0.9500</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/38237' title='http://data.linkedmdb.org/resource/film/38237'>Chasing Amy</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/29909' title='http://data.linkedmdb.org/resource/actor/29909'>Kevin Smith</a></td>
+<td class='tdin' width='7%'>0.25779724</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Kevin_Smith' title='http://yago-knowledge.org/resource/Kevin_Smith'>Kevin Smith</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/actedIn' title='http://yago-knowledge.org/resource/actedIn'>actedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Chasing_Amy' title='http://yago-knowledge.org/resource/Chasing_Amy'>Chasing Amy</a></td>
+<td class='tdin' width='7%'>0.29585665</td>
+<td class='tdin' width='2%'></td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 4</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.30730626</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 4 - 0</b><br/> Score1 = 0.42477549<br/> Sim.  = 0.9007<br/> Norm. = 1.0000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>Yago</td><td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Matt_Damon' title='http://yago-knowledge.org/resource/Matt_Damon'>Matt Damon</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/actedIn' title='http://yago-knowledge.org/resource/actedIn'>actedIn</a></td>
+<td class='tdin' width='28%'><a href='http://yago-knowledge.org/resource/Dogma_(film)' title='http://yago-knowledge.org/resource/Dogma_(film)'>Dogma</a></td>
+<td class='tdin' width='7%'>0.22380353</td>
+<td class='tdin' width='2%'></td></tr>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/285' title='http://data.linkedmdb.org/resource/film/285'>Dogma</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/30638' title='http://data.linkedmdb.org/resource/actor/30638'>Matt Damon</a></td>
+<td class='tdin' width='7%'>0.42477549</td>
+<td class='tdin' width='2%'>*</td></tr>
+<tr>
+<td class='thin2' width='7%'>DBpedia</td><td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Dogma_(film)' title='http://dbpedia.org/resource/Dogma_(film)'>Dogma</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/ontology/starring' title='http://dbpedia.org/ontology/starring'>starring</a></td>
+<td class='tdin' width='28%'><a href='http://dbpedia.org/resource/Matt_Damon' title='http://dbpedia.org/resource/Matt_Damon'>Matt Damon</a></td>
+<td class='tdin' width='7%'>0.21050543</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 4 - 1</b><br/> Score1 = 0.25779724<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/38237' title='http://data.linkedmdb.org/resource/film/38237'>Chasing Amy</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/30638' title='http://data.linkedmdb.org/resource/actor/30638'>Matt Damon</a></td>
+<td class='tdin' width='7%'>0.25779724</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 5</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.30715774</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 5 - 0</b><br/> Score1 = 0.42477549<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/285' title='http://data.linkedmdb.org/resource/film/285'>Dogma</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/42947' title='http://data.linkedmdb.org/resource/actor/42947'>Dwight Ewell</a></td>
+<td class='tdin' width='7%'>0.42477549</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 5 - 1</b><br/> Score1 = 0.25779724<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/38237' title='http://data.linkedmdb.org/resource/film/38237'>Chasing Amy</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/42947' title='http://data.linkedmdb.org/resource/actor/42947'>Dwight Ewell</a></td>
+<td class='tdin' width='7%'>0.25779724</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 6</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.30715774</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 6 - 0</b><br/> Score1 = 0.42477549<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/285' title='http://data.linkedmdb.org/resource/film/285'>Dogma</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/42533' title='http://data.linkedmdb.org/resource/actor/42533'>Walt Flanagan</a></td>
+<td class='tdin' width='7%'>0.42477549</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 6 - 1</b><br/> Score1 = 0.25779724<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/38237' title='http://data.linkedmdb.org/resource/film/38237'>Chasing Amy</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/42533' title='http://data.linkedmdb.org/resource/actor/42533'>Walt Flanagan</a></td>
+<td class='tdin' width='7%'>0.25779724</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 7</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.30715774</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 7 - 0</b><br/> Score1 = 0.42477549<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/285' title='http://data.linkedmdb.org/resource/film/285'>Dogma</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/38146' title='http://data.linkedmdb.org/resource/actor/38146'>Ethan Suplee</a></td>
+<td class='tdin' width='7%'>0.42477549</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 7 - 1</b><br/> Score1 = 0.25779724<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/38237' title='http://data.linkedmdb.org/resource/film/38237'>Chasing Amy</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/38146' title='http://data.linkedmdb.org/resource/actor/38146'>Ethan Suplee</a></td>
+<td class='tdin' width='7%'>0.25779724</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+<br/>
+<hr/>
+<br/>
+<table border='0' width = '100%'>
+<tr>
+<td width='70%' align='center'><b style='color:blue; font-size:160%'> Cluster Bucket 8</b> </td><td width='20%' align='center'><b style='color:red'> Score = 0.30715774</b></td><td width='10%' align='center'><b> E </b></td></tr>
+</table>
+<table class='outline' border='1' width = '100%'>
+<tr>
+<td class='thin' width='12%'><b> Cluster 8 - 0</b><br/> Score1 = 0.42477549<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/285' title='http://data.linkedmdb.org/resource/film/285'>Dogma</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/547' title='http://data.linkedmdb.org/resource/actor/547'>Brian O'Halloran</a></td>
+<td class='tdin' width='7%'>0.42477549</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+<tr>
+<td class='thin' width='12%'><b> Cluster 8 - 1</b><br/> Score1 = 0.25779724<br/> Sim.  = 1.0000<br/> Norm. = 0.9000</td><td class='tdin' width='88%'><table border='0' width = '100%'>
+<tr>
+<td class='thin2' width='7%'>LinkedMDB</td><td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/film/38237' title='http://data.linkedmdb.org/resource/film/38237'>Chasing Amy</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/movie/actor' title='http://data.linkedmdb.org/resource/movie/actor'>actor</a></td>
+<td class='tdin' width='28%'><a href='http://data.linkedmdb.org/resource/actor/547' title='http://data.linkedmdb.org/resource/actor/547'>Brian O'Halloran</a></td>
+<td class='tdin' width='7%'>0.25779724</td>
+<td class='tdin' width='2%'>*</td></tr>
+</table>
+</td></tr>
+</table>
+  </body>
+</html>

@@ -1,0 +1,160 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<question id="2" runID="run8">
+   <string>
+      <![CDATA[Who is the mayor of London?]]>
+   </string>
+   <query>
+      <![CDATA[
+  "London"  "mayor"  ?mayor. 
+]]>
+   </query>
+   <settings labelSearchTopK="10" plugLabel="true" limited="false" validateTriple="false"/>
+   <stats1 nb_results="11" timeSec="0.8190" memoryMB="75.4112" totalQuins="12" avgQuin_Cluster="1.0909" avgQuin_Bucket="1.0909" nb_plugTR="0"/>
+   <stats2>
+      <ds id="LinkedMDB">
+         <nreq>0</nreq>
+         <nreqs>0</nreqs>
+         <nrecd>0</nrecd>
+      </ds>
+      <ds id="DBpedia">
+         <nreq>60</nreq>
+         <nreqs>1</nreqs>
+         <nrecd>6</nrecd>
+      </ds>
+      <ds id="Yago">
+         <nreq>20</nreq>
+         <nreqs>3</nreqs>
+         <nrecd>6</nrecd>
+      </ds>
+   </stats2>
+   <results>
+      <bucket bucket_id="0" runID="run8" score="0.23488127" plugType="E">
+         <cluster cluster_id="0-0" score="0.27440060" sim="0.9010" norm="0.9500">
+            <quintuple dataset="DBpedia" score="0.24979555" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/London</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/leaderName</predicate>
+               <object>http://dbpedia.org/resource/Boris_Johnson</object>
+               <subjectLabel score="0.12448887">London</subjectLabel>
+               <objectLabel score="0.00000000">Boris Johnson</objectLabel>
+            </quintuple>
+            <quintuple dataset="Yago" score="0.27440060" isFlipped="true" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Boris_Johnson</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isLeaderOf</predicate>
+               <object>http://yago-knowledge.org/resource/London</object>
+               <subjectLabel score="0.00000000">Boris Johnson</subjectLabel>
+               <objectLabel score="0.18600149">London</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="1" runID="run8" score="0.22481600" plugType="E">
+         <cluster cluster_id="1-0" score="0.24979555" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.24979555" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/London</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/leaderName</predicate>
+               <object>http://dbpedia.org/resource/Greater_London_Authority</object>
+               <subjectLabel score="0.12448887">London</subjectLabel>
+               <objectLabel score="0.00000000">Greater London Authority</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="2" runID="run8" score="0.22481600" plugType="E">
+         <cluster cluster_id="2-0" score="0.24979555" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.24979555" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/London</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/leaderName</predicate>
+               <object>http://dbpedia.org/resource/List_of_London_Assembly_constituencies</object>
+               <subjectLabel score="0.12448887">London</subjectLabel>
+               <objectLabel score="0.00000000">List of London Assembly constituencies</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="3" runID="run8" score="0.22481600" plugType="E">
+         <cluster cluster_id="3-0" score="0.24979555" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.24979555" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/London</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/leaderName</predicate>
+               <object>http://dbpedia.org/resource/List_of_Parliamentary_constituencies_in_London</object>
+               <subjectLabel score="0.12448887">London</subjectLabel>
+               <objectLabel score="0.00000000">List of Parliamentary constituencies in London</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="4" runID="run8" score="0.22481600" plugType="E">
+         <cluster cluster_id="4-0" score="0.24979555" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.24979555" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/London</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/leaderName</predicate>
+               <object>http://dbpedia.org/resource/London_Assembly</object>
+               <subjectLabel score="0.12448887">London</subjectLabel>
+               <objectLabel score="0.00000000">London Assembly</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="5" runID="run8" score="0.22481600" plugType="E">
+         <cluster cluster_id="5-0" score="0.24979555" sim="1.0000" norm="0.9000">
+            <quintuple dataset="DBpedia" score="0.24979555" isFlipped="false" isObjectLiteral="false">
+               <subject>http://dbpedia.org/resource/London</subject>
+               <predicate score="1.00000000">http://dbpedia.org/ontology/leaderName</predicate>
+               <object>http://dbpedia.org/resource/London_(European_Parliament_constituency)</object>
+               <subjectLabel score="0.12448887">London</subjectLabel>
+               <objectLabel score="0.00000000">London</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="6" runID="run8" score="0.21302123" plugType="E">
+         <cluster cluster_id="6-0" score="0.23669025" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.23669025" isFlipped="true" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/John_Biggs_(politician)</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isLeaderOf</predicate>
+               <object>http://yago-knowledge.org/resource/City_of_London</object>
+               <subjectLabel score="0.00000000">John Biggs</subjectLabel>
+               <objectLabel score="0.09172561">City of London</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="7" runID="run8" score="0.21302123" plugType="E">
+         <cluster cluster_id="7-0" score="0.23669025" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.23669025" isFlipped="true" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Chris_Duffield</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isLeaderOf</predicate>
+               <object>http://yago-knowledge.org/resource/City_of_London</object>
+               <subjectLabel score="0.00000000">Chris Duffield</subjectLabel>
+               <objectLabel score="0.09172561">City of London</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="8" runID="run8" score="0.21302123" plugType="E">
+         <cluster cluster_id="8-0" score="0.23669025" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.23669025" isFlipped="true" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Mark_Field</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isLeaderOf</predicate>
+               <object>http://yago-knowledge.org/resource/City_of_London</object>
+               <subjectLabel score="0.00000000">Mark Field</subjectLabel>
+               <objectLabel score="0.09172561">City of London</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="9" runID="run8" score="0.21302123" plugType="E">
+         <cluster cluster_id="9-0" score="0.23669025" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.23669025" isFlipped="true" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/David_Wootton</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isLeaderOf</predicate>
+               <object>http://yago-knowledge.org/resource/City_of_London</object>
+               <subjectLabel score="0.00000000">David Wootton</subjectLabel>
+               <objectLabel score="0.09172561">City of London</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+      <bucket bucket_id="10" runID="run8" score="0.20989508" plugType="E">
+         <cluster cluster_id="10-0" score="0.23321675" sim="1.0000" norm="0.9000">
+            <quintuple dataset="Yago" score="0.23321675" isFlipped="false" isObjectLiteral="false">
+               <subject>http://yago-knowledge.org/resource/Mayor_of_London</subject>
+               <predicate score="1.00000000">http://yago-knowledge.org/resource/isLeaderOf</predicate>
+               <object>http://yago-knowledge.org/resource/Transport_for_London</object>
+               <subjectLabel score="0.08304187">Mayor of London</subjectLabel>
+               <objectLabel score="0.00000000">Transport for London</objectLabel>
+            </quintuple>
+         </cluster>
+      </bucket>
+   </results>
+</question>
